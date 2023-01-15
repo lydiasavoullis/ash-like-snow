@@ -1,0 +1,1 @@
+When starting new game or loading always bring in new instance of PersistantObject and delete the old one

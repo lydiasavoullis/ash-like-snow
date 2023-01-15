@@ -1,0 +1,168 @@
+{
+    "name": "game controls",
+    "maps": [
+        {
+            "name": "continue",
+            "id": "126a50e5-27c5-4813-956b-2683b694a33e",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "PassThrough",
+                    "id": "46dcf238-4c8a-484d-9741-a4d2039f5309",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "26df8edf-4dc7-4cd4-a224-753f73ee1398",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "id": "d1631155-67f6-4e9e-a906-cdddbb76798a",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "PassThrough",
+                    "id": "a572b41a-5e84-4cd5-bac6-479c9628c6f9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1de048ba-03c2-4f69-8244-e630add9988a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "fast forward",
+            "id": "b2822a54-c173-4727-b205-66a3ac11d757",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "PassThrough",
+                    "id": "92c64685-99b8-41f9-ad7b-06f3a91f6d7c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b41f3fa0-9f79-4151-b326-4c7e7f6ae199",
+                    "path": "<Keyboard>/#(F)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "quit",
+            "id": "19c366f8-293a-485b-b85c-be8666d5ac34",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "PassThrough",
+                    "id": "c0ac1f2b-65a2-41f8-b673-d5b5e048cdc6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c0e19dd4-1781-4292-bff3-3ee08115c50a",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "point",
+            "id": "852ea068-27ca-4064-9a4c-291dc41d9115",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "c3fb1e7a-6995-4ce4-8664-a4acbd32a72b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "be23be27-16cc-4a21-a488-30fa71bb1022",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "scroll",
+            "id": "a4ae2480-c315-4219-becc-94182bcf4444",
+            "actions": [
+                {
+                    "name": "scroll",
+                    "type": "Button",
+                    "id": "eabac6f8-f79d-4ae9-b882-f7319bae41d9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "ddd2cf71-880e-420c-b5c0-e9ec23947189",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "scroll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

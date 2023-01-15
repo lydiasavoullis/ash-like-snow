@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/old scenes/MainMenu.unity
+    guid: 54025cabbcd68a841add8242a4b14f2d
+  - enabled: 0
+    path: Assets/Scenes/old scenes/Waterfall.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/old scenes/WizardsHouse.unity
+    guid: dadaa81301f1484469eb8459ba5d027b
+  - enabled: 0
+    path: Assets/Scenes/old scenes/VillageOutskirts.unity
+    guid: 880e52088af44f4429424e1dea47b5ca
+  - enabled: 0
+    path: Assets/Scenes/old scenes/Inn.unity
+    guid: bd0398b2f136fd9419f63efbaf58afc6
+  - enabled: 0
+    path: Assets/Scenes/old scenes/ForestOutskirts.unity
+    guid: b35560be6be1300479a0dfa47d394e94
+  - enabled: 1
+    path: Assets/Scenes/MainMenuAlt.unity
+    guid: 3b9f4aa31dc326240a266278231cb004
+  - enabled: 1
+    path: Assets/Scenes/GenericScene.unity
+    guid: 4490d268b2e09e6458baeee641c55565
+  - enabled: 1
+    path: Assets/Scenes/SecondScene.unity
+    guid: 6d67ca6fe2b9cff4f8dc6d7e4e3ea957
+  - enabled: 1
+    path: Assets/Scenes/MiniGame.unity
+    guid: ba6a1d79892a02b499c7f40408d3eab9
+  - enabled: 1
+    path: Assets/Scenes/EvidenceMode.unity
+    guid: 86b45521d880f72408050774c697bc95
+  m_configObjects: {}

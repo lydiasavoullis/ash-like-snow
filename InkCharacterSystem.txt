@@ -1,0 +1,12 @@
+Each click:
+if characters list has been updated:
+	get updated character list
+	convert it into the currentCharacters c# List 
+	update characters in scene based on the list
+
+Iterate through current characters
+if characters in scene sprites have been updated:
+	get updated sprite and set that to current
+
+Debug.Log(story.variablesState["Emilia"].ToString());
+story.ObserveVariable("fullness", (string varName, object newValue) =>{full = (int)newValue;});
