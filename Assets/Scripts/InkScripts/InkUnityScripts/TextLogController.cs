@@ -18,7 +18,7 @@ public class TextLogController
         GameVars.loadedTextLog.Add(text);//add current string to save list
         GameObject txt = GameObject.Instantiate(textLogBox) as GameObject;
         txt.transform.SetParent(textLogList.transform, false);
-        txt.GetComponent<TextMeshProUGUI>().text = text;
+        txt.GetComponent<TextMeshProUGUI>().text = GameVars.story.variablesState["currentSpeaker"].ToString()+ " : " + text;
     }
     //so we don't add this new text to the text log when it is loaded
     public void AddToTextLogOnLoad(string text, GameObject textLogList, GameObject textLogBox)
