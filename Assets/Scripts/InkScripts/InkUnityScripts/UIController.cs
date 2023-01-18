@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System;
+
 public class UIController
 {
     //GameObject backgroundDialogueBox;
@@ -20,11 +22,34 @@ public class UIController
         //this.choicesUI = choicesUI;
     }
     #region Text UI methods
+    //set name tag colours in the text log here
+    public Color SetNameColour(string name)
+    {
+        Color colour = new Color(0, 0, 0, 255);
+        switch (name.ToLower())
+        {
+            case "cas":
+                colour = new Color32(150, 100, 255, 255);
+                break;
+            case "lavender":
+                colour = Color.magenta;
+                break;
+            case "pandora":
+                colour = new Color32(204, 255, 229, 255);
+                break;
+            default:
+                break;
+
+        }
+        return colour;
+    }
     public void GetLastLineOfDialogue(TextMeshProUGUI storyText)
     {
         if (GameVars.loadedTextLog.Count > 0)
         {
-            storyText.text = GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1];
+            //remove name tag
+            storyText.text = GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1].Split(new string[] { "</color>" }, StringSplitOptions.None)[1];
+             //GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1];
             //Debug.Log($"LAST LINE: {storyText.text}");
         }
 

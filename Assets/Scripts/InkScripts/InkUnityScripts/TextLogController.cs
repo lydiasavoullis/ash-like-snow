@@ -5,21 +5,31 @@ using UnityEngine;
 
 public class TextLogController 
 {
-
+    UIController uIControl = new UIController();
     //public GameObject textLogBox;
     //public GameObject textLogList;
     public TextLogController()
     {//GameObject textLogList, GameObject textLogBox
         //this.textLogBox = textLogBox;
         //this.textLogList = textLogList;
+ 
     }
+    
     public void AddToTextLog(string text, GameObject textLogBox, GameObject textLogList)
     {
-        GameVars.loadedTextLog.Add(text);//add current string to save list
+        string speaker = GameVars.story.variablesState["currentSpeaker"].ToString();
+        string hexCol = ColorUtility.ToHtmlStringRGB(uIControl.SetNameColour(speaker));
+        string logLine = $"\n<color=#{hexCol}>{speaker}:</color> {text.TrimStart('\n')}";
+
+        GameVars.loadedTextLog.Add(logLine);//add current string to save list
         GameObject txt = GameObject.Instantiate(textLogBox) as GameObject;
         txt.transform.SetParent(textLogList.transform, false);
-        txt.GetComponent<TextMeshProUGUI>().text = GameVars.story.variablesState["currentSpeaker"].ToString()+ " : " + text;
+        
+        txt.GetComponent<TextMeshProUGUI>().text = logLine;//GameVars.story.variablesState["currentSpeaker"].ToString(
+
+
     }
+
     //so we don't add this new text to the text log when it is loaded
     public void AddToTextLogOnLoad(string text, GameObject textLogList, GameObject textLogBox)
     {
