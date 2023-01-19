@@ -157,7 +157,7 @@ public class DialogueController : MonoBehaviour
         if (GameVars.story.canContinue)
         {
             string text = GameVars.story.Continue();//get text from ink
-            StartCoroutine(uIControl.WriteText(text, storyText));//typewriter effect
+            StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect
             textLogControl.AddToTextLog(text, textLogBox, textLogList);//log all text
             GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;
         }
@@ -193,7 +193,7 @@ public class DialogueController : MonoBehaviour
                 else {
                     tvScreen.SetActive(false);
                 }
-                StartCoroutine(uIControl.WriteText(newValue.ToString(), newsText));//typewriter effect
+                StartCoroutine(uIControl.WriteText(newValue.ToString(), newsText, audioManager));//typewriter effect
                 break;
             case "characters":
                 characterControl.UpdateCharactersInScene(newValue.ToString(), stage, characterBox);

@@ -7,8 +7,10 @@ EXTERNAL RemoveCharacter(name)
 //EXTERNAL PlayEffect(effectName)
 
 <i>I hope you know what you're doing</i>
+~sfx = "holoscreen"
 ~newsAnnouncement = "Breaking news: A bomb has exploaded in a rubbish bin near the houses of parliament "
 .
+~sfx = "open door"
 ~characters += lavender
 .
 ~newsAnnouncement = "Lazy cat takes over the internet in new wave "
@@ -19,6 +21,7 @@ EXTERNAL RemoveCharacter(name)
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY you have a freaking customer
 ~newsAnnouncement = ""
+~sfx = ""
 Where's Adalina?
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = "???"
@@ -65,21 +68,25 @@ Ugh why do I even bother
 ~currentSpeaker = ""
 {RemoveCharacter("Lavender")}
 ~characters -= lavender
+~sfx = "close door"
+~currentSpeaker = you
+What the hell was that?
 ~characters += pandora
 ~currentSpeaker = android
-Tea or coffee?
-*[Tea]
-~currentSpeaker = you
-I fancy some tea
-->Pan_conversation
-*[coffee]
-~currentSpeaker = you
-I need a coffee
-->Pan_conversation
-*[something stronger]
-->Pan_conversation
+// She's a lot of fun, isn't she?
+// Tea or coffee?
+// *[Tea]
+// ~currentSpeaker = you
+// I fancy some tea
+// ->Pan_conversation
+// *[coffee]
+// ~currentSpeaker = you
+// I need a coffee
+// ->Pan_conversation
+// *[something stronger]
+// ->Pan_conversation
 
-==Pan_conversation==
+// ==Pan_conversation==
 ~music = "An average day"
 ~currentSpeaker = android
 ~characters += pandora

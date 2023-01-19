@@ -38,6 +38,23 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
         
     }
+    public void TypeSound(string name)
+    {
+        Debug.Log(name);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.pitch = (UnityEngine.Random.Range(0.1f, 3f));
+        if (s == null)
+        {
+            Debug.Log("Sound: " + name + " not found!");
+            return;
+        }
+        if (!s.source.isPlaying) {
+            
+            s.source.Play();
+        }
+        
+
+    }
     public void Stop(string name) {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
@@ -46,6 +63,16 @@ public class AudioManager : MonoBehaviour
             return;
         }
         StartCoroutine(StartFade(s.source, 4f, 0f));
+    }
+    public void StopImmediate(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            //Debug.Log("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Stop();
     }
     public IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {

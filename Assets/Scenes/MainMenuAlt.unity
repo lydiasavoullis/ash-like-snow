@@ -6877,6 +6877,56 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 699041508}
+    - target: {fileID: 5146838990055574950, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146838989502593232, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146838989855477192, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192928097374771929, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219398265343439016, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225288958712510562, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905012944745045930, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158484722148939547, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 538149231195151161, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436320793718905883, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11a7a29110fd3f647a6e03aca376263d, type: 3}
 --- !u!1 &1251280476 stripped
@@ -7625,7 +7675,7 @@ PrefabInstance:
     - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
         type: 3}
@@ -7663,6 +7713,32 @@ PrefabInstance:
     - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
         type: 3}
       propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
+        type: 3}
+      propertyPath: sounds.Array.data[5].name
+      value: inn theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
+        type: 3}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: cfa8811e3e9a2b944b54a01e7f2b430c, type: 3}
+    - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
+        type: 3}
+      propertyPath: sounds.Array.data[5].group
+      value: 
+      objectReference: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485,
+        type: 2}
+    - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
+        type: 3}
+      propertyPath: sounds.Array.data[5].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085736680456894715, guid: e01643388f8f13744a8837e7dd39abf2,
+        type: 3}
+      propertyPath: sounds.Array.data[5].pitch
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

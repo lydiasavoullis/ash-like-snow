@@ -72,15 +72,18 @@ public class UIController
     //    GameVars.finishedTyping = true;
     //}
 
-    public IEnumerator WriteText(string passage, TextMeshProUGUI storyText)
+    public IEnumerator WriteText(string passage, TextMeshProUGUI storyText, GameObject manager)
     {
+        
         storyText.text = passage;
         storyText.maxVisibleCharacters = 0;
         GameVars.finishedTyping = false;
         yield return new WaitForSeconds(0.01f);
         for (int i = 0; i < passage.Length; i++)
         {
-
+            //manager.GetComponent<AudioManager>().Play("typing");
+            manager.GetComponent<AudioManager>().TypeSound("typing");
+            Debug.Log("play effect");
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
                 storyText.maxVisibleCharacters = passage.Length;
@@ -92,6 +95,7 @@ public class UIController
             }
 
         }
+        
         GameVars.finishedTyping = true;
     }
 
