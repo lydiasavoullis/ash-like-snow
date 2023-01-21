@@ -7,6 +7,8 @@ public class TVFlicker : MonoBehaviour
 {
     [SerializeField]
     GameObject tvObj;
+    [SerializeField]
+    GameObject audioManager;
     Image tvScreen;
     Color color;
     // Start is called before the first frame update
@@ -17,11 +19,18 @@ public class TVFlicker : MonoBehaviour
         StartCoroutine(Flicker());
 
     }
-    private void Update()
+
+    void OnDisable()
     {
-        
+        audioManager.GetComponent<AudioManager>().Stop("holoscreen");
+        Debug.Log("PrintOnDisable: script was disabled");
     }
 
+    void OnEnable()
+    {
+        audioManager.GetComponent<AudioManager>().Play("holoscreen");
+        Debug.Log("PrintOnEnable: script was enabled");
+    }
     IEnumerator Flicker() {
         int count = 0;
         while (true) {

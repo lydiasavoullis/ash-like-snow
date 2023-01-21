@@ -157,8 +157,8 @@ public class DialogueController : MonoBehaviour
         if (GameVars.story.canContinue)
         {
             string text = GameVars.story.Continue();//get text from ink
-            StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect
             textLogControl.AddToTextLog(text, textLogBox, textLogList);//log all text
+            StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect
             GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;
         }
         else
@@ -261,13 +261,13 @@ public class DialogueController : MonoBehaviour
                 backgroundDialogueBox.SetActive(false);
                 //uIControl.ShowOrHideDialogueBox("false", backgroundDialogueBox);
                 //StartCoroutine(GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ShakeCamera>().TriggerCameraEffect(effectName));
-                StartCoroutine(mainCamera.GetComponent<ShakeCamera>().TriggerCameraEffect(effectName, backgroundDialogueBox));
+                //StartCoroutine(mainCamera.GetComponent<ShakeCamera>().TriggerCameraEffect(effectName, backgroundDialogueBox));
                 break;
             case "blur_in":
                 backgroundDialogueBox.SetActive(false);
                 //StartCoroutine(GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ShakeCamera>().BlurIn());
                 //uIControl.ShowOrHideDialogueBox("false", backgroundDialogueBox);
-                StartCoroutine(mainCamera.GetComponent<ShakeCamera>().BlurIn(backgroundDialogueBox));
+                //StartCoroutine(mainCamera.GetComponent<ShakeCamera>().BlurIn(backgroundDialogueBox));
                 break;
             default:
                 

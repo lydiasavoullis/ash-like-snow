@@ -13,6 +13,8 @@ public class UIController
     //TextMeshProUGUI storyText;
     //GameObject choicesUI;
     //MonoBehaviour monoBehaviour;
+    static float maxPitch = 1f;
+    static float minPitch = 0.8f;
     public UIController()
     {//GameObject backgroundDialogueBox, GameObject nameTag, TextMeshProUGUI storyText, GameObject choicesUI
         //monoBehaviour = new MonoBehaviour();
@@ -30,14 +32,22 @@ public class UIController
         {
             case "cas":
                 colour = new Color32(150, 100, 255, 255);
+                maxPitch = 1.1f;
+                minPitch = 0.8f;
                 break;
             case "lavender":
+                maxPitch = 1.7f;
+                minPitch = 0.9f;
                 colour = Color.magenta;
                 break;
             case "pandora":
                 colour = new Color32(204, 255, 229, 255);
+                maxPitch = 1.3f;
+                minPitch = 0.8f;
                 break;
             default:
+                maxPitch = 1f;
+                minPitch = 0.8f;
                 break;
 
         }
@@ -47,10 +57,18 @@ public class UIController
     {
         if (GameVars.loadedTextLog.Count > 0)
         {
-            //remove name tag
-            storyText.text = GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1].Split(new string[] { "</color>" }, StringSplitOptions.None)[1];
-             //GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1];
-            //Debug.Log($"LAST LINE: {storyText.text}");
+            string lastLine = GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1];
+            if (lastLine.Contains("</color>"))
+            {
+                //remove name tag
+                storyText.text = lastLine.Split(new string[] { "</color>" }, StringSplitOptions.None)[1];
+                //GameVars.loadedTextLog[GameVars.loadedTextLog.Count - 1];
+                //Debug.Log($"LAST LINE: {storyText.text}");
+            }
+            else {
+                storyText.text = lastLine;
+            }
+
         }
 
     }
@@ -82,8 +100,8 @@ public class UIController
         for (int i = 0; i < passage.Length; i++)
         {
             //manager.GetComponent<AudioManager>().Play("typing");
-            manager.GetComponent<AudioManager>().TypeSound("typing");
-            Debug.Log("play effect");
+            manager.GetComponent<AudioManager>().TypeSound("typing", maxPitch, minPitch);
+            Debug.Log("pitch: " + maxPitch + " " + minPitch);
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
                 storyText.maxVisibleCharacters = passage.Length;

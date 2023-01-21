@@ -1,5 +1,6 @@
 VAR you = "Cas"
 VAR android = "Pandora"
+VAR snob = "Lavender"
 // VAR barkeeper = "Maki"
 // VAR herbalist = "Emilia"
 // VAR farmer = "Fred"

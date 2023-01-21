@@ -7,28 +7,26 @@ EXTERNAL RemoveCharacter(name)
 //EXTERNAL PlayEffect(effectName)
 
 <i>I hope you know what you're doing</i>
-~sfx = "holoscreen"
 ~newsAnnouncement = "Breaking news: A bomb has exploaded in a rubbish bin near the houses of parliament "
 .
 ~sfx = "open door"
 ~characters += lavender
 .
-~newsAnnouncement = "Lazy cat takes over the internet in new wave "
+~newsAnnouncement = "A new study finds that certain drugs prescribed to Fate addicts can cause neurological issues"
 .
-~newsAnnouncement = "More after this short advertisement "
+~newsAnnouncement = "Read more to find out about the nation's favourite books "
 .
-~currentSpeaker = "???"
+~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY you have a freaking customer
 ~newsAnnouncement = ""
-~sfx = ""
 Where's Adalina?
 {ChangeSprite("Lavender", "lavender_normal")}
-~currentSpeaker = "???"
+~currentSpeaker = snob
 Who are you?
 ~currentSpeaker = you
 I'm {you}, Ada is on holiday. She won't be back until January
-~currentSpeaker = "???"
+~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
 Holiday?
 January?
@@ -37,31 +35,31 @@ I need her
 You won't suffice
 ~currentSpeaker = you
 Well I'm all you've got
-~currentSpeaker = "???"
+~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 You will regret this
 You will regret everything
 ~currentSpeaker = you
 I already do
-~currentSpeaker = "???"
+~currentSpeaker = snob
 This is not a joke 
 I have important business with Adalina
 She's my only supply of extremely rare vintage magazines
 ~currentSpeaker = you
 I'm in charge of the inventory now, I can supply anything you need
 I use the same website as Ada, I can supply your magazines
-~currentSpeaker = "???"
+~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
 ...
 ~currentSpeaker = you
 What kind of magazines are you looking for?
 {ChangeSprite("Lavender", "lavender_normal")}
-~currentSpeaker = "???"
+~currentSpeaker = snob
 Fashion magazines
 Specifically Togue
 ~currentSpeaker = you
 Don't you mean Vogue?
-~currentSpeaker = "???"
+~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 I meant what I said I meant
 Ugh why do I even bother

@@ -18,9 +18,15 @@ public class TextLogController
     public void AddToTextLog(string text, GameObject textLogBox, GameObject textLogList)
     {
         string speaker = GameVars.story.variablesState["currentSpeaker"].ToString();
+        string logLine;
         string hexCol = ColorUtility.ToHtmlStringRGB(uIControl.SetNameColour(speaker));
-        string logLine = $"\n<color=#{hexCol}>{speaker}:</color> {text.TrimStart('\n')}";
-
+        if (speaker == "")
+        {
+            logLine = text;
+        }
+        else {
+            logLine = $"\n<color=#{hexCol}>{speaker}:</color> {text.TrimStart('\n')}";
+        }
         GameVars.loadedTextLog.Add(logLine);//add current string to save list
         GameObject txt = GameObject.Instantiate(textLogBox) as GameObject;
         txt.transform.SetParent(textLogList.transform, false);

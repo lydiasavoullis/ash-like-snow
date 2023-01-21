@@ -15,7 +15,7 @@ public class ShakeCamera : MonoBehaviour
 
         camAnim = GetComponent<Animator>();
         //panel = GameObject.FindGameObjectWithTag("BlurEffects");
-        blurPanel.GetComponent<Image>().material.SetFloat("_Size", 0f);//reset blur
+       // blurPanel.GetComponent<Image>().material.SetFloat("_Size", 0f);//reset blur
        
     }
     public IEnumerator TriggerCameraEffect(string effectName, GameObject dialogueBox){
