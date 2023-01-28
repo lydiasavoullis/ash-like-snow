@@ -79,10 +79,10 @@ public class DialogueController : MonoBehaviour
         try
         {
             //GameVars.story.BindExternalFunction("ChangeCharacter", (string charName) => characterControl.LoadCharacterSpriteType(charName, stage, characterBox));
-            //GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
+            GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
             GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
             GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
-            GameVars.story.BindExternalFunction("GoToGameScene", (string gameScene, string currentScene) => GoToGameScene(gameScene, currentScene));
+            //GameVars.story.BindExternalFunction("GoToGameScene", (string gameScene, string currentScene) => GoToGameScene(gameScene, currentScene));
         }
         catch (Exception e)
         {
@@ -121,9 +121,22 @@ public class DialogueController : MonoBehaviour
     }
     private void OnLevelWasLoaded(int level)
     {
-        //GameVars.story.UnbindExternalFunction("AddCharacter");
-        //GameVars.story.UnbindExternalFunction("ChangeSprite");
-        //GameVars.story.UnbindExternalFunction("RemoveCharacter");
+        if (GameVars.autoMode == true) {
+            StartCoroutine(FastForward());
+        }
+        try
+        {
+            GameVars.story.UnbindExternalFunction("AddCharacter");
+            GameVars.story.UnbindExternalFunction("ChangeSprite");
+            GameVars.story.UnbindExternalFunction("RemoveCharacter");
+        }
+        catch (Exception e) { }
+        
+        
+        GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
+        GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
+        GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
+        
         characterControl.RefreshCharacters((InkList)GameVars.story.variablesState["characters"], stage, characterBox);
         uIControl.SetDialogueBoxActive((string)GameVars.story.variablesState["textBoxIsActive"], backgroundDialogueBox);
         uIControl.SetNameTag((string)GameVars.story.variablesState["currentSpeaker"], nameTag);
@@ -149,7 +162,7 @@ public class DialogueController : MonoBehaviour
 
             characterControl.ChangeScene(varScene, GameVars.loadedScene);
             storyText.text = "";//clear text so that we don't have it hanging around in the next scene
-            //GameVars.story.RemoveVariableObserver();
+            GameVars.story.RemoveVariableObserver();
             return;
         }
         GameVars.story.variablesState.variableChangedEvent += ObserveAnyVar;
@@ -157,8 +170,11 @@ public class DialogueController : MonoBehaviour
         if (GameVars.story.canContinue)
         {
             string text = GameVars.story.Continue();//get text from ink
-            textLogControl.AddToTextLog(text, textLogBox, textLogList);//log all text
-            StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect
+            if (!text.Contains("¬"))
+            {
+                textLogControl.AddToTextLog(text, textLogBox, textLogList);//log all text
+                StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect 
+            }
             GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;
         }
         else

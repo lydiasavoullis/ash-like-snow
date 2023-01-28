@@ -6014,8 +6014,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: 437}
-  m_SizeDelta: {x: 1004.3, y: 50}
+  m_AnchoredPosition: {x: 26, y: 471.5}
+  m_SizeDelta: {x: 1064.9, y: 179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863765871
 MonoBehaviour:
@@ -6104,7 +6104,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -179.8067, w: -147.28914}
+  m_margin: {x: 0, y: 0, z: -0.98704356, w: -1.7383235}
   m_textInfo:
     textComponent: {fileID: 863765871}
     characterCount: 13
@@ -6892,6 +6892,11 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8905012944745045930, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6192928097374771929, guid: 11a7a29110fd3f647a6e03aca376263d,
         type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -6902,17 +6907,12 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3436320793718905883, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4225288958712510562, guid: 11a7a29110fd3f647a6e03aca376263d,
-        type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8905012944745045930, guid: 11a7a29110fd3f647a6e03aca376263d,
-        type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1158484722148939547, guid: 11a7a29110fd3f647a6e03aca376263d,
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -6922,7 +6922,7 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3436320793718905883, guid: 11a7a29110fd3f647a6e03aca376263d,
+    - target: {fileID: 1158484722148939547, guid: 11a7a29110fd3f647a6e03aca376263d,
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -6975,7 +6975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316361532
@@ -8410,7 +8410,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GenericScene
+          m_StringArgument: ShopFront
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1965929045}

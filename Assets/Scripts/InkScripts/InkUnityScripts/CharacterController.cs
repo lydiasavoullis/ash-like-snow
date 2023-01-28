@@ -173,7 +173,12 @@ public class CharacterController
 
     public void LoadCharacterSprite(string character, string spriteName, GameObject stage, GameObject characterBox) //e.g. Maki, maki_sad
     {
-        
+         
+        for (int i =0; i< stage.transform.childCount; i++) {
+            if (stage.transform.GetChild(i).name.ToLower() == character.ToLower()) {
+                return;
+            }
+        }
         GameObject charPlaceholder = UnityEngine.Object.Instantiate(characterBox) as GameObject;
         charPlaceholder.transform.SetParent(stage.transform, false);
         charPlaceholder.name = character;

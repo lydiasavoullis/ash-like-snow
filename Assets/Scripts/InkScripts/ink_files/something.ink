@@ -1,21 +1,23 @@
 INCLUDE variables.ink
 EXTERNAL ChangeSprite(name,sprite)
 EXTERNAL RemoveCharacter(name)
-/*EXTERNAL AddCharacter(name,sprite)
+EXTERNAL AddCharacter(name,sprite)
 
-*/
 //EXTERNAL PlayEffect(effectName)
-
+~scene= "ShopFront"
+Monday 5th December 2061
+~scene= "GenericScene"
 <i>I hope you know what you're doing</i>
-~newsAnnouncement = "Breaking news: A bomb has exploaded in a rubbish bin near the houses of parliament "
-.
+// ~newsAnnouncement = "Breaking news: A bomb has exploaded in a rubbish bin near the houses of parliament "
+¬
 ~sfx = "open door"
 ~characters += lavender
-.
-~newsAnnouncement = "A new study finds that certain drugs prescribed to Fate addicts can cause neurological issues"
-.
-~newsAnnouncement = "Read more to find out about the nation's favourite books "
-.
+//{AddCharacter("Lavender", "lavender_normal")}
+// .
+// ~newsAnnouncement = "A new study finds that certain drugs prescribed to Fate addicts can cause neurological issues"
+// .
+// ~newsAnnouncement = "Read more to find out about the nation's favourite books "
+¬
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY you have a freaking customer
