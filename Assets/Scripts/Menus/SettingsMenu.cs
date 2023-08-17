@@ -51,16 +51,10 @@ public class SettingsMenu : MonoBehaviour
     void Start() {
         PreSetup();
         GetResolutions();
-       
-
-        
     }
     public void GetResolutions() {
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
-
-        
-
         List<string> options = new List<string>();
         int currentResIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)

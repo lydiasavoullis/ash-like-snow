@@ -18,6 +18,16 @@ Monday 5th December 2061
 // .
 // ~newsAnnouncement = "Read more to find out about the nation's favourite books "
 ¬
+Tea or coffee?
+*[Tea]
+~currentSpeaker = you
+I fancy some tea
+*[coffee]
+~currentSpeaker = you
+I need a coffee
+*[decline]
+~currentSpeaker = you
+No thank you
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY you have a freaking customer
