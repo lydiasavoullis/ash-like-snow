@@ -9,7 +9,9 @@
 ~currentSpeaker = android  
 Tea or coffee?
 *[Tea]
+->->
 *[Coffee]
+->->
 *[No thanks]
 ->->
 ==read_alice_in_wonderland==
