@@ -490,12 +490,12 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=togue_222
 ->day_1_inventory
-*{funds>=100}[Zebra man 89(£100)]
+*{funds>=100}[Zebra man \#89(£100)]
 ~funds -= 100
 ~deliveryToday+=1
 ~allbooks+=zebraman_89
 ->day_1_inventory
-*{funds>=80}[Giraffe woman 1(£80)]
+*{funds>=80}[Giraffe woman \#1(£80)]
 ~funds -= 80
 ~deliveryToday+=1
 ~allbooks+=giraffe_1

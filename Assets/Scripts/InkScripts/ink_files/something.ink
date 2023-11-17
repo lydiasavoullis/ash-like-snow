@@ -5,5 +5,19 @@ INCLUDE week_1\Day_4.ink
 INCLUDE week_1\Day_5.ink
 INCLUDE week_1\Day_6.ink
 INCLUDE week_1\Day_7.ink
-*Let's go
+INCLUDE week_1\general.ink
+~scene= "GenericScene"
+*[day 1]
 ->day_1
+*[day 2]
+->day_2
+*[day 3]
+->day_3
+*[day 4]
+->day_4
+*[day 5]
+->day_5
+*[day 6]
+->day_6
+*[day 7]
+->day_7

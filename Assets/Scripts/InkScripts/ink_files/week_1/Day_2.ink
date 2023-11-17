@@ -1,4 +1,5 @@
 ==day_2==
+
 {deliveryToday>0 : ->delivery_1}
 ~currentSpeaker = you 
 No delivery today
@@ -8,7 +9,8 @@ Uh, didn't see anything you liked?
 Nope
 ~currentSpeaker = android  
 That's ok, I guess. Saving money is wise.
-->tea_or_coffee
+->tea_or_coffee->day_2_cont
+
 ==delivery_1==
 ~characters+=pandora
 ~currentSpeaker = android  
@@ -21,14 +23,11 @@ Great, bring it in
 I hear you.
 ~currentSpeaker = android 
 Well, that's one thing sorted today at least.
-->tea_or_coffee
-==tea_or_coffee==
-~currentSpeaker = android  
-Tea or coffee?
-*[Tea]->day_2_cont
-*[Coffee]->day_2_cont
-*[No thanks]->day_2_cont
+->tea_or_coffee->day_2_cont
+
+
 ==day_2_cont==
+
 ~currentSpeaker = you 
 Is that Tali?
 ~characters+=tali
@@ -51,7 +50,11 @@ What did you read?
 I’m just stopping by to browse 
 And work on a few emails to my boss
 ~currentSpeaker = you
-[If you have a fantasy book give it to Tali]
+{allbooks ? fantasy_7: Got something for you}
+~currentSpeaker = webdev
+{allbooks ? fantasy_7: Sweet! The seventh book is just what I needed to complete my collection}
+~currentSpeaker = you
+How are things holding up?
 ~currentSpeaker = webdev
 Things have been pretty shit lately. My boss is working me to death. Clients here and there. 
 One of these clients wants some impossible things. They want their website to look all clean and minimalist. 
@@ -264,7 +267,7 @@ Why are you here?
 Why would you be so eager to come in here and start this conversation with Kent? 
 No one asked you to.
 ~currentSpeaker = snob 
-*gasps*
+<i>gasps</i>
 ~currentSpeaker = android  
 Cas! I’m so sorry Miss Blue. I assure you, you are a highly esteemed customer. Would you like a complimentary cup of tea or coffee?
 ~currentSpeaker = snob 
@@ -350,6 +353,35 @@ You see Pan, lots of people like you. You’re a great shop assistant.
 ~currentSpeaker = android  
 I know. 
 OK let’s do the orders for today.
-[choose some books]
-
+->day_2_inventory
+==day_2_inventory==
+Remaining funds: {funds}
+*{funds>=200}[Togue Spring issue 394(£200]
+~funds -= 200
+~deliveryToday+=1
+~allbooks+=togue_394
+->day_2_inventory
+*{funds>=100}[The Sentinel \#105(£70)]
+~funds -= 70
+~deliveryToday+=1
+~allbooks+=sentinel_105
+->day_2_inventory
+*{funds>=50}[The Betrayal of the Dragon's Heart (£45)]
+~funds -= 45
+~deliveryToday+=1
+~allbooks+=fantasy_dragon_heart
+->day_2_inventory
+*{funds>=10}[Alice in Wonderland (£10)]
+~funds -= 10
+~deliveryToday+=1
+~allbooks+=Alice_in_Wonderland
+->day_2_inventory
+*[finished]
+->end_day_2
+==end_day_2==
+->read_check->go_to_day_3
+==go_to_day_3==
+~currentSpeaker = you 
+See you tomorrow, bye!
+*[Go home]
 ->day_3
