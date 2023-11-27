@@ -6,6 +6,7 @@ INCLUDE week_1\Day_5.ink
 INCLUDE week_1\Day_6.ink
 INCLUDE week_1\Day_7.ink
 INCLUDE week_1\general.ink
+INCLUDE week_1\extra_dialogues.ink
 ~scene= "GenericScene"
 *[day 1]
 ->day_1

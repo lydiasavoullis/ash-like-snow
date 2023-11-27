@@ -18,8 +18,10 @@
  ~characters += tali
 ~currentSpeaker = webdev
  Hi guys
+{allbooks ? fantasy_dragon_heart: ->fantasy_dragon_heart_book} 
+~allbooks-=fantasy_dragon_heart
 ~currentSpeaker = you
- Woah, what happened?
+ So, what happened? You seem...tired.
 ~currentSpeaker = webdev
  Do I look that bad?
 ~currentSpeaker = you
@@ -56,7 +58,7 @@
 ~currentSpeaker = you
  Oh God.
 ~currentSpeaker = you
- Sorry, Miss Blue, we’re having a moment here.
+ Sorry, Miss Blue, I'll be with you in a second.
 ~currentSpeaker = snob
 ...
 ~currentSpeaker = webdev
@@ -178,7 +180,10 @@ Eh what’s going on?
  See you later Tal.
 ~characters -= tali
 ~currentSpeaker = you
- Uh are you OK?
+{allbooks ? togue_394: -> togue_2} 
+~allbooks-=togue_394
+~currentSpeaker = you
+So, are you OK?
 ~currentSpeaker = snob
  Yeah I’m fine.
 ~currentSpeaker = you
@@ -235,6 +240,8 @@ Ugh goodbye
  An anti-Lavender charm. 
 ~currentSpeaker = comic
  I take that as the highest compliment.
+ {allbooks ? sentinel_105: -> the_sentinel} 
+ ~allbooks-=sentinel_105
 ~currentSpeaker = comic
  What happened?
 ~currentSpeaker = comic

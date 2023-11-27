@@ -46,8 +46,7 @@ But Alice is a kid, kids do that kind of thing
 I used to eat crayons
 ~currentSpeaker = android 
 I will continue this tonight, I want to see what happens
-Perhaps she will get her stomach pumped later on
-And organ damage
+Perhaps she will have to have her stomach pumped later on
 ~currentSpeaker = you 
 Don't you sleep?
 ~currentSpeaker = android 

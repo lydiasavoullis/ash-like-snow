@@ -50,9 +50,7 @@ What did you read?
 I’m just stopping by to browse 
 And work on a few emails to my boss
 ~currentSpeaker = you
-{allbooks ? fantasy_7: Got something for you}
-~currentSpeaker = webdev
-{allbooks ? fantasy_7: Sweet! The seventh book is just what I needed to complete my collection}
+{allbooks ? fantasy_7: ->fantasy_7_book}
 ~currentSpeaker = you
 How are things holding up?
 ~currentSpeaker = webdev
@@ -92,12 +90,12 @@ Me again
 Good morning Kent
 ~currentSpeaker = comic  
 Morning
-{allbooks ? zebraman_89: Shit you did it! Zebraman 89, not a good one, but very impressive nonetheless} 
-{allbooks ? giraffe_1: Woah you got the first issue of Giraffewoman, that's something.} 
+{allbooks ? zebraman_89: ->zebra_man} 
+{allbooks ? giraffe_1: -> giraffe_woman} 
 ~currentSpeaker = you
 {allbooks !? (giraffe_1,zebraman_89): I still don't have any comics sorry }
-~currentSpeaker = comic 
-{allbooks !? (giraffe_1,zebraman_89): no worries }
+~allbooks-=giraffe_1
+~allbooks-=zebraman_89
 ~currentSpeaker = comic 
 How’s business?
 ~currentSpeaker = you 
@@ -137,7 +135,7 @@ It has the Hyde park shooter reading the government’s new manifesto and then s
 ~currentSpeaker = snob
  HEY
  Have you got my magazines?
-{allbooks?togue_222: Here you go! | Uhhh...}
+{allbooks?togue_222: ->togue_1 | Uhhh...}
 ~currentSpeaker = comic
   Who is this child? Do you know her?
 ~currentSpeaker = snob
