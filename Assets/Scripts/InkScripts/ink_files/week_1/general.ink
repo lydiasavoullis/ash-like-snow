@@ -8,11 +8,11 @@
 ==tea_or_coffee==
 ~currentSpeaker = android  
 Tea or coffee?
-*[Tea]
++[Tea]
 ->->
-*[Coffee]
++[Coffee]
 ->->
-*[No thanks]
++[No thanks]
 ->->
 ==read_alice_in_wonderland==
 ~currentSpeaker = you 

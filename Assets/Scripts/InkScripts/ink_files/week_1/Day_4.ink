@@ -54,6 +54,7 @@
  Hey how are you?
 ~currentSpeaker = comic
  Good good.
+{allbooks ? wildfyre_678: -> wildfyre->} 
 ~currentSpeaker = you
  You’re in a good mood.
 ~currentSpeaker = comic
@@ -133,8 +134,9 @@
 ~currentSpeaker = android
  I won’t explode I promise. 
 ~characters += tali
+{allbooks ? black_goat: -> blackgoat->} 
 ~currentSpeaker = you
- Hey Tal, you look better.
+You look better.
 ~currentSpeaker = webdev
  I promise I’m not.
 ~currentSpeaker = you
@@ -295,7 +297,8 @@
  Not sure that counts when Lavender is around.
  ~characters += lavender
 ~currentSpeaker = snob
- Why are you talking about me behind my back?
+{allbooks ? togue_1076: -> togue_winter->} 
+So why are you talking about me behind my back?
 ~currentSpeaker = you
  Didn’t even see you come in.
 ~currentSpeaker = snob
@@ -348,11 +351,8 @@
 ~currentSpeaker = snob
  Wow, I’m so happy.
 ~currentSpeaker = snob
- Thanks Pandora. You’re great. Much better than that weirdo Cassie
-~currentSpeaker = you
- My name is Cas. It’s just Cas.
+ Thanks Pandora.
 ~currentSpeaker = snob
- Shut up Casper.
  Anyway I have to go.
  See you around. 
 ~currentSpeaker = you
@@ -390,12 +390,12 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=t_lion_witch_wardrobe
 ->day_4_inventory
-*[finished]
++[finished]
 ->end_day_4
 ==end_day_4==
 ->read_check->go_to_day_5
 ==go_to_day_5==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-*[Go home]
++[Go home]
 ->day_5

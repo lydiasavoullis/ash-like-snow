@@ -72,16 +72,16 @@ I got an email. She arrived in Madrid safely.
  I don’t know, what do you mean?
 ~currentSpeaker = you
  I mean with the shop.
-[Response based on money made]
 ~currentSpeaker = android
- I think you’re doing great. Ada would be so proud.
+{funds >100:  I think you’re doing great. If we keep this up Ada will be happy when she comes back. | Uh I don't know, I'm sure Ada won't be upset.} 
 ~currentSpeaker = you
- Thanks.
+{funds >100:  Thanks | Oh, ok.} 
 ~characters += kent
 ~currentSpeaker = comic
  So guys.
 ~currentSpeaker = comic
  Really would love to chat, but I have something I need to do.
+ {allbooks ? hypnos_55: -> hypnos} 
 ~currentSpeaker = you
  What’s wrong?
 ~currentSpeaker = comic
@@ -114,6 +114,7 @@ I got an email. She arrived in Madrid safely.
  Ahem.
  ~characters -=pandora
  ...
+  {allbooks ? togue_666: -> togue_special} 
  ~characters += pandora
 ~currentSpeaker = android
  Here you go.
@@ -332,7 +333,6 @@ Pandora enters
  They should have programmed that out of you.
 ~currentSpeaker = snob
  What were they doing giving a therapist android to an employee. That seems far too important just to hand out.
-Pandora looks visibly distraught.
 ~currentSpeaker = you
  I think that’s enough questions for now.
 ~currentSpeaker = snob

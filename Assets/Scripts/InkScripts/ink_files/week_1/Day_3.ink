@@ -11,14 +11,13 @@
 ~currentSpeaker = you
  Good
 ~currentSpeaker = android
- Tea or coffee?
  ->tea_or_coffee->day_3_cont
 
 ==day_3_cont==
  ~characters += tali
 ~currentSpeaker = webdev
  Hi guys
-{allbooks ? fantasy_dragon_heart: ->fantasy_dragon_heart_book} 
+{allbooks ? fantasy_dragon_heart: ->fantasy_dragon_heart_book->} 
 ~allbooks-=fantasy_dragon_heart
 ~currentSpeaker = you
  So, what happened? You seem...tired.
@@ -180,7 +179,7 @@ Eh what’s going on?
  See you later Tal.
 ~characters -= tali
 ~currentSpeaker = you
-{allbooks ? togue_394: -> togue_2} 
+{allbooks ? togue_394: -> togue_2->} 
 ~allbooks-=togue_394
 ~currentSpeaker = you
 So, are you OK?
@@ -240,7 +239,7 @@ Ugh goodbye
  An anti-Lavender charm. 
 ~currentSpeaker = comic
  I take that as the highest compliment.
- {allbooks ? sentinel_105: -> the_sentinel} 
+ {allbooks ? sentinel_105: -> the_sentinel->} 
  ~allbooks-=sentinel_105
 ~currentSpeaker = comic
  What happened?
@@ -344,12 +343,12 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=Howls_Moving_Castle
 ->day_3_inventory
-*[finished]
++[finished]
 ->end_day_3
 ==end_day_3==
 ->read_check->go_to_day_4
 ==go_to_day_4==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-*[Go home]
++[Go home]
 ->day_4

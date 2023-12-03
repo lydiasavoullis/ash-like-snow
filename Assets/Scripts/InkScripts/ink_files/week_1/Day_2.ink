@@ -1,6 +1,6 @@
 ==day_2==
 
-{deliveryToday>0 : ->delivery_1}
+{deliveryToday>0 : ->delivery_1->}
 ~currentSpeaker = you 
 No delivery today
 ~currentSpeaker = android  
@@ -50,7 +50,7 @@ What did you read?
 I’m just stopping by to browse 
 And work on a few emails to my boss
 ~currentSpeaker = you
-{allbooks ? fantasy_7: ->fantasy_7_book}
+{allbooks ? fantasy_7: ->fantasy_7_book->}
 ~currentSpeaker = you
 How are things holding up?
 ~currentSpeaker = webdev
@@ -90,12 +90,10 @@ Me again
 Good morning Kent
 ~currentSpeaker = comic  
 Morning
-{allbooks ? zebraman_89: ->zebra_man} 
-{allbooks ? giraffe_1: -> giraffe_woman} 
+{allbooks ? zebraman_89: ->zebra_man->} 
+{allbooks ? giraffe_1: -> giraffe_woman->} 
 ~currentSpeaker = you
 {allbooks !? (giraffe_1,zebraman_89): I still don't have any comics sorry }
-~allbooks-=giraffe_1
-~allbooks-=zebraman_89
 ~currentSpeaker = comic 
 How’s business?
 ~currentSpeaker = you 
@@ -135,7 +133,7 @@ It has the Hyde park shooter reading the government’s new manifesto and then s
 ~currentSpeaker = snob
  HEY
  Have you got my magazines?
-{allbooks?togue_222: ->togue_1 | Uhhh...}
+{allbooks?togue_222: ->togue_1->}
 ~currentSpeaker = comic
   Who is this child? Do you know her?
 ~currentSpeaker = snob
@@ -374,12 +372,13 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=Alice_in_Wonderland
 ->day_2_inventory
-*[finished]
++[finished]
 ->end_day_2
+
 ==end_day_2==
 ->read_check->go_to_day_3
 ==go_to_day_3==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-*[Go home]
++[Go home]
 ->day_3
