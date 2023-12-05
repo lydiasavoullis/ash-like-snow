@@ -1,4 +1,5 @@
 ==day_5==
+~allbooks+=hypnos_55
 ~characters += pandora
 ~currentSpeaker = you
  Hey Pandora
@@ -11,12 +12,12 @@
 ~currentSpeaker = you
  You think so
 ~currentSpeaker = android
- You've sold [x] amount of books.
+ You've sold {booksSold} book(s).
 ~currentSpeaker = android
  I’m so happy for you.
 ~currentSpeaker = you
  Me too.
- ->tea_or_coffee->day_5_cont
+->tea_or_coffee->day_5_cont
 ==day_5_cont==
 ~currentSpeaker = you
  What is the plan for Saturday?
@@ -47,7 +48,7 @@
 ~currentSpeaker = android
  Even when Ada twisted her ankle falling down the basement stairs. I screamed, but you were like, well it was bound to happen one of these days.
 ~currentSpeaker = you
- Oh come on, you’ve seen the way she’s always running up and down those stairs. It <em>was</em> bound to happen.
+ Oh come on, you’ve seen the way she’s always running up and down those stairs. It <i<i>was</i> bound to happen.
 ~currentSpeaker = you
  I kind of miss her. Is that weird to say?
 ~currentSpeaker = android
@@ -81,8 +82,8 @@ I got an email. She arrived in Madrid safely.
  So guys.
 ~currentSpeaker = comic
  Really would love to chat, but I have something I need to do.
- {allbooks ? hypnos_55: -> hypnos} 
-~currentSpeaker = you
+ ~currentSpeaker = you
+{allbooks ? hypnos_55: -> hypnos->} 
  What’s wrong?
 ~currentSpeaker = comic
  Nothing really. I’m just really fucking behind on a lot of work. Please can I work in the corner there?
@@ -114,7 +115,7 @@ I got an email. She arrived in Madrid safely.
  Ahem.
  ~characters -=pandora
  ...
-  {allbooks ? togue_666: -> togue_special} 
+  {allbooks ? togue_666: -> togue_special->} 
  ~characters += pandora
 ~currentSpeaker = android
  Here you go.

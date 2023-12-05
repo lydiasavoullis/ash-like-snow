@@ -310,6 +310,7 @@ Improvements?
 Suggestions to improve your failing business.
 If you have any more magazines please order them. I’ll collect them the next time I visit.
 Bye.
+characters-=lavender
 ~currentSpeaker = comic  
 The absolute nerve. 
 You should ban her.
@@ -345,6 +346,7 @@ Thanks Pandora. Maybe you can recommend me to career services next time.
 I have to go, I have a lot of missed calls from my boyfriend. I think he’s worried after the shooting.
 ~currentSpeaker = you 
 See you around.
+characters-=kent
 You see Pan, lots of people like you. You’re a great shop assistant.
 ~currentSpeaker = android  
 I know. 

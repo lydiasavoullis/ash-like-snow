@@ -319,7 +319,7 @@ Ugh goodbye
 ~currentSpeaker = you
  Bye!
  ~characters -= kent
-[Choose books]
+ ~characters += pandora
 ->day_3_inventory
 ==day_3_inventory==
 Remaining funds: {funds}

@@ -27,3 +27,4 @@ VAR extraText = ""
 VAR extraTextLog = ""
 VAR funds = 500
 VAR newsAnnouncement = ""
+VAR booksSold = 0

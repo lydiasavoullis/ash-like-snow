@@ -355,6 +355,7 @@ So why are you talking about me behind my back?
 ~currentSpeaker = snob
  Anyway I have to go.
  See you around. 
+ ~characters-=lavender
 ~currentSpeaker = you
  Pan are you crying?
 ~currentSpeaker = android

@@ -23,7 +23,7 @@ Hehe, you shouldn't be spending money on me
 It was nothing
 ~currentSpeaker = android  
 So will you read it to me?
-~currentSpeaker = you 
+~currentSpeaker = "" 
 Ok, just a little bit
 \*You read to Pandora\*
 \*For a moment you feel at peace\*
@@ -71,6 +71,7 @@ Read me the first chapter
 Pleaaasee
 ~currentSpeaker = you 
 Hmmm, ok
+~currentSpeaker = "" 
 \*You read to Pandora\*
 \*As you do so a sense of calm fills the room\*
 ...
@@ -109,6 +110,7 @@ I bought you something
 Nice! Please read to me 
 ~currentSpeaker = you 
 OK
+~currentSpeaker = ""
 \*You read to Pandora\*
 \*You feel tranquility fill your very being\*
 ...
