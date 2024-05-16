@@ -33,6 +33,7 @@ public class AudioController
         }
         if (GameVars.story.variablesState["music"].ToString() != "none")
         {
+            audioManager.GetComponent<AudioManager>().Stop(GameVars.musicPlaying);
             audioManager.GetComponent<AudioManager>().Play(GameVars.story.variablesState["music"].ToString());
             GameVars.musicPlaying = GameVars.story.variablesState["music"].ToString();
         }

@@ -21,12 +21,12 @@ public class MainMenuPlay : MonoBehaviour
     }
     private void Update()
     {
-        if (Mouse.current.scroll.ReadValue().y > 0) {
-            Debug.Log("scrolled up "+ (Mouse.current.scroll.ReadValue().y));
-        } else if (Mouse.current.scroll.ReadValue().y < 0) {
-            Debug.Log("scrolled down" + (Mouse.current.scroll.ReadValue().y));
+        //if (Mouse.current.scroll.ReadValue().y > 0) {
+        //    Debug.Log("scrolled up "+ (Mouse.current.scroll.ReadValue().y));
+        //} else if (Mouse.current.scroll.ReadValue().y < 0) {
+        //    Debug.Log("scrolled down" + (Mouse.current.scroll.ReadValue().y));
 
-        }
+        //}
         
     }
 
