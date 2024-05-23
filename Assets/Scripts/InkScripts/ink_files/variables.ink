@@ -6,6 +6,7 @@ VAR comic = "Kent"
 VAR lovelace = "Ada"
 VAR trader = "Stranger"
 VAR scene = "ShopFront"
+VAR button = "normal"
 //VAR gameScene = ""
 
 VAR sfx = ""

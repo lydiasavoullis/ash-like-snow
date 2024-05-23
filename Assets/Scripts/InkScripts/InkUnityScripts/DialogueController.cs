@@ -18,6 +18,10 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     Button buttonPrefab;
     [SerializeField]
+    Button cupButtonPrefab;
+    [SerializeField]
+    Button bookButtonPrefab;
+    [SerializeField]
     Button saveSlot;
     #endregion
     //objects(objects this script interacts with)
@@ -320,7 +324,7 @@ public class DialogueController : MonoBehaviour
         foreach (Choice choice in GameVars.story.currentChoices)
         {
 
-            Button choiceButton = Instantiate(buttonPrefab) as Button;
+            Button choiceButton = ReturnButtonType(GameVars.story.variablesState["button"].ToString());
             TextMeshProUGUI choiceText = choiceButton.GetComponentInChildren<TextMeshProUGUI>();
             choiceText.text = choice.text;
             choiceButton.transform.SetParent(this.transform, false);
@@ -331,6 +335,26 @@ public class DialogueController : MonoBehaviour
 
         }
         GameVars.hasLoadedButtons = true;
+    }
+    public Button ReturnButtonType(string buttonName)
+    {
+        Button button; //= Instantiate(buttonPrefab) as Button;
+        switch (buttonName)
+        {
+            case "normal":
+                button = Instantiate(buttonPrefab) as Button;
+                break;
+            case "cup":
+                button = Instantiate(cupButtonPrefab) as Button;
+                break;
+            case "book":
+                button = Instantiate(bookButtonPrefab) as Button;
+                break;
+            default:
+                button = Instantiate(buttonPrefab) as Button;
+                break;
+        }
+        return button;
     }
 
     //mini game scene, gift scene/shop scene

@@ -72,6 +72,7 @@ What the hell was that?
 ~characters += pandora
 ~currentSpeaker = android
 She's a lot of fun, isn't she?
+~button="cup"
 Tea or coffee?
 *[Tea]
 ~currentSpeaker = you
@@ -475,6 +476,7 @@ I like being an assistant
 Let’s do the stock now
 ->day_1_inventory
 ==day_1_inventory==
+~button="book"
 Remaining funds: {funds}
 *{funds>=200}[Togue Autumn issue 222(£200]
 ~funds -= 200
