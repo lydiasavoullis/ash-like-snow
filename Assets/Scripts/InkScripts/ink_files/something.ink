@@ -8,6 +8,7 @@ INCLUDE week_1\Day_7.ink
 INCLUDE week_2\Day_8.ink
 INCLUDE week_1\general.ink
 INCLUDE week_1\extra_dialogues.ink
+INCLUDE week_2\truth_or_dare.ink
 ~scene= "GenericScene"
 *[day 1]
 ->day_1
