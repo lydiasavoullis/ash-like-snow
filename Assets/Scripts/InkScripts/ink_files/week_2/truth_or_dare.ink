@@ -424,9 +424,71 @@ Well, I want to hear this story too.
 Also, she called me 'Your Honour' I'm an easy woman to please.
 ~currentSpeaker = comic
 Fuck. Alright then. 
+My boss was had a medical emergency.
+And my boyfriend, Scott, was the one in the ambulance with him.
+He wanted to thank Scott personally.
+So they were talking and he mentions that he works for the Calamity.
+And Scott starts talking about me, I was freelancing at the time as an illustrator.
+And the rest is history.
+~currentSpeaker = you
+What was he in hospital for?
+~currentSpeaker = comic
+Who knows, his hair implants fell out probably.
+~currentSpeaker = snob
+You don't seem very appreciative.
+~currentSpeaker = comic
+If you worked for him, you wouldn't be so appreciative either.
+~currentSpeaker = snob
+He gave you a job.
+~currentSpeaker = comic
+And I give him high quality drawings under a tight deadline.
+~currentSpeaker = snob
+The quality of your drawings is debatable.
+~currentSpeaker = comic
+OK that's enough.
 ->kent_questions
 ==l_questions_p==
-Pandora gets questioned by Lavender
+//Pandora gets questioned by Lavender
+~currentSpeaker = snob
+It's my turn.
+I'm choosing Pandora.
+~currentSpeaker = android
+Yes?
+~currentSpeaker = snob
+Truth or dare? Duh.
+~currentSpeaker = android
+Truth.
+~currentSpeaker = snob
+Boring.
+Ok, so as an android, do you have feelings?
+~currentSpeaker = you
+What the hell!
+You can't ask that.
+~currentSpeaker = snob
+I just did.
+~currentSpeaker = android
+Sorry Lavender, what do you mean by that?
+~currentSpeaker = snob
+Feel-ings. Things that you feel. Sadness. Happiness. Fear.
+~currentSpeaker = android
+I have transmitters in my brain that tell me when which of these emotions should take precident. Much like how you have chemicals in yours.
+~currentSpeaker = snob
+Hmm.
+OK.
+~currentSpeaker = android
+Glad I cleared that up.
+~currentSpeaker = snob
+But like, are those real?
+I mean it's like someone's telling you how to feel.
+~currentSpeaker = android
+Not really, just like an infant I started off with a basic blueprint, and then I started learning that certain inputs triggered certain responses and I thought about what to do with that information and my brain made connections. Then it used these emotions as a guideline to make me perform these specific tasks when I need to.
+It's not an exact science of course.
+...
+Lavender?
+~currentSpeaker = snob
+Oh are you still talking?
+~currentSpeaker = android
+I think we're done here.
 ->pandora_questions
 ==l_questions_c==
 Cas gets questioned by Lavender
