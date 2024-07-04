@@ -491,21 +491,258 @@ Oh are you still talking?
 I think we're done here.
 ->pandora_questions
 ==l_questions_c==
-Cas gets questioned by Lavender
+//Cas gets questioned by Lavender
+~currentSpeaker = snob
+My go.
+I'm choosing Cas.
+~currentSpeaker = you
+Dare.
+~currentSpeaker = snob
+You didn't even let me ask...
+Whatever.
+I dare you to tell me your deepest darkest secret.
+~currentSpeaker = you
+... 
+That's obviously cheating.
+~currentSpeaker = android
+I concur.
+~currentSpeaker = snob
+Fine.
+I want you to...lift Pandora.
+~currentSpeaker = you
+Is that even possible?
+~currentSpeaker = snob
+I don't know, it's up to you to figure that out.
+~currentSpeaker = you
+Pandora, can I lift you?
+Like are you consenting?
+And also is it physically possible? Like how much do you weigh.
+~currentSpeaker = android
+Never ask a lady about her weight.
+Also, I should weigh the same as an average human woman of the same stature as myself.
+And I wouldn't mind you lifting me for the purpose of this game at least.
+~currentSpeaker = you
+That sounds promising.
+Ok, get over here.
+~currentSpeaker = android
+Alright.
+Hey, be careful! You're going to damage my circuits.
+~currentSpeaker = you
+I'm being careful.
+It's not like you're made of tissue paper.
+~currentSpeaker = android
+Ok put me down now.
+PUT ME DOWN.
+~currentSpeaker = comic
+Wow Pandora, are you ok?
+~currentSpeaker = webdev
+Hehehe.
+~currentSpeaker = snob
+...
+God you two are so pathetic.
+~currentSpeaker = android
+It's over now. I don't think I like being carried.
+It makes me feel like a dog.
+Also, I think I'm ticklish.
+~currentSpeaker = you
+Is that even possible?
 ->cas_questions
 
 //Pandora questions
 ==p_questions_t==
-Tali gets questioned by Pandora
+//Tali gets questioned by Pandora
+~currentSpeaker = android
+Ok, so Tali
+~currentSpeaker = webdev
+Uhuh
+~currentSpeaker = android
+Truth or dare?
+~currentSpeaker = webdev
+Dare.
+~currentSpeaker = android
+I dare you to...
+...
+Pinch Lavender.
+~currentSpeaker = snob
+What?
+OW!
+~currentSpeaker = webdev
+That was too easy.
+~currentSpeaker = snob
+That hurt!
+~currentSpeaker = webdev
+Sorry.
+You can pinch me if you like.
+~currentSpeaker = snob
+I won't stoop to your level.
+~currentSpeaker = webdev
+It was a dare.
+~currentSpeaker = snob
+It's bullying.
+~currentSpeaker = android
+I'm sorry, I didn't realise the pinch would cause so much drama.
+~currentSpeaker = comic
+Oh come on now. That's a lie. You live for the drama Pandora.
+~currentSpeaker = android
+Hmph.
+I don't like what you're insinuating.
 ->tali_questions
 ==p_questions_k==
-Kent gets questioned by Pandora
+//Kent gets questioned by Pandora
+~currentSpeaker = android
+Kent.
+~currentSpeaker = comic
+Ahah!
+Dare.
+Do your worst.
+~currentSpeaker = android
+Ok...
+I dare you to fold the corner of a page of your favourite comic book.
+~currentSpeaker = comic
+What?!
+Never.
+~currentSpeaker = android
+It's a dare.
+You have to do it.
+~currentSpeaker = comic
+I can't damage a book.
+~currentSpeaker = android
+It's just a book.
+Ok ok, how about folding the corner of your oldest most worn comic book.
+~currentSpeaker = comic
+You work in a bookstore. I was hoping you'd be more of a bibliophile.
+~currentSpeaker = android
+I didn't choose to work here.
+And anyway, I'm not as sentimental as you.
+~currentSpeaker = comic
+Cold. Unfeeling.
+~currentSpeaker = android
+Just do it!
+~currentSpeaker = comic
+There. I did it. I folded the corner of the page.
+It's ruined.
+~currentSpeaker = android
+You barely did anything.
+Don't cry.
+~currentSpeaker = comic
+I make no promises.
 ->kent_questions
 ==p_questions_l==
-Lavender gets questioned by Pandora
+//Lavender gets questioned by Pandora
+~currentSpeaker = android
+Lavender.
+Truth or dare?
+~currentSpeaker = snob
+Truth.
+~currentSpeaker = android
+Ok, so.
+I don't mean to offend you with this question.
+I think you look quite lovely.
+~currentSpeaker = snob
+Oh. My. God.
+Is the robot hitting on me?
+~currentSpeaker = webdev
+Just let her finish Lav.
+~currentSpeaker = android
+What I mean is just not to offend you.
+I wanted to ask.
+Why do you dress the way you do?
+~currentSpeaker = snob
+The way I do?
+Oh you mean the lolita style.
+Well, unlike what most people think it's not to draw attention to myself.
+And it's not because I'm trying to make pedos like me or something.
+Which is really gross. I hate when people try to make that argument.
+~currentSpeaker = android
+So why is it then?
+~currentSpeaker = snob
+I just like the style.
+It's different, I feel like myself when I put on puffy skirts and pink bows.
+I'm not trying to look sexy, or put together. I just look like myself.
+~currentSpeaker = android
+When did you start dressing like that?
+~currentSpeaker = snob
+Maybe around twenty two. I didn't start dressing exclusively like this until twenty four.
+In school at around sixteen I started noticing guys looking at me differently, treating me differently and it made me uncomfortable.
+I tried a lot of different styles, but it always felt like I was trying to be someone else. Someone mature and sophisticated. 
+I'm not that person, I never will be. I'm just silly, and I want to dress silly. 
+~currentSpeaker = android
+I'm so glad for you. Thank you for sharing that with us.
+~currentSpeaker = snob
+Hold on a minute.
+You asked two questions.
+And you made me say a lot about my past.
+You're trying to psychoanalyse me, aren't you?
+~currentSpeaker = you
+It's free therapy, take it while you can.
+~currentSpeaker = snob
+Wow I feel all warm and fuzzy inside.
+~currentSpeaker = android
+I wasn't actually trying to therapise you, I was just curious.
+~currentSpeaker = snob
+Sure. Sure you were.
+I'm going to be
+~currentSpeaker = android
+Do you have any ideas about where your suspicion stems from?
+~currentSpeaker = snob
+Ha! I'm not falling for that one.
+If you're going to therapise me, I'm going to have to pay you first.
+~currentSpeaker = android
+Well, I'm definitely not against that.
 ->lavender_questions
 ==p_questions_c==
-Cas gets questioned by Pandora
+//Cas gets questioned by Pandora
+~currentSpeaker = android
+I suppose I'll ask my lovely colleague.
+Truth or dare?
+~currentSpeaker = you
+Dare.
+~currentSpeaker = android
+Uh hmm.
+I know.
+Let's switch places.
+~currentSpeaker = you
+Excuse me?
+~currentSpeaker = android
+You go to the front, I'll sit at the counter.
+~currentSpeaker = you
+You don't know how to work that thing.
+~currentSpeaker = android
+How hard can it be.
+~currentSpeaker = you
+I don't...I don't know.
+~currentSpeaker = android
+C'mon, it's a dare.
+You have to do it.
+~currentSpeaker = comic
+I'm afraid she's right.
+~currentSpeaker = snob
+No backsies.
+~currentSpeaker = webdev
+How much damage can she do anyway?
+~currentSpeaker = you
+Fineee.
+~currentSpeaker = android
+Oh my. This is nice.
+~currentSpeaker = you
+You're telling me you've never sat in that seat before?
+~currentSpeaker = android
+Never had a reason to.
+How do I work this?
+~currentSpeaker = you
+No. Don't press that...
+Oh whatever.
+~currentSpeaker = android
+Oooh did you hear the beep.
+~currentSpeaker = you
+It's giving me a headache.
+Ok, I get it. I'm a control freak. Now can I have my counter back.
+~currentSpeaker = android
+No.
+I like it here. 
+I think I'll stay forever.
+~currentSpeaker = you
+Oh great.
 ->cas_questions
 
 //Tali questions
@@ -538,5 +775,7 @@ Cas gets questioned by Kent
 
 
 ==end_scenario==
-Everyone is questioned now
+~currentSpeaker = you
+I think we can stop now.
+Everyone's been questioned.
 ->END
