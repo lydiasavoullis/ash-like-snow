@@ -338,5 +338,7 @@ Hmm, maybe you could tell me that story some time.
 ~currentSpeaker = you
 Eh, it’s not really my cup of tea.
 
+->end_day_8
 
-->END
+==end_day_8==
+->day_9

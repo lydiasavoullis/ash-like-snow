@@ -6,6 +6,12 @@ INCLUDE week_1\Day_5.ink
 INCLUDE week_1\Day_6.ink
 INCLUDE week_1\Day_7.ink
 INCLUDE week_2\Day_8.ink
+INCLUDE week_2\Day_9.ink
+INCLUDE week_2\Day_10.ink
+INCLUDE week_2\Day_11.ink
+INCLUDE week_2\Day_12.ink
+INCLUDE week_2\Day_13.ink
+INCLUDE week_2\Epilogue.ink
 INCLUDE week_1\general.ink
 INCLUDE week_1\extra_dialogues.ink
 INCLUDE week_2\truth_or_dare.ink
@@ -26,3 +32,15 @@ INCLUDE week_2\truth_or_dare.ink
 ->day_7
 *[day 8]
 ->day_8
+*[day 9]
+->day_9
+*[day 10]
+->day_10
+*[day 11]
+->day_11
+*[day 12]
+->day_12
+*[day 13]
+->day_13
+*[Epilogue]
+->Epilogue

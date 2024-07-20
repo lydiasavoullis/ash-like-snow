@@ -1,7 +1,6 @@
 LIST TDNames = (P), (K), (T), (L), (C)
 VAR name = C
-->start
-==start==
+==start_truth_or_dare==
 Who are you going to chose?
 *[P]
 Pandora gets questioned by Cas
@@ -747,30 +746,457 @@ Oh great.
 
 //Tali questions
 ==t_questions_l==
-Lavender gets questioned by Tali
+//Lavender gets questioned by Tali
+~currentSpeaker = webdev
+Lavender.
+Truth or dare?
+~currentSpeaker = snob
+Dare of course.
+~currentSpeaker = webdev
+This is tricky uh.
+I dare you to...
+Say something nice to Kent.
+~currentSpeaker = snob
+What?!
+I can say nice things.
+~currentSpeaker = webdev
+Great, because that's part of the dare.
+Can you say something nice to Kent?
+Something nice about him remember.
+~currentSpeaker = snob
+Why him?
+~currentSpeaker = comic
+Because you hate me the most.
+~currentSpeaker = snob
+I don't hate anyone.
+~currentSpeaker = comic
+Could have fooled me.
+~currentSpeaker = snob
+You have nice penmanship.
+~currentSpeaker = comic
+How do you know that?
+~currentSpeaker = snob
+In one of your comics, you handwrote in a speech bubble and it was very neat.
+~currentSpeaker = comic
+Oooh you've seen my comics?
+~currentSpeaker = snob
+I read the news and I just happened to see it. I don't deliberately go out of my way to see YOUR work specifically.
+~currentSpeaker = comic
+Aww I have a fan.
+~currentSpeaker = snob
+Ok, this is enough.
+Was this even technically a dare. It felt more like a truth.
+~currentSpeaker = comic
+So you admit my superior handwriting is the TRUTH.
+~currentSpeaker = snob
+Don't let it get to your head.
+See what you've done now Tali.
+~currentSpeaker = webdev
+It's kind of cute.
+~currentSpeaker = snob
+It's not cute. It's dangerous. His head will grow twice as big and then no one will be able to fit in this room.
+~currentSpeaker = webdev
+Alright, I won't make you say anymore nice things to anyone today.
 ->lavender_questions
 ==t_questions_k==
-Kent gets questioned by Tali
+//Kent gets questioned by Tali
+~currentSpeaker = webdev
+So Kent.
+Truth or dare?
+~currentSpeaker = comic
+Uh truth?
+~currentSpeaker = webdev
+You sound unsure.
+What do you like to do in your spare time, other than drawing?
+~currentSpeaker = comic
+Oh wow, that's a good question.
+~currentSpeaker = webdev
+Well, answer it before I give you something worse.
+~currentSpeaker = comic
+Since you have been so nice.
+I go to the gym, but that's kind of boring.
+I met a friend there, we kind of hit it off. She was annoyed that all the guys were hitting on her.
+So I offered to fend them off and pretend to be her boyfriend so they'd leave her alone.
+Anyway, she always said that she wanted to try different sports.
+But she was too afraid because she's like REALLY shy.
+As a hobby she always finds taster sessions of different sports activities we can try together.
+We've tried tennis, golf, and even karate together.
+~currentSpeaker = you
+Do you ever stick to a sport once you try it out?
+~currentSpeaker = comic
+That's not the point.
+We agreed we don't really have the time or focus to dedicate to one thing.
+But we've always loved the idea of sports in general.
+So we just go to these taster sessions and try it out to see if we like it.
+Even if we don't enjoy it it's still fun.
+~currentSpeaker = webdev
+I can see the appeal.
+~currentSpeaker = snob
+That sounds like a waste of time. 
+If you're going to do sports, stick to one and put in the effort to get good at it.
+~currentSpeaker = comic
+That's not the point. We don't want to get good at sports. We already go to the gym to get fit. We just want to try different activities in our spare time for fun.
+~currentSpeaker = snob
+You're right.
+I don't get it.
+~currentSpeaker = webdev
+Would you mind if I tagged along for one session?
+~currentSpeaker = comic
+I could ask her.
+I'm sure she'd be fine with it though.
+Actually I think you two would get along very well. Might be a good idea.
+~currentSpeaker = webdev
+Aww thank you!
 ->kent_questions
 ==t_questions_p==
-Pandora gets questioned by Tali
+//Pandora gets questioned by Tali
+~currentSpeaker = webdev
+Pandora.
+I'm choosing you.
+Truth or dare?
+~currentSpeaker = android
+Truth.
+~currentSpeaker = webdev
+What would be your dream job?
+~currentSpeaker = android
+Working in this bookstore obviously.
+~currentSpeaker = webdev
+I asked for a truth.
+~currentSpeaker = android
+I kind of want to be in a band.
+~currentSpeaker = webdev
+Like a band of criminals?
+~currentSpeaker = android
+Haha. No, a music band.
+Like Cobalt Dragon.
+~currentSpeaker = webdev
+I didn't know you made music.
+~currentSpeaker = android
+I don't.
+But I wish I did.
+I just never had the opportunity to.
+~currentSpeaker = webdev
+You could still do that.
+~currentSpeaker = android
+I don't think so.
+No one wants an inorganic intelligence in their band.
+~currentSpeaker = webdev
+I bet some people would love an IOI in their band.
+You're underselling yourself.
+And you could learn music.
+You have literally forever to do it.
+~currentSpeaker = android
+I'd have to get Ada's approval.
+~currentSpeaker = comic
+Uh fuck her man.
+You do you.
+~currentSpeaker = android
+That's kind of illegal.
+I can't get employment approval without her permission.
+~currentSpeaker = comic
+Oh yeah.
+~currentSpeaker = snob
+I know the number of a good piano teacher.
+~currentSpeaker = android
+Uh thank you.
+I don't know.
+~currentSpeaker = you
+It's something to think about Pan.
+~currentSpeaker = android
+Yeah I guess so.
+~currentSpeaker = you
+If you really want it...maybe I could have a word with Ada when she comes back.
+~currentSpeaker = android
+I wouldn't want to get you in trouble.
+I know you need this job to eat and have shelter.
+~currentSpeaker = you
+It's no big deal.
+~currentSpeaker = webdev
+Wow looks like you might have a music career after all.
 ->pandora_questions
 ==t_questions_c==
-Cas gets questioned by Tali
+//Cas gets questioned by Tali
+~currentSpeaker = webdev
+Cas, truth or dare?
+~currentSpeaker = you
+Dare.
+~currentSpeaker = webdev
+Are you sure?
+~currentSpeaker = you
+I'm sure.
+What's wrong with dare?
+That's the game right?
+~currentSpeaker = webdev
+It's just...never mind.
+Uh I don't know.
+Hold your breath for a minute.
+~currentSpeaker = you
+Oh crap.
+~currentSpeaker = webdev
+What?
+~currentSpeaker = you
+Well, you wouldn't know this but...
+I have a phobia of suffocating.
+~currentSpeaker = webdev
+Shit.
+~currentSpeaker = you
+If I try to hold my breath I might have a panic attack.
+~currentSpeaker = webdev
+I didn't know that. Sorry.
+~currentSpeaker = you
+It's fine.
+~currentSpeaker = webdev
+I don't know...can I dare you to drink this whole beer as fast as possible?
+~currentSpeaker = you
+Not a big beer person, but I can tolerate it.
+~currentSpeaker = snob
+Isn't the whole point of dares to make you uncomfortable?
+You shouldn't be so fussy.
+~currentSpeaker = you
+Well I did say I'd drink the beer.
+~currentSpeaker = comic
+I'll open it for you.
+Here.
+~currentSpeaker = snob
+Drink. Drink. Drink.
+~currentSpeaker = webdev
+Ok Lav, we get it.
+~currentSpeaker = comic
+Damn she's drinking really fast.
+~currentSpeaker = android
+I've never seen someone drink that fast.
+~currentSpeaker = webdev 
+Bet you were very popular at uni.
+~currentSpeaker = comic
+A bit unfair to take the piss while she can't argue with us.
+~currentSpeaker = you
+Finished.
+I was not popular at uni.
+I swear I wasn't a party animal.
+Just an alcoholic.
 ->cas_questions
 
 //Kent questions
 ==k_questions_t==
-Tali gets questioned by Kent
+//Tali gets questioned by Kent
+~currentSpeaker = comic
+Tali darling.
+It's your go.
+~currentSpeaker = webdev
+Can I have truth?
+~currentSpeaker = comic
+What's your favourite ice cream flavour?
+~currentSpeaker = webdev
+Oooh getting to the important stuff.
+I love matcha flavour. 
+~currentSpeaker = comic
+I didn't even know they did that flavour.
+~currentSpeaker = webdev
+Lav and I have a place we love to go, it does speciality ice cream flavours only.
+But good ones.
+~currentSpeaker = comic
+So no chocolate, strawberry, or vanilla?
+~currentSpeaker = webdev
+Oh no, well...
+They do those flavours but it's always special.
+So it ultra dark swiss chocolate mouse flavour with white chocolate sauce.
+Or strawberry meringue and cream flavour.
+Or spiced vanilla latte flavour.
+You get the picture.
+~currentSpeaker = comic
+I'm a simple kind of ice cream guy.
+~currentSpeaker = snob
+Yeah, you're a very simple minded guy.
+You wouldn't be able to appreciate the deep and complex flavours of CREAMICE.
+~currentSpeaker = comic
+That's an interesting name...
+~currentSpeaker = webdev
+Don't overthink it.
+~currentSpeaker = comic
+It's like ice cream but reverse.
+Nothing to think about.
+It's just a little strange.
+~currentSpeaker = webdev
+Well now you know.
+Maybe you could visit some time.
+~currentSpeaker = snob
+Yeah right.
+He wouldn't appreciate the subtle flavours of CREAMICE.
+Plus I always get us a reservation so we can take our time choosing and that costs extra.
+~currentSpeaker = comic
+So I'm too poor to enjoy it. Thanks.
+~currentSpeaker = webdev
+Lav, don't say that.
+~currentSpeaker = comic
+No it's ok. It's nice to know, I don't want to waste my money anyway. 
 ->tali_questions
 ==k_questions_p==
-Pandora gets questioned by Kent
+//Pandora gets questioned by Kent
+~currentSpeaker = comic
+Pandoraaaa
+~currentSpeaker = android
+Kent?
+~currentSpeaker = comic
+Truth or dare?
+~currentSpeaker = android
+Truth I guess.
+~currentSpeaker = comic
+What's it like working with Cas everyday?
+~currentSpeaker = you
+Woah be careful now.
+Are you trying to start a war?
+~currentSpeaker = comic
+No, I just want an insider perspective.
+~currentSpeaker = android
+Well honestly...
+It's great!
+She's my best friend.
+I love when she walks in and I get to watch her work.
+It's so facinating.
+~currentSpeaker = comic
+Uhuh
+~currentSpeaker = android
+She's really good with keeping the books in order.
+Very tidy and neat.
+And she's always checking up on me. So thoughtful.
+~currentSpeaker = comic
+Ok, ok.
+No fights.
+~currentSpeaker = android
+No, never!
+~currentSpeaker = comic
+Would you agree, Cas?
+~currentSpeaker = you
+Hey! This is her turn, not mine.
+~currentSpeaker = comic
+Guessing the feeling isn't mutual then.
+~currentSpeaker = android
+What?!
+~currentSpeaker = you
+Stop it Kent. I know what you're doing.
+I enjoy working with Pandora. Let's leave it there.
+~currentSpeaker = android
+Yes Kent. Stop trying to stir drama.
+Cas might not be a woman of many words. But I know she enjoys being around me.
+Well, if she says she does, it must be true.
+~currentSpeaker = comic
+Sure...
+If you believe it, then I do.
 ->pandora_questions
 ==k_questions_l==
-Lavender gets questioned by Kent
+//Lavender gets questioned by Kent
+~currentSpeaker = comic
+So Lavender.
+~currentSpeaker = snob
+Truth.
+~currentSpeaker = comic
+Ok that was quick.
+What's the weirdest project that you've worked on?
+~currentSpeaker = snob
+I design my own clothing lines.
+But I once had to collaborate with a woman.
+And she had some very strange ideas.
+~currentSpeaker = comic
+Socks and sandles strange?
+~currentSpeaker = snob
+She really liked mesh.
+And she made all her clothes out of mesh.
+But she didn't give the models a slip to wear or even nude coloured underwear.
+~currentSpeaker = comic
+...
+~currentSpeaker = snob
+It was very uncomfortable.
+They were basically naked!
+~currentSpeaker = comic
+The models didn't complain?
+~currentSpeaker = snob
+I asked them and they said they were happy as long as they had a job.
+Poor things.
+~currentSpeaker = comic
+Why did you even work with this client.
+~currentSpeaker = snob
+She was the daughter of one of my dad's friends.
+It was kind of a favour to help her get into the industry.
+She was more of one of those artsy types.
+I just think that fashion should also have some practical value.
+We clashed over that.
+~currentSpeaker = comic
+Is she still in the industry.
+~currentSpeaker = snob
+Kind of, she keeps working on her line of clothing. Her theme seems to be mostly clothes that cover everything other than the parts of the body that should be covered.
+It's novelty stuff.
+~currentSpeaker = comic
+That doesn't sound great.
+~currentSpeaker = snob
+Her art isn't for everyone. I mean it certainly isn't for me.
+I'm sure there's hundreds of more talented people who slip through everyday.
+She just got in because of her connections.
+I almost feel guilty.
+But what can you do?
 ->lavender_questions
 ==k_questions_c==
-Cas gets questioned by Kent
+//Cas gets questioned by Kent
+~currentSpeaker = comic
+Cas. Truth or--
+~currentSpeaker = you
+Dare. Dare.
+~currentSpeaker = comic
+Oh come on.
+I get that you're really secretive.
+But this is kind of unfair.
+~currentSpeaker = you
+Why is it unfair?
+~currentSpeaker = comic
+I want to get to know you.
+And it feels like you're closing yourself off.
+~currentSpeaker = you
+Dare is fun.
+~currentSpeaker = comic
+If you choose truth I'll go easy on you. If you insist on dare I'll choose something like licking the toilet seat.
+~currentSpeaker = snob
+EWWWW
+~currentSpeaker = comic
+Would you like that Cas?
+~currentSpeaker = you
+...I might be able to lick a seat.
+~currentSpeaker = snob
+If you choose licking a toilet I swear next thing you know I will be throwing up in in.
+~currentSpeaker = android
+And I will have to clean that.
+~currentSpeaker = webdev
+And I will have to watch.
+Please pick truth.
+~currentSpeaker = you
+Fine. 
+Only because Tali asked nicely.
+~currentSpeaker = comic
+Did you have any childhood friends?
+~currentSpeaker = you
+I didn't have many friends growing up or much. In fact my closest companion was this lady who lived in the appartment next to us.
+Her husband was long dead, and she didn't have kids.
+~currentSpeaker = comic
+Aww. Did you use to bake cookies together?
+~currentSpeaker = you
+No.
+She taught me how to hack computers.
+~currentSpeaker = comic
+What?!
+~currentSpeaker = you
+Well her and her husband used to work for this tech company and they were ethical hackers. And she used to give computer literacy lessons when she retired.
+But she taught me for free just because she liked me.
+~currentSpeaker = comic
+You didn't have any friends your own age.
+~currentSpeaker = you
+I don't know.
+I had people who I sat an ate with at lunch sure.
+But I didn't really talk to them much.
+They liked kids TV shows, and I was never really a TV person.
+I prefered books and games and stuff like that.
+~currentSpeaker = comic
+You really were destined to work in a bookshop.
+~currentSpeaker = you
+Aye, that is true.
+
 ->cas_questions
 
 
@@ -778,4 +1204,4 @@ Cas gets questioned by Kent
 ~currentSpeaker = you
 I think we can stop now.
 Everyone's been questioned.
-->END
+->start_incident
