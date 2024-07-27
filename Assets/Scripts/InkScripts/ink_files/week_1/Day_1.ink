@@ -5,10 +5,14 @@ EXTERNAL AddCharacter(name,sprite)
 //EXTERNAL PlayEffect(effectName)
 ==day_1==
 ~scene= "ShopFront"
+~newsPicture = "headline14"
+~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
 Monday 5th December 206X
 ~scene= "GenericScene"
+
 <i>I hope you know what you're doing</i>
 ~newsAnnouncement = "Breaking news...Neurological problems caused by 'miracle' drug "
+
 ¬
 ~sfx = "open door"
 ~characters += lavender

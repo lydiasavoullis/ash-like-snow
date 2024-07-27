@@ -23,6 +23,16 @@ public class DialogueController : MonoBehaviour
     Button bookButtonPrefab;
     [SerializeField]
     Button saveSlot;
+    [SerializeField]
+    Image newsPicture;
+    [SerializeField]
+    Image ad1;
+    [SerializeField]
+    Image ad2;
+    [SerializeField]
+    Image ad3;
+    [SerializeField]
+    Image ad4;
     #endregion
     //objects(objects this script interacts with)
     #region Interactable Objects
@@ -30,6 +40,8 @@ public class DialogueController : MonoBehaviour
     GameObject tvScreen;
     [SerializeField]
     TextMeshProUGUI newsText;
+    [SerializeField]
+    TextMeshProUGUI newsCaption;
     [SerializeField]
     TextMeshProUGUI storyText;
     [SerializeField]
@@ -209,6 +221,8 @@ public class DialogueController : MonoBehaviour
                 if (newValue.ToString() != "")
                 {
                     tvScreen.SetActive(true);
+                    newsPicture.sprite = Resources.Load<Sprite>("news/" + GameVars.story.variablesState["newsPicture"].ToString());
+                    newsCaption.text = GameVars.story.variablesState["newsCaption"].ToString();
                 }
                 else {
                     tvScreen.SetActive(false);

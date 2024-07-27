@@ -331,13 +331,32 @@ I’m sorry, I didn’t mean–
 ~currentSpeaker =android
 I know you didn’t. It’s just a touchy topic. Everyone assumes we want to be human, or we want to fully assimilate with the humans. We are fully aware we are not human, and most of us do not dream of becoming one. We have our purpose and we know our place.
 It’s just so strange that everyone thinks that is what we want. 
-~currentSpeaker = you
-I blame Pinocchio personally.
-~currentSpeaker =android
-Hmm, maybe you could tell me that story some time.
-~currentSpeaker = you
-Eh, it’s not really my cup of tea.
+Shall we do inventory?
+->day_8_inventory
 
+==day_8_inventory==
+Remaining funds: {funds}
+*{funds>=200}[Togue special flight attendant uniform issue (£600)]
+~funds -= 600
+~deliveryToday+=1
+~allbooks+=togue_uniform
+->day_8_inventory
+*{funds>=100}[X and A \#235(£100)]
+~funds -= 70
+~deliveryToday+=1
+~allbooks+=x_a_235
+->day_8_inventory
+*{funds>=50}[The Glass Labyrinth (£45)]
+~funds -= 45
+~deliveryToday+=1
+~allbooks+=the_glass_lab
+->day_8_inventory
+*{funds>=10}[The Wizard of Oz (£10)]
+~funds -= 10
+~deliveryToday+=1
+~allbooks+=the_wiz_oz
+->day_8_inventory
+*[finished]
 ->end_day_8
 
 ==end_day_8==

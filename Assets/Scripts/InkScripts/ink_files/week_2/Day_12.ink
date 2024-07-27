@@ -33,8 +33,8 @@ Excuse me?
 Fate. It makes you forget things. Look, you have to stop it.
 ~currentSpeaker=you
 I’ve been sober for 9 months. 
-But…no that can’t be right.
-~currentSpeaker = trader
+But…no that can’t be right
+
 I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. You need to get your shit together.
 I can’t risk telling you anymore.
 You need to figure it out yourself. 
