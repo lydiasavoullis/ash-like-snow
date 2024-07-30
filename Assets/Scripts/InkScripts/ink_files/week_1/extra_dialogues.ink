@@ -60,6 +60,62 @@ Not really. But if it makes you happy.
  ~funds+=800
  ~booksSold+=1
 ->->
+
+==togue_flight_uniform==
+~currentSpeaker = you
+Lavender, I have something for you.
+This is Togue, is has uh something to do with flight attendant uniforms?
+~currentSpeaker = snob
+Oh, nice. I'll buy it from you.
+~currentSpeaker = you
+What is that all about?
+~currentSpeaker = snob
+There was this whole trend a while back. Uniforms came back into fashion.
+Personally I love uniforms.
+~currentSpeaker = you
+Why?
+~currentSpeaker = snob
+They create order, and a sense of purpose.
+~currentSpeaker = you
+You think so?
+~currentSpeaker = snob
+Of couse, you would increase your work output by up to 50% if you wore a uniform.
+~currentSpeaker = you
+I better get on that then.
+ ~funds+=800
+ ~booksSold+=1
+->->
+==togue_pets==
+~currentSpeaker = you
+I've got something for you.
+~currentSpeaker = snob
+This is...pet fashion?!
+~currentSpeaker = you
+Are you a fan of pet fashion.
+~currentSpeaker = snob
+I have a dog and sometimes I make clothes for him.
+~currentSpeaker = you
+...
+~currentSpeaker = snob
+What? You don't like dogs?
+~currentSpeaker = you
+No, that's not true!
+~currentSpeaker = snob
+You're very defensive about it.
+~currentSpeaker = you
+What's his name?
+~currentSpeaker = snob
+Butterscotch.
+~currentSpeaker = you
+Does he like wearing clothes?
+~currentSpeaker = snob
+Oh he loves the attention. He's a big diva.
+He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he always seems to take on the essense of what he's wearing. 
+~currentSpeaker = you
+Right.
+ ~funds+=800
+ ~booksSold+=1
+->->
 ==fantasy_dragon_heart_book==
 ~currentSpeaker = you
 I just ordered this in.
@@ -176,6 +232,26 @@ Maybe.
 ~funds+=65
 ~booksSold+=1
 ->->
+==god_of_the_forest==
+~currentSpeaker = you
+I got this book you might like.
+~currentSpeaker = webdev
+Let's see.
+The God of the Forest.
+This is an eldrich horror fantasy story.
+I don't really understand it myself.
+They say it's best to not know too much going in.
+~currentSpeaker = you
+Who's the god?
+~currentSpeaker = webdev
+I assume the god is refering to the eldrich being.
+~currentSpeaker = you
+And they live in a forest.
+~currentSpeaker = webdev
+One can also assume that.
+~currentSpeaker = you
+I have learnt much today.
+->->
 ==hypnos==
 ~currentSpeaker = you
 Wait a minute, just before you go.
@@ -212,4 +288,28 @@ Hmph.
 ~booksSold+=1
 ->->
 
-
+==lady_darkness==
+~currentSpeaker = you
+I have something you might be interested in.
+~currentSpeaker = comic
+What is this?
+Lady of Darkness?
+Ah I know this, sort of.
+Well I'll take it. 
+~currentSpeaker = you
+What's it about?
+~currentSpeaker = comic
+It's a superhero one, but the main character can sort of create shadows.
+Like remove the light from her surroundings.
+~currentSpeaker = you
+How does that help her fight criminals?
+~currentSpeaker = comic
+It blinds them, and sometimes creates illusions.
+~currentSpeaker = you
+But how does she see.
+~currentSpeaker = comic
+She can see in the dark.
+Just read the damn comic.
+~currentSpeaker = you
+Alright. Alright.
+->->

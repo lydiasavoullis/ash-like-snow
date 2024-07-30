@@ -39,13 +39,14 @@ I don’t know, we’ve never seen him before.
 ~currentSpeaker= snob
 He was cute. 
 Couldn’t see his face.
-But I love a well dressed man.
+But his outfit was so cute.
 When I tried to speak to him he told me to go to hell.
 I think I might die.
 ~currentSpeaker= android 
 Is that a good thing?
+{allbooks ? togue_uniform: -> togue_pets->} 
 ~currentSpeaker = you
-Why was he dressed like that anyway?
+Why was that strange man dressed like that anyway?
 ~currentSpeaker=snob
 There’s some kind of convention for fans of a certain Victorian RPG detective mystery game. 
 Never got into it myself, but it looks like a lot of fun.
@@ -93,6 +94,7 @@ Long time, no see.
 I see you already have company.
 ~currentSpeaker=you
 She’s waiting for Tali, let her be.
+{allbooks ? lady_darkness_373: -> lady_darkness->} 
 ~currentSpeaker=comic
 There was a threat on Benedict Blue’s life this morning. 
 ~currentSpeaker = you
@@ -157,6 +159,10 @@ How are you?
 Hey Kent!
 ~currentSpeaker=comic
 Hey girl!
+~currentSpeaker=you
+It's good to see you {webdev}
+{allbooks ? forest_god: -> god_of_the_forest->} 
+~currentSpeaker=comic
 How’s the boss treating you?
 ~currentSpeaker=webdev
 Things are better.
@@ -179,7 +185,7 @@ You’re going to stand up for your fellow worker and make sure your employer do
 It’s just that Lavender fought really hard to make her dad ask my boss to get off my case.
 And now, rocking the boat so soon after that. It feels wrong.
 ~currentSpeaker=comic
-I get it. But what’s to say he won’t do it again. And you can’t rely on Lavender’s support forever. What about your fellow workers? Don’t they also have a right to feeling comfortable in the workplace.
+I get it. But what’s to say he won’t do it again. And you can’t rely on Lavender’s support forever. What about your colleague? Don’t they also have a right to feeling comfortable in the workplace.
 ~currentSpeaker=webdev
 Those are all really good points.
 I’ve kind of been thinking about this lately to be honest.
