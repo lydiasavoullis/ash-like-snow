@@ -123,6 +123,7 @@ No, you know what, I’ll accept the thanks.
 Hi!
 ~currentSpeaker=you
 Well, it’s you again.
+{allbooks ? cybershake: -> cybershake_comic->} 
 ~currentSpeaker=comic
 Sick of me already?
 ~currentSpeaker=you
@@ -171,6 +172,10 @@ What’s going on?
 Yeah, what’s up?
 ~currentSpeaker=android
 Ah wonderful we’re all here
+~currentSpeaker=you
+{allbooks ? togue_ppe: -> togue_ppe_special->} 
+{allbooks ? heart_lies: -> where_the_heart_lies->} 
+{allbooks ? queendom_heretic: -> queen_h->} 
 ~currentSpeaker=comic
 You’ve made up then?
 ~currentSpeaker=snob

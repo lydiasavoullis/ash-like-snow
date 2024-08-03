@@ -341,6 +341,7 @@ Remaining funds: {funds}
 *{funds>=10}[Howl's Moving Castle (£10)]
 ~funds -= 10
 ~deliveryToday+=1
+~strangerbooks+=castle
 ~allbooks+=Howls_Moving_Castle
 ->day_3_inventory
 +[finished]

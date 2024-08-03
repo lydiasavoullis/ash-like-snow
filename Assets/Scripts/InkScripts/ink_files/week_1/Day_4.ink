@@ -390,6 +390,7 @@ Remaining funds: {funds}
 ~funds -= 10
 ~deliveryToday+=1
 ~allbooks+=t_lion_witch_wardrobe
+~strangerbooks+=wardrobe
 ->day_4_inventory
 +[finished]
 ->end_day_4

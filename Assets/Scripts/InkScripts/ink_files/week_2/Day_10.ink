@@ -39,6 +39,8 @@ Thank you.
 I just want a fun magazine to take my mind off this.
 ~currentSpeaker=you
 I have some that might interest you.
+{allbooks ? togue_uniform: -> togue_flight_uniform->} 
+{allbooks ? togue_acid_rain: -> togue_acid_rain->} 
 ~currentSpeaker=snob
 Oh.
 Good.

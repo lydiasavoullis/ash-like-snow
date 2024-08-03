@@ -13,6 +13,9 @@ Well, I –
 ~characters+=kent
 ~currentSpeaker=comic
 Hey girls.
+~currentSpeaker=you
+{allbooks ? mr_therm: -> mr_thermistor->} 
+{allbooks ? bioworld: -> bworld->} 
 What’s going on?
 ~currentSpeaker=you
 Long time no see
@@ -184,6 +187,8 @@ Sorry. It’s just the truth.
 Oh hey {snob}
 ~currentSpeaker=snob
 Hey.
+~currentSpeaker=you
+{allbooks ? togue_gear: -> togue_protective_gear->} 
 I guess you probably want a personal statement to put in your stupid newspaper.
 ~currentSpeaker=comic
 I’m off work at the moment, Lav.

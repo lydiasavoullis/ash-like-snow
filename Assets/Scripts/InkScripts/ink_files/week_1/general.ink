@@ -105,9 +105,14 @@ Well, you'll enjoy it then
 ->->
 ==read_howls_moving_castle==
 ~currentSpeaker = you 
-I bought you something
+I bought you something.
+It's called Howl's Moving Castle.
+~currentSpeaker = android
+How can a castle move?
+~currentSpeaker = you
+Magic. 
 ~currentSpeaker = android  
-Nice! Please read to me 
+Nice! Please read to me. 
 ~currentSpeaker = you 
 OK
 ~currentSpeaker = ""
@@ -131,4 +136,150 @@ To fight with.
 I can't wait to finish this tonight.
 ~allbooks-= Howls_Moving_Castle
 ->->
+==read_lion_witch_wardrobe==
+~currentSpeaker = you 
+Pandora I've got something for you.
+It's a book by C.S. Lewis
+~currentSpeaker = android
+Is that a name I should know.
+~currentSpeaker = you 
+I would hope so.
+Well now you know.
 
+\*You read to Pandora\*
+\*Briefly you think you feel content. Almost.\*
+~currentSpeaker = android
+What's Turkish delight?
+~currentSpeaker = you
+It's a kind of sweet.
+~currentSpeaker = android
+Is it very tasty?
+~currentSpeaker = you
+Yes, it's quite nice.
+~currentSpeaker = android
+I wish I could taste it!
+~currentSpeaker = you
+You're not missing out on much.
+~currentSpeaker = android
+But you just said it was good.
+~currentSpeaker = you
+Well, it's full of sugar, not very healthy. 
+It's more like momentary pleasure, that is immediately suceeded by regret.
+~currentSpeaker = android
+All pleasure is momentary though.
+~currentSpeaker = you
+Yes, but some types of pleasure are more satisfying and don't have such negative baggage as eating unhealthy foods do.
+~currentSpeaker = android
+That's a very interesting way of putting it.
+I'm looking forward to reading the rest of it!
+~allbooks-=t_lion_witch_wardrobe
+->->
+==wizard_of_oz==
+~currentSpeaker = you
+I've got another book for you.
+~currentSpeaker = android
+Great! I'm looking forward to this.
+~currentSpeaker = you
+\*You read to Pandora\*
+\*You feel your heart beat slow for a couple of minutes.\*
+~currentSpeaker = android
+What's your favourite colour?
+~currentSpeaker = you
+Eh? That's a bit out of the blue.
+~currentSpeaker = android
+Well, this book seems to be full of different colours with different symbolism, it was just making me wonder what kind of colours you like.
+~currentSpeaker = you
+I don't know. 
+I like silver.
+~currentSpeaker = android
+Silver!
+~currentSpeaker = you
+Does that say something about me?
+~currentSpeaker = android
+No.
+I don't know.
+Silver why silver.
+~currentSpeaker = you
+It's like the colour of metal and the colour of the sky on a cloudy day and the colour of the stars. 
+~currentSpeaker = android
+Hmm.
+I like blue.
+~currentSpeaker = you
+Why blue?
+~currentSpeaker = android
+It's a calming colour, it decreases anxiety and stress.
+~currentSpeaker = you
+Is that something you have a lot of.
+~currentSpeaker = android
+No, but it's helpful to know, for humans.
+~currentSpeaker = you
+You can wave blue flags around to calm us down.
+~currentSpeaker = android
+Ha! They'd probably think I was protesting against something.
+~currentSpeaker = you
+Just say you're protesting against bad mental health.
+~currentSpeaker = android
+I'm looking forward to finishing this book.
+~allbooks-=the_wiz_oz
+->->
+==t_hobbit==
+~currentSpeaker = you
+I have another book.
+~currentSpeaker = android
+We are in a bookshop.
+~currentSpeaker = you
+Yes, but this one is for you.
+It's called The Hobbit. 
+It's by a very unimportant author.
+~currentSpeaker = android
+I love the name.
+Hobbit.
+~currentSpeaker = you
+It is a nice word.
+~currentSpeaker = android
+It sounds like a combination of hobble and rabbit.
+~currentSpeaker = you
+Maybe that's where it came from.
+\*You read to Pandora\*
+\*Everything feels so much quieter now.\*
+~currentSpeaker = android
+That was so interesting.
+~currentSpeaker = you
+Really?
+~currentSpeaker = android
+I can't wait to read about the dragon. I love dragons.
+~currentSpeaker = you
+They are pretty cool.
+Isn't Cobalt Dragons like your favourite band?
+~currentSpeaker = android
+That is true, but unrelated to my love of dragons.
+~currentSpeaker = you
+Why do you love dragons?
+~currentSpeaker = android
+They're like dinosaurs but sexy.
+~currentSpeaker = you
+...what?
+~currentSpeaker = android
+Dinosaurs are ok, but they're for kids and kind of dorky.
+Dragons are like cool dinosaurs.
+They can breathe fire and have massive mounds of gold and are super clever.
+And they have much better designs.
+~currentSpeaker = you
+I mean, dinosaurs weren't exactly designed. They evolved.
+~currentSpeaker = android
+That's no excuse!
+Lots of cool looking things evolved.
+~currentSpeaker = you
+You don't think dinosaurs look cool?
+~currentSpeaker = android
+Ew no. T-rexes have those tiny arms and giant legs. They're just like big creepy chickens.
+Whereas dragons look like big badass lizards.
+~currentSpeaker = you
+Imaginary stuff is just cooler I guess.
+~currentSpeaker = android
+Some imaginary things are cooler.
+->->
+==matilda_rd==
+->->
+==through_the_looking_glass==
+->->

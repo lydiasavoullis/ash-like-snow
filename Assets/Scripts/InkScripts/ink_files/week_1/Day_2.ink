@@ -373,6 +373,7 @@ Remaining funds: {funds}
 ~funds -= 10
 ~deliveryToday+=1
 ~allbooks+=Alice_in_Wonderland
+~strangerbooks+=rabbithole
 ->day_2_inventory
 +[finished]
 ->end_day_2

@@ -61,6 +61,8 @@ Ok, if you change your mind. I’m always here to help.
 ~characters+=kent
 ~currentSpeaker=comic
 Hey hey
+{allbooks ? x_a_235: -> X_and_A->} 
+~currentSpeaker=comic
 Look, things are not looking good.
 I was just wondering if you’ve seen Lavender?
 ~currentSpeaker=you
@@ -83,6 +85,8 @@ Hey guys.
 Uh hi Tali.
 ~currentSpeaker=comic
 Hi there.
+~currentSpeaker=you
+{allbooks ? the_glass_lab: -> the_glass_labyrinth->} 
 …
 ~currentSpeaker=you
 …
