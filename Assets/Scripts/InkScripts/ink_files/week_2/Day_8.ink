@@ -366,4 +366,5 @@ Remaining funds: {funds}
 ->end_day_8
 
 ==end_day_8==
+~day+=1
 ->day_9

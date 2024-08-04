@@ -918,5 +918,5 @@ Maybe we could just browse?
 I could show you some stuff I think you would like.
 ~currentSpeaker=android
 I think I would like that a lot.
-
+~day+=1
 ->Epilogue

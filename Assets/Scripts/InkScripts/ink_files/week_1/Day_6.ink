@@ -523,5 +523,6 @@ Please don’t fret about this Pandora, just go to bed.
 Yes: Go to the top, yes.
 ->end_day_6
 ==end_day_6==
+~day+=1
 *[Go home]
 ->day_7

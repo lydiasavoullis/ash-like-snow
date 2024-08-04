@@ -1,9 +1,43 @@
 
 ==read_check==
-{allbooks ? myths_legends: ->read_greek_myths}
-{allbooks ? Alice_in_Wonderland: ->read_alice_in_wonderland}
-{allbooks ? Howls_Moving_Castle: ->read_howls_moving_castle}
+//can read on 8 days
+//can't read on first day
+//Pandora will tell you about how she loves childrens stories
+//If you read to her the previous day but have no more books for her, you can chat
+{allbooks ? myths_legends} + Read Greek myths
+ -> read_greek_myths
+{allbooks ? Alice_in_Wonderland} + Read Alice in Wonderland
+->read_alice_in_wonderland
+{allbooks ? Howls_Moving_Castle} + Read Howl's Moving Castle
+->read_howls_moving_castle
+{allbooks ? t_lion_witch_wardrobe} + Read The Lion the Witch and the Wardrobe
+->read_lion_witch_wardrobe
+{allbooks ? the_wiz_oz} + Read The Wizard of Oz
+->wizard_of_oz
+{allbooks ? the_hobbit} + Read The Hobbit
+->t_hobbit
 ->->
+==buy_childrens_books==
++{funds>=20}Buy Alice in Wonderland [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=Alice_in_Wonderland
+->buy_childrens_books
++Greek Myths [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=myths_legends
+->buy_childrens_books
++Buy The Lion the Witch and the Wardrobe [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=t_lion_witch_wardrobe
+->buy_childrens_books
++Buy Howl's Moving Castle [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=Howls_Moving_Castle
+->buy_childrens_books
 
 ==tea_or_coffee==
 ~currentSpeaker = android  
@@ -168,7 +202,7 @@ It's more like momentary pleasure, that is immediately suceeded by regret.
 ~currentSpeaker = android
 All pleasure is momentary though.
 ~currentSpeaker = you
-Yes, but some types of pleasure are more satisfying and don't have such negative baggage as eating unhealthy foods do.
+Yes, but some types of pleasure are more satisfying and don't come with negative consequences.
 ~currentSpeaker = android
 That's a very interesting way of putting it.
 I'm looking forward to reading the rest of it!
@@ -250,7 +284,7 @@ Really?
 I can't wait to read about the dragon. I love dragons.
 ~currentSpeaker = you
 They are pretty cool.
-Isn't Cobalt Dragons like your favourite band?
+Isn't Cobalt Dragons your favourite band?
 ~currentSpeaker = android
 That is true, but unrelated to my love of dragons.
 ~currentSpeaker = you
@@ -272,7 +306,7 @@ Lots of cool looking things evolved.
 ~currentSpeaker = you
 You don't think dinosaurs look cool?
 ~currentSpeaker = android
-Ew no. T-rexes have those tiny arms and giant legs. They're just like big creepy chickens.
+No. T-rexes have those tiny arms and giant legs. They're just like big creepy chickens.
 Whereas dragons look like big badass lizards.
 ~currentSpeaker = you
 Imaginary stuff is just cooler I guess.
@@ -280,6 +314,8 @@ Imaginary stuff is just cooler I guess.
 Some imaginary things are cooler.
 ->->
 ==matilda_rd==
+~currentSpeaker = you
+
 ->->
 ==through_the_looking_glass==
 ->->

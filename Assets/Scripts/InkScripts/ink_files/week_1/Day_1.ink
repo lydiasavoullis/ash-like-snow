@@ -512,6 +512,7 @@ Remaining funds: {funds}
 
 End day
 ==end_day1==
+~day+=1
 *[Go home]
 ->day_2
 

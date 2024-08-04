@@ -540,4 +540,5 @@ Yes, he sneaks into my bed when you’re asleep.
 Obviously, there’s something he finds lacking in your relationship.
 ~currentSpeaker=you
 Please, for the love of god shut up.
+~day+=1
 ->day_13

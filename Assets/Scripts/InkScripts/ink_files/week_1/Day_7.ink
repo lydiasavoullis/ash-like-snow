@@ -111,6 +111,7 @@ Hey Pan.
  Just listen to this song.
 ->end_day_7
 ==end_day_7==
+~day+=1
 *[Go home]
 
 ->DONE

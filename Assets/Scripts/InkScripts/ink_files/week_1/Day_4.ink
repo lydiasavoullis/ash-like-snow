@@ -399,5 +399,6 @@ Remaining funds: {funds}
 ==go_to_day_5==
 ~currentSpeaker = you 
 See you tomorrow, bye!
+~day+=1
 +[Go home]
 ->day_5
