@@ -519,28 +519,7 @@ You will.
 I promise.
 ->day_11_inventory
 ==day_11_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue PPE special issue (£600)]
-~funds -= 600
-~deliveryToday+=1
-~allbooks+=togue_ppe
-->day_11_inventory
-*{funds>=100}[Cybershake \#235(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=cybershake
-->day_11_inventory
-*{funds>=50}[Queendom Heretic (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=queendom_heretic
-->day_11_inventory
-*{funds>=10 } {allbooks ? Alice_in_Wonderland}[Alice Through the Looking-Glass (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=alice_looking_glass
-->day_11_inventory
-*[finished]
+->goto_shop
 ->end_of_day_11
 
 ==end_of_day_11==

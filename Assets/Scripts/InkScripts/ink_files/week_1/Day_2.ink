@@ -353,29 +353,7 @@ I know.
 OK let’s do the orders for today.
 ->day_2_inventory
 ==day_2_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue Spring issue 394(£200]
-~funds -= 200
-~deliveryToday+=1
-~allbooks+=togue_394
-->day_2_inventory
-*{funds>=100}[The Sentinel \#105(£70)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=sentinel_105
-->day_2_inventory
-*{funds>=50}[The Betrayal of the Dragon's Heart (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=fantasy_dragon_heart
-->day_2_inventory
-*{funds>=10}[Alice in Wonderland (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=Alice_in_Wonderland
-~strangerbooks+=rabbithole
-->day_2_inventory
-+[finished]
+->goto_shop
 ->end_day_2
 
 ==end_day_2==

@@ -228,28 +228,7 @@ I’ll join you. Bye guys.
 ->day_9_inventory
 
 ==day_9_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue acid rain proof chic (£600)]
-~funds -= 600
-~deliveryToday+=1
-~allbooks+=togue_rain_proof
-->day_9_inventory
-*{funds>=100}[Mr. Thermistor \#95(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=mr_therm
-->day_9_inventory
-*{funds>=50}[The Ring of Thorns(£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=ring_thorns
-->day_9_inventory
-*{funds>=10}[The Hobbit (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=the_hobbit
-->day_9_inventory
-*[finished]
+->goto_shop
 ->end_day_9
 ==end_day_9==
 ~day+=1

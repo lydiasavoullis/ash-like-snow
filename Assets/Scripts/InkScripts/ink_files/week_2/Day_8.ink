@@ -341,28 +341,7 @@ Shall we do inventory?
 ->day_8_inventory
 
 ==day_8_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue special flight attendant uniform issue (£600)]
-~funds -= 600
-~deliveryToday+=1
-~allbooks+=togue_uniform
-->day_8_inventory
-*{funds>=100}[X and A \#235(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=x_a_235
-->day_8_inventory
-*{funds>=50}[The Glass Labyrinth (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=the_glass_lab
-->day_8_inventory
-*{funds>=10}[The Wizard of Oz (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=the_wiz_oz
-->day_8_inventory
-*[finished]
+->goto_shop
 ->end_day_8
 
 ==end_day_8==

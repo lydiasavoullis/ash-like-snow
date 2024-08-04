@@ -480,34 +480,8 @@ I like being an assistant
 Let’s do the stock now
 ->day_1_inventory
 ==day_1_inventory==
-~button="book"
-Remaining funds: {funds}
-*{funds>=200}[Togue Autumn issue 222(£200]
-~funds -= 200
-~deliveryToday+=1
-~allbooks+=togue_222
-->day_1_inventory
-*{funds>=100}[Zebra man \#89(£100)]
-~funds -= 100
-~deliveryToday+=1
-~allbooks+=zebraman_89
-->day_1_inventory
-*{funds>=80}[Giraffe woman \#1(£80)]
-~funds -= 80
-~deliveryToday+=1
-~allbooks+=giraffe_1
-->day_1_inventory
-*{funds>=50}[The King’s Crown: The War of the Seven Swords: Book 7 (£50)]
-~funds -= 50
-~deliveryToday+=1
-~allbooks+=fantasy_7
-->day_1_inventory
-*{funds>=10}[Greek Myths and Legends for children (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=myths_legends
-->day_1_inventory
-*[finished]
+
+->goto_shop
 ->end_day1
 
 End day

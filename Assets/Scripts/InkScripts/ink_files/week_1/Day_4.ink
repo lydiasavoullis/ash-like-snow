@@ -370,29 +370,7 @@ So why are you talking about me behind my back?
  Let’s do the inventory. I’m so excited.
 ->day_4_inventory
 ==day_4_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue SPECIAL issue 666(£400)]
-~funds -= 400
-~deliveryToday+=1
-~allbooks+=togue_666
-->day_4_inventory
-*{funds>=100}[Hypnos \#55(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=hypnos_55
-->day_4_inventory
-*{funds>=50}[The Lord of Dusk (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=lord_dusk
-->day_4_inventory
-*{funds>=10}[The Lion the Witch and the Wardrobe (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=t_lion_witch_wardrobe
-~strangerbooks+=wardrobe
-->day_4_inventory
-+[finished]
+->goto_shop
 ->end_day_4
 ==end_day_4==
 ->read_check->go_to_day_5

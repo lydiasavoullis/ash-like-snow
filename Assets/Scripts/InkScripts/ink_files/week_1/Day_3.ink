@@ -322,29 +322,7 @@ Ugh goodbye
  ~characters += pandora
 ->day_3_inventory
 ==day_3_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue Winter issue 1076(£200]
-~funds -= 250
-~deliveryToday+=1
-~allbooks+=togue_1076
-->day_3_inventory
-*{funds>=100}[Wildfyre \#678(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=wildfyre_678
-->day_3_inventory
-*{funds>=50}[The Black Goat (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=black_goat
-->day_3_inventory
-*{funds>=10}[Howl's Moving Castle (£10)]
-~funds -= 10
-~deliveryToday+=1
-~strangerbooks+=castle
-~allbooks+=Howls_Moving_Castle
-->day_3_inventory
-+[finished]
+->goto_shop
 ->end_day_3
 ==end_day_3==
 ->read_check->go_to_day_4

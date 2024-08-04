@@ -290,28 +290,7 @@ Will do.
 ~characters-=tali
 ->day_10_inventory
 ==day_10_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue protective gear issue 331 (£600)]
-~funds -= 600
-~deliveryToday+=1
-~allbooks+=togue_gear
-->day_10_inventory
-*{funds>=100}[Bioworld \#111(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=bioworld
-->day_10_inventory
-*{funds>=50}[Where the Heart Lies (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=heart_lies
-->day_10_inventory
-*{funds>=10}[Matilda (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=matilda
-->day_10_inventory
-*[finished]
+->goto_shop
 ->end_of_day_10
 
 ==end_of_day_10==

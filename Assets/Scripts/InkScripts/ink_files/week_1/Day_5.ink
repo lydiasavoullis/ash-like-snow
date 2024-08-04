@@ -389,28 +389,7 @@ Pandora enters
  Let’s do inventory.
 ->day_5_inventory
 ==day_5_inventory==
-Remaining funds: {funds}
-*{funds>=200}[Togue pet accessories issue 360(£600)]
-~funds -= 600
-~deliveryToday+=1
-~allbooks+=togue_360
-->day_5_inventory
-*{funds>=100}[Lady of Darkness \#373(£100)]
-~funds -= 70
-~deliveryToday+=1
-~allbooks+=lady_darkness_373
-->day_5_inventory
-*{funds>=50}[The God of the Forest (£45)]
-~funds -= 45
-~deliveryToday+=1
-~allbooks+=forest_god
-->day_5_inventory
-*{funds>=10}[The Secret Garden (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=t_secret_garden
-->day_5_inventory
-*[finished]
+->goto_shop
 ->end_day_5
 ==end_day_5==
 ->read_check->go_to_day_6
