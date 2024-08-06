@@ -3,7 +3,6 @@
 //can read on 8 days
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories
-//If you read to her the previous day but have no more books for her, you can chat
 {allbooks ? myths_legends} + Read Greek myths
  -> read_greek_myths
 {allbooks ? Alice_in_Wonderland} + Read Alice in Wonderland
@@ -13,32 +12,17 @@
 {allbooks ? t_lion_witch_wardrobe} + Read The Lion the Witch and the Wardrobe
 ->read_lion_witch_wardrobe
 {allbooks ? the_wiz_oz} + Read The Wizard of Oz
-->wizard_of_oz
+->read_the_wizard_of_oz
 {allbooks ? the_hobbit} + Read The Hobbit
-->t_hobbit
+->read_the_hobbit
+{allbooks ? t_secret_garden} + Read The Secret Garden
+->read_the_secret_garden
+{allbooks ? alice_looking_glass} + Read Alice Through the Looking-Glass
+->read_through_the_looking_glass
 ->->
-==buy_childrens_books==
-+{funds>=20}Buy Alice in Wonderland [£20]
-~funds -= 20
-~deliveryToday+=1
-~allbooks+=Alice_in_Wonderland
-->buy_childrens_books
-+Greek Myths [£20]
-~funds -= 20
-~deliveryToday+=1
-~allbooks+=myths_legends
-->buy_childrens_books
-+Buy The Lion the Witch and the Wardrobe [£20]
-~funds -= 20
-~deliveryToday+=1
-~allbooks+=t_lion_witch_wardrobe
-->buy_childrens_books
-+Buy Howl's Moving Castle [£20]
-~funds -= 20
-~deliveryToday+=1
-~allbooks+=Howls_Moving_Castle
-->buy_childrens_books
-
+{allbooks ? matilda} + Read Matilda
+->read_matilda
+->->
 ==tea_or_coffee==
 ~currentSpeaker = android  
 Tea or coffee?
@@ -208,7 +192,7 @@ That's a very interesting way of putting it.
 I'm looking forward to reading the rest of it!
 ~allbooks-=t_lion_witch_wardrobe
 ->->
-==wizard_of_oz==
+==read_the_wizard_of_oz==
 ~currentSpeaker = you
 I've got another book for you.
 ~currentSpeaker = android
@@ -256,7 +240,7 @@ Just say you're protesting against bad mental health.
 I'm looking forward to finishing this book.
 ~allbooks-=the_wiz_oz
 ->->
-==t_hobbit==
+==read_the_hobbit==
 ~currentSpeaker = you
 I have another book.
 ~currentSpeaker = android
@@ -313,9 +297,11 @@ Imaginary stuff is just cooler I guess.
 ~currentSpeaker = android
 Some imaginary things are cooler.
 ->->
-==matilda_rd==
+==read_matilda==
 ~currentSpeaker = you
 
 ->->
-==through_the_looking_glass==
+==read_through_the_looking_glass==
+->->
+==read_the_secret_garden==
 ->->

@@ -371,9 +371,10 @@ So why are you talking about me behind my back?
 ->day_4_inventory
 ==day_4_inventory==
 ->goto_shop
+->read_check
 ->end_day_4
 ==end_day_4==
-->read_check->go_to_day_5
+->go_to_day_5
 ==go_to_day_5==
 ~currentSpeaker = you 
 See you tomorrow, bye!

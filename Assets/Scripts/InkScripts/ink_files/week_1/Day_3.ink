@@ -323,9 +323,10 @@ Ugh goodbye
 ->day_3_inventory
 ==day_3_inventory==
 ->goto_shop
+->read_check
 ->end_day_3
 ==end_day_3==
-->read_check->go_to_day_4
+->go_to_day_4
 ==go_to_day_4==
 ~currentSpeaker = you 
 See you tomorrow, bye!

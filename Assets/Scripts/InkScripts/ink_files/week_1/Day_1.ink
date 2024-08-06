@@ -480,13 +480,11 @@ I like being an assistant
 Let’s do the stock now
 ->day_1_inventory
 ==day_1_inventory==
-
 ->goto_shop
+->read_check
 ->end_day1
-
 End day
 ==end_day1==
 ~day+=1
 *[Go home]
 ->day_2
-

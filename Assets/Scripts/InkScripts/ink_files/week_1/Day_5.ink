@@ -390,9 +390,10 @@ Pandora enters
 ->day_5_inventory
 ==day_5_inventory==
 ->goto_shop
+->read_check
 ->end_day_5
 ==end_day_5==
-->read_check->go_to_day_6
+->go_to_day_6
 ==go_to_day_6==
 ~currentSpeaker = you 
 See you tomorrow, bye!

@@ -229,6 +229,7 @@ I’ll join you. Bye guys.
 
 ==day_9_inventory==
 ->goto_shop
+->read_check
 ->end_day_9
 ==end_day_9==
 ~day+=1

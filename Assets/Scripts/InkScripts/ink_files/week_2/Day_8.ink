@@ -342,6 +342,7 @@ Shall we do inventory?
 
 ==day_8_inventory==
 ->goto_shop
+->read_check
 ->end_day_8
 
 ==end_day_8==

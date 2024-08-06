@@ -2,7 +2,7 @@
 ~button="book"
 Remaining funds: {funds}
 + Go to children's fiction
-->childrens_books
+->buy_childrens_books
 
 *{day==1}{funds>=200}[Togue Autumn issue 222(£200]
 ~funds -= 200
@@ -24,11 +24,6 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=fantasy_7
 ->goto_shop
-*{day==1}{funds>=10}[Greek Myths and Legends for children (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=myths_legends
-->goto_shop
 *{day==2}{funds>=200}[Togue Spring issue 394(£200)]
 ~funds -= 200
 ~deliveryToday+=1
@@ -43,12 +38,6 @@ Remaining funds: {funds}
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=fantasy_dragon_heart
-->goto_shop
-*{day==2}{funds>=10}[Alice in Wonderland (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=Alice_in_Wonderland
-~strangerbooks+=rabbithole
 ->goto_shop
 Remaining funds: {funds}
 *{day==3}{funds>=200}[Togue Winter issue 1076(£200]
@@ -66,12 +55,6 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=black_goat
 ->goto_shop
-*{day==3}{funds>=10}[Howl's Moving Castle (£10)]
-~funds -= 10
-~deliveryToday+=1
-~strangerbooks+=castle
-~allbooks+=Howls_Moving_Castle
-->goto_shop
 *{day==4}{funds>=200}[Togue SPECIAL issue 666(£400)]
 ~funds -= 400
 ~deliveryToday+=1
@@ -86,12 +69,6 @@ Remaining funds: {funds}
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=lord_dusk
-->goto_shop
-*{day==4}{funds>=10}[The Lion the Witch and the Wardrobe (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=t_lion_witch_wardrobe
-~strangerbooks+=wardrobe
 ->goto_shop
 *{day==5}{funds>=200}[Togue pet accessories issue 360(£600)]
 ~funds -= 600
@@ -108,10 +85,6 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=forest_god
 ->goto_shop
-*{day==5}{funds>=10}[The Secret Garden (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=t_secret_garden
 ->goto_shop
 *{day==8}{funds>=200}[Togue special flight attendant uniform issue (£600)]
 ~funds -= 600
@@ -128,11 +101,6 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=the_glass_lab
 ->goto_shop
-*{day==8}{funds>=10}[The Wizard of Oz (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=the_wiz_oz
-->goto_shop
 *{day==9}{funds>=200}[Togue acid rain proof chic (£600)]
 ~funds -= 600
 ~deliveryToday+=1
@@ -148,11 +116,6 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=ring_thorns
 ->goto_shop
-*{day==9}{funds>=10}[The Hobbit (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=the_hobbit
-->goto_shop
 *{day==10}{funds>=200}[Togue protective gear issue 331 (£600)]
 ~funds -= 600
 ~deliveryToday+=1
@@ -167,11 +130,6 @@ Remaining funds: {funds}
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=heart_lies
-->goto_shop
-*{day==10}{funds>=10}[Matilda (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=matilda
 ->goto_shop
 Remaining funds: {funds}
 *{day==11}{funds>=200}[Togue PPE special issue (£600)]
@@ -189,13 +147,58 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=queendom_heretic
 ->goto_shop
-*{day==11}{funds>=10} {allbooks ? Alice_in_Wonderland}[Alice Through the Looking-Glass (£10)]
-~funds -= 10
-~deliveryToday+=1
-~allbooks+=alice_looking_glass
-->goto_shop
 +Finish shopping
 ->->
-==childrens_books==
+==buy_childrens_books==
+*{day<=1}Greek Myths and Legends [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=myths_legends
+->buy_childrens_books
+*{day<=2}{funds>=20}Buy Alice in Wonderland [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=Alice_in_Wonderland
+->buy_childrens_books
+*{day<=3}Buy The Lion the Witch and the Wardrobe [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=t_lion_witch_wardrobe
+->buy_childrens_books
+*{day<=4}Buy Howl's Moving Castle [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=Howls_Moving_Castle
+->buy_childrens_books
+*{day<=5}Buy The Wizard of Oz [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=the_wiz_oz
+->buy_childrens_books
+*{day<=8}Buy The Secret Garden [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=t_secret_garden
+->buy_childrens_books
+*{day<=9}Buy The Hobbit [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=the_hobbit
+->buy_childrens_books
+*{day<=10}Buy Matilda [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=matilda
+->buy_childrens_books
+*{day<=11}Buy Matilda [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=matilda
+->buy_childrens_books
+*{day<=11}Buy Alice Through the Looking-Glass [£20]
+~funds -= 20
+~deliveryToday+=1
+~allbooks+=alice_looking_glass
+->buy_childrens_books
 +Back to main shop
 ->goto_shop

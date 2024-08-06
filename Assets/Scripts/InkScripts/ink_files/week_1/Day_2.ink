@@ -354,10 +354,11 @@ OK let’s do the orders for today.
 ->day_2_inventory
 ==day_2_inventory==
 ->goto_shop
+->read_check
 ->end_day_2
 
 ==end_day_2==
-->read_check->go_to_day_3
+->go_to_day_3
 ==go_to_day_3==
 ~currentSpeaker = you 
 See you tomorrow, bye!
