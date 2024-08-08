@@ -3,26 +3,25 @@
 //can read on 8 days
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories
-{allbooks ? myths_legends} + Read Greek myths
++{allbooks ? myths_legends}[Read Greek myths]
  -> read_greek_myths
-{allbooks ? Alice_in_Wonderland} + Read Alice in Wonderland
++ {allbooks ? Alice_in_Wonderland} [Read Alice in Wonderland]
 ->read_alice_in_wonderland
-{allbooks ? Howls_Moving_Castle} + Read Howl's Moving Castle
++ {allbooks ? Howls_Moving_Castle} [Read Howl's Moving Castle]
 ->read_howls_moving_castle
-{allbooks ? t_lion_witch_wardrobe} + Read The Lion the Witch and the Wardrobe
++ {allbooks ? t_lion_witch_wardrobe} [Read The Lion the Witch and the Wardrobe]
 ->read_lion_witch_wardrobe
-{allbooks ? the_wiz_oz} + Read The Wizard of Oz
++ {allbooks ? the_wiz_oz} [Read The Wizard of Oz]
 ->read_the_wizard_of_oz
-{allbooks ? the_hobbit} + Read The Hobbit
++ {allbooks ? the_hobbit}[Read The Hobbit]
 ->read_the_hobbit
-{allbooks ? t_secret_garden} + Read The Secret Garden
++ {allbooks ? t_secret_garden}[Read The Secret Garden]
 ->read_the_secret_garden
-{allbooks ? alice_looking_glass} + Read Alice Through the Looking-Glass
++ {allbooks ? alice_looking_glass} [Read Alice Through the Looking-Glass]
 ->read_through_the_looking_glass
-->->
-{allbooks ? matilda} + Read Matilda
++ {allbooks ? matilda} [Read Matilda]
 ->read_matilda
-->->
+*->->
 ==tea_or_coffee==
 ~currentSpeaker = android  
 Tea or coffee?

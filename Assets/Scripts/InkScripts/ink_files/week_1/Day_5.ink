@@ -389,8 +389,8 @@ Pandora enters
  Let’s do inventory.
 ->day_5_inventory
 ==day_5_inventory==
-->goto_shop
-->read_check
+->goto_shop->
+->read_check->
 ->end_day_5
 ==end_day_5==
 ->go_to_day_6

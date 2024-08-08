@@ -162,7 +162,7 @@ I’m going to feed you freeze dried banana ice cream for lunch.
 I'll take it back…please. 
 ~currentSpeaker=webdev
 What’s going on?
-Mum…Dad….Happy Christmas.
+Mum…Dad…Happy Chris-
 Fuuuuck.
 ~currentSpeaker=android
 {webdev} you seem to be in some kind of delirium?
@@ -221,7 +221,7 @@ Shall we make wreaths from toilet paper and used food packaging?
 ~currentSpeaker=android
 If it keeps spirits up.
 ~currentSpeaker=you
-My spirit is not up.
+My spirit is not down.
 My spirit is broken.
 I’m not going to pretend otherwise.
 ~currentSpeaker=webdev
@@ -249,7 +249,7 @@ Is that music?
 ~currentSpeaker=you
 What are you guys on about?
 Oh…oh god no. 
-[IN XMAS WORLD]
+~scene="Xmas"
 
 ~currentSpeaker=snob
 I’m so sleepy.
@@ -523,7 +523,7 @@ They seemed to be enjoying it here.
 No…I think it’s for the best. Trust me.
 ~currentSpeaker=you
 Aye aye captain.
-[BACK TO BASEMENT]
+~scene="Xmas"
 ~currentSpeaker=comic
 Ugh.
 This stupid thing just shut down.

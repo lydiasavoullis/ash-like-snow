@@ -370,8 +370,8 @@ So why are you talking about me behind my back?
  Let’s do the inventory. I’m so excited.
 ->day_4_inventory
 ==day_4_inventory==
-->goto_shop
-->read_check
+->goto_shop->
+->read_check->
 ->end_day_4
 ==end_day_4==
 ->go_to_day_5

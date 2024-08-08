@@ -290,8 +290,8 @@ Will do.
 ~characters-=tali
 ->day_10_inventory
 ==day_10_inventory==
-->goto_shop
-->read_check
+->goto_shop->
+->read_check->
 ->end_of_day_10
 
 ==end_of_day_10==
