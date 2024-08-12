@@ -298,9 +298,117 @@ Some imaginary things are cooler.
 ->->
 ==read_matilda==
 ~currentSpeaker = you
-
+Hey so I have this book you might like.
+It's called Matilda, it's about this girl who likes reading.
+~currentSpeaker = android
+Who doesn't?
+~currentSpeaker = you
+I've heard some people don't.
+~currentSpeaker = android
+Shame on them!
+~currentSpeaker = you
+Yes, I think you will like this a lot.
+\*You read to Pandora\*
+\*Shivers run down your spine\*
+~currentSpeaker = android
+That was quite horrible...
+I can't wait to read the rest of it.
+~currentSpeaker = you
+I thought so.
+~currentSpeaker = android
+How can people be so...narrow minded?
+~currentSpeaker = you
+I feel like some people just see life as the sum of its parts.
+Everything is a means to an end.
+~currentSpeaker = android
+That's sad.
+That's what therapy is for.
+~currentSpeaker = you
+I'm not sure therapy can fix everything.
+~currentSpeaker = android
+I wholeheartedly disagree.
+~currentSpeaker = you
+Well of course you're going to say that.
+~currentSpeaker = android
+I'm not just saying that because it was my profession. I believe it.
+Just keep in mind, the client has to put in the effort too.
+You have to want to change.
+~currentSpeaker = you
+See that's a trap.
+Imagine if I went to the doctor for a broken leg, and he put it in a cast. Then I went back and it wasn't fixed, and he tells me I have to want it to heal.
+~currentSpeaker = android
+That's a false equivalence.
+Your leg isn't your brain.
+Even when your leg is healing you need to do certain things to make sure it heals. Like don't put your weight on that leg.
+With the brain it's slightly different.
+You have to have be determined to solve your problems.
+~currentSpeaker = you
+Sounds difficult.
+~currentSpeaker = android
+All healing is difficult.
+It would be disingenuous to suggest otherwise.
+But it doesn't mean it's not worth it.
 ->->
 ==read_through_the_looking_glass==
+~currentSpeaker = you
+I have something for you.
+~currentSpeaker = android
+Let's see.
+Didn't we already read this.
+~currentSpeaker = you
+It's the sequel.
+~currentSpeaker = android
+Let's read it!
+\*You read to Pandora\*
+\*For a moment you don't exist\*
+~currentSpeaker = android
+We should get a cat.
+~currentSpeaker = you
+Ada doesn't like cats.
+~currentSpeaker = android
+Do you like cats?
+~currentSpeaker = you
+I certainly don't mind them.
+But this isn't my shop.
+~currentSpeaker = android
+We can convince her.
+Animals are good for anxiety.
+~currentSpeaker = you
+They can also induce anxiety.
+~currentSpeaker = android
+It depends on the animal...
 ->->
 ==read_the_secret_garden==
+~currentSpeaker = you
+I bought another kids book.
+~currentSpeaker = android
+What is it?
+~currentSpeaker = you
+It's called The Secret Garden.
+And that is pretty much what it is about.
+~currentSpeaker = android
+I love gardens.
+\*You read to Pandora\*
+\*The world around you stops moving.\*
+~currentSpeaker = android
+That's pretty horrible.
+~currentSpeaker = you
+Yeah, she's a bit of a brat. But she does get better.
+~currentSpeaker = android
+No.
+I mean it's horrible for her.
+Losing her parents so young.
+And being neglected by them on top of that.
+~currentSpeaker = you
+They gave her everything she wanted.
+~currentSpeaker = android
+That's not love, and that's not how you treat a child.
+They ignored her, treated her like a pet. 
+A child needs attention, mental stimulation and most of all emotional support from their caregivers.
+~currentSpeaker = you
+Oh.
+I didn't know that.
+~currentSpeaker = android
+Well now you do.
+I can't wait to continue reading this.
 ->->

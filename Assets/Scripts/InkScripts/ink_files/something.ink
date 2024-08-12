@@ -11,6 +11,7 @@ INCLUDE week_2\Day_10.ink
 INCLUDE week_2\Day_11.ink
 INCLUDE week_2\Day_12.ink
 INCLUDE week_2\Day_13.ink
+INCLUDE week_2\Day_14.ink
 INCLUDE week_2\Epilogue.ink
 INCLUDE week_1\general.ink
 INCLUDE week_1\extra_dialogues.ink
@@ -43,5 +44,7 @@ INCLUDE shop.ink
 ->day_12
 *[day 13]
 ->day_13
+*[day 14]
+->day_14
 *[Epilogue]
 ->Epilogue
