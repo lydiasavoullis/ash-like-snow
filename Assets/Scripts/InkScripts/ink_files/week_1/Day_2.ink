@@ -90,45 +90,47 @@ Oh my God.
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_mean")}
 {funds<100:Someone has to be fiscally responsible here}
+I have to go and study now.
+~characters-=pandora
 ~currentSpeaker = you 
 We have a new customer
 ~characters+=kent
 ~currentSpeaker = comic
-{ChangeSprite("Pandora", "kent_normal")}
+{ChangeSprite("Kent", "kent_normal")}
 Me again
 ~currentSpeaker = you 
 Good morning Kent
 ~currentSpeaker = comic  
-{ChangeSprite("Pandora", "kent_happy")}
+{ChangeSprite("Kent", "kent_happy")}
 Morning
 {allbooks ? zebraman_89: ->zebra_man->} 
 {allbooks ? giraffe_1: -> giraffe_woman->} 
 ~currentSpeaker = you
 {allbooks !? (giraffe_1,zebraman_89): I still don't have any comics sorry }
 ~currentSpeaker = comic 
-{ChangeSprite("Pandora", "kent_normal")}
+{ChangeSprite("Kent", "kent_normal")}
 How’s business?
 ~currentSpeaker = you 
 Slow
 How about you?
 ~currentSpeaker = comic
-{ChangeSprite("Pandora", "kent_happy")}
+{ChangeSprite("Kent", "kent_happy")}
 Oh did you hear?
 ~currentSpeaker = comic
-{ChangeSprite("Pandora", "kent_side_serious")}
+{ChangeSprite("Kent", "kent_side_serious")}
 Someone fired a gun in Hyde park. Two people died, eleven injured. 
 The whole area is on high alert. But it’s good for business.
-{ChangeSprite("Pandora", "kent_amused")}
+{ChangeSprite("Kent", "kent_amused")}
 The business of getting clicks that is.
 ~currentSpeaker = you 
 Anything else?
 ~currentSpeaker = comic  
-{ChangeSprite("Pandora", "kent_normal")}
+{ChangeSprite("Kent", "kent_normal")}
 Nothing much. My boss wants me to put out a bad comic. 
 ~currentSpeaker = you 
 How bad?
 ~currentSpeaker = comic
-{ChangeSprite("Pandora", "kent_side_normal")}
+{ChangeSprite("Kent", "kent_side_normal")}
 It has the Hyde park shooter reading the government’s new manifesto and then shooting himself in the mouth.
 ~currentSpeaker = you
  …
@@ -288,21 +290,27 @@ What do you need me to elaborate on?
 ~currentSpeaker = you 
 You said that your father would never allow that.
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_angry")}
 I mean that Benedict Blue, the owner of Blue Carp is my father. 
 And I refuse to let you spout nonsense about him.  
-~currentSpeaker = comic  
-What?
+~currentSpeaker = comic 
+{ChangeSprite("Kent", "kent_shocked")}
+What?!
 ~currentSpeaker = you 
 I think she might be telling the truth.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_normal")}
 Of course I’m telling the truth.
 ~currentSpeaker = you 
 Well this is awkward.
 ~currentSpeaker = comic  
+{ChangeSprite("Kent", "kent_amused")}
 I’m not sure what you think that name dropping is going to do.
 But it’s not impressing me. 
 Rather the opposite.
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_thinking")}
 I’m a successful entrepreneur and you’re nobodies. I don’t care what you think.
 ~currentSpeaker = you 
 I doubt that. 
@@ -310,42 +318,59 @@ Why are you here?
 Why would you be so eager to come in here and start this conversation with Kent? 
 No one asked you to.
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_shocked")}
 <i>gasps</i>
+characters+=pandora
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_happy")}
 Cas! I’m so sorry Miss Blue. I assure you, you are a highly esteemed customer. Would you like a complimentary cup of tea or coffee?
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_thinking")}
 Are you trying to bribe me? 
+{ChangeSprite("Lavender", "lavender_happy")}
 I love tea. 
 I want tea, robot.
+~currentSpeaker = android
+Right away.
+characters-=pandora
 ~currentSpeaker = you 
 Uh, can you not call her the r word. It’s rude.
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_angry")}
 Robot is making me tea.
 Apologise to me now.
 ~currentSpeaker = you 
 ...
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_thinking")}
 I’ll tell you why I started this conversation.
-~currentSpeaker = snob 
 I don’t really care about either of you.
-~currentSpeaker = snob 
-But I like this place, I love the funky old book smell, and it’s close to where I work. I want to see what kind of people come here. And to be honest, I’m not really very impressed.
-~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_happy")}
+But I like this place, I love the funky old book smell, and it’s close to where I work. I want to see what kind of people come here. 
+{ChangeSprite("Lavender", "lavender_normal")}
+And to be honest, I’m not really very impressed.
 But I suppose I never would be. 
-~currentSpeaker = android  
+characters+=pandora
+~currentSpeaker = android 
+{ChangeSprite("Lavender", "lavender_normal")}
 Uh, Miss Blue, your tea is ready.
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_angry")}
 What is this?
 ~currentSpeaker = android  
 Tea.
-~currentSpeaker = snob 
+~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
 It’s just plain black tea. I want rose tea.
-~currentSpeaker = android  
+~currentSpeaker = android 
+{ChangeSprite("Pandora", "pandora_normal2")}
 I’m sorry. 
 I don’t have that.
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_thinking")}
 Aren’t you robots meant to be mind readers or something?
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_mean")}
 No. That kind of technology hasn’t been discovered yet. Honestly that sounds kind of disturbing to me.
 ~currentSpeaker = comic  
 Her name is Pandora, you ungrateful brat.
