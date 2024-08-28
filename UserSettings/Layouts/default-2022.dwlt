@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 113
+  controlID: 110
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 21
+  controlID: 51
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 22
+  controlID: 52
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -467,23 +467,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/characters/Pandora
+    - Assets/Resources/characters
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/characters/Pandora
+  - Assets/Resources/characters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\savou\Documents\UnityProjects\Ash like snow
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 262}
-    m_SelectedIDs: d4600000
-    m_LastClickedID: 24788
-    m_ExpandedIDs: 000000004a6000004c6000004e60000050600000526000005660000058600000a6600000ca60000000ca9a3b
+    m_SelectedIDs: 5a600000
+    m_LastClickedID: 24666
+    m_ExpandedIDs: 000000004a6000004c6000004e60000050600000526000005460000056600000586000005a60000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,7 +511,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a6000004c6000004e6000005060000052600000546000005660000058600000
+    m_ExpandedIDs: 000000004a6000004c6000004e60000050600000526000005460000056600000586000005a600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ca5f0000
+      m_SelectedIDs: 785f0000
       m_LastClickedID: 0
       m_ExpandedIDs: 1afbffff
       m_RenameOverlay:
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 37.21191, y: -9.669971, z: 89.44327}
     speed: 2
-    m_Value: {x: 36.37718, y: -5.4148736, z: 89.380356}
+    m_Value: {x: 37.21191, y: -9.669971, z: 89.44327}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 133.5096
     speed: 2
-    m_Value: 139.80063
+    m_Value: 133.5096
   m_Ortho:
     m_Target: 1
     speed: 2
