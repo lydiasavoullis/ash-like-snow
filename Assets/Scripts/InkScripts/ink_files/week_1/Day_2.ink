@@ -7,7 +7,8 @@ No delivery today
 Uh, didn't see anything you liked?
 ~currentSpeaker = you 
 Nope
-~currentSpeaker = android  
+~currentSpeaker = android 
+{ChangeSprite("Pandora", "pandora_mean")}
 That's ok, I guess. Saving money is wise.
 ->tea_or_coffee->day_2_cont
 
@@ -31,6 +32,7 @@ Well, that's one thing sorted today at least.
 Is that Tali?
 ~characters+=tali
 ~currentSpeaker = webdev 
+¬
 {ChangeSprite("Tali", "tali_normal")}
 Hey girls, how are you doing?
 ~currentSpeaker = you 
@@ -53,11 +55,11 @@ And work on a few emails to my boss
 ~currentSpeaker = you
 How are things holding up?
 ~currentSpeaker = webdev
-{ChangeSprite("Tali", "tali_talking_front")}
+{ChangeSprite("Tali", "tali_talking_forward")}
 Things have been pretty shit lately. My boss is working me to death. Clients here and there. 
 {ChangeSprite("Tali", "tali_talking_side")}
 One of these clients wants some impossible things. They want their website to look all clean and minimalist. 
-{ChangeSprite("Tali", "tali_talking_front")}
+{ChangeSprite("Tali", "tali_talking_forward")}
 And then I show them, and they want it even more clean and minimalistic, I don’t know how much I can simplify it. 
 I can’t reduce it anymore. They’ll just be left with a blank page at some point.
 {ChangeSprite("Tali", "tali_normal")}
@@ -69,7 +71,7 @@ Ha! There is no compromise with these people. The customer is always right. Noth
 ~currentSpeaker = you 
 Why not move?
 ~currentSpeaker = webdev 
-{ChangeSprite("Tali", "tali_talking_front")}
+{ChangeSprite("Tali", "tali_talking_forward")}
 It’s a good job.
 ~currentSpeaker = you 
 Not from what you described. And from what I heard you can find work elsewhere easily with your skills.
@@ -96,6 +98,7 @@ I have to go and study now.
 We have a new customer
 ~characters+=kent
 ~currentSpeaker = comic
+¬
 {ChangeSprite("Kent", "kent_normal")}
 Me again
 ~currentSpeaker = you 
@@ -149,10 +152,10 @@ Hey, violence is an integral part of politics.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_serious")}
 I wish it wasn’t.
-{ChangeSprite("Lavender", "lavender_normal")}
 ~characters+=lavender
 ~currentSpeaker = snob
 {ChangeSprite("Kent", "kent_normal")}
+¬
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -373,54 +376,72 @@ Aren’t you robots meant to be mind readers or something?
 {ChangeSprite("Pandora", "pandora_mean")}
 No. That kind of technology hasn’t been discovered yet. Honestly that sounds kind of disturbing to me.
 ~currentSpeaker = comic  
+{ChangeSprite("Kent", "kent_upset")}
 Her name is Pandora, you ungrateful brat.
 ~currentSpeaker = snob 
+{ChangeSprite("Kent", "kent_normal")}
+{ChangeSprite("Lavender", "lavender_normal")}
 Ugh fine. Thank you for the tea. But I will make improvements to this next time.
-~currentSpeaker = android  
+~currentSpeaker = android 
+{ChangeSprite("Pandora", "pandora_normal")}
 Improvements?
 ~currentSpeaker = snob 
+{ChangeSprite("Lavender", "lavender_serious")}
 Suggestions to improve your failing business.
+{ChangeSprite("Lavender", "lavender_normal")}
 If you have any more magazines please order them. I’ll collect them the next time I visit.
 Bye.
 characters-=lavender
-~currentSpeaker = comic  
+~currentSpeaker = comic 
+{ChangeSprite("Kent", "kent_upset")}
 The absolute nerve. 
 You should ban her.
 ~currentSpeaker = you 
 We can’t.
 She’s technically keeping this business afloat.
-~currentSpeaker = comic  
+~currentSpeaker = comic 
+{ChangeSprite("Kent", "kent_side_serious")}
 I hate everything.
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_shocked")}
 Do you think I upset her?
 Oh no.
+{ChangeSprite("Pandora", "pandora_sad")}
 I’m a terrible shop assistant. Ada will be so angry with me.
 ~currentSpeaker = you 
 No Pan, it wasn’t your fault.
-~currentSpeaker = android  
+~currentSpeaker = android 
+{ChangeSprite("Pandora", "pandora_normal")}
 What’s Rose tea? 
 We must procure some immediately.
 ~currentSpeaker = you 
-OK, but I don’t think it will help. Lavender’s just got a stick up her arse. Nothing’s going to fix that.
+OK, but I don’t think it will help. Lavender’s just got a stick up her ass. Nothing’s going to fix that.
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_sad")}
 I know, but she’s never been angry at me before.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = you 
 Sometimes when people are uncontrollably angry it spills out everywhere...like a leaky pipe. 
 ~currentSpeaker = comic  
+{ChangeSprite("Kent", "kent_amused")}
 What Cas is saying is that people like that lash out at anyone, even if they didn’t do anything wrong. They think they’re entitled to hurt everyone. 
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_happy")}
 Haha, you know I think this is why I was such a bad therapy AI. But you two would make great therapy AIs.
 ~currentSpeaker = you 
 Uh really?
 ~currentSpeaker = comic  
+{ChangeSprite("Kent", "kent_happy")}
 Thanks Pandora. Maybe you can recommend me to career services next time.
 ~currentSpeaker = comic  
+{ChangeSprite("Kent", "kent_normal")}
 I have to go, I have a lot of missed calls from my boyfriend. I think he’s worried after the shooting.
 ~currentSpeaker = you 
 See you around.
 characters-=kent
 You see Pan, lots of people like you. You’re a great shop assistant.
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_pensive")}
 I know. 
 OK let’s do the orders for today.
 ->day_2_inventory
