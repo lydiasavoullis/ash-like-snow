@@ -203,8 +203,14 @@ public class CharacterController
     }
     public void ChangeCharacterSprite(string character, string spriteName, GameObject stage) //e.g. Maki, maki_sad
     {
-        var charPlaceholder = stage.GetComponent<Transform>().Find(character);
-        charPlaceholder.GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + spriteName);
+        try {
+            var charPlaceholder = stage.GetComponent<Transform>().Find(character);
+            charPlaceholder.GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + spriteName);
+        }
+        catch (Exception e) {
+            Debug.Log("Couldn't find character on screen");
+        }
+        
         //update current sprite in ink for character
         var currentSprite = new InkList(character, GameVars.story);
         currentSprite.AddItem(spriteName);

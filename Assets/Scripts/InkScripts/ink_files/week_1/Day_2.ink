@@ -30,11 +30,10 @@ Well, that's one thing sorted today at least.
 
 ~currentSpeaker = you 
 Is that Tali?
-~characters+=tali
+~characters+=tali 
 ~currentSpeaker = webdev 
-¬
-{ChangeSprite("Tali", "tali_normal")}
 Hey girls, how are you doing?
+{ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = you 
 I’ve seen better days
 ~currentSpeaker = android  
@@ -272,7 +271,7 @@ Just don’t tell me to be grateful to warmongering fucking corporations.
 Don’t talk badly about those corporations.
 They keep this city afloat.
 ~currentSpeaker = comic  
-{ChangeSprite("Kent", "kent_normal")}
+{ChangeSprite("Kent", "kent_angry")}
 You’re delusional. 
 We’re almost at war because of them.
 Because of Blue we are in quarantine from the rest of civilisation, and nearing a full blown world conflict.
@@ -353,7 +352,7 @@ But I like this place, I love the funky old book smell, and it’s close to wher
 {ChangeSprite("Lavender", "lavender_normal")}
 And to be honest, I’m not really very impressed.
 But I suppose I never would be. 
-characters+=pandora
+~characters+=pandora
 ~currentSpeaker = android 
 {ChangeSprite("Lavender", "lavender_normal")}
 Uh, Miss Blue, your tea is ready.

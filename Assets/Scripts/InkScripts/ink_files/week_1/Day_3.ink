@@ -3,76 +3,96 @@
 ~currentSpeaker = you
  Hey Pandora
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  Hey
 ~currentSpeaker = you
  Feeling better?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  Yes
 ~currentSpeaker = you
  Good
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  ->tea_or_coffee->day_3_cont
 
 ==day_3_cont==
  ~characters += tali
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_normal")}
  Hi guys
 {allbooks ? fantasy_dragon_heart: ->fantasy_dragon_heart_book->} 
 ~allbooks-=fantasy_dragon_heart
 ~currentSpeaker = you
  So, what happened? You seem...tired.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_serious")}
  Do I look that bad?
 ~currentSpeaker = you
  Noooo
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_exasperated")}
  I’ve been up all night.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_awe")}
  Work lost a load of data and my boss has been freaking out.
 ~currentSpeaker = you
  Like important data?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_serious")}
  Client data.
 ~currentSpeaker = webdev
  So critical.
 ~currentSpeaker = you
  Do you want to talk?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_side")}
  Yeah, I’ve got a friend coming later too.
 ~currentSpeaker = you
  Well thanks for bringing extra customers.
-~currentSpeaker = you
  We sure do need them.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_smirk")}
  I’m glad I can help one of us out.
 ~currentSpeaker = you
  What’s so bad about your job, on the whole?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_exasperated")}
  It’s not the worst, but I just feel like they want a lot from me. They have very high expectations. I’m not as good as they think I am. They think I’m holding back, that I’m being lazy. But I’m not, I’m just not that good. I can’t do what they want me to do.
 ~currentSpeaker = you
  You’re being too hard on yourself.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_normal")}
  No you don’t understand.
 ~characters += lavender
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = you
  Oh God.
 ~currentSpeaker = you
  Sorry, Miss Blue, I'll be with you in a second.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 ...
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
+{ChangeSprite("Lavender", "lavender_normal")}
  Lav you’re here!
 ~currentSpeaker = you
  Lav?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  I came as soon as I could.
 ~currentSpeaker = webdev
- Did you here?
+{ChangeSprite("Tali", "tali_awe")}
+ Did you hear?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  Yes, my father says the police are investigating it.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_upset")}
  The police?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  It’s sensitive info so they’re involved.
 ~currentSpeaker = snob
  TEA!
@@ -80,96 +100,121 @@
  One Rose tea coming right up.
  ~characters -= pandora
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_tears_crying")}
  <i>sniffs</i>
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  Hmm OK.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_smirk")}
  Oh do you know each other?
 ~currentSpeaker = you
 ...
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  Yes, this is the place I come for my vintage fashion magazines.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
  Those things are so cool, I love the old designs.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  I know, fashion these days is so ugly. I look back at those magazines to clear my mind. 
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal2")}
 Eh what’s going on?
 ~currentSpeaker = you
  They know each other?
 ~currentSpeaker = android
  Tali knows the loli nightmare creature.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  I want another tea.
 ~currentSpeaker = snob
  One for Tali too, she’s been through it.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_upset")}
  Do you think my boss will fire me?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  No, Dad will speak to him. It wasn’t your fault anyway.
 ~currentSpeaker = webdev
  It might have been my fault.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_sad")}
  What do you mean?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_awe")}
  I think someone hacked my computer.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_side")}
  I didn’t store the password for the server so securely.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  You had access to the server?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_forward")}
  My boss wanted me to take on extra responsibilities.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_side")}
  The guy managing the server left, and well, they couldn’t hire anyone else.
 ~currentSpeaker = snob
  They were paying you for the extra responsibility right?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_serious")}
  What do you think?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_sad")}
  If they weren’t paying you, they can’t hold you responsible.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_exasperated")}
  That’s not how it works darling.
 ~currentSpeaker = you
  So how do you two know each other?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  Can’t you see we’re in the middle of something?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
  We went to secondary school together.
 ~currentSpeaker = you
  What no way?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_normal")}
  Yeah I got in on a scholarship, I had a hard time fitting in.
-~currentSpeaker = webdev
  So did Lavender.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  Everyone loved me.
 ~currentSpeaker = webdev
- Haha, Lav, very funny.
+{ChangeSprite("Tali", "tali_happy_closed")}
+ Haha, very funny.
 ~currentSpeaker = webdev
- I remember once these boys were making snarky comments at me.
-~currentSpeaker = webdev
- I didn’t know who Lavender was but she saw me getting bullied and she shouted at these boys.
-~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_forward")}
+ I remember once these boys were being rude to me.
+ I didn’t know who Lavender was but she saw me getting bullied and she shouted at them.
+ {ChangeSprite("Tali", "tali_talking_side")}
  I can’t even remember what she said but they ran so fast.
-~currentSpeaker = webdev
  Lavender didn’t even look at me after that.
-~currentSpeaker = webdev
+ {ChangeSprite("Tali", "tali_awe")}
  But I made sure to be nice to her.
-~currentSpeaker = webdev
  She was super cold at first. But eventually she gave in.
-~currentSpeaker = webdev
+ {ChangeSprite("Tali", "tali_happy_closed")}
  And we were friends.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  Hmph.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
  Awww.
 ~currentSpeaker = snob
  Grrr.
 ~currentSpeaker = you
  Well that’s a nice story.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
  And we’ve been friends ever since.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_serious")}
  My boss is calling me. 
 ~currentSpeaker = webdev
  I have to go.

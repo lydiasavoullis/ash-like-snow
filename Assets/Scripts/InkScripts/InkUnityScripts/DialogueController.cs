@@ -186,12 +186,12 @@ public class DialogueController : MonoBehaviour
         if (GameVars.story.canContinue)
         {
             string text = GameVars.story.Continue();//get text from ink
-            if (!text.Contains("¬"))
+            if (!text.Contains("¬"))//¬ indicates you want an action to proceed without text
             {
                 textLogControl.AddToTextLog(text, textLogBox, textLogList);//log all text
                 StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect 
-            }
-            GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;
+        }
+        GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;
         }
         else
         {
