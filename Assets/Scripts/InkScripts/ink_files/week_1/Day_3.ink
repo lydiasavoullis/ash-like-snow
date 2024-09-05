@@ -217,10 +217,12 @@ Eh what’s going on?
 {ChangeSprite("Tali", "tali_serious")}
  My boss is calling me. 
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_normal")}
  I have to go.
 ~currentSpeaker = you
  Good luck.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  See you later Tal.
 ~characters -= tali
 ~currentSpeaker = you
@@ -229,53 +231,55 @@ Eh what’s going on?
 ~currentSpeaker = you
 So, are you OK?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  Yeah I’m fine.
 ~currentSpeaker = you
  Will Tali be OK?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  There isn’t a single doubt in my mind.
-~currentSpeaker = snob
  That she won’t make it through this.
 ~currentSpeaker = you
  You recommended this place to her, right?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  Correct.
 ~currentSpeaker = you
  She really likes those fantasy books doesn’t she?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  Oh yes. I suppose it makes sense if you know her.
-~currentSpeaker = snob
  She loves elves and dwarves and all sorts of nerdy stuff.
-~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  Quite adorable really.
 ~currentSpeaker = you
  I’ve only known her for three months, but I can vouch for that.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  You’ve known her for three months.
-~currentSpeaker = snob
  I’ve known her for twenty years.
-~currentSpeaker = snob
- Our knowledge of Tali is not even comparable.
+ Our knowledge is not even comparable.
 ~currentSpeaker = you
- Insecure much?
+ Okay...insecure much?
 ~currentSpeaker = snob
  Excuse me? I’m the least insecure person ever.
 ~currentSpeaker = you
  Sounds like something someone very insecure would say.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  I’m just saying I don’t trust you. I’m fine with you selling books to her, but don’t delude yourself into thinking you’re anything more.
-~currentSpeaker = snob
  I’m her best friend.
-~currentSpeaker = snob
  I’ve always been there.
-~currentSpeaker = snob
  You are nothing.
 ~characters += kent
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  You again.
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
  Well hello to you too.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
 Ugh goodbye
 ~characters -= lavender
 ~currentSpeaker = you
@@ -283,64 +287,69 @@ Ugh goodbye
 ~currentSpeaker = you
  An anti-Lavender charm. 
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  I take that as the highest compliment.
  {allbooks ? sentinel_105: -> the_sentinel->} 
  ~allbooks-=sentinel_105
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_amused")}
  What happened?
-~currentSpeaker = comic
- By the way I did some research, all that stuff Lavender said checks out. Turns out she really is the devil’s daughter.
+{ChangeSprite("Kent", "kent_side_serious")}
+ By the way I did some research, all that stuff Lavender said checks out. Turns out she really is spawn of the devil.
 ~currentSpeaker = you
- You mean Benedict Blue.
+ Benedict Blue?
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_amused")}
  Same thing.
-~currentSpeaker = comic
- This is nuts.
-~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_side_normal")}
+ This is crazy.
+  {ChangeSprite("Kent", "kent_normal")}
  Anyway I better be nice to her, her father is my boss’s boss’s boss. He’s basically the chief of the arse lickers.
 ~currentSpeaker = you
  You just figured that out.
 ~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_happy")}
  My boyfriend talked some sense into me last night.
 ~currentSpeaker = you
  I’m glad somebody could.
 ~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_side_normal")}
  I can be a bit reckless sometimes.
-~currentSpeaker = comic
- I don’t have a lot of self preservation.
-~currentSpeaker = comic
+ I guess don’t have a lot of self preservation.
+ {ChangeSprite("Kent", "kent_side_serious")}
  I’m just sick of having to keep quiet and take it at work.
-~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_upset")}
  And then I have to be polite to that little creep too.
 ~currentSpeaker = android
+ {ChangeSprite("Pandora", "pandora_pensive")}
  That little creep pays our bills.
 ~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_sad")}
  I know Pan. I wish it wasn’t like that though.
 ~currentSpeaker = you
  You can wish as much as you like.
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  The good thing is that nothing too bad happened today.
-~currentSpeaker = comic
  The plague outbreak didn’t even kill too many people.
-~currentSpeaker = comic
- Managed to get away with just a raunchy cartoon of a nurse in a very revealing uniform sticking a needle in the health secretary's arse.
-~currentSpeaker = comic
+ Managed to get away with just a raunchy cartoon of an IOI nurse in a very revealing uniform sticking a needle in the health secretary's buttocks.
+{ChangeSprite("Kent", "kent_side_normal")}
  I don’t know what kind of vaccinations my boss has been getting.
-~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_side_serious")}
  I’m a little concerned to be honest.
-~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  Sorry, I never asked about your day.
 ~currentSpeaker = you
  I think it’s better like that.
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_amused")}
  Why, what happened?
 ~currentSpeaker = you
  Nothing much to be at least.
-~currentSpeaker = you
  Tali came around earlier, she was a little distraught.
-~currentSpeaker = you
  Something about a data leak.
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
  I heard something about that. It was for a government website. Lots of sensitive information was lost.
 ~currentSpeaker = you
  That doesn’t sound good.
@@ -348,16 +357,33 @@ Ugh goodbye
  Indeed.
 ~currentSpeaker = comic
  Tali wasn’t involved, was she?
-~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_side_normal")}
  I imagine she is just doing web design, it wouldn’t have anything to do with her.
 ~currentSpeaker = you
- Uh
+ Uh...
 ~currentSpeaker = comic
+ {ChangeSprite("Kent", "kent_normal")}
  It wasn’t her data lost was it?
-//[Protect Tali’s privacy || Gossip]
+ ~currentSpeaker = you
+ Uhhh. 
+ NO. No, it wasn't.
+ ~currentSpeaker = comic
+ You're worried because I'm a journalist and I might leak this information to get ahead in my career.
+ ~currentSpeaker = you
+ Maybe...
+ ~currentSpeaker = comic
+  {ChangeSprite("Kent", "kent_side_serious")}
+ I see.
+ Sorry, {you}, I have to make this clear to you now but I would never use information I gathered here for a story.
+ I really don't care about my job that much. I mean sure I care about keeping it, but I'm not going to go out of my way to help the fuckers.
+   {ChangeSprite("Kent", "kent_normal")}
+ But most importantly, I wouldn't do anything to betray your trust and our friendship.
+ ~currentSpeaker = you
+ Well I certainly find that comforting.
 ~currentSpeaker = comic
+I appreciate you trying to protect the confidentiality of your clients' personal lives.
+{ChangeSprite("Kent", "kent_happy")}
  I’ve got to go now. It was nice talking to you. 
-~currentSpeaker = comic
  Thanks for the coffee Pan.
 ~currentSpeaker = android
  See you around Kent.

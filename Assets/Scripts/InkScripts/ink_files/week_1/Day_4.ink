@@ -5,100 +5,89 @@
  Hey Cas!
 ->tea_or_coffee->day_4_cont
 ==day_4_cont==
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = you
  Why are you smiling like that?
 ~currentSpeaker = android
  I have a favour to ask you?
-~currentSpeaker = android
  An idea.
-~currentSpeaker = android
  That might help this business as well.
 ~currentSpeaker = you
  Spit it out already.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_excited")}
  I want to host a creative writing session on Saturday evening.
 ~currentSpeaker = you
  Uh what? Why?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  It will be fun.
-~currentSpeaker = android
  And we can get to know our customers better.
 ~currentSpeaker = you
  OK.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_excited")}
  Really?
 ~currentSpeaker = you
  I’ll be working.
-~currentSpeaker = you
  And it’s not like I have anything better to do.
-~currentSpeaker = you
  We’re never really busy anyway.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  Thanks.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
  I’ve already created leaflets.
-~currentSpeaker = android
  We have to give them to everyone who enters.
-~currentSpeaker = android
  Kent and Tali and even Lavender.
 ~currentSpeaker = you
  So you’ve created three leaflets.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  Of course I have extras.
-~currentSpeaker = android
  You never know who else might arrive. 
 ~currentSpeaker = you
  Yes, you never know.
  ~characters += kent
 ~currentSpeaker = you
+{ChangeSprite("Pandora", "pandora_excited")}
  Hey how are you?
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  Good good.
 {allbooks ? wildfyre_678: -> wildfyre->} 
 ~currentSpeaker = you
  You’re in a good mood.
 ~currentSpeaker = comic
  Well not really. 
-~currentSpeaker = comic
  I’ve just dissociated myself from reality.
-~currentSpeaker = comic
  How are you?
 ~currentSpeaker = you
  Not bad.
 ~currentSpeaker = you
  How’s the Calamity?
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_side_normal")}
  Usual stuff y’know.
-~currentSpeaker = comic
  My boss is trying to figure out how to appeal to the younger audience.
-~currentSpeaker = comic
  He wants me to start drawing skeletons.
 ~currentSpeaker = you
  Skeletons?
 ~currentSpeaker = comic
  He has an idea for this sketch with these two skeleton sisters who tell jokes.
-~currentSpeaker = comic
  He thinks people will like that. Honestly I think he’s going senile.
 ~currentSpeaker = you
  Why skeletons though?
 ~currentSpeaker = comic
  I think the idea is that they’re nuclear event survivors.
-~currentSpeaker = comic
  Really resonates with our younger audience I’m sure.
+ Also he wants me to give the skeletons large...breasts
+ I’m trying to figure out how skeletons can even have breasts.
+ I was just trying to understand the logic behind it, so I thought I would express my doubts to my boss.
+ Big mistake.
 ~currentSpeaker = comic
- Also he wants me to give the skeletons big tits.
-~currentSpeaker = comic
- I’m trying to explain to him.
-~currentSpeaker = comic
- That breasts are not made of bone.
-~currentSpeaker = comic
- He won’t listen to me.
-~currentSpeaker = comic
- He says well if tits aren’t made of bone, how come when the missus got a boob job what did you think they put inside there?
-~currentSpeaker = comic
- And I said silicone.
-~currentSpeaker = comic
- And he said yes exactly!
+He said that: 'Both my wife, and my mistress have a pair so I think I know how they work better than a gay man'
+I had to weigh up whether it was worth losing my job over a response.
 ~currentSpeaker = you
  …
 ~currentSpeaker = comic
@@ -108,62 +97,69 @@
 ~currentSpeaker = comic
  Like a sad lost puppy.
 ~currentSpeaker = comic
- She knows I’m gay right?
+ She knows I’m not interested, right?
 ~currentSpeaker = you
  This is about something else I totally forgot. Pandora you can give Kent your leaflet, don’t be shy.
 ~currentSpeaker = comic
  I’m not joining your cult.
 ~currentSpeaker = you
+{ChangeSprite("Pandora", "pandora_sad")}
  It’s not a cult, it’s a creative writing session.
 ~currentSpeaker = comic
  Oh is that what we’re calling them now.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
  I promise no cult activity will be tolerated.
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  Sure I’d love to come, Saturday evening is fine. I love writing. 
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_excited")}
 <i>\*bursts with excitement\*</i>
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
  She looks like she’s going to explode. 
 ~currentSpeaker = you
- Can AIs explode?
+ Can IOIs explode?
 ~currentSpeaker = comic
  I don’t know. I’d keep a safe distance if I were you.
 ~currentSpeaker = you
  I can’t do my job and keep a safe distance from Pandora.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  I won’t explode I promise. 
 ~characters += tali
+~currentSpeaker=webdev
+{ChangeSprite("Tali", "tali_happy")}
+Hey!
 {allbooks ? black_goat: -> blackgoat->} 
 ~currentSpeaker = you
 You look better.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_exasperated")}
  I promise I’m not.
 ~currentSpeaker = you
  I keep getting it wrong.
 ~currentSpeaker = comic
  I tell you it’s always better to assume the worst. You’ll never be disappointed. 
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_normal")}
  My boss is trying to cover for me now.
 ~currentSpeaker = you
  That’s good right.
 ~currentSpeaker = webdev
  He can’t keep this undercover forever.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_serious")}
  They might move me to a different department now.
-~currentSpeaker = webdev
  At least I won’t have to manage the server anymore.
 ~currentSpeaker = you
  That also sounds good.
 ~currentSpeaker = comic
  At least they’re trying to protect you.
-~currentSpeaker = comic
  If I stepped even a foot out of line my arse would be straight out the door.
-~currentSpeaker = comic
  Faster than you can say disciplinary action.
-~currentSpeaker = comic
  They wouldn’t even bother with Carol from HR.
-~currentSpeaker = comic
  I do wonder sometimes what happened to her.
 ~currentSpeaker = webdev
  Well I’m trying not to think about it.
