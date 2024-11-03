@@ -8146,7 +8146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -518.74, y: 501.56003}
+  m_AnchoredPosition: {x: -518.7399, y: 501.56003}
   m_SizeDelta: {x: -1037.5, y: -1003.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408632695
@@ -16235,7 +16235,7 @@ MonoBehaviour:
     type: 3}
   cupButtonPrefab: {fileID: 3195727536335325063, guid: 3ecb67665822c47429d0761bef5ae953,
     type: 3}
-  bookButtonPrefab: {fileID: 3195727536335325063, guid: c46bd82772b532243ac8c351aa1390a3,
+  bookButtonPrefab: {fileID: 5937961892604396037, guid: c46bd82772b532243ac8c351aa1390a3,
     type: 3}
   saveSlot: {fileID: 6686483595649287865, guid: b76b0d456090133418e06af3abf23a99,
     type: 3}
@@ -16286,7 +16286,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 15, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!95 &8034551634607221516

@@ -23,6 +23,7 @@
 ->read_matilda
 *->->
 ==tea_or_coffee==
+~button = "cup"
 ~currentSpeaker = android  
 Tea or coffee?
 +[Tea]
