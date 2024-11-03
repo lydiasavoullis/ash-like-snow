@@ -2,8 +2,10 @@
 ~allbooks+=hypnos_55
 ~characters += pandora
 ~currentSpeaker = you
+
  Hey Pandora
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  Hey! What are you up to?
 ~currentSpeaker = you
  Stacking books.
@@ -12,8 +14,10 @@
 ~currentSpeaker = you
  You think so
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  You've sold {booksSold} book(s).
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  I’m so happy for you.
 ~currentSpeaker = you
  Me too.
@@ -21,13 +25,14 @@
 ==day_5_cont==
 ~currentSpeaker = you
  What is the plan for Saturday?
-~currentSpeaker = you
  I’m dying to know.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
  Please don’t die. I need you to attend the party.
 ~currentSpeaker = you
  OK, sure but what’s going to happen?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
  Wouldn’t you like to know.
 ~currentSpeaker = you
  I sure as hell would.
@@ -35,40 +40,45 @@
  It’s a surprise.
 ~currentSpeaker = you
  Aw come on.
-~currentSpeaker = you
  You can tell me. I’m trustworthy.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  I want it to be a surprise. I want even you to be surprised. In fact I want you to be surprised the most because you’re never surprised about anything.
 ~currentSpeaker = you
  That’s not true.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
  Um it kind of is.
-~currentSpeaker = android
  You’re never shocked.
-~currentSpeaker = android
  Even when Ada twisted her ankle falling down the basement stairs. I screamed, but you were like, well it was bound to happen one of these days.
 ~currentSpeaker = you
  Oh come on, you’ve seen the way she’s always running up and down those stairs. It <i<i>was</i> bound to happen.
-~currentSpeaker = you
  I kind of miss her. Is that weird to say?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  Oh me too. Everyday. I wish she could see what I’m doing now. Do you think she would be proud?
 ~currentSpeaker = you
  Definitely. I mean, she’d be disappointed it isn’t making money from it. But I think she’d be happy begrudgingly.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
  It’s a shame the dome blocks phone transmission signals outside of London.
 ~currentSpeaker = you
-I got an email. She arrived in Madrid safely.
+I got a secure email. She arrived in Madrid safely.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  I wish we could call her though.
 ~currentSpeaker = you
  I’m not sure she would want to be disturbed.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal2")}
  Oh right of course. Sorry, I only ever think about myself.
 ~currentSpeaker = you
- It’s OK to want things for yourself. 
+ It’s OK, you're just worried about her.
+~currentSpeaker = android
+Is that what this feeling is?
 ~currentSpeaker = you
- Do you think I’m doing OK?
+Can I ask you something?
+Do you think I’m doing OK?
 ~currentSpeaker = android
  I don’t know, what do you mean?
 ~currentSpeaker = you
@@ -76,56 +86,72 @@ I got an email. She arrived in Madrid safely.
 ~currentSpeaker = android
 {funds >100:  I think you’re doing great. If we keep this up Ada will be happy when she comes back. | Uh I don't know, I'm sure Ada won't be upset.} 
 ~currentSpeaker = you
-{funds >100:  Thanks | Oh, ok.} 
+{funds >100:  Thanks | I should probably sell some more books.} 
 ~characters += kent
 ~currentSpeaker = comic
- So guys.
-~currentSpeaker = comic
- Really would love to chat, but I have something I need to do.
+{ChangeSprite("Kent", "kent_side_normal")}
+Hey guys.
+
  ~currentSpeaker = you
 {allbooks ? hypnos_55: -> hypnos->} 
+ 
+ ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_side_serious")}
+ Really would love to chat, but I have something I need to do.
+ ~currentSpeaker=you
  What’s wrong?
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
  Nothing really. I’m just really fucking behind on a lot of work. Please can I work in the corner there?
 ~currentSpeaker = android
  Of course you can. Sit down. No one will disturb you. 
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  Brilliant, I owe you.
 ~currentSpeaker = android
  Can I make you a coffee?
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
  No thanks.
 ~characters -= kent
 ~currentSpeaker = you
  So are we a library now?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  Well I don’t see why we shouldn’t let him stay here for a bit. He’s a good customer. And it might help business a bit if we looked busy.
 ~currentSpeaker = you
  Really? Very business minded, aren’t you.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
  I’m learning.
 ~currentSpeaker = you
  Maybe we should turn this into a coffee and bookshop. Might have better luck with that.
 ~currentSpeaker = android
- Great minds do think alike. I’ve been nagging Ada about that for a while, but she hates it. She keeps saying she only wants to sell books. I’m starting to think she wants this place to fail.
+{ChangeSprite("Pandora", "pandora_happy")}
+Great minds do think alike. I’ve been nagging Ada about that for a while, but she hates it. She keeps saying she only wants to sell books. 
+{ChangeSprite("Pandora", "pandora_pensive")}
+I’m starting to think she wants this place to fail.
 ~characters += lavender
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  One rose tea.
-~currentSpeaker = snob
  Ahem.
  ~characters -=pandora
  ...
   {allbooks ? togue_666: -> togue_special->} 
  ~characters += pandora
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  Here you go.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  What’s he doing over there?
 ~currentSpeaker = you
  Working, you can’t disturb him.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  I have no desire to go anywhere near him.
-~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  I was going to meet Tali here, but she cancelled at the last minute. Something to do with work.
 ~currentSpeaker = you
  Well, that happens sometimes.
@@ -135,7 +161,6 @@ I got an email. She arrived in Madrid safely.
  That’s what it’s like having a job I guess.
 ~currentSpeaker = snob
  I asked my father and he said I should leave her to get on with it.
-~currentSpeaker = snob
  It’s just annoying, I have all this free time and she’s always slaving away. It makes no sense.
 ~currentSpeaker = you
  What do you do?
