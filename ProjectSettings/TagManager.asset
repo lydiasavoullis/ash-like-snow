@@ -8,6 +8,7 @@ TagManager:
   - BlurEffects
   - ScreenshotViewer
   - InkController
+  - character
   layers:
   - Default
   - TransparentFX

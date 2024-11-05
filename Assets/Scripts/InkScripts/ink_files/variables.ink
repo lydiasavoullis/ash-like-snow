@@ -42,10 +42,10 @@ VAR booksSold = 0
 VAR day = 1
 
 #friendship points
-VAR kent_points = 0
-VAR tali_points = 0
-VAR lavender_points = 0
-VAR pandora_points = 0
+VAR kentPoints = 0
+VAR taliPoints = 0
+VAR lavenderPoints = 0
+VAR pandoraPoints = 0
 
 #check at point you need £500 and either to snap out, or to collect the right books
 #Otherwise Ada will fire you

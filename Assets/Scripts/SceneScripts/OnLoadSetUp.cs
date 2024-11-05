@@ -9,12 +9,12 @@ public class OnLoadSetUp : MonoBehaviour
     GameObject choices;
     void Start()
     {
-        Debug.Log("On scene start");
+       // Debug.Log("On scene start");
         if (GameVars.justLoaded == true)
         {
             GameVars.justLoaded = false;
             choices.GetComponent<DialogueController>().AfterLoadedFromSave();
-            Debug.Log("loaded from save");
+            //Debug.Log("loaded from save");
         }
 
     }

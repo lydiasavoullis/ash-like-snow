@@ -82,6 +82,7 @@ public class DialogueController : MonoBehaviour
     AudioController audioControl = new AudioController();//audioManager
     SaveController saveControl = new SaveController();
     UIController uIControl = new UIController();
+    AnimationController animControl = new AnimationController();
     #endregion
     #region Ink libraries
     public TextAsset inkJSON;
@@ -98,11 +99,12 @@ public class DialogueController : MonoBehaviour
             GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
             GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
             GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
+            GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
             //GameVars.story.BindExternalFunction("GoToGameScene", (string gameScene, string currentScene) => GoToGameScene(gameScene, currentScene));
         }
         catch (Exception e)
         {
-            Debug.Log("tried to bind function twice " + e);
+            //Debug.Log("tried to bind function twice " + e);
         }
         //if (storyVariables != null) {
         //    GameVars.SetAllStoryVariables(storyVariables.filePath);
@@ -145,6 +147,7 @@ public class DialogueController : MonoBehaviour
             GameVars.story.UnbindExternalFunction("AddCharacter");
             GameVars.story.UnbindExternalFunction("ChangeSprite");
             GameVars.story.UnbindExternalFunction("RemoveCharacter");
+            GameVars.story.UnbindExternalFunction("PlayAnimation");
         }
         catch (Exception e) { }
         
@@ -152,7 +155,8 @@ public class DialogueController : MonoBehaviour
         GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
         GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
         GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
-        
+        GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
+
         characterControl.RefreshCharacters((InkList)GameVars.story.variablesState["characters"], stage, characterBox);
         uIControl.SetDialogueBoxActive((string)GameVars.story.variablesState["textBoxIsActive"], backgroundDialogueBox);
         uIControl.SetNameTag((string)GameVars.story.variablesState["currentSpeaker"], nameTag);
@@ -212,7 +216,7 @@ public class DialogueController : MonoBehaviour
     }
 
     public void ObserveAnyVar(string varName, object newValue) {
-        Debug.Log(GameVars.story.variablesState["characters"].ToString());
+        //Debug.Log(GameVars.story.variablesState["characters"].ToString());
         switch (varName) {
             //case "textBoxIsActive":
             //    uIControl.SetDialogueBoxActive(newValue.ToString());
@@ -240,6 +244,9 @@ public class DialogueController : MonoBehaviour
                 break;
             case "sfx":
                 audioControl.PlaySound(newValue.ToString(), audioManager);
+                break;
+            case "animation":
+                
                 break;
             //case "gameScene":
             //    characterControl.GoToGameScene(newValue.ToString(), GameVars.story.variablesState["scene"].ToString());

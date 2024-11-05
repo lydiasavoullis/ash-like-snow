@@ -37,6 +37,7 @@ Hey girls, how are you doing?
 ~currentSpeaker = you 
 I’ve seen better days
 ~currentSpeaker = android  
+{PlayAnimation("Pandora", "jump")}
 I’m doing well
 I got full marks on one of my IOI re-training modules.
 ~currentSpeaker = webdev 
@@ -156,6 +157,7 @@ I wish it wasn’t.
 {ChangeSprite("Kent", "kent_normal")}
 ¬
 {ChangeSprite("Lavender", "lavender_angry")}
+{PlayAnimation("Lavender", "shake")}
 HEY
 {ChangeSprite("Lavender", "lavender_normal")}
 Have you got my magazines?
@@ -165,6 +167,7 @@ Have you got my magazines?
 Who is this child? Do you know her?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
+{PlayAnimation("Lavender", "shake")}
 Ahem
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
@@ -179,6 +182,7 @@ What have you got there?
 Porn. 
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_shocked")}
+{PlayAnimation("Kent", "shake")}
 WHAT?!
 ~currentSpeaker = you
 She’s messing about with you. Not a child.
@@ -271,7 +275,7 @@ Just don’t tell me to be grateful to warmongering fucking corporations.
 Don’t talk badly about those corporations.
 They keep this city afloat.
 ~currentSpeaker = comic  
-{ChangeSprite("Kent", "kent_angry")}
+{ChangeSprite("Kent", "kent_upset")}
 You’re delusional. 
 We’re almost at war because of them.
 Because of Blue we are in quarantine from the rest of civilisation, and nearing a full blown world conflict.

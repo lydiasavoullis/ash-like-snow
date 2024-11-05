@@ -143,7 +143,7 @@ public class CharacterController
         charPlaceholder.transform.SetParent(stage.transform, false);
         charPlaceholder.name = character;
        // Debug.Log($"characters/{character}/" + GameVars.story.variablesState[character].ToString());
-        charPlaceholder.GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + GameVars.story.variablesState[character].ToString());//load image from resources: specifically the type of sprite for that character
+        charPlaceholder.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + GameVars.story.variablesState[character].ToString());//load image from resources: specifically the type of sprite for that character
 
     }
     /// <summary>
@@ -183,7 +183,7 @@ public class CharacterController
         charPlaceholder.transform.SetParent(stage.transform, false);
         charPlaceholder.name = character;
         //GameVars.story.variablesState[character] = spriteName;
-        charPlaceholder.GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + spriteName);
+        charPlaceholder.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + spriteName);
         //update current sprite in ink for character
         var currentSprite = new InkList(character, GameVars.story);
         currentSprite.AddItem(spriteName);
@@ -205,7 +205,7 @@ public class CharacterController
     {
         try {
             var charPlaceholder = stage.GetComponent<Transform>().Find(character);
-            charPlaceholder.GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + spriteName);
+            charPlaceholder.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>($"characters/{character}/" + spriteName);
         }
         catch (Exception e) {
             Debug.Log("Couldn't find character on screen");

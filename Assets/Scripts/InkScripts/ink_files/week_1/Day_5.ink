@@ -6,10 +6,13 @@
  Hey Pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
+{PlayAnimation("Pandora", "sway")}
  Hey! What are you up to?
 ~currentSpeaker = you
+{PlayAnimation("Pandora", "jump")}
  Stacking books.
 ~currentSpeaker = android
+{PlayAnimation("Pandora", "shake")}
  You’re doing such a good job.
 ~currentSpeaker = you
  You think so
@@ -18,6 +21,7 @@
  You've sold {booksSold} book(s).
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
+{PlayAnimation("Pandora", "sway")}
  I’m so happy for you.
 ~currentSpeaker = you
  Me too.
@@ -156,41 +160,48 @@ I’m starting to think she wants this place to fail.
 ~currentSpeaker = you
  Well, that happens sometimes.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  It didn’t use to be like this, you know we used to go out together all the time. Now she’s all busy.
 ~currentSpeaker = you
  That’s what it’s like having a job I guess.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  I asked my father and he said I should leave her to get on with it.
  It’s just annoying, I have all this free time and she’s always slaving away. It makes no sense.
 ~currentSpeaker = you
  What do you do?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  I design clothes of course. I have my own fashion company and every three months I release new designs to my clothing store.
 ~currentSpeaker = you
  Do you make all the clothes?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  Of course not, I have professionals to do that.
-~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  Although I have been thinking of having a go again.
-~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  I used to sew for fun. And then I did a lot of sewing for my university course. But I stopped doing it after I started my company.
 ~currentSpeaker = you
  Uh, how does that work? If you don’t sew, how do you like prototype clothing designs?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  Well, I have people who also do that. I kind of just sketch things out, and my good colleague takes the sketch and turns it into a garment. I approve the design and she sends it out to the machinists.
-~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  Except sometimes, when I can’t think of anything, she sketches out the design for me as well.
 ~currentSpeaker = you
  Uh huh. 
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  I would like to start sewing again. It was so much fun. 
-~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  I just never feel like there’s a need to do it when someone else is doing it for me.
 ~currentSpeaker = you
  Maybe I could order some books on sewing?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
  Oh why not.
-~currentSpeaker = snob
+ {ChangeSprite("Lavender", "lavender_happy")}
  This is cheering me up a bit.
 ~currentSpeaker = you
  So you and Tali met at school?
@@ -199,35 +210,39 @@ I’m starting to think she wants this place to fail.
 ~currentSpeaker = you
  Really? What was she like?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  Painfully shy.
-~currentSpeaker = snob
+ {ChangeSprite("Lavender", "lavender_thinking")}
  Most people were OK with her, but no one went out of their way to be nice. It made me so angry.
-~currentSpeaker = snob
  She’s so kind and caring, how could no one like her?
 ~currentSpeaker = you
  I agree.
-~currentSpeaker = you
- That’s how kids are.
-~currentSpeaker = you
+ That’s just how kids are.
  I remember they had a horrible nickname for me at school. Everyone would whisper it behind my back.
-~currentSpeaker = you
  It made me self conscious about introducing myself. 
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_mean")}
  Oh what was the nickname?
 ~currentSpeaker = you
  I’m not telling you.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
  <i>huff</i> you’re no fun.
 ~currentSpeaker = snob
- Well anyway, I tried to be super nice to Tali, but it was difficult getting her to trust me. She thought I was like the others. She didn’t trust me. I kind of understand. It must have been strange. I mean really we have little in common, other than being awesome. So it must have been strange to her that I was talking to her.
-~currentSpeaker = snob
+ {ChangeSprite("Lavender", "lavender_thinking")}
+ Well anyway, I tried to be super nice to Tali, but it was difficult getting her to trust me. 
+ {ChangeSprite("Lavender", "lavender_serious")}
+ She thought I was like the others.  
+ I kind of understand. It must have been strange. I mean really we have little in common, other than being awesome. So it must have been strange to her that I was talking to her.
+ {ChangeSprite("Lavender", "lavender_thinking")}
  Honestly it was so hard, trying to find ways to make her comfortable.
-~currentSpeaker = snob
+ {ChangeSprite("Lavender", "lavender_mean")}
  But I’m a very determined person.
 ~currentSpeaker = you
  I can see that.
 ~currentSpeaker = snob
- Anyway, we became best friends. We went on loads of school trips together and had loads of inside jokes. And I always took her on family holidays because I hate being alone.
+{ChangeSprite("Lavender", "lavender_normal")}
+ Anyway, we became best friends. We went on loads of school trips together. And I always take her on holiday because I hate being alone.
 ~currentSpeaker = snob
  I mean I have four siblings but I’m not so close with them. Tali is like my sister.
 ~currentSpeaker = you

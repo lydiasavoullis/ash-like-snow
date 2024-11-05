@@ -4,7 +4,8 @@
  Hey Pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
- Hey
+{PlayAnimation("Pandora", "jump")}
+ Hey!
 ~currentSpeaker = you
  Feeling better?
 ~currentSpeaker = android
@@ -95,6 +96,8 @@
 {ChangeSprite("Lavender", "lavender_thinking")}
  It’s sensitive info so they’re involved.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
+{PlayAnimation("Lavender", "shake")}
  TEA!
 ~currentSpeaker = android
  One Rose tea coming right up.

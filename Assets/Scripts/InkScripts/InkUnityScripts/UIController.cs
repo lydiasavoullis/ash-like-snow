@@ -101,7 +101,7 @@ public class UIController
         {
             //manager.GetComponent<AudioManager>().Play("typing");
             manager.GetComponent<AudioManager>().TypeSound("typing", maxPitch, minPitch);
-            Debug.Log("pitch: " + maxPitch + " " + minPitch);
+            //Debug.Log("pitch: " + maxPitch + " " + minPitch);
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
                 storyText.maxVisibleCharacters = passage.Length;

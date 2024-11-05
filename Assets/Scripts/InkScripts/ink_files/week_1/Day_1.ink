@@ -2,7 +2,7 @@ INCLUDE variables.ink
 EXTERNAL ChangeSprite(name,sprite)
 EXTERNAL RemoveCharacter(name)
 EXTERNAL AddCharacter(name,sprite)
-//EXTERNAL PlayEffect(effectName)
+EXTERNAL PlayAnimation(name, animation)
 ==day_1==
 ~scene= "ShopFront"
 ~newsPicture = "headline14"
