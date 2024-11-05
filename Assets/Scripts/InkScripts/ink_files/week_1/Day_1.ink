@@ -3,6 +3,26 @@ EXTERNAL ChangeSprite(name,sprite)
 EXTERNAL RemoveCharacter(name)
 EXTERNAL AddCharacter(name,sprite)
 EXTERNAL PlayAnimation(name, animation)
+
+==test_scene==
+~scene= "GenericScene"
+~currentSpeaker = trader 
+Hey
+~currentSpeaker = comic 
+Hey
+~currentSpeaker = lovelace 
+Hey
+~currentSpeaker = snob
+Hey
+~currentSpeaker = you
+Hey
+~currentSpeaker = webdev
+Hey
+~currentSpeaker = android
+Hey
+->END
+
+
 ==day_1==
 ~scene= "ShopFront"
 ~newsPicture = "headline14"

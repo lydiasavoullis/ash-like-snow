@@ -18,6 +18,8 @@ INCLUDE week_1\extra_dialogues.ink
 INCLUDE week_2\truth_or_dare.ink
 INCLUDE shop.ink
 ~scene= "GenericScene"
+*[test scene]
+->test_scene
 *[day 1]
 ->day_1
 *[day 2]

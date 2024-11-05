@@ -31,18 +31,38 @@ public class UIController
         switch (name.ToLower())
         {
             case "cas":
-                colour = new Color32(150, 100, 255, 255);
+                colour = Color.yellow;
                 maxPitch = 1.1f;
                 minPitch = 0.8f;
                 break;
             case "lavender":
                 maxPitch = 1.7f;
                 minPitch = 0.9f;
-                colour = Color.magenta;
+                colour = new Color32(222, 194, 255, 255);
                 break;
             case "pandora":
-                colour = new Color32(204, 255, 229, 255);
+                colour = Color.red;
                 maxPitch = 1.3f;
+                minPitch = 0.8f;
+                break;
+            case "kent":
+                colour = new Color32(76, 255, 127, 255);
+                maxPitch = 1.3f;
+                minPitch = 0.7f;
+                break;
+            case "tali":
+                colour = Color.magenta;
+                maxPitch = 1.5f;
+                minPitch = 0.8f;
+                break;
+            case "stranger":
+                colour = new Color32(180, 180, 180, 255);
+                maxPitch = 1.1f;
+                minPitch = 0.6f;
+                break;
+            case "ada":
+                colour = Color.cyan;
+                maxPitch = 1.5f;
                 minPitch = 0.8f;
                 break;
             default:

@@ -245,9 +245,6 @@ public class DialogueController : MonoBehaviour
             case "sfx":
                 audioControl.PlaySound(newValue.ToString(), audioManager);
                 break;
-            case "animation":
-                
-                break;
             //case "gameScene":
             //    characterControl.GoToGameScene(newValue.ToString(), GameVars.story.variablesState["scene"].ToString());
             //    break;

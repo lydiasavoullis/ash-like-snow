@@ -80,7 +80,7 @@ public class SaveController
     public string GenerateFileName()
     {
         string format = "yyyy-MM-dd HH,mm,ss";
-        string filename = GameVars.story.variablesState["chapter"].ToString() + " - " + System.DateTime.Now.ToString(format);
+        string filename = "Day " + GameVars.story.variablesState["day"].ToString() + " - " + System.DateTime.Now.ToString(format);
         if (GameVars.lastFilename != null)
         {
             while (GameVars.lastFilename == filename)//while they are equal
