@@ -197,13 +197,13 @@ public class UIController
         if (isActive == "true")
         {
             backgroundDialogueBox.SetActive(true);
-            GameVars.story.variablesState["textBoxIsActive"] = "true";
+            //GameVars.story.variablesState["textBoxIsActive"] = "true";
             
         }
         else
         {
             backgroundDialogueBox.SetActive(false);
-            GameVars.story.variablesState["textBoxIsActive"] = "false";
+            //GameVars.story.variablesState["textBoxIsActive"] = "false";
         }
     }
     #endregion

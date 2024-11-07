@@ -127,6 +127,9 @@ public class DialogueController : MonoBehaviour
                 GameVars.autoMode = false;
             }
         }
+        if (Mouse.current.rightButton.wasPressedThisFrame) {
+            Debug.Log("Dont advance story: " + GameVars.dontAdvanceStory);
+        }
         if (Mouse.current.rightButton.wasPressedThisFrame && GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory)//Input.GetMouseButtonDown(1)
         {
             KeepLoadingStory();
@@ -244,6 +247,15 @@ public class DialogueController : MonoBehaviour
                 break;
             case "sfx":
                 audioControl.PlaySound(newValue.ToString(), audioManager);
+                break;
+            case "textBoxIsActive":
+                try {
+                    uIControl.SetDialogueBoxActive(newValue.ToString(), backgroundDialogueBox);
+                }
+                catch (Exception e) {
+                    Debug.Log(e);
+                }
+                
                 break;
             //case "gameScene":
             //    characterControl.GoToGameScene(newValue.ToString(), GameVars.story.variablesState["scene"].ToString());

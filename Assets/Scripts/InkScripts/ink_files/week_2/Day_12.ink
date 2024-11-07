@@ -34,7 +34,7 @@ Fate. It makes you forget things. Look, you have to stop it.
 ~currentSpeaker=you
 I’ve been sober for 9 months. 
 But…no that can’t be right
-
+~currentSpeaker = trader
 I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. You need to get your shit together.
 I can’t risk telling you anymore.
 You need to figure it out yourself. 
@@ -277,7 +277,7 @@ There it’s done.
 ~currentSpeaker=you
 I just turned the air filtration devices on.
 ~currentSpeaker=comic
-Hey babe it’s me. Call me when you get this. Please, I love you.
+Hey, it’s me. Call me when you get this. Please, I love you.
 ~currentSpeaker=snob
 It’s going to be fine right?
 I’m sure it’s nothing.
@@ -306,7 +306,7 @@ Scott is on his shift. He’s out there.
 I’m sure he’s gone to find shelter.
 He’s a paramedic. He has all sorts of medical equipment. They take precautions when they go out. 
 ~currentSpeaker=comic
-You don’t know him…he’ll do something brave and stupid.
+You don’t know him…he’ll do something stupid.
 ~currentSpeaker=you
 And you risking your life to find him is not going to help.
 It’s just going to make it worse.
@@ -316,10 +316,6 @@ Yes, she has a good point {comic} please don’t go out.
 ~currentSpeaker=comic
 …
 I’m a fucking coward.
-We all are.
-~currentSpeaker=webdev
-We’re not cowards.
-We’re civilians.
 ~currentSpeaker=snob
 I can’t get a hold of my brothers.
 ~currentSpeaker=webdev
@@ -414,7 +410,7 @@ We might not get much time left.
 I’m not sure you want to know me.
 ~currentSpeaker=comic
 Oh god, I did not expect this from you.
-I thought you were better than this. Seriously? You’re acting like a sad tortured antihero. I mean, it works in comic books, but in real life it’s just…childish.
+I thought you were better than this. Seriously? You’re acting like a sad tortured soul. I mean, it works in comic books, but in real life it’s just…childish.
 What happened? Did you kick a puppy?
 ~currentSpeaker=you
 …

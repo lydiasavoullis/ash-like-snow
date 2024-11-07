@@ -49,6 +49,7 @@ VAR pandoraPoints = 0
 
 #check at point you need £500 and either to snap out, or to collect the right books
 #Otherwise Ada will fire you
+#if you kept taking Fate, but you managed to get money for the trader, snapped out will be set to yes
 VAR snappedOut = "no"
 LIST strangerbooks = castle, wardrobe, rabbithole
-
+VAR worstEnding = "no"

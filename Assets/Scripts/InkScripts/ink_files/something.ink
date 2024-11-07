@@ -16,8 +16,11 @@ INCLUDE week_2\Epilogue.ink
 INCLUDE week_1\general.ink
 INCLUDE week_1\extra_dialogues.ink
 INCLUDE week_2\truth_or_dare.ink
+INCLUDE endings.ink
 INCLUDE shop.ink
 ~scene= "GenericScene"
+*[simulate ending]
+->ending_simulation
 *[test scene]
 ->test_scene
 *[day 1]

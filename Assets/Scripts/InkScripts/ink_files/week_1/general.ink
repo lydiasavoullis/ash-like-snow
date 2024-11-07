@@ -257,7 +257,6 @@ It is a nice word.
 ~currentSpeaker = android
 It sounds like a combination of hobble and rabbit.
 ~currentSpeaker = you
-Maybe that's where it came from.
 \*You read to Pandora\*
 \*Everything feels so much quieter now.\*
 ~currentSpeaker = android

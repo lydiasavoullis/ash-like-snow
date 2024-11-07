@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
@@ -28,8 +29,13 @@ public class TVFlicker : MonoBehaviour
 
     void OnEnable()
     {
-        audioManager.GetComponent<AudioManager>().Play("holoscreen");
-        Debug.Log("PrintOnEnable: script was enabled");
+        try {
+            audioManager.GetComponent<AudioManager>().Play("holoscreen");
+            Debug.Log("PrintOnEnable: script was enabled");
+        }
+        catch (Exception e) { 
+        }
+        
     }
     IEnumerator Flicker() {
         int count = 0;

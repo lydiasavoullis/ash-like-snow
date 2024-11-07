@@ -132,7 +132,7 @@ Hey guys.
  Maybe we should turn this into a coffee and bookshop. Might have better luck with that.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
-Great minds do think alike. I’ve been nagging Ada about that for a while, but she hates it. She keeps saying she only wants to sell books. 
+I’ve been nagging Ada about that for a while, but she hates it. She keeps saying she only wants to sell books. 
 {ChangeSprite("Pandora", "pandora_pensive")}
 I’m starting to think she wants this place to fail.
 ~characters += lavender

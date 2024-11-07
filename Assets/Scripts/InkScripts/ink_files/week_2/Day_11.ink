@@ -191,7 +191,7 @@ Hey.
 {allbooks ? togue_gear: -> togue_protective_gear->} 
 I guess you probably want a personal statement to put in your stupid newspaper.
 ~currentSpeaker=comic
-I’m off work at the moment, Lav.
+I’m off work at the moment, Lavender.
 ~currentSpeaker=snob
 I know how you journalists work. You say that, and then you’re going to go back to your stupid newspaper and publish everything I say. 
 ~currentSpeaker=comic
@@ -217,7 +217,6 @@ Ok, that isn’t even a newsworthy story.
 So, if it was newsworthy, would you write about it?
 ~currentSpeaker=comic
 I mean–uh nevermind.
-There is no winning with you.
 ~currentSpeaker=you
 So, have you and {webdev} made up?
 ~currentSpeaker=snob

@@ -266,7 +266,7 @@ Eh, I’m not so sure myself, but she’s careful. And B.B has a lot of kids, sh
 ~currentSpeaker=you
 That doesn’t sound reassuring.
 ~currentSpeaker=webdev
-She wears a mask in public, bulletproof vest, and self defence weapons. She’s not some dolt. 
+She wears a mask in public, bulletproof vest, and self defence weapons. She’s not as stupid as she looks. 
 ~currentSpeaker=you
 Oh wow. I had no idea.
 ~currentSpeaker=webdev
