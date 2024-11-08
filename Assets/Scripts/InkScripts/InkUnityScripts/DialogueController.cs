@@ -39,6 +39,8 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     GameObject tvScreen;
     [SerializeField]
+    GameObject shop;
+    [SerializeField]
     TextMeshProUGUI newsText;
     [SerializeField]
     TextMeshProUGUI newsCaption;
@@ -235,6 +237,15 @@ public class DialogueController : MonoBehaviour
                     tvScreen.SetActive(false);
                 }
                 StartCoroutine(uIControl.WriteText(newValue.ToString(), newsText, audioManager));//typewriter effect
+                break;
+            case "shop":
+                if (newValue.ToString() != "")
+                {
+                    shop.SetActive(true);
+                }
+                else {
+                    shop.SetActive(false);
+                }
                 break;
             case "characters":
                 characterControl.UpdateCharactersInScene(newValue.ToString(), stage, characterBox);

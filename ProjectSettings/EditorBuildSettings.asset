@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShopFront.unity
     guid: bb8774ed92f76f44f8ea49ba216fd03f
+  - enabled: 1
+    path: Assets/Scenes/Night.unity
+    guid: 1e40e657afcf2034b818f3c5fd1e64cf
+  - enabled: 1
+    path: Assets/Scenes/Fire.unity
+    guid: 8c47e868f1ad0e947b6290505ecee698
+  - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: ac198740299900a4eb6e61ba672d4241
+  - enabled: 1
+    path: Assets/Scenes/Xmas.unity
+    guid: 7bd50dab1ac7c944980e811c623d0653
   m_configObjects: {}

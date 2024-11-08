@@ -24,10 +24,10 @@ Hey
 
 
 ==day_1==
-~scene= "ShopFront"
-~newsPicture = "headline14"
-~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
-Monday 5th December 206X
+#~scene= "ShopFront"
+#~newsPicture = "headline14"
+#~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
+Monday December 5th 206X
 ~scene= "GenericScene"
 
 // <i>I hope you know what you're doing</i>
@@ -500,10 +500,22 @@ Monday 5th December 206X
 // Let’s do the stock now
 ->day_1_inventory
 ==day_1_inventory==
-->goto_shop->
-->read_check->
-->end_day1
+~music = "shop"
+~shop="true"
+->goto_shop->read_check->end_day1
 ==end_day1==
 ~day+=1
 *[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+You walk home.
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+Tuesday December 6th 
+~scene= "GenericScene"
+¬
 ->day_2

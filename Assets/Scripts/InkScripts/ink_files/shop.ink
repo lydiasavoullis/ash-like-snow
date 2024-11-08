@@ -148,6 +148,9 @@ Remaining funds: {funds}
 ~allbooks+=queendom_heretic
 ->goto_shop
 +Finish shopping
+~music = ""
+~shop=""
+~shop=""
 ->->
 ==buy_childrens_books==
 Remaining funds: {funds}

@@ -106,10 +106,10 @@ Good morning Kent
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_happy")}
 Morning
+{allbooks !? (giraffe_1,zebraman_89): I still don't have any comics sorry }
 {allbooks ? zebraman_89: ->zebra_man->} 
 {allbooks ? giraffe_1: -> giraffe_woman->} 
 ~currentSpeaker = you
-{allbooks !? (giraffe_1,zebraman_89): I still don't have any comics sorry }
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
 How’s business?
@@ -325,8 +325,8 @@ Why would you be so eager to come in here and start this conversation with Kent?
 No one asked you to.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_shocked")}
-<i>gasps</i>
-characters+=pandora
+<i>\*gasps\*</i>
+~characters+=pandora
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_happy")}
 Cas! I’m so sorry Miss Blue. I assure you, you are a highly esteemed customer. Would you like a complimentary cup of tea or coffee?
@@ -338,7 +338,7 @@ I love tea.
 I want tea, robot.
 ~currentSpeaker = android
 Right away.
-characters-=pandora
+~characters-=pandora
 ~currentSpeaker = you 
 Uh, can you not call her the r word. It’s rude.
 ~currentSpeaker = snob 
@@ -394,7 +394,7 @@ Suggestions to improve your failing business.
 {ChangeSprite("Lavender", "lavender_normal")}
 If you have any more magazines please order them. I’ll collect them the next time I visit.
 Bye.
-characters-=lavender
+~characters-=lavender
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_upset")}
 The absolute nerve. 
@@ -441,7 +441,7 @@ Thanks Pandora. Maybe you can recommend me to career services next time.
 I have to go, I have a lot of missed calls from my boyfriend. I think he’s worried after the shooting.
 ~currentSpeaker = you 
 See you around.
-characters-=kent
+~characters-=kent
 You see Pan, lots of people like you. You’re a great shop assistant.
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_pensive")}

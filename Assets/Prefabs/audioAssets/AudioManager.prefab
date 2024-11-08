@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 266.21927, y: 137.71606, z: -779.363}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,17 +59,87 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: a time forgotten
-    clip: {fileID: 8300000, guid: 390373bf87d90d64aafbbb84f0433c10, type: 3}
+  - name: An average day
+    clip: {fileID: 8300000, guid: 02f42c55beb6b8642b6e93e52727f35a, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: rain
+    clip: {fileID: 8300000, guid: f6f93e8c6afd1a245b535d7a9d8ed5cf, type: 3}
+    group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: open door
+    clip: {fileID: 8300000, guid: be764c619524be64d8a4787bc031bef9, type: 3}
     group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: haven of the faeries
-    clip: {fileID: 8300000, guid: 05e09ab3111e5064ba6a04858c377e98, type: 3}
+  - name: close door
+    clip: {fileID: 8300000, guid: 02a8dd18f6842ba41a0852c76968178d, type: 3}
     group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: holoscreen
+    clip: {fileID: 8300000, guid: 77dbd1b957904d2449f835fd947f240c, type: 3}
+    group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: typing
+    clip: {fileID: 8300000, guid: c6dcd1ac28a3e9a4b86251746ab966a9, type: 3}
+    group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
+    volume: 1
+    pitch: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: A good conversation
+    clip: {fileID: 8300000, guid: c44b1dae974b30b45a7ef59e50217605, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Lavender's song
+    clip: {fileID: 8300000, guid: da7b648d1cb41fa46875a4b905ab8594, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Happy xmas
+    clip: {fileID: 8300000, guid: 9a580ef476fd17d45b20d454cc401d74, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: A winters dream
+    clip: {fileID: 8300000, guid: 1574f96092098e1439efd351e1ae7641, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Making friends
+    clip: {fileID: 8300000, guid: c2383bd79f40a3a47acf90ce7c842211, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: A winters chill
+    clip: {fileID: 8300000, guid: fe678ba7674010e46abcabf62793420e, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

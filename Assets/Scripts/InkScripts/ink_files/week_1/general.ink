@@ -1,5 +1,6 @@
 
 ==read_check==
+~music ="Making friends"
 //can read on 8 days
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories
@@ -22,6 +23,7 @@
 + {allbooks ? matilda} [Read Matilda]
 ->read_matilda
 *->->
+~music =""
 ==tea_or_coffee==
 ~button = "cup"
 ~currentSpeaker = android  
