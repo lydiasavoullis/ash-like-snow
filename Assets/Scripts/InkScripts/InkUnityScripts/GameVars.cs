@@ -40,12 +40,13 @@ public static class GameVars
         autoMode = false;
         finishedTyping = true;
         hasLoadedButtons = false;
+        effectJustPlayed = false;
         story = new Story(inkJSON.text);
         characters = null;
-        //loadedChars = new List<string>();
-        //loadedTextLog = new List<string>();
-        //sfxPlaying="";
-        //musicPlaying="";
+        loadedChars = new List<string>();
+        loadedTextLog = new List<string>();
+        sfxPlaying="";
+        musicPlaying="";
     }
 
 }

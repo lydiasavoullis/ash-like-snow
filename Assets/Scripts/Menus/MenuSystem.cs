@@ -15,6 +15,7 @@ public class MenuSystem : MonoBehaviour
     public GameObject optionsMenu;
     public GameObject quitMenu;
     public GameObject sceneLoader;
+    public GameObject textLog;
     public GameObject persistantObject;
     public TextAsset inkJSON;
     public SaveController saveController;
@@ -25,6 +26,9 @@ public class MenuSystem : MonoBehaviour
         saveController = new SaveController();
         saveController.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
 
+    }
+    public void ResetGameVars() {
+        GameVars.ResetStaticVariables(inkJSON);
     }
     public void PlayClickSound() {
 

@@ -148,11 +148,248 @@ See you around.
 ->->
 
 ==kent_ending==
-You got a kent ending.
+~characters+=kent
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
+Hey!
+~currentSpeaker = you
+Ugh not you again.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_amused")}
+Can't say I'm too pleased to see you either.
+I guess we need another incident.
+~currentSpeaker = you
+It would take more than a terrorist attack to get rid of me.
+~currentSpeaker = comic
+I guess we'll have to wait for the next nuclear war.
+~currentSpeaker = you
+You can't joke about things like that!
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
+You're right. I might spoil the next issue of the Calamity for you.
+~currentSpeaker = you
+How is work going?
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_sad")}
+You just had to ruin the vibe {you}.
+~currentSpeaker = you
+So...not great?
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
+Well I still have a job, so that's good.
+And my boss has been pretty pleased with all the stuff to report on.
+I'm so glad there are more disasters to provide us with lots of great content.
+The only difficulty is trying not to wring my hands around his neck every time he opens his mouth and spurts out something hideously insensive.
+~currentSpeaker = you
+Yuck.
+Well, good luck on trying to not murder your boss.
+~currentSpeaker = comic
+I take it one day at a time.
+~currentSpeaker = you
+Um, how's your boyfriend doing?
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_side_serious")}
+He's ok.
+His lungs have cleared up a bit.
+~currentSpeaker = you
+That's good.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
+I bought him some kind of spa retreat this weekend.
+It's meant to help with the breathing issues.
+~currentSpeaker = you 
+I hope that helps.
+~currentSpeaker = comic
+I think it will.
+But I do have a bit of a dilema now.
+~currentSpeaker = you
+What's that?
+~currentSpeaker = comic
+Well DorkCon is this weekend and I have no one to go with.
+~currentSpeaker = you
+That's such a shame.
+~currentSpeaker = comic
+Such a shame indeed.
+...
+~currentSpeaker = you
+No.
+Absolutely not.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_sad")}
+...
+~currentSpeaker = you
+I know you have other friends.
+You can't ask one of them?
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_amused")}
+I need fresh blood.
+A new convert.
+~currentSpeaker = you
+I'm not a nerd.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
+You used to be a hacker for a living.
+~currentSpeaker = you
+That is cool, not nerdy.
+~currentSpeaker = comic
+You work in a bookstore.
+~currentSpeaker = you
+Fair point.
+Fine. I give in. 
+As long as I don't have to wear anything.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_amused")}
+I don't think they'll let you in naked.
+They're not THAT open minded.
+~currentSpeaker = you
+I mean that I'm not wearing a stupid elf costume!
+Like, I'm just going to wear normal clothes.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_side_normal")}
+Sounds boring, but suit yourself.
+~currentSpeaker = you
+I will suit myself.
+~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_normal")}
+I'll send you the details later.
+See ya!
+~characters-=kent
+~currentSpeaker = you
+<i>I'm definitely not wearing an elf costume!</i>
 ->->
 
 ==lavender_solo_ending==
-you got a solo lavender ending.
+~characters+=lavender
+{ChangeSprite("Lavender", "lavender_normal")}
+~currentSpeaker = snob
+Hello.
+~currentSpeaker = you
+Hi.
+~currentSpeaker = snob
+Why do you look like that?
+~currentSpeaker = you
+What do I look like?
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+You seem sad.
+~currentSpeaker = you
+Very observant, aren't you?
+{ChangeSprite("Lavender", "lavender_angry")}
+~currentSpeaker = snob
+I'm just asking.
+There's no need for the sarcasm.
+~currentSpeaker = you
+Sorry.
+{ChangeSprite("Lavender", "lavender_serious")}
+~currentSpeaker = snob
+What's going on?
+~currentSpeaker = you
+Just thinking about things.
+~currentSpeaker = snob
+What things?
+~currentSpeaker = you
+Well, I feel like I could have done better, you know?
+{ChangeSprite("Lavender", "lavender_normal")}
+~currentSpeaker = snob
+It's not an emotion I am particularly familiar with.
+Although...I am perhaps starting to feel it as well now.
+~currentSpeaker = you
+I don't know how I could have done better.
+~currentSpeaker = snob
+I don't know either.
+I mean, perhaps I could have made up with {webdev}.
+But she didn't give me a chance.
+What could I do?
+~currentSpeaker = you
+I suppose you couldn't have done anything else really.
+~currentSpeaker = snob
+Too much has happened.
+What do you think you should have done?
+~currentSpeaker = you
+Made more of an effort at my job.
+I should have taken things more seriously.
+You probably agree with me.
+~currentSpeaker = snob
+Nah.
+~currentSpeaker = you
+Huh?
+~currentSpeaker = snob
+I don't come here for some serious conversations with serious people.
+I don't want to hang out with someone who's constantly deliberating over every decision...every action they're taking.
+That doesn't sound fun. 
+~currentSpeaker = you
+Ok, I think I undestand now.
+~currentSpeaker = snob
+I think I understand too.
+I've had the same issue as you.
+I've been too concerned with keeping up productivity.
+Doing the same thing over and over again, and wanting the same results.
+Life doesn't work like that though.
+And art doesn't either.
+~currentSpeaker = you
+I'm guessing you want to switch things up with your business?
+~currentSpeaker = snob
+Correct.
+I want to make stuff that I actually want to make.
+And I want to be more involved with the stuff that I make.
+I've ordered a new sewing machine and I'm going to design stuff all by myself. 
+~currentSpeaker = you
+Well that's good.
+~currentSpeaker = snob
+And you will be my model.
+~currentSpeaker = you
+No.
+{ChangeSprite("Lavender", "lavender_angry")}
+~currentSpeaker = snob
+Yes.
+~currentSpeaker = you
+Absolutely not.
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+C'mon.
+Just think about it.
+You will get paid.
+~currentSpeaker = you
+...
+Would I have to wear anything made of raw meat, or styrofoam?
+{ChangeSprite("Lavender", "lavender_shocked")}
+~currentSpeaker = snob
+What!?
+{ChangeSprite("Lavender", "lavender_angry")}
+Where did you get such an idea from?
+~currentSpeaker = you
+Rich people are weird.
+And have very impractical fashion sense. 
+{ChangeSprite("Lavender", "lavender_mean")}
+~currentSpeaker = snob
+I promise nothing gross or unsightly.
+{ChangeSprite("Lavender", "lavender_normal")}
+My reputation is on the line.
+I would never make you wear something distasteful.
+{ChangeSprite("Lavender", "lavender_thinking")}
+Anyway I'll give you time to think about it...
+{ChangeSprite("Lavender", "lavender_normal")}
+In the meantime, can you come to a fashion show tonight?
+~currentSpeaker = you
+Sure, I can do tonight.
+~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
+REALLY?!
+~currentSpeaker = you
+I'm not doing anything so I might as well.
+{PlayAnimation("Lavender", "shake")}
+{ChangeSprite("Lavender", "lavender_happy")}
+Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+~currentSpeaker = you
+OK. Please calm down before I change my mind.
+{ChangeSprite("Lavender", "lavender_normal")}
+~currentSpeaker = snob
+I will send details later.
+See you tonight!
+Hehehe...
+~characters-=lavender
+~currentSpeaker = you
+<i>That was so strange...</i>
 ->->
 
 ==tali_lavender_make_up_ending==
