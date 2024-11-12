@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 98534be66f1b18c4fb2ea612b943728c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Honey Room
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 04774607ede66b44c8dcd4ba8f5609ec, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

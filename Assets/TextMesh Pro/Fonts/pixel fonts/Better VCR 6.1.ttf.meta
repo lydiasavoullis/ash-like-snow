@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e08e5260b8bb884a9dc8d3adbe7ba97
+guid: 90ac3a791ddeee44aab0407f0da72783
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,8 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Karma Future
   fontNames:
-  - Karma Future
+  - Better VCR
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

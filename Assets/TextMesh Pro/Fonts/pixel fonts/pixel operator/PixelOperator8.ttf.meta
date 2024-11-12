@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bcbd47d9f730b0c40a6a2d2067be9947
+guid: 9afc3aba6f5b13d4ab3fa2f692358474
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,10 +8,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Roses are FF0000
   fontNames:
-  - Roses are FF0000
-  fallbackFontReferences: []
+  - Pixel Operator 8
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7848965223edb004aa45436a886bca3b, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
