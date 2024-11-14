@@ -24,7 +24,7 @@ You can see this text
 ~pandoraPoints=1
 ->->
 *[pandora points med]
-~pandoraPoints=6
+~pandoraPoints=5
 ->->
 *[pandora points high]
 ~pandoraPoints=8
@@ -58,22 +58,24 @@ You can see this text
 #everyone is stuck in the virtual world.
 #no other endings if you get this one
 #also there is no day 14
-{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}
 
-{snappedOut=="no": ->ada_fires_you->} 
-{snappedOut=="yes": ->ada_transfers_you->} 
+{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}#Done
 
-{kentPoints > 4: ->kent_ending->} 
+{snappedOut=="no": ->ada_fires_you->}  #Done
 
-{taliPoints > 4: ->tali_ending->} 
+{snappedOut=="yes": ->ada_transfers_you->} #Done
 
-{lavenderPoints > 4 && taliPoints< 4: ->lavender_solo_ending->} 
+{kentPoints > 4: ->kent_ending->} #Done
+
+{taliPoints > 4: ->tali_ending->} #Done
+
+{lavenderPoints > 4 && taliPoints< 4: ->lavender_solo_ending->} #Done
 
 
 
-{pandoraPoints < 6: ->pandora_neutral_ending->} 
+{pandoraPoints < 6: ->pandora_neutral_ending->} #Done
 
-{pandoraPoints >= 6: ->pandora_good_ending->} 
+{pandoraPoints >= 6: ->pandora_good_ending->} #Done
 
 ->END
 
@@ -506,27 +508,466 @@ Bye {you}. See you later.
 What have I gotten myself into?
 ->->
 
-==pandora_good_ending==
-#Pandora will come with you if you are transferred
-#Pandora will ask Ada if she can live with you if you are fired
-You got a pandora good ending.
-->->
-
-==pandora_neutral_ending==
-#Pandora will not come with you if you are transferred
-#Pandora will say goodbye to you forever if you are fired
-You got a pandora neutral ending.
-->->
-
-==pandora_bad_ending==
-You got the worst ending.
-~worstEnding = "yes"
-->END
-
 ==ada_fires_you==
-Ada fires you.
+~characters+=pandora
+~characters+=ada
+~currentSpeaker=android
+So, basically, we might need to clean the basement.
+And restock some items that were used during the incident.
+~currentSpeaker=lovelace
+{android}.
+My love.
+Make us some tea please.
+~currentSpeaker=android
+And…I’m really sorry about what happened with the computer.
+I just let {comic} use it. You see he’s kind of an important journalist, and he needed to do some work. Obviously this was highly inappropriate. I wasn’t thinking straight at the time you see. I didn’t realise.
+~currentSpeaker=lovelace
+Uh huh yes.
+~currentSpeaker=android
+Don't you want to-
+~currentSpeaker=lovelace
+Just make us some tea.
+Thank you.
+~currentSpeaker=android
+...
+~characters-=pandora
+~currentSpeaker=you
+Travelling. 
+It's stressful eh?
+~currentSpeaker=lovelace
+...
+~currentSpeaker=you
+Well, I did my best.
+No one got hurt.
+That basement turned out pretty useful in the end.
+~currentSpeaker=lovelace
+...
+~currentSpeaker=you
+Everything alright?
+~currentSpeaker=lovelace
+Do you remember what I told you?
+Before I left.
+~currentSpeaker=you
+No.
+Not really.
+It's a bit of a long story actually.
+~currentSpeaker=lovelace
+I DO NOT FUCKING CARE.
+I gave you one simple instruction.
+I did not care.
+About the inventory. 
+Or how much money would be left in my account.
+I only asked.
+That if a strange man.
+In a coat and a top hat comes and references about some stupid kids books.
+You give him £500.
+No questions asked.
+~currentSpeaker=you
+...
+~currentSpeaker=lovelace
+It was my fault.
+For entrusting this task.
+To a fucking drug addict. 
+~currentSpeaker=you
+It was an accident.
+~currentSpeaker=lovelace
+It always is isn't it?
+I should never have brought you here.
+Taken you in.
+You really are a lost case, aren't you?
+~currentSpeaker=you
+...
+~currentSpeaker=lovelace
+The funny thing is, you don't even know what you have done.
+We are all doomed.
+Thanks to you.
+~currentSpeaker=you
+Where were you?
+~currentSpeaker=lovelace
+Somewhere important doing important things.
+None of that matters anymore.
+~currentSpeaker=you
+I'm not a drug addict.
+~currentSpeaker=lovelace
+You are.
+If you were not addicted.
+You would not ask these questions.
+You would remember.
+That is the only blessing here.
+Get out of my shop.
+~characters-=ada
 ->->
 
 ==ada_transfers_you==
-Ada transfers you.
+~characters+=pandora
+~characters+=ada
+~currentSpeaker=android
+So, basically, we might need to clean the basement.
+And restock some items that were used during the incident.
+~currentSpeaker=lovelace
+Uhuh. I see.
+~currentSpeaker=android
+And…I’m really sorry about what happened with the computer.
+I just let {comic} use it. You see he’s kind of an important journalist, and he needed to do some work. Obviously this was highly inappropriate. I wasn’t thinking straight at the time you see. I didn’t realise.
+~currentSpeaker=lovelace
+{android} I understand. Sometimes these things happen.
+~currentSpeaker=android
+Really? You’re not upset.
+~currentSpeaker=lovelace
+I have to say, I’m a little...disappointed. But not upset.
+~currentSpeaker=android
+But forlorn sounds worse.
+~currentSpeaker=lovelace
+Enough of this. No moping. Things sorted themselves out didn’t they.
+~currentSpeaker=android
+I suppose so.
+How was Madrid?
+~currentSpeaker=lovelace
+It was...festive.
+I saw a lot of...people.
+~currentSpeaker=android
+It sounds nice. A lot nicer than how we spend our Christmas.
+~currentSpeaker=lovelace
+I am truly sorry, but I’m glad nothing happened to my beautiful shop.
+And you of course.
+~currentSpeaker=android
+It feels so weird, now things are back to normal.
+Isn’t that right {you}?
+~currentSpeaker=you
+Yeah, I guess so.
+~currentSpeaker=lovelace
+You’re quiet.
+Not usually so quiet.
+~currentSpeaker=you
+Well the whole incident affected me mentally, I’m not the same person.
+~currentSpeaker=lovelace
+Funny. I did not take you for the type to be mentally affected by this kind of thing.
+~currentSpeaker=you
+I’m an incredibly sensitive person. It might not seem like it. But {android} was like my rock, she helped me through it.
+~currentSpeaker=lovelace
+Oh really?
+~currentSpeaker=android
+…
+Thanks {you}.
+~currentSpeaker=you
+I mean it.
+~currentSpeaker=lovelace
+{android} could you make us some tea my love.
+Cheers.
+~currentSpeaker=android
+...
+~characters-=pandora
+{funds <100: ->lowFunds->|->highFunds->} 
+= lowFunds
+~currentSpeaker=lovelace
+Now I know this is an awkward matter.
+But I have to ask about the finances here.
+I have checked, and there is a noticeable lack of money.
+~currentSpeaker=you
+It was given to a dear friend of yours.
+~currentSpeaker=lovelace
+Well. If it was a dear friend, then that’s fine.
+What did this dear friend wear?
+~currentSpeaker=you
+A top hat and a trench coat.
 ->->
+= highFunds
+~currentSpeaker=lovelace
+You have outdone yourself.
+You've managed my bank account reasonably well.
+I'm impressed.
+~currentSpeaker=you
+I had to lend some money to a dear friend of yours.
+~currentSpeaker=lovelace
+Well. If it was a dear friend, then that’s fine.
+What did this dear friend wear?
+~currentSpeaker=you
+A top hat and a trench coat.
+->->
+~currentSpeaker=lovelace
+Ugh, so dramatic. I hate these revolutionary types.
+All they want to do is blow things up.
+~currentSpeaker=you
+Hold on a minute…
+What did you say?
+~currentSpeaker=lovelace
+Oh, you are not aware?
+But I told you before I left, didn’t I?
+~currentSpeaker=you
+Yes, I had a bit of a lapse of memory.
+~currentSpeaker=lovelace
+You’ve been taking that disgusting drug again, haven’t you?
+~currentSpeaker=you
+No, it was an accident. {android} was putting it in my drink. Innocently, she thought she was helping me.
+~currentSpeaker=lovelace
+That stupid android. She almost ruined everything.
+I wouldn’t believe such a ridiculous thing usually, but that does sound exactly like something {android} would do.
+She’s unbelievably...
+~currentSpeaker=you
+Human?
+~currentSpeaker=lovelace
+Yes.
+Unfortunately.
+Well, I will need to catch you up on everything.
+And you will need to move.
+~currentSpeaker=you
+What?
+~currentSpeaker=lovelace
+You are involved in the incident, and so am I. We are both connected. We’re safe for now, they are busy with the clean up. But soon people will start asking questions, and snooping around. I can’t be there when that happens, and neither can you.
+~currentSpeaker=you
+So, where do we go? Madrid?
+~currentSpeaker=lovelace
+Not a bad idea.
+~currentSpeaker=you
+No. No. I was just joking.
+~currentSpeaker=lovelace
+I have another location. A different shop.
+~currentSpeaker=you
+Still selling books I hope.
+~currentSpeaker=lovelace
+Why? I hope you’re not getting too attached.
+~currentSpeaker=you
+When are you going to tell {android}?
+~currentSpeaker=lovelace
+Why does she need to know?
+~currentSpeaker=you
+She’s not a child.
+And it wouldn’t hurt to tell her some stuff once in a while. It might stop her from drugging me, thinking she was helping.
+Maybe, she can actually help us.
+~currentSpeaker=lovelace
+I don’t know.
+I’ve made some mistakes with her, I know.
+It’s just so hard...
+~currentSpeaker=you
+It’s hard for her too.
+~characters+=pandora
+~currentSpeaker=android
+I brought tea.
+~currentSpeaker=lovelace
+I better be off.
+I’d like to assess the damage.
+~characters-=ada
+~currentSpeaker=you
+Only Ada would call a couple of used sleeping bags and missing ration packs ‘damage’.
+~currentSpeaker=android
+How are you holding up?
+~currentSpeaker=you
+I’m fine.
+~currentSpeaker=android
+She doesn’t seem too upset.
+~currentSpeaker=you
+It’s funny, this city was almost destroyed and you’re more concerned with what Ada will think about the mess.
+~currentSpeaker=android
+She’s scary.
+~currentSpeaker=you
+She is. A bit. 
+~currentSpeaker=android
+A lot.
+->->
+
+==pandora_good_ending==
+#Pandora will come with you if you are transferred
+#Pandora will ask Ada if she can live with you if you are fired
+->pandora_goodbye->
+~currentSpeaker=android
+WAIT!
+~currentSpeaker=you
+Eh?
+~currentSpeaker=android
+I...don't know what I was going to say.
+I don't want you to leave.
+~currentSpeaker=you
+Really?
+I have to leave.
+I have no choice.
+~currentSpeaker=android
+This isn't fair.
+And don't tell me life isn't fair.
+I already figured that one out.
+~currentSpeaker=you
+Well, I don't really know what to say to you then.
+~currentSpeaker=android
+Take me with you.
+~currentSpeaker=you
+What!
+~currentSpeaker=android
+I can't stay here forever.
+I can't take it anymore.
+~currentSpeaker=you
+...
+OK.
+You should really tell {lovelace} though.
+~currentSpeaker=android
+And what can she do?
+She can't go to the authorities.
+She would be arrested.
+~currentSpeaker=you
+I know. But she should probably know.
+I don't think she will be too happy.
+~currentSpeaker=android
+I don't care.
+I don't care anymore.
+I just want to leave now.
+~currentSpeaker=you
+Talk.
+Then we leave.
+~currentSpeaker=android
+...
+~characters-=pandora
+<i>\*Some time passess...\*</i>
+<i>\*Shouting filters through the thin shop walls.\*</i>
+~characters+=pandora
+~currentSpeaker=android
+Let's go.
+~currentSpeaker=you
+What did she say?
+~currentSpeaker=android
+You told me that I could leave with you if I told her.
+And I told her.
+Now...
+Let's just go.
+~currentSpeaker=you
+You know, you really scare me sometimes.
+~currentSpeaker=android
+Only sometimes?
+I'll have to work on that.
+->->
+==pandora_neutral_ending==
+->pandora_goodbye->
+->->
+==pandora_goodbye==
+~currentSpeaker=android
+So I guess this is goodbye.
+~currentSpeaker=you
+Yeah.
+I didn't really think about it like that.
+~currentSpeaker=android
+I just wanted you to know.
+It has been a pleasure working with you.
+~currentSpeaker=you
+Likewise.
+~currentSpeaker=android
+...
+I'm sorry about the whole Fate thing.
+~currentSpeaker=you
+It's unfortunate but I think you've learned your lesson.
+~currentSpeaker=android
+At what cost?
+~currentSpeaker=you
+If anyone knows about making costly mistakes it's me.
+And I can tell you that...
+You will get over it.
+~currentSpeaker=android
+I feel so bad.
+~currentSpeaker=you
+Weirdly enough, that's a good thing.
+~currentSpeaker=android
+How is this a good thing?
+~currentSpeaker=you
+Means your moral compass is working.
+~currentSpeaker=android
+This is horrible.
+I thought my moral compass was working.
+It obviously needs some re-calibrating.
+~currentSpeaker=you
+Everyone's does from time to time.
+~currentSpeaker=android
+Mine should not!
+~currentSpeaker=you
+You're not perfect. It's quite obvious. 
+It doesn't mean you're not valued. People like you.
+Don't forget that. 
+I really do have to go.
+Before {lovelace} chases me out with a broomstick.
+~currentSpeaker=android
+I certainly wouldn't mind watching that.
+~currentSpeaker=you
+You have a cruel sense of humour.
+->->
+
+==pandora_bad_ending==
+~worstEnding = "yes"
+~characters+=pandora
+~characters+=ada
+~currentSpeaker=lovelace
+{android}.
+Where's {you}?
+~currentSpeaker=android
+{ChangeSprite("Pandora", "pandora_pensive")}
+...
+~currentSpeaker=lovelace
+{android}?
+Where did that lazy cow get off to?
+~currentSpeaker=android
+{ChangeSprite("Pandora", "pandora_sad")}
+I didn't mean to.
+~currentSpeaker=lovelace
+You didn't mean to what?
+Tell me what happened now.
+~currentSpeaker=android
+{ChangeSprite("Pandora", "pandora_shocked")}
+Or you'll do what?
+~currentSpeaker=lovelace
+Where did such insolence come from!?
+~currentSpeaker=android
+{ChangeSprite("Pandora", "pandora_sad")}
+...
+I'll tell you everything.
+~currentSpeaker=lovelace
+Was it to do with that event?
+I need to have words with {you}.
+~currentSpeaker=android
+That might be a bit difficult.
+~currentSpeaker=lovelace
+{android} you're really scaring me now...
+~currentSpeaker=android
+What's there to be scared of.
+It was only your creation.
+~currentSpeaker=lovelace
+My...creation.
+Don't tell me you touched it.
+~currentSpeaker=android
+It was an accident.
+I didn't realise.
+~currentSpeaker=lovelace
+What's the damage?
+~currentSpeaker=android
+They're all stuck.
+I've been keeping them fed and watered. But they're just zombies at this point.
+~currentSpeaker=lovelace
+They're still alive?
+~currentSpeaker=android
+Of course!
+Otherwise...
+~currentSpeaker=lovelace
+Otherwise?
+~currentSpeaker=android
+I would have called an ambulance.
+~currentSpeaker=lovelace
+You would do no such thing.
+~currentSpeaker=android
+I would!
+I'm sick of this {lovelace}.
+I can't continue.
+Covering up for you.
+Covering my existance.
+~currentSpeaker=lovelace
+It's for your protection.
+~currentSpeaker=android
+Or yours.
+You'd be in trouble if they knew about me.
+~currentSpeaker=lovelace
+I would be in trouble.
+You would be dead.
+~currentSpeaker=android
+I'm not even alive.
+~currentSpeaker=lovelace
+I'm not having this debate with you now!
+We deal with them. Now.
+~currentSpeaker=android
+You think you can get them out?
+~currentSpeaker=lovelace
+Yes.
+I have no choice.
+After all it is my creation.
+->END

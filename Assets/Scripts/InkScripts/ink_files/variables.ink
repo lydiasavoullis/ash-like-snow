@@ -19,7 +19,7 @@ VAR chapter = "Chapter 1"
 VAR drunk = 0
 #character sprites
 LIST characters = lavender, ada, pandora, kent, tali,cas, stranger
-LIST Adalina = adalina_suprised, (adalina_normal)
+LIST Ada = adalina_displeased, (adalina_neutral),adalina_pleased
 LIST Kent = kent_shocked, (kent_normal), kent_amused, kent_happy, kent_side_normal, kent_side_serious, kent_upset, kent_sad
 LIST Tali = tali_shocked, (tali_normal), tali_sad, tali_smirk, tali_talking_side,tali_talking_forward, tali_upset, tali_awe, tali_happy_closed, tali_exasperated, tali_happy, tali_serious
 LIST Lavender = (lavender_normal), lavender_sad,lavender_thinking, lavender_angry, lavender_shocked,lavender_happy, lavender_crying, lavender_mean, lavender_serious, lavender_tears_crying
