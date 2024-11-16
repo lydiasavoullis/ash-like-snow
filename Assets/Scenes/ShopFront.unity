@@ -7013,6 +7013,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1849172758}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1849172760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 218475450111324728, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1849172758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053512910
 GameObject:
   m_ObjectHideFlags: 0
@@ -12939,6 +12945,7 @@ MonoBehaviour:
   optionsMenu: {fileID: 68339953}
   quitMenu: {fileID: 1614138712}
   sceneLoader: {fileID: 0}
+  textLog: {fileID: 0}
   persistantObject: {fileID: 0}
   inkJSON: {fileID: 4900000, guid: ec7094f0cf528ce44b08d3b949d07eed, type: 3}
   audioManager: {fileID: 0}
@@ -15158,13 +15165,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 3195727536335325063, guid: b382450f01aba75438fe22889140e3f2,
     type: 3}
+  cupButtonPrefab: {fileID: 0}
+  bookButtonPrefab: {fileID: 0}
   saveSlot: {fileID: 6686483595649287865, guid: b76b0d456090133418e06af3abf23a99,
     type: 3}
+  newsPicture: {fileID: 0}
+  ad1: {fileID: 0}
+  ad2: {fileID: 0}
+  ad3: {fileID: 0}
+  ad4: {fileID: 0}
   tvScreen: {fileID: 0}
+  shop: {fileID: 0}
   newsText: {fileID: 0}
+  newsCaption: {fileID: 0}
   storyText: {fileID: 1706042718630338219}
   nameTag: {fileID: 1855988161853392085}
   quitDialogue: {fileID: 1614138712}
+  textLogScrollBar: {fileID: 1849172760}
   textLogBox: {fileID: 7532719249480246857, guid: b58eccf36c7218640b0712f54fd5e291,
     type: 3}
   textLogList: {fileID: 1706042717443362954}

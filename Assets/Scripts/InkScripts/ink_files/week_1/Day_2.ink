@@ -67,7 +67,7 @@ I can’t reduce it anymore. They’ll just be left with a blank page at some po
 Maybe you can compromise?
 ~currentSpeaker = webdev 
 {ChangeSprite("Tali", "tali_upset")}
-Ha! There is no compromise with these people. The customer is always right. Nothing I do makes my boss happy. 
+Ha! There is no compromise with these people. Nothing I do makes my boss happy. 
 ~currentSpeaker = you 
 Why not move?
 ~currentSpeaker = webdev 
