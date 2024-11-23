@@ -119,3 +119,128 @@ It seems to be that they both thought the other one took the bins out.
 You relax a bit.
 And laugh to yourself. 
 ->->
+
+==night_07==
+You walk home.
+You're calm. Vibrant, almost.
+A man is walking slowly, carefully.
+He stops by a wall with something in his hand.
+He is holding a handle of sorts.
+Attached to the handle is a leash.
+Attached to the leash is a small dog.
+You feel sick to your stomach.
+Turning to walk the other way, you pause.
+Clenching your fists and twisting them.
+Like you're wringing a towel. 
+->->
+
+==night_07_F==
+You walk home.
+A figure steps slowly, carefully.
+He stops by a wall with something in his hand.
+He is holding a handle of sorts.
+Attached to the handle is a leash.
+Attached to the leash is a small creature.
+It pokes at the night air with its nose.
+Its bones are small and fragile.
+You can imagine them shattering into fragments and scattering across the pavement.
+You clench your fists and continue walking.
+->->
+
+==night_08==
+You walk home.
+An old lady hobbles along, struggling to carry large bags.
+You offer to take them from her.
+She hands them over reluctantly.
+The bags are heavier than they look.
+Your arms protest at the weight.
+She seems glad to be relieved of it. 
+You make small talk as you walk.
+When you deposit the bags at her doorstep she insists on making you a cup of tea.
+You decline.
+She waves cheerfully as you leave.
+Your heart feels strangely lighter.
+->->
+
+==night_08_F==
+You walk home.
+An old figure hobbles along, struggling to carry large bags.
+You offer to take them.
+They hand the bags to you reluctantly.
+They are heavier than they look, but then you are stronger than you look.
+Your muscles shift to accomadate this extra weight.
+You are sure you will pay for this later but the thought drifts away like many others.
+You get the bags to the figure's door step.
+She offers you a hot beverage but you decline.
+You leave her doorstep that night feeling empty.
+->->
+
+==night_09==
+You walk home.
+Two children skip ahead of you chattering eagerly.
+Edging dangerously to the road.
+A voice screeches warnings from behind you.
+It's thin and raspy.
+Worn by years of repeating the same phrases over and over again.
+You step forward, blocking their path.
+They stop suddenly, almost crashing into each other.
+There was always something unerving about your appearance.
+You use that to your advantage now.
+The mother catches up to you, and thanks you for stopping them running into the road.
+A military vehicle rolls by, as if to emphasise her point.
+Little children should be careful where they step. 
+->->
+
+==night_09_F==
+You walk home.
+Two small and loud figures run infront of you.
+Nearing the road.
+A wearing voice shouts from behind.
+You step forward, blocking the figures.
+They stop suddenly, backing away.
+You smell fear now.
+A larger figure catches up to you, and thanks you for stopping them running into the road.
+A military vehicle rolls by, rattling the ground. 
+They better be more careful next time.
+->->
+==night_10==
+You walk home.
+Someone is handing out leaflets on the corner.
+They extend a hand.
+You take the paper.
+You look the person in the face.
+They have the smooth blue tinted visage of an IOI.
+She has an attractive face, or at least for a certain definition of attractive.
+The leaflet is an advert for a type of...personal IOI.
+You give her a polite smile.
+When you are out of sight you crumple the leaflet in your fist.
+->->
+
+==night_10_F==
+You walk home.
+A figure is handing out leaflets on the corner.
+They extend a hand.
+You take the paper.
+You examine the figure identifying it as an IOI.
+The leaflet is an advert for a type of IOI servant.
+One that is attentive to all of its master's needs.
+It is both attractive and submissive.
+And too expensive for you to ever afford.
+Still, you pocket the leaflet.
+->->
+
+==night_11==
+You walk home.
+The air is biting cold, and eerily still.
+The streets are empty tonight.
+No one will dare come out unless they have to.
+You ponder on the day to come, and what it will bring.
+->->
+
+==night_11_F==
+You walk home.
+It's a biting cold night.
+The streets are completely empty.
+You numb yourself to the cold, and to the creeping loneliness of your surroundings.
+Nothing can hurt you anymore.
+->->
