@@ -111,7 +111,18 @@ Hey Pan.
  Just listen to this song.
 ->end_day_7
 ==end_day_7==
-~day+=1
 *[Go home]
-
-->DONE
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_07_F->|->night_07->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+20th December, Monday
+~scene= "GenericScene"
+¬
+~day+=1
+->day_8

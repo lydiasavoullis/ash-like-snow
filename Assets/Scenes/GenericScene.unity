@@ -15404,9 +15404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA3Hello hi I'm Lydia \xA3Hello hi I'm Lydia \xA3Hello hi I'm Lydia \xA3Hello
-    hi I'm Lydia \xA3Hello hi I'm Lydia \xA3Hello hi I'm Lydia \xA3Hello hi I'm Lydia
-    \xA3Hello hi I'm Lydia."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c45591784b8b5b749b5cfed5f211882a, type: 2}
   m_sharedMaterial: {fileID: -626720796701463439, guid: c45591784b8b5b749b5cfed5f211882a,

@@ -458,6 +458,18 @@ OK let’s do the orders for today.
 ==go_to_day_3==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-~day+=1
 +[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_02_F->|->night_02->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+15th December, Wednesday
+~scene= "GenericScene"
+¬
+~day+=1
 ->day_3

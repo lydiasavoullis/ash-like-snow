@@ -27,7 +27,7 @@ Hey
 #~scene= "ShopFront"
 #~newsPicture = "headline14"
 #~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
-Monday December 5th 206X
+13th December, Wednesday, 206X
 ~scene= "GenericScene"
 
 // <i>I hope you know what you're doing</i>
@@ -504,18 +504,18 @@ Monday December 5th 206X
 ~shop="true"
 ->goto_shop->read_check->end_day1
 ==end_day1==
-~day+=1
 *[Go home]
 ~scene = "Night"
 ¬
 ~music = "night theme"
 ~sfx = "rain"
-You walk home.
+{snappedOut=="no": ->night_01_F->|->night_01->}
 ~scene= "ShopFront"
 ¬
 ~music = ""
 ~sfx = "rain"
-Tuesday December 6th 
+14th December, Tuesday  
 ~scene= "GenericScene"
 ¬
+~day+=1
 ->day_2

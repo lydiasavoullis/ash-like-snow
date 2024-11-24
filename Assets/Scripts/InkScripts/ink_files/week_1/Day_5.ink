@@ -437,6 +437,18 @@ Pandora enters
 ==go_to_day_6==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-~day+=1
 *[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_05_F->|->night_05->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+18th December, Saturday
+~scene= "GenericScene"
+¬
+~day+=1
 ->day_6

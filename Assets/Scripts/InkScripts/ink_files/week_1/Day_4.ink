@@ -426,6 +426,18 @@ WHAT!
 ==go_to_day_5==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-~day+=1
 +[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_04_F->|->night_04->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+17th December, Friday
+~scene= "GenericScene"
+¬
+~day+=1
 ->day_5

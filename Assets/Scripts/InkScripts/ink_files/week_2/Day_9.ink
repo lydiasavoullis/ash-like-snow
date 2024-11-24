@@ -232,5 +232,18 @@ I’ll join you. Bye guys.
 ->read_check->
 ->end_day_9
 ==end_day_9==
+*[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_09_F->|->night_09->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+22nd December, Wednesday
+~scene= "GenericScene"
+¬
 ~day+=1
 ->day_10

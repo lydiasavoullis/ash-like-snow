@@ -523,6 +523,18 @@ Please don’t fret about this Pandora, just go to bed.
 Yes: Go to the top, yes.
 ->end_day_6
 ==end_day_6==
-~day+=1
 *[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_06_F->|->night_06->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+19th December, Sunday
+~scene= "GenericScene"
+¬
+~day+=1
 ->day_7

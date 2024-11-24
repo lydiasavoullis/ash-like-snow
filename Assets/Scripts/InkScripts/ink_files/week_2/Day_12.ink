@@ -496,9 +496,9 @@ What are the sizes like? Anything I can squeeze over my shoulders or arse?
 ~currentSpeaker=you
 Possibly…
 ~currentSpeaker=webdev
-Maybe there’s a nice bed sheet I could just drape around my shoulders like a toga. Ancient Rome style.
+Maybe there’s a nice bed sheet I could just drape around my shoulders like a toga.
 ~currentSpeaker=you
-I’ve heard that’s back in fashion. 
+I’ve heard that’s back in fashion now. 
 ~currentSpeaker=webdev
 If we all get wiped out maybe we’ll just revert back to ancient times.
 Do you ever think about that?
@@ -526,14 +526,6 @@ I don’t have the energy to argue.
 I can’t believe we’re getting herded to bed. 
 ~currentSpeaker=snob
 I’ll have trouble sleeping without my white noise machine and humidifier and weighted blanket and–
-~currentSpeaker=comic
-And your beloved teddy bear Mr Snuggles?
-~currentSpeaker=snob
-How did you know his name? 
-Are you…sleeping with him?
-~currentSpeaker=comic
-Yes, he sneaks into my bed when you’re asleep.
-Obviously, there’s something he finds lacking in your relationship.
 ~currentSpeaker=you
 Please, for the love of god shut up.
 ~day+=1

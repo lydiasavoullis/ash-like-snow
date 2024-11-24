@@ -346,5 +346,18 @@ Shall we do inventory?
 ->end_day_8
 
 ==end_day_8==
+*[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_08_F->|->night_08->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+21st December, Tuesday
+~scene= "GenericScene"
+¬
 ~day+=1
 ->day_9

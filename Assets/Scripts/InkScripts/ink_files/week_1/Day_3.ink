@@ -404,6 +404,18 @@ I appreciate you trying to protect the confidentiality of your clients' personal
 ==go_to_day_4==
 ~currentSpeaker = you 
 See you tomorrow, bye!
-~day+=1
 +[Go home]
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_03_F->|->night_03->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+16th December, Thursday
+~scene= "GenericScene"
+¬
+~day+=1
 ->day_4

@@ -523,5 +523,17 @@ I promise.
 ->end_of_day_11
 
 ==end_of_day_11==
+~scene = "Night"
+¬
+~music = "night theme"
+~sfx = "rain"
+{snappedOut=="no": ->night_11_F->|->night_11->}
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+24th December, Friday
+~scene= "GenericScene"
+¬
 ~day+=1
 ->day_12
