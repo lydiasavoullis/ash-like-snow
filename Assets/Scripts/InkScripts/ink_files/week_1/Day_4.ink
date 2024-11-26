@@ -427,6 +427,7 @@ WHAT!
 ~currentSpeaker = you 
 See you tomorrow, bye!
 +[Go home]
+~currentSpeaker = ""
 ~scene = "Night"
 ¬
 ~music = "night theme"

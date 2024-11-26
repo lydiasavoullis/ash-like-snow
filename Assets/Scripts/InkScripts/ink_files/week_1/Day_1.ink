@@ -27,7 +27,7 @@ Hey
 #~scene= "ShopFront"
 #~newsPicture = "headline14"
 #~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
-13th December, Wednesday, 206X
+13th December, Monday, 206X
 ~scene= "GenericScene"
 
 // <i>I hope you know what you're doing</i>
@@ -505,6 +505,7 @@ Hey
 ->goto_shop->read_check->end_day1
 ==end_day1==
 *[Go home]
+~currentSpeaker = ""
 ~scene = "Night"
 ¬
 ~music = "night theme"

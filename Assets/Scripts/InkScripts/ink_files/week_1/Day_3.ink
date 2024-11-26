@@ -405,6 +405,7 @@ I appreciate you trying to protect the confidentiality of your clients' personal
 ~currentSpeaker = you 
 See you tomorrow, bye!
 +[Go home]
+~currentSpeaker = ""
 ~scene = "Night"
 ¬
 ~music = "night theme"

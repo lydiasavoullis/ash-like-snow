@@ -24,15 +24,47 @@
 ->read_matilda
 *->->
 ~music =""
+VAR timesRejected = 0
 ==tea_or_coffee==
+{snappedOut == "yes": ->snapped_out}
 ~button = "cup"
 ~currentSpeaker = android  
 Tea or coffee?
+->tea_or_coffee_choices
+==tea_or_coffee_choices
 +[Tea]
 ->->
 +[Coffee]
 ->->
 +[No thanks]
+~timesRejected +=1
+->drink_rejected
+
+==snapped_out
+~currentSpeaker = android
+{~Do you want a—| Tea or cof— | Maybe a drink?}
+~currentSpeaker = you
+{~I'm good thanks!| Nope! | Brought my own drink thanks.}
+~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
+...
+->->
+==drink_rejected==
+~currentSpeaker = android  
+{timesRejected == 1: {PlayAnimation("Pandora", "shake")} Haha. A joke right? }
+{timesRejected == 2: {PlayAnimation("Pandora", "shake")} C'mon you don't want a little drink?}
+{timesRejected == 3: {PlayAnimation("Pandora", "shake")} You need a drink {you} it's for your own good!}
+{timesRejected == 4: ->snap_out_trigger}
+->tea_or_coffee_choices
+==snap_out_trigger
+~snappedOut = "yes"
+~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
+Why are you being like this?
+...ok.
+~currentSpeaker = ""
+<i>That was strange...</i>
+<i>I should keep an eye on her.</i>
 ->->
 ==read_alice_in_wonderland==
 ~currentSpeaker = you 
