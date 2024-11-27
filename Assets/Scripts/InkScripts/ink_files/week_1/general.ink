@@ -4,25 +4,25 @@
 //can read on 8 days
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories
-+{allbooks ? myths_legends}[Read Greek myths]
+*{allbooks ? myths_legends}[Read Greek myths]
  -> read_greek_myths
-+ {allbooks ? Alice_in_Wonderland} [Read Alice in Wonderland]
+* {allbooks ? Alice_in_Wonderland} [Read Alice in Wonderland]
 ->read_alice_in_wonderland
-+ {allbooks ? Howls_Moving_Castle} [Read Howl's Moving Castle]
+* {allbooks ? Howls_Moving_Castle} [Read Howl's Moving Castle]
 ->read_howls_moving_castle
-+ {allbooks ? t_lion_witch_wardrobe} [Read The Lion the Witch and the Wardrobe]
+* {allbooks ? t_lion_witch_wardrobe} [Read The Lion the Witch and the Wardrobe]
 ->read_lion_witch_wardrobe
-+ {allbooks ? the_wiz_oz} [Read The Wizard of Oz]
+* {allbooks ? the_wiz_oz} [Read The Wizard of Oz]
 ->read_the_wizard_of_oz
-+ {allbooks ? the_hobbit}[Read The Hobbit]
+* {allbooks ? the_hobbit}[Read The Hobbit]
 ->read_the_hobbit
-+ {allbooks ? t_secret_garden}[Read The Secret Garden]
+* {allbooks ? t_secret_garden}[Read The Secret Garden]
 ->read_the_secret_garden
-+ {allbooks ? alice_looking_glass} [Read Alice Through the Looking-Glass]
+* {allbooks ? alice_looking_glass} [Read Alice Through the Looking-Glass]
 ->read_through_the_looking_glass
-+ {allbooks ? matilda} [Read Matilda]
+* {allbooks ? matilda} [Read Matilda]
 ->read_matilda
-*->->
++->->
 ~music =""
 VAR timesRejected = 0
 ==tea_or_coffee==
@@ -67,6 +67,7 @@ Why are you being like this?
 <i>I should keep an eye on her.</i>
 ->->
 ==read_alice_in_wonderland==
+~pandoraPoints+=1
 ~currentSpeaker = you 
 I bought you something
 ~currentSpeaker = android  
@@ -111,6 +112,7 @@ It's true, I have it good
 ~allbooks-= Alice_in_Wonderland
 ->->
 ==read_greek_myths==
+~pandoraPoints+=1
 ~currentSpeaker = you 
 I bought something you might like
 ~currentSpeaker = android  
@@ -156,6 +158,7 @@ Well, you'll enjoy it then
 ~allbooks-= myths_legends
 ->->
 ==read_howls_moving_castle==
+~pandoraPoints+=1
 ~currentSpeaker = you 
 I bought you something.
 It's called Howl's Moving Castle.
@@ -189,6 +192,7 @@ I can't wait to finish this tonight.
 ~allbooks-= Howls_Moving_Castle
 ->->
 ==read_lion_witch_wardrobe==
+~pandoraPoints+=1
 ~currentSpeaker = you 
 Pandora I've got something for you.
 It's a book by C.S. Lewis
@@ -227,6 +231,7 @@ I'm looking forward to reading the rest of it!
 ~allbooks-=t_lion_witch_wardrobe
 ->->
 ==read_the_wizard_of_oz==
+~pandoraPoints+=1
 ~currentSpeaker = you
 I've got another book for you.
 ~currentSpeaker = android
@@ -275,6 +280,7 @@ I'm looking forward to finishing this book.
 ~allbooks-=the_wiz_oz
 ->->
 ==read_the_hobbit==
+~pandoraPoints+=1
 ~currentSpeaker = you
 I have another book.
 ~currentSpeaker = android
@@ -331,6 +337,7 @@ Imaginary stuff is just cooler I guess.
 Some imaginary things are cooler.
 ->->
 ==read_matilda==
+~pandoraPoints+=1
 ~currentSpeaker = you
 Hey so I have this book you might like.
 It's called Matilda, it's about this girl who likes reading.
@@ -384,6 +391,7 @@ It would be disingenuous to suggest otherwise.
 But it doesn't mean it's not worth it.
 ->->
 ==read_through_the_looking_glass==
+~pandoraPoints+=1
 ~currentSpeaker = you
 I have something for you.
 ~currentSpeaker = android
@@ -413,6 +421,7 @@ They can also induce anxiety.
 It depends on the animal...
 ->->
 ==read_the_secret_garden==
+~pandoraPoints+=1
 ~currentSpeaker = you
 I bought another kids book.
 ~currentSpeaker = android

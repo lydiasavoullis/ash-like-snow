@@ -60,7 +60,7 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=togue_666
 ->goto_shop
-+{day==4}{funds>=100}[Hypnos \#55(£100)]
+*{day==4}{funds>=100}[Hypnos \#55(£100)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=hypnos_55

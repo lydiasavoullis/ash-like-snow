@@ -6395,7 +6395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1177382952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7010,12 +7010,6 @@ PrefabInstance:
 --- !u!224 &1849172759 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1487659657910495936, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1849172758}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1849172760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 218475450111324728, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
     type: 3}
   m_PrefabInstance: {fileID: 1849172758}
   m_PrefabAsset: {fileID: 0}
@@ -15181,7 +15175,6 @@ MonoBehaviour:
   storyText: {fileID: 1706042718630338219}
   nameTag: {fileID: 1855988161853392085}
   quitDialogue: {fileID: 1614138712}
-  textLogScrollBar: {fileID: 1849172760}
   textLogBox: {fileID: 7532719249480246857, guid: b58eccf36c7218640b0712f54fd5e291,
     type: 3}
   textLogList: {fileID: 1706042717443362954}

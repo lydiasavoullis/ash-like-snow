@@ -1,5 +1,6 @@
 
 ==togue_1==
+~lavenderPoints+=1
 ~currentSpeaker = you
 I found one of the magazines you like.
 ~currentSpeaker = snob
@@ -8,6 +9,7 @@ Finally.
 ~booksSold+=1
 ->->
 ==togue_2==
+~lavenderPoints+=1
 ~currentSpeaker = you
 Just before I forget, I ordered this spring addition for you.
 ~currentSpeaker = snob
@@ -17,6 +19,7 @@ Oh pastels!
 ~booksSold+=1
 ->->
 ==togue_3==
+~lavenderPoints+=1
 ~currentSpeaker = you
 Just before I forget, I ordered this for you.
 ~currentSpeaker = snob
@@ -25,6 +28,7 @@ Well, I suppose you're not completely useless.
 ~booksSold+=1
 ->->
 ==togue_winter==
+~lavenderPoints+=1
 ~currentSpeaker = you
 Oh Lavender, I have a Togue winter addition for you.
 ~currentSpeaker = snob
@@ -40,6 +44,7 @@ I'll take it.
 ~booksSold+=1
 ->->
 ==togue_special==
+~lavenderPoints+=1
 ~currentSpeaker = you
 So Lavender, I have a Togue special issue for you.
 ~currentSpeaker = snob
@@ -62,6 +67,7 @@ Not really. But if it makes you happy.
 ->->
 
 ==togue_flight_uniform==
+~lavenderPoints+=1
 ~currentSpeaker = you
 Lavender, I have something for you.
 This is Togue, is has uh something to do with flight attendant uniforms?
@@ -86,6 +92,7 @@ I better get on that then.
  ~booksSold+=1
 ->->
 ==togue_pets==
+~lavenderPoints+=1
 ~currentSpeaker = you
 I've got something for you.
 ~currentSpeaker = snob
@@ -116,7 +123,81 @@ Right.
  ~funds+=800
  ~booksSold+=1
 ->->
+==togue_acid_rain==
+~lavenderPoints+=1
+~currentSpeaker = you
+So I have this magazine you might like?
+It's Acid Rain Proof Chic!
+~currentSpeaker = snob
+Great!
+Those sunglasses are so cute.
+And they protect your eyes from the harmful acidity of the sulfurous rain vapours. 
+~currentSpeaker = you
+Facinating.
+~currentSpeaker = snob
+Back then people wanted to protect themselves from the toxic weather but still feel good doing it.
+~currentSpeaker = you
+It sure feels good to not get acid in your eyes.
+~currentSpeaker = snob
+Indeed.
+->->
+==togue_ppe_special==
+~lavenderPoints+=1
+~currentSpeaker = you
+Look I got you something.
+It's like fashion for medical protection equiment.
+I don't know. I'm completely lost now.
+~currentSpeaker = snob
+Look at all these masks.
+~currentSpeaker = you
+Are you serious?
+Masks are fashionable now?
+~currentSpeaker = snob
+I like this one the best.
+~currentSpeaker = you
+That's terrible!
+~currentSpeaker = snob
+What are you some kind of anti-masker now?
+~currentSpeaker = you
+I am grateful for the existance of masks.
+But that is not a good mask.
+It's covering his whole face!
+How does he breathe?
+How does he even see?
+~currentSpeaker = snob
+Intuition.
+~currentSpeaker = you
+I'm sorry that's stupid.
+He's going to walk into a wall and die.
+~currentSpeaker = snob
+Do you want me to buy it or not?
+~currentSpeaker = you
+Fine.
+->->
+==togue_protective_gear==
+~lavenderPoints+=1
+~currentSpeaker = you
+We've got a new magazine in.
+~currentSpeaker = snob
+Hmph, what is it?
+~currentSpeaker = you
+Uh something about protective gear.
+~currentSpeaker = snob
+Oh wow, look at that hard hat.
+~currentSpeaker = you
+It doesn't look very practical.
+~currentSpeaker = snob
+I'm sure it works.
+~currentSpeaker = you
+Maybe...if you hit your head in a very specific spot.
+~currentSpeaker = snob
+Maybe people should try not to hit their heads in the first place.
+I suppose it's a bit late for me to tell you that.
+~currentSpeaker = you
+Ouch!
+->->
 ==fantasy_dragon_heart_book==
+~taliPoints+=1
 ~currentSpeaker = you
 I just ordered this in.
 ~currentSpeaker = webdev
@@ -127,6 +208,7 @@ I was thinking about you.
 ~booksSold+=1
 ->->
 ==fantasy_7_book==
+~taliPoints+=1
 ~currentSpeaker = you
 Got something for you
 ~currentSpeaker = webdev
@@ -143,70 +225,8 @@ It was prophesied long ago, each book focuses on one of the moncharchs. The last
 ~booksSold+=1
 ->->
 
-==the_sentinel==
-~currentSpeaker = you
-I got you a comic
-~currentSpeaker = comic
-This is The Sentinel
-It's about this guy who lives in a lighthouse, and he looks out for these monsters that crawl out of the sea at night.
-~currentSpeaker = you
-What does he do to the monsters?
-~currentSpeaker = comic
-Kill them of course.
-~funds+=90
-~booksSold+=1
-->->
-==giraffe_woman==
-~currentSpeaker = comic
-Woah you got the first issue of Giraffewoman, that's something. 
-~allbooks-=giraffe_1
-~funds+=100
-~booksSold+=1
-->->
-==zebra_man==
-~currentSpeaker = comic
-Shit you did it! Zebraman 89, not a good one, but very impressive nonetheless
-~allbooks-=zebraman_89
-~funds+=120
-~booksSold+=1
-->->
-==wildfyre==
-~currentSpeaker = you
-I found this comic called Wildfyre, is it any good?
-~currentSpeaker = comic
-Ah this is interesting
-~currentSpeaker = you
-Why? What's it about?
-~currentSpeaker = comic
-It's set in this dystopian world
-Where there is this disease called Wildfyre
-When a person gets it they go crazy
-And then sort of combust from the inside out
-~currentSpeaker = you
-That's scary
-~currentSpeaker = comic
-It's kind of horror, it's pretty dark
-They can't stop the Wildfyre
-So the governments develop this weapon called the world destroyer
-It's designed to wipe out the world
-~currentSpeaker = you
-Uh what? How would that help?
-~currentSpeaker = comic
-It would put everyone out of their misery
-All the governemnts of the world have to agree for it to detonate
-But none of the governments are brave enough to use it
-They're only meant to trigger it when they've lost all hope
-~currentSpeaker = you
-...
-I don't like the sound of this comic very much
-~currentSpeaker = comic
-I agree, it's pretty nihlistic 
-But I might give it another try one day
-~allbooks-=wildfyre_678
-~funds+=90
-~booksSold+=1
-->->
 ==blackgoat==
+~taliPoints+=1
 ~currentSpeaker = you
 I got this book I thought you might like, it's highly recommend apparently.
 ~currentSpeaker = webdev
@@ -233,6 +253,7 @@ Maybe.
 ~booksSold+=1
 ->->
 ==god_of_the_forest==
+~taliPoints+=1
 ~currentSpeaker = you
 I got this book you might like.
 ~currentSpeaker = webdev
@@ -252,68 +273,9 @@ One can also assume that.
 ~currentSpeaker = you
 I have learnt much today.
 ->->
-==hypnos==
-~currentSpeaker = you
-Wait a minute, just before you go.
-I have something you might be interested in.
-~currentSpeaker = comic
-Hypnos?
-This is cool, I was looking for this issue.
-~currentSpeaker = you
-What's it about?
-~currentSpeaker = comic
-The God of sleep.
-Hypnos.
-Just a reimagining of him and stories centered around his...
-Existance I guess?
-It's quite fun and dramatic.
-~currentSpeaker = you
-I thought it would be something dark and dystopian.
-~currentSpeaker = comic
-Well, it does get dark.
-~currentSpeaker = you
-Oh really?
-What does he do?
-Tell some kids a bedtime story?
-Drink his sleepy tea?
-~currentSpeaker = comic
-This guy insults him and he gives the man insomnia and he dies after begging Hypnos to let him sleep.
-And in another story a king insults him and he puts his daughter, the princess, to sleep for thirty years.
-He only wakes her up when she's middle aged, and her youth has passed her by. 
-~currentSpeaker = you
-That's pretty lighthearted compared to most of the stuff you read.
-~currentSpeaker = comic
-Hmph.
-~funds+=90
-~booksSold+=1
-->->
 
-==lady_darkness==
-~currentSpeaker = you
-I have something you might be interested in.
-~currentSpeaker = comic
-What is this?
-Lady of Darkness?
-Ah I know this, sort of.
-Well I'll take it. 
-~currentSpeaker = you
-What's it about?
-~currentSpeaker = comic
-It's a superhero one, but the main character can sort of create shadows.
-Like remove the light from her surroundings.
-~currentSpeaker = you
-How does that help her fight criminals?
-~currentSpeaker = comic
-It blinds them, and sometimes creates illusions.
-~currentSpeaker = you
-But how does she see.
-~currentSpeaker = comic
-She can see in the dark.
-Just read the damn comic.
-~currentSpeaker = you
-Alright. Alright.
-->->
 ==the_glass_labyrinth==
+~taliPoints+=1
 ~currentSpeaker = you
 I have something for you {webdev}.
 ~currentSpeaker = webdev
@@ -336,141 +298,45 @@ It sounds complicated and scary...but actually you can see right though it.
 ~currentSpeaker = webdev
 I'm intrigued. I'll take it.
 ->->
-==X_and_A==
+
+==queen_h==
+~taliPoints+=1
 ~currentSpeaker = you
-I've got a comic for you.
-What's X and A mean?
-~currentSpeaker = comic
-It's the names of these two heros.
-They were volunteer test subjects for this gene therapy drug.
-At first they went willingly, but then when the experiment started to go wrong, they weren't allowed to leave the facility. 
-~currentSpeaker = you
-Sounds like they made a terrible error voluneering.
-~currentSpeaker = comic
-Not much of an altruist are you?
-Anyway, they managed to escape.
-Only to find their identities erased from the earth.
-Their families were told they were dead.
-~currentSpeaker = you
-They couldn't just reveal what the scientists did to them?
-~currentSpeaker = comic
-No. You see the gene therapy disfigured their faces.
-And it also changed their DNA.
-~currentSpeaker = you
-That's fucked up.
-~currentSpeaker = comic
-But there are also government programs to track them down and assassinate them.
-Luckily their powers sort of help them to evade detection.
-The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
-X and A are parts of their lab numbers, X was X-436 and A was A-967.
-Hence they go by X and A.
-->->
-==togue_acid_rain==
-~currentSpeaker = you
-So I have this magazine you might like?
-It's Acid Rain Proof Chic!
-~currentSpeaker = snob
-Great!
-Those sunglasses are so cute.
-And they protect your eyes from the harmful acidity of the sulfurous rain vapours. 
-~currentSpeaker = you
-Facinating.
-~currentSpeaker = snob
-Back then people wanted to protect themselves from the toxic weather but still feel good doing it.
-~currentSpeaker = you
-It sure feels good to not get acid in your eyes.
-~currentSpeaker = snob
-Indeed.
-->->
-==mr_thermistor==
-~currentSpeaker = you
-I've got something here called...Mr. Thermistor.
-~currentSpeaker = comic
-Oh, this one is kind of funny.
-~currentSpeaker = you
-Funny?
-~currentSpeaker = comic
-It's about this guy, he sort of gains the ability to channel electricity through his body.
-But only when he's super hot. Or super cold.
-~currentSpeaker = you
-That doesn't sound like a great power.
-~currentSpeaker = comic
-It isn't.
-He has to work really hard to make it work.
-It includes a scene where he lures bad guys into the sauna and...well...zap!
-~currentSpeaker = you
-Ok. I think I get it.
-->->
-==the_ring_thorns==
-~currentSpeaker = you
-I've got this for you {webdev}
-It's called The Ring of Thorns.
-Heard of it?
+I have this book called...Queendom Heretic.
+I think this one was on your list.
 ~currentSpeaker = webdev
-I've been wanting to get that for a while.
+That's cool, it's sort of a fantasy/sci-fi space opera.
 ~currentSpeaker = you
-What is it about?
+Interesting...
+Anymore?
 ~currentSpeaker = webdev
-It's mostly political fantasy drama.
-In this world there are all these magical artefacts that were created by an ancient race of beings.
-This book is about this ring of thorns. 
-It's this magical ring is one of the highest artefacts.
-It grants you immense power, but at a cost.
-Pain.
+I don't understant too much about it.
+Apparently he plot is super complicated.
+But it's about this queen who rules a lot of planets in the largest queendom in this universe.
+And she is sort of immortal. Almost like a goddess.
+But then this prophet tells her about this child who will overthrow her.
+And she want to kill this child.
 ~currentSpeaker = you
-That's a bit horrifying.
+And it's from the perspective of the child?
 ~currentSpeaker = webdev
-It doesn't stop there.
-The greater the power you ask for, the greater the pain.
+No, it's from the queen's perspective. Mostly. But I don't think the child makes an appearance.
 ~currentSpeaker = you
-Why would anyone use it? That's horrible.
+What? That makes no sense.
 ~currentSpeaker = webdev
-What if the fate of your kingdom was at stake. The fate of all humanity.
+Why?
 ~currentSpeaker = you
-Yeah...they can all perish.
-Thanks, but no thanks.
+Well the queen isn't a very relatable characer. Why is it from her perspective?
 ~currentSpeaker = webdev
-I suppose each to their own.
-->->
-==togue_protective_gear==
+Well...she's like an antihero I guess.
 ~currentSpeaker = you
-We've got a new magazine in.
-~currentSpeaker = snob
-Hmph, what is it?
-~currentSpeaker = you
-Uh something about protective gear.
-~currentSpeaker = snob
-Oh wow, look at that hard hat.
-~currentSpeaker = you
-It doesn't look very practical.
-~currentSpeaker = snob
-I'm sure it works.
-~currentSpeaker = you
-Maybe...if you hit your head in a very specific spot.
-~currentSpeaker = snob
-Maybe people should try not to hit their heads in the first place.
-I suppose it's a bit late for me to tell you that.
-~currentSpeaker = you
-Ouch!
-->->
-==bworld==
-~currentSpeaker = you
-I found this comic called Bioworld.
-Have you heard of it.
-~currentSpeaker = comic
-Oh yeah, it's like set in a solarpunk utopia.
-They live in these houses made of plants.
-Everything is made of plants.
-But then the plants start evolving and try to kill them.
-~currentSpeaker = you
-So a utopia turned dystopia.
-~currentSpeaker = comic
-Well a plain utopia wouldn't be that interesting would it?
-~currentSpeaker = you
-Hmm...
-No I suppose it wouldn't be.
+She just sounds straight up villanous.
+~currentSpeaker = webdev
+She's kept peace in the galaxy for thousands of years. 
+And this child threatens that.
+What's the life of one child compared to a whole galaxy?
 ->->
 ==where_the_heart_lies==
+~taliPoints+=1
 ~currentSpeaker = you
 I found this book you might like.
 It's labelled fantasy, but it doesn't look much like it belongs to that genre.
@@ -521,75 +387,243 @@ I mean sure...that stuff is important I guess.
 ~currentSpeaker = webdev
 Stories are more than just a sum of their parts.
 ->->
-==togue_ppe_special==
+==the_ring_thorns==
+~taliPoints+=1
 ~currentSpeaker = you
-Look I got you something.
-It's like fashion for medical protection equiment.
-I don't know. I'm completely lost now.
-~currentSpeaker = snob
-Look at all these masks.
+I've got this for you {webdev}
+It's called The Ring of Thorns.
+Heard of it?
+~currentSpeaker = webdev
+I've been wanting to get that for a while.
 ~currentSpeaker = you
-Are you serious?
-Masks are fashionable now?
-~currentSpeaker = snob
-I like this one the best.
+What is it about?
+~currentSpeaker = webdev
+It's mostly political fantasy drama.
+In this world there are all these magical artefacts that were created by an ancient race of beings.
+This book is about this ring of thorns. 
+It's this magical ring is one of the highest artefacts.
+It grants you immense power, but at a cost.
+Pain.
 ~currentSpeaker = you
-That's terrible!
-~currentSpeaker = snob
-What are you some kind of anti-masker now?
+That's a bit horrifying.
+~currentSpeaker = webdev
+It doesn't stop there.
+The greater the power you ask for, the greater the pain.
 ~currentSpeaker = you
-I am grateful for the existance of masks.
-But that is not a good mask.
-It's covering his whole face!
-How does he breathe?
-How does he even see?
-~currentSpeaker = snob
-Intuition.
+Why would anyone use it? That's horrible.
+~currentSpeaker = webdev
+What if the fate of your kingdom was at stake. The fate of all humanity.
 ~currentSpeaker = you
-I'm sorry that's stupid.
-He's going to walk into a wall and die.
-~currentSpeaker = snob
-Do you want me to buy it or not?
+Yeah...they can all perish.
+Thanks, but no thanks.
+~currentSpeaker = webdev
+I suppose each to their own.
+->->
+==the_sentinel==
+~kentPoints+=1
 ~currentSpeaker = you
-Fine.
+I got you a comic
+~currentSpeaker = comic
+This is The Sentinel
+It's about this guy who lives in a lighthouse, and he looks out for these monsters that crawl out of the sea at night.
+~currentSpeaker = you
+What does he do to the monsters?
+~currentSpeaker = comic
+Kill them of course.
+~funds+=90
+~booksSold+=1
+->->
+==giraffe_woman==
+~kentPoints+=1
+~currentSpeaker = comic
+Woah you got the first issue of Giraffewoman, that's something. 
+~allbooks-=giraffe_1
+~funds+=100
+~booksSold+=1
+->->
+==zebra_man==
+~kentPoints+=1
+~currentSpeaker = comic
+Shit you did it! Zebraman 89, not a good one, but very impressive nonetheless
+~allbooks-=zebraman_89
+~funds+=120
+~booksSold+=1
+->->
+==wildfyre==
+~kentPoints+=1
+~currentSpeaker = you
+I found this comic called Wildfyre, is it any good?
+~currentSpeaker = comic
+Ah this is interesting
+~currentSpeaker = you
+Why? What's it about?
+~currentSpeaker = comic
+It's set in this dystopian world
+Where there is this disease called Wildfyre
+When a person gets it they go crazy
+And then sort of combust from the inside out
+~currentSpeaker = you
+That's scary
+~currentSpeaker = comic
+It's kind of horror, it's pretty dark
+They can't stop the Wildfyre
+So the governments develop this weapon called the world destroyer
+It's designed to wipe out the world
+~currentSpeaker = you
+Uh what? How would that help?
+~currentSpeaker = comic
+It would put everyone out of their misery
+All the governemnts of the world have to agree for it to detonate
+But none of the governments are brave enough to use it
+They're only meant to trigger it when they've lost all hope
+~currentSpeaker = you
+...
+I don't like the sound of this comic very much
+~currentSpeaker = comic
+I agree, it's pretty nihlistic 
+But I might give it another try one day
+~allbooks-=wildfyre_678
+~funds+=90
+~booksSold+=1
+->->
+==hypnos==
+~kentPoints+=1
+~currentSpeaker = you
+Wait a minute, just before you go.
+I have something you might be interested in.
+~currentSpeaker = comic
+Hypnos?
+This is cool, I was looking for this issue.
+~currentSpeaker = you
+What's it about?
+~currentSpeaker = comic
+The God of sleep.
+Hypnos.
+Just a reimagining of him and stories centered around his...
+Existance I guess?
+It's quite fun and dramatic.
+~currentSpeaker = you
+I thought it would be something dark and dystopian.
+~currentSpeaker = comic
+Well, it does get dark.
+~currentSpeaker = you
+Oh really?
+What does he do?
+Tell some kids a bedtime story?
+Drink his sleepy tea?
+~currentSpeaker = comic
+This guy insults him and he gives the man insomnia and he dies after begging Hypnos to let him sleep.
+And in another story a king insults him and he puts his daughter, the princess, to sleep for thirty years.
+He only wakes her up when she's middle aged, and her youth has passed her by. 
+~currentSpeaker = you
+That's pretty lighthearted compared to most of the stuff you read.
+~currentSpeaker = comic
+Hmph.
+~funds+=90
+~booksSold+=1
+->->
 
+==lady_darkness==
+~kentPoints+=1
+~currentSpeaker = you
+I have something you might be interested in.
+~currentSpeaker = comic
+What is this?
+Lady of Darkness?
+Ah I know this, sort of.
+Well I'll take it. 
+~currentSpeaker = you
+What's it about?
+~currentSpeaker = comic
+It's a superhero one, but the main character can sort of create shadows.
+Like remove the light from her surroundings.
+~currentSpeaker = you
+How does that help her fight criminals?
+~currentSpeaker = comic
+It blinds them, and sometimes creates illusions.
+~currentSpeaker = you
+But how does she see.
+~currentSpeaker = comic
+She can see in the dark.
+Just read the damn comic.
+~currentSpeaker = you
+Alright. Alright.
 ->->
-==queen_h==
+
+==X_and_A==
+~kentPoints+=1
 ~currentSpeaker = you
-I have this book called...Queendom Heretic.
-I think this one was on your list.
-~currentSpeaker = webdev
-That's cool, it's sort of a fantasy/sci-fi space opera.
+I've got a comic for you.
+What's X and A mean?
+~currentSpeaker = comic
+It's the names of these two heros.
+They were volunteer test subjects for this gene therapy drug.
+At first they went willingly, but then when the experiment started to go wrong, they weren't allowed to leave the facility. 
 ~currentSpeaker = you
-Interesting...
-Anymore?
-~currentSpeaker = webdev
-I don't understant too much about it.
-Apparently he plot is super complicated.
-But it's about this queen who rules a lot of planets in the largest queendom in this universe.
-And she is sort of immortal. Almost like a goddess.
-But then this prophet tells her about this child who will overthrow her.
-And she want to kill this child.
+Sounds like they made a terrible error voluneering.
+~currentSpeaker = comic
+Not much of an altruist are you?
+Anyway, they managed to escape.
+Only to find their identities erased from the earth.
+Their families were told they were dead.
 ~currentSpeaker = you
-And it's from the perspective of the child?
-~currentSpeaker = webdev
-No, it's from the queen's perspective. Mostly. But I don't think the child makes an appearance.
+They couldn't just reveal what the scientists did to them?
+~currentSpeaker = comic
+No. You see the gene therapy disfigured their faces.
+And it also changed their DNA.
 ~currentSpeaker = you
-What? That makes no sense.
-~currentSpeaker = webdev
-Why?
-~currentSpeaker = you
-Well the queen isn't a very relatable characer. Why is it from her perspective?
-~currentSpeaker = webdev
-Well...she's like an antihero I guess.
-~currentSpeaker = you
-She just sounds straight up villanous.
-~currentSpeaker = webdev
-She's kept peace in the galaxy for thousands of years. 
-And this child threatens that.
-What's the life of one child compared to a whole galaxy?
+That's fucked up.
+~currentSpeaker = comic
+But there are also government programs to track them down and assassinate them.
+Luckily their powers sort of help them to evade detection.
+The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
+X and A are parts of their lab numbers, X was X-436 and A was A-967.
+Hence they go by X and A.
 ->->
+
+==mr_thermistor==
+~kentPoints+=1
+~currentSpeaker = you
+I've got something here called...Mr. Thermistor.
+~currentSpeaker = comic
+Oh, this one is kind of funny.
+~currentSpeaker = you
+Funny?
+~currentSpeaker = comic
+It's about this guy, he sort of gains the ability to channel electricity through his body.
+But only when he's super hot. Or super cold.
+~currentSpeaker = you
+That doesn't sound like a great power.
+~currentSpeaker = comic
+It isn't.
+He has to work really hard to make it work.
+It includes a scene where he lures bad guys into the sauna and...well...zap!
+~currentSpeaker = you
+Ok. I think I get it.
+->->
+
+==bworld==
+~kentPoints+=1
+~currentSpeaker = you
+I found this comic called Bioworld.
+Have you heard of it.
+~currentSpeaker = comic
+Oh yeah, it's like set in a solarpunk utopia.
+They live in these houses made of plants.
+Everything is made of plants.
+But then the plants start evolving and try to kill them.
+~currentSpeaker = you
+So a utopia turned dystopia.
+~currentSpeaker = comic
+Well a plain utopia wouldn't be that interesting would it?
+~currentSpeaker = you
+Hmm...
+No I suppose it wouldn't be.
+->->
+
+
 ==cybershake_comic==
+~kentPoints+=1
 ~currentSpeaker = you
 I've got this comic to give you.
 ~currentSpeaker = comic
