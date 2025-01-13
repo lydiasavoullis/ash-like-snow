@@ -1,4 +1,6 @@
 ==day_7==
+~characters+=pandora
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = you
 Hey Pan.
 ->tea_or_coffee->day_7_cont
@@ -6,10 +8,12 @@ Hey Pan.
 ~currentSpeaker = you
  Whatcha listening to?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  Uh, it’s Cobalt Dragon’s new album.
 ~currentSpeaker = you
  What’s Cobalt Dragon?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  It’s a band I like.
 ~currentSpeaker = you
  It’s kind of cool, not really my thing though.
@@ -18,96 +22,123 @@ Hey Pan.
 ~currentSpeaker = you
  I don’t know, stuff with less screaming.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  I love the screaming. It speaks to my soul.
 ~currentSpeaker = you
  Of course it does.
 ~currentSpeaker = you
  Are you screaming internally?
 ~currentSpeaker = android
- Always. I feel so broken and lost. This music really speaks to me.
+{ChangeSprite("Pandora", "pandora_pensive")}
+ Always. I feel so broken and lost. 
 ~currentSpeaker = you
  I just feel dead inside.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
  That’s sad.
 ~currentSpeaker = you
  What you’re feeling is sad too.
 ~currentSpeaker = android
- Yes, but at least I’m feeling, the feeling makes me feel more alive. That’s a good thing in some ways. But to be dead inside is to feel nothing, that’s sadder.
+{ChangeSprite("Pandora", "pandora_pensive")}
+ Yes, but at least I’m feeling, the feeling makes me feel more alive. That’s a good thing in some ways. 
+ But to be dead inside- to feel nothing...that’s sadder.
 ~currentSpeaker = you
  Hmm, I don’t know about that.
-~currentSpeaker = you
- Look, you don’t have to tell me if you don’t want to. But why did Ada get custody of you? Why do you even need someone to have custody of you, you’re like an adult?
+ Look, you don’t have to tell me if you don’t want to. But why are you here?
+ ~currentSpeaker = android
+ {ChangeSprite("Pandora", "pandora_normal")}
+ I was created to serve as a therapy IOI.
+ ~currentSpeaker = you
+ Why aren't you doing that then? Why are you working in a bookshop?
 ~currentSpeaker = android
- I’m two years old, in existing years. But my mental age is twenty four. If I was a human I would be able to live a life without a custodian.
+{ChangeSprite("Pandora", "pandora_sad")}
+...
+Let's just say it didn't work out.
+~currentSpeaker = you
+Right.
+~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
+I'm glad I'm here.
+Ada is a good custodian.
+~currentSpeaker = you
+Custodian?
+~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
+I am an IOI, therefore I need a custodian.
+I know it seems silly. I'm two years old in human years, but mentally I'm approximately twenty four. 
+But I still need someone to look after me.
+If I was human, I would be free.
 ~currentSpeaker = you
  But you’re not.
 ~currentSpeaker = android
- Yes, so I need someone to provide things like electricity and maintenance. I’m not allowed to leave this area either, without permission from my custodian. I’m not allowed to leave the city without permission from my custodian and the government. 
+{ChangeSprite("Pandora", "pandora_sad")}
+ Indeed, I'm not. 
+ I’m not allowed to leave this building, without permission from my custodian. 
+ I’m not allowed to leave the city without permission from my custodian and the government. 
 ~currentSpeaker = you
  That’s barbaric.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  Well, this technology is still pretty new. I have a body that interacts with the world just like yours. I think like you. That could be dangerous.
 ~currentSpeaker = you
  Any human can be dangerous.
 ~currentSpeaker = android
- Yes, but with humans, if they do something wrong they get the blame. If I do something wrong the company that made me gets sued for billions. 
+{ChangeSprite("Pandora", "pandora_normal")}
+ Yes, but with humans, if they do something wrong they get the blame. If I do something wrong the company that made me gets sued. 
 ~currentSpeaker = you
  But–
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  I don’t make the rules.
 ~currentSpeaker = you
- What was your previous life like? With Ada’s brother in law? Did he treat you well?
+ What was your previous life like? With Ada’s brother? Did he treat you well?
 ~currentSpeaker = android
- Yes. Why do you think he didn’t?
+{ChangeSprite("Pandora", "pandora_sad")}
+ Yes. What makes you think he didn’t?
 ~currentSpeaker = you
  I just worry, you always look a bit distraught when you talk about him.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  Well, I suppose that’s because he’s dead, and I miss him.
 ~currentSpeaker = you
  Shit, I’m sorry. I wasn’t thinking.
 ~currentSpeaker = android
- Why? Did you think he abused me?
+{ChangeSprite("Pandora", "pandora_normal")}
+ Why? Did you think he was cruel to me?
 ~currentSpeaker = you
  That’s the usual kind of stuff that happens.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  What happened to you to make you have such a low opinion of humanity?
 ~currentSpeaker = you
  Uh, life experience I guess.
-~currentSpeaker = you
  I’ve offended you, haven’t I?
 ~currentSpeaker = android
- You insinuate that my dead father abused me. How could I not be offended?
-~currentSpeaker = you
- I mean, you’re a young android woman, and you were just handed over to a middle aged man, who would have an inordinate amount of control over your life. That’s a bit of a strange relationship, you can understand why I would think that. I was concerned about your well being.
-~currentSpeaker = android
- My well being…
-~currentSpeaker = android
- I wasn’t just handed over without any thought. His character was evaluated and I was assigned to him. If I was not happy with the arrangement, Blue Carp would have been glad to take me back.
-~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
+ How could I not be offended? He was my father.
  He read stories to me, and he listened to the things I had to say. He taught me to cook and fix things and drive. 
 ~currentSpeaker = you
- Drive? Isn’t it illegal for sentient androids to drive?
+ Drive? Isn’t it illegal for IOIs to drive?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  He didn’t really have much respect for the law.
-~currentSpeaker = android
  He said laws were just arbitrary rules.
 ~currentSpeaker = you
  Well, some are. Most are there for a good reason though.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  After he died I got transferred to Ada.
-~currentSpeaker = android
  I wanted to be with her as she was family. I wanted a family so bad.
 ~currentSpeaker = you
  She doesn’t have much of a maternal instinct.
 ~currentSpeaker = android
  I know I’m not a child, but I was expecting some kind of warmth. Acknowledgement that we went through the same loss.
-~currentSpeaker = android
  I suppose we all grieve in our own way.
 ~currentSpeaker = you
  Do you want me to stay?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  For a little bit longer please.
-~currentSpeaker = android
  Just listen to this song.
 ->end_day_7
 ==end_day_7==

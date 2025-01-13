@@ -244,139 +244,169 @@ I’m starting to think she wants this place to fail.
 {ChangeSprite("Lavender", "lavender_normal")}
  Anyway, we became best friends. We went on loads of school trips together. And I always take her on holiday because I hate being alone.
 ~currentSpeaker = snob
- I mean I have four siblings but I’m not so close with them. Tali is like my sister.
+{ChangeSprite("Lavender", "lavender_normal")}
+ I mean I have four siblings but I’m not so close with them. 
 ~currentSpeaker = you
- Wow, that’s really nice of you.
+That's really nice of you.
 ~currentSpeaker = snob
- Nice? It’s not nice. It was very selfish of me. I think I made her uncomfortable.
+{ChangeSprite("Lavender", "lavender_sad")}
+I'm not too sure.
 ~currentSpeaker = you
- I can imagine being around rich people would be uncomfortable.
+What makes you say that?
 ~currentSpeaker = snob
+I feel like I make her uncomfortable sometimes.
+She always gets upset and worries about how much money I spend on her.
+~currentSpeaker = you
+Ah I see.
+~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  Why? I don’t get it?
 ~currentSpeaker = you
  You don’t get it because you’re rich.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_sad")}
  She likes my family, and they like her a lot. I think it’s difficult though. Her family doesn’t talk to her much. And she must feel so lonely. 
-~currentSpeaker = snob
- After she graduated she had trouble finding a job. My dad stepped in and managed to get her a role.
-~currentSpeaker = you
- Nepotism, a classic.
-~currentSpeaker = snob
+ {ChangeSprite("Lavender", "lavender_normal")}
+ After she graduated she had trouble finding a job. 
+ I asked my Dad and he managed to find her a role.
+ ~currentSpeaker = you
+ Oh really?
+ ~currentSpeaker = snob
+ {ChangeSprite("Lavender", "lavender_serious")}
  She just needed a little help. She’s really clever.
 ~currentSpeaker = you
  I don’t doubt that.
-~currentSpeaker = snob
- Then why are you accusing her of nepotism?
-~currentSpeaker = you
- Because that’s what it is.
-~currentSpeaker = snob
- She would have found a job in the end. I just saved her a bit of time. That’s all.
-~currentSpeaker = you
  So she’s got the job, what’s wrong?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  Well her boss is working her to death.
+ She barely has any time to do anything she enjoys.
 ~currentSpeaker = you
  And?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  That’s not good! She’s doing her best.
 ~currentSpeaker = you
  I agree, what would you do?
 ~currentSpeaker = snob
- If I were her I would shout at him. But Tali says you can’t shout at your boss.
+{ChangeSprite("Lavender", "lavender_thinking")}
+Well...
+{ChangeSprite("Lavender", "lavender_angry")}
+If I were her I would give him a piece of my mind. 
+{ChangeSprite("Lavender", "lavender_sad")}
+But Tali says you can’t shout at your boss.
 ~currentSpeaker = you
  Wise words indeed.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
  I don’t get it. I don’t get any of it. And don’t say it’s because I’m rich.
 ~currentSpeaker = you
  Aww, just one more time.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
+{PlayAnimation("Lavender", "shake")}
  NO!
 ~currentSpeaker = you
  Whatever you say.
 ~currentSpeaker = snob
- Dad says the economy is failing because people aren’t working hard enough. But then I see Tali working so hard, and…
+{ChangeSprite("Lavender", "lavender_sad")}
+ Dad says this country is failing because people aren’t working hard enough. But then I see Tali working so hard, and…
 ~currentSpeaker = you
- It makes you think that’s a lie?
+ It makes you think that's not true?
 ~currentSpeaker = snob
- No. It makes me think that if everyone worked as hard as Tali, our world would be a much better place.
+{ChangeSprite("Lavender", "lavender_angry")}
+{PlayAnimation("Lavender", "shake")}
+No, of course not.
+{ChangeSprite("Lavender", "lavender_happy")}
+ It makes me think that if everyone worked as hard as Tali, our world would be a much better place.
 ~currentSpeaker = you
- Oh dear. Oh no.
-Pandora enters
+ That's certainly an...interesting way to frame that.
+~characters+=pandora
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_happy")}
  What is it? Did something happen?
 ~currentSpeaker = you
- No, I was just expressing great distaste.
-~currentSpeaker = you
- Where were you?
+ No. I'm just glad you're back.
+ Also, where were you?
 ~currentSpeaker = android
  I was reading at the back, sorry.
 ~currentSpeaker = snob
- Lazy android.
+{ChangeSprite("Lavender", "lavender_angry")}
+ You should be working!
+ {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = you
  Actually Pandora works very hard, for someone who doesn’t get a salary.
 ~currentSpeaker = android
- I use a lot of electricity.
+{ChangeSprite("Pandora", "pandora_normal")}
+ I do use a lot of electricity.
 ~currentSpeaker = you
  Shhh, you need to stand up for yourself.
 ~currentSpeaker = android
  I can’t stand up without electricity.
 ~currentSpeaker = snob
- You’re a lot more talkative than the androids I know.
+ You’re a lot more talkative than the IOIs I know.
 ~currentSpeaker = android
- Really? You know other androids. I’m not your first.
+ Really? You know other IOIs. I’m not your first.
 ~currentSpeaker = snob
  Why would you be my first?
 ~currentSpeaker = you
- A lot of us working class folk don’t see many androids, at least not ones as sentient as Pandora. So when people meet her they are usually pretty in awe. They think Ada’s rich or something. When really Ada getting custody of her was just kind of a fluke.
+ A lot of us poor folk don’t see many IOIs, at least not ones as sentient as Pandora. So when people meet her they are usually pretty in awe. 
+ They think Ada’s rich or something. When really Ada getting custody of her was just kind of a fluke.
 ~currentSpeaker = snob
  How did she get Pandora?
 ~currentSpeaker = you
- I think she got her from her brother in law who died. He was in the field of android development and they gifted him Pandora for his work.
-~currentSpeaker = you
+ I think she got her from her brother in law who died. He was in the field of IOI development and he sort of ended up getting Pandora as part of his work.
  Is that right?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
  Actually I’d rather not talk about this.
 ~currentSpeaker = you
  Oh, sorry.
 ~currentSpeaker = android
- My father used to tell me stories. I was reading one of his favourite books. I try to read some of his favourites now and then. They make me feel like he’s still with me.
+ My father used to tell me stories. 
+ I was reading one of his favourite books just now.
+ It always makes me think of him...
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_sad")}
  Sorry for your loss.
 ~currentSpeaker = snob
-<i>shoots you a panicked look</i>
+...
 ~currentSpeaker = you
-<i>shoots Lavender an even more panicked look<i>
+...
 ~currentSpeaker = snob
- My parents have an android maid who cleans up. She doesn’t really say very much. But she’s very good at picking up socks.
+{ChangeSprite("Lavender", "lavender_normal")}
+ My parents have an IOI maid who cleans up. She doesn’t really say very much. But she’s very good at picking up socks.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  I suppose I’m better for conversation then.
 ~currentSpeaker = snob
  Much better.
-~currentSpeaker = snob
  May I ask, what were you developed for?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  Developed for?
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  Every android is developed with something in mind, right?
 ~currentSpeaker = android
  What were you developed for?
 ~currentSpeaker = snob
- I’m the youngest, so I suppose I was developed to be the creative rebellious outcast. Which I have succeeded in doing with flying colours.
+{ChangeSprite("Lavender", "lavender_happy")}
+ I'm a human. I wasn't created for anything. I just happen to be a fashion genius. But none of that is by design.
 ~currentSpeaker = android
- I was a therapy android.
+{ChangeSprite("Pandora", "pandora_normal")}
+ I was a therapy IOI.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
  That explains the intelligence. Anything medical is on the highest level of intelligence. 
 ~currentSpeaker = android
- Thanks for that. Are you going to give me a pat on the back as well, a gold star perhaps.
-~currentSpeaker = snob
- There’s no need to be that sarcastic.
-~currentSpeaker = snob
- They should have programmed that out of you.
-~currentSpeaker = snob
- What were they doing giving a therapist android to an employee. That seems far too important just to hand out.
+{ChangeSprite("Pandora", "pandora_mean")}
+ Thanks. I'm very flattered.
 ~currentSpeaker = you
  I think that’s enough questions for now.
+ {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_mean")}
  Hmm, I haven’t really been satisfied. 
 ~currentSpeaker = you
  Remember to come to the creative writing session tomorrow. Bring Tali too.
@@ -387,43 +417,54 @@ Pandora enters
 ~currentSpeaker = comic
  Ugh.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_happy")}
  Well bye then.
 ~currentSpeaker = you
  Bye Lavender.
 ~currentSpeaker = comic
- Bye Lavatory.
+ Byeee Lavenderrr.
 ~currentSpeaker = snob
- Fuck you Keith. 
+{ChangeSprite("Lavender", "lavender_angry")}
+ ...
 ~characters -= lavender
 ~currentSpeaker = you
  Hey Pan, are you OK?
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_pensive")}
  Of course, why wouldn’t I be OK?
 ~currentSpeaker = you
  Well…no worries. I’m just glad you’re alright. 
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  Sometimes we must talk about difficult things.
 ~characters += kent
 ~currentSpeaker = comic
- Hey girlies. You sure were chatting a lot with our resident little lolita serial killer.
+{ChangeSprite("Kent", "kent_normal")}
+ Hey girlies. You sure were chatting a lot with our local sweet lolita serial killer.
 ~currentSpeaker = you
  Weirdly she’s growing on me.
 ~currentSpeaker = comic
- Like a fungus? Some people have no taste.
+{ChangeSprite("Kent", "kent_amused")}
+ Stockholm syndrome really is kicking in.
 ~currentSpeaker = you
  I don’t really know what to make of her anymore.
 ~currentSpeaker = comic
- Goodnight, I have to go home before my boyfriend dies of loneliness. Or whatever disaster is going around the city today.
+{ChangeSprite("Kent", "kent_side_serious")}
+ Goodnight, I have to go home before my boyfriend dies of loneliness. 
+ Or whatever disaster is going around the city today.
 ~currentSpeaker = you
  I heard it’s the pollution. Beware of the pollution.
 ~currentSpeaker = comic
+{ChangeSprite("Kent", "kent_happy")}
  What are you talking about? The pollution is EVERYWHERE.
 ~characters -= kent
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_sad")}
  He didn’t share his comic with us.
 ~currentSpeaker = you
  That sucks. Wait, he was working on a comic? Aw I would have liked to see that.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_normal")}
  Oh well.
 ~currentSpeaker = android
  Let’s do inventory.
