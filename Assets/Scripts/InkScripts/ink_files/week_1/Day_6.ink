@@ -105,12 +105,15 @@
 {ChangeSprite("Lavender", "lavender_angry")}
  Ahem, I’m reading.
  {ChangeSprite("Kent", "kent_normal")}
+ {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 ~music="Lavender's song"
 {ChangeSprite("Lavender", "lavender_normal")}
  This is a poem titled: Little Bo Peep
+ {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
  Hahaha
+ {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
  Shhh
 ~currentSpeaker = snob
@@ -130,7 +133,6 @@
 ~currentSpeaker = snob
 ~music= ""
  But you’re just too slow
-
 ~currentSpeaker = snob
 ...
 ~currentSpeaker = android
@@ -226,6 +228,7 @@ It’s just about other people, who think they’re so clever making stupid comm
 {ChangeSprite("Kent", "kent_amused")}
  Yeah, and how your boss doesn’t care about you, and can just find another employee to treat like shit.
 ~currentSpeaker = webdev
+
 {ChangeSprite("Tali", "tali_serious")}
  Well uh, that’s all very apt. 
 ~currentSpeaker = snob
@@ -238,30 +241,39 @@ It’s just about other people, who think they’re so clever making stupid comm
 {ChangeSprite("Pandora", "pandora_happy")}
 {PlayAnimation("Pandora", "shake")}
  Kent you’re next!
+  {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
  OK, so I didn’t specifically write a piece for today.
 ~currentSpeaker = snob
- What? Another slacker like {you}.
+ Slacking off like {you}.
 ~currentSpeaker = you
- I’m literally working on a Saturday. What are you doing? 
+ I’m literally working on a Saturday.
 ~currentSpeaker = comic
- I’m actually going to share a fanfic I wrote recently.
+ I’m actually going to share a fanfiction I wrote recently.
 ~currentSpeaker = snob
- Hey, that's cheating.
+ Hey, that sounds like cheating.
+ {ChangeSprite("Pandora", "pandora_mean")}
+ ~currentSpeaker = android
+ It isn't.
+ {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
- Seriously, calm down.
+ Seriously {snob}, calm down.
+ {ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker = android
- OK, introduce the piece to us. I’m not so familiar with this style of media.
+ OK, explain what fanfiction is. I’m not so familiar with this style of media.
+ {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
  It's sort of taking a universe someone else created, and using the characters and setting to write your own stories.
+ {ChangeSprite("Pandora", "pandora_normal")}
  ~currentSpeaker = android
  So you keep the characters and just make your own plot.
+ {ChangeSprite("Kent", "kent_side_normal")}
  ~currentSpeaker = comic
  Yeah that kind of sums it up.
  Although it can be a bit more flexible than that, I've known some people to add new characters or completely change the rules of the original universe. It can create interesting situations.
  ~currentSpeaker = android
  Facinating. 
-
+ {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
  Anyway this is my short story: Prey and Predator. 
 <i>A man observed a city from the roof of a building. His coat fluttered in the wind. If he just stepped over the edge he would finally come tumbling down. 
@@ -361,39 +373,53 @@ When he opened his eyes, the intruder was pacing, running her hands through her 
 Aurelia lay discarded on the floor.
 “You’re right.” She said, “I can’t do it.”
 </i>
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
  I’m done reading, this is just the first chapter. If you want to read more, you can check it out on QwikFics.co.xx
 ~currentSpeaker = snob
  Aww I hate cliffhangers.
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  So you liked it?
+ {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
  No, but I want to know what happens next.
+ {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = webdev
- Indeed. That was very…interesting Kent.
+ Indeed. That was very…interesting.
+ {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
  It’s not everyone’s cup of tea.
+ {ChangeSprite("Lavender", "lavender_mean")}
 ~currentSpeaker = snob
  I mean, you literally read us a whole chapter of your dorky fanfic. What were you expecting?
+ {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
  I suppose I just wanted to know that actual physical people read my work.
  Anyway, Pandora. Look I’m sorry that dragged on for so long. It was probably a waste of time.
+ {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
  Waste of time?
  Never a waste. 
+ {ChangeSprite("Pandora", "pandora_excited")}
  I’m just in awe that we have such a talented writer visiting our shop.
+ {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
  Uh really you think.
+ {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
  Anyone can create a fictional world. But to write the characters with such love and attention, to care so much about their intricate dynamics. Isn’t that what writing is all about?
+ {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
  In some aspects, yeah I guess. 
  So Pandora, what’s yours then?
+ {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker = android
  Uh, mine?
 ~currentSpeaker = webdev
  Do you have something to share?
  No worries if you don’t.
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
  I was working on something, a poem. It’s unfinished.
 ~currentSpeaker = comic
@@ -402,8 +428,11 @@ Aurelia lay discarded on the floor.
  Uh, wow. OK. I’ll have a go.
 ~currentSpeaker = android
  This is untitled.
+ {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
  Is that like the name?
+ {ChangeSprite("Lavender", "lavender_normal")}
+ {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
  No, it means it doesn’t have a name yet.
 ...
@@ -413,67 +442,91 @@ Plunged into an immutable dark
 The future forced upon us stark
 ...
 It needs more work
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
  Perhaps, but it’s a good start.
 ~currentSpeaker = you
  What inspired you to write that?
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
  Everything. 
 ~currentSpeaker = you
  What, specifically?
+ {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
  Oh Cas, look around you, everything’s dying. What do you think inspired her to write that?
+ {ChangeSprite("Lavender", "lavender_thinking")}
+ {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = snob
- Do androids feel sad that the world’s ending? I mean, it’s only really ending for us. You guys will survive, it’s not like you need oxygen or food or anything the world provides.
+ Do androids feel sad that the world’s ending? I mean, it’s only really ending for us. 
+ You guys will survive, it’s not like you need oxygen or food or anything the world provides.
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
  You’re wrong. Of course we’re sad. Humans created us, we were made in their image.
 ~currentSpeaker = snob
  What does that matter though?
+ {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
  You feel sad about animal species going extinct, don’t you? But it doesn’t really affect you.
-~currentSpeaker = android
  Also, humans are the only species we can communicate with in a meaningful way, the loss of them is a loss for thought, language and meaning. How could I not mourn that?
+  {ChangeSprite("Lavender", "lavender_sad")}
+  {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = snob
  This is making me sad now.
+ {ChangeSprite("Lavender", "lavender_normal")}
  OK, I’m done being sad.
+ {ChangeSprite("Tali", "tali_normal")}
  ~currentSpeaker = webdev
  That was quick.
  ~currentSpeaker = snob
  My emotions are very efficient.
+ {ChangeSprite("Lavender", "lavender_thinking")}
  Also, I brought alcohol with me.
+ {ChangeSprite("Tali", "tali_shocked")}
 ~currentSpeaker = webdev
- Seriously what the hell?
+ Seriously what the hell!
+ {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
  Yeah, it’s about time.
+ {ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker = webdev
  Are we going to do this? You really wanna get pissed in a dingy bookstore?
 ~currentSpeaker = you
  Hey, it’s not dingy! We take a lot of care of this place. I dust everyday. Pandora put up those decorations.
  Pan? You OK?
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
  Yeah, I’ll be fine.
-~currentSpeaker = android
+ {ChangeSprite("Pandora", "pandora_normal")}
  Do you want to drink?
 ~currentSpeaker = you
 Not really.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
 I second that.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 Aw I don't want to be the only one drinking.
 Maybe another time.
+{ChangeSprite("Lavender", "lavender_normal")}
+{ChangeSprite("Kent", "kent_normal")}
  ~currentSpeaker = snob
  That's fine. 
  ~currentSpeaker = you
  OK guys, I kind of have to get going if I want to catch the train home on time.
  So, if you could leave politely.
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  We get it you don’t want us around.
+ {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev
  Bye guys, see you around. I had a great time.
 ~characters -=tali
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
  Yeah, me too. See you around losers.
  ~characters -=lavender
+ {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
  Take care!
  ~characters -=kent
@@ -487,39 +540,39 @@ Maybe another time.
  Before you go I have something to ask you.
 ~currentSpeaker = you
  Sure what is it?
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
  Can you visit me tomorrow?
  It’s just now that Ada isn’t here, I get a bit lonely.
  To be honest, I even get lonely after work, when you’re not around. I’m here all on my own.
 {pandoraPoints>0:
-    ~currentSpeaker = you
+~currentSpeaker = you
  Sure, I can stop by for a bit.
+ {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
  Thank you.
 ~currentSpeaker = you
  Goodnight.
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
  Night.
   - else:
-    ~currentSpeaker = you
- Sorry, but I can’t come in on a non-workday.
 ~currentSpeaker = you
+ Sorry, but I can’t come in on a non-workday.
  It’s just about my boundaries, I need my time off.
+ {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
  OK, it would just be for a little while though. I know it’s your day off but…
-No again:
 ~currentSpeaker = you
- I need to look after my mental health. You know, it’s not my responsibility to babysit you, Ada should have arranged that when she left.
+ You know, it’s not my responsibility to babysit you, Ada should have arranged that when she left.
 ~currentSpeaker = android
  Right, I’m so sorry. I don’t know what came over me.
-~currentSpeaker = android
- I’m being so selfish lately.
 ~currentSpeaker = you
  No worries.
-~currentSpeaker = you
 Please don’t fret about this Pandora, just go to bed.
 ~currentSpeaker = you
  I’m going now, bye.
+  {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
  See you on Monday.
 }

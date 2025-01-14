@@ -1,4 +1,17 @@
+==day_7_alt==
+~scene= "ShopFront"
+¬
+~music = ""
+~sfx = "rain"
+20th December, Monday
+~scene= "GenericScene"
+¬
+~day+=1
+->day_8
+
 ==day_7==
+{pandoraPoints==0: ->day_7_alt}
+
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = you
