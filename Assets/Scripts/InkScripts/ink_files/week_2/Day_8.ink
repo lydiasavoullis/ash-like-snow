@@ -1,4 +1,5 @@
 ==day_8==
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 ~characters +=pandora
 Morning
@@ -6,102 +7,139 @@ Morning
 Morning
 On our second week without Ada already
 I knew we could do it
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 So did I
+{ChangeSprite("Pandora", "pandora_normal")}
 Uh
 Who is that?
 He’s coming inside
 ~characters+=stranger
+{ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 How do you do?
+{ChangeSprite("Stranger", "shadow_amused")}
 What an interesting…establishment.
 ~currentSpeaker = you
 Can I help you with anything.
+{ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 I was just walking by when I remembered that I needed to talk. 
 On behalf of a mutual friend. 
+~currentSpeaker = you
+And who was that?
+{ChangeSprite("Stranger", "shadow_amused")}
+~currentSpeaker = trader
+The creator of course.
+{ChangeSprite("Stranger", "shadow_neutral")}
+Anyway,
 I need:
 The rabbit hole, the wardrobe and the castle
 Show them to me when I return.
 ~currentSpeaker = you
 Huh?
+{ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
 I must go now.
 Sorry for taking your time.
 ~characters-=stranger
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 What was that?
+~currentSpeaker = you
+I'm not sure exactly.
 ~characters+=lavender
 ~currentSpeaker=snob
 Who was that guy that left just now?
 ~currentSpeaker=android
 I don’t know, we’ve never seen him before.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker= snob
 He was cute. 
 Couldn’t see his face.
 But his outfit was so cute.
+{ChangeSprite("Lavender", "lavender_sad")}
 When I tried to speak to him he told me to go to hell.
+{ChangeSprite("Lavender", "lavender_tears_crying")}
 I think I might die.
+{ChangeSprite("Lavender", "lavender_sad")}
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker= android 
 Is that a good thing?
 {allbooks ? togue_uniform: -> togue_pets->} 
 ~currentSpeaker = you
 Why was that strange man dressed like that anyway?
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
 There’s some kind of convention for fans of a certain Victorian RPG detective mystery game. 
+{ChangeSprite("Lavender", "lavender_thinking")}
 Never got into it myself, but it looks like a lot of fun.
-And it’s nice to see people dressing smartly for a change.
+{ChangeSprite("Lavender", "lavender_normal")}
+And it’s nice to see people dressing nicely for a change.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker= android
 The outfits certainly look very fun. 
 ~currentSpeaker=you
 You’ve heard of this Pan?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 I may have taken a look while I was putting out the bins.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 So, I was wondering, have you seen Tai around?
 ~currentSpeaker=you
 No, we haven’t sorry.
 Is she meant to be meeting you?
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
 Yes.
-She has news about what’s happening with the data leak.
-I think it’s been cleared up.
+She has news about what’s happening with the data leak. I think it’s been cleared up.
+{ChangeSprite("Lavender", "lavender_thinking")}
 She was meant to have a meeting with her boss today.
 ~currentSpeaker=you
 Well, you can wait here if you like.
 There’s an area by the bookshelves over there.
 ~currentSpeaker=android
 I can make you tea while you wait.
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 Thanks.
 ~characters-=lavender
 ~currentSpeaker=you
 Don’t you think Lavender is acting a bit strange?
+
 ~currentSpeaker=android
 She’s just worried, I think.
+{ChangeSprite("Pandora", "pandora_happy")}
 At least she is being nice to us.
+{ChangeSprite("Pandora", "pandora_pensive")}
 I thought that man was strange. But I suppose if he’s from the convention. Maybe what he was saying was some kind of reference to that game.
 ~currentSpeaker=you
 Ugh I hate it when people do that.
 It’s so pretentious. 
 Who does he think he’s trying to impress?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 He really got on your nerves, didn’t he?
 Oh, someone’s at the door.
 ~characters+=kent
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Long time, no see.
+{ChangeSprite("Kent", "kent_amused")}
 I see you already have company.
 ~currentSpeaker=you
 She’s waiting for Tali, let her be.
 {allbooks ? lady_darkness_373: -> lady_darkness->} 
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 There was a threat on Benedict Blue’s life this morning. 
 ~currentSpeaker = you
 Ah, that’s not good.
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker = android
 Oh no.
-No wonder she’s so sombre.
+No wonder she’s acting so strange.
 ~currentSpeaker=comic
 It’s causing a lot of issues.
 The prime minister is saying if BB is compromised it’s as good as the whole country being compromised.
@@ -113,8 +151,7 @@ Haven’t you been following the state of the news recently?
 ~currentSpeaker= you
 Yes, actually. Sort of.
 ~currentSpeaker= comic
-The chaos in London recently combined with our increasing isolation, politically and economically, which has in part been facilitated by Mr. Blue. He funds these wars, he boasts that he will ‘take care’ of us during these difficult times. He is the making of a dictator without the official political power of a dictator. 
-A lot of people blame him for everything. 
+The chaos in London recently combined with our increasing isolation, politically and economically, which has in part been facilitated by Mr. Blue. He funds these wars, he boasts that he will ‘take care’ of us during these difficult times. He is a dictator without the official political power of a dictator. 
 ~currentSpeaker= snob
 Ahem.
 I’m right here.
