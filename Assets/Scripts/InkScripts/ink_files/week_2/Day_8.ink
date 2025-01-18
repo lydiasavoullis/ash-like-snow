@@ -135,41 +135,77 @@ She’s waiting for Tali, let her be.
 ~currentSpeaker=comic
 There was a threat on Benedict Blue’s life this morning. 
 ~currentSpeaker = you
-Ah, that’s not good.
+Ah, right.
 {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker = android
 Oh no.
 No wonder she’s acting so strange.
+{ChangeSprite("Pandora", "pandora_normal")}
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
-It’s causing a lot of issues.
 The prime minister is saying if BB is compromised it’s as good as the whole country being compromised.
 ~currentSpeaker=you
-Do you know what triggered this sudden threat?
+Do they know anything about the terrorists?
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-Well.
-Haven’t you been following the state of the news recently?
-~currentSpeaker= you
-Yes, actually. Sort of.
+They're a group that call themselves The Syndicate.
+~currentSpeaker=you
+Ah I've heard of this.
+~currentSpeaker=android
+What is it?
+{ChangeSprite("Kent", "kent_side_serious")}
+~currentSpeaker=comic
+Well, it's all very annonymous. We don't know exaclty how they do it. 
+~currentSpeaker=you
+Newspaper cuttings.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=comic
+Ha.
+{ChangeSprite("Kent", "kent_side_normal")}
+No, it's probably more sophisticated than that.
+{ChangeSprite("Kent", "kent_side_serious")}
+Encryption algorithms, secret societies and bullshit. 
+~currentSpeaker=android
+Bullshit?
+{ChangeSprite("Kent", "kent_normal")}
+~currentSpeaker=comic
+Not sure what their goal is, but I'm not entirely sure it's a good one. And I'm not sure they're going about their terrorism in the most ethical manner.
+Someone is funding this, we're not sure who.
+~currentSpeaker=you
+Not doing a good job. You're the press, you should know more.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=comic
+You could say we have more pressing matters to deal with.
+~currentSpeaker=you
+What could be more pressing than the threat of terrorism?
+~currentSpeaker=comic
+Churning out abhorrent comics of course.
+{ChangeSprite("Pandora", "pandora_pensive")}
+~currentSpeaker=android
+I don't get why they're threatening Mr. Blue in the first place.
+What has he done to warrent such a thing?
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker= comic
-The chaos in London recently combined with our increasing isolation, politically and economically, which has in part been facilitated by Mr. Blue. He funds these wars, he boasts that he will ‘take care’ of us during these difficult times. He is a dictator without the official political power of a dictator. 
+It's less one factor, more a bunch of them.
+The chaos in London recently combined with our increasing isolation, politically and economically, which has in part been facilitated by Mr. Blue. 
+{ChangeSprite("Kent", "kent_side_serious")}
+Some would say he is essentially a dictator without the official political power of a dictator. 
 ~currentSpeaker= snob
 Ahem.
 I’m right here.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Sorry.
-I’m just reiterating what I’ve heard and seen with my own eyes. I’m not saying it’s true, at least in its entirety. 
+These are allegedly opinions that I believe to be held by some people.
 ~currentSpeaker= you
 But, I mean, it seems to me that’s the case right? 
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-Yes, but he didn’t just pop up overnight and make hell on earth.
+Yes, but he didn’t just pop up overnight.
 The seeds of this disaster were sown a long time ago.
-Governments leaving cracks wide open. 
-Begging to be exploited.
-And then a rich guy comes in and says he’s going to fix everything.
-And he’s charming and cool and everyone loves him.
-they turn a blind eye to where his money goes.
-Of course, it’s not going to last forever.
-It doesn’t have to.
+Governments leaving cracks wide open, begging to be exploited.
+And then some rich guy comes in and says he’s going to fix everything.
+They turn a blind eye to where his money goes.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~characters+=lavender
 ~currentSpeaker=snob
 I-I’m leaving.
@@ -178,36 +214,44 @@ Ok, see you around Cas.
 ~characters-=lavender
 ~currentSpeaker=you
 That’s not good.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-She’ll get over it.
 I’m suprised she’s even out, surely she should be a bit more cautious considering who her father is.
 Then again, he’s always had a very lax attitude when it comes to his kids.
 ~currentSpeaker=you
 Still, must be difficult for her.
 ~currentSpeaker=comic
 I imagine it is.
+{ChangeSprite("Kent", "kent_amused")}
 It’s an adjustment, when you realise despite your money and power, you can still be vulnerable.
 I think when you’re at that level of wealth, you start thinking you’re untouchable.
 And it’s perhaps rather humbling, to know that you’re not.
 ~characters +=tali
+{ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker=webdev
 Hey!
 How are you?
+{ChangeSprite("Tali", "tali_happy")}
 Hey Kent!
 ~currentSpeaker=comic
-Hey girl!
+Hello there!
 ~currentSpeaker=you
 It's good to see you {webdev}
 {allbooks ? forest_god: -> god_of_the_forest->} 
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-How’s the boss treating you?
+How’s the boss treating you {webdev}?
+
 ~currentSpeaker=webdev
 Things are better.
 The dirt kind of just got swept under the carpet after I spoke to Lavender.
-It was so weird honestly.
- I think my boss still has a grudge against me.
+{ChangeSprite("Tali", "tali_exasperated")}
+It was so weird honestly. I think my boss has a grudge against me.
+{ChangeSprite("Tali", "tali_talking_side")}
 But he won’t speak anymore.
 Hasn’t suggested that I take on managing the server or any other responsibilities.
+{ChangeSprite("Tali", "tali_normal")}
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 That’s good, right?
 ~currentSpeaker=webdev
