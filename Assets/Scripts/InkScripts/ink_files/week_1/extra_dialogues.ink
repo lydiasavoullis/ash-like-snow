@@ -123,7 +123,7 @@ Right.
  ~funds+=800
  ~booksSold+=1
 ->->
-==togue_acid_rain==
+==togue_acid_rain_issue==
 ~lavenderPoints+=1
 ~currentSpeaker = you
 So I have this magazine you might like?

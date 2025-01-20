@@ -1,79 +1,105 @@
 ==day_11==
 ~characters+=pandora
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Morning! One more day.
-Until my Christmas eve extravaganza!
+Until my Christmas Eve extravaganza!
 ~currentSpeaker=you
 You make it sound very fancy.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 It will be fancy.
 I promise.
 ~currentSpeaker=you
 Well, I –
 ~characters+=kent
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Hey girls.
 ~currentSpeaker=you
 {allbooks ? mr_therm: -> mr_thermistor->} 
 {allbooks ? bioworld: -> bworld->} 
-What’s going on?
+
 ~currentSpeaker=you
 Long time no see
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 It’s been a day, don’t get clingy on me.
 ~currentSpeaker=you
 We pine for you {comic}, we yearn.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I wouldn’t quite use those specific words, but I’m certainly glad you’re back. 
+{ChangeSprite("Pandora", "pandora_normal")}
 I assume you were covering the terrorist story?
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 Yes, but please I don’t want to talk about it anymore.
 It’s giving me a headache.
+{ChangeSprite("Kent", "kent_sad")}
 I hope my overtime cheque comes through soon, I doubt they’ll feel like much compensation.
 ~currentSpeaker=you
 I’m just so relieved you’re not frequenting another bookstore.
 I couldn’t take the betrayal.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Oh you know me.
+{ChangeSprite("Kent", "kent_happy")}
 I’m a one kind of bookstore kind of guy.
+{ChangeSprite("Pandora", "pandora_suggestive")}
 ~currentSpeaker=android
-So glad you’re not a bookstore slut.
+We're glad you’re not some kind of bookstore slut.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-…{android} hehe, that's kind of cheeky.
+…{android} hehe, that's kind of rude.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I just want to be involved too
 ~currentSpeaker=you
-So, you’re still up for our super Christmas eve party extravaganza. It's going down tomorrow evening.
+So, you’re still up for our super Christmas Eve party extravaganza. It's going down tomorrow evening.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 I remember. I promise I won’t stand you up.
+{ChangeSprite("Kent", "kent_normal")}
 I’m going to bring loads of booze and snacks.
 ~currentSpeaker=you
 That’s music to my ears. 
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I can’t drink or eat. But still, much appreciated. 
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 Sorry, I didn’t even think about that.
 ~currentSpeaker=you
 I knew about the eating part. But can’t androids drink?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 We can consume certain drinks and ‘taste’ them the way humans do. They then get incinerated in our bodies.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=you
 So, you could theoretically drink.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 I could, but I don’t need to. There’s no desire, I don’t get drunk. I sort of taste the drink a little bit, but I don’t find it so entertaining.
 ~currentSpeaker=you
 But does that mean we could like, toast with you?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I didn’t think about that.
 I suppose there is a social aspect to drinking.
+{ChangeSprite("Pandora", "pandora_happy")}
 I could join in on that.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 So you can drink without getting drunk?
+{ChangeSprite("Kent", "kent_side_normal")}
 Impressive.
 ~currentSpeaker=you
 Kind of defeats the point though.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Well, I have no desire to compromise my hand eye coordination.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 That’s not the only thing that gets compromised.
 ~currentSpeaker=you
@@ -83,15 +109,16 @@ How about you {comic}, can you hold your liquor?
 Sure I can.
 ~currentSpeaker=you
 Really?
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
-Ok, not really, but I’ll try my best.
-And try not to get up and dance on the counter..
+Ok, not really, but I’ll try my best to get up and dance on the counter.
 ~currentSpeaker=you
 You better not be getting your muddy shoes on here.
 ~currentSpeaker=android
 So drinking makes you dance?
 ~currentSpeaker=you
 Depends on the person.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 What do you do when you’re drunk {you}?
 ~currentSpeaker=you
@@ -101,43 +128,67 @@ You’re going to have to be more specific.
 ~currentSpeaker=you
 …
 I’d rather not.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-Getting drunk does sound fun, but also unpredictable. I know that alcoholism is a very deadly disease, and I should discourage it. But also, alcohol is good for socialisation. I just feel like humanity should have found a better way to break the ice by now.
+Getting drunk does sound fun, but also unpredictable. I know that alcoholism is a very deadly disease, and I should discourage it. 
+{ChangeSprite("Pandora", "pandora_pensive")}
+But also, alcohol is good for socialisation. 
+{ChangeSprite("Pandora", "pandora_mean")}
+I just feel like humanity should have found a better way to break the ice by now.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 I feel like humanity should have found a better way to do a lot of things by now. 
 ~currentSpeaker=you
 Yeah, it’s like drinking poison to get closer with your friends. 
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Exactly!
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 Now that you mention it, it doesn’t sound like a very healthy way to exist.
 ~currentSpeaker=you
-I don’t think existence is healthy by nature.
+I don’t think existence itself is all that healthy.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 Haha, lighten up a bit {you}.
 ~currentSpeaker=you
 Hmph.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 Well, what’s been going on while I’ve been away?
 ~currentSpeaker=you
 {webdev} and {snob} have visited, they’re still on edge. And {snob} is really paranoid about getting assassinated. 
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-That makes sense. It’s been a rough couple of days. I imagine the roughest couple of days of her life. Lucky cow!
+That makes sense. It’s been a rough couple of days. I imagine the roughest couple of days of her life.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 That sounds sympathetic, and also not very sympathetic.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 I don’t know how to feel anymore.
+{ChangeSprite("Kent", "kent_sad")}
 I know her as a person, and I feel sorry for her.
-But also I’ve been working on this for so long my eyes have gone numb and I’m kind of a bit sick of the whole Blue family at the moment. They’ve had this coming for a long time.
-And I don’t like her father.
+{ChangeSprite("Kent", "kent_side_serious")}
+But also I’ve been working on this for so long my eyes have gone numb and I’m sick of the whole Blue family at the moment. These parasites had this coming for a long time.
+{ChangeSprite("Kent", "kent_upset")}
+And I really don’t like her father, if I didn't make that clear already.
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 But surely he doesn’t deserve assassination? Just because he’s rich?
+{ChangeSprite("Kent", "kent_amused")}
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=comic
-Calling Benedict Blue rich, is like calling the universe big. Sure, it’s true, but it leaves out the true scale of the matter. He’s the richest man in the country and he’s using that wealth to isolate us from the rest of the world and start a war.
+Calling Benedict Blue rich, is like calling the universe big. Sure, it’s true, but it leaves out the true scale of the matter. 
+{ChangeSprite("Kent", "kent_upset")}
+He’s the richest man in the country, and he’s using that wealth to isolate us from the rest of the world and start a war.
+{ChangeSprite("Kent", "kent_side_serious")}
 Thousands of people die because of him everyday.
 I can no longer think of him as a person, because he isn’t a person. He’s a malevolent force. A great shadow cast over London. 
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Aren’t you overreacting a little bit?
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 You didn’t hear about the strikes then?
 ~currentSpeaker=you
@@ -145,10 +196,10 @@ What strikes?
 ~currentSpeaker=comic
 Exactly. A couple of years ago, there were strikes in a division of Blue-Carp industries. Everyone was fired. 
 ~currentSpeaker=you
-That’s bad. But–
+That sucks—
 ~currentSpeaker=comic
 Not finished.
-Later on a lot of the ex-employees were found dead. From drug overdoses. 
+Later on a lot of the ex-employees were found dead. All from drug overdoses. 
 ~currentSpeaker=you
 Lots of people turn to drugs when things like this happen, it’s not unheard of.
 ~currentSpeaker=comic
@@ -157,7 +208,7 @@ A lot of them killed themselves.
 A lot of them couldn’t get jobs anymore, they were tainted by their association with the strike.
 ~currentSpeaker=you
 That’s bad. Why have I not heard about this?
-~currentSpeaker=comic
+~currentSpeaker=android
 Why do you think you haven’t heard?
 ~currentSpeaker=android
 Haha, don’t be silly.
@@ -198,8 +249,6 @@ I know how you journalists work. You say that, and then you’re going to go bac
 Honestly, I really don’t give a fuck about the Calamity.
 ~currentSpeaker=snob
 Well just know if you snitch. I’ll know who did it. And I have…contacts.
-~currentSpeaker=android
-That’s better than glasses right?
 ~currentSpeaker=comic
 Hey, are you threatening me?
 ~currentSpeaker=snob
@@ -209,8 +258,7 @@ You don’t have anything to worry about if you keep your mouth shut.
 What have you been getting up to anyway?
 ~currentSpeaker=snob
 Mostly spent time in my apartment. Working from home. I popped out to my favourite bakery one time but I had to run out because I thought I saw a red dot on the wall.
-Turns out it was just a toy laser pointer.
-Some stupid kids were playing with a cat.
+Turns out it was just a toy laser pointer. Some stupid kids were playing with a cat.
 ~currentSpeaker=comic
 Ok, that isn’t even a newsworthy story.
 ~currentSpeaker=snob

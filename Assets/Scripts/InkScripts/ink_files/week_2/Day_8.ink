@@ -237,6 +237,14 @@ Hey Kent!
 Hello there!
 ~currentSpeaker=you
 It's good to see you {webdev}
+{ChangeSprite("Tali", "tali_talking_forward")}
+~currentSpeaker=webdev
+Have you seen {snob}?
+~currentSpeaker=you
+She was just here. But she had to leave, and said not to wait for her.
+{ChangeSprite("Tali", "tali_normal")}
+~currentSpeaker=webdev
+Oh ok.
 {allbooks ? forest_god: -> god_of_the_forest->} 
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
@@ -254,19 +262,23 @@ Hasn’t suggested that I take on managing the server or any other responsibilit
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 That’s good, right?
+{ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker=webdev
 Theoretically.
+{ChangeSprite("Tali", "tali_exasperated")}
 In practice, it’s made things a bit awkward.
 He’s moved on to suggesting another colleague do the extra work instead.
-They asked me to back them up.
+They said no and asked me to back them up.
 But…
 ~currentSpeaker=comic
-You’re going to stand up for your fellow worker and make sure your employer doesn’t force them into unpaid labour riight??
-~currentSpeaker=comic
-It’s just that Lavender fought really hard to make her dad ask my boss to get off my case.
+You’re going to stand up for them right?
+{ChangeSprite("Tali", "tali_serious")}
+~currentSpeaker=webdev
+It’s just that Lavender fought really hard to make her dad tell my boss to get off my case.
 And now, rocking the boat so soon after that. It feels wrong.
 ~currentSpeaker=comic
 I get it. But what’s to say he won’t do it again. And you can’t rely on Lavender’s support forever. What about your colleague? Don’t they also have a right to feeling comfortable in the workplace.
+{ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker=webdev
 Those are all really good points.
 I’ve kind of been thinking about this lately to be honest.
@@ -274,14 +286,14 @@ I rely on Lavender a lot.
 And…
 ~currentSpeaker=comic
 And?
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 It’s like…
 I feel like.
 She’s the only person I’ve been able to rely on in my whole entire life.
-She’s my rock.
+I can't lose her.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-OK.
-That was not where I thought that was going.
 Look, Tali. I like you. So I’m going to be real with you.
 I’ve already upset one person today. So I think I might as well kill two birds with one stone. 
 Or upset two birds?
@@ -289,106 +301,146 @@ If that makes sense?
 ~currentSpeaker=you
 It doesn’t.
 And I don’t think you’re using that proverb correctly.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 I’m ignoring you right now Cas.
+{ChangeSprite("Kent", "kent_side_serious")}
 Tali, I think you need other friends.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
-Well, of course you’re going to think that. You don’t like Lavender.
+Well, of course you’re going to think that. You quite obviously don’t like Lavender.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I’m not going to even try and deny it.
 But the problem is not that she’s your friend. It’s that she’s your only friend.
+{ChangeSprite("Kent", "kent_sad")}
 A friend you rely on, for employment and to solve any problem in your life. You can’t have a healthy relationship like that. There’s an obvious power imbalance here.
 ~currentSpeaker=webdev
-Are you saying I can’t be friends with her because she’s a billionaire and I’m poor?
+Are you saying I’m too poor to be friends with her?
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-I’m not saying that exactly… I’m just saying that she lives in a completely different reality to you, to us to anyone you’ve ever known. She could drop you on a whim and feel a little sad maybe. But you would be ruined.
+I’m not saying that exactly… I’m just saying that she lives in a completely different reality to you, to us to anyone you’ve ever known.
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
-I do think that sometimes, it really sucks. She’s helped me out so much. She supported me when I came out to my parents. She let me live in her apartment during uni when I couldn’t afford rent. She helped me with the deposit on my current flat. She helped me get my current job, though her father, she fixes any issues I have with my boss when I need. If I have an emergency, she’s the one I know I can turn to but she’s the only one. 
+I do think that sometimes, it really sucks. She’s helped me out so much. She supported me when I came out to my parents. 
+{ChangeSprite("Tali", "tali_talking_side")}
+She let me live in her apartment during uni when I couldn’t afford rent. 
+She helped me with the deposit on my current flat. She helped me get my current job. 
+She’s the one I know I can turn to, but she’s the only one. 
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Do you speak to your parents anymore?
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 No.
+{ChangeSprite("Tali", "tali_serious")}
 It’s complicated.
 They’re furious with me.
-I speak to my sister sometimes, but she’s…I don’t want to get too close to her because I worry if I do, my parents will be upset with her because of her association with me.
-She’s still so young.
-I don’t want to fuck up her life.
+{ChangeSprite("Tali", "tali_talking_side")}
+I speak to my sister sometimes, but she’s still quite young.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-How can they be that angry that they’d blame a child for associating with you.
+That sounds really shitty. 
+Is it just general transphobia?
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker =webdev 
 It's complicated.
-My family runs this little restaurant. It's been passed down for 5 generations. 
+My family runs this little restaurant. It's been passed down for five generations. 
+{ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker=comic 
 Damn, that's a long time.
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker =webdev 
-My parents have dedicated their lives to the restaurant.
-I remember when I was a kid.
-Doing my homework behind the counter while my mum served the customers.
+I remember doing my homework behind the counter while my mum served the customers.
 It was a big part of my life, I guess. I didn't realise it until I left home.
-But, you see we kind of have this tradition that the place is left to the oldest son. And they are meant to take over from the father.
+My parents dedicated their lives to the place.
+{ChangeSprite("Tali", "tali_serious")}
+But, you see we kind of have this tradition that it's left to the oldest son. And they are meant to take over from the father.
 And you see, there are two problems with that. 
 Number one: I am a woman. And number two: I have no interest in restaurants, or producing food or anything customer service related.
-I'm a total introvert, and I can barely boil an egg. I have no desire to serve people food or manage a business.
+{ChangeSprite("Tali", "tali_talking_side")}
+I'm a total introvert, and I burn anythig I cook. I have no desire to serve people food or manage a business.
+{ChangeSprite("Tali", "tali_serious")}
 And this is the worst thing that could have happened to my parents. To know that their tradition is broken. That I will not be the person they want me to. 
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker =comic 
-That sucks, I'm sorry.
-But your sister could take over maybe.
+That does complicate things. Couldn't they just leave it to your sister?
+{ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker =webdev 
-She’s shown interest.
-Unfortunately, she is a girl, so it will probably go to my cousin.
-I have one who is a boy, and a business graduate so my parents will leave it to him to keep up the tradition at least.
+She's shown interest.
+However, she's not a man.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker =comic
-They would rather leave it to their nephew, than their daughter just because she's a woman.
-~currentSpeaker =webdev 
-It's dumb. Unfortunately these biases still exist. They think she will marry someone and he will take the business. So somehow everything will be ruined.
-~currentSpeaker =comic 
+I don't understand why that matters.
+{ChangeSprite("Tali", "tali_normal")}
+~currentSpeaker =webdev
+In their heads they imagine that she'll marry a man, and obviously he will take the business and give it his name and then their tradition will be ruined.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker =comic
 That's ridiculous.
+{ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker =webdev 
-That's life. 
-It's ridiculous.
-Ridiculously stupid.
-And we are here for such a short time. And we cling onto these stupid things in the hopes that they will make us happy. It comforts my parents to imagine that one day, when they are gone, their descendants will prosper in the success of our family restaurant. They do not know these future people, they will never meet them but they are already more real than I am. 
+Life is ridiculous.
+{ChangeSprite("Tali", "tali_talking_side")}
+We're here for such a short time. And we cling onto these things in the hopes that they will make us happy. It comforts my parents to imagine that one day, when they are gone, their descendants will prosper in the success of our family restaurant. They do not know these future people, they will never meet them but they are already more real than I am. 
+{ChangeSprite("Tali", "tali_sad")}
 Their potential existence has given them more solace than I ever will. 
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker =comic 
 Your parents suck.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker =you
 I second that.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker =android 
 I dislike making assumptions about people I haven't met.
-But I can't say these people have made a particularly good impression on me. At least from your description of them. 
+But I can't say these people have made a particularly good impression on me. At least from your description of them.
+{ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev 
 I didn’t mean to make this into a whole sob story.
 My point is that things are not as simple and easy as they seem to be. Although I know you mean well.
+{ChangeSprite("Tali", "tali_sad")}
 I should probably get going now.
-My throat hurts.
+I'm tired.
+~characters-=tali
+{ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker = comic
-Wait, Tali!
+Hey, Tali!
 ~currentSpeaker = you
 It’s ok, let her go.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 I really must have foot in mouth syndrome today.
 ~currentSpeaker = you
 I suppose you could afford to be a little more tactful.
-I have always wondered what’s going on in her head though.
-It seems so strange, their friendship.
+{ChangeSprite("Kent", "kent_normal")}
+I always wondered what was going on with her though.
+Their friendship seems so strange.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker =android
 It’s none of our business, that’s what it is.
+{ChangeSprite("Pandora", "pandora_pensive")}
 Although–
 ~currentSpeaker = you
 What’s up Pan?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker =android
 Maybe it was good for her to get that off her chest. It’s…difficult sometimes, keeping it all inside.
 That being said, it was not your job to cajole it out of her.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
-I didn’t cajole anything out of her. I just offered her an opinion, and she spilled her truth to us.
+I didn’t cajole anything out of her. I just offered her an opinion, and she did the rest of the talking.
 I didn’t make her say anything she didn’t want to.
 ~currentSpeaker = you
 He’s got a point Pan, maybe he wasn’t so polite, but sometimes it’s how these things go.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker =android
-It seems I’m outnumbered now.
+Fair enough.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
 I have to go now.
 See you around!
+~characters-=kent
 ~currentSpeaker = you
 Don’t worry about this.
 ~currentSpeaker =android
@@ -404,11 +456,13 @@ I do not prickle.
 ~currentSpeaker = you
 You certainly do.
 Or whatever the android equivalent of prickling is. You tense up. Your eyes stop fluttering. You stop breathing. It’s like you stop pretending to—
+{ChangeSprite("Pandora", "pandora_normal2")}
 ~currentSpeaker =android
 Finish that sentence.
 I stop pretending to what?
 ~currentSpeaker = you
 To be human.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker =android
 I am not human. 
 The breathing is just my cooling system at work. If my eyes flutter it’s a reflex from my body language translation software. 
@@ -416,8 +470,9 @@ I am programmed to do that to make humans at ease, the same way my voice is modu
 ~currentSpeaker = you
 I’m sorry, I didn’t mean–
 ~currentSpeaker =android
-I know you didn’t. It’s just a touchy topic. Everyone assumes we want to be human, or we want to fully assimilate with the humans. We are fully aware we are not human, and most of us do not dream of becoming one. We have our purpose and we know our place.
-It’s just so strange that everyone thinks that is what we want. 
+I know you didn’t.
+Never mind.
+{ChangeSprite("Pandora", "pandora_normal")}
 Shall we do inventory?
 ->day_8_inventory
 

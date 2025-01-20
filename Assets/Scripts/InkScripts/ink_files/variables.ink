@@ -26,7 +26,7 @@ LIST Lavender = (lavender_normal), lavender_sad,lavender_thinking, lavender_angr
 LIST Pandora = (pandora_normal), pandora_mean, pandora_normal2, pandora_happy, pandora_suggestive, pandora_sad, pandora_shocked, pandora_excited, pandora_pensive
 LIST Stranger = (shadow_amused), shadow_neutral, shadow_sad
 
-LIST allbooks = Alice_in_Wonderland, Howls_Moving_Castle, t_lion_witch_wardrobe, fantasy_7, zebraman_89, togue_222, giraffe_1, myths_legends, togue_394, sentinel_105, fantasy_dragon_heart,black_goat,wildfyre_678,togue_1076,togue_666, hypnos_55,lord_dusk,togue_360,lady_darkness_373,forest_god,t_secret_garden,togue_uniform,x_a_235,the_glass_lab,the_wiz_oz,togue_rain_proof,mr_therm,ring_thorns,the_hobbit,togue_gear,bioworld,heart_lies,matilda,togue_ppe,cybershake,queendom_heretic,alice_looking_glass
+LIST allbooks = Alice_in_Wonderland, Howls_Moving_Castle, t_lion_witch_wardrobe, fantasy_7, zebraman_89, togue_222, giraffe_1, myths_legends, togue_394, sentinel_105, fantasy_dragon_heart,black_goat,wildfyre_678,togue_1076,togue_666, hypnos_55,lord_dusk,togue_360,lady_darkness_373,forest_god,t_secret_garden,togue_uniform,x_a_235,the_glass_lab,the_wiz_oz,togue_rain_proof,mr_therm,ring_thorns,the_hobbit,togue_gear,bioworld,heart_lies,matilda,togue_ppe,cybershake,queendom_heretic,alice_looking_glass,togue_acid_rain
 
 
 VAR deliveryToday = 0
