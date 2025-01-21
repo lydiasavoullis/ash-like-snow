@@ -571,7 +571,7 @@ Don’t. You. Dare. Lie.
 Why weren’t you taking your medication?
 ~currentSpeaker=you
 Fate isn’t a medication.
-It’s bondage.
+It’s bondage. Death.
 It fucked up my life.
 ~currentSpeaker=android
 It’s meant to help you. You should take it if it was prescribed by your doctor.
