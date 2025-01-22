@@ -1,11 +1,10 @@
-==day_12==
+==trader_happy==
 ~characters+=stranger
 ~currentSpeaker=you
 …
 ~currentSpeaker = trader
 Hello again
 So do you have what I asked for?
-[happy path]
 ~currentSpeaker=you
 Yes…I have it.
 ~currentSpeaker = trader
@@ -43,6 +42,48 @@ Hey, what’s going on over there?
 ~currentSpeaker = trader
 I need to go.
 You’re a lifesaver.
+->->
+==trader_unhappy==
+~characters+=stranger
+~currentSpeaker=you
+…
+~currentSpeaker = trader
+Hello again
+So do you have what I asked for?
+~currentSpeaker=you
+It's you again!
+~currentSpeaker = trader
+The books. Where are the books?
+~currentSpeaker=you
+I'm sorry, you didn't ask for any books.
+~currentSpeaker=trader
+It was part of our agreement with Lovelace.
+I can see you are not quite all there.
+It's fine. I will just have to do this another way.
+~currentSpeaker=you
+I have absolutely no idea what you are talking about.
+~currentSpeaker=trader
+Goodbye.
+I do not think we will meet again.
+->->
+==day_12==
+~allbooks+=Alice_in_Wonderland
+~allbooks+=Howls_Moving_Castle
+~allbooks+=t_lion_witch_wardrobe
+
+{(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe):
+    ~strangerbooks="true"
+  - else:
+  ~strangerbooks="false"
+}
+
+{strangerbooks=="true":
+    ->trader_happy->
+  - else:
+    ->trader_unhappy->
+}
+
+
 ~characters-=stranger
 ~currentSpeaker=you
 …
