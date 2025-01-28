@@ -1,4 +1,5 @@
 ==trader_happy==
+{ChangeSprite("Stranger", "shadow_normal")}
 ~characters+=stranger
 ~currentSpeaker=you
 …
@@ -7,10 +8,12 @@ Hello again
 So do you have what I asked for?
 ~currentSpeaker=you
 Yes…I have it.
+{ChangeSprite("Stranger", "shadow_amused")}
 ~currentSpeaker = trader
 Excellent.
 ~currentSpeaker=you
 Can I ask you–
+{ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
 No.
 ~currentSpeaker=you
@@ -19,39 +22,62 @@ Why?
 You just have to trust me.
 ~currentSpeaker=you
 Trust you? I don’t even know who you are.
+{ChangeSprite("Stranger", "shadow_normal")}
 ~currentSpeaker = trader
 You trust Ada, right? You know that she wanted you to do this, otherwise you wouldn’t be doing this right?
-~currentSpeaker=you
-I can’t exactly remember her asking me, but somehow I know this is what she wanted.
-~currentSpeaker = trader
-You can’t remember….
-Oh god you’re not taking it again, are you?
-~currentSpeaker=you
-Excuse me?
-~currentSpeaker = trader
-Fate. It makes you forget things. Look, you have to stop it.
-~currentSpeaker=you
-I’ve been sober for 9 months. 
-But…no that can’t be right
-~currentSpeaker = trader
-I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. You need to get your shit together.
-I can’t risk telling you anymore.
-You need to figure it out yourself. 
+
+{snappedOut == "true":
+    ~currentSpeaker=you
+    I remember Ada asking me to give money to a strange man when he asks for it.
+    I was being drugged by someone, so I can't remember some details.
+    {ChangeSprite("Stranger", "shadow_sad")}
+    ~currentSpeaker = trader
+    Drugged by someone?
+    ~currentSpeaker=you
+    I understand, it sounds dodgy. I swear I wouldn't touch that stuff if you paid me. 
+    ~currentSpeaker = trader
+    Do you need me to get rid of this individual?
+    ~currentSpeaker = you
+    No! It's ok. Don't worry.
+  - else:
+    ~currentSpeaker=you
+    I can’t exactly remember her asking me, but somehow I know this is what she wanted.
+    {ChangeSprite("Stranger", "shadow_sad")}
+    ~currentSpeaker = trader
+    You can’t remember….
+    You’re not taking it again, are you?
+    ~currentSpeaker=you
+    Excuse me?
+    {ChangeSprite("Stranger", "shadow_normal")}
+    ~currentSpeaker = trader
+    Fate. It makes you forget things. Look, you have to stop it.
+    ~currentSpeaker=you
+    I’ve been clean for 9 months. 
+    But…no that can’t be right
+    {ChangeSprite("Stranger", "shadow_sad")}
+    ~currentSpeaker = trader
+    I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. You need to get your shit together.
+    I can’t risk telling you anymore.
+    You need to figure it out yourself. 
+}
 ~currentSpeaker=android
 Hey, what’s going on over there?
+{ChangeSprite("Stranger", "shadow_normal")}
 ~currentSpeaker = trader
 I need to go.
-You’re a lifesaver.
+Goodbye {you}.
 ->->
 ==trader_unhappy==
 ~characters+=stranger
 ~currentSpeaker=you
 …
+{ChangeSprite("Stranger", "shadow_normal")}
 ~currentSpeaker = trader
 Hello again
 So do you have what I asked for?
 ~currentSpeaker=you
 It's you again!
+{ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
 The books. Where are the books?
 ~currentSpeaker=you
@@ -59,9 +85,11 @@ I'm sorry, you didn't ask for any books.
 ~currentSpeaker=trader
 It was part of our agreement with Lovelace.
 I can see you are not quite all there.
+{ChangeSprite("Stranger", "shadow_normal")}
 It's fine. I will just have to do this another way.
 ~currentSpeaker=you
 I have absolutely no idea what you are talking about.
+{ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker=trader
 Goodbye.
 I do not think we will meet again.
@@ -77,7 +105,7 @@ I do not think we will meet again.
   ~strangerbooks="false"
 }
 
-{strangerbooks=="true":
+{(strangerbooks=="true") || (snappedOut=="true") && funds>=500:
     ->trader_happy->
   - else:
     ->trader_unhappy->
@@ -111,7 +139,7 @@ Where nothing seems to be ok.
 What?
 ~currentSpeaker=android
 Oh nothing.
-Just quoting my fave Cobalt Dragons lyrics.
+Just quoting Cobalt Dragons lyrics.
 Of course I know what you’re talking about. I’m ecstatic. 
 ~currentSpeaker=you
 You don’t sound it.
