@@ -1,5 +1,5 @@
 ==trader_happy==
-{ChangeSprite("Stranger", "shadow_normal")}
+{ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
 ~currentSpeaker=you
 …
@@ -22,7 +22,7 @@ Why?
 You just have to trust me.
 ~currentSpeaker=you
 Trust you? I don’t even know who you are.
-{ChangeSprite("Stranger", "shadow_normal")}
+{ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 You trust Ada, right? You know that she wanted you to do this, otherwise you wouldn’t be doing this right?
 
@@ -48,7 +48,7 @@ You trust Ada, right? You know that she wanted you to do this, otherwise you wou
     You’re not taking it again, are you?
     ~currentSpeaker=you
     Excuse me?
-    {ChangeSprite("Stranger", "shadow_normal")}
+    {ChangeSprite("Stranger", "shadow_neutral")}
     ~currentSpeaker = trader
     Fate. It makes you forget things. Look, you have to stop it.
     ~currentSpeaker=you
@@ -62,7 +62,7 @@ You trust Ada, right? You know that she wanted you to do this, otherwise you wou
 }
 ~currentSpeaker=android
 Hey, what’s going on over there?
-{ChangeSprite("Stranger", "shadow_normal")}
+{ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 I need to go.
 Goodbye {you}.
@@ -71,7 +71,7 @@ Goodbye {you}.
 ~characters+=stranger
 ~currentSpeaker=you
 …
-{ChangeSprite("Stranger", "shadow_normal")}
+{ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 Hello again
 So do you have what I asked for?
@@ -85,7 +85,7 @@ I'm sorry, you didn't ask for any books.
 ~currentSpeaker=trader
 It was part of our agreement with Lovelace.
 I can see you are not quite all there.
-{ChangeSprite("Stranger", "shadow_normal")}
+{ChangeSprite("Stranger", "shadow_neutral")}
 It's fine. I will just have to do this another way.
 ~currentSpeaker=you
 I have absolutely no idea what you are talking about.
@@ -95,6 +95,7 @@ Goodbye.
 I do not think we will meet again.
 ->->
 ==day_12==
+->start_incident
 ~allbooks+=Alice_in_Wonderland
 ~allbooks+=Howls_Moving_Castle
 ~allbooks+=t_lion_witch_wardrobe
@@ -111,43 +112,50 @@ I do not think we will meet again.
     ->trader_unhappy->
 }
 
-
 ~characters-=stranger
 ~currentSpeaker=you
 …
+{ChangeSprite("Pandora", "pandora_normal")}
 ~characters+=pandora
 ~currentSpeaker=android
 {you}, was there a customer?
 I thought I heard you talking to someone–
+{ChangeSprite("Pandora", "pandora_sad")}
 You look…pale. Are you ok?
 ~currentSpeaker=you
 Yes.
 It was just some tourist asking for directions.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I trust you helped him?
 ~currentSpeaker=you
 Of course, you know me.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 Good. Good.
 ~currentSpeaker=you
 Are you excited?
 ~currentSpeaker=android
 Excited? About what?
+{ChangeSprite("Pandora", "pandora_sad")}
 Another day in this endless city.
-Where nothing seems to be ok.
 ~currentSpeaker=you
 What?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 Oh nothing.
-Just quoting Cobalt Dragons lyrics.
+It's just a Cobalt Dragons lyric.
+{ChangeSprite("Pandora", "pandora_happy")}
 Of course I know what you’re talking about. I’m ecstatic. 
 ~currentSpeaker=you
 You don’t sound it.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 Maybe when I was charging last night there was a loose connection. I don’t know. 
 ~currentSpeaker=you
 You’ll cheer up, I’m sure.
 So strange seeing you like this.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I am cheerful, I just don’t have the right energy to express it right now.
 ~currentSpeaker=you
@@ -156,78 +164,101 @@ Wait…are you sure you’re not nervous.
 Nervous? I don’t get nervous.
 ~currentSpeaker=you
 Could have fooled me.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I’m not…am I nervous? Is this what being nervous feels like?
 ~currentSpeaker=you
 I imagine that it’s different for androids, but if you feel a lack of enthusiasm and like something could go wrong then that might be a clue.
 You’ve probably hyped this up too much in your head, and put too much pressure on yourself to make it perfect.
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
-I know what being nervous is! I was a therapist. 
+I know what being nervous is! I was a therapist.
+{ChangeSprite("Pandora", "pandora_sad")}
 I just…I could always logic myself out of this. 
+{ChangeSprite("Pandora", "pandora_shocked")}
 I can’t let this happen.
 ~currentSpeaker=you
 There is no letting this happen.
 It’s happening whether you like it or not.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I need you to help me…just say something to make it go away.
 ~currentSpeaker=you
 Ok, well think of it this way. If it goes terrible, at least you can always host another and learn from your mistakes. Make it better next time.
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 If it’s terrible no one will come back. There might not be a next time.
 ~currentSpeaker=you
-Okayy, so let’s say I’m one of your patients and I’m experiencing anxiety. What would you say to me?
+Okay, so let’s say I’m one of your patients and I’m experiencing anxiety. What would you say to me?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I would say that everyone always thinks of the worst thing that can happen. That’s why they get nervous. But, what if you imagine the best possible outcome? Imagine everything going perfectly, exactly the way you want. Just picture it. 
+{ChangeSprite("Pandora", "pandora_normal")}
 Wait, that worked a bit.
 ~currentSpeaker=you
-Sigh 
+<i>*Sigh*</i>
 Why do I even try?
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Wow, what you said really helped. Thanks!
 ~currentSpeaker=you
 But it was what you said–
 No, you know what, I’ll accept the thanks.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~characters +=kent
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Hi!
 ~currentSpeaker=you
 Well, it’s you again.
-{allbooks ? cybershake: -> cybershake_comic->} 
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Sick of me already?
 ~currentSpeaker=you
 I could never be sick of you.
+{allbooks ? cybershake: -> cybershake_comic->} 
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-Not when I come bearing gifts.
+I come bearing gifts.
+{ChangeSprite("Kent", "kent_side_serious")}
 Which you will have to give back with the instruction manuals intact and ALL the pieces in the right place.
 ~currentSpeaker=you
 OK. OK. OK.
 ~currentSpeaker=android
 We promise to take good care of your property.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-Not you I’m worried about.
+It's not you I’m worried about.
 ~currentSpeaker=you
 I don’t like the insinuation here. 
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 I see the way you handle that cash register.
 ~currentSpeaker=you
 The way I handle the cash register is none of your business.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Do you know if {snob} and {webdev} will come?
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 I’m not in contact with them really.
 I got {webdev}’s number in passing, we haven’t spoken much beyond a ‘hi’ here and there, and I shared an article I liked with her.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
-It’s ok I didn’t ask for your whole life story.
+Ok, {comic}, I didn’t ask for your whole life story.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
-Woah {android} I’m getting some major negative energy from you right now.
+{android} I’m getting some rather unexpected negative energy from you right now.
 ~currentSpeaker=you
 She’s nervous.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Really? Didn’t realise androids got nervous.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I’m right here.
 And I’m freaking out
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 It’s ok, it’s just a party.
 ~currentSpeaker=android
@@ -235,39 +266,53 @@ Stop it. You’re not going to logic me out of my anxiety.
 Where are the others??
 ~characters +=tali
 ~characters +=lavender
+{ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker=webdev
 What’s going on?
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
 Yeah, what’s up?
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Ah wonderful we’re all here
 ~currentSpeaker=you
 {allbooks ? togue_ppe: -> togue_ppe_special->} 
 {allbooks ? heart_lies: -> where_the_heart_lies->} 
 {allbooks ? queendom_heretic: -> queen_h->} 
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=comic
+So {webdev}, {snob}
 You’ve made up then?
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Excuse me?
 That’s none of your business.
+{ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker=webdev
 It’s a coincidence, we just happened to arrive at the same time.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Sure, I think someone has been following me.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
 I’m not the one with the tracking apps…
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 HEY! I told you that was for research purposes only.
+{ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker=comic
 Oh my god.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=you
 Everyone shut up.
 We’re playing a game.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 What should we start with?
 ~currentSpeaker=you
 We’re playing truth or dare.
 You know how it goes.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 How does it go?
 ~currentSpeaker=you
@@ -276,70 +321,79 @@ I’ll pick someone to go first. I’ll save you from the first round {android} 
 ->start_truth_or_dare
 
 ==start_incident==
-~currentSpeaker=android
-That was fun.
-~currentSpeaker=you
-Glad you enjoyed it.
-~currentSpeaker=comic
-Is it film time now?
-I want to show you the new Blood Monster 3 that just came out. 
-I have it on my Hoolflix account, if you show me the computer I can just login.
-~currentSpeaker=android
-It’s downstairs.
-I can show you.
-~currentSpeaker=you
-No, I’ll show him.
-You stay up here and enjoy the drinks and music.
-~currentSpeaker=android
-Aw cool, thanks!
-EXPLOSION
-~currentSpeaker=webdev
-What the hell?
-~currentSpeaker=snob
-AHHHHHHHH
-Please don’t hurt me!
-~currentSpeaker=android
-Everyone calm down!
-It’s…it’s snow?
-~currentSpeaker=comic
-There was some kind of explosion it seems.
-~currentSpeaker=you
-And…that’s not snow {android}, it’s ash.
-~currentSpeaker=android
-It just looks so much like snow.
-~currentSpeaker=you
-You’ve never seen snow in your whole life, that’s why.
-Look, something really bad just happened.
-I can just feel it.
-{android} status update?
-~currentSpeaker=android
-It’s so hard to focus…everyone on the web is in a state of panic.
-My geiger counter is detecting normal levels of radiation.
-~currentSpeaker=you
-So not nuclear then. 
-But we should probably head downstairs just in case.
-~currentSpeaker=comic
-That won’t save us.
-~currentSpeaker=you
-If we go down there and close the door, we can get the air filtered.
-Which we’re going to need, since that ash is probably not good for our lungs.
-~currentSpeaker=snob
-What’s going on…are we going to die.
-~currentSpeaker=comic
-Possibly.
-~currentSpeaker=webdev
-That’s not a joke {comic}.
-~currentSpeaker=comic
-I wasn’t joking.
-~currentSpeaker=snob
-This is…scary.
-~currentSpeaker=android
-Don’t be worried. I’m actually trained for this kind of situation, as a therapy android you see…well that probably isn’t going to help.
+~characters+=lavender
+~characters+=tali
+~characters+=kent
+~characters+=pandora
+// {ChangeSprite("Pandora", "pandora_happy")}
+// ~currentSpeaker=android
+// That was fun.
+// ~currentSpeaker=you
+// Glad you enjoyed it.
+// {ChangeSprite("Kent", "kent_happy")}
+// ~currentSpeaker=comic
+// Is it film time now?
+// We can watch the new Blood Monster 3 that just came out. 
+// I have it on my Hoolflix account, if you show me the computer I can just login.
+// {ChangeSprite("Pandora", "pandora_normal")}
+// ~currentSpeaker=android
+// It’s downstairs.
+// I can show you.
+// ~currentSpeaker=you
+// No, I’ll show him.
+// You stay up here and enjoy the drinks and music.
+// ~currentSpeaker=android
+// Aw cool, thanks!
+// <i>*BOOM*</i>
+// {ChangeSprite("Tali", "tali_shocked")}
+// ~currentSpeaker=webdev
+// What the hell?
+// {ChangeSprite("Lavender", "lavender_shocked")}
+// ~currentSpeaker=snob
+// AHHHHHHHH
+// ~currentSpeaker=android
+// Everyone calm down!
+// It’s…it’s snow?
+// ~currentSpeaker=comic
+// There was some kind of explosion it seems.
+// ~currentSpeaker=you
+// And…that’s not snow {android}, it’s ash.
+// ~currentSpeaker=android
+// It just looks so much like snow.
+// ~currentSpeaker=you
+// You’ve never seen snow before.
+// Look, something really bad just happened.
+// I can just feel it.
+// {android} status update?
+// ~currentSpeaker=android
+// It’s so hard to focus…everyone on the web is in a state of panic.
+// My geiger counter is detecting normal levels of radiation.
+// ~currentSpeaker=you
+// So not nuclear then. 
+// But we should probably head downstairs just in case.
+// ~currentSpeaker=comic
+// That won’t save us.
+// ~currentSpeaker=you
+// If we go down there and close the door, we can get the air filtered.
+// Which we’re going to need, since that ash is probably not good for our lungs.
+// ~currentSpeaker=snob
+// What’s going on…are we going to die.
+// ~currentSpeaker=comic
+// Possibly.
+// ~currentSpeaker=webdev
+// That’s not a joke {comic}.
+// ~currentSpeaker=comic
+// I wasn’t joking.
+// ~currentSpeaker=snob
+// This is…scary.
+// ~currentSpeaker=android
+// Don’t be worried. I’m actually trained for this kind of situation, as a therapy android you see…well that probably isn’t going to help.
 ~currentSpeaker=snob
 You’re fine if anything happens. You’re a robot. We’ll suffocate to death.
 Or die excruciatingly of radiation poisoning.
 ~currentSpeaker=webdev
 {snob} for fuck’s sake!
+~scene = "Basement"
 ~currentSpeaker=android
 Here we are now. I’ll just seal the door.
 There it’s done.
@@ -353,7 +407,11 @@ I’m sure it’s nothing.
 What just happened?
 ~currentSpeaker=android
 Oh, you might want to see this.
-SHOWS FEED OF HOUSES OF PARLIAMENT ON FIRE.
+~scene = "Fire"
+¬
+~currentSpeaker = ""
+<i>This is live footage. At 19:45 an attack was attempted on the London area and the dome was breached. The houses of parliament seem to be on fire. This is not a drill. Everyone stay indoors. I repeat, everyone stay indoors.</i>
+~scene = "Basement"
 ~currentSpeaker=you
 Everything’s in lockdown now.
 You won’t be able to leave this building.
