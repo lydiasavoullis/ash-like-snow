@@ -325,7 +325,7 @@ I’ll pick someone to go first. I’ll save you from the first round {android} 
 ~characters+=tali
 ~characters+=kent
 ~characters+=pandora
-// {ChangeSprite("Pandora", "pandora_happy")}
+{ChangeSprite("Pandora", "pandora_happy")}
 // ~currentSpeaker=android
 // That was fun.
 // ~currentSpeaker=you
@@ -342,55 +342,71 @@ I’ll pick someone to go first. I’ll save you from the first round {android} 
 // ~currentSpeaker=you
 // No, I’ll show him.
 // You stay up here and enjoy the drinks and music.
-// ~currentSpeaker=android
-// Aw cool, thanks!
-// <i>*BOOM*</i>
-// {ChangeSprite("Tali", "tali_shocked")}
-// ~currentSpeaker=webdev
-// What the hell?
-// {ChangeSprite("Lavender", "lavender_shocked")}
-// ~currentSpeaker=snob
-// AHHHHHHHH
-// ~currentSpeaker=android
-// Everyone calm down!
-// It’s…it’s snow?
-// ~currentSpeaker=comic
-// There was some kind of explosion it seems.
-// ~currentSpeaker=you
-// And…that’s not snow {android}, it’s ash.
-// ~currentSpeaker=android
-// It just looks so much like snow.
-// ~currentSpeaker=you
-// You’ve never seen snow before.
-// Look, something really bad just happened.
-// I can just feel it.
-// {android} status update?
-// ~currentSpeaker=android
-// It’s so hard to focus…everyone on the web is in a state of panic.
-// My geiger counter is detecting normal levels of radiation.
-// ~currentSpeaker=you
-// So not nuclear then. 
-// But we should probably head downstairs just in case.
-// ~currentSpeaker=comic
-// That won’t save us.
-// ~currentSpeaker=you
-// If we go down there and close the door, we can get the air filtered.
-// Which we’re going to need, since that ash is probably not good for our lungs.
-// ~currentSpeaker=snob
-// What’s going on…are we going to die.
-// ~currentSpeaker=comic
-// Possibly.
-// ~currentSpeaker=webdev
-// That’s not a joke {comic}.
-// ~currentSpeaker=comic
-// I wasn’t joking.
-// ~currentSpeaker=snob
-// This is…scary.
-// ~currentSpeaker=android
-// Don’t be worried. I’m actually trained for this kind of situation, as a therapy android you see…well that probably isn’t going to help.
+~currentSpeaker=android
+Aw cool, thanks!
+{ChangeSprite("Tali", "tali_shocked")}
+{ChangeSprite("Lavender", "lavender_shocked")}
+{ChangeSprite("Kent", "kent_shocked")}
+{ChangeSprite("Pandora", "pandora_shocked")}
+<i>*BOOM*</i>
+{PlayAnimation("Pandora", "long_shake")}
+{PlayAnimation("Tali", "long_shake")}
+{PlayAnimation("Lavender", "long_shake")}
+{PlayAnimation("Kent", "long_shake")}
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+What was that?
+
 ~currentSpeaker=snob
-You’re fine if anything happens. You’re a robot. We’ll suffocate to death.
-Or die excruciatingly of radiation poisoning.
+AHHHHHHHH
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+Everyone calm down!
+{ChangeSprite("Pandora", "pandora_pensive")}
+It’s…it’s snow?
+{ChangeSprite("Kent", "kent_sad")}
+~currentSpeaker=comic
+There was some kind of explosion it seems.
+~currentSpeaker=you
+And…that’s not snow {android}, it’s ash.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+It just looks so much like snow.
+~currentSpeaker=you
+You’ve never seen snow before.
+Look, something really bad just happened, {android} status update?
+~currentSpeaker=android
+It’s so hard to focus…everyone online is in a state of panic.
+I'm detecting normal levels of radiation.
+~currentSpeaker=you
+So not nuclear then. 
+But we should probably head downstairs just in case.
+{ChangeSprite("Kent", "kent_upset")}
+~currentSpeaker=comic
+That won’t save us.
+~currentSpeaker=you
+If we go down there and close the door, we should be safer than we are up here.
+It has an air purification device and oxygen generator. The air quality is probably not that great right now.
+{ChangeSprite("Lavender", "lavender_crying")}
+~currentSpeaker=snob
+Are we going to die?
+~currentSpeaker=comic
+Possibly.
+{ChangeSprite("Tali", "tali_upset")}
+~currentSpeaker=webdev
+That’s not a joke {comic}!
+~currentSpeaker=comic
+I wasn’t actually joking.
+{ChangeSprite("Lavender", "lavender_tears_crying")}
+~currentSpeaker=snob
+This is…scary.
+{ChangeSprite("Pandora", "pandora_mean")}
+~currentSpeaker=android
+Don’t be worried. I’m actually trained for this kind of situation.
+~currentSpeaker=snob
+ You’re a robot, you’re fine if anything happens. We’ll probably all suffocate to death.
+Or die excruciatingly from radiation poisoning.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 {snob} for fuck’s sake!
 ~scene = "Basement"
@@ -405,10 +421,9 @@ Hey, it’s me. Call me when you get this. Please, I love you.
 It’s going to be fine right?
 I’m sure it’s nothing.
 What just happened?
+~scene = "Fire"
 ~currentSpeaker=android
 Oh, you might want to see this.
-~scene = "Fire"
-¬
 ~currentSpeaker = ""
 <i>This is live footage. At 19:45 an attack was attempted on the London area and the dome was breached. The houses of parliament seem to be on fire. This is not a drill. Everyone stay indoors. I repeat, everyone stay indoors.</i>
 ~scene = "Basement"

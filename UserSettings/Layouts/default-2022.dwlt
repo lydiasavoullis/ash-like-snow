@@ -482,9 +482,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2152
+    x: 1989
     y: 73
-    width: 407
+    width: 570
     height: 1286
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -517,9 +517,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 522
+    x: 477
     y: 73
-    width: 1628
+    width: 1510
     height: 965
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -586,14 +586,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.6445159
+    - e00: 0.74390584
       e01: 0
       e02: 0
-      e03: 70.497314
+      e03: 53.67485
       e10: 0
-      e11: 0.6445159
+      e11: 0.74390584
       e12: 0
-      e13: 383.10425
+      e13: 506.4835
       e20: 0
       e21: 0
       e22: 1
@@ -603,10 +603,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: bc0d41d68ebbc9c40a6601e02e1e054d,
+  m_AnimatorController: {fileID: 9100000, guid: 31911e0b6084dc14897a6726b12d7b28,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -8146293880848506859, guid: bc0d41d68ebbc9c40a6601e02e1e054d,
+  - m_Target: {fileID: 1966297161740709201, guid: 31911e0b6084dc14897a6726b12d7b28,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -668,23 +668,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Resources/characters/Lavender
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Resources/characters/Lavender
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\savou\Documents\UnityProjects\Ash like snow
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 108}
-    m_SelectedIDs: 98800000
-    m_LastClickedID: 32920
-    m_ExpandedIDs: 000000003a1e0000f4670000f6670000fa670000fc670000fe670000006800000268000000ca9a3b
+    scrollPos: {x: 0, y: 104}
+    m_SelectedIDs: 2ac40000
+    m_LastClickedID: 50218
+    m_ExpandedIDs: 000000003a1e0000f4670000f6670000f8670000fa670000fc670000fe670000126800002468000010c4000012c4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -712,7 +712,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a1e0000f4670000f6670000f8670000fa670000fc670000fe6700000068000002680000
+    m_ExpandedIDs: 000000003a1e0000f4670000f6670000f8670000fa670000fc670000fe670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -854,9 +854,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c460100
-      m_LastClickedID: 83580
-      m_ExpandedIDs: aae9fdffae16feffec1dfeffda21feffa058feff3272feff0688feffaaaffeffc8b6fefffceafeffae14ffff9419ffff181ffffffe26ffffe02cffff6846ffff6e46ffff0e47ffffe047ffffa84effffc24fffffdaa9ffffecabffff08fbffff30b000001cb2000084c400009ac500000aca000022ca000078ca000068fc0000befc0000b61001000c110100261201007c1201006c30010078300100a8300100423101004a3101007c4601007e460100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d6b3ffffdeb5ffff06f8ffffa8faffff08fbffff345a0000d25a0000665b00007c5b0000c482000062830000f68300000c84000016840000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1250,9 +1250,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 51.660793, y: -2.4224668, z: 13.698005}
+    m_Target: {x: -0.020082712, y: -4.1881914, z: 90.321495}
     speed: 2
-    m_Value: {x: 51.660793, y: -2.4224668, z: 13.698005}
+    m_Value: {x: -0.020082712, y: -4.1881914, z: 90.321495}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1302,9 +1302,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 96.29031
+    m_Target: 85.61404
     speed: 2
-    m_Value: 96.29031
+    m_Value: 85.61404
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1352,7 +1352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1059
-    width: 1921
+    width: 1988
     height: 300
   m_SerializedDataModeController:
     m_DataMode: 0

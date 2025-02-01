@@ -19,7 +19,7 @@ public class AnimationController
                 Transform characterSprite = stage.transform.GetChild(i).GetChild(0);
                 characterSprite.GetComponent<Animator>().SetTrigger(animation);//.Play(animation);
                 //AnimationClip[] clips = characterSprite.GetComponent<Animator>().runtimeAnimatorController.animationClips;
-                Debug.Log("Played: " + animation);
+                //Debug.Log("Played: " + animation);
                 //foreach (AnimationClip c in clips) {
                 //    Debug.Log("clip: " + c);
                 //}
