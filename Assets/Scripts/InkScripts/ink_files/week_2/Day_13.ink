@@ -1,18 +1,24 @@
 ==day_13==
+~characters+=lavender
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
+¬
 Hey.
 Hey.
-HEY.
+HEY!
 ~currentSpeaker=you
 What?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Where are my waffles?
 ~currentSpeaker=you
 Waffles? What are you talking about?
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
 Every morning, I have waffles. 
 ~currentSpeaker=you
 I don’t know if you’ve taken a look around, but this isn’t exactly a five star hotel.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 The robot is making them for me.
 ~currentSpeaker=you
@@ -22,8 +28,11 @@ That’s because I’m not. I’m making pancakes.
 ~currentSpeaker=you
 You’re making pancakes?
 How are you making pancakes?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-Exactly the right question, because I specifically asked for WAFFLES.
+I think you mean, why are you making pancakes?
+{ChangeSprite("Lavender", "lavender_angry")}
+Because I specifically asked for WAFFLES!
 ~currentSpeaker=android
 The reason is because we don’t have a waffle maker.
 ~currentSpeaker=snob
@@ -31,7 +40,7 @@ What about that thing beside the computer?
 ~currentSpeaker=you
 That’s a keyboard.
 ~currentSpeaker=snob
-Couldn’t you fashion it into a waffle maker, like the thrifty robots do in the films?
+Couldn’t you fashion it into a waffle maker, like thrifty robots do in the films?
 ~currentSpeaker=you
 Films? More like kids cartoons.
 Which you have obviously been watching too many of.
@@ -60,7 +69,7 @@ I suppose the pans have been down here for so long, they must have gathered a st
 ~currentSpeaker=snob
 Oh goodie. Um {you} maybe you would like to have a try?
 ~currentSpeaker=you
-I wouldn’t want to deprive a guest of food. And anyway, not really a dessert for breakfast kind of girl.
+I wouldn’t want to deprive a guest of food. And anyway I don't really like dessert for breakfast.
 ~currentSpeaker=snob
 Calling this dessert is generous.
 ~currentSpeaker=android
@@ -138,7 +147,7 @@ She couldn’t sleep very well.
 ~currentSpeaker=you
 How do you know that?
 ~currentSpeaker=snob
-Well…I was kicking her in her sleep. And she woke me up.
+Well…I may have accidentally kicked her in her sleep. And she woke me up.
 ~currentSpeaker=android
 There’s plenty of space in here, you could have slept away from her.
 ~currentSpeaker=snob
@@ -149,17 +158,6 @@ I sleep down here on my own all the time. I don’t find it strange or creepy at
 You wouldn’t, would you.
 ~currentSpeaker=android
 What does that mean?
-Oh I see. You’re trying to insult me. I don’t really understand it though.
-I guess you can’t sleep down here alone because you’re a pathetic baby.
-~currentSpeaker=snob
-Not true. 
-I’m a…sensitive soul.
-And you don’t even have one.
-Ha!
-~currentSpeaker=android
-I’m going to feed you freeze dried banana ice cream for lunch.
-~currentSpeaker=snob
-I'll take it back…please. 
 ~currentSpeaker=webdev
 What’s going on?
 Mum…Dad…Happy Chris-
