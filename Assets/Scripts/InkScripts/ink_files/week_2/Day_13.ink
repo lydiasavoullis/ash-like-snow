@@ -35,177 +35,216 @@ I think you mean, why are you making pancakes?
 Because I specifically asked for WAFFLES!
 ~currentSpeaker=android
 The reason is because we don’t have a waffle maker.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 What about that thing beside the computer?
 ~currentSpeaker=you
 That’s a keyboard.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-Couldn’t you fashion it into a waffle maker, like thrifty robots do in the films?
+Couldn’t you fashion it into a waffle maker?
 ~currentSpeaker=you
-Films? More like kids cartoons.
-Which you have obviously been watching too many of.
+No, {snob}, she cannot.
 And may I remind you, because I only just remembered myself, we’re in the middle of a national crisis.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 …so asking for waffles was inappropriate?
 ~currentSpeaker=you
 You didn’t ask. You demanded. And also, {android} is not your slave.
+~characters+=pandora
 ~currentSpeaker=android
 I have pancakes.
 The kitchen is kind of small, and doesn’t have much fresh stuff. I had to use a pre-made batter mix. But it wasn’t so bad.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Are these even chocolate chip pancakes?
 ~currentSpeaker=android
-They’re chip free.
+They’re chocolate chip free unfortunately.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=you
 Ahem.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 I guess they’re like crepes…y’know I love french cuisine.
 ~currentSpeaker=android
 Bon appetit.
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 Yummy these are so delicious…cough. What's that weird–unusual flavour?
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I suppose the pans have been down here for so long, they must have gathered a strange musty smell. Don’t worry though, it’s unlikely to make you sick. This place is very sterile.
 ~currentSpeaker=snob
 Oh goodie. Um {you} maybe you would like to have a try?
 ~currentSpeaker=you
 I wouldn’t want to deprive a guest of food. And anyway I don't really like dessert for breakfast.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 Calling this dessert is generous.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Is it not sweet enough for your tastes?
+{ChangeSprite("Pandora", "pandora_mean")}
 I have some freeze dried ice cream I can crumble on top. 
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 I suppose that could work.
 ~currentSpeaker=android
 It’s banana flavoured.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Forget it.
+~characters+=comic
 ~currentSpeaker=comic
+{ChangeSprite("Kent", "kent_normal")}
 What’s going on?
 Why is everyone speaking so loud?
+{ChangeSprite("Kent", "kent_shocked")}
 Oh. My. GOD.
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 AHHHH.
 ~currentSpeaker=you
 Why is everyone shouting now?
+{ChangeSprite("Kent", "kent_normal")}
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=comic
 I set an alarm on my holoscreen to alert me if the network came back online. 
 And it seems it has…partially.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 So what does that mean?
+{ChangeSprite("Lavender", "lavender_happy")}
 Can I contact my family?
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Oh hahaha no.
 It’s just for essential workers, government officials, and also media coverage.
 My boss sent me an email, and he wants me to go back to work.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
-But it’s a Saturday!?
+And it’s a Saturday!
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
-And something unspeakable has just happened. 
-In the government’s eyes it’s kind of our duty to cover this, we need to pump out the propaganda ASAP. 
+No rest for the wicked eh?
+~currentSpeaker=snob
+No way you count as an essential worker.
+{ChangeSprite("Kent", "kent_side_serious")}
+~currentSpeaker=comic
+Seriously, it’s kind of our duty to cover this. It's essential to the government that we pump out the propaganda ASAP. 
 ~currentSpeaker=you
 How is this even going to work?
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I don’t know, I need to speak to my boss first.
 Can I use that computer?
 ~currentSpeaker=you
 I think so…I don’t know. {android}? It’s Ada’s computer, and you know her best.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-Honestly, I’m not sure. I’m not even allowed to touch that computer. But seeing as this is mandated law, this might be the exception.
+Honestly, I’m not sure. I’m not even allowed to touch that computer. 
+{ChangeSprite("Pandora", "pandora_happy")}
+But seeing as this is mandated law, this might be the exception.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-How come he gets to do contact?
-~currentSpeaker=comic
-Just explained it.
-~currentSpeaker=snob
-Can I use your holoscreen to contact my family?
+{comic}, can I use your holoscreen to contact my family?
 ~currentSpeaker=comic
 We’re sort of communicating on a special private network right now, so in order to contact your family, they would also have to be on the network.
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker=snob
 My father is definitely there.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
-I can’t let you use this, it’s government business now.
+I can’t let you use this, it would be a violation of protocol.
+{ChangeSprite("Kent", "kent_amused")}
+And I'm too cute to go to prison.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Hmph.
+~characters-=kent
 ~currentSpeaker=you
 Where’s {webdev}?
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
 Oh, she’s probably still sleeping.
 ~currentSpeaker=you
 Well, maybe we should wake her up?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 I wouldn’t suggest that.
 ~currentSpeaker=you
 Why not?
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 {snob} in a crisis such as this it’s really important we maintain a normal schedule, not only for our mental wellbeing but also for safety reasons, we should all be alert.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 I wouldn’t wake her up for safety reasons.
-She’s not very happy when she gets woken up.
-Anyway, she had a rough night last night.
-She couldn’t sleep very well.
+She's a bit of a sleep walker. And you shouldn't wake sleep walkers.
 ~currentSpeaker=you
-How do you know that?
+But she's not sleep walking now.
 ~currentSpeaker=snob
-Well…I may have accidentally kicked her in her sleep. And she woke me up.
+It doesn't matter. 
 ~currentSpeaker=android
-There’s plenty of space in here, you could have slept away from her.
-~currentSpeaker=snob
-…I don’t like sleeping on my own. Not in strange creepy places anyway.
-~currentSpeaker=android
-I sleep down here on my own all the time. I don’t find it strange or creepy at all.
-~currentSpeaker=snob
-You wouldn’t, would you.
-~currentSpeaker=android
-What does that mean?
+If it's for safety reasons then that is fine I suppose.
 ~currentSpeaker=webdev
 What’s going on?
-Mum…Dad…Happy Chris-
-Fuuuuck.
+Is it Christmas yet?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 {webdev} you seem to be in some kind of delirium?
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker=snob
-She’s sleep-talking.
+She’s sleep-talking now.
 God help us. 
 ~currentSpeaker=you
 What’s so scary about that?
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 I don’t know, I just find some of the stuff she says unsettling. 
 ~currentSpeaker=webdev
-I’m going to ride a horse.
-Tomorrow.
+Don't trust her.
+She'll trap us here forever.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Like what does that even mean?
+{ChangeSprite("Lavender", "lavender_normal")}
 She won’t remember when she wakes up, so I can’t even ask her.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Some of your fears seem…highly irrational.
 ~currentSpeaker=you
-I think I get it. It’s a bit unsettling. 
+It is a bit unsettling. 
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Not you too.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=you
 What was she saying earlier?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-Happy Christmas? Why would she…oh…right.
+Is it Christmas yet? Why would she…oh…right.
 ~currentSpeaker=you
 It’s Christmas day.
 Oh my.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 This is rather unexpected.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
-This is uber depressing.
+Depressing is what it is.
 Christmas day in a bunker.
 ~currentSpeaker=you
 It’s certainly a different experience.
 ~currentSpeaker=snob
-How can you make light of such a terrible thing?
-We’re spending Christmas underground in this miserable room. No presents. No Christmas tree.
+No presents. No Christmas tree.
 I can’t think of anything worse.
 ~currentSpeaker=you
 We saw ash fall from the sky yesterday.
-We saw the houses of parliament BURNING on the holoscreen.
+We saw the houses of parliament burning on the holoscreen.
 No one can contact their families.
 But you think the manner of our celebrations is the depressing part?
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I could make some decorations if it would please everyone?
 ~currentSpeaker=you
@@ -216,69 +255,98 @@ But it’s—
 It’s Christmas I guess?
 So forget all sensible thoughts.
 Shall we make wreaths from toilet paper and used food packaging?
+{ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker=android
 If it keeps spirits up.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=you
 My spirit is not down.
 My spirit is broken.
 I’m not going to pretend otherwise.
+~characters+=tali
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 Ugh what’s going on?
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 You woke her up, idiot.
+~characters+=kent
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Well here goes nothing.
-Going to turn on Mr. Computer.
-You certainly are very computer-y sir.
+I've checked with my boss and everything is good to go.
+I'm going to turn on Mr. Computer.
+{ChangeSprite("Kent", "kent_happy")}
+You certainly are a computer-y guy.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Is he speaking to a computer?
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Should someone tell him that it cannot hear him?
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 Can anyone else feel that?
 ~currentSpeaker=you
 Feel what?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Like lights, in your head?
+{ChangeSprite("Tali", "tali_happy")}
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
-I can smell…chocolate.
+I can smell…chocolate!
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 Is that music?
 ~currentSpeaker=you
 What are you guys on about?
 Oh…oh god no. 
 ~scene="Xmas"
-
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 I’m so sleepy.
+{ChangeSprite("Lavender", "lavender_happy")}
 Oh…my all these presents…for me?
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 They’re for all of us to share. 
+{ChangeSprite("Kent", "kent_normal")}
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Uh ok, well at least I can have the stockings.
 ~currentSpeaker=webdev
 Those are for us to share too.
 Thanks {android} for setting this up. It’s wonderful!
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I set it up? Uh yes I suppose I did.
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 This room is so magical.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 It’s snowing. Is that real snow this time?
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Yes! {android} you don’t know what real snow looks like?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Just never seen it I guess.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
-The last time it snowed I was so young. I made snow angels and played with my neighbours' children. We made a big snowman but it melted…
+The last time it snowed I was so young. I made snow angels and played with the neighbours' children. We made a big snowman but it melted…
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 I made a snowman too!
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 I had our housekeeper make me a snowman. I don’t like getting cold hands.
 ~currentSpeaker=you
 …
 ~currentSpeaker=comic
 This fireplace is so toasty.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Can I open my presents now?
 ~currentSpeaker=webdev
@@ -293,11 +361,7 @@ You have so many pink hair bows.
 ~currentSpeaker=snob
 This one has hearts on it. It’s different.
 ~currentSpeaker=you
-Mine has…
-~currentSpeaker=webdev
-Slipper socks with those grips on both sides.
-~currentSpeaker=snob
-And…what’s in that yellow bottle with the scribbly label on it? You get sweets? No fair, we didn’t get sweets. 
+Mine is empty.
 ~currentSpeaker=android
 …
 ~currentSpeaker=comic
@@ -321,15 +385,12 @@ I got a sketchbook and some new marker pens.
 I got a new laptop…thank god mine’s been acting up for so long.
 ~currentSpeaker=snob
 Oh my what did {you} get?
-A dog bowl, some dog toys, a dog leash…do you have a dog?
-No way! I’ve got a dog too. His name is Butterscotch. He’s like a mix of a couple of different breeds. He loves going for walks and treats and watching the holoscreen with me and…
-{android} you got a dog leash too?
-That one doesn’t really look very safe though.
-More of…
+~currentSpeaker=you
+Nothing. I got nothing.
 ~currentSpeaker=comic
-It looks more like a noose than a dog leash.
+That's a shame.
 ~currentSpeaker=webdev
-Uh that’s a strange gift. A joke I assume?
+Maybe it was an error?
 ~currentSpeaker=android
 …
 I’m not feeling so good.
@@ -342,7 +403,8 @@ I’ve never really felt like this before…it’s–
 ~currentSpeaker=snob
 Can robots really get sick though? I mean you haven’t eaten anything…you don’t even.
 ~currentSpeaker=android
-[goes off screen to vomit]
+~characters-=pandora
+<i>*BLECH*</i>
 ~currentSpeaker=webdev
 It must be like a sympathetic reaction.
 ~currentSpeaker=comic
@@ -350,28 +412,16 @@ Must be something wrong with her programming.
 ~currentSpeaker=snob
 I’m sure Adalina will fix it when she gets back, she’s so clever.
 ~currentSpeaker=webdev
-The question is…why did she wrap herself such a strange gift.
-Was it you {you}?
+The question is…why didn't she wrap you a gift.
 ~currentSpeaker=you
 No…I didn’t.
 Can we talk about something else?
 ~currentSpeaker=snob
 Uh yes. Thank god. I want to know what’s for lunch.
 It obviously won’t be as good as the Christmas lunch my housekeeper makes, but I’ll try to be polite and enjoy it.
-~currentSpeaker=webdev
-Do you remember that year Finn was vegan and…well…the nut roast.
-~currentSpeaker=snob
-How could I forget? Haha we dared each other to try a bit and he was so pissed off because it was his special meal.
-And then he tried it and he couldn’t finish it.
-It was so dry.
-~currentSpeaker=webdev
-I was coughing all day.
-~currentSpeaker=snob
-At least it wasn’t as bad as the tofurkey.
-~currentSpeaker=webdev
-You’re sending shivers down my spine.
 ~currentSpeaker=comic
-Scott makes a really nice roast. He taught me how to do it because I usually have more time than him around Christmas.
+I can cook a pretty good roast.
+Depending on the ingredients we have here.
 ~currentSpeaker=webdev
 That sounds so nice.
 How do you do it?
@@ -382,48 +432,17 @@ And covering the bird so it keeps all the juices in.
 Butter is the secret to everything I guess.
 ~currentSpeaker=comic
 The more I learn about cooking, the more I realise that butter really is the key.
-~currentSpeaker=you
-I remember once I got into an accident.
-And I had all these cuts. I didn’t have any cream, so I rubbed butter on them to stop them from itching.
-~currentSpeaker=comic
-That’s…interesting.
-~currentSpeaker=webdev
-Very resourceful. 
-Uh what kind of accident did you get into?
-~currentSpeaker=you
-My old boss used to have all of these parties. And then there was a big fight in one of his apartments. And I slept on the floor and when I woke up I had glass in my arms.
-~currentSpeaker=comic
-Eh, that doesn’t sound safe.
-~currentSpeaker=you
-There was no first aid kit, so I looked in his fridge and I found some butter and rubbed it on my arms.
-~currentSpeaker=webdev
-What kind of job did you have?
-~currentSpeaker=you
-I like…worked in an office?
-We sold things to people. Yachts, cars, and luxury apartments.
-My boss wanted to expand globally.
-This country wasn’t very accommodating to that. But he found ways.
-I wasn’t very happy.
-~currentSpeaker=webdev
-Join the sucky job club.
-~currentSpeaker=comic
-Yeah!
-~currentSpeaker=you
-But I’m not like you guys. I couldn’t make it. I…well me and the sucky job parted ways.
 ~currentSpeaker=snob
-What does that mean? Did you quit? Or did they fire you?
+I suppose you'll be no fun {you} since you have something against Christmas.
+Or something against fun in general.
 ~currentSpeaker=you
-…
-I don’t want to talk about it.
-~currentSpeaker=snob
-If you don’t talk, we’re going to assume they fired you.
-~currentSpeaker=you
+...
 Why don’t you argue with {webdev}?
 I’m tired of speaking to you.
 ~currentSpeaker=comic
 You’re being kind of rude {you}?
 ~currentSpeaker=you
-Why do you care? You hate {snob} we all do. I mean she sucks. 
+Why do you care? You hate {snob}. Why are you all acting so weird?
 ~currentSpeaker=snob
 You know, I kind of think it sucks that you {webdev} got a better present than me. I think {android} must like you better.
 ~currentSpeaker=webdev
@@ -434,10 +453,8 @@ You got a shiny state of the art new laptop. I only got a cheap flimsy dress, th
 That’s incredibly unfair. I need this laptop, it would help a lot with my job. You don’t need anything.
 ~currentSpeaker=comic
 Why is {snob} arguing about presents?
-I’ve had it with her. She is so annoying.
-Someone needs to teach her a lesson.
 ~currentSpeaker=snob
-Are you speaking about me? It’s so typical. Everyone is ganging up on me. Just because I’m cool and rich and have impeccable dress sense.
+Are you speaking about me? It’s so typical. Everyone is ganging up on me.
 And my one friend {webdev}.
 Doesn’t even stand up for me.
 ~currentSpeaker=webdev
@@ -457,7 +474,7 @@ I’m going to take a nap.
 I think I might check this place out a little.
 ~currentSpeaker=webdev
 I’m heading off too. 
-Sorry {you} you had to hear this. I know you tried…some people can’t be fixed.
+Sorry {you} you had to hear this. I know you tried…
 ~currentSpeaker=you
 Wait, {webdev}.
 Stay here with me.
