@@ -349,141 +349,190 @@ This fireplace is so toasty.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Can I open my presents now?
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 We need to check our stockings first.
 I have some really funky tights in mine.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 I have socks, they have reindeer on them.
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
-Oh goodie. I got a new hairbow. It’s pink!
+I got a new hairbow. It’s pink!
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
 You have so many pink hair bows.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 This one has hearts on it. It’s different.
 ~currentSpeaker=you
-Mine is empty.
+Mine is...empty.
 ~currentSpeaker=android
-…
+Oh really?
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 What did you get {android}?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 It doesn’t matter.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 She’s hiding it from us. It must be really good.
 Whatever, I guess you filled them, makes sense you’d give yourself the really good stuff.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Uh yeah…
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 Let’s do presents. 
+{ChangeSprite("Tali", "tali_serious")}
 {snob}! Don’t rip it open so quickly.
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 I got a new dress!
-I think I might cry.
+It's so cute!
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 I got a sketchbook and some new marker pens.
+{ChangeSprite("Tali", "tali_awe")}
 ~currentSpeaker=webdev
 I got a new laptop…thank god mine’s been acting up for so long.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Oh my what did {you} get?
 ~currentSpeaker=you
 Nothing. I got nothing.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 That's a shame.
+{ChangeSprite("Kent", "kent_normal")}
+{ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker=webdev
 Maybe it was an error?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 …
 I’m not feeling so good.
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker=snob
 Can androids get sick?
 ~currentSpeaker=android
 I feel sick.
 Like, I might throw up.
 I’ve never really felt like this before…it’s–
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Can robots really get sick though? I mean you haven’t eaten anything…you don’t even.
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker=android
 ~characters-=pandora
 <i>*BLECH*</i>
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 It must be like a sympathetic reaction.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Must be something wrong with her programming.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-I’m sure Adalina will fix it when she gets back, she’s so clever.
+I’m sure Adalina will fix it when she gets back, she’s a computer whizz.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
-The question is…why didn't she wrap you a gift.
+The question is {you}…why didn't {android} wrap you a gift.
 ~currentSpeaker=you
-No…I didn’t.
+Honestly, I don't really care.
 Can we talk about something else?
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 Uh yes. Thank god. I want to know what’s for lunch.
+{ChangeSprite("Lavender", "lavender_thinking")}
 It obviously won’t be as good as the Christmas lunch my housekeeper makes, but I’ll try to be polite and enjoy it.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 I can cook a pretty good roast.
 Depending on the ingredients we have here.
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 That sounds so nice.
 How do you do it?
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 The secret is lots of herbs and garlic butter.
 And covering the bird so it keeps all the juices in.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
 Butter is the secret to everything I guess.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 The more I learn about cooking, the more I realise that butter really is the key.
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker=snob
 I suppose you'll be no fun {you} since you have something against Christmas.
+{ChangeSprite("Lavender", "lavender_thinking")}
 Or something against fun in general.
 ~currentSpeaker=you
 ...
 Why don’t you argue with {webdev}?
 I’m tired of speaking to you.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 You’re being kind of rude {you}?
 ~currentSpeaker=you
-Why do you care? You hate {snob}. Why are you all acting so weird?
+{comic}, why do you even care, you hate {snob}? Why are you all acting so weird?
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 You know, I kind of think it sucks that you {webdev} got a better present than me. I think {android} must like you better.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
-What? That’s a bold accusation. We both got something we liked.
+I don't know what you're talking about. We both got something we liked.
 ~currentSpeaker=snob
 You got a shiny state of the art new laptop. I only got a cheap flimsy dress, this is just polyester.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
 That’s incredibly unfair. I need this laptop, it would help a lot with my job. You don’t need anything.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 Why is {snob} arguing about presents?
+{ChangeSprite("Kent", "kent_sad")}
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
-Are you speaking about me? It’s so typical. Everyone is ganging up on me.
-And my one friend {webdev}.
+Everyone is always ganging up on me.
+And my one friend.
 Doesn’t even stand up for me.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 I’ve been standing up for you for most of my life. 
-I’m sick of telling people hey don’t mind {snob} she’s actually really nice, she’s just a bit difficult with people you know she’s just a bit socially awkward. You know what? You’re not socially awkward. 
-You’re just a fucking bitch. 
+But I'm done with it now.
+You’re just a fucking bitch.
+{ChangeSprite("Lavender", "lavender_shcoked")}
 ~currentSpeaker=snob
 …
-
+{ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker=comic
 …
 ~currentSpeaker=you
 …
+{ChangeSprite("Lavender", "lavender_crying")}
 ~currentSpeaker=snob
 I’m going to take a nap.
+~characters-=lavender
 ~currentSpeaker=comic
 I think I might check this place out a little.
+~characters-=kent
 ~currentSpeaker=webdev
 I’m heading off too. 
 Sorry {you} you had to hear this. I know you tried…
 ~currentSpeaker=you
 Wait, {webdev}.
-Stay here with me.
-I want you to stay.
+I want you to stay right here.
+I don't want to be alone right now.
 ~currentSpeaker=webdev
 Ok, I guess I will stay here forever.
 I’d like that a lot.
+~characters+=pandora
 ~currentSpeaker=android
 Stop it.
+~characters-=tali
 ~currentSpeaker=you
 Where did you come from?
 What happened?
@@ -502,7 +551,7 @@ And…so you have control over the simulation.
 ~currentSpeaker=you
 I do?
 ~currentSpeaker=android
-You saw the way you started that argument between everyone. You told {snob} to argue with {webdev} and it happened. You told {comic} he hates her and he joined in. 
+You saw the way you started that argument. You told {snob} to argue with {webdev} and it happened. 
 You told {webdev} to stay with you and she stayed.
 ~currentSpeaker=you
 Could it be a coincidence? Those seem like likely outcomes, even without my input.
@@ -538,7 +587,8 @@ They seemed to be enjoying it here.
 No…I think it’s for the best. Trust me.
 ~currentSpeaker=you
 Aye aye captain.
-~scene="Xmas"
+~scene="Basement"
+¬
 ~currentSpeaker=comic
 Ugh.
 This stupid thing just shut down.
