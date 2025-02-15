@@ -2681,8 +2681,15 @@ MonoBehaviour:
   bookButtonPrefab: {fileID: 0}
   saveSlot: {fileID: 6686483595649287865, guid: b76b0d456090133418e06af3abf23a99,
     type: 3}
+  newsPicture: {fileID: 0}
+  ad1: {fileID: 0}
+  ad2: {fileID: 0}
+  ad3: {fileID: 0}
+  ad4: {fileID: 0}
   tvScreen: {fileID: 1613446799}
+  shop: {fileID: 0}
   newsText: {fileID: 297968668}
+  newsCaption: {fileID: 0}
   storyText: {fileID: 1871403357}
   nameTag: {fileID: 1395305911}
   quitDialogue: {fileID: 2122873442}
@@ -19359,7 +19366,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -24354,6 +24361,7 @@ MonoBehaviour:
   optionsMenu: {fileID: 456838715}
   quitMenu: {fileID: 2122873442}
   sceneLoader: {fileID: 0}
+  textLog: {fileID: 0}
   persistantObject: {fileID: 0}
   inkJSON: {fileID: 4900000, guid: ec7094f0cf528ce44b08d3b949d07eed, type: 3}
   audioManager: {fileID: 63713182}

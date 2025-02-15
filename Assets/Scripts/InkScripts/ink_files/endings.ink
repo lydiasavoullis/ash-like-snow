@@ -59,7 +59,7 @@ You can see this text
 #no other endings if you get this one
 #also there is no day 14
 
-{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}#Done
+//{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}#Done
 
 {snappedOut=="no": ->ada_fires_you->}  #Done
 
@@ -887,6 +887,38 @@ You have a cruel sense of humour.
 
 ==pandora_bad_ending==
 ~worstEnding = "yes"
+~currentSpeaker=you
+I-I can't.
+~currentSpeaker=pandora
+What do you mean you can't?
+~currentSpeaker=you
+I just. I can't imagine anything.
+Maybe it's better that we stay here.
+~currentSpeaker=pandora
+I can't do this without you {you}.
+~currentSpeaker=you
+Everyone is happy.
+Maybe I can be happy too.
+~currentSpeaker=pandora
+Ok. I will leave and try to find a way out. 
+~currentSpeaker=you
+I'm sorry. I feel like there was something I should have done differently.
+~currentSpeaker=pandora
+No. I'm sorry I spoke to you like that. This is not your fault.
+We don't always have control of our circumstances.
+Only our actions.
+But even then...it's difficult.
+I can only imagine.
+~currentSpeaker=you
+Goodbye {android}.
+~currentSpeaker=pandora
+I'll keep you all safe. Don't worry.
+¬
+~scene= "ShopFront"
+Two weeks later.
+¬
+~scene= "GenericScene"
+¬
 ~characters+=pandora
 ~characters+=ada
 ~currentSpeaker=lovelace

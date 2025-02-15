@@ -51,7 +51,7 @@ I’m a one kind of bookstore kind of guy.
 We're glad you’re not some kind of bookstore slut.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-…{android} hehe, that's kind of rude.
+…woah {android}, that's mean.
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I just want to be involved too

@@ -1,4 +1,6 @@
 ==day_13==
+¬
+~scene = "Basement"
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
@@ -94,7 +96,7 @@ It’s banana flavoured.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Forget it.
-~characters+=comic
+~characters+=kent
 ~currentSpeaker=comic
 {ChangeSprite("Kent", "kent_normal")}
 What’s going on?
@@ -503,8 +505,8 @@ Doesn’t even stand up for me.
 ~currentSpeaker=webdev
 I’ve been standing up for you for most of my life. 
 But I'm done with it now.
-You’re just a fucking bitch.
-{ChangeSprite("Lavender", "lavender_shcoked")}
+You’re just a fucking brat.
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker=snob
 …
 {ChangeSprite("Kent", "kent_shocked")}
@@ -516,32 +518,44 @@ You’re just a fucking bitch.
 ~currentSpeaker=snob
 I’m going to take a nap.
 ~characters-=lavender
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 I think I might check this place out a little.
 ~characters-=kent
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 I’m heading off too. 
-Sorry {you} you had to hear this. I know you tried…
+Sorry {you} you had to hear this.
 ~currentSpeaker=you
 Wait, {webdev}.
 I want you to stay right here.
-I don't want to be alone right now.
+I really don't want to be alone right now.
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
-Ok, I guess I will stay here forever.
-I’d like that a lot.
+Of course, I will stay.
+I don't want you to feel alone.
+{ChangeSprite("Tali", "tali_serious")}
+Hey {you}, are you alright?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~characters+=pandora
 ~currentSpeaker=android
-Stop it.
+Stop it {you}.
+{webdev} please go check on the others.
+{ChangeSprite("Tali", "tali_normal")}
+~currentSpeaker=webdev
+Uh ok.
 ~characters-=tali
 ~currentSpeaker=you
 Where did you come from?
 What happened?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 I know what’s going on.
 And it’s all our fault.
-Well, this is your fault mostly, but partly mine for not figuring things out.
+Well, this is your fault mostly, but partly mine for not realising sooner.
 ~currentSpeaker=you
 What do you mean it’s my fault?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Well, if you haven’t figured it out yet. 
 This is a simulation, caused by {comic} turning on that computer.
@@ -550,26 +564,32 @@ Anyway, our minds have been pulled into the simulation. It’s projecting this v
 And…so you have control over the simulation. 
 ~currentSpeaker=you
 I do?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 You saw the way you started that argument. You told {snob} to argue with {webdev} and it happened. 
 You told {webdev} to stay with you and she stayed.
 ~currentSpeaker=you
 Could it be a coincidence? Those seem like likely outcomes, even without my input.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 No…I don’t think so.
 ~currentSpeaker=you
 I guess, the way everything’s been has been super weird too. Like everyone’s been pulled into this fantasy world, but we’re the only two who seemed to maintain some kind of separation from it. 
-It’s like we don’t really belong.
+It’s like we don’t really belong here.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
-Or maybe we belong too much.
+I don't think that's quite the case.
 ~currentSpeaker=you
-What?
+What do you mean?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 It’s just a theory. 
 I’ll explain later.
+{ChangeSprite("Pandora", "pandora_normal")}
 Right now I need you to get us out of here.
 ~currentSpeaker=you
 You need me?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 We need you.
 ~currentSpeaker=you
@@ -578,39 +598,56 @@ What do you want me to do?
 Just imagine us all back in that basement.
 ~currentSpeaker=you
 Is that it?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Just imagine a dark, damp, dingy basement in London.
+{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}
 ~currentSpeaker=you
 Hmm, I feel like this is kind of cruel to the others.
 They seemed to be enjoying it here.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 No…I think it’s for the best. Trust me.
 ~currentSpeaker=you
 Aye aye captain.
 ~scene="Basement"
 ¬
+~characters+=kent
+~characters+=tali
+~characters+=lavender
+~characters+=pandora
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 Ugh.
 This stupid thing just shut down.
 I didn’t even do anything.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 Sorry, that sucks.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
-I can write a bit on my holopad. It’s not really the same.
+I can write a bit on my holopad I guess.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Ugh, this is boring. Maybe we can play another game?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 Not right now {snob} we have extra stock down here, perhaps if you look through the boxes with {webdev} you can find some entertainment.
+{ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker=webdev
-Sounds fun.
+Ok sure.
+~characters-=tali
+~characters-=lavender
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I’ll just be in the corner doing some work.
 ~currentSpeaker=you
 …
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 So, I suppose we should talk about that.
 ~currentSpeaker=you
-Yeah, I think we should talk about a lot of things
+Did they just forget?
 [BRANCHING MOMENT]
 [If you’ve found out about the drugs, if you haven’t found out about the drugs. If you have a good or underdeveloped relationship with Pandora.]
 ~currentSpeaker=android
@@ -636,7 +673,6 @@ Don’t. You. Dare. Lie.
 Why weren’t you taking your medication?
 ~currentSpeaker=you
 Fate isn’t a medication.
-It’s bondage. Death.
 It fucked up my life.
 ~currentSpeaker=android
 It’s meant to help you. You should take it if it was prescribed by your doctor.
