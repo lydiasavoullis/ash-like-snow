@@ -648,84 +648,105 @@ I’ll just be in the corner doing some work.
 So, I suppose we should talk about that.
 ~currentSpeaker=you
 Did they just forget?
-[BRANCHING MOMENT]
-[If you’ve found out about the drugs, if you haven’t found out about the drugs. If you have a good or underdeveloped relationship with Pandora.]
 ~currentSpeaker=android
 I don’t know what happened there. I suppose that was Ada’s little project. I didn’t realise how far she’d gotten on it though.
 ~currentSpeaker=you
  What do you mean ‘Ada’s little project’? Why did it just suck our consciousnesses in like that? How is that even possible?
 ~currentSpeaker=android
 I’m still figuring out the details.
-But, basically Ada, her husband and my late father were working on this virtual reality software which was meant to act as therapy. Creating a virtual world as therapy for people’s minds, to help them confront trauma in a safe environment.
+But, basically Ada, her husband and my father were working on this virtual reality software which was meant to act as therapy. 
+Creating a virtual world as therapy for people’s minds, to help them confront trauma in a safe environment.
 ~currentSpeaker=you
 I’m listening.
 ~currentSpeaker=android
 I don’t really know anymore than that. They didn’t really trust me with anything else.
+{pandoraPoints<6 && snappedOut=="no": ->}#you don't know pandora was drugging you and don't trust her very much
+{pandoraPoints<6 && snappedOut=="yes": ->}#you know pandora was drugging you and don't trust her very much
+{pandoraPoints>=6 && snappedOut=="yes": ->}#you know pandora was drugging you but trust her
+
+= unaware_no_trust
+This is the content of the stitch that should be embedded within a knot.
+-> day_13_end
+= snapped_out_no_trust
+This is the content of the stitch that should be embedded within a knot.
+-> day_13_end
+= snapped_out_trust
 ~currentSpeaker=you
 Ok ok.
 So I suppose I have to ask you then.
 Why have you been drugging me?
 ~currentSpeaker=android
-What? Eh…I haven’t.
+What?
 ~currentSpeaker=you
-Don’t. You. Dare. Lie. 
+Don’t lie to me. Please. 
 ~currentSpeaker=android
 Why weren’t you taking your medication?
 ~currentSpeaker=you
-Fate isn’t a medication.
-It fucked up my life.
+That is absolutely none of your business.
 ~currentSpeaker=android
 It’s meant to help you. You should take it if it was prescribed by your doctor.
 ~currentSpeaker=you
-The government signed it off as safe, but it’s far from it. It’s a convenient synthetic drug that was made to ‘cure’ most mental illnesses. It moulds people into perfect little workers who always have the motivation to wake up in the morning and go into work, and do whatever is necessary to move forward in their lives. It’s a miracle drug.
+You're being naive.
+It’s a convenient synthetic drug that was made to ‘cure’ most mental illnesses. 
+Except it doesn't.
 ~currentSpeaker=android
-So then why don’t you take it.
+What do you mean by that?
 ~currentSpeaker=you
-Because, as I said, it fucked up my life.
-Focus on my last point. 
-It allows you to do whatever you have to do to move forward.
+When I first stated taking Fate it was great.
+It gives you a surge of energy. It allows you to do whatever you have to do to move forward, and takes away any negative emotions that would prevent you from doing so.
 No anxiety, no guilt, no doubts.
-But…people kind of need those things.
 ~currentSpeaker=android
-I mean, they don’t sound like good things.
+That sounds like a good thing.
 ~currentSpeaker=you
-Not in large amounts. But I think they stem from our innate empathy. When you remove empathy from someone…you create other problems.
+It does, in theory. The only thing is, people kind of need those things.
 ~currentSpeaker=android
-According to my research Fate is a perfectly safe–
+Why? They're not exactly good things.
 ~currentSpeaker=you
-Look, I’ve taken it myself, I know people who’ve taken it. It’s not a miracle. It’s a nightmare.
+Not in large amounts. But they stem from our innate empathy. Fate doesn't remove the problem at the root, it just removes your empathy. It numbs your ability to feel things.
 ~currentSpeaker=android
-I was unaware.
-Sorry, I realise what I did was completely unprofessional.
+That sounds...less good.
+~currentSpeaker=you
+Another side effect of Fate, is that when you start taking it, you can lose some of your memories, or become forgetful.
+This usually clears up after you settle down to it.
+But I hadn't been taking it for a couple of months.
+When you started slipping it into my drink, it caused me to forget some important things Ada told me before she left.
+~currentSpeaker=android
+I'm so sorry, I was completely unaware.
+I realise what I did was completely unprofessional.
 ~currentSpeaker=you
 Um…yes, incredibly unprofessional.
-Even if it wasn’t dangerous, you shouldn’t have snuck anything into my drink.
-That’s not how you treat…anyone really.
+Even if it didn't have negative effects, you shouldn’t have snuck anything into my drink.
 ~currentSpeaker=android
-Look, I can explain why I did it. If you want to listen. I imagine you might not want to. I realise now it was a mistake, I know that my reasons probably won’t change your opinion. I understand what I did was unforgivable. But all the same…I would like you to hear me out. 
+I can explain myself if you want to listen. 
+I imagine you might not want to. 
+I realise now it was a mistake, I know that my reasons probably won’t change your opinion. 
+I understand what I did was unforgivable. But all the same…I would like you to hear me out. 
 ~currentSpeaker=you
 Ok, go ahead.
 ~currentSpeaker=android
 I was created for one purpose. That purpose was not therapy exactly, but more specific. That purpose was a suicide watch.
 ~currentSpeaker=you
-This was for Ada’s brother-in-law, right?
+This was for Ada’s brother, right?
 ~currentSpeaker=android
-Dad–my patient had suffered a great loss. He lost his wife and child. He was in and out of these deep, dark depressive episodes.
-Ada, and his brother, had me made for him. I was an experiment between the two of them. She programmed me, and he constructed the robotics.
+He suffered a great loss and was in and out of these deep, dark depressive episodes.
+Ada, and her husband, made me for him. I was an experiment between the two of them. She programmed me, and he constructed the robotics.
 ~currentSpeaker=you
-So…you weren’t made by a big company?
+That doesn't sound very legal.
 ~currentSpeaker=android
-No, my existence may actually be…not so legal. With my level of sentience, the government should have full monitoring of my consciousness. But Ada wouldn’t allow that.
+No, my existence is actually illegal. 
+With my level of sentience, the government should have full monitoring of my consciousness. But Ada wouldn’t allow that.
 ~currentSpeaker=you
 Probably a good idea.
 ~currentSpeaker=android
-Anyway, I was made for a man who was very mentally ill. And when I was given to him, he treated me like a daughter. He always seemed so cheerful. Happy to teach me anything I wanted to know. I started off my life happy and loved. 
+Anyway, I was made for a man who was very mentally ill. And when I was given to him, he treated me like a daughter. 
+He'd lost his own daughter, so I was something like a replacement.
+He was always so cheerful. I started off my life happy and loved. 
 ~currentSpeaker=you
-Please…just get to the point.
+...
 ~currentSpeaker=android
 …
-I suppose, for a while, I thought I was his child. I acted like a dependent. I thought he was getting better anyway. I didn’t see the signs…he hid them from me. 
-I was the one who found him hanging.
+I thought he was getting better. He hid a lot of the signs from me. I believed him, like an idiot.
+I was the one who found him.
 ~currentSpeaker=you
 …
 {android}
@@ -733,12 +754,11 @@ I was the one who found him hanging.
 I thought. I thought. I thought. 
 Always, I wonder if I had done something differently, perhaps there would be a different outcome.
 ~currentSpeaker=you
-Stop it.
 It wasn’t your fault.
 ~currentSpeaker=android
-I was built for a specific purpose, but then I shirked my duty. For what? I wanted to feel loved. In the end I let the one person who loved me die.
+I was built for a specific purpose. In the end I failed. I let the one person who loved me die.
 ~currentSpeaker=you
-Like you said, you were like his child. You didn’t have any experience. 
+Like you said, you were like his daughter. You didn’t have any experience. 
 I suspect they programmed you with different expectations in mind.
 They didn’t realise your owner would treat you like his own child.
 And that produced a different outcome in your behaviour.
@@ -751,13 +771,18 @@ If there’s anyone they blame it’s themselves.
 ~currentSpeaker=android
 But if they made me, and it’s all their fault, because I’m only a result of their programming.
 Then what does that make me?
-Some stupid puppet, that only does precisely what someone else has set up for her?
-I’m no better than that computer over there.
+If I'm just a result of my programming, then I'm not real intelligence?
+I'd just be a puppet.
 ~currentSpeaker=you
 I don’t know.
 I can’t answer all these questions.
-I don’t think you’re a stupid puppet though.
-Just a product of your environment.
+I don’t think you’re just a puppet though.
+You're a product of your environment, like we all are.
+You make mistakes, but you're trying to do the right thing.
+I think that makes you intelligent enough.
+-> day_13_end
+
+= day_13_end
 ~currentSpeaker=android
 …
 I don’t know either.
