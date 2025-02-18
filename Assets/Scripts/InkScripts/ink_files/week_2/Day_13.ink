@@ -668,7 +668,59 @@ I don’t really know anymore than that. They didn’t really trust me with anyt
 This is the content of the stitch that should be embedded within a knot.
 -> day_13_end
 = snapped_out_no_trust
-This is the content of the stitch that should be embedded within a knot.
+~currentSpeaker=you
+I know they didn't trust you.
+And I don't either.
+~currentSpeaker=android
+What?!
+~currentSpeaker=you
+I know what you did to me, and honestly, I'm quite disgusted.
+~currentSpeaker=android
+Sorry...what are you talking about?
+~currentSpeaker=you
+The drugs you put in my drink.
+~currentSpeaker=android
+I was just trying to help.
+You're not well.
+~currentSpeaker=you
+I'm perfectly fine now. Now I know who you are.
+A government spy, I presume.
+Or perhaps you were hacked and infected with some kind of virus.
+~currentSpeaker=android
+No. Please, {you}, you have to believe me. I only wanted to cure you.
+I'm a therapy IOI. Ada made me from scratch.
+~currentSpeaker=you
+Really?
+That sounds unlikely.
+~currentSpeaker=android
+You were just in the virtual world. She created that, and she created me with her husband.
+~currentSpeaker=you
+Whatever you are, she kept you, so you must be important to her.
+I don't trust you. I'm going to wait until she comes back, and then she can do what she likes with you.
+You almost ruined everything though.
+~currentSpeaker=android
+I just wanted you to be happy.
+~currentSpeaker=you
+No, you wanted to feel better.
+You wanted to be a good little helper.
+Did you ever wonder why I throw those pills in the bin?
+I'm sure you did, but you just didn't care.
+~currentSpeaker=android
+I didn't know, and I didn't wonder.
+I care, I care so much about you.
+~currentSpeaker=you
+...
+Fate has some bad side effects. I don't want to get too much into it. It made me lose my memories when I started inadvertantly taking it again.
+And that was very inconvenient, as it made me forget something important that Ada told me before she left.
+~currentSpeaker=android
+I had no idea. That's awful.
+~currentSpeaker=you
+I know. It doesn't change the way I feel, but I can understand now that perhaps this was done out of incompetence rather than malice. 
+Still, I'll let Ada be the final judge.
+You are her property after all.
+~currentSpeaker=android
+Thank you.
+I knew you'd see sense in the end.
 -> day_13_end
 = snapped_out_trust
 ~currentSpeaker=you
