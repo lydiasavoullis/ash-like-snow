@@ -665,7 +665,96 @@ I don’t really know anymore than that. They didn’t really trust me with anyt
 {pandoraPoints>=6 && snappedOut=="yes": ->}#you know pandora was drugging you but trust her
 
 = unaware_no_trust
-This is the content of the stitch that should be embedded within a knot.
+#go straight to day 14 after this
+~currentSpeaker=you
+I see, that's alright then.
+Do you have any idea why it didn't work on us?
+~currentSpeaker=android
+We're different I guess.
+We have some issues, the others maybe don't have.
+~currentSpeaker=you
+Issues? What issues?
+~currentSpeaker=android
+You always seem a bit sad.
+~currentSpeaker=you
+Do I? I suppose so. I can never remember why.
+~currentSpeaker=android
+You don't remember, or you don't want to say?
+~currentSpeaker=you
+I don't know. I just feel like the past is super fuzzy right now.
+~currentSpeaker=android
+Sometimes that can be a side effect of mental illness.
+I have something to admit to you. I feel quite guilty about it.
+I know, we're not exactly close. But I hope you understand.
+~currentSpeaker=you
+Eh? What?
+~currentSpeaker=android
+I've been putting Fate in your drinks.
+~currentSpeaker=you
+WHAT?!
+~currentSpeaker=android
+Every day, when I ask if you want a tea or coffee, I slip it in.
+~currentSpeaker=you
+...
+Why?
+~currentSpeaker=android
+I saw you throw your pills in the bin.
+And I didn't want you to get mentally unwell.
+The same thing happened to my father and he took his own life because of it.
+~currentSpeaker=you
+Number one: I'm sorry for your loss.
+Number two: You don't give someone medication without their consent. Ever.
+Number three: There was a VERY good reason why I threw that in the bin. I can't remember it right now, but it was a VERY good reason. I'm not the kind of person who wastes good drugs.
+~currentSpeaker=android
+Sorry. Sorry. Sorry.
+~currentSpeaker=you
+You're a therapy IOI. You should know this.
+~currentSpeaker=android
+There's another thing I need to tell you.
+I'm unregisted.
+~currentSpeaker=you
+Oh?
+~currentSpeaker=android
+Ada and her husband created me. I'm not approved by the government.
+I did study all the necessary university courses to become a therapy IOI.
+But I don't have the same kind of protections that an IOI would. I'm more human, and hence I make human mistakes.
+~currentSpeaker=you
+That sounds dangerous, there's a reason IOIs have safety blocks. 
+And that added with the fact that you haven't been around for long. You might have the knowledge, but you don't have the wisdom.
+~currentSpeaker=android
+That's a good way of putting it. 
+I can't think of a good reason why you wouldn't take your medication though.
+~currentSpeaker=you
+Wait, I remember something...
+You didn't read that article about Fate?
+~currentSpeaker=android
+There was little scientific evidence behind that.
+At least I read that, in another article.
+~currentSpeaker=you
+It's so hard to trust the information we receive these days.
+I just know it didn't work for me.
+~currentSpeaker=android
+You don't think, maybe this could be causing your memory loss?
+~currentSpeaker=you
+Maybe...I don't know.
+~currentSpeaker=android
+Now, it does make a bit of sense.
+Sometimes these drugs can affect the brain in strange ways.
+That might be why you had an aversion to them.
+I'm so sorry. How can I make this up to you?
+~currentSpeaker=you
+I don't know.
+I can't remember why I feel the way I feel anymore.
+I should feel angry with you, but everything is just numb right now.
+~currentSpeaker=android
+Hopefully, going sober will help with that. You might start to feel more like yourself.
+And then you can have a right go at me.
+~currentSpeaker=you
+I don't think that will help to be honest.
+I appreciate the gesture though. 
+I keep feeling like I forgot something very important though.
+~currentSpeaker=android
+I hope you remember it soon. 
 -> day_13_end
 = snapped_out_no_trust
 ~currentSpeaker=you
