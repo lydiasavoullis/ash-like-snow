@@ -74,23 +74,19 @@
 ~currentSpeaker = you
  Skeletons?
 ~currentSpeaker = comic
- He has an idea for this sketch with these two skeleton sisters who tell jokes.
- He thinks people will like that. Honestly I think he’s going senile.
+ He has an idea for this sketch with these two skeletons who tell jokes.
 ~currentSpeaker = you
  Why skeletons though?
 ~currentSpeaker = comic
- I think the idea is that they’re nuclear event survivors.
- Really resonates with our younger audience I’m sure.
+ I have no idea. I think he's going senile.
  Also he wants me to give the skeletons large...breasts
  I’m trying to figure out how skeletons can even have breasts.
- I was just trying to understand the logic behind it, so I thought I would express my doubts to my boss.
- Big mistake.
-~currentSpeaker = comic
-He said that: 'Both my wife, and my mistress have a pair so I think I know how they work better than a gay man'
-I had to weigh up whether it was worth losing my job over a response.
+ I posed this question and he claimed he knew more about breasts worked than I ever would.
+ I had to weigh up whether it was worth losing my job over a response to that.
 ~currentSpeaker = you
- …
+ I assume you still have your job?
 ~currentSpeaker = comic
+ What kind of spineless corporate worm would I be if I didn't know how to suck up to my boss once in a while?
  Look Cas I really don’t know what to say. Why is Pandora looking at me like that?
 ~currentSpeaker = you
  Like what?
@@ -106,7 +102,7 @@ I had to weigh up whether it was worth losing my job over a response.
 {ChangeSprite("Pandora", "pandora_sad")}
  It’s not a cult, it’s a creative writing session.
 ~currentSpeaker = comic
- Oh is that what we’re calling them now.
+ Oh is that what we’re calling them now?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_mean")}
  I promise no cult activity will be tolerated.
@@ -115,7 +111,7 @@ I had to weigh up whether it was worth losing my job over a response.
  Sure I’d love to come, Saturday evening is fine. I love writing. 
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_excited")}
-<i>\*bursts with excitement\*</i>
+<i>\*YAAAY\*</i>
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
  She looks like she’s going to explode. 
@@ -339,25 +335,16 @@ So why are you talking about me behind my back?
 ~currentSpeaker = you
 Trust me, it wasn't very interesting.
 ~currentSpeaker = snob
- Tell me why?
+ I demand that you tell me!
 ~currentSpeaker = you
- We were saying mean things about you.
-~currentSpeaker = snob
-{ChangeSprite("Lavender", "lavender_thinking")}
- Why?
-~currentSpeaker = you
- Because you’re rude and obnoxious.
-~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_shocked")}
- No, we never said that.
-~currentSpeaker = snob
+ No!
 {ChangeSprite("Lavender", "lavender_crying")}
-WHAT!
+Why are you shouting at me?
 ~currentSpeaker = android
  Please don’t cry.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_tears_crying")}
- Wah wah wah!
+ It's too late.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_sad")}
  No Lavender.

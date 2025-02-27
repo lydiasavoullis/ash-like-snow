@@ -1,5 +1,4 @@
 ==day_13==
-¬
 ~scene = "Basement"
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -931,23 +930,11 @@ Are you going to tell me what your deal is?
 ~currentSpeaker=you
 Yes.
 But…when I say what I have to say, I want everyone else to be there too.
+~characters-=pandora
 ~currentSpeaker=android
-You’re braver than I am.
-Do you…understand why I did what I did? I didn’t want you to end up…
-~currentSpeaker=you
-I understand. I don’t forgive.
-~currentSpeaker=android
-I don’t deserve your forgiveness.
-And I will not pressure you to give it to me.
-~currentSpeaker=you
-I just need time to think.
-After I’ve said what I’m about to say.
-I don’t think I’m going to be very popular with anyone here.
-~currentSpeaker=android
-I find that hard to believe.
-You have a very firm moral compass.
-~currentSpeaker=you
-It wasn’t always this way. 
+Eh? Ok I guess. I'll get everyone.
+~characters+=kent
+~characters+=pandora
 ~currentSpeaker=comic
 I need a break.
 Hey, what’s going on here…did something bad happen?
@@ -959,7 +946,9 @@ That doesn’t sound good.
 ~currentSpeaker=you
 It’s…I will explain everything.
 ~currentSpeaker=comic
-GIRLS. Get over here.
+GUYS. Get over here.
+~characters+=lavender
+~characters+=tali
 ~currentSpeaker=webdev
 There’s no need to shout.
 ~currentSpeaker=snob
@@ -975,34 +964,35 @@ It must be an aftereffect from being in a hypnotic state in the virtual world.
 ~currentSpeaker=you
 Yeah…I’ve got that a bit too.
 ~currentSpeaker=comic
-I’ve been dizzy, but I just assumed it was from the stress. What do you mean by hypnotic state? Virtual world. 
+I’ve been dizzy, but I just assumed it was from the stress. What do you mean by hypnotic state? Virtual world? 
 ~currentSpeaker=you
 {android} I think it’s best you explain this part.
 ~currentSpeaker=android
 “Pandora explains the virtual world”
 ~currentSpeaker=snob
-What? I got a present and I just forgot about it.
+Wait a minute...I got a present and I just forgot about it.
 ~currentSpeaker=webdev
 That’s insane! Why didn’t you tell us?
 And why are you the only ones that remember?
 ~currentSpeaker=you
-We were sort of ‘conscious’ in the world, we think because of our current fragile mental state we weren’t able to integrate inside it the way you were. 
+We were sort of ‘conscious’ in the world.
 ~currentSpeaker=comic
-What do you mean fragile mental state? Are you saying it only allows people with mental illness to remember what happened.
+How does that work?
 ~currentSpeaker=you
+We're not too sure.
 We didn’t just remember. I was controlling some of it. I mean that I could control your behaviour and actions. I stopped as soon as I was made aware of what I was doing.
-I think the reason is that it allows people who feel like they have no control over their lives to have agency in a safe controlled environment.
 ~currentSpeaker=comic
 That’s a bit scary, but it kind of makes sense.
 I won’t touch that computer again.
 ~currentSpeaker=webdev
 That’s freaky. I’m sorry, how can you be so calm {comic}?
 ~currentSpeaker=comic
-Well, we’re kind of in the middle of a national crisis. So forgive me if I’m not so perturbed by some’s science homework, especially since it seems like it’s been pretty harmless.
+Compared to everything that happened yesterday, this is pretty tame. Especially since it seems like it's been harmless.
 ~currentSpeaker=snob
 Harmless? She was controlling us in a dream. That’s messed up. Who knows what other creepy stuff they’ve been doing.
 ~currentSpeaker=you
-Look, I need to explain some things about my life to you guys, I know that I’ve been pretty cryptic about myself. About why I work here and my life before. But I feel like if I get this off my chest it might help me heal.
+I need to explain some things about my life to you guys, I know that I’ve been pretty cryptic about myself. 
+About why I work here and my life before.
 ~currentSpeaker=webdev
 Sure, I’m happy to listen. We’re here for you.
 ~currentSpeaker=comic
@@ -1014,26 +1004,49 @@ Ok, get on with it.
 ~currentSpeaker=you
 Thanks {snob}.
 ~currentSpeaker=you
-It started when I graduated from university.
-I had trouble finding a job.
-And I was pretty depressed.
-I finally found this company that hired me. They weren’t too large, but they were pretty ambitious and wanted to expand.
-My boss was very pushy, I used to work late nights and I was always answering his calls and emails outside of work hours.
+I kind of started all of this.
+~currentSpeaker=snob
+What does that mean?
+~currentSpeaker=you
+Ever since I was old enough to remember I've felt awful, stressed, anxious and utterly alone. I think worst of all, I always felt powerless. Like I had no control over anything.
 ~currentSpeaker=comic
-Ok, join the sucky job club
+Ok, not sure if this is meant to be a heart to heart, or your villain origin story.
+~currentSpeaker=you
+Sometimes I do see myself as a villain.
+~currentSpeaker=comic
+I was joking.
+~currentSpeaker=you
+...
+When I graduated, I was flung into this world I was completely unprepared for. I mean, I don't have to explain it to you.
+~currentSpeaker=webdev
+Ha! Tell me about it.
+~currentSpeaker=comic
+Totally.
+~currentSpeaker=snob
+Sick of all your whinning. When are you going to get to the good part?
+~currentSpeaker=you
+Good part?
+There is no good part.
+I moped around, practically begged everyone and anyone to hire me.
+One day, I landed a job for a very well known company.
+It didn't pay a lot, and the treatment was incredibly shitty. But it was something at least.
+~currentSpeaker=comic
+Welcome to the sucky job club
 ~currentSpeaker=you
 Well…
 Things got very stressful for me.
-I went to my GP and they prescribed me this drug…fate.
+I went to my GP and they prescribed me this drug…Fate.
 ~currentSpeaker=webdev
-That’s had a lot of bad press in the news.
+That’s not great.
+I heard they're thinking of banning it.
 ~currentSpeaker=you
 For good reason. 
 I started taking it, and everything started going much better for me.
 My mood changed.
 All of a sudden my boss was much happier with my work.
-He started throwing these cool parties for clients, and I would entertain them. And then we’d get lots of business from them.
-Things sort of started going south when he wanted to compete with other companies. Some other companies started releasing this special car and my boss was furious. They were making loads of money and he wanted a piece of it. We didn’t have such good engineers. And others were making breakthroughs and patenting their own technology.
+He started throwing these parties for clients, and I would entertain them.
+Things sort of started going south when he wanted to compete with other companies. They started releasing this new car model and my boss was furious. They were making loads of money and he wanted a piece of it. 
+Our division didn't have enough money to hire better engineers. And companies were making breakthroughs and patenting their own technology.
 So my boss asked me to steal their ideas.
 ~currentSpeaker=comic
 That sounds.
@@ -1041,11 +1054,10 @@ Kind of illegal.
 ~currentSpeaker=you
 Yup.
 But I was so scared of losing my job at that point I would have done anything.
-And the fate made everything so easy.
+And the Fate made everything so easy.
 I kind of just saw my life as actions…one thing leading to the next.
 ~currentSpeaker=snob
 That’s just an excuse.
-Thief!
 ~currentSpeaker=webdev
 Shh {snob}
 ~currentSpeaker=you
@@ -1066,7 +1078,7 @@ But no, it was one of those small dogs…and it started barking.
 I don’t know what got into my head at that point. Everything started going blurry from panic. I’d never come across a situation like that before.
 Suddenly the world stopped being blurry, like my brain had come across the solution. When I came out of the delusion I was holding a dead dog in my hand. The neck sticking out at an unnatural angle.
 ~currentSpeaker=comic
-Oh fuck.
+Ah.
 ~currentSpeaker=webdev
 …
 ~currentSpeaker=snob

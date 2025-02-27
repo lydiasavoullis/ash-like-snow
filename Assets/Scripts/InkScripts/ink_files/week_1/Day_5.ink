@@ -106,7 +106,7 @@ Hey guys.
  What’s wrong?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
- Nothing really. I’m just really fucking behind on a lot of work. Please can I work in the corner there?
+ Nothing really. I’m just really fucking behind on a lot of work. Please can I sit in the corner there?
 ~currentSpeaker = android
  Of course you can. Sit down. No one will disturb you. 
 ~currentSpeaker = comic
@@ -181,7 +181,7 @@ I’m starting to think she wants this place to fail.
 {ChangeSprite("Lavender", "lavender_thinking")}
  Although I have been thinking of having a go again.
 {ChangeSprite("Lavender", "lavender_serious")}
- I used to sew for fun. And then I did a lot of sewing for my university course. But I stopped doing it after I started my company.
+ I used to sew for fun. And then I did a lot of sewing for my course. But I stopped doing it after I started my company.
 ~currentSpeaker = you
  Uh, how does that work? If you don’t sew, how do you like prototype clothing designs?
 ~currentSpeaker = snob
@@ -279,7 +279,7 @@ Ah I see.
  So she’s got the job, what’s wrong?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
- Well her boss is working her to death.
+ Well her boss is working her very hard.
  She barely has any time to do anything she enjoys.
 ~currentSpeaker = you
  And?
@@ -338,11 +338,7 @@ No, of course not.
  Actually Pandora works very hard, for someone who doesn’t get a salary.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
- I do use a lot of electricity.
-~currentSpeaker = you
- Shhh, you need to stand up for yourself.
-~currentSpeaker = android
- I can’t stand up without electricity.
+ Well, I do use a lot of electricity.
 ~currentSpeaker = snob
  You’re a lot more talkative than the IOIs I know.
 ~currentSpeaker = android
