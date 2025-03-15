@@ -659,9 +659,9 @@ Creating a virtual world as therapy for people’s minds, to help them confront 
 I’m listening.
 ~currentSpeaker=android
 I don’t really know anymore than that. They didn’t really trust me with anything else.
-{pandoraPoints<6 && snappedOut=="no": ->}#you don't know pandora was drugging you and don't trust her very much
-{pandoraPoints<6 && snappedOut=="yes": ->}#you know pandora was drugging you and don't trust her very much
-{pandoraPoints>=6 && snappedOut=="yes": ->}#you know pandora was drugging you but trust her
+{pandoraPoints<6 && snappedOut=="no": ->unaware_no_trust}#you don't know pandora was drugging you and don't trust her very much
+{pandoraPoints<6 && snappedOut=="yes": ->snapped_out_no_trust}#you know pandora was drugging you and don't trust her very much
+{pandoraPoints>=6 && snappedOut=="yes": ->snapped_out_trust}#you know pandora was drugging you but trust her
 
 = unaware_no_trust
 #go straight to day 14 after this
@@ -754,7 +754,7 @@ I appreciate the gesture though.
 I keep feeling like I forgot something very important though.
 ~currentSpeaker=android
 I hope you remember it soon. 
--> day_13_end
+-> cas_admission
 = snapped_out_no_trust
 ~currentSpeaker=you
 I know they didn't trust you.
@@ -809,7 +809,7 @@ You are her property after all.
 ~currentSpeaker=android
 Thank you.
 I knew you'd see sense in the end.
--> day_13_end
+-> cas_admission
 = snapped_out_trust
 ~currentSpeaker=you
 Ok ok.
@@ -920,9 +920,9 @@ I don’t think you’re just a puppet though.
 You're a product of your environment, like we all are.
 You make mistakes, but you're trying to do the right thing.
 I think that makes you intelligent enough.
--> day_13_end
+-> cas_admission
 
-= day_13_end
+= cas_admission
 ~currentSpeaker=android
 …
 I don’t know either.
@@ -992,7 +992,6 @@ Compared to everything that happened yesterday, this is pretty tame. Especially 
 Harmless? She was controlling us in a dream. That’s messed up. Who knows what other creepy stuff they’ve been doing.
 ~currentSpeaker=you
 I need to explain some things about my life to you guys, I know that I’ve been pretty cryptic about myself. 
-About why I work here and my life before.
 ~currentSpeaker=webdev
 Sure, I’m happy to listen. We’re here for you.
 ~currentSpeaker=comic
@@ -1004,17 +1003,10 @@ Ok, get on with it.
 ~currentSpeaker=you
 Thanks {snob}.
 ~currentSpeaker=you
-I kind of started all of this.
-~currentSpeaker=snob
-What does that mean?
-~currentSpeaker=you
-Ever since I was old enough to remember I've felt awful, stressed, anxious and utterly alone. I think worst of all, I always felt powerless. Like I had no control over anything.
+Ever since I was old enough to remember I've felt awful, stressed, anxious and utterly alone. 
+I think worst of all, I always felt powerless. Like I had no control over anything.
 ~currentSpeaker=comic
-Ok, not sure if this is meant to be a heart to heart, or your villain origin story.
-~currentSpeaker=you
-Sometimes I do see myself as a villain.
-~currentSpeaker=comic
-I was joking.
+Aww, same here.
 ~currentSpeaker=you
 ...
 When I graduated, I was flung into this world I was completely unprepared for. I mean, I don't have to explain it to you.
@@ -1031,11 +1023,15 @@ I moped around, practically begged everyone and anyone to hire me.
 One day, I landed a job for a very well known company.
 It didn't pay a lot, and the treatment was incredibly shitty. But it was something at least.
 ~currentSpeaker=comic
-Welcome to the sucky job club
+Welcome to the sucky job club.
 ~currentSpeaker=you
 Well…
 Things got very stressful for me.
-I went to my GP and they prescribed me this drug…Fate.
+I went to my GP and they prescribed me this drug…
+~currentSpeaker=webdev
+Fate I guess?
+~currentSpeaker=you
+Yeah.
 ~currentSpeaker=webdev
 That’s not great.
 I heard they're thinking of banning it.
@@ -1043,11 +1039,11 @@ I heard they're thinking of banning it.
 For good reason. 
 I started taking it, and everything started going much better for me.
 My mood changed.
-All of a sudden my boss was much happier with my work.
-He started throwing these parties for clients, and I would entertain them.
-Things sort of started going south when he wanted to compete with other companies. They started releasing this new car model and my boss was furious. They were making loads of money and he wanted a piece of it. 
+All of a sudden my boss was much happier with me. I was getting work done much quicker, and clients were eagerly telling him stories of how wonderful I was.
+Things sort of started going south when he wanted to compete with other companies. They started releasing this new car model and my boss was furious. 
+They were making loads of money and he wanted a piece of it. 
 Our division didn't have enough money to hire better engineers. And companies were making breakthroughs and patenting their own technology.
-So my boss asked me to steal their ideas.
+So my boss convinced me to steal their ideas.
 ~currentSpeaker=comic
 That sounds.
 Kind of illegal.
@@ -1061,13 +1057,16 @@ That’s just an excuse.
 ~currentSpeaker=webdev
 Shh {snob}
 ~currentSpeaker=you
-Anyway,
 At first it was just a matter of hacking.
 Finding security weaknesses and exploiting them.
-But that wasn’t always a reliable method of doing things.
-A lot of the time I’d research people and find ways to scam them out of information.
-I used to go to networking events and get close to people, like a spy and find ways to find out information about their work life. Steal any documents if I could.
-It got to this point one day…this was the breaking point. I’d found out the apartment where one of the engineers lived. He was on holiday and I’d found a way to break into his apartment, hack into his laptop. Download some files, take pictures of some documents.
+I’d research people and find ways to scam them out of information.
+I used to go to networking events under a false identity, and do a spot of social engineering here and there.
+~currentSpeaker=webdev
+Ok. That's pretty bad.
+~currentSpeaker=you
+You haven't heard the worst of it.
+It got to this point one day…this was the breaking point. I’d found out the apartment where one of the engineers lived. 
+He was on holiday and I’d found a way to break into his apartment, hack into his laptop. Download some files, take pictures of some documents.
 People aren’t as careful as we’d like to think.
 Anyway, I was about to leave. And I saw this thing moving on the floor.
 ~currentSpeaker=comic
@@ -1076,18 +1075,17 @@ Oh no.
 At first I thought it was a rat.
 But no, it was one of those small dogs…and it started barking.
 I don’t know what got into my head at that point. Everything started going blurry from panic. I’d never come across a situation like that before.
-Suddenly the world stopped being blurry, like my brain had come across the solution. When I came out of the delusion I was holding a dead dog in my hand. The neck sticking out at an unnatural angle.
+Suddenly the world stopped being blurry, like my brain had come across the solution. When I came out of the delusion I was holding the dog in my hands. Its neck was sticking out at an unnatural angle.
 ~currentSpeaker=comic
 Ah.
 ~currentSpeaker=webdev
 …
 ~currentSpeaker=snob
-…
-You.
-Murderer!
+...
 ~currentSpeaker=you
 I dropped the animal and fled. I threw up in a bin outside the apartment buildings. 
-After that I quit my job, and found help. I stopped taking fate. I met Ada at one of my group counselling sessions and she gave me this job.
+After that I quit my job. I tried to stop taking Fate, but it was difficult... 
+I met Ada at one of my group counselling sessions and she gave me this job and helped me quit for good.
 ~currentSpeaker=webdev
 I don’t know what to say.
 ~currentSpeaker=you
@@ -1127,9 +1125,32 @@ Ok.
 …
 {webdev}, wait I’m coming with you.
 ~currentSpeaker=you
-Well that went well.
+Well that could have gone better.
+
+#diverging content, on whether you reveal Ada's plot or not
+{pandoraPoints>=6 && snappedOut=="yes":
+    ->secret_plot_reveal
+  - else:
+    ->keep_plot_secret
+}
+
+
+//you either have not snapped out or do not trust pandora
+= keep_plot_secret
 ~currentSpeaker=android
-You told the truth.
+You did your best. You told the truth.
+You must feel so relieved.
+~currentSpeaker=you
+I feel ok.
+I need some time alone though.
+~currentSpeaker=android
+Alright, I'll leave you.
+->day_13_end
+
+//you have both snapped out, and trust pandora
+= secret_plot_reveal
+~currentSpeaker=android
+You did your best. You told the truth.
 You must feel so relieved.
 ~currentSpeaker=you
 You don’t hate me?
@@ -1146,13 +1167,23 @@ I think someone needs to believe in you.
 I mean…even Ada did right?
 She wouldn’t have offered you this job otherwise?
 ~currentSpeaker=you
-About that…
-Since we’re telling each other the truth.
+Uh, I guess not.
+~currentSpeaker=android
+One thing, if you weren't taking Fate anymore. Why did you have it on your person at all?
+~currentSpeaker=you
+My pharmacist keeps sending it to my address. It's kind of difficult to get it cancelled. 
+I wanted to, but Ada advised me against it. She said that I might get investigated by the police.
+Instead, she would have me bring it to her, to prove I wasn't taking it. Then she would dispose of it.
+When she left, she trusted me to dispose of it myself. I guess I didn't really do a great job of it though.
+~currentSpeaker=android
+Oh, I see now.
+~currentSpeaker=you
+Also, since we’re on the topic of Ada.
 ~currentSpeaker=android
 Hmmm?
 ~currentSpeaker=you
 A strange man talked to me in the shop the other day.
-I think he was sent by Ada, I forgot because I was taking fate at the time. But I was meant to give him some money.
+I think he was sent by Ada, I forgot because I was taking Fate at the time. But I was meant to give him some money.
 ~currentSpeaker=android
 What? And did you give him money?
 ~currentSpeaker=you
@@ -1163,13 +1194,9 @@ But why?
 Because I felt like it was important.
 I feel like Ada is up to something. With this virtual world technology. I mean…do you think she’s really in Madrid?
 ~currentSpeaker=android
-Ada wouldn’t lie.
+Why would she lie?
 ~currentSpeaker=you
-She’s lied about a lot of things.
-~currentSpeaker=android
-Ok, that’s true. But…why?
-~currentSpeaker=you
-I…don’t know. Fate fried my brain. I know whatever it was, it was very important.
+I…don’t know. My brain got fried. I only know whatever it was, it was very important.
 I’m glad I gave him the money.
 ~currentSpeaker=android
 That’s good I guess.
@@ -1197,5 +1224,8 @@ Maybe we could just browse?
 I could show you some stuff I think you would like.
 ~currentSpeaker=android
 I think I would like that a lot.
+->day_13_end
+
+=day_13_end
 ~day+=1
 ->day_14
