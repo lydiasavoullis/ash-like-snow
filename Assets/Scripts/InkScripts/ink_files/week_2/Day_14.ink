@@ -270,7 +270,7 @@ I think you might be having a panic attack.
 }
 
 =pandora_talks_panic_attack
-~currentSpeaker
+~currentSpeaker=""
 She might be right.
 But what can you do?
 You're useless without. You can't even carry out simple tasks without being drugged.
@@ -282,22 +282,22 @@ Listen to her? What can she do.
 She couldn't save her last patient. What makes you think she can do anything for you?
 ~currentSpeaker = android
 We're here for you.
-~currentSpeaker
+~currentSpeaker=""
 They hate you. You saw it in their eyes. What's the point of going back? You're just a disappointment.
 ~currentSpeaker = android
 Don't try to fight it.
 Just keep breathing, slowly.
-~currentSpeaker
+~currentSpeaker=""
 What are you doing?
 You're not listening to her are you? What does she know?
 ~currentSpeaker = android
 You've done a really good job. Thanks to you the others won't get ill.
-~currentSpeaker
+~currentSpeaker=""
 ...that's not true.
 That can't be true. You've never done anything good.
 ~currentSpeaker = you
 I'm coming back now.
-~currentSpeaker
+~currentSpeaker=""
 You shift your body now, pushing backwards.
 You keep pushing, slowly but steadily.
 Kent catches you as you fall.
@@ -337,7 +337,7 @@ I hope {you} gets better.
 I think I can forgive you.
 ~currentSpeaker = you
 ...
-~currentSpeaker
+~currentSpeaker=""
 You can't summon the energy to speak right now.
 Better to conserve it and rest.
 ~characters-=kent
@@ -362,5 +362,195 @@ I guess the rush of adrenaline is over.
 I'll make your bed.
 ->Epilogue
 =others_save_you
-
+~currentSpeaker
+She might be right.
+But what can you do?
+You're useless without. You can't even carry out simple tasks without being drugged.
+~currentSpeaker = android
+{you}?
+~currentSpeaker=""
+You think she can save you?
+She couldn't save her last patient. What makes you think she can do anything for you?
+~currentSpeaker = android
+{you} listen to me.
+~currentSpeaker=""
+There's no point in listening to her. She's not even a real therapist.
+~currentSpeaker = android
+She's not responding.
+I think you'll have to pull her out.
+~currentSpeaker = comic
+How??
+~currentSpeaker = android
+I have no idea.
+~currentSpeaker = webdev
+I have one, but I don't think {snob}'s going to like it.
+~currentSpeaker = snob
+Eh? Oh no. I'm not going in there.
+~currentSpeaker = webdev
+I'll get on {comic}'s shoulders. You get on mine and reach in there.
+~currentSpeaker = snob
+Uh uh. No way.
+Not for her.
+~currentSpeaker = webdev
+If she dies in there, the smell of dead body is going to waft into this room.
+~currentSpeaker = snob
+Fine. I'll do it.
+~currentSpeaker = android
+What can I do?
+~currentSpeaker = comic
+Help {snob} climb up us.
+And catch us if we fall.
+~currentSpeaker = android
+Of course.
+~currentSpeaker=""
+Can you hear them trying to help you?
+What a nuisance you are.
+~currentSpeaker = snob
+Oww.
+~currentSpeaker = webdev
+Stop complaining.
+~currentSpeaker = comic
+I'm supporting both of you.
+You're so heavy.
+~currentSpeaker = webdev
+Hey!
+~currentSpeaker = snob
+I'm in the shaft.
+I've never been inside a shaft before.
+~currentSpeaker = webdev
+Stop it. Focus {snob}.
+~currentSpeaker = snob
+Alright.
+It smells weird in here.
+~currentSpeaker = comic
+Just keep going.
+~currentSpeaker = ""
+What is that?
+She's touching you.
+~currentSpeaker = you
+Ahhhh.
+~currentSpeaker = ""
+That tickles.
+~currentSpeaker = snob
+So now you talk.
+You have smelly feet.
+~currentSpeaker = webdev
+Stop antagonising her. Just pull her out.
+~currentSpeaker = snob
+Okay. Okay. Okay.
+Got her!
+Pull me out now.
+~currentSpeaker = webdev
+Got it.
+~currentSpeaker = snob
+AHHHH.
+~currentSpeaker = you
+AHHHH!
+~currentSpeaker = you
+Sorry. I don't know what happened.
+~currentSpeaker = android
+You had a panic attack and weren't responding to us.
+~currentSpeaker = you
+I know. I just don't know why I stopped responding.
+~currentSpeaker = android
+I caught you. You were really out of it.
+~currentSpeaker = snob
+You didn't catch me. Thanks for nothing!
+~currentSpeaker = webdev
+You landed right on top of me.
+~currentSpeaker = snob
+Sorry.
+~currentSpeaker = comic
+That was a bit scary. I wasn't sure what we were going to do if we couldn't get you out.
+~currentSpeaker = webdev
+She looks shell-shocked.
+~currentSpeaker = android
+Perhaps we should give her some space.
+~currentSpeaker = comic
+I don't know. I don't really want to leave her alone.
+~currentSpeaker = android
+She won't be alone. I'll be there.
+~currentSpeaker = comic
+I know. I just feel like I should stay.
+~currentSpeaker = webdev
+It might not be a bad idea, {comic} and {you} seem to get on quite well. And he can always lighten the mood.
+~currentSpeaker = comic
+Wow. I'm not sure you really know me.
+~currentSpeaker = webdev
+You're depressing, but at least you're funny about it.
+~currentSpeaker = comic
+Put that on my obituary.
+~characters-=lavender
+~characters-=tali
+~currentSpeaker = comic
+You're staying.
+~currentSpeaker = android
+She needs me.
+~currentSpeaker = comic
+It's ok to admit you're out of your depth.
+~currentSpeaker = android
+She's my responsibility.
+~currentSpeaker = comic
+Really? No one gave that responsibility to you.
+~currentSpeaker = android
+What am I without it?
+~currentSpeaker = comic
+A person, who is kind and charismatic.
+~currentSpeaker = android
+Kind and charismatic?
+~currentSpeaker = comic
+Yup.
+You always let us stay at the shop, even when we don't buy anything. And you throw awesome parties.
+~currentSpeaker = android
+I do???
+~currentSpeaker = comic
+You're a total socialite.
+~currentSpeaker = android
+You're just flattering me.
+~currentSpeaker = comic
+I never flatter anyone. Excluding myself, of course.
+~currentSpeaker = android
+{you} did you hear that??
+~currentSpeaker = you
+I agree with him.
+Just going through a lot right now, sorry if I don't respond so quickly.
+~currentSpeaker = android
+This is wonderful news. Truly.
+I will reassess my purpose.
+~currentSpeaker = comic
+Going to be an event manager now or something?
+~currentSpeaker = android
+Perhaps. Although that might not be possible for someone like me.
+~currentSpeaker = comic
+I'll give you some advice. 
+Just because you're good at something, doesn't mean you have to do it as a job.
+~currentSpeaker = android
+Eh?
+~currentSpeaker = comic
+Plently of people do jobs they hate and are not even any good at.
+~currentSpeaker = android
+Why would I waste my time doing something I hate and am no good at.
+~currentSpeaker = comic
+Because it's something that needs doing.
+Also, you might think you suck at it, but there are lots of people out there who suck worse.
+Just think about it.
+~currentSpeaker = android
+I understand. I'm not that naive.
+I don't think {you} enjoys her job. I know you and {webdev} don't either. You just do it to meet your basic needs.
+It's just kind of hard for me to accept.
+~currentSpeaker = comic
+I guess, it's a lot easier to accept when your basic needs rely on you having a job.
+You don't need food, drink, shelter, or medical care.
+Only electricity.
+~currentSpeaker = android
+I require electricity, basic maintenance.
+But I could also be shut down against my will if I'm seen as obsolete or a threat.
+~currentSpeaker = comic
+I suppose that'a different kind of struggle.
+Is {you} asleep?
+~currentSpeaker = android
+Yeah, I think the last two days took a lot out of her.
+I just wish I could have done more.
+~currentSpeaker = comic
+You did what you could.
 ->Epilogue
