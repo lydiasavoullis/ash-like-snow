@@ -20,6 +20,50 @@ He’s coming inside
 How do you do?
 {ChangeSprite("Stranger", "shadow_amused")}
 What an interesting…establishment.
+{snappedOut=="true":
+    ->stranger_first_encounter_snapped_out
+  - else:
+    ->stranger_first_encounter
+}
+
+==stranger_first_encounter_snapped_out
+~currentSpeaker = you
+Are you looking for Ada?
+{ChangeSprite("Stranger", "shadow_amused")}
+~currentSpeaker = trader
+How did you know?
+I need some things.
+~currentSpeaker = you
+I know.
+You need money, right?
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+There's no need to be so crass about it.
+~currentSpeaker = you
+Take this.
+~currentSpeaker = trader
+This is a...USB?
+~currentSpeaker = you
+It has enough on it. It's more secure anyway.
+{ChangeSprite("Stranger", "shadow_amused")}
+~currentSpeaker = trader
+Interesting, you're not what I expected.
+~currentSpeaker = you
+You're welcome to return, if you want more.
+{ChangeSprite("Stranger", "shadow_neutral")}
+~currentSpeaker = trader
+No, I think this will suffice.
+Goodbye.
+~characters-=stranger
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+What was that?
+~currentSpeaker = you
+A favour Ada asked me to do for her.
+Don't worry about it.
+~gaveTraderMoney="yes"
+->continue_day_8
+==stranger_first_encounter
 ~currentSpeaker = you
 Can I help you with anything.
 {ChangeSprite("Stranger", "shadow_neutral")}
@@ -48,6 +92,8 @@ Sorry for taking your time.
 What was that?
 ~currentSpeaker = you
 I'm not sure exactly.
+->continue_day_8
+==continue_day_8
 ~characters+=lavender
 ~currentSpeaker=snob
 Who was that guy that left just now?

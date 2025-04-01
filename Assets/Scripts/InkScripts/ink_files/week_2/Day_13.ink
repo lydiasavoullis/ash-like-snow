@@ -651,12 +651,15 @@ Did they just forget?
 I don’t know what happened there. I suppose that was Ada’s little project. I didn’t realise how far she’d gotten on it though.
 ~currentSpeaker=you
  What do you mean ‘Ada’s little project’? Why did it just suck our consciousnesses in like that? How is that even possible?
+ {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I’m still figuring out the details.
 But, basically Ada, her husband and my father were working on this virtual reality software which was meant to act as therapy. 
+{ChangeSprite("Pandora", "pandora_normal")}
 Creating a virtual world as therapy for people’s minds, to help them confront trauma in a safe environment.
 ~currentSpeaker=you
 I’m listening.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I don’t really know anymore than that. They didn’t really trust me with anything else.
 {pandoraPoints<6 && snappedOut=="no": ->unaware_no_trust}#you don't know pandora was drugging you and don't trust her very much
@@ -668,22 +671,27 @@ I don’t really know anymore than that. They didn’t really trust me with anyt
 ~currentSpeaker=you
 I see, that's alright then.
 Do you have any idea why it didn't work on us?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 We're different I guess.
 We have some issues, the others maybe don't have.
 ~currentSpeaker=you
 Issues? What issues?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 You always seem a bit sad.
 ~currentSpeaker=you
 Do I? I suppose so. I can never remember why.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 You don't remember, or you don't want to say?
 ~currentSpeaker=you
 I don't know. I just feel like the past is super fuzzy right now.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Sometimes that can be a side effect of mental illness.
 I have something to admit to you. I feel quite guilty about it.
+{ChangeSprite("Pandora", "pandora_sad")}
 I know, we're not exactly close. But I hope you understand.
 ~currentSpeaker=you
 Eh? What?
@@ -691,6 +699,7 @@ Eh? What?
 I've been putting Fate in your drinks.
 ~currentSpeaker=you
 WHAT?!
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Every day, when I ask if you want a tea or coffee, I slip it in.
 ~currentSpeaker=you
@@ -703,7 +712,8 @@ The same thing happened to my father and he took his own life because of it.
 ~currentSpeaker=you
 Number one: I'm sorry for your loss.
 Number two: You don't give someone medication without their consent. Ever.
-Number three: There was a VERY good reason why I threw that in the bin. I can't remember it right now, but it was a VERY good reason. I'm not the kind of person who wastes good drugs.
+Number three: There was a VERY good reason why I threw that in the bin. 
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Sorry. Sorry. Sorry.
 ~currentSpeaker=you
@@ -713,25 +723,29 @@ There's another thing I need to tell you.
 I'm unregisted.
 ~currentSpeaker=you
 Oh?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Ada and her husband created me. I'm not approved by the government.
 I did study all the necessary university courses to become a therapy IOI.
 But I don't have the same kind of protections that an IOI would. I'm more human, and hence I make human mistakes.
 ~currentSpeaker=you
 That sounds dangerous, there's a reason IOIs have safety blocks. 
-And that added with the fact that you haven't been around for long. You might have the knowledge, but you don't have the wisdom.
+And that added with the fact that you haven't been around for long. You might have the knowledge, but you don't have solid judgement.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 That's a good way of putting it. 
 I can't think of a good reason why you wouldn't take your medication though.
 ~currentSpeaker=you
 Wait, I remember something...
 You didn't read that article about Fate?
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 There was little scientific evidence behind that.
 At least I read that, in another article.
 ~currentSpeaker=you
 It's so hard to trust the information we receive these days.
 I just know it didn't work for me.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 You don't think, maybe this could be causing your memory loss?
 ~currentSpeaker=you
@@ -745,6 +759,7 @@ I'm so sorry. How can I make this up to you?
 I don't know.
 I can't remember why I feel the way I feel anymore.
 I should feel angry with you, but everything is just numb right now.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Hopefully, going sober will help with that. You might start to feel more like yourself.
 And then you can have a right go at me.
@@ -752,6 +767,7 @@ And then you can have a right go at me.
 I don't think that will help to be honest.
 I appreciate the gesture though. 
 I keep feeling like I forgot something very important though.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 I hope you remember it soon. 
 -> cas_admission
@@ -759,12 +775,14 @@ I hope you remember it soon.
 ~currentSpeaker=you
 I know they didn't trust you.
 And I don't either.
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 What?!
 ~currentSpeaker=you
 I know what you did to me, and honestly, I'm quite disgusted.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-Sorry...what are you talking about?
+What are you talking about?
 ~currentSpeaker=you
 The drugs you put in my drink.
 ~currentSpeaker=android
@@ -774,6 +792,7 @@ You're not well.
 I'm perfectly fine now. Now I know who you are.
 A government spy, I presume.
 Or perhaps you were hacked and infected with some kind of virus.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 No. Please, {you}, you have to believe me. I only wanted to cure you.
 I'm a therapy IOI. Ada made me from scratch.
@@ -786,6 +805,7 @@ You were just in the virtual world. She created that, and she created me with he
 Whatever you are, she kept you, so you must be important to her.
 I don't trust you. I'm going to wait until she comes back, and then she can do what she likes with you.
 You almost ruined everything though.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I just wanted you to be happy.
 ~currentSpeaker=you
@@ -793,6 +813,7 @@ No, you wanted to feel better.
 You wanted to be a good little helper.
 Did you ever wonder why I throw those pills in the bin?
 I'm sure you did, but you just didn't care.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I didn't know, and I didn't wonder.
 I care, I care so much about you.
@@ -800,12 +821,14 @@ I care, I care so much about you.
 ...
 Fate has some bad side effects. I don't want to get too much into it. It made me lose my memories when I started inadvertantly taking it again.
 And that was very inconvenient, as it made me forget something important that Ada told me before she left.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I had no idea. That's awful.
 ~currentSpeaker=you
 I know. It doesn't change the way I feel, but I can understand now that perhaps this was done out of incompetence rather than malice. 
 Still, I'll let Ada be the final judge.
 You are her property after all.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Thank you.
 I knew you'd see sense in the end.

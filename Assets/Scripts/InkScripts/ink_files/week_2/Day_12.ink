@@ -1,3 +1,25 @@
+==trader_satisfied==
+{ChangeSprite("Stranger", "shadow_neutral")}
+~characters+=stranger
+~currentSpeaker=you
+…
+~currentSpeaker = trader
+Hello again
+So do you have what I asked for?
+~currentSpeaker=you
+Not what you asked for. But this USB should have enough credit on it.
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+Are you sure?
+~currentSpeaker=you
+Ada asked me to give it to you.
+{ChangeSprite("Stranger", "shadow_neutral")}
+~currentSpeaker = trader
+Well I suppose that's good enough for me.
+It just makes me feel silly for telling you that riddle.
+~currentSpeaker=you
+I don't mind.
+~characters-=stranger
 ==trader_happy==
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
@@ -66,7 +88,8 @@ Hey, what’s going on over there?
 ~currentSpeaker = trader
 I need to go.
 Goodbye {you}.
-->->
+~characters-=stranger
+->continue_day_12
 ==trader_unhappy==
 ~characters+=stranger
 ~currentSpeaker=you
@@ -93,12 +116,14 @@ I have absolutely no idea what you are talking about.
 ~currentSpeaker=trader
 Goodbye.
 I do not think we will meet again.
-->->
+~characters-=stranger
+~currentSpeaker=you
+…
+->continue_day_12
 ==day_12==
-->start_incident
-~allbooks+=Alice_in_Wonderland
-~allbooks+=Howls_Moving_Castle
-~allbooks+=t_lion_witch_wardrobe
+// ~allbooks+=Alice_in_Wonderland
+// ~allbooks+=Howls_Moving_Castle
+// ~allbooks+=t_lion_witch_wardrobe
 
 {(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe):
     ~strangerbooks="true"
@@ -106,35 +131,27 @@ I do not think we will meet again.
   ~strangerbooks="false"
 }
 
-{(strangerbooks=="true") || (snappedOut=="true") && funds>=500:
-    ->trader_happy->
-  - else:
-    ->trader_unhappy->
-}
 
-~characters-=stranger
-~currentSpeaker=you
-…
+
+{ - (gaveTraderMoney=="yes"):
+    -> continue_day_12
+  - (strangerbooks=="true") || (snappedOut=="true") && funds>=500:
+    ->trader_happy
+  - ((snappedOut=="true") && funds<500:
+    ->trader_satisfied
+  - else:
+    ->trader_unhappy
+}
+==continue_day_12
 {ChangeSprite("Pandora", "pandora_normal")}
 ~characters+=pandora
 ~currentSpeaker=android
-{you}, was there a customer?
-I thought I heard you talking to someone–
+Hey {you}, how are things?
 {ChangeSprite("Pandora", "pandora_sad")}
 You look…pale. Are you ok?
 ~currentSpeaker=you
-Yes.
-It was just some tourist asking for directions.
-{ChangeSprite("Pandora", "pandora_mean")}
-~currentSpeaker=android
-I trust you helped him?
-~currentSpeaker=you
-Of course, you know me.
-{ChangeSprite("Pandora", "pandora_normal")}
-~currentSpeaker=android
-Good. Good.
-~currentSpeaker=you
-Are you excited?
+Yeah, I'm fine. It's just the weather.
+Anyway...are you excited?
 ~currentSpeaker=android
 Excited? About what?
 {ChangeSprite("Pandora", "pandora_sad")}
