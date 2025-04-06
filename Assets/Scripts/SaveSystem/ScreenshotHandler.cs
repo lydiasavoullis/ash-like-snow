@@ -35,11 +35,11 @@ public class ScreenshotHandler : MonoBehaviour
         takeScreenshotOnNextFrame = true;
     }
     public static IEnumerator TakeScreenshot_Static(GameObject saveMenu, string name) {
-        saveMenu.SetActive(false);
+        //saveMenu.SetActive(false);
         string filepath = Application.persistentDataPath + "/saves/" + $"/{name}.png";
         ScreenCapture.CaptureScreenshot(filepath, 1);
         yield return new WaitForEndOfFrame();
         //instance.TakeScreenshot(width, height, name);
-        saveMenu.SetActive(true);
+        //saveMenu.SetActive(true);
     }
 }

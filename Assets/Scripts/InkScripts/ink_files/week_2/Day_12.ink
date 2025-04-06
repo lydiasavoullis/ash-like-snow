@@ -133,14 +133,16 @@ I do not think we will meet again.
 
 
 
-{ - (gaveTraderMoney=="yes"):
-    -> continue_day_12
-  - (strangerbooks=="true") || (snappedOut=="true") && funds>=500:
-    ->trader_happy
-  - ((snappedOut=="true") && funds<500:
-    ->trader_satisfied
-  - else:
-    ->trader_unhappy
+{ 
+
+- (gaveTraderMoney=="yes"):
+-> continue_day_12
+- ((strangerbooks=="true") || (snappedOut=="true") && funds>=500):
+->trader_happy
+- ((snappedOut=="true") && funds<500):
+->trader_satisfied
+- else:
+->trader_unhappy
 }
 ==continue_day_12
 {ChangeSprite("Pandora", "pandora_normal")}

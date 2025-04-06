@@ -206,7 +206,7 @@ Hilarious even.
 Ok, let's hoist you up.
 ~currentSpeaker = you
 ...
-~currentSpeaker
+~currentSpeaker= ""
 Kent hoists you up and you grab the ledge and pull yourself into the vent.
 You're not claustrophobic, but you have a sudden primal urge to be out of the tunnel.
 ~currentSpeaker = android
@@ -219,7 +219,7 @@ You need to move further inside. The cables will be right at the end.
 I'm moving.
 ~currentSpeaker = android
 I can still see your feet.
-~currentSpeaker
+~currentSpeaker= ""
 You shuffle your body further inside.
 It's like squeezing head first into a sleeping bag.
 You purge this thought from your mind.
@@ -239,7 +239,7 @@ Phew!
 Whoopee!
 ~currentSpeaker = webdev
 That's great {you}, how are you holding up?
-~currentSpeaker
+~currentSpeaker = ""
 ...
 Why aren't you moving?
 You think to yourself. You should go back. But your body is stiff. 
@@ -247,7 +247,7 @@ Your breathing is unsettled.
 This hasn't happened for a long time. 
 ~currentSpeaker = android
 {you} what's wrong?
-~currentSpeaker
+~currentSpeaker= ""
 You need to breath, but you can't.
 You can hear the blood pounding in your head.
 Your sight starts to blur.
@@ -277,7 +277,7 @@ You're useless without. You can't even carry out simple tasks without being drug
 Everything triggers you into a state of panic.
 ~currentSpeaker = android
 I'm here. Listen to me.
-~currentSpeaker
+~currentSpeaker= ""
 Listen to her? What can she do.
 She couldn't save her last patient. What makes you think she can do anything for you?
 ~currentSpeaker = android
@@ -362,7 +362,7 @@ I guess the rush of adrenaline is over.
 I'll make your bed.
 ->Epilogue
 =others_save_you
-~currentSpeaker
+~currentSpeaker= ""
 She might be right.
 But what can you do?
 You're useless without. You can't even carry out simple tasks without being drugged.

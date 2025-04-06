@@ -3,7 +3,7 @@ EXTERNAL ChangeSprite(name,sprite)
 EXTERNAL RemoveCharacter(name)
 EXTERNAL AddCharacter(name,sprite)
 EXTERNAL PlayAnimation(name, animation)
-
+EXTERNAL SaveStory()
 ==test_scene==
 ~scene= "GenericScene"
 ~currentSpeaker = trader 

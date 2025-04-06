@@ -1,5 +1,15 @@
 ==day_2==
 ~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
+~currentSpeaker = you 
+- Glad that's done now.
 {deliveryToday>0 : ->delivery_1->}
 ~currentSpeaker = you 
 No delivery today

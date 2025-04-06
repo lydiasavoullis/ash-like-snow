@@ -250,6 +250,7 @@ MonoBehaviour:
   optionsMenu: {fileID: 0}
   quitMenu: {fileID: 0}
   sceneLoader: {fileID: 0}
+  textLog: {fileID: 0}
   persistantObject: {fileID: 0}
   inkJSON: {fileID: 4900000, guid: b8760caa2cafb07429b5592bf33889f3, type: 3}
   audioManager: {fileID: 0}

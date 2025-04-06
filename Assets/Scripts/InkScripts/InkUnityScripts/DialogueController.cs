@@ -102,6 +102,7 @@ public class DialogueController : MonoBehaviour
             GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
             GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
             GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
+            GameVars.story.BindExternalFunction("SaveStory", () => this.SaveStoryFromInk());
             //GameVars.story.BindExternalFunction("GoToGameScene", (string gameScene, string currentScene) => GoToGameScene(gameScene, currentScene));
         }
         catch (Exception e)
@@ -153,6 +154,7 @@ public class DialogueController : MonoBehaviour
             GameVars.story.UnbindExternalFunction("ChangeSprite");
             GameVars.story.UnbindExternalFunction("RemoveCharacter");
             GameVars.story.UnbindExternalFunction("PlayAnimation");
+            GameVars.story.UnbindExternalFunction("SaveStory");
         }
         catch (Exception e) { }
         
@@ -161,6 +163,7 @@ public class DialogueController : MonoBehaviour
         GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
         GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
         GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
+        GameVars.story.BindExternalFunction("SaveStory", () => this.SaveStoryFromInk());
 
         characterControl.RefreshCharacters((InkList)GameVars.story.variablesState["characters"], stage, characterBox);
         uIControl.SetDialogueBoxActive((string)GameVars.story.variablesState["textBoxIsActive"], backgroundDialogueBox);
@@ -482,7 +485,10 @@ public class DialogueController : MonoBehaviour
         saveControl.CreateSaveSlot(filename, saveSlot, scrollList, inkJSON, optionsMenu);//create save slot to load file
     }
 
-
+    public void SaveStoryFromInk() {
+        SaveStory();
+        saveMenu.SetActive(false);
+    }
     #endregion
 
 
