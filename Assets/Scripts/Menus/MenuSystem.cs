@@ -16,16 +16,34 @@ public class MenuSystem : MonoBehaviour
     public GameObject quitMenu;
     public GameObject sceneLoader;
     public GameObject textLog;
-    public GameObject persistantObject;
     public TextAsset inkJSON;
     public SaveController saveController;
     public GameObject audioManager;
+    public Button continueGameButton;
 
     void Start()
     {
+        
         saveController = new SaveController();
         saveController.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
+        if (SceneManager.GetActiveScene().name == "MainMenuAlt") {
+            SetupContinueGameButton();
+        }
+        
+    }
+    public void SetupContinueGameButton() {
+        string savesExist = saveController.SavesExist();
+        if (savesExist == "false")
+        {
+            return;
+        }
+        else {
+            continueGameButton.gameObject.SetActive(true);
+            continueGameButton.onClick.AddListener(delegate {
+                saveController.LoadStory(savesExist, inkJSON, optionsMenu);
 
+            });
+        }
     }
     public void ResetGameVars() {
         GameVars.ResetStaticVariables(inkJSON);

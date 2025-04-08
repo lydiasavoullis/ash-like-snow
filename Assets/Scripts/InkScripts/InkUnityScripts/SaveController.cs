@@ -14,6 +14,7 @@ public class SaveController
     //MonoBehaviour monobehaviour;
     //GameObject optionsMenu;
     //public TextAsset inkJSON;
+    List<string> filenames;
     public SaveController()//Button saveSlot, GameObject scrollList, GameObject optionsMenu, TextAsset inkJSON
     {
         //this.saveSlot = saveSlot;
@@ -25,6 +26,17 @@ public class SaveController
     /// Populate a list with save slot buttons
     /// *loads existing files*
     /// </summary>
+
+    public string SavesExist() {
+        if (filenames.Count == 0)
+        {
+            return "false";
+        }
+        else {
+            return filenames.Last();
+        }
+        
+    }
     public void PopulateScrollList(Button saveSlot, GameObject scrollList, TextAsset inkJSON, GameObject optionsMenu)
     {
         string folderpath = Application.persistentDataPath + "/" + "saves";
@@ -33,12 +45,14 @@ public class SaveController
             Directory.CreateDirectory(folderpath);
         }
         var sortedFiles = new DirectoryInfo(folderpath).GetFiles().OrderBy(f => f.LastWriteTime).ToList();
-
+        filenames = new List<string>();
         foreach (FileInfo file in sortedFiles)
         {
             if (file.Extension.Contains(".story"))
             {
+                
                 string filename = file.Name.Replace(folderpath, "").Replace(@"\", "").Replace(".story", "");//just get filename
+                filenames.Add(filename);
                 CreateSaveSlot(filename, saveSlot, scrollList, inkJSON, optionsMenu);
             }
 
