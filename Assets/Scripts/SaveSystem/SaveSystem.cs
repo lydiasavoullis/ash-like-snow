@@ -38,7 +38,7 @@ public class SaveSystem
             return data;
         }
         else {
-            Debug.LogError("Save file not found");
+            Debug.Log("Save file not found");
             return null;
         }
     }

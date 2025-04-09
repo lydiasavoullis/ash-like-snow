@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,6 +21,7 @@ public class MenuSystem : MonoBehaviour
     public SaveController saveController;
     public GameObject audioManager;
     public Button continueGameButton;
+    public TextMeshProUGUI errorMessage;
 
     void Start()
     {
@@ -40,7 +42,14 @@ public class MenuSystem : MonoBehaviour
         else {
             continueGameButton.gameObject.SetActive(true);
             continueGameButton.onClick.AddListener(delegate {
-                saveController.LoadStory(savesExist, inkJSON, optionsMenu);
+                try {
+                    saveController.LoadStory(savesExist, inkJSON, optionsMenu);
+                }
+                catch (Exception e) {
+                    errorMessage.gameObject.SetActive(true);
+                    errorMessage.text = "Couldn't Load Save!";
+                }
+                
 
             });
         }

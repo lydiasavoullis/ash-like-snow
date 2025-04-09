@@ -91,6 +91,7 @@ public class SaveController
         Debug.Log(GameVars.story.variablesState["characters"].ToString());
 
     }
+
     public string GenerateFileName()
     {
         string format = "yyyy-MM-dd HH,mm,ss";
