@@ -209,7 +209,7 @@ Little bo peep is thirty two.
 Call me that again and I’ll rip out your eyeballs.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
-Ok. Chill. 
+Ok. Chill dude. 
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
 Who are you? Calamity personnel?
@@ -466,9 +466,17 @@ OK let’s do the orders for today.
 ==end_day_2==
 ->go_to_day_3
 ==go_to_day_3==
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you out for the day.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)]
+I can do it myself
 ~currentSpeaker = you 
 See you tomorrow, bye!
-+[Go home]
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

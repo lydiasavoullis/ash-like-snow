@@ -25,36 +25,46 @@ public class AudioController
         }
 
     }
+    //is it possible to stop song completely or switch song
     public void PlayMusic(string songName, GameObject audioManager)
     {
-        if (songName == "" || songName == null)
+        if (songName == "" || songName == null)//stop the music that is playing
+        {
+            audioManager.GetComponent<AudioManager>().Stop(GameVars.musicPlaying);
+            GameVars.musicPlaying = "";
+            return;
+        }
+        else if (audioManager.GetComponent<AudioManager>().GetSongsThatArePlaying().Contains(GameVars.story.variablesState["music"].ToString())) //if you trigger this track to play, but it is already playing
         {
             return;
         }
-        if (GameVars.story.variablesState["music"].ToString() != "none")
+        else if (!audioManager.GetComponent<AudioManager>().GetSongsThatArePlaying().Contains(GameVars.story.variablesState["music"].ToString()) && GameVars.musicPlaying == GameVars.story.variablesState["music"].ToString()) //if it is NOT playing but SHOULD be playing(loaded in from save)
+        {
+            audioManager.GetComponent<AudioManager>().Play(GameVars.story.variablesState["music"].ToString());
+            return;
+        }
+        else if (GameVars.story.variablesState["music"].ToString() != "" && GameVars.musicPlaying != "")//if this new song should be playing, but a previous song was already playing
         {
             audioManager.GetComponent<AudioManager>().Stop(GameVars.musicPlaying);
             audioManager.GetComponent<AudioManager>().Play(GameVars.story.variablesState["music"].ToString());
             GameVars.musicPlaying = GameVars.story.variablesState["music"].ToString();
+            return;
+        }
+        else if (!audioManager.GetComponent<AudioManager>().GetSongsThatArePlaying().Contains(GameVars.story.variablesState["music"].ToString())) //play a song after no song is playing
+        {
+            audioManager.GetComponent<AudioManager>().Play(GameVars.story.variablesState["music"].ToString());
+            GameVars.musicPlaying = GameVars.story.variablesState["music"].ToString();
+            return;
         }
         else {
-            audioManager.GetComponent<AudioManager>().Stop(GameVars.musicPlaying);
-            GameVars.musicPlaying = "none";
+            return;
         }
         
-
-        //if (songName=="none")//
-        //{
-        //    audioManager.GetComponent<AudioManager>().Stop(GameVars.musicPlaying);
-        //    GameVars.musicPlaying = "none";
+        
+        
+        //else if (GameVars.story.variablesState["music"].ToString() == GameVars.musicPlaying) {
         //    return;
         //}
-
-        //if (GameVars.story.variablesState["music"].ToString()!=GameVars.musicPlaying) {
-        //    audioManager.GetComponent<AudioManager>().Stop(GameVars.musicPlaying);
-        //    GameVars.musicPlaying = GameVars.story.variablesState["music"].ToString();
-        //}
-        //audioManager.GetComponent<AudioManager>().Play(GameVars.story.variablesState["music"].ToString());
 
     }
 }

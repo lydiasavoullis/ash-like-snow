@@ -1,6 +1,13 @@
 ==day_4==
-
-~characters += pandora
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker = android
  Hey Cas!
 ->tea_or_coffee->day_4_cont
@@ -411,9 +418,17 @@ Why are you shouting at me?
 ==end_day_4==
 ->go_to_day_5
 ==go_to_day_5==
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you out for the day.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker = you 
 See you tomorrow, bye!
-+[Go home]
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

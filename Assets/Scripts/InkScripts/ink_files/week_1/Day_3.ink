@@ -1,5 +1,13 @@
 ==day_3==
-~characters += pandora
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker = you
  Hey Pandora
 ~currentSpeaker = android
@@ -380,9 +388,17 @@ I appreciate you trying to protect the confidentiality of your clients' personal
 ==end_day_3==
 ->go_to_day_4
 ==go_to_day_4==
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you out for the day.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker = you 
 See you tomorrow, bye!
-+[Go home]
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

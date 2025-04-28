@@ -1,4 +1,12 @@
 ==day_14==
+~currentSpeaker = ""
+You open the notebook {android} gave you.
+*[Yes (save)]
+{SaveStory()}
+You write something down.
+*[No (don't save)] 
+You close the book.
+
 ~currentSpeaker = you
 Guys, I know you hate me.
 And you have good reason to. 
@@ -360,7 +368,7 @@ I feel sleepy.
 ~currentSpeaker = android
 I guess the rush of adrenaline is over.
 I'll make your bed.
-->Epilogue
+->end_day_14
 =others_save_you
 ~currentSpeaker= ""
 She might be right.
@@ -504,7 +512,7 @@ You always let us stay at the shop, even when we don't buy anything. And you thr
 ~currentSpeaker = android
 I do???
 ~currentSpeaker = comic
-You're a total socialite.
+You're a social butterfly.
 ~currentSpeaker = android
 You're just flattering me.
 ~currentSpeaker = comic
@@ -553,4 +561,14 @@ Yeah, I think the last two days took a lot out of her.
 I just wish I could have done more.
 ~currentSpeaker = comic
 You did what you could.
+->end_day_14
+==end_day_14==
+~currentSpeaker = ""
+You open the notebook {android} gave you.
+*[Yes (save)]
+{SaveStory()}
+You write something down.
+*[No (don't save)] 
+You close the book.
+
 ->Epilogue

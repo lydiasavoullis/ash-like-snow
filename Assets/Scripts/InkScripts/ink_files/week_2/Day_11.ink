@@ -1,5 +1,13 @@
 ==day_11==
 ~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Morning! One more day.
@@ -681,6 +689,15 @@ I promise.
 ->end_of_day_11
 
 ==end_of_day_11==
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you out for the day.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~scene = "Night"
 ¬
 ~music = "night theme"

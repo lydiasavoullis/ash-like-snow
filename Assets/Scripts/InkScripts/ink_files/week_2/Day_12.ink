@@ -147,6 +147,14 @@ I do not think we will meet again.
 ==continue_day_12
 {ChangeSprite("Pandora", "pandora_normal")}
 ~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker=android
 Hey {you}, how are things?
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -749,9 +757,24 @@ I can’t believe we’re getting herded to bed.
 I’ll have trouble sleeping without my white noise machine and humidifier and weighted blanket and–
 ~currentSpeaker=you
 Please, for the love of god shut up.
-~characters-=pandora
 ~characters-=lavender
 ~characters-=kent
 ~characters-=tali
+~characters+=pandora
+~currentSpeaker = android 
+Here you go.
+~currentSpeaker = you 
+What is this for?
+~currentSpeaker = android 
+I made a list of everything we have down here.
+Do you want to add anything?
+*[Yes (save)]
+{SaveStory()}
+Sure I can add some things.
+*[No (don't save)] 
+Not really.
+~currentSpeaker = android 
+Keep it. It might come in handy.
+~characters-=pandora
 ~day+=1
 ->day_13

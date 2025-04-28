@@ -1,10 +1,16 @@
 ==day_8==
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
-~characters +=pandora
-Morning
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker= you
-Morning
 On our second week without Ada already
 I knew we could do it
 {ChangeSprite("Pandora", "pandora_happy")}
@@ -528,7 +534,15 @@ Shall we do inventory?
 ->end_day_8
 
 ==end_day_8==
-*[Go home]
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you out for the day.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~scene = "Night"
 ¬
 ~music = "night theme"

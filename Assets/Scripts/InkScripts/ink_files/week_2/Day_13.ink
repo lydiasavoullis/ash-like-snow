@@ -1,4 +1,11 @@
 ==day_13==
+~currentSpeaker = ""
+You open the notebook {android} gave you.
+*[Yes (save)]
+{SaveStory()}
+You write something down.
+*[No (don't save)] 
+You close the book.
 ~scene = "Basement"
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -838,20 +845,20 @@ I knew you'd see sense in the end.
 Ok ok.
 So I suppose I have to ask you then.
 Why have you been drugging me?
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 What?
 ~currentSpeaker=you
 Don’t lie to me. Please. 
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Why weren’t you taking your medication?
-~currentSpeaker=you
-That is absolutely none of your business.
-~currentSpeaker=android
 It’s meant to help you. You should take it if it was prescribed by your doctor.
 ~currentSpeaker=you
 You're being naive.
 It’s a convenient synthetic drug that was made to ‘cure’ most mental illnesses. 
 Except it doesn't.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 What do you mean by that?
 ~currentSpeaker=you
@@ -862,10 +869,12 @@ No anxiety, no guilt, no doubts.
 That sounds like a good thing.
 ~currentSpeaker=you
 It does, in theory. The only thing is, people kind of need those things.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Why? They're not exactly good things.
 ~currentSpeaker=you
 Not in large amounts. But they stem from our innate empathy. Fate doesn't remove the problem at the root, it just removes your empathy. It numbs your ability to feel things.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 That sounds...less good.
 ~currentSpeaker=you
@@ -874,11 +883,14 @@ This usually clears up after you settle down to it.
 But I hadn't been taking it for a couple of months.
 When you started slipping it into my drink, it caused me to forget some important things Ada told me before she left.
 ~currentSpeaker=android
+{ChangeSprite("Pandora", "pandora_shocked")}
 I'm so sorry, I was completely unaware.
+{ChangeSprite("Pandora", "pandora_sad")}
 I realise what I did was completely unprofessional.
 ~currentSpeaker=you
 Um…yes, incredibly unprofessional.
 Even if it didn't have negative effects, you shouldn’t have snuck anything into my drink.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I can explain myself if you want to listen. 
 I imagine you might not want to. 
@@ -886,6 +898,7 @@ I realise now it was a mistake, I know that my reasons probably won’t change y
 I understand what I did was unforgivable. But all the same…I would like you to hear me out. 
 ~currentSpeaker=you
 Ok, go ahead.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I was created for one purpose. That purpose was not therapy exactly, but more specific. That purpose was a suicide watch.
 ~currentSpeaker=you
@@ -895,11 +908,13 @@ He suffered a great loss and was in and out of these deep, dark depressive episo
 Ada, and her husband, made me for him. I was an experiment between the two of them. She programmed me, and he constructed the robotics.
 ~currentSpeaker=you
 That doesn't sound very legal.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 No, my existence is actually illegal. 
 With my level of sentience, the government should have full monitoring of my consciousness. But Ada wouldn’t allow that.
 ~currentSpeaker=you
 Probably a good idea.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Anyway, I was made for a man who was very mentally ill. And when I was given to him, he treated me like a daughter. 
 He'd lost his own daughter, so I was something like a replacement.
@@ -908,34 +923,42 @@ He was always so cheerful. I started off my life happy and loved.
 ...
 ~currentSpeaker=android
 …
+{ChangeSprite("Pandora", "pandora_sad")}
 I thought he was getting better. He hid a lot of the signs from me. I believed him, like an idiot.
 I was the one who found him.
 ~currentSpeaker=you
 …
-{android}
+{android}.
 ~currentSpeaker=android
-I thought. I thought. I thought. 
+I thought. I thought. I thought.
+{ChangeSprite("Pandora", "pandora_pensive")}
 Always, I wonder if I had done something differently, perhaps there would be a different outcome.
 ~currentSpeaker=you
 It wasn’t your fault.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I was built for a specific purpose. In the end I failed. I let the one person who loved me die.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=you
 Like you said, you were like his daughter. You didn’t have any experience. 
 I suspect they programmed you with different expectations in mind.
 They didn’t realise your owner would treat you like his own child.
 And that produced a different outcome in your behaviour.
 You only became what he wanted you to become.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 They never say it, but I know they blame me.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=you
 They made you.
 If there’s anyone they blame it’s themselves.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 But if they made me, and it’s all their fault, because I’m only a result of their programming.
 Then what does that make me?
 If I'm just a result of my programming, then I'm not real intelligence?
 I'd just be a puppet.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=you
 I don’t know.
 I can’t answer all these questions.
@@ -949,13 +972,15 @@ I think that makes you intelligent enough.
 ~currentSpeaker=android
 …
 I don’t know either.
+{ChangeSprite("Pandora", "pandora_mean")}
 Are you going to tell me what your deal is?
 ~currentSpeaker=you
 Yes.
 But…when I say what I have to say, I want everyone else to be there too.
-~characters-=pandora
 ~currentSpeaker=android
 Eh? Ok I guess. I'll get everyone.
+~characters-=pandora
+¬
 ~characters+=kent
 ~characters+=pandora
 ~currentSpeaker=comic
@@ -983,7 +1008,7 @@ Now you mention it, I have a faint headache. And my vision has been kind of blur
 ~currentSpeaker=webdev
 I sort of had that too…
 ~currentSpeaker=android
-It must be an aftereffect from being in a hypnotic state in the virtual world.
+It must be an after effect from being in a hypnotic state in the virtual world.
 ~currentSpeaker=you
 Yeah…I’ve got that a bit too.
 ~currentSpeaker=comic
@@ -1250,5 +1275,13 @@ I think I would like that a lot.
 ->day_13_end
 
 =day_13_end
+~currentSpeaker = ""
+You open the notebook {android} gave you.
+*[Yes (save)]
+{SaveStory()}
+You write something down.
+*[No (don't save)] 
+You close the book.
+
 ~day+=1
 ->day_14

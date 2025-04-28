@@ -1,8 +1,15 @@
 ==day_5==
 ~allbooks+=hypnos_55
-~characters += pandora
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~currentSpeaker = you
-
  Hey Pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
@@ -473,8 +480,16 @@ No, of course not.
 ->go_to_day_6
 ==go_to_day_6==
 ~currentSpeaker = you 
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you out for the day.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 See you tomorrow, bye!
-*[Go home]
 ~scene = "Night"
 ¬
 ~music = "night theme"

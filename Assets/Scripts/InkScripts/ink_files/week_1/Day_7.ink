@@ -13,6 +13,18 @@
 {pandoraPoints==0: ->day_7_alt}
 
 ~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+~currentSpeaker = you 
+Eh? I'm not working.
+~currentSpeaker = android 
+Doesn't matter. It's the rules, I have to keep track of any employees who enter or leave the premises.
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = you
 Hey Pan.
@@ -153,9 +165,23 @@ If I was human, I would be free.
 {ChangeSprite("Pandora", "pandora_normal")}
  For a little bit longer please.
  Just listen to this song.
+ ~currentSpeaker = ""
+ ...
+ ...
+ ...
 ->end_day_7
 ==end_day_7==
-*[Go home]
+~characters+=pandora
+~currentSpeaker = you 
+I have to go now.
+~currentSpeaker = android 
+Want me to sign you out?
+~currentSpeaker = you 
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself
 ~scene = "Night"
 ¬
 ~music = "night theme"

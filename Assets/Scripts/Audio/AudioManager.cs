@@ -27,6 +27,17 @@ public class AudioManager : MonoBehaviour
             s.source.outputAudioMixerGroup = s.group;
         }
     }
+    public List<string> GetSongsThatArePlaying()
+    {
+        List<string> songsPlaying = new List<string>();
+        for (int i=0;i<sounds.Length;i++) {
+            if (sounds[i].source.isPlaying) {
+                songsPlaying.Add(sounds[i].source.name);
+            }
+        }
+        return songsPlaying;
+
+    }
     public void Play(string name)
     {
         //Debug.Log(name);
