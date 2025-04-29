@@ -166,8 +166,8 @@ public class DialogueController : MonoBehaviour
         GameVars.story.BindExternalFunction("SaveStory", () => this.SaveStoryFromInk());
 
         characterControl.RefreshCharacters((InkList)GameVars.story.variablesState["characters"], stage, characterBox);
-        uIControl.SetDialogueBoxActive((string)GameVars.story.variablesState["textBoxIsActive"], backgroundDialogueBox);
-        uIControl.SetNameTag((string)GameVars.story.variablesState["currentSpeaker"], nameTag);
+        uIControl.SetDialogueBoxActive(GameVars.story.variablesState["textBoxIsActive"].ToString(), backgroundDialogueBox);
+        uIControl.SetNameTag(GameVars.story.variablesState["currentSpeaker"].ToString(), nameTag);
         textLogControl.LoadTextLogContent(textLogList, textLogBox);//load text log
 
     }

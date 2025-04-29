@@ -11,7 +11,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker= you
-On our second week without Ada already
+-On our second week without Ada already
 I knew we could do it
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
@@ -543,6 +543,7 @@ I'll sign you out for the day.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+-Goodnight!
 ~scene = "Night"
 ¬
 ~music = "night theme"

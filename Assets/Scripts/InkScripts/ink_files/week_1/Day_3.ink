@@ -9,7 +9,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = you
- Hey Pandora
+-Hey Pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
 {PlayAnimation("Pandora", "jump")}
@@ -398,7 +398,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = you 
-See you tomorrow, bye!
+-See you tomorrow, bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

@@ -9,7 +9,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = android
- Hey Cas!
+-Hey Cas!
 ->tea_or_coffee->day_4_cont
 ==day_4_cont==
 {ChangeSprite("Pandora", "pandora_happy")}
@@ -428,7 +428,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = you 
-See you tomorrow, bye!
+-See you tomorrow, bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

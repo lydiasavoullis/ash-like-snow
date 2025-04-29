@@ -937,7 +937,7 @@ I didn't mean to.
 You didn't mean to what?
 Tell me what happened now.
 ~currentSpeaker=android
-{ChangeSprite("Pandora", "pandora_shocked")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 Or you'll do what?
 ~currentSpeaker=lovelace
 Where did such insolence come from!?

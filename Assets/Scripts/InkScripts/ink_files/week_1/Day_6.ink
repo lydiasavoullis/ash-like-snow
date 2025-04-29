@@ -11,7 +11,7 @@ I can do it myself
 
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
- Hey Cas
+-Hey Cas
 ->tea_or_coffee->day_6_cont
 ==day_6_cont==
 ~currentSpeaker = android
@@ -597,6 +597,7 @@ I'll sign you out for the day.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+-Goodnight!
 ~scene = "Night"
 ¬
 ~music = "night theme"

@@ -10,7 +10,7 @@ Thanks {android}!
 I can do it myself
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
-Morning! One more day.
+-Morning! One more day.
 Until my Christmas Eve extravaganza!
 ~currentSpeaker=you
 You make it sound very fancy.
@@ -698,6 +698,7 @@ I'll sign you out for the day.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+-Goodnight!
 ~scene = "Night"
 ¬
 ~music = "night theme"

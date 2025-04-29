@@ -510,13 +510,14 @@ Let’s do the stock now
 ==end_day1==
 ~characters+=pandora
 ~currentSpeaker = android 
-I'll sign you in.
+I'll sign you out.
 ~currentSpeaker = you 
 *[Yes (save)]
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+-Bye, see you tomorrow!
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

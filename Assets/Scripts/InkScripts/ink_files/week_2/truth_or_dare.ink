@@ -2,18 +2,18 @@ LIST TDNames = (P), (K), (T), (L), (C)
 VAR name = C
 ==start_truth_or_dare==
 Who are you going to chose?
-*[P]
-Pandora gets questioned by Cas
-->pandora_questions
-*[K]
-Kent gets questioned by Cas
-->kent_questions
-*[T]
-Tali gets questioned by Cas
-->tali_questions
-*[L]
-Lavender gets questioned by Cas
-->lavender_questions
+*[Pandora]
+//Pandora gets questioned by Cas
+->c_questions_p
+*[Kent]
+//Kent gets questioned by Cas
+->c_questions_k
+*[Tali]
+//Tali gets questioned by Cas
+->c_questions_t
+*[Lavender]
+//Lavender gets questioned by Cas
+->c_questions_l
 
 ==kent_questions==
 ~TDNames-=K

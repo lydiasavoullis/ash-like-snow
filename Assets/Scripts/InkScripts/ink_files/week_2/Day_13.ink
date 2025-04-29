@@ -6,6 +6,7 @@ You open the notebook {android} gave you.
 You write something down.
 *[No (don't save)] 
 You close the book.
+-...
 ~scene = "Basement"
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}

@@ -10,7 +10,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = you
- Hey Pandora
+-Hey Pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
 {PlayAnimation("Pandora", "sway")}
@@ -489,7 +489,7 @@ I'll sign you out for the day.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
-See you tomorrow, bye!
+-See you tomorrow, bye!
 ~scene = "Night"
 ¬
 ~music = "night theme"

@@ -476,7 +476,7 @@ Thanks {android}!
 *[No (don't save)]
 I can do it myself
 ~currentSpeaker = you 
-See you tomorrow, bye!
+-See you tomorrow, bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

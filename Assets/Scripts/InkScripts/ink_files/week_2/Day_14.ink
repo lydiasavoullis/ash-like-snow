@@ -6,9 +6,8 @@ You open the notebook {android} gave you.
 You write something down.
 *[No (don't save)] 
 You close the book.
-
 ~currentSpeaker = you
-Guys, I know you hate me.
+- Guys, I know you hate me.
 And you have good reason to. 
 But we all need to wake up.
 There's this beeping noise, and I don't think it's good news.
@@ -568,7 +567,7 @@ You open the notebook {android} gave you.
 *[Yes (save)]
 {SaveStory()}
 You write something down.
+->Epilogue
 *[No (don't save)] 
 You close the book.
-
 ->Epilogue

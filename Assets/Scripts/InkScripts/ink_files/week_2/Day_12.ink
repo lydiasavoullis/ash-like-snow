@@ -156,7 +156,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker=android
-Hey {you}, how are things?
+-Hey {you}, how are things?
 {ChangeSprite("Pandora", "pandora_sad")}
 You look…pale. Are you ok?
 ~currentSpeaker=you
@@ -176,7 +176,7 @@ It's just a Cobalt Dragons lyric.
 Of course I know what you’re talking about. I’m ecstatic. 
 ~currentSpeaker=you
 You don’t sound it.
-{ChangeSprite("Pandora", "pandora_normal")}
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Maybe when I was charging last night there was a loose connection. I don’t know. 
 ~currentSpeaker=you
@@ -270,7 +270,7 @@ Do you know if {snob} and {webdev} will come?
 ~currentSpeaker=comic
 I’m not in contact with them really.
 I got {webdev}’s number in passing, we haven’t spoken much beyond a ‘hi’ here and there, and I shared an article I liked with her.
-{ChangeSprite("Pandora", "pandora_mean")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Ok, {comic}, I didn’t ask for your whole life story.
 {ChangeSprite("Kent", "kent_side_normal")}
@@ -774,7 +774,7 @@ Sure I can add some things.
 *[No (don't save)] 
 Not really.
 ~currentSpeaker = android 
-Keep it. It might come in handy.
+-Keep it. It might come in handy.
 ~characters-=pandora
 ~day+=1
 ->day_13
