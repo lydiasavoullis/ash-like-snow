@@ -978,60 +978,79 @@ Are you going to tell me what your deal is?
 ~currentSpeaker=you
 Yes.
 But…when I say what I have to say, I want everyone else to be there too.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 Eh? Ok I guess. I'll get everyone.
 ~characters-=pandora
 ¬
 ~characters+=kent
 ~characters+=pandora
+{ChangeSprite("Pandora", "pandora_normal")}
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I need a break.
+{ChangeSprite("Kent", "kent_sad")}
 Hey, what’s going on here…did something bad happen?
 ~currentSpeaker=you
 No, just get the others.
 We need to talk.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 That doesn’t sound good.
 ~currentSpeaker=you
 It’s…I will explain everything.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 GUYS. Get over here.
 ~characters+=lavender
 ~characters+=tali
+{ChangeSprite("Lavender", "lavender_normal")}
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 There’s no need to shout.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 My eardrums hurt.
 ~currentSpeaker=you
 Is everyone feeling alright?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Now you mention it, I have a faint headache. And my vision has been kind of blurry.
+{ChangeSprite("Tali", " tali_exasperated")}
 ~currentSpeaker=webdev
 I sort of had that too…
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 It must be an after effect from being in a hypnotic state in the virtual world.
 ~currentSpeaker=you
 Yeah…I’ve got that a bit too.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 I’ve been dizzy, but I just assumed it was from the stress. What do you mean by hypnotic state? Virtual world? 
 ~currentSpeaker=you
 {android} I think it’s best you explain this part.
 ~currentSpeaker=android
 “Pandora explains the virtual world”
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Wait a minute...I got a present and I just forgot about it.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
 That’s insane! Why didn’t you tell us?
+{ChangeSprite("Tali", "tali_serious")}
 And why are you the only ones that remember?
 ~currentSpeaker=you
 We were sort of ‘conscious’ in the world.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 How does that work?
 ~currentSpeaker=you
 We're not too sure.
 We didn’t just remember. I was controlling some of it. I mean that I could control your behaviour and actions. I stopped as soon as I was made aware of what I was doing.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 That’s a bit scary, but it kind of makes sense.
+{ChangeSprite("Kent", "kent_side_normal")}
 I won’t touch that computer again.
 ~currentSpeaker=webdev
 That’s freaky. I’m sorry, how can you be so calm {comic}?
