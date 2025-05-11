@@ -1,4 +1,6 @@
 ==day_14==
+~pandoraPoints = 7
+~scene = "Basement"
 ~currentSpeaker = ""
 You open the notebook {android} gave you.
 *[Yes (save)]
@@ -6,47 +8,71 @@ You open the notebook {android} gave you.
 You write something down.
 *[No (don't save)] 
 You close the book.
-~currentSpeaker = you
-- Guys, I know you hate me.
+-~currentSpeaker = you
+I know you all hate me.
 And you have good reason to. 
 But we all need to wake up.
 There's this beeping noise, and I don't think it's good news.
+~characters+=lavender
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 What?
+{ChangeSprite("Lavender", "lavender_sad")}
 What's going on?
 What's that sound?
+{ChangeSprite("Lavender", "lavender_shocked")}
 IS IT A BOMB?!
 ~currentSpeaker = you
 I won't rule it out.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 We have to get out of here.
+~characters+=pandora
+{ChangeSprite("Lavender", "lavender_normal")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
 Everyone calm down.
 ~currentSpeaker = you
 Where have you been?
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
-I got very absorbed in some of the books you showed me last night.
+I got very absorbed in a book.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_angry")}
+How can you read at a time like this?
+{ChangeSprite("Lavender", "lavender_normal")}
 Ok, we have to get over our personal issues now.
+{ChangeSprite("Lavender", "lavender_shocked")}
 We might all die today!
+~characters+=kent
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 How is that different from yesterday?
 ~currentSpeaker = you
 Thank God, you're up.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
-I'm suffering from a chronic lack of sleep and coffee.
+I am up somehow.
+{ChangeSprite("Kent", "kent_sad")}
+But I'm suffering from a chronic lack of sleep and coffee.
 ~currentSpeaker = you
 Could we maybe get {webdev} up?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 I don't think it's worth it.
 I still need my fingers.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
 I don't know what that means, but I'm too scared to ask.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
 Let's just find out what the noise is now.
+{ChangeSprite("Pandora", "pandora_pensive")}
 Oh let's see.
+~characters-=pandora
 ~currentSpeaker = you
 Can I help?
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
 It's ok.
 ~currentSpeaker = comic
@@ -55,167 +81,235 @@ It's ok.
 ...
 ~currentSpeaker = you
 Did you guys sleep well?
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 Uh not really.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Hmph
 ~currentSpeaker = you
 Just going to ignore me then.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 I don't sleep so well when I'm in the same room as a murderer.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 She apologised.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Do you trust her?
 You know what Fate does to people.
 It turns them into savages.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 She doesn't look very savage to me.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
-She murdered a dog!
+She killed a dog with her bare hands!
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
 That was in the past.
-She knows what she did wrong.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
-She killed a dog. Just like that. For no good reason.
+She killed a dog. Just like that. Without even thinking. 
+You heard her.
 ~currentSpeaker = you
 I didn't want it to alert anyone that I was there.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Because you had already broken into someone's appartment.
 You're not only a murderer, you're a theif as well.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
-Ok, that's enough. {snob} your father literally starts wars in other countries. You don't have much of a leg to stand on.
+{snob} your father literally starts wars in other countries.
 ~currentSpeaker = android
 Guys
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 It's not the same as killing a cute innocent creature.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 Killing civilians is not as bad as killing a dog.
 ~currentSpeaker = android
 Guys.
+{ChangeSprite("Lavender", "lavender_thinking")}
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = snob
 I mean we don't even know the people in the other countries.
 For all we know they could be bad people.
+{ChangeSprite("Lavender", "lavender_angry")}
 Maybe it's better they're dead.
+{ChangeSprite("Lavender", "lavender_sad")}
 Safer for us.
+{ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker = comic
-I'm flabbergasted. 
-You know what. I don't fucking care about the dog. It sucks, it was an innocent creature. And it died painlessly.
+Wow!
+{ChangeSprite("Kent", "kent_upset")}
+You know what. I don't fucking care about the dog.
+At least it died quickly.
 As far as I'm concerned it was lucky.
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker = snob
 /*gasps*/
 How could you say that?
+~characters+=pandora
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
 Guys!
+{ChangeSprite("Pandora", "pandora_pensive")}
 You're all going to die if you don't pay attention to this right now.
+{ChangeSprite("Kent", "kent_sad")}
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = you
 Death doesn't sound too bad right now.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 You're going straight to hell.
 ~currentSpeaker = you
 You sure I'm not there already?
 ~currentSpeaker = android
 Wake up {webdev}
+~characters+=tali
+{ChangeSprite("Tali", "tali_serious")}
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = webdev
 I'm already awake.
+{ChangeSprite("Tali", "tali_exasperated")}
 I was just pretenting to sleep to avoid that painfully awkward conversation.
+{ChangeSprite("Tali", "tali_serious")}
 How are we going to die?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
 The air filter is broken.
+{ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker = webdev
 That's not too serious. Is it?
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
 It depends if you want to choke on whatever toxic chemicals are out there.
+{ChangeSprite("Tali", "tali_serious")}
+{ChangeSprite("Pandora", "pandora_pensive")}
 It's not good for your lungs and do you really want to get sick down here?
 ~currentSpeaker = you
 So it's a problem.
 How are we going to fix it?
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
 What about those masks?
+{ChangeSprite("Kent", "kent_normal")}
 I found a big box of them when I first came down here.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
+I checked them.
 They're faulty.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 What? How?
+{ChangeSprite("Pandora", "pandora_pensive")}
+~currentSpeaker = android
+There's a white band on them that shows how much pollution they can absorb. When I checked the band, it was black.
+{ChangeSprite("Pandora", "pandora_mean")}
+Meaning they're fully saturated.
+{ChangeSprite("Kent", "kent_sad")}
+~currentSpeaker = comic
+How is that even possible?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
 I. Don't. Know.
 Maybe they're some cheap ones Ada got off the black market.
+{ChangeSprite("Pandora", "pandora_sad")}
 She probably never anticipated that she would have to be down here.
-~currentSpeaker = you
-Well, she isn't down here. We're down here.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 I can't believe I relied on this person for my magazines.
 How irresponsible.
+{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = android
 I'm going to use my supply of electricity to keep the filters on for as long as I can.
 Someone needs to crawl into this vent and see what's going on.
 I think there's a wire that needs fixing.
 A loose connection maybe.
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
-A loose connection.
-Wires?
+A loose connection?
+{ChangeSprite("Tali", "tali_exasperated")}
 That's just shoddy work.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 I bet a rat chewed through the wire.
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker = snob
 Rats?!
 ~currentSpeaker = comic
 Oh boy here it comes...
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 I love rats!
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 Ok, I was not expecting that.
 ~currentSpeaker = snob
 I used to have them as pets.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
 Weird. You're weird.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker = webdev
 Shush!
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
 {you} you're going to need to go inside the vent and fix it.
 ~currentSpeaker = you
 Why me?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
 {comic} and {webdev} are too big. And I don't trust {snob}.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 I'm scared of small spaces.
+{ChangeSprite("Lavender", "lavender_angry")}
 But still offended.
+{ChangeSprite("Pandora", "pandora_normal")}
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = android
-Obviously, I need to stay here and stay connected to the wall panel. This cable is not going to stretch that far.
+I need to stay here and stay connected to the wall panel. This cable is not going to stretch that far.
 Also you're kind of good with tech, aren't you?
 ~currentSpeaker = you
-Software. Not hardware.
+Sort of...
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
 You're practical.
 You'll learn.
-~currentSpeaker = webdev
-This is the only time I've been glad to be called big.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
 Being big and strong I can help you into the vent {you}.
 ~currentSpeaker = you
 This is just my luck.
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob
 This is a way to atone for your sins.
 ~currentSpeaker = you
 I really hope rats don't eat me.
+{ChangeSprite("Lavender", "lavender_mean")}
 ~currentSpeaker = snob
 You could probably snap their necks if they tried.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
-Hehe.
+Ha!
 ~currentSpeaker = you
 Not. Funny.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
-It was a bit funny.
-~currentSpeaker = webdev
-It was quite funny.
-Hilarious even.
-~currentSpeaker = comic
+Sorry.
+{ChangeSprite("Kent", "kent_normal")}
 Ok, let's hoist you up.
 ~currentSpeaker = you
 ...
+~characters=()
 ~currentSpeaker= ""
 Kent hoists you up and you grab the ledge and pull yourself into the vent.
-You're not claustrophobic, but you have a sudden primal urge to be out of the tunnel.
+You're not claustrophobic, but you have a sudden primal urge to scream.
 ~currentSpeaker = android
 Are you alright?
 ~currentSpeaker = you
@@ -229,12 +323,11 @@ I can still see your feet.
 ~currentSpeaker= ""
 You shuffle your body further inside.
 It's like squeezing head first into a sleeping bag.
-You purge this thought from your mind.
 ~currentSpeaker = you
 I can see the cables.
 ~currentSpeaker = android
 Ok, follow my instructions.
-~currentSpeaker = you
+~currentSpeaker = ""
 You do as Pandora says, with deft precision.
 As you fumble with the cables you cut your finger on a sharp wire.
 The blood drips onto the metal panelling beneath you.
@@ -308,40 +401,59 @@ I'm coming back now.
 You shift your body now, pushing backwards.
 You keep pushing, slowly but steadily.
 Kent catches you as you fall.
+~characters+=kent
+~characters+=pandora
+~characters+=tali
+~characters+=lavender
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
 It's alright. You're out of there now.
+{ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker = comic
 What just happened?
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
 {android} said she had a panic attack.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 I don't get it though.
 She's got the cold eyes of a killer.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 I wouldn't go so far to say that. But {you} has always been so calm.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
 Shhh.
 Just because you can't see something on the surface doesn't mean it isn't there.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 You humans are so stupid.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 That's rude!
 ~currentSpeaker = android
 {snob} you never think about anyone but yourself.
+{ChangeSprite("Lavender", "lavender_crying")}
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
 Hear, hear.
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
 Is there anything we can do to help.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
 I think she needs a calm environment right now.
 So, if you all make yourselves scarce.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 I get it, I can get rid of myself very easily.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 That sounds vaguely menacing. 
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 ...
+{ChangeSprite("Lavender", "lavender_crying")}
 I hope {you} gets better.
-I think I can forgive you.
 ~currentSpeaker = you
 ...
 ~currentSpeaker=""
@@ -350,20 +462,26 @@ Better to conserve it and rest.
 ~characters-=kent
 ~characters-=lavender
 ~characters-=tali
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 You did well.
+{ChangeSprite("Pandora", "pandora_sad")}
 Sorry for pushing you.
 I'm a terrible therapy IOI.
 ~currentSpeaker = you
-You stopped me from having a panic attack. That's pretty impressive.
+You stopped me from having a panic attack.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 Thanks. I guess my instincts just kicked in.
+{ChangeSprite("Pandora", "pandora_pensive")}
 I'll be honest, I miss being a therapy IOI. Despite all the pain it's caused me...all the pain I couldn't prevent. I prefer it to being your assistant.
+{ChangeSprite("Pandora", "pandora_sad")}
 Sorry. I like working with you, just not the actual content of the work.
 ~currentSpeaker = you
 No offense taken.
 I understand completely.
 I feel sleepy.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 I guess the rush of adrenaline is over.
 I'll make your bed.
