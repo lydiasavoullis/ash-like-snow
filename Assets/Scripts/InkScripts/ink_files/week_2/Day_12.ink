@@ -20,6 +20,7 @@ It just makes me feel silly for telling you that riddle.
 ~currentSpeaker=you
 I don't mind.
 ~characters-=stranger
+->continue_day_12
 ==trader_happy==
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
@@ -48,7 +49,7 @@ Trust you? I don’t even know who you are.
 ~currentSpeaker = trader
 You trust Ada, right? You know that she wanted you to do this, otherwise you wouldn’t be doing this right?
 
-{snappedOut == "true":
+{snappedOut == "yes":
     ~currentSpeaker=you
     I remember Ada asking me to give money to a strange man when he asks for it.
     I was being drugged by someone, so I can't remember some details.
@@ -131,22 +132,22 @@ I do not think we will meet again.
   ~strangerbooks="false"
 }
 
-
+strangerbooks: {strangerbooks}
+snapped out: {snappedOut}
 
 { 
-
 - (gaveTraderMoney=="yes"):
 -> continue_day_12
-- ((strangerbooks=="true") || (snappedOut=="true") && funds>=500):
+- (strangerbooks=="true" && funds>=500):
 ->trader_happy
-- ((snappedOut=="true") && funds<500):
+- (snappedOut=="yes"):
 ->trader_satisfied
 - else:
 ->trader_unhappy
 }
-==continue_day_12
-{ChangeSprite("Pandora", "pandora_normal")}
+==continue_day_12==
 ~characters+=pandora
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android 
 I'll sign you in.
 ~currentSpeaker = you 

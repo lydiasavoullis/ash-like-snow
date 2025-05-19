@@ -721,8 +721,11 @@ No backsies.
 How much damage can she do anyway?
 ~currentSpeaker = you
 Fineee.
+~characters+=cas
+~characters-=pandora
 ~currentSpeaker = android
 Oh my. This is nice.
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker = you
 You're telling me you've never sat in that seat before?
 ~currentSpeaker = android
@@ -742,6 +745,8 @@ I like it here.
 I think I'll stay forever.
 ~currentSpeaker = you
 Oh great.
+~characters-=cas
+~characters+=pandora
 ->cas_questions
 
 //Tali questions

@@ -6371,6 +6371,36 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5969739962952366364}
+    - target: {fileID: 2729128278913595996, guid: a3439181c070bb04f87a39650ba7832c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729128278913595996, guid: a3439181c070bb04f87a39650ba7832c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729128278913595996, guid: a3439181c070bb04f87a39650ba7832c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729128278913595996, guid: a3439181c070bb04f87a39650ba7832c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159305049765096227, guid: a3439181c070bb04f87a39650ba7832c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.025039673
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159305049765096227, guid: a3439181c070bb04f87a39650ba7832c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2195.276
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16053,6 +16083,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 122671736}
   scrollList: {fileID: 691449234}
   saveMenu: {fileID: 691449233}
+  saveButton: {fileID: 0}
   optionsMenu: {fileID: 6952653808235082448}
   inkJSON: {fileID: 4900000, guid: ec7094f0cf528ce44b08d3b949d07eed, type: 3}
 --- !u!114 &8034551634607221515

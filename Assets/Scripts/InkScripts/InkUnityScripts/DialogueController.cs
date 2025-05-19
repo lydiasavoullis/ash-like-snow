@@ -73,6 +73,8 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     GameObject saveMenu;//if active we don't want to advance the story
     [SerializeField]
+    GameObject saveButton;//active if we are saving
+    [SerializeField]
     GameObject optionsMenu;//if active we don't want to advance the story
     [SerializeField]
 
@@ -174,6 +176,7 @@ public class DialogueController : MonoBehaviour
 
     public void KeepLoadingStory()
     {
+        
         HasEffectJustPlayed();
         string varScene = GameVars.story.variablesState["scene"].ToString();
         if (GameVars.story.variablesState["effectName"].ToString() != "")
@@ -219,7 +222,6 @@ public class DialogueController : MonoBehaviour
             }
         }
         GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;
-
 
     }
 
@@ -269,7 +271,6 @@ public class DialogueController : MonoBehaviour
                 catch (Exception e) {
                     Debug.Log(e);
                 }
-                
                 break;
             //case "gameScene":
             //    characterControl.GoToGameScene(newValue.ToString(), GameVars.story.variablesState["scene"].ToString());
@@ -469,6 +470,7 @@ public class DialogueController : MonoBehaviour
         audioControl.PlayMusic(GameVars.story.variablesState["music"].ToString(), audioManager);
         GameVars.sfxPlaying = GameVars.story.variablesState["sfx"].ToString();
         audioControl.PlaySound(GameVars.story.variablesState["sfx"].ToString(), audioManager);
+        GameVars.justLoaded = true;
     }
 
     /// <summary>
@@ -484,10 +486,23 @@ public class DialogueController : MonoBehaviour
         SaveSystem.SaveData(this, filename);//save data to file on system
         saveControl.CreateSaveSlot(filename, saveSlot, scrollList, inkJSON, optionsMenu);//create save slot to load file
     }
-
-    public void SaveStoryFromInk() {
+    public void SaveStoryFromInk()
+    {
+        //StartCoroutine(StopStoryFromProgressing());
         SaveStory();
         saveMenu.SetActive(false);
+        //GameVars.story.variablesState["save"] = "";
+        //GameVars.dontAdvanceStory = false;
+    }
+    public IEnumerator StopStoryFromProgressing() {
+        GameVars.dontAdvanceStory = true;
+        //yield return new WaitUntil(() => !GameVars.dontAdvanceStory && GameVars.finishedTyping);
+        //KeepLoadingStory();
+        yield return new WaitUntil(() => GameVars.finishedTyping);
+        SaveStory();
+        GameVars.dontAdvanceStory = false;
+        //saveMenu.SetActive(false);
+        //GameVars.story.variablesState["save"] = "";
     }
     #endregion
 

@@ -685,7 +685,7 @@ You open the notebook {android} gave you.
 *[Yes (save)]
 {SaveStory()}
 You write something down.
-->Epilogue
+->ending_check
 *[No (don't save)] 
 You close the book.
-->Epilogue
+->ending_check
