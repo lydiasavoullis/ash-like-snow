@@ -24,13 +24,6 @@ Hey
 
 
 ==day_1==
-*[Yes (save)]
-{SaveStory()}
-Thanks {android}!
-I can do it myself
-Will this test pick up on extra text
-I wonder
--save story
 ~scene= "ShopFront"
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
@@ -49,6 +42,13 @@ HEY you have a freaking customer
 ~music="Lavender's song"
 ~newsAnnouncement = ""
 Where's Adalina?
+*[Yes (save)]
+{SaveStory()}
+Thanks {android}!
+I can do it myself
+Will this test pick up on extra text
+I wonder
+-save story
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 Who are you?

@@ -5,7 +5,7 @@ I'll sign you in.
 ~currentSpeaker = you 
 *[Yes (save)]
 {SaveStory()}
-Thanks {android}!
+¬
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = android

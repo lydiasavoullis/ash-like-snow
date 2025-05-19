@@ -698,7 +698,10 @@ I'll sign you out for the day.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+~currentSpeaker = android 
 -Goodnight!
+~currentSpeaker = you
+Night!
 ~scene = "Night"
 ¬
 ~music = "night theme"

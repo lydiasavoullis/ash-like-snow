@@ -470,7 +470,7 @@ public class DialogueController : MonoBehaviour
         audioControl.PlayMusic(GameVars.story.variablesState["music"].ToString(), audioManager);
         GameVars.sfxPlaying = GameVars.story.variablesState["sfx"].ToString();
         audioControl.PlaySound(GameVars.story.variablesState["sfx"].ToString(), audioManager);
-        GameVars.justLoaded = true;
+        //GameVars.justLoaded = true;
     }
 
     /// <summary>
@@ -488,16 +488,15 @@ public class DialogueController : MonoBehaviour
     }
     public void SaveStoryFromInk()
     {
-        //StartCoroutine(StopStoryFromProgressing());
-        SaveStory();
+        StartCoroutine(StopStoryFromProgressing());
         saveMenu.SetActive(false);
         //GameVars.story.variablesState["save"] = "";
-        //GameVars.dontAdvanceStory = false;
+        GameVars.dontAdvanceStory = false;
     }
     public IEnumerator StopStoryFromProgressing() {
         GameVars.dontAdvanceStory = true;
-        //yield return new WaitUntil(() => !GameVars.dontAdvanceStory && GameVars.finishedTyping);
-        //KeepLoadingStory();
+        yield return new WaitUntil(() => !GameVars.dontAdvanceStory && GameVars.finishedTyping);
+        KeepLoadingStory();
         yield return new WaitUntil(() => GameVars.finishedTyping);
         SaveStory();
         GameVars.dontAdvanceStory = false;
