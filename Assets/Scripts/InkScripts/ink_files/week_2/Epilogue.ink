@@ -1,6 +1,4 @@
 ==Epilogue==
-~scene = "GenericScene"
-¬
 ~characters+=pandora
 ~characters+=ada
 ~currentSpeaker=android

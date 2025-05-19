@@ -24,30 +24,31 @@ Hey
 
 
 ==day_1==
-*[Yes (save)]
-{SaveStory()}
-Thanks {android}!
-I can do it myself
-Will this test pick up on extra text
-I wonder
--save story
 ~scene= "ShopFront"
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
+
 13th December, Monday, 206X
 ~scene= "GenericScene"
+
 <i>I hope you know what you're doing</i>
 ~newsAnnouncement = "Breaking news...Neurological problems caused by 'miracle' drug "
-Something2
+
 ¬
 ~sfx = "open door"
 ~characters += lavender
 ¬
+
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY you have a freaking customer
+[Lavender song plays]
 ~music="Lavender's song"
 ~newsAnnouncement = ""
+¬
+*save
+{SaveStory()}
+-save
 Where's Adalina?
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
@@ -55,11 +56,14 @@ Who are you?
 ~currentSpeaker = you
 I'm {you}, Ada is on holiday. She won't be back until January
 ~currentSpeaker = snob
+[No song plays]
 ~music=""
 {ChangeSprite("Lavender", "lavender_thinking")}
 Holiday?
 January?
 This is impossible
+[An average day]
+~music="An average day"
 I need her
 You won't suffice
 ~currentSpeaker = you
@@ -96,7 +100,7 @@ Ugh why do I even bother
 {RemoveCharacter("Lavender")}
 ~characters -= lavender
 ~sfx = "close door"
-~music = "An average day"
+~music = "none"
 ~currentSpeaker = you
 What the hell was that?
 ~characters += pandora
