@@ -25,7 +25,7 @@ public class MenuSystem : MonoBehaviour
 
     void Start()
     {
-        
+        Debug.Log("Game state: " + GameManager.Instance.State);
         saveController = new SaveController();
         saveController.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
         if (SceneManager.GetActiveScene().name == "MainMenuAlt") {
@@ -73,14 +73,14 @@ public class MenuSystem : MonoBehaviour
     public void LoadSaves()
     {
         saveSlotMenu.SetActive(true);
-        GameVars.dontAdvanceStory = true;
+        //GameManager.Instance.State = GameState.InMenu;
     }
     /// <summary>
     /// Set saves object inactive
     /// </summary>
     public void LoadOutOfSaves() {
         saveSlotMenu.SetActive(false);
-        GameVars.dontAdvanceStory = false;
+        GameManager.Instance.State = GameState.InGame;
     }
 
     /// <summary>
@@ -89,21 +89,21 @@ public class MenuSystem : MonoBehaviour
     public void LoadOptions()
     {
         optionsMenu.SetActive(true);
-        GameVars.dontAdvanceStory = true;
+        GameManager.Instance.State = GameState.InMenu;
     }
     public void LoadOutOfOptions()
     {
         optionsMenu.SetActive(false);
-        GameVars.dontAdvanceStory = false;
+        GameManager.Instance.State = GameState.InGame;
     }
     public void DoYouWantToQuitActive() {
         quitMenu.SetActive(true);
-        GameVars.dontAdvanceStory = true;
+        GameManager.Instance.State = GameState.InMenu;
     }
     public void DoYouWantToQuitNotActive()
     {
         quitMenu.SetActive(false);
-        GameVars.dontAdvanceStory = false;
+        GameManager.Instance.State = GameState.InGame;
     }
     /// <summary>
     /// Close application
@@ -119,11 +119,12 @@ public class MenuSystem : MonoBehaviour
     {
         GameVars.justLoaded = false;
         SceneManager.LoadScene("MainMenuAlt");//menu scene name
-        
+
     }
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        
 
     }
 

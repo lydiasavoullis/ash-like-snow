@@ -5,17 +5,24 @@ using Ink.Runtime;
 
 public class GameManager : MonoBehaviour
 {
-    
-    
-    // Start is called before the first frame update
-    void Start()
+
+    //https://www.youtube.com/watch?v=4I0vonyqMi8
+    public static GameManager Instance;
+    public GameState State;
+    private void Awake()
     {
-        //Debug.Log("Hello world");
+        Instance = this;
     }
+    
 
     // Update is called once per frame
-    void Update()
+    public void UpdateGameState(GameState newState)
     {
-
+        State = newState;
     }
+}
+
+public enum GameState { 
+    InMenu,
+    InGame
 }
