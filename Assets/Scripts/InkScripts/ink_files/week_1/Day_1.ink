@@ -4,6 +4,7 @@ EXTERNAL RemoveCharacter(name)
 EXTERNAL AddCharacter(name,sprite)
 EXTERNAL PlayAnimation(name, animation)
 EXTERNAL SaveStory()
+EXTERNAL ChangeWeather(weather)
 ==test_scene==
 ~scene= "GenericScene"
 ~currentSpeaker = trader 
@@ -39,6 +40,7 @@ Something2
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 HEY you have a freaking customer
+{ChangeWeather("Ash")}
 ~music="Lavender's song"
 ~newsAnnouncement = ""
 Where's Adalina?
@@ -55,7 +57,6 @@ Who are you?
 ~currentSpeaker = you
 I'm {you}, Ada is on holiday. She won't be back until January
 ~currentSpeaker = snob
-~music=""
 {ChangeSprite("Lavender", "lavender_thinking")}
 Holiday?
 January?

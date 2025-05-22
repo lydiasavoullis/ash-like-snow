@@ -77,6 +77,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     GameObject optionsMenu;//if active we don't want to advance the story
     [SerializeField]
+    GameObject weatherBackground;
 
     #endregion
     #region controllers
@@ -105,6 +106,7 @@ public class DialogueController : MonoBehaviour
             GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
             GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
             GameVars.story.BindExternalFunction("SaveStory", () => this.SaveStoryFromInk());
+            GameVars.story.BindExternalFunction("ChangeWeather", (string weather) => ChangeWeather(weather));
             //GameVars.story.BindExternalFunction("GoToGameScene", (string gameScene, string currentScene) => GoToGameScene(gameScene, currentScene));
         }
         catch (Exception e)
@@ -160,6 +162,7 @@ public class DialogueController : MonoBehaviour
             GameVars.story.UnbindExternalFunction("RemoveCharacter");
             GameVars.story.UnbindExternalFunction("PlayAnimation");
             GameVars.story.UnbindExternalFunction("SaveStory");
+            GameVars.story.UnbindExternalFunction("ChangeWeather");
         }
         catch (Exception e) { }
         
@@ -169,6 +172,7 @@ public class DialogueController : MonoBehaviour
         GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
         GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
         GameVars.story.BindExternalFunction("SaveStory", () => this.SaveStoryFromInk());
+        GameVars.story.BindExternalFunction("ChangeWeather", (string weather) => ChangeWeather(weather));
 
         characterControl.RefreshCharacters((InkList)GameVars.story.variablesState["characters"], stage, characterBox);
         uIControl.SetDialogueBoxActive(GameVars.story.variablesState["textBoxIsActive"].ToString(), backgroundDialogueBox);
@@ -473,6 +477,7 @@ public class DialogueController : MonoBehaviour
         audioControl.PlayMusic(GameVars.story.variablesState["music"].ToString(), audioManager);
         GameVars.sfxPlaying = GameVars.story.variablesState["sfx"].ToString();
         audioControl.PlaySound(GameVars.story.variablesState["sfx"].ToString(), audioManager);
+        ChangeWeather(GameVars.story.variablesState["weather"].ToString());
         //GameVars.justLoaded = true;
     }
 
@@ -496,6 +501,27 @@ public class DialogueController : MonoBehaviour
         //GameVars.story.variablesState["save"] = "";
         GameVars.dontAdvanceStory = false;
     }
+    public void ChangeWeather(string weather)
+    {
+        if (weatherBackground == null) {
+            return;
+        }
+        GameVars.story.variablesState["weather"] = weather;
+        for (int i = 0; i<weatherBackground.transform.childCount;i++) {
+            weatherBackground.transform.GetChild(i).gameObject.SetActive(false);
+        }
+        if (weather == "") {
+            return;
+        }
+        weatherBackground.transform.Find(weather).gameObject.SetActive(true);
+    }
+    //public void StartWeather(string weather) {
+    //    weatherBackground.gameObject.transform.Find(weather).gameObject.SetActive(true);
+    //}
+    //public void StopWeather(string weather)
+    //{
+    //    weatherBackground.gameObject.transform.FindChild(weather).gameObject.SetActive(false);
+    //}
     public IEnumerator StopStoryFromProgressing() {
         GameVars.dontAdvanceStory = true;
         yield return new WaitUntil(() => !GameVars.dontAdvanceStory && GameVars.finishedTyping);

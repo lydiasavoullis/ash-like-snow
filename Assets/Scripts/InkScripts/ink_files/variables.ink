@@ -16,8 +16,9 @@ VAR ad4 = ""
 VAR sfx = ""
 VAR music = ""
 VAR chapter = "Chapter 1"
-VAR drunk = 0
+VAR weather = "rain"//set as empty string to stop
 VAR save = ""
+
 #character sprites
 LIST characters = lavender, ada, pandora, kent, tali, cas, stranger
 LIST Ada = adalina_displeased, (adalina_neutral),adalina_pleased
