@@ -9,9 +9,19 @@ public class GameManager : MonoBehaviour
     //https://www.youtube.com/watch?v=4I0vonyqMi8
     public static GameManager Instance;
     public GameState State;
+    //https://www.youtube.com/watch?v=j_eQGp-IbCE
     private void Awake()
     {
-        Instance = this;
+        Debug.Log(State);
+        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            return;
+        }
+        else {
+            Destroy(gameObject);   
+        }
     }
     
 

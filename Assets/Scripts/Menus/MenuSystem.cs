@@ -25,7 +25,7 @@ public class MenuSystem : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Game state: " + GameManager.Instance.State);
+        Debug.Log("Game state: " + GameStates.State);
         saveController = new SaveController();
         saveController.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
         if (SceneManager.GetActiveScene().name == "MainMenuAlt") {
@@ -80,7 +80,7 @@ public class MenuSystem : MonoBehaviour
     /// </summary>
     public void LoadOutOfSaves() {
         saveSlotMenu.SetActive(false);
-        GameManager.Instance.State = GameState.InGame;
+        GameStates.State = GameState.InGame;
     }
 
     /// <summary>
@@ -89,21 +89,21 @@ public class MenuSystem : MonoBehaviour
     public void LoadOptions()
     {
         optionsMenu.SetActive(true);
-        GameManager.Instance.State = GameState.InMenu;
+        GameStates.State = GameState.InMenu;
     }
     public void LoadOutOfOptions()
     {
         optionsMenu.SetActive(false);
-        GameManager.Instance.State = GameState.InGame;
+        GameStates.State = GameState.InGame;
     }
     public void DoYouWantToQuitActive() {
         quitMenu.SetActive(true);
-        GameManager.Instance.State = GameState.InMenu;
+        GameStates.State = GameState.InMenu;
     }
     public void DoYouWantToQuitNotActive()
     {
         quitMenu.SetActive(false);
-        GameManager.Instance.State = GameState.InGame;
+        GameStates.State = GameState.InGame;
     }
     /// <summary>
     /// Close application

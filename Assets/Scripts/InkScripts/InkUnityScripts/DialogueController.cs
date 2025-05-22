@@ -123,7 +123,7 @@ public class DialogueController : MonoBehaviour
         if (Keyboard.current.fKey.wasPressedThisFrame)
         {
 
-            if (!GameVars.autoMode && !GameVars.dontAdvanceStory && GameManager.Instance.State != GameState.InMenu)
+            if (!GameVars.autoMode && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
             {
                 StartCoroutine(FastForward());
             }
@@ -134,9 +134,9 @@ public class DialogueController : MonoBehaviour
         }
         if (Mouse.current.rightButton.wasPressedThisFrame) {
             Debug.Log("Dont advance story: " + GameVars.dontAdvanceStory);
-            Debug.Log("Game State: " + GameManager.Instance.State);
+            Debug.Log("Game State: " + GameStates.State);
         }
-        if (Mouse.current.rightButton.wasPressedThisFrame && GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameManager.Instance.State != GameState.InMenu)
+        if (Mouse.current.rightButton.wasPressedThisFrame && GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
             
         //Input.GetMouseButtonDown(1)
         {

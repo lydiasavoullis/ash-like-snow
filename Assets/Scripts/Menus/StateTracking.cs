@@ -17,9 +17,8 @@ public class StateTracking : MonoBehaviour
         StartCoroutine(LoadScene(scene));
     }
     public IEnumerator LoadScene(string scene) {
-        GameManager.Instance.UpdateGameState(GameState.InGame);
-        yield return new WaitUntil(() => GameManager.Instance.State == GameState.InGame);
+        GameStates.UpdateGameState(GameState.InGame);
+        yield return new WaitUntil(() => GameStates.State == GameState.InGame);
         SceneManager.LoadScene(scene);
-        Debug.Log(GameManager.Instance.State);
     }
 }
