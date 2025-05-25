@@ -89,6 +89,7 @@ public class SaveController
         SceneManager.LoadScene(data.currentScene);//load scene 
         optionsMenu.SetActive(false);
         Debug.Log(GameVars.story.variablesState["characters"].ToString());
+        GameStates.UpdateGameState(GameState.InGame);
 
     }
 

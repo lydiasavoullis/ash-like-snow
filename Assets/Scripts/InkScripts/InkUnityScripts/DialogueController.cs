@@ -477,7 +477,13 @@ public class DialogueController : MonoBehaviour
         audioControl.PlayMusic(GameVars.story.variablesState["music"].ToString(), audioManager);
         GameVars.sfxPlaying = GameVars.story.variablesState["sfx"].ToString();
         audioControl.PlaySound(GameVars.story.variablesState["sfx"].ToString(), audioManager);
-        ChangeWeather(GameVars.story.variablesState["weather"].ToString());
+        try {
+            ChangeWeather(GameVars.story.variablesState["weather"].ToString());
+        }
+        catch (Exception e) {
+            Debug.Log("Variable weatner not found!!");
+        }
+        
         //GameVars.justLoaded = true;
     }
 
