@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class StateTracking : MonoBehaviour
 {
     public void InMenu() {
-        GameManager.Instance.State = GameState.InMenu;
+        GameStates.State = GameState.InMenu;
     }
     public void OutOfMenu()
     {
-        GameManager.Instance.State = GameState.InGame;
+        GameStates.State = GameState.InGame;
     }
     public void SetStateThenLoadGame(string scene)
     {

@@ -154,7 +154,7 @@ Remaining funds: {funds}
 ->->
 ==buy_childrens_books==
 Remaining funds: {funds}
-*{day>=1}[Greek Myths and Legends (£20)] 
+*{day>=1}{funds>=20}[Greek Myths and Legends (£20)] 
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=myths_legends
@@ -164,12 +164,12 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=Alice_in_Wonderland
 ->buy_childrens_books
-*{day>=3}[Buy The Lion the Witch and the Wardrobe (£20)]
+*{day>=3}{funds>=20}[Buy The Lion the Witch and the Wardrobe (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=t_lion_witch_wardrobe
 ->buy_childrens_books
-*{day>=4}[Buy Howl's Moving Castle (£20)]
+*{day>=4}{funds>=20}[Buy Howl's Moving Castle (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=Howls_Moving_Castle
@@ -179,27 +179,27 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=the_wiz_oz
 ->buy_childrens_books
-*{day>=8}[Buy The Secret Garden (£20)]
+*{day>=8}{funds>=20}[Buy The Secret Garden (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=t_secret_garden
 ->buy_childrens_books
-*{day>=9}[Buy The Hobbit (£20)]
+*{day>=9}{funds>=20}[Buy The Hobbit (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=the_hobbit
 ->buy_childrens_books
-*{day>=10}[Buy Matilda (£20)]
+*{day>=10}{funds>=20}[Buy Matilda (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=matilda
 ->buy_childrens_books
-*{day>=11}[Buy Matilda (£20)]
+*{day>=11}{funds>=20}[Buy Matilda (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=matilda
 ->buy_childrens_books
-*{day>=11}[Buy Alice Through the Looking-Glass (£20)]
+*{day>=11}{funds>=20}[Buy Alice Through the Looking-Glass (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=alice_looking_glass

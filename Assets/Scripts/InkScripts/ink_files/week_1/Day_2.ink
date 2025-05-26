@@ -1,4 +1,9 @@
 ==day_2==
+~newsPicture = "headline1"
+~newsCaption = "Rioter brandishing hateful placard - Ilustration by Kent Herring"
+~newsAnnouncement = "Crack down on anti-war riots - they are a disgrace to our great nation says Blue."
+¬
+~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

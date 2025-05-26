@@ -52,8 +52,8 @@ Tea or coffee?
 ==drink_rejected==
 ~currentSpeaker = android  
 {timesRejected == 1: {PlayAnimation("Pandora", "shake")} Haha. A joke right? }
-{timesRejected == 2: {PlayAnimation("Pandora", "shake")} C'mon you don't want a little drink?}
-{timesRejected == 3: {PlayAnimation("Pandora", "shake")} You need a drink {you} it's for your own good!}
+{timesRejected == 2: {PlayAnimation("Pandora", "shake")} {ChangeSprite("Pandora", "pandora_mean")} C'mon you don't want a little drink?}
+{timesRejected == 3: {PlayAnimation("Pandora", "shake")} {ChangeSprite("Pandora", "pandora_annoyed")} You need a drink {you} it's for your own good!}
 {timesRejected == 4: ->snap_out_trigger}
 ->tea_or_coffee_choices
 ==snap_out_trigger
@@ -62,6 +62,7 @@ Tea or coffee?
 {ChangeSprite("Pandora", "pandora_sad")}
 Why are you being like this?
 ...ok.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = ""
 <i>That was strange...</i>
 <i>I should keep an eye on her.</i>

@@ -173,6 +173,8 @@ He's going to walk into a wall and die.
 Do you want me to buy it or not?
 ~currentSpeaker = you
 Fine.
+~funds+=800
+~booksSold+=1
 ->->
 ==togue_protective_gear==
 ~lavenderPoints+=1
@@ -195,6 +197,8 @@ Maybe people should try not to hit their heads in the first place.
 I suppose it's a bit late for me to tell you that.
 ~currentSpeaker = you
 Ouch!
+~funds+=800
+~booksSold+=1
 ->->
 ==fantasy_dragon_heart_book==
 ~taliPoints+=1
@@ -272,6 +276,8 @@ And they live in a forest.
 One can also assume that.
 ~currentSpeaker = you
 I have learnt much today.
+~funds+=65
+~booksSold+=1
 ->->
 
 ==the_glass_labyrinth==
@@ -297,6 +303,8 @@ Yeah, you could probably figure out the exit. See any dead ends.
 It sounds complicated and scary...but actually you can see right though it.
 ~currentSpeaker = webdev
 I'm intrigued. I'll take it.
+~funds+=65
+~booksSold+=1
 ->->
 
 ==queen_h==
@@ -334,6 +342,8 @@ She just sounds straight up villanous.
 She's kept peace in the galaxy for thousands of years. 
 And this child threatens that.
 What's the life of one child compared to a whole galaxy?
+~funds+=65
+~booksSold+=1
 ->->
 ==where_the_heart_lies==
 ~taliPoints+=1
@@ -386,6 +396,8 @@ And then the reveal that he killed his master is so much more satisfying.
 I mean sure...that stuff is important I guess.
 ~currentSpeaker = webdev
 Stories are more than just a sum of their parts.
+~funds+=65
+~booksSold+=1
 ->->
 ==the_ring_thorns==
 ~taliPoints+=1
@@ -418,6 +430,8 @@ Yeah...they can all perish.
 Thanks, but no thanks.
 ~currentSpeaker = webdev
 I suppose each to their own.
+~funds+=65
+~booksSold+=1
 ->->
 ==the_sentinel==
 ~kentPoints+=1
@@ -548,6 +562,8 @@ She can see in the dark.
 Just read the damn comic.
 ~currentSpeaker = you
 Alright. Alright.
+~funds+=90
+~booksSold+=1
 ->->
 
 ==X_and_A==
@@ -579,6 +595,8 @@ Luckily their powers sort of help them to evade detection.
 The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
 X and A are parts of their lab numbers, X was X-436 and A was A-967.
 Hence they go by X and A.
+~funds+=90
+~booksSold+=1
 ->->
 
 ==mr_thermistor==
@@ -600,6 +618,8 @@ He has to work really hard to make it work.
 It includes a scene where he lures bad guys into the sauna and...well...zap!
 ~currentSpeaker = you
 Ok. I think I get it.
+~funds+=90
+~booksSold+=1
 ->->
 
 ==bworld==
@@ -619,6 +639,8 @@ Well a plain utopia wouldn't be that interesting would it?
 ~currentSpeaker = you
 Hmm...
 No I suppose it wouldn't be.
+~funds+=90
+~booksSold+=1
 ->->
 
 
@@ -642,5 +664,7 @@ There's a lot of funny parts.
 ~currentSpeaker = you
 It sounds quite fun.
 Maybe I'll give it a read some time.
+~funds+=90
+~booksSold+=1
 ->->
 
