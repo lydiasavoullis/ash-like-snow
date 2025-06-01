@@ -685,7 +685,7 @@ You open the notebook {android} gave you.
 *[Yes (save)]
 {SaveStory()}
 You write something down.
-->ending_check
 *[No (don't save)] 
 You close the book.
+-Time for bed.
 ->ending_check

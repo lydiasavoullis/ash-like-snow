@@ -58,7 +58,7 @@ You can see this text
 #everyone is stuck in the virtual world.
 #no other endings if you get this one
 #also there is no day 14
-
+~scene = "GenericScene"
 //{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}#Done
 
 {snappedOut=="no": ->ada_fires_you->}  #Done
@@ -297,24 +297,30 @@ It's not an emotion I am particularly familiar with.
 Although...I am perhaps starting to feel it as well now.
 ~currentSpeaker = you
 I don't know how I could have done better.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 I don't know either.
 I mean, perhaps I could have made up with {webdev}.
+{ChangeSprite("Lavender", "lavender_angry")}
 But she didn't give me a chance.
+{ChangeSprite("Lavender", "lavender_sad")}
 What could I do?
 ~currentSpeaker = you
 I suppose you couldn't have done anything else really.
 ~currentSpeaker = snob
 Too much has happened.
+{ChangeSprite("Lavender", "lavender_thinking")}
 What do you think you should have done?
 ~currentSpeaker = you
 Made more of an effort at my job.
 I should have taken things more seriously.
 You probably agree with me.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Nah.
 ~currentSpeaker = you
 Huh?
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob
 I don't come here for some serious conversations with serious people.
 I don't want to hang out with someone who's constantly deliberating over every decision...every action they're taking.
@@ -322,6 +328,7 @@ That doesn't sound fun.
 ~currentSpeaker = you
 Ok, I think I undestand now.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 I think I understand too.
 I've had the same issue as you.
 I've been too concerned with keeping up productivity.
@@ -330,6 +337,7 @@ Life doesn't work like that though.
 And art doesn't either.
 ~currentSpeaker = you
 I'm guessing you want to switch things up with your business?
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Correct.
 I want to make stuff that I actually want to make.
@@ -353,7 +361,7 @@ Just think about it.
 You will get paid.
 ~currentSpeaker = you
 ...
-Would I have to wear anything made of raw meat, or styrofoam?
+Would I have to wear anything made of raw meat?
 {ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker = snob
 What!?
@@ -402,6 +410,7 @@ We're talking at least.
 ~characters+=lavender
 ~currentSpeaker = you
 Speak of the devil!
+{ChangeSprite("Tali", "tali_upset")}
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Is it company policy to slander all your customers?
@@ -421,86 +430,114 @@ Honestly I just came to see {you}.
 {ChangeSprite("Lavender", "lavender_angry")}
 I suppose you've found my replacement already.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_smirk")}
 Not true {snob}.
 No one could replace you.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 Hmph.
 Ok.
 I suppose you're right. No one could replace me. 
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
 I have an idea!
+{ChangeSprite("Tali", "tali_talking_forward")}
 We should all meet up together.
+{ChangeSprite("Tali", "tali_talking_side")}
 Outside of this shop.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_serious")}
 Don't you think maybe the shop assistant would embarrass us. 
 ~currentSpeaker = you
 I can behave.
 I promise.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_sad")}
 Don't do that with your eyes. you're freaking me out.
 ~currentSpeaker = you
-<i>\*staring intensifies\*</i>
+<i>\*s t a r i n g  i n t e n s i f i e s\*</i>
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = you
 Ok. Ok. You win.
+{ChangeSprite("Lavender", "lavender_normal")}
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
 Yay! This will be fun.
 We can bake a cake in {snob}'s appartment.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 Why my appartment?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_side")}
 Because yours is the nicest.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
 We haven't seen the other options.
 ~currentSpeaker = you
 ...
 My oven is broken.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_exasperated")}
 So is mine.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 What a coincidence.
+{ChangeSprite("Lavender", "lavender_normal")}
 I suppose it will have to be mine then.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy_closed")}
 You're the best!
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 Hmmm.
 Do either of you know how to bake a cake?
 ~currentSpeaker = webdev
-No. I assumed you knew.
+{ChangeSprite("Tali", "tali_sad")}
+No...
 ~currentSpeaker = you
 I assumed you knew too {snob}, probably because you're dressed like one.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_mean")}
 Haha how amusing.
 Especially from someone dressed like a custard tart.
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = you
 Custard tart?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy_closed")}
 That sounds delicious. Maybe that's what we should bake first.
 ~currentSpeaker = you
 How do I look like a custard tart?
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_forward")}
 Your shirt is very yellow.
-~currentSpeaker = you
-It's GOLD.
-For fuck's sake.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_thinking")}
 I can get a couple of receipes up on my holopad.
 ~currentSpeaker = you
-My shirt is not yellow.
+My shirt is not yellow. It's meant to be gold.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
 That's a great idea.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
 Look on the bright side {you}, if you spill custard on your shirt, it won't even show.
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_talking_side")}
 I'll go shopping for some baking equiment.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_mean")}
 Not without me!
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_serious")}
 Ok, wait until I get off work and we can go together.
 ~currentSpeaker = snob
+{ChangeSprite("Lavender", "lavender_normal")}
 Sounds like a plan.
 Bye {you}. 
 ~characters-=lavender
 ~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_happy")}
 Bye {you}. See you later.
 ~characters-=tali
 ~currentSpeaker = you
@@ -643,7 +680,7 @@ Well the whole incident affected me mentally, I’m not the same person.
 ~currentSpeaker=lovelace
 Funny. I did not take you for the type to be mentally affected by this kind of thing.
 ~currentSpeaker=you
-I’m an incredibly sensitive person. It might not seem like it. But {android} was like my rock, she helped me through it.
+I’m actually an incredibly sensitive person. It might not seem like it. But {android} helped me through it.
 ~currentSpeaker=lovelace
 Oh really?
 ~currentSpeaker=android
@@ -657,7 +694,7 @@ Cheers.
 ~currentSpeaker=android
 ...
 ~characters-=pandora
-{funds <100: ->lowFunds->|->highFunds->} 
+{funds <100: ->lowFunds|->highFunds} 
 = lowFunds
 ~currentSpeaker=lovelace
 Now I know this is an awkward matter.
@@ -665,12 +702,7 @@ But I have to ask about the finances here.
 I have checked, and there is a noticeable lack of money.
 ~currentSpeaker=you
 It was given to a dear friend of yours.
-~currentSpeaker=lovelace
-Well. If it was a dear friend, then that’s fine.
-What did this dear friend wear?
-~currentSpeaker=you
-A top hat and a trench coat.
-->->
+->ada_continues
 = highFunds
 ~currentSpeaker=lovelace
 You have outdone yourself.
@@ -678,12 +710,13 @@ You've managed my bank account reasonably well.
 I'm impressed.
 ~currentSpeaker=you
 I had to lend some money to a dear friend of yours.
+->ada_continues
+= ada_continues
 ~currentSpeaker=lovelace
-Well. If it was a dear friend, then that’s fine.
-What did this dear friend wear?
+Well. That’s fine.
+What were they wearing?
 ~currentSpeaker=you
 A top hat and a trench coat.
-->->
 ~currentSpeaker=lovelace
 Ugh, so dramatic. I hate these revolutionary types.
 All they want to do is blow things up.

@@ -210,11 +210,17 @@ public class CharacterController
         catch (Exception e) {
             Debug.Log("Couldn't find character on screen");
         }
-        
+
         //update current sprite in ink for character
-        var currentSprite = new InkList(character, GameVars.story);
-        currentSprite.AddItem(spriteName);
-        GameVars.story.variablesState[character] = currentSprite;
+        try {
+            var currentSprite = new InkList(character, GameVars.story);
+            currentSprite.AddItem(spriteName);
+            GameVars.story.variablesState[character] = currentSprite;
+        }
+        catch (Exception e) {
+            Debug.Log("Couldn't update sprite");
+        }
+        
     }
     public void PrintCharacters()
     {

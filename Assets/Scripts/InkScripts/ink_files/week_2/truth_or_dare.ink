@@ -1,6 +1,7 @@
 LIST TDNames = (P), (K), (T), (L), (C)
 VAR name = C
 ==start_truth_or_dare==
+~button= "normal"
 Who are you going to chose?
 *[Pandora]
 //Pandora gets questioned by Cas

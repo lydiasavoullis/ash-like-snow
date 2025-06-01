@@ -1016,7 +1016,7 @@ Is everyone feeling alright?
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Now you mention it, I have a faint headache. And my vision has been kind of blurry.
-{ChangeSprite("Tali", " tali_exasperated")}
+{ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker=webdev
 I sort of had that too…
 {ChangeSprite("Pandora", "pandora_pensive")}
@@ -1345,6 +1345,6 @@ You open the notebook {android} gave you.
 You write something down.
 *[No (don't save)] 
 You close the book.
-
+-Let's go to bed.
 ~day+=1
 ->day_14

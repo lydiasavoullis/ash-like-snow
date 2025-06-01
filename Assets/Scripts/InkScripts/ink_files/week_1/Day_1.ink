@@ -32,29 +32,20 @@ Hey
 ~scene= "GenericScene"
 <i>I hope you know what you're doing</i>
 ~newsAnnouncement = "Breaking news...Neurological problems caused by 'miracle' drug "
-Something2
-¬
 ~sfx = "open door"
+¬
 ~characters += lavender
 ¬
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
+¬
 {PlayAnimation("Lavender", "shake")}
 HEY you have a freaking customer
-{ChangeWeather("Ash")}
+
 ~music="Lavender's song"
 ~newsAnnouncement = ""
 {PlayAnimation("Lavender", "shake")}
 Where's Adalina?
-*[Yes (save)]
-{SaveStory()}
-Thanks {android}!
-I can do it myself
-~funds=0
-->goto_shop->read_check->end_day1
-Will this test pick up on extra text
-I wonder
--save story
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 Who are you?

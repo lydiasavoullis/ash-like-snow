@@ -766,6 +766,7 @@ Please, for the love of god shut up.
 Here you go.
 ~currentSpeaker = you 
 What is this for?
+{SaveStory()}
 ~currentSpeaker = android 
 I made a list of everything we have down here.
 Do you want to add anything?

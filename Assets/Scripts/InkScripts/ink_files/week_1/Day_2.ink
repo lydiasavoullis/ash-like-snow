@@ -7,6 +7,7 @@
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.
+~button= "normal"
 ~currentSpeaker = you 
 *[Yes (save)]
 {SaveStory()}
