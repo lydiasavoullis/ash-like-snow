@@ -108,10 +108,10 @@ public class MenuSystem : MonoBehaviour
     /// <summary>
     /// Close application
     /// </summary>
-    public void Quit()
-    {
-        Application.Quit();
-    }
+    //public void Quit()
+    //{
+    //    Application.Quit();
+    //}
     /// <summary>
     /// Load menu scene
     /// </summary>
