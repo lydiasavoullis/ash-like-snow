@@ -29,7 +29,7 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=togue_394
 ->goto_shop
-*{day==2}{funds>=100}[The Sentinel \#105(£70)]
+*{day==2}{funds>=70}[The Sentinel \#105(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=sentinel_105
@@ -41,108 +41,108 @@ Remaining funds: {funds}
 ->goto_shop
 Remaining funds: {funds}
 *{day==3}{funds>=200}[Togue Winter issue 1076(£200]
-~funds -= 250
+~funds -= 200
 ~deliveryToday+=1
 ~allbooks+=togue_1076
 ->goto_shop
-*{day==3}{funds>=100}[Wildfyre \#678(£100)]
+*{day==3}{funds>=70}[Wildfyre \#678(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=wildfyre_678
 ->goto_shop
-*{day==3}{funds>=50}[The Black Goat (£45)]
+*{day==3}{funds>=45}[The Black Goat (£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=black_goat
 ->goto_shop
-*{day==4}{funds>=200}[Togue SPECIAL issue 666(£400)]
+*{day==4}{funds>=400}[Togue SPECIAL issue 666(£400)]
 ~funds -= 400
 ~deliveryToday+=1
 ~allbooks+=togue_666
 ->goto_shop
 *{day==4}{funds>=100}[Hypnos \#55(£100)]
-~funds -= 70
+~funds -= 100
 ~deliveryToday+=1
 ~allbooks+=hypnos_55
 ->goto_shop
-*{day==4}{funds>=50}[The Lord of Dusk (£45)]
+*{day==4}{funds>=45}[The Lord of Dusk (£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=lord_dusk
 ->goto_shop
-*{day==5}{funds>=200}[Togue pet accessories issue 360(£600)]
+*{day==5}{funds>=600}[Togue pet accessories issue 360(£600)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=togue_360
 ->goto_shop
-*{day==5}{funds>=100}[Lady of Darkness \#373(£100)]
+*{day==5}{funds>=70}[Lady of Darkness \#373(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=lady_darkness_373
 ->goto_shop
-*{day==5}{funds>=50}[The God of the Forest (£45)]
+*{day==5}{funds>=45}[The God of the Forest (£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=forest_god
 ->goto_shop
 ->goto_shop
-*{day==8}{funds>=200}[Togue special flight attendant uniform issue (£600)]
+*{day==8}{funds>=600}[Togue special flight attendant uniform issue (£600)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=togue_uniform
 ->goto_shop
-*{day==8}{funds>=100}[X and A \#235(£100)]
+*{day==8}{funds>=70}[X and A \#235(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=x_a_235
 ->goto_shop
-*{day==8}{funds>=50}[The Glass Labyrinth (£45)]
+*{day==8}{funds>=45}[The Glass Labyrinth (£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=the_glass_lab
 ->goto_shop
-*{day==9}{funds>=200}[Togue acid rain proof chic (£600)]
+*{day==9}{funds>=600}[Togue acid rain proof chic (£600)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=togue_rain_proof
 ->goto_shop
-*{day==9}{funds>=100}[Mr. Thermistor \#95(£100)]
+*{day==9}{funds>=70}[Mr. Thermistor \#95(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=mr_therm
 ->goto_shop
-*{day==9}{funds>=50}[The Ring of Thorns(£45)]
+*{day==9}{funds>=45}[The Ring of Thorns(£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=ring_thorns
 ->goto_shop
-*{day==10}{funds>=200}[Togue protective gear issue 331 (£600)]
+*{day==10}{funds>=600}[Togue protective gear issue 331 (£600)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=togue_gear
 ->goto_shop
-+{day==10}{funds>=100}[Bioworld \#111(£100)]
++{day==10}{funds>=70}[Bioworld \#111(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=bioworld
 ->goto_shop
-*{day==10}{funds>=50}[Where the Heart Lies (£45)]
+*{day==10}{funds>=45}[Where the Heart Lies (£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=heart_lies
 ->goto_shop
 Remaining funds: {funds}
-*{day==11}{funds>=200}[Togue PPE special issue (£600)]
+*{day==11}{funds>=600}[Togue PPE special issue (£600)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=togue_ppe
 ->goto_shop
-*{day==11}{funds>=100}[Cybershake \#235(£100)]
+*{day==11}{funds>=70}[Cybershake \#235(£70)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=cybershake
 ->goto_shop
-*{day==11}{funds>=50}[Queendom Heretic (£45)]
+*{day==11}{funds>=45}[Queendom Heretic (£45)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=queendom_heretic
