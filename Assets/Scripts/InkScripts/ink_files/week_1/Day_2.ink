@@ -180,28 +180,28 @@ Have you got my magazines?
 {allbooks?togue_222: ->togue_1->}
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
-Who is this child? Do you know her?
+Hey! I like your outfit.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 {PlayAnimation("Lavender", "shake")}
-Ahem
+It's not a costume.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
-Where are your parents?
+I never said it was a costume.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
-I don’t know
+Well it was implied.
 ~currentSpeaker = comic
 What have you got there?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_happy")}
-Porn. 
+Erotica.  
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_shocked")}
 {PlayAnimation("Kent", "shake")}
-WHAT?!
+What?!
 ~currentSpeaker = you
-She’s messing about with you. Not a child.
+She’s messing about with you.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
 Uh, are you serious?
@@ -210,8 +210,10 @@ Uh, are you serious?
 I’m thirty two.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}
-Little bo peep is thirty two.
+Alright there little bo peep 
 ~currentSpeaker = snob
+My name is Lavender.
+~snob = "Lavender"
 Call me that again and I’ll rip out your eyeballs.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
@@ -254,12 +256,7 @@ News isn’t meant to be gruesome. It’s meant to inform the public, and hopefu
 That’s boring. Who cares about the truth?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_normal")}
-Okay...if you can't see how messed up that is, there's no point in me arguing wiht you.
-~currentSpeaker = snob 
-{ChangeSprite("Lavender", "lavender_angry")}
-I can see. I’m not the one wearing glasses.
-~currentSpeaker = comic  
-You know I can see through the glasses, right?
+Okay...
 ~currentSpeaker = you 
 Let’s keep things civil, eh?
 ~currentSpeaker = comic  

@@ -36,6 +36,7 @@ Hey
 ¬
 ~characters += lavender
 ¬
+~snob = "???"
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 ¬
@@ -80,14 +81,16 @@ I use the same website as Ada, I can supply your magazines
 What kind of magazines are you looking for?
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
-Fashion magazines
-Specifically Togue
+Fashion magazines.
 ~currentSpeaker = you
-Don't you mean Vogue?
+We have some on that shelf.
+You can have a look through them, see if there's anything you like.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
-I meant what I said I meant
-Ugh why do I even bother
+Those are too recent.
+I'm not wasting my time looking through a load of rubbish.
+{ChangeSprite("Lavender", "lavender_thinking")}
+Why do I even bother?
 ~currentSpeaker = ""
 {RemoveCharacter("Lavender")}
 ~characters -= lavender
@@ -118,31 +121,31 @@ I can do it myself
 {ChangeSprite("Pandora", "pandora_mean")}
 Luck perhaps?
 ~currentSpeaker = you
-Sounds like she knows Ada
+So Ada knows her?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
-I think they meet after hours. She pays her for it, don't worry
-And you know Ada never turns down the opportunity to earn a little extra cash
+Ada usually meets her after closing hours.
 ~currentSpeaker = you
 She does that just for a couple of old magazines?
 ~currentSpeaker = android
-Uh huh, and this place wouldn't be standing without her
+She's our best customer.
+Those magazines are worth a lot.
 ~currentSpeaker = you
 They can't be worth that much?
 Who can even afford that these days?
 ~currentSpeaker = android
-Well check up on The Trader tonight and you'll find out
-Maybe stock up on some Togue magazines if you don't want her to rip your head off next time
+You'd be surprised.
+Well maybe stock up on some of those overpriced magazines if you don't want her to rip your head off next time.
 ~currentSpeaker = you
-I should never have agreed to this
+I should never have agreed to this.
 ~currentSpeaker = android
-Sorry, got to go
+Sorry, got to go.
 ~characters -= pandora
 ~currentSpeaker = you
-what the hell
-...
+The nerve of some people.
 ~characters += kent
 ~currentSpeaker = comic 
+Sorry to bother you.
 Do you sell comic books here?
 ~currentSpeaker = you 
 Yeah they’re on that shelf
@@ -160,8 +163,9 @@ I could help with that. Maybe if you gave me some pointers.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
 Thanks. Sure I can write you a list. I’m Kent by the way.
+~comic="Kent"
 ~currentSpeaker = you 
-Cas
+Cas.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
 Cas?
@@ -174,16 +178,16 @@ Is this your shop?
 No, the boss is out on holiday for a month. I’m basically in charge until then.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
-Wow, that must be difficult. They paying you overtime?
+Wow, that must be difficult.
 ~currentSpeaker = you 
-Oh no, it’s really not a problem. This place is practically empty. I don’t get overtime, but it doesn’t really matter.
+Oh no, it’s really not a problem. This place is practically empty. I don’t get overtime, but it doesn’t really matter. I'm sort of doing it as a favour.
 ~currentSpeaker = comic 
-You should be more pushy, you know. Times are hard. Need to think about yourself too.
+Times are hard. You need to think about yourself too.
 ~currentSpeaker = you 
-I know, but Ada–my boss really helped me out. I know she can’t afford to pay me extra right now. It doesn’t seem right to ask.
+I know, but I'm ok with it. She's very chill in other ways, so it makes up for the low pay.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_serious")}
-Well, suit yourself. Lucky you get on so well with your boss. Mine sucks.
+Lucky your boss is cool. Mine sucks.
 ~currentSpeaker = you 
 What do you do?
 ~currentSpeaker = comic 
@@ -192,21 +196,24 @@ I’m an illustrator for the Calamity, sometimes I write too. I’m trying to ge
 ~currentSpeaker = you 
 That sounds very cool.
 ~currentSpeaker = comic 
-It was my dream job at first. But my boss works me to the bone. He calls me at random times, sometimes in the middle of the night or at the weekend and tells me to work on something immediately.
+It's my dream job. 
+{ChangeSprite("Kent", "kent_upset")}
+But my boss is horrible.
+{ChangeSprite("Kent", "kent_side_serious")}
+He calls me at random times, sometimes in the middle of the night or at the weekend and tells me I have to work on something immediately.
 ~currentSpeaker = you 
 That doesn't sound very cool.
 ~currentSpeaker = comic 
-Not cool at all. I want to get out but I keep thinking about all the people who wish they were me. 
-~currentSpeaker = you 
-I see what you mean. 
-~currentSpeaker = comic 
-I also keep thinking about all those people on the streets. I’m lucky I have income and a place to stay. I wonder what would happen if I lost all those.
+Very uncool.
+I like what I do, but I hate the way it's done.
+{ChangeSprite("Kent", "kent_normal")}
+Anyway, at least it keeps a roof over my head.
 ~currentSpeaker = you 
 Yes, it’s become so dangerous lately, also with the explosives. I heard they killed some homeless people.
 ~currentSpeaker = comic 
 They weren’t the intended target, but I guess when you set an explosion so close to a homeless shelter.
 ~currentSpeaker = you 
-I wonder why they even thought that would be a good location for a bomb. Wait a minute, how do you know they weren’t the intended target?
+How do you know they weren’t the intended target?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_shocked")}
 Uh, I wasn’t meant to say that. It’s for the story tomorrow.
@@ -228,26 +235,33 @@ Thing is, he never turned up.
 Do you think he got tipped off?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_normal")}
-That seems possible, but then why didn’t he tell anyone about the bomb? That seems very irresponsible?
-~currentSpeaker = you 
-Typical politicians. 
+That seems possible. It's a bit fucked up that he didn't alert anyone.
+~currentSpeaker = you
+It's a free terrorist attack, they've got to make the most of it while they can.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_serious")}
-I don’t want to talk about this anymore. It’s a bit of a downer.
+Shit {you}, that's dark. 
+{ChangeSprite("Kent", "kent_sad")}
+Not sure we should be talking about this anymore.
 ~currentSpeaker = you 
-I get it. Want to give me that list.
+I get it. Wanna hand over that list?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
 Sure.
 ~currentSpeaker = you 
 What’s on here? What’s Zebraman?
 ~currentSpeaker = comic 
-Oh, that’s kind of a guilty pleasure. It’s got a good story though.
+Oh, that’s kind of an old one. It’s got a good story though.
 ~currentSpeaker = you 
 What’s it about?
-~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_happy")}
-Well, he’s half man, half zebra.
+~currentSpeaker = comic 
+A zebraman
+~currentSpeaker = you 
+...
+~currentSpeaker = comic 
+{ChangeSprite("Kent", "kent_amused")}
+He’s half man, half zebra.
 ~currentSpeaker = you 
 Like a centaur?
 {ChangeSprite("Kent", "kent_normal")}
@@ -256,17 +270,15 @@ Well, yes, but no. He’s way better than a centaur.
 ~currentSpeaker = you 
 Because he has stripes?
 ~currentSpeaker = comic 
-{ChangeSprite("Kent", "kent_happy")}
-Yes–but no. He’s super fast and a sharpshooter.
+{ChangeSprite("Kent", "kent_upset")}
+Are you taking the piss?
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = you 
-How does he hide that he’s part zebra? That would seem very difficult.
-~currentSpeaker = comic 
-He doesn’t.
-~currentSpeaker = you 
+Nooo.
 Does he like, live on the outskirts of society? Or a secret base hidden away in the mountains?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_serious")}
-You should just read the comics Cas. OK.
+You should just read the comics {you}. OK.
 ~currentSpeaker = you 
 Ugh. 
 {ChangeSprite("Kent", "kent_amused")}
@@ -284,18 +296,17 @@ Because I get confused.
 {ChangeSprite("Kent", "kent_shocked")}
 HOW?
 ~currentSpeaker = you 
-I don’t know, sometimes I find the pictures ambiguous, it’s not always clear to me who’s speaking or what’s going on.
+I don’t know, I have trouble following all the pictures.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
 A picture is worth a thousand words, is it not.
 ~currentSpeaker = you 
-I think if that were true books would not exist, or newspapers for that matter. 
+I think if that were true books would not exist.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
 Read a comic, and if you get confused send me a picture and I’ll explain to you what’s going on.
 ~currentSpeaker = you 
 Doesn’t that just defeat the purpose of reading in the first place.
-Tali enters.
 ~characters += tali
 ~currentSpeaker = webdev 
 Hey Cas!
