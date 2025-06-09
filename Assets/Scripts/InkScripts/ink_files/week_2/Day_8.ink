@@ -1,4 +1,9 @@
 ==day_8==
+~newsPicture = "headline8"
+~newsCaption = "Sexy IOI"
+~newsAnnouncement = "Sex IOIs are growing in demand. The government responds with stricter regulations to be put in place on IOIs with more 'intimate' functions."
+¬
+~newsAnnouncement = ""
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 ~characters+=pandora

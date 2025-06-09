@@ -1,4 +1,9 @@
 ==day_11==
+~newsPicture = "headline11"
+~newsCaption = "Art?"
+~newsAnnouncement = "Larger than life - strange sculpture appears in the middle of a park. Is it some kind of political statement, or just a prank? 'It's scaring the ducks.' said local resident."
+¬
+~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

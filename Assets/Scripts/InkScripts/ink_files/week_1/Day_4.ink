@@ -1,4 +1,9 @@
 ==day_4==
+~newsPicture = "headline4"
+~newsCaption = "Humans vs IOIs - Illustration by Kent Herring"
+~newsAnnouncement = "Should IOIs have more rights? According to Blue that would be 'utterly irresponsible'."
+¬
+~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

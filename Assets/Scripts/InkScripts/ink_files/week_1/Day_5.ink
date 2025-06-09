@@ -1,5 +1,9 @@
 ==day_5==
-~allbooks+=hypnos_55
+~newsPicture = "headline5"
+~newsCaption = "A show to remember"
+~newsAnnouncement = "Musical sensation Cobalt Dragons concert tickets sell out in first hour of release. Let's uncover the hidden meaning behind their madness."
+¬
+~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

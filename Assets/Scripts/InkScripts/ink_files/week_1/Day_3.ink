@@ -1,4 +1,9 @@
 ==day_3==
+~newsPicture = "headline3"
+~newsCaption = "Sad cat"
+~newsAnnouncement = "Miserable moggy - sad cat a viral hit. What our obsession with this depressed animal says about us."
+¬
+~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

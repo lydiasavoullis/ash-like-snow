@@ -1,4 +1,9 @@
 ==day_10==
+~newsPicture = "headline10"
+~newsCaption = "Prison - Illustration by Kent Herring"
+~newsAnnouncement = "Government vows to send more malicious protesters to prison as a way to clear up our streets. 'People have to learn the hard way.' Blue said in today's remote press conference."
+¬
+~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

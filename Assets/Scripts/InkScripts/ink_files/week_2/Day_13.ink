@@ -1,4 +1,9 @@
 ==day_13==
+~newsPicture = "headline13"
+~newsCaption = "???"
+~newsAnnouncement = "This image is unavailable."
+¬
+~newsAnnouncement = ""
 ~currentSpeaker = ""
 You open the notebook {android} gave you.
 *[Yes (save)]

@@ -325,13 +325,20 @@ What no way! I was just updating their website last week.
 ~currentSpeaker = webdev 
 I’m Tali by the way.
 ~currentSpeaker = comic 
-Nice to meet you. Thank God for your help, the layout is much better now, we had a link from the comedy section taking people to the daily world disasters. It was dreadfully inappropriate.
+Nice to meet you. 
+Thank God for your help, the layout is much better now, we had a link from the Entertainment and Arts taking people to the War section. 
+{ChangeSprite("Kent", "kent_sad")}
+We had a lot of complaints.
 ~currentSpeaker = webdev 
 It scales correctly on mobile devices and holo screens too.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = webdev 
 Are you the one who did that comic on the railway crash?
 ~currentSpeaker = comic 
-Uh, yeah, my boss begged me. I needed the cash. Sorry, I hope it wasn’t too offensive.
+{ChangeSprite("Kent", "kent_side_serious")}
+Uh, yeah, my boss coerced into doing that.
+{ChangeSprite("Kent", "kent_sad")}
+Sorry, I hope it wasn’t too offensive.
 ~currentSpeaker = webdev 
 No, I thought it was hilarious. I mean, nobody died right?
 ~currentSpeaker = comic 
@@ -352,19 +359,10 @@ Sure. Here you go!
 ~currentSpeaker = webdev 
 Woah, that was fast.
 ~currentSpeaker = webdev 
-Wait a minute. Are you an AI?
+Wait a minute. Are you an IOI?
 ~currentSpeaker = android 
-Of course! I’m a therapy AI.
-~currentSpeaker = webdev 
-Therapy?
-~currentSpeaker = android 
-I retrained as a shop assistant though.
-~currentSpeaker = webdev 
-Why?
-~currentSpeaker = android 
-My last job didn’t work out. I’m much more suited to this.
-~currentSpeaker = webdev 
-But–
+Well, I'm inorganic, and I don't mean to brag but I am officially consiered intelligent.
+So that makes me an IOI.
 ~currentSpeaker = you 
 Pandora is the only other person working here right now. We’re short staffed.
 ~currentSpeaker = android 
@@ -382,7 +380,8 @@ Well, you know, people like morally grey characters?
 ~currentSpeaker = android 
 Why?
 ~currentSpeaker = comic 
-Honestly, I’ve never considered why. I think it’s because they’re perceived to be more complex. It also breaks the trend of the black and white morality of most comics and heroes always presented as being in the right.
+I think it’s because they’re perceived to be more complex. 
+It also breaks the trend of the black and white morality of most comics and heroes always presented as being in the right.
 ~currentSpeaker = android 
 Hmm, I don’t quite understand why this is so interesting. I like the pretty pictures though.
 ~currentSpeaker = comic 
@@ -392,11 +391,11 @@ I feel like a morally grey character right now.
 ~currentSpeaker = comic 
 What, why?
 ~currentSpeaker = webdev 
-I can’t believe I accepted a service from an AI.
+I can’t believe I accepted a service from an IOI!
 ~currentSpeaker = comic 
-I’m sure you accept services from AI all the time.
+I’m sure you accept services from IOI all the time.
 ~currentSpeaker = webdev 
-Yes, but a sentient AI!
+Yes, but a sentient IOI!
 ~currentSpeaker = comic 
 So what? 
 Sorry, what’s your name sweetheart?
@@ -409,81 +408,64 @@ No.
 ~currentSpeaker = comic 
 Uh.
 ~currentSpeaker = webdev 
-I accepted a service from an UNPAID sentient AI.
-I’m basically a slaver.
+I accepted a service from an UNPAID sentient IOI.
+I used slave labour.
 ~currentSpeaker = android 
-No, it’s OK. This is a family business.
+No, it’s OK.
 Ada, the owner is my family.
 She provides me with shelter and yearly service checks and overnight charging all for free.
 ~currentSpeaker = webdev 
 Those are basic rights!
-How do you accept this Cas? You should stand up for your fellow worker.
+How do you accept this Cas? You should stand up for her.
 ~currentSpeaker = android 
 Cas stands up all day.
 ~currentSpeaker = you 
-I would like to keep my job. I am not just given free food and shelter.
+I would like to keep my job. As I am not just given free food and shelter.
 ~currentSpeaker = webdev 
 How did I not know about this, all this time I’ve been coming here. I barely saw Pandora. I never thought about it.
-~currentSpeaker = android 
-Seriously, I have pale blue skin, you never thought.
-~currentSpeaker = webdev 
-I thought you were anaemic.
 ~currentSpeaker = android 
 Oh dear.
 I’ve been going through some retraining courses. That’s why I was so absent.
 I’ll be around more often now Ada is out.
-~currentSpeaker = webdev 
-What kind of retraining?
-~currentSpeaker = android 
-Well you know.
-Shop assistant stuff.
-~currentSpeaker = comic 
-That sounds very vague.
-~currentSpeaker = android 
-It’s actually very specific.
 ~currentSpeaker = comic 
 How old are you Pandora?
 ~currentSpeaker = android 
-What a rude question. How dare you. 
 I’ll be two years old in January. 
-But I have the mental age of a forty year old.
+But I have the mental age of a twenty four year old.
 ~currentSpeaker = comic 
 Really?
 ~currentSpeaker = android 
 It might not seem like it, but I have a peculiar personality chip.
 Some will say it’s defective, but I like to think it has character.
-~currentSpeaker = comic 
-I don’t think you’re defective. I just–
+~currentSpeaker = you 
+Hey, I don’t think you’re defective.
 ~currentSpeaker = webdev 
-Oh my God, you are being so patronising. This is literally every guy at work.
+Me neither.
 ~currentSpeaker = comic 
-I didn’t mean it.
+I guess we're all defective in a way.
+~currentSpeaker = you 
+Speak for yourself. I'm completely normal.
 ~currentSpeaker = webdev 
-HA!
+HA! Sure.
 ~currentSpeaker = comic 
-Well ladies goodbye.
-Kent leaves
+Well I have to go now.
+Ciao ladies.
+~characters-=kent
 ~currentSpeaker = webdev 
-Ugh I can’t wait to get stuck into these.
+I can’t wait to get stuck into these.
 Thanks Cas.
 ~currentSpeaker = you 
 No worries.
-it was mostly Ada’s work.
-how do you find the time to read these 1000 page fantasy novels?
+It was mostly Ada’s work.
+How do you find the time to read these thousand plus page fantasy novels?
 ~currentSpeaker = webdev 
 I don’t know, I just do.
-I’m a bit of a loner so it’s easy for me I think.
+There's not much else for me to do after work anyway.
 So Pandora, do you like reading?
 ~currentSpeaker = android 
-Yes, I like fairytales. Myths and legends. 
+Yes, I like children's fiction mostly.
 ~currentSpeaker = webdev 
-Oh really?
-~currentSpeaker = android 
-I know they’re silly childrens’ stories
-
-But I think we can learn a lot from them
-~currentSpeaker = webdev 
-Well I think that’s very insightful
+Nice!
 What do you like Cas?
 ~currentSpeaker = you 
 Crime and horror
@@ -497,19 +479,19 @@ I mean if you want crime and horror just read the news everyday
 Yes, but that’s no fun
 I need fanciful crime and horror
 ~currentSpeaker = webdev 
-Damn it’s not fanciful enough for you
+It’s not fanciful enough for you?
 ~currentSpeaker = you 
-What I mean is that I want to enjoy consuming that awful content only when it affects fictional people
-I don’t enjoy reading about horrible stuff when it happens to real people
+What I mean is that I want to enjoy consuming that awful content only when it affects fictional characters.
+I don’t enjoy reading about horrible stuff when it happens to real people.
 ~currentSpeaker = webdev 
-I guess that makes sense
+At least we know you're not a sociopath.
 Anyway, I’ve got to go. Dinner won’t make itself.
-Tali leaves
+~characters-=tali
 ~currentSpeaker = android 
-Hey
-That was fun
-I like being an assistant
-Let’s do the stock now
+Hey.
+That was fun.
+I like being an assistant.
+Let’s do the stock now.
 ->day_1_inventory
 ==day_1_inventory==
 ~music = "shop"

@@ -125,7 +125,11 @@ I do not think we will meet again.
 // ~allbooks+=Alice_in_Wonderland
 // ~allbooks+=Howls_Moving_Castle
 // ~allbooks+=t_lion_witch_wardrobe
-
+~newsPicture = "headline12"
+~newsCaption = "Mask"
+~newsAnnouncement = "New state of the art masks are released today by Blue-Carp manufacturing. They're 150% more efficient than any other model on the market, but cost more than most can afford. Experts explain why they're worth every penny..."
+¬
+~newsAnnouncement = ""
 {(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe):
     ~strangerbooks="true"
   - else:

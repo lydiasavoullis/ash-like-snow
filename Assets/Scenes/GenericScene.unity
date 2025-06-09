@@ -276,10 +276,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Should IOIs have more rights? According to Blue that would be 'utterly
+    irresponsible'.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e962e6b447be0a45809099a4c422a96, type: 2}
-  m_sharedMaterial: {fileID: -6092877096222608102, guid: 4e962e6b447be0a45809099a4c422a96,
+  m_fontAsset: {fileID: 11400000, guid: a49560a0ae4f513499770d3774af862b, type: 2}
+  m_sharedMaterial: {fileID: -7376225453958428195, guid: a49560a0ae4f513499770d3774af862b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2455,8 +2456,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Daily Calamity
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e962e6b447be0a45809099a4c422a96, type: 2}
-  m_sharedMaterial: {fileID: -6092877096222608102, guid: 4e962e6b447be0a45809099a4c422a96,
+  m_fontAsset: {fileID: 11400000, guid: 09c3bef89b62cf941b0310f63429fb34, type: 2}
+  m_sharedMaterial: {fileID: -8232101713692207565, guid: 09c3bef89b62cf941b0310f63429fb34,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2589,10 +2590,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Humans vs IOIs
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e962e6b447be0a45809099a4c422a96, type: 2}
-  m_sharedMaterial: {fileID: -6092877096222608102, guid: 4e962e6b447be0a45809099a4c422a96,
+  m_fontAsset: {fileID: 11400000, guid: a49560a0ae4f513499770d3774af862b, type: 2}
+  m_sharedMaterial: {fileID: -7376225453958428195, guid: a49560a0ae4f513499770d3774af862b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2617,7 +2618,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.75
+  m_fontSize: 50
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4957,6 +4958,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586011910421325449, guid: 926df3e508864b446ad7e8201883bef2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.422852
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586011910421325449, guid: 926df3e508864b446ad7e8201883bef2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.717041
       objectReference: {fileID: 0}
     - target: {fileID: 8851326284635976694, guid: 926df3e508864b446ad7e8201883bef2,
         type: 3}
