@@ -7,6 +7,7 @@ You open the notebook {android} gave you.
 {SaveStory()}
 You write something down.
 *[No (don't save)] 
+->skip_to_air_vent
 You close the book.
 -~currentSpeaker = you
 I know you all hate me.
@@ -302,6 +303,7 @@ Not. Funny.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 Sorry.
+=skip_to_air_vent
 {ChangeSprite("Kent", "kent_normal")}
 Ok, let's hoist you up.
 ~currentSpeaker = you
@@ -309,6 +311,7 @@ Ok, let's hoist you up.
 ~characters=()
 ~currentSpeaker= ""
 Kent hoists you up and you grab the ledge and pull yourself into the vent.
+~scene="AirVent"
 You're not claustrophobic, but you have a sudden primal urge to scream.
 ~currentSpeaker = android
 Are you alright?
@@ -401,6 +404,8 @@ I'm coming back now.
 You shift your body now, pushing backwards.
 You keep pushing, slowly but steadily.
 Kent catches you as you fall.
+~scene="Basement"
+¬
 ~characters+=kent
 ~characters+=pandora
 ~characters+=tali
@@ -571,6 +576,11 @@ Got it.
 AHHHH.
 ~currentSpeaker = you
 AHHHH!
+~scene="Basement"
+~characters+=kent
+~characters+=pandora
+~characters+=tali
+~characters+=lavender
 ~currentSpeaker = you
 Sorry. I don't know what happened.
 ~currentSpeaker = android

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class XmasLights : MonoBehaviour
+public class Flicker : MonoBehaviour
 {
     private void Start()
     {
@@ -26,11 +26,11 @@ public class XmasLights : MonoBehaviour
             if (alphaIncrease)
             {
                 counter++;
-                alpha += 0.03f;
+                alpha += 0.04f;
             }
             else {
                 counter--;
-                alpha -= 0.03f;
+                alpha -= 0.04f;
                 
             }
             gameObject.GetComponent<Image>().color = new Color(1, 1, 1, alpha);
