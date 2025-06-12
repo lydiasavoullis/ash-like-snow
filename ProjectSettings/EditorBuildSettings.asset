@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AirVent.unity
     guid: bf028c443b83a6c45a12e21d20181dee
+  - enabled: 1
+    path: Assets/Scenes/Cityscape.unity
+    guid: 4968f6e7aec409e46913561b8c812901
   m_configObjects: {}

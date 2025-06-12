@@ -289,6 +289,7 @@ It’s just about other people, who think they’re so clever making stupid comm
  Facinating. 
  {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
+~scene="Cityscape"
  Anyway this is my short story: Prey and Predator. 
 <i>A man observed a city from the roof of a building. His coat fluttered in the wind. If he just stepped over the edge he would finally come tumbling down. 
 He imagined his head shattering like an egg on the concrete, pieces of bone scattered under the feet of passers-by. 
@@ -387,6 +388,7 @@ When he opened his eyes, the intruder was pacing, running her hands through her 
 Aurelia lay discarded on the floor.
 “You’re right.” She said, “I can’t do it.”
 </i>
+~scene="GenericScene"
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
  I’m done reading, this is just the first chapter. If you want to read more, you can check it out on QwikFics.co.xx
