@@ -2,11 +2,13 @@
 ==togue_1==
 ~lavenderPoints+=1
 ~currentSpeaker = you
+~music="Making friends"
 I found one of the magazines you like.
 ~currentSpeaker = snob
 Finally.
 ~funds+=400
 ~booksSold+=1
+~music=""
 ->->
 ==togue_2==
 ~lavenderPoints+=1
@@ -212,6 +214,7 @@ I was thinking about you.
 ~booksSold+=1
 ->->
 ==fantasy_7_book==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 Got something for you
@@ -227,6 +230,8 @@ Who decided fighting a big battle was a good idea?
 It was prophesied long ago, each book focuses on one of the moncharchs. The last book will conclude with the battle.
 ~funds+=80
 ~booksSold+=1
+~music=""
+¬
 ->->
 
 ==blackgoat==
@@ -448,17 +453,24 @@ Kill them of course.
 ~booksSold+=1
 ->->
 ==giraffe_woman==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = comic
 Woah you got the first issue of Giraffewoman, that's something. 
+It's great that you found it.
+~music=""
+¬
 ~allbooks-=giraffe_1
 ~funds+=100
 ~booksSold+=1
 ->->
 ==zebra_man==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = comic
-Shit you did it! Zebraman 89, not a good one, but very impressive nonetheless
+Shit you did it! Zebraman 89, not a good one, but very impressive nonetheless.
+It's great that you found it.
+~music=""
 ~allbooks-=zebraman_89
 ~funds+=120
 ~booksSold+=1

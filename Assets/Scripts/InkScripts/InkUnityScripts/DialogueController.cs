@@ -135,8 +135,8 @@ public class DialogueController : MonoBehaviour
             }
         }
         if (Mouse.current.rightButton.wasPressedThisFrame) {
-            Debug.Log("Dont advance story: " + GameVars.dontAdvanceStory);
-            Debug.Log("Game State: " + GameStates.State);
+            //Debug.Log("Dont advance story: " + GameVars.dontAdvanceStory);
+            //Debug.Log("Game State: " + GameStates.State);
         }
         if (Mouse.current.rightButton.wasPressedThisFrame && GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
             
@@ -481,7 +481,7 @@ public class DialogueController : MonoBehaviour
             ChangeWeather(GameVars.story.variablesState["weather"].ToString());
         }
         catch (Exception e) {
-            Debug.Log("Variable weatner not found!!");
+            //Debug.Log("Variable weather not found!!");
         }
         
         //GameVars.justLoaded = true;

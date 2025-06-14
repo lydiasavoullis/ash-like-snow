@@ -43,7 +43,7 @@ Well, that's one thing sorted today at least.
 
 
 ==day_2_cont==
-
+~music= "Making friends"
 ~currentSpeaker = you 
 Is that Tali?
 ~characters+=tali 
@@ -52,9 +52,11 @@ Hey girls, how are you doing?
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = you 
 I’ve seen better days
+~music= ""
 ~currentSpeaker = android  
 {PlayAnimation("Pandora", "jump")}
 I’m doing well
+~music= "Making friends"
 I got full marks on one of my IOI re-training modules.
 ~currentSpeaker = webdev 
 {ChangeSprite("Tali", "tali_smirk")}

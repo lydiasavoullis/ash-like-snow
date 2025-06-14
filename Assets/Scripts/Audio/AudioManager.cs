@@ -46,8 +46,11 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name +" not found!");
             return;
         }
+        s.source.volume = 1.0f;
+        Debug.Log(s.source.name.ToString() + " : " + s.source.volume.ToString());
         s.source.Play();
-        
+        //StartCoroutine(StartFade(s.source, 2f, 1f, false));
+
     }
     public void TypeSound(string name, float maxPitch, float minPitch)
     {
@@ -73,9 +76,11 @@ public class AudioManager : MonoBehaviour
             //Debug.Log("Sound: " + name + " not found!");
             return;
         }
-        StartCoroutine(StartFade(s.source, 4f, 0f));
+        //s.source.Stop();
+        //StartFadeOut(s.source, 4f, 0f);
+        StartCoroutine(StartFade(s.source, 2f, 0.4f));
     }
-    public IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
+    public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {
         Debug.Log("Fade music");
         float currentTime = 0;
@@ -87,9 +92,26 @@ public class AudioManager : MonoBehaviour
             audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
             yield return null;
         }
-        yield return new WaitForSeconds(duration);
         audioSource.Stop();
+        audioSource.volume = 1.0f;
         yield break;
+
+        
     }
+    //public void StartFadeOut(AudioSource audioSource, float duration, float targetVolume)
+    //{
+    //    Debug.Log("Fade music");
+    //    float currentTime = 0;
+    //    float start = audioSource.volume;
+
+    //    while (currentTime < duration)
+    //    {
+    //        currentTime += Time.deltaTime;
+    //        audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+    //    }
+    //    audioSource.Stop();
+    //    //yield return null;
+    //}
+    
 
 }

@@ -401,7 +401,7 @@ I can do it myself
 {snappedOut=="no": ->night_10_F->|->night_10->}
 ~scene= "ShopFront"
 ¬
-~music = ""
+~music="An average day"
 ~sfx = "rain"
 23rd December, Thursday
 ~scene= "GenericScene"

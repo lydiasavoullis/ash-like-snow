@@ -25,7 +25,6 @@ Hey
 
 
 ==day_1==
-~scene= "ShopFront"
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
 13th December, Monday, 206X
@@ -102,7 +101,6 @@ What the hell was that?
 ~currentSpeaker = android
 She's a lot of fun, isn't she?
 ->tea_or_coffee->
-~music = "An average day"
 ~currentSpeaker = android
 ~characters += pandora
 ~characters+=pandora
@@ -516,7 +514,7 @@ I can do it myself
 {snappedOut=="no": ->night_01_F->|->night_01->}
 ~scene= "ShopFront"
 ¬
-~music = ""
+~music="An average day"
 ~sfx = "rain"
 14th December, Tuesday  
 ~scene= "GenericScene"
