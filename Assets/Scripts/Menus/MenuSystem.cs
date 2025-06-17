@@ -22,7 +22,6 @@ public class MenuSystem : MonoBehaviour
     public GameObject audioManager;
     public Button continueGameButton;
     public TextMeshProUGUI errorMessage;
-
     void Start()
     {
         Debug.Log("Game state: " + GameStates.State);
@@ -31,7 +30,7 @@ public class MenuSystem : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "MainMenuAlt") {
             SetupContinueGameButton();
         }
-        
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager");
     }
     public void SetupContinueGameButton() {
         string savesExist = saveController.SavesExist();

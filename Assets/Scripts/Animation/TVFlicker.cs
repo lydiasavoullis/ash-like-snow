@@ -18,7 +18,7 @@ public class TVFlicker : MonoBehaviour
         tvScreen = tvObj.GetComponent<Image>();
         tvScreen.color = new Color(tvScreen.color.r, tvScreen.color.g, tvScreen.color.b, 0.45f);
         StartCoroutine(Flicker());
-
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager");
     }
 
     void OnDisable()

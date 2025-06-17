@@ -47,7 +47,6 @@ public class AudioManager : MonoBehaviour
             return;
         }
         s.source.volume = 1.0f;
-        Debug.Log(s.source.name.ToString() + " : " + s.source.volume.ToString());
         s.source.Play();
         //StartCoroutine(StartFade(s.source, 2f, 1f, false));
 

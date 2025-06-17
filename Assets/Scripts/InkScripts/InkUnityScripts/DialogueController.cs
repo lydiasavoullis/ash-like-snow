@@ -117,6 +117,7 @@ public class DialogueController : MonoBehaviour
         //    GameVars.SetAllStoryVariables(storyVariables.filePath);
         //}
         saveControl.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager");
     }
 
 
@@ -152,6 +153,7 @@ public class DialogueController : MonoBehaviour
     }
     private void OnLevelWasLoaded(int level)
     {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager");
         if (GameVars.autoMode == true) {
             StartCoroutine(FastForward());
         }
@@ -165,8 +167,6 @@ public class DialogueController : MonoBehaviour
             GameVars.story.UnbindExternalFunction("ChangeWeather");
         }
         catch (Exception e) { }
-        
-        
         GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
         GameVars.story.BindExternalFunction("ChangeSprite", (string charName, string charType) => characterControl.ChangeCharacterSprite(charName, charType, this.stage));
         GameVars.story.BindExternalFunction("RemoveCharacter", (string charName) => characterControl.RemoveCharacter(charName, this.stage));
@@ -247,6 +247,8 @@ public class DialogueController : MonoBehaviour
                 }
                 else {
                     tvScreen.SetActive(false);
+                    
+                    
                 }
                 StartCoroutine(uIControl.WriteText(newValue.ToString(), newsText, audioManager));//typewriter effect
                 break;

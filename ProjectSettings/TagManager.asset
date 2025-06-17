@@ -9,6 +9,7 @@ TagManager:
   - ScreenshotViewer
   - InkController
   - character
+  - AudioManager
   layers:
   - Default
   - TransparentFX
