@@ -1848,6 +1848,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649557252}
     m_Modifications:
+    - target: {fileID: 118905884361851270, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 118905884361851270, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 593877859}
+    - target: {fileID: 118905884361851270, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 118905884361851270, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneTransition, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1487659657133480430, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2003,11 +2023,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1993790522}
-    m_RemovedComponents: []
+    - target: {fileID: 2504624880221838564, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: MainMenuAlt
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5796201662990445730, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a, type: 3}
+--- !u!114 &593877859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2504624880221838564, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+    type: 3}
+  m_PrefabInstance: {fileID: 593877858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3a22596b7c8c840a7e7d8dc08dbabc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &597225593
 PrefabInstance:
   m_ObjectHideFlags: 0
