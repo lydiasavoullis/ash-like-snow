@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Flicker : MonoBehaviour
+public class EnvironmentAnimations : MonoBehaviour
 {
+    [SerializeField]
+    GameObject movingObject;
     private void Start()
     {
         StartCoroutine(FlashLights());
+        //Animate();
+    }
+    public void Animate()
+    {
+        //movingObject.GetComponent<Animation>().Play("fanSlow");
+        //movingObject.GetComponent<Animation>().Stop();
     }
     public IEnumerator FlashLights() {
         float alpha = 1f;
@@ -46,7 +54,10 @@ public class Flicker : MonoBehaviour
             //}
             yield return new WaitForSeconds(0.1f);
         }
-        
 
+        
+        
+        
+        
     }
 }
