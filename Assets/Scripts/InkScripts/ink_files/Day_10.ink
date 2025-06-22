@@ -315,7 +315,7 @@ So...how’s work going?
 ~currentSpeaker=webdev
 Uneventful.
 {ChangeSprite("Tali", "tali_exasperated")}
-Started working on The Calamity website actually, their layout is dreadful. So they hired me to fix it.
+Started working on The Distant Outlook website actually, their layout is dreadful. So they hired me to fix it.
 ~currentSpeaker=you
 I bet {comic} would love to hear that.
 Speaking of {comic} do you know where he is?

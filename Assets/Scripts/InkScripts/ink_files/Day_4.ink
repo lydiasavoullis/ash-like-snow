@@ -77,7 +77,7 @@ I can do it myself
 ~currentSpeaker = you
  Not bad.
 ~currentSpeaker = you
- How’s the Calamity?
+ How’s the Distant Outlook?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_normal")}
  Usual stuff y’know.
@@ -176,20 +176,20 @@ You look better.
  Distract me.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
- OK, there’s a new issue of Zebra man coming out tomorrow.
+ OK, there’s a new issue of Night Thunder coming out tomorrow.
  He died in the last issue, but that's probably just temporary.
  {ChangeSprite("Kent", "kent_amused")}
  He's 'died' about 11 times now.
 ~currentSpeaker = webdev
  {ChangeSprite("Tali", "tali_awe")}
- You read Zebra man?
+ You read Night Thunder?
 ~currentSpeaker = comic
  Uh huh.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_talking_side")}
  I used to read it. I haven’t caught up yet.
  {ChangeSprite("Tali", "tali_talking_forward")}
- I preferred Giraffe Woman.
+ I preferred Satin Rain.
  {ChangeSprite("Tali", "tali_talking_side")}
 I never caught up with that either though.
  But she’s cool.
@@ -197,12 +197,12 @@ I never caught up with that either though.
 {ChangeSprite("Kent", "kent_happy")}
  She is pretty cool.
 ~currentSpeaker = you
- I don’t know what’s going on, but what’s so cool about a Giraffe Woman?
+ I don’t know what’s going on, but what’s so cool about a Satin Rain?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
  You just need to read the comic.
  She’s really cool.
- I think Zebra man has a better story though.
+ I think Night Thunder has a better story though.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_exasperated")}
  I wouldn’t know. I find it so hard to keep up with comics. That’s why I hardly ever read them.

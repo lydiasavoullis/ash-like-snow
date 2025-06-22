@@ -78,8 +78,8 @@ public class SaveController
 
     public void LoadStory(string filename, TextAsset inkJSON, GameObject optionsMenu)
     {
+        Object.DestroyImmediate(GameObject.FindGameObjectWithTag("AudioManager"));//.GetComponent<AudioManager>().StopAllSound();
         GameVars.ResetStaticVariables(inkJSON);
-        
         SaveData data = SaveSystem.LoadData(filename);
         GameVars.loadedTextLog = data.storyLog;
         GameVars.loadedState = data.saveState;//load save state

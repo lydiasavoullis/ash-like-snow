@@ -68,6 +68,25 @@ public class AudioManager : MonoBehaviour
         
 
     }
+    public void StopAllSound() {
+        List<string> songs = GetSongsThatArePlaying();
+        for (int i = 0; i < songs.Count; i++)
+        {
+            StopImmediate(name);
+        }
+    }
+    public void StopImmediate(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            //Debug.Log("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Stop();
+        //StartFadeOut(s.source, 4f, 0f);
+        //StartCoroutine(StartFade(s.source, 2f, 0.4f));
+    }
     public void Stop(string name) {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)

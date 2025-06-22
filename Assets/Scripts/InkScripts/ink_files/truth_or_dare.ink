@@ -398,7 +398,7 @@ Truth or dare Keith.
 ~currentSpeaker = comic
 Truth.
 ~currentSpeaker = snob
-How did you get a job at Calamity?
+How did you get a job at Distant Outlook?
 ~currentSpeaker = comic
 There's this thing.
 It's called an interview.
@@ -427,7 +427,7 @@ Fuck. Alright then.
 My boss was had a medical emergency.
 And my boyfriend, Scott, was the one in the ambulance with him.
 He wanted to thank Scott personally.
-So they were talking and he mentions that he works for the Calamity.
+So they were talking and he mentions that he works for the Distant Outlook.
 And Scott starts talking about me, I was freelancing at the time as an illustrator.
 And the rest is history.
 ~currentSpeaker = you

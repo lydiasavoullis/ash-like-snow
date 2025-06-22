@@ -124,9 +124,9 @@ Good morning Kent
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_happy")}
 Morning
-{allbooks !? (giraffe_1,zebraman_89): I still don't have any comics sorry }
-{allbooks ? zebraman_89: ->zebra_man->} 
-{allbooks ? giraffe_1: -> giraffe_woman->} 
+{allbooks !? (satin_rain_1,nightthunder_89): I still don't have any comics sorry }
+{allbooks ? nightthunder_89: ->night_thunder->} 
+{allbooks ? satin_rain_1: -> satin_rain->} 
 ~currentSpeaker = you
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
@@ -222,7 +222,7 @@ Call me that again and I’ll rip out your eyeballs.
 Ok. Chill dude. 
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
-Who are you? Calamity personnel?
+Who are you? Distant Outlook personnel?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}
 How do you know that?
@@ -249,9 +249,9 @@ I’m a fashion designer.
 ~currentSpeaker = comic  
 Of course you are.
 ~currentSpeaker = snob 
-I guess employees like you are the reason why Calamity is so terrible.
-It's too boring, leaves out all the gruesome details.
-I prefer Apocalypse.
+I guess employees like you are the reason why Distant Outlook is so terrible.
+It's too dry and predictable, and it leaves out all the gruesome details.
+I prefer Calamity.
 ~currentSpeaker = comic  
 News isn’t meant to be gruesome. It’s meant to inform the public, and hopefully tell the truth.
 ~currentSpeaker = snob 
@@ -264,9 +264,9 @@ Let’s keep things civil, eh?
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_side_serious")}
 You’re right. I don’t know why I’m even defending them. 
-You know Blue Carp owns both Calamity and Apocalypse anyway.
+You know Blue Carp owns both Distant Outlook and Calamity anyway.
 They have a monopoly on the news outlets so they win either way.
-Calamity is just your usual scaremongering, Apocalypse is a full blown shitstorm. You just pick the lesser of two devils.
+Distant Outlook is just your usual scaremongering, Calamity is a full blown shitstorm. You just pick the lesser of two devils.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
 If you don’t like your job then just leave.

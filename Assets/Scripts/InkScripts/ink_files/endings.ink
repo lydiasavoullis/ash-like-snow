@@ -168,7 +168,7 @@ I guess we'll have to wait for the next nuclear war.
 You can't joke about things like that!
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
-You're right. I might spoil the next issue of the Calamity for you.
+You're right. I might spoil the next issue of the Distant Outlook for you.
 ~currentSpeaker = you
 How is work going?
 ~currentSpeaker = comic

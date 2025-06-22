@@ -278,7 +278,7 @@ Also, it's not my newspaper.
 I know how you journalists work. You say that, and then you’re going to go back to your stupid newspaper and publish everything I say. 
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-Honestly, I really don’t give a fuck about the Calamity.
+Honestly, I really don’t give a fuck about the Distant Outlook.
 {ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker=snob
 Well just know if you snitch. I’ll know who did it. And I have…contacts.

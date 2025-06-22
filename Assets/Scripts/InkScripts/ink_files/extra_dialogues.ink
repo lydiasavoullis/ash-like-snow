@@ -452,26 +452,26 @@ Kill them of course.
 ~funds+=90
 ~booksSold+=1
 ->->
-==giraffe_woman==
+==satin_rain==
 ~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = comic
-Woah you got the first issue of Giraffewoman, that's something. 
+Woah you got the first issue of Satin Rain, that's something. 
 It's great that you found it.
 ~music=""
 ¬
-~allbooks-=giraffe_1
+~allbooks-=satin_rain_1
 ~funds+=100
 ~booksSold+=1
 ->->
-==zebra_man==
+==night_thunder==
 ~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = comic
-Shit you did it! Zebraman 89, not a good one, but very impressive nonetheless.
+Shit you did it! Night Thunder 89, not a good one, but very impressive nonetheless.
 It's great that you found it.
 ~music=""
-~allbooks-=zebraman_89
+~allbooks-=nightthunder_89
 ~funds+=120
 ~booksSold+=1
 ->->

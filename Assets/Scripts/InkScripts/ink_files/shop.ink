@@ -9,15 +9,15 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=togue_222
 ->goto_shop
-*{day==1}{funds>=100}[Zebra man \#89(£100)]
+*{day==1}{funds>=100}[Night Thunder \#89(£100)]
 ~funds -= 100
 ~deliveryToday+=1
-~allbooks+=zebraman_89
+~allbooks+=nightthunder_89
 ->goto_shop
 *{day==1}{funds>=80}[Giraffe woman \#1(£80)]
 ~funds -= 80
 ~deliveryToday+=1
-~allbooks+=giraffe_1
+~allbooks+=satin_rain_1
 ->goto_shop
 *{day==1}{funds>=50}[The King’s Crown: The War of the Seven Swords: Book 7 (£50)]
 ~funds -= 50

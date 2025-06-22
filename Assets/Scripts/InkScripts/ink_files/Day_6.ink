@@ -263,7 +263,7 @@ It’s just about other people, who think they’re so clever making stupid comm
 ~currentSpeaker = you
  I’m literally working on a Saturday.
 ~currentSpeaker = comic
- I’m actually going to share a fanfiction I wrote recently.
+ I’m actually going to share a Night Thunder fanfiction I wrote recently.
 ~currentSpeaker = snob
  Hey, that sounds like cheating.
  {ChangeSprite("Pandora", "pandora_mean")}

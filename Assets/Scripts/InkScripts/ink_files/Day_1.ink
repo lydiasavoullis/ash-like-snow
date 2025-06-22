@@ -190,7 +190,7 @@ Lucky your boss is cool. Mine sucks.
 What do you do?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
-I’m an illustrator for the Calamity, sometimes I write too. I’m trying to get more into writing.
+I’m an illustrator for the Distant Outlook, sometimes I write too. I’m trying to get more into writing.
 ~currentSpeaker = you 
 That sounds very cool.
 ~currentSpeaker = comic 
@@ -247,29 +247,24 @@ I get it. Wanna hand over that list?
 {ChangeSprite("Kent", "kent_normal")}
 Sure.
 ~currentSpeaker = you 
-What’s on here? What’s Zebraman?
+What’s on here? What’s Night Thunder?
 ~currentSpeaker = comic 
 Oh, that’s kind of an old one. It’s got a good story though.
 ~currentSpeaker = you 
 What’s it about?
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic 
-A zebraman
+A lone mega rich vigilante who seeks to enforce justice in a corrupt crime ridden city.
 ~currentSpeaker = you 
-...
+Yeah, we need one of those.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
-He’s half man, half zebra.
+I concur.
 ~currentSpeaker = you 
-Like a centaur?
-{ChangeSprite("Kent", "kent_normal")}
-~currentSpeaker = comic 
-Well, yes, but no. He’s way better than a centaur.
-~currentSpeaker = you 
-Because he has stripes?
-~currentSpeaker = comic 
+We need more troubled billionaires with a hero complex.
+~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_upset")}
-Are you taking the piss?
+Ok, now you're just taking the piss.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = you 
 Nooo.
@@ -317,7 +312,7 @@ Sorry I didn’t mean to interrupt.
 ~currentSpeaker = comic 
 No worries.
 ~currentSpeaker = you 
-This is Kent. Avid comic book reader and illustrator and writer for the Calamity.
+This is Kent. Avid comic book reader and illustrator and writer for the Distant Outlook.
 ~currentSpeaker = webdev 
 What no way! I was just updating their website last week. 
 ~currentSpeaker = webdev 
@@ -368,9 +363,9 @@ Luckily no one really comes here anyway.
 ~currentSpeaker = android 
 So this is just the right amount of staff.
 ~currentSpeaker = android 
-Who wrote this? A list? What’s a Giraffe Woman?
+Who wrote this? A list? What’s Satin Rain?
 ~currentSpeaker = comic 
-Giraffe Woman is the main love interest of Zebra Man. It’s a spin off comic. Some say it’s even better than Zebra Man because it’s more morally grey.
+Satin Rain is the main love interest of Night Thunder. It’s a spin off comic. Some say it’s even better than Night Thunder because it’s more morally grey.
 ~currentSpeaker = android 
 How does that make it good?
 ~currentSpeaker = comic 
