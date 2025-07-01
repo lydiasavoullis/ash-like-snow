@@ -32,23 +32,23 @@ public class UIController
         {
             case "cas":
                 colour = Color.yellow;
-                maxPitch = 1.1f;
+                maxPitch = 1.0f;
                 minPitch = 0.8f;
                 break;
             case "lavender":
-                maxPitch = 1.7f;
-                minPitch = 0.9f;
+                maxPitch = 2f;
+                minPitch = 1.3f;
                 colour = new Color32(222, 194, 255, 255);
                 break;
             case "pandora":
                 colour = Color.red;
                 maxPitch = 1.3f;
-                minPitch = 0.8f;
+                minPitch = 0.9f;
                 break;
             case "kent":
                 colour = new Color32(76, 255, 127, 255);
-                maxPitch = 1.3f;
-                minPitch = 0.7f;
+                maxPitch = 0.9f;
+                minPitch = 0.3f;
                 break;
             case "tali":
                 colour = Color.magenta;

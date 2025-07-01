@@ -1,6 +1,6 @@
 
 ==read_check==
-~music ="Making friends"
+~music ="Pandora's theme"
 //can read on 8 days
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories

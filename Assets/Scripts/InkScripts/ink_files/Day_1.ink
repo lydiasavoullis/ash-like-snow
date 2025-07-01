@@ -25,9 +25,14 @@ Hey
 
 
 ==day_1==
+~scene= "ShopFront"
+~music= "An average day"
+¬
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
 13th December, Monday, 206X
+¬
+~music= ""
 ~scene= "GenericScene"
 <i>I hope you know what you're doing</i>
 ~newsAnnouncement = "Breaking news...Neurological problems caused by 'miracle' drug "
@@ -94,12 +99,13 @@ Why do I even bother?
 {RemoveCharacter("Lavender")}
 ~characters -= lavender
 ~sfx = "close door"
-~music = "An average day"
+~music = ""
 ~currentSpeaker = you
 What the hell was that?
 ~characters += pandora
 ~currentSpeaker = android
 She's a lot of fun, isn't she?
+~music="Rise and shine"
 ->tea_or_coffee->
 ~currentSpeaker = android
 ~characters += pandora
@@ -141,6 +147,7 @@ Sorry, got to go.
 ~characters -= pandora
 ~currentSpeaker = you
 The nerve of some people.
+~sfx="open door"
 ~characters += kent
 ~currentSpeaker = comic 
 Sorry to bother you.
@@ -300,6 +307,7 @@ I think if that were true books would not exist.
 Read a comic, and if you get confused send me a picture and I’ll explain to you what’s going on.
 ~currentSpeaker = you 
 Doesn’t that just defeat the purpose of reading in the first place.
+~sfx="open door"
 ~characters += tali
 ~currentSpeaker = webdev 
 Hey Cas!
@@ -392,6 +400,7 @@ Yes, but a sentient IOI!
 ~currentSpeaker = comic 
 So what? 
 Sorry, what’s your name sweetheart?
+~music="Pandora's theme"
 ~currentSpeaker = android 
 Pandora.
 ~currentSpeaker = comic 
@@ -436,6 +445,7 @@ Hey, I don’t think you’re defective.
 Me neither.
 ~currentSpeaker = comic 
 I guess we're all defective in a way.
+~music="Rise and shine"
 ~currentSpeaker = you 
 Speak for yourself. I'm completely normal.
 ~currentSpeaker = webdev 
@@ -443,6 +453,7 @@ HA! Sure.
 ~currentSpeaker = comic 
 Well I have to go now.
 Ciao ladies.
+~sfx="close door"
 ~characters-=kent
 ~currentSpeaker = webdev 
 I can’t wait to get stuck into these.
@@ -479,6 +490,7 @@ I don’t enjoy reading about horrible stuff when it happens to real people.
 ~currentSpeaker = webdev 
 At least we know you're not a sociopath.
 Anyway, I’ve got to go. Dinner won’t make itself.
+~sfx="close door"
 ~characters-=tali
 ~currentSpeaker = android 
 Hey.

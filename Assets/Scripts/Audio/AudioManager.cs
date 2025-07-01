@@ -56,6 +56,7 @@ public class AudioManager : MonoBehaviour
         //Debug.Log(name);
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.pitch = (UnityEngine.Random.Range(minPitch, maxPitch));
+        s.source.volume = 0.5f;
         if (s == null)
         {
             Debug.Log("Sound: " + name + " not found!");

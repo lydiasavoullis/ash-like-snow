@@ -39,6 +39,7 @@ I can do it myself
  Ha ha ha.
 ~currentSpeaker = you
  I know. I can’t help it.
+ ~sfx = "open door"
 ~currentSpeaker = comic
 ~characters += kent
 {ChangeSprite("Kent", "kent_normal")}
