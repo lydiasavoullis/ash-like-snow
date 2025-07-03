@@ -485,6 +485,72 @@ Sorry. I like working with you, just not the actual content of the work.
 ~currentSpeaker = you
 No offense taken.
 I understand completely.
+~currentSpeaker = android
+Have you ever had a panic attack before?
+~currentSpeaker = you
+I think so.
+A couple of times, I managed to contain them.
+I just fell apart there. Not sure why.
+~currentSpeaker = android
+It's ok.
+~currentSpeaker = you
+No. It isn't.
+I'm just tired of this.
+~currentSpeaker = android
+There's always tomorrow.
+~currentSpeaker = you
+Tomorrow and tomorrow and tomorrow.
+This shit never ends.
+You know I always thought it would get better as I got older.
+But it seems to get worse.
+~currentSpeaker = android
+It will get better.
+~currentSpeaker = you
+I don't know.
+When I was a kid our neighbour in our appartment was my best friend.
+Well, more like an aunt. 
+Her husband was long dead, she had no kids, very few relatives.
+I used to visit her a lot as she was getting older, a couple of years ago her health started to decline. I used to take her to hospital. I watched her pass away.
+~currentSpeaker = android
+I'm so sorry.
+~currentSpeaker = you
+She always seemed so cheerful around me, always cracking jokes. 
+~currentSpeaker = android
+What a wonderful lady.
+~currentSpeaker = you
+Anyway, I helped her great-nephew sort out her things after her passing.
+Her draws were full of all sorts of anti-depressants.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker = android
+...
+~currentSpeaker = you
+I don't think they were even helping.
+I'm ashamed to say I read her diaries. She was truly a miserable woman.
+I read all the entries, even years before she started to get sick. She was never happy.
+All that time she just pretended she was ok...she was lying to me.
+{ChangeSprite("Pandora", "pandora_annoyed")}
+~currentSpeaker = android
+Why does that mean she was lying?
+~currentSpeaker = you
+...well she felt one thing and she acted like another.
+~currentSpeaker = android
+Many people keep these kinds of journals. Perhaps it was where she dumped all these negative emotions so that she could be rid of them.
+Why is the good always rendered irrelevant because of the bad?
+Can they not both exist in harmony?
+~currentSpeaker = you
+...
+Hmm.
+{ChangeSprite("Pandora", "pandora_pensive")}
+~currentSpeaker = android
+Did I upset you?
+~currentSpeaker = you
+No you didn't.
+I think it makes sense now.
+Thanks Pan.
+{ChangeSprite("Pandora", "pandora_confused")}
+~currentSpeaker = android
+Oh. Don't mention it.
+~currentSpeaker = you
 I feel sleepy.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android

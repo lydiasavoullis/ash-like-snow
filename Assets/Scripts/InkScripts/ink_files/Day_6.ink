@@ -19,6 +19,7 @@ I can do it myself
 -Hey Cas
 ->tea_or_coffee->day_6_cont
 ==day_6_cont==
+~music="Rise and shine"
 ~currentSpeaker = android
  So you know what day it is?
 ~currentSpeaker = you
@@ -40,6 +41,7 @@ I can do it myself
 ~currentSpeaker = you
  I know. I can’t help it.
  ~sfx = "open door"
+~music="Literature club"
 ~currentSpeaker = comic
 ~characters += kent
 {ChangeSprite("Kent", "kent_normal")}
@@ -148,6 +150,7 @@ I can do it myself
 ~currentSpeaker = snob
 ~music= ""
  But you’re just too slow
+ ~music="Literature club"
 ~currentSpeaker = snob
 ...
 ~currentSpeaker = android
@@ -233,6 +236,7 @@ It’s just about other people, who think they’re so clever making stupid comm
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
  Well done!
+~music="Literature club"
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_happy")}
 {ChangeSprite("Pandora", "pandora_normal")}
@@ -290,6 +294,7 @@ It’s just about other people, who think they’re so clever making stupid comm
  Facinating. 
  {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
+~music="City lights"
 ~scene="Cityscape"
  Anyway this is my short story: Prey and Predator. 
 <i>A man observed a city from the roof of a building. His coat fluttered in the wind. If he just stepped over the edge he would finally come tumbling down. 
@@ -390,9 +395,11 @@ Aurelia lay discarded on the floor.
 “You’re right.” She said, “I can’t do it.”
 </i>
 ~scene="GenericScene"
+~music=""
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
  I’m done reading, this is just the first chapter. If you want to read more, you can check it out on QwikFics.co.xx
+~music="Literature club"
 ~currentSpeaker = snob
  Aww I hate cliffhangers.
  {ChangeSprite("Kent", "kent_amused")}
@@ -443,6 +450,7 @@ Aurelia lay discarded on the floor.
  Don’t worry, my fanfic has a long way to go, I’m only fifty five chapters into writing it.
 ~currentSpeaker = android
  Uh, wow. OK. I’ll have a go.
+~music="Pandora's theme"
 ~currentSpeaker = android
  This is untitled.
  {ChangeSprite("Lavender", "lavender_angry")}
@@ -458,7 +466,9 @@ Surrounds us in the fray
 Plunged into an immutable dark
 The future forced upon us stark
 ...
+~music=""
 It needs more work
+~music="Literature club"
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
  Perhaps, but it’s a good start.
