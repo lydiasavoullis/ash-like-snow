@@ -49,7 +49,11 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 52
+=======
+  controlID: 129
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
 =======
   controlID: 129
 >>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
@@ -78,6 +82,9 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
+=======
 >>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
   m_ActualView: {fileID: 17}
   m_Panes:
@@ -280,8 +287,13 @@ MonoBehaviour:
     width: 1178
     height: 735
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
 =======
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -733,9 +745,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 26650000
     m_LastClickedID: 25894
     m_ExpandedIDs: 000000001a6500001c6500001e65000020650000226500002465000026650000286500002a6500002c6500002e65000000ca9a3b
+=======
+    m_SelectedIDs: 76750000
+    m_LastClickedID: 30070
+    m_ExpandedIDs: 0000000076750000787500007a7500007c7500007e75000080750000827500008475000086750000487600004a76000000ca9a3b
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
 =======
     m_SelectedIDs: 76750000
     m_LastClickedID: 30070
@@ -769,7 +787,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000001a6500001c6500001e65000020650000226500002465000026650000286500002a6500002c6500002e650000
+=======
+    m_ExpandedIDs: 0000000076750000787500007a7500007c7500007e75000080750000827500008475000086750000
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
 =======
     m_ExpandedIDs: 0000000076750000787500007a7500007c7500007e75000080750000827500008475000086750000
 >>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
@@ -915,9 +937,15 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 90f3ffff
       m_LastClickedID: 0
       m_ExpandedIDs: 1afbffff
+=======
+      m_SelectedIDs: a0d9feff
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5ed6feff0624ffff1e24ffffe850ffff28faffff18fbfffff4ffffff38800000
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
 =======
       m_SelectedIDs: a0d9feff
       m_LastClickedID: 0

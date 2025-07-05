@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/iconsampleSettings.lighting.meta
 guid: d35236d0fdddf0342be039b1a6ae62d8
 ========
 guid: 2d80f075fa32d594d8412980447dc0ba
 >>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2:Assets/URP.asset.meta
+=======
+guid: d35236d0fdddf0342be039b1a6ae62d8
+>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 4890085278179872738
