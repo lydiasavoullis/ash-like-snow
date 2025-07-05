@@ -1,6 +1,4 @@
 ==goto_shop==
-~music = "shop"
-~shop="true"
 ~button="book"
 Remaining funds: {funds}
 + Go to children's fiction

@@ -499,6 +499,8 @@ I like being an assistant.
 Let’s do the stock now.
 ->day_1_inventory
 ==day_1_inventory==
+~music = "shop"
+~shop="true"
 ->goto_shop->read_check->end_day1
 ==end_day1==
 ~characters+=pandora
@@ -517,10 +519,10 @@ I can do it myself
 ~music = "night theme"
 ~sfx = "rain"
 {snappedOut=="no": ->night_01_F->|->night_01->}
-~music="An average day"
 ~scene= "ShopFront"
-~sfx = "rain"
 ¬
+~music="An average day"
+~sfx = "rain"
 14th December, Tuesday  
 ~scene= "GenericScene"
 ¬

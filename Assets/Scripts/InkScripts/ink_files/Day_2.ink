@@ -3,7 +3,6 @@
 ~newsCaption = "Rioter brandishing hateful placard"
 ~newsAnnouncement = "Crack down on anti-war riots - 'They are a disgrace to our great nation,' said Blue. 'I will have them removed as soon as possible.'"
 ¬
-~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
@@ -52,6 +51,7 @@ Hey girls, how are you doing?
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = you 
 I’ve seen better days
+~music= ""
 ~currentSpeaker = android  
 {PlayAnimation("Pandora", "jump")}
 I’m doing well
@@ -178,7 +178,6 @@ HEY
 {ChangeSprite("Lavender", "lavender_normal")}
 Have you got my magazines?
 {allbooks?togue_222: ->togue_1->}
-
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
 Hey! I like your outfit.

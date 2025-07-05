@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/iconsampleSettings.lighting.meta
+guid: 726f34b1aa15c614d8e76f88762fbf17
+========
+guid: 2d80f075fa32d594d8412980447dc0ba
+>>>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2:Assets/URP.asset.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
