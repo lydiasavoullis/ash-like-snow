@@ -27,11 +27,7 @@ QualitySettings:
     softVegetation: 0
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
-<<<<<<< HEAD
     useLegacyDetailDistribution: 0
-=======
-    useLegacyDetailDistribution: 1
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     vSyncCount: 0
     lodBias: 0.3
     maximumLODLevel: 0
@@ -79,11 +75,7 @@ QualitySettings:
     softVegetation: 0
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
-<<<<<<< HEAD
     useLegacyDetailDistribution: 0
-=======
-    useLegacyDetailDistribution: 1
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     vSyncCount: 0
     lodBias: 0.4
     maximumLODLevel: 0
@@ -125,21 +117,13 @@ QualitySettings:
     skinWeights: 2
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
-<<<<<<< HEAD
     anisotropicTextures: 1
-=======
-    anisotropicTextures: 0
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     antiAliasing: 0
     softParticles: 0
     softVegetation: 0
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
-<<<<<<< HEAD
     useLegacyDetailDistribution: 0
-=======
-    useLegacyDetailDistribution: 1
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     vSyncCount: 1
     lodBias: 0.7
     maximumLODLevel: 0
@@ -181,7 +165,6 @@ QualitySettings:
     skinWeights: 2
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
-<<<<<<< HEAD
     anisotropicTextures: 1
     antiAliasing: 0
     softParticles: 0
@@ -189,15 +172,6 @@ QualitySettings:
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
     useLegacyDetailDistribution: 0
-=======
-    anisotropicTextures: 0
-    antiAliasing: 0
-    softParticles: 0
-    softVegetation: 1
-    realtimeReflectionProbes: 0
-    billboardsFaceCameraPosition: 0
-    useLegacyDetailDistribution: 1
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     vSyncCount: 1
     lodBias: 1
     maximumLODLevel: 0
@@ -213,12 +187,7 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
     customRenderPipeline: {fileID: 0}
-=======
-    customRenderPipeline: {fileID: 11400000, guid: 2d80f075fa32d594d8412980447dc0ba,
-      type: 2}
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -244,7 +213,6 @@ QualitySettings:
     skinWeights: 4
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
-<<<<<<< HEAD
     anisotropicTextures: 2
     antiAliasing: 2
     softParticles: 1
@@ -252,15 +220,6 @@ QualitySettings:
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
     useLegacyDetailDistribution: 0
-=======
-    anisotropicTextures: 0
-    antiAliasing: 0
-    softParticles: 0
-    softVegetation: 1
-    realtimeReflectionProbes: 0
-    billboardsFaceCameraPosition: 0
-    useLegacyDetailDistribution: 1
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     vSyncCount: 1
     lodBias: 1.5
     maximumLODLevel: 0
@@ -299,7 +258,6 @@ QualitySettings:
     shadowCascade2Split: 0.33333334
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
     shadowmaskMode: 1
-<<<<<<< HEAD
     skinWeights: 255
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
@@ -310,18 +268,6 @@ QualitySettings:
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
     useLegacyDetailDistribution: 0
-=======
-    skinWeights: 4
-    globalTextureMipmapLimit: 0
-    textureMipmapLimitSettings: []
-    anisotropicTextures: 0
-    antiAliasing: 0
-    softParticles: 0
-    softVegetation: 1
-    realtimeReflectionProbes: 0
-    billboardsFaceCameraPosition: 0
-    useLegacyDetailDistribution: 1
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     vSyncCount: 1
     lodBias: 2
     maximumLODLevel: 0
@@ -357,19 +303,11 @@ QualitySettings:
     LinuxHeadlessSimulation: 5
     Nintendo Switch: 5
     PS4: 5
-<<<<<<< HEAD
     PS5: 5
     QNX: 5
     Server: 5
     Stadia: 5
     Standalone: 5
-=======
-    PSM: 5
-    PSP2: 2
-    Server: 0
-    Standalone: 3
-    Tizen: 2
->>>>>>> c5326ce0ba34ff9d9f19023b3067599ade92d9c2
     WebGL: 3
     Windows Store Apps: 5
     XboxOne: 5

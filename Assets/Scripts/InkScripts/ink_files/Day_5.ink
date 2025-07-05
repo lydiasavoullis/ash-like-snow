@@ -3,6 +3,7 @@
 ~newsCaption = "A show to remember"
 ~newsAnnouncement = "Musical sensation Cobalt Dragons concert tickets sell out in first hour of release. Let's uncover the hidden meaning behind their madness."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 

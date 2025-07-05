@@ -3,9 +3,8 @@
 ~newsCaption = "The Blue House"
 ~newsAnnouncement = "Terrorists threaten Billionaire Benedict Blue's life with a near miss assassination attempt. A message has been received from annoymous hackers. 'We must stay calm,' said Blue. 'We will do whatever it takes to find out who did this.' There a couple of things that we can deduce about the annonymous hackers who compromised the most expensive security system in the UK..."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
-~scene= "ShopFront"
-¬
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

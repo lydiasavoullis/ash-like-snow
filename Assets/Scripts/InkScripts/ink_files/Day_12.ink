@@ -150,6 +150,7 @@ snapped out: {snappedOut}
 ->trader_unhappy
 }
 ==continue_day_12==
+~music="Rise and shine"
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android 

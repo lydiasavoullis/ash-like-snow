@@ -1,4 +1,6 @@
 ==goto_shop==
+~music = "shop"
+~shop="true"
 ~button="book"
 Remaining funds: {funds}
 + Go to children's fiction
@@ -150,7 +152,7 @@ Remaining funds: {funds}
 +Finish shopping
 ~music = ""
 ~shop=""
-~shop=""
+~button=""
 ->->
 ==buy_childrens_books==
 Remaining funds: {funds}

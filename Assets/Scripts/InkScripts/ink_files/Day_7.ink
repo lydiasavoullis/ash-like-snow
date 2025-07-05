@@ -16,7 +16,11 @@
 
 ==day_7==
 {pandoraPoints==0: ->day_7_alt}
-
+~newsPicture = "headline7"
+~newsCaption = "Virus and parrot - Illustration by Kent Herring"
+~newsAnnouncement = "Parrots do not actually spread parrot pox. The public are asked to not realease their pet parrots. These feathered beasts are a scourge upon this nation."
+¬
+~music="Pandora's theme"
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.

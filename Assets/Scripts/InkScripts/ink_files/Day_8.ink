@@ -3,6 +3,7 @@
 ~newsCaption = "Sexy IOI"
 ~newsAnnouncement = "Sex IOIs are growing in demand. The government responds with stricter regulations to be put in place on IOIs with more 'intimate' functions."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android

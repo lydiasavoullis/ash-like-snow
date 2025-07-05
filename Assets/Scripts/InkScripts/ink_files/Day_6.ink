@@ -3,6 +3,7 @@
 ~newsCaption = "A lifesaving syringe - Illustration by Kent Herring"
 ~newsAnnouncement = "More people urged to get new extra complete vaccine - 60 more deadly diseases are covered in this one! Including the newest strain of Parrot Pox..."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
@@ -19,7 +20,6 @@ I can do it myself
 -Hey Cas
 ->tea_or_coffee->day_6_cont
 ==day_6_cont==
-~music="Rise and shine"
 ~currentSpeaker = android
  So you know what day it is?
 ~currentSpeaker = you

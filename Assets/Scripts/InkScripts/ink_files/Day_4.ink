@@ -3,6 +3,7 @@
 ~newsCaption = "Humans vs IOIs - Illustration by Kent Herring"
 ~newsAnnouncement = "Should IOIs have more rights? According to Blue that would be 'utterly irresponsible'."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 

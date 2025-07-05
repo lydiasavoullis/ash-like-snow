@@ -3,6 +3,7 @@
 ~newsCaption = "Art?"
 ~newsAnnouncement = "Larger than life - strange sculpture appears in the middle of a park. Is it some kind of political statement, or just a prank? 'It's scaring the ducks.' said local resident."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
