@@ -8,9 +8,10 @@ I found one of the magazines you like.
 Finally.
 ~funds+=400
 ~booksSold+=1
-~music=""
+~music="Rise and shine"
 ->->
 ==togue_2==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Just before I forget, I ordered this spring addition for you.
@@ -19,8 +20,10 @@ Well, I suppose you're not completely useless.
 Oh pastels!
 ~funds+=400
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==togue_3==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Just before I forget, I ordered this for you.
@@ -28,8 +31,10 @@ Just before I forget, I ordered this for you.
 Well, I suppose you're not completely useless.
 ~funds+=90
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==togue_winter==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Oh Lavender, I have a Togue winter addition for you.
@@ -44,8 +49,10 @@ I'll take it.
 ~allbooks-=togue_1076
 ~funds+=500
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==togue_special==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 So Lavender, I have a Togue special issue for you.
@@ -66,9 +73,11 @@ Not really. But if it makes you happy.
 ~currentSpeaker = snob
  ~funds+=800
  ~booksSold+=1
+ ~music="Rise and shine"
 ->->
 
 ==togue_flight_uniform==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Lavender, I have something for you.
@@ -92,8 +101,10 @@ Of couse, you would increase your work output by up to 50% if you wore a uniform
 I better get on that then.
  ~funds+=800
  ~booksSold+=1
+ ~music="Rise and shine"
 ->->
 ==togue_pets==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 I've got something for you.
@@ -122,10 +133,12 @@ Oh he loves the attention. He's a big diva.
 He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he always seems to take on the essense of what he's wearing. 
 ~currentSpeaker = you
 Right.
- ~funds+=800
- ~booksSold+=1
+~funds+=800
+~booksSold+=1
+~music="Rise and shine"
 ->->
 ==togue_acid_rain_issue==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 So I have this magazine you might like?
@@ -142,8 +155,12 @@ Back then people wanted to protect themselves from the toxic weather but still f
 It sure feels good to not get acid in your eyes.
 ~currentSpeaker = snob
 Indeed.
+~funds+=800
+~booksSold+=1
+~music="Rise and shine"
 ->->
 ==togue_ppe_special==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Look I got you something.
@@ -177,8 +194,10 @@ Do you want me to buy it or not?
 Fine.
 ~funds+=800
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==togue_protective_gear==
+~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 We've got a new magazine in.
@@ -201,8 +220,10 @@ I suppose it's a bit late for me to tell you that.
 Ouch!
 ~funds+=800
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==fantasy_dragon_heart_book==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I just ordered this in.
@@ -212,6 +233,7 @@ You ordered this for me? \n Thanks, I'll take it.\n Although I'm not sure if I'l
 I was thinking about you.
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==fantasy_7_book==
 ~music="Making friends"
@@ -230,11 +252,12 @@ Who decided fighting a big battle was a good idea?
 It was prophesied long ago, each book focuses on one of the moncharchs. The last book will conclude with the battle.
 ~funds+=80
 ~booksSold+=1
-~music=""
+~music="Rise and shine"
 ¬
 ->->
 
 ==blackgoat==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I got this book I thought you might like, it's highly recommend apparently.
@@ -260,8 +283,10 @@ Sounds sad.
 Maybe.
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==god_of_the_forest==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I got this book you might like.
@@ -283,9 +308,11 @@ One can also assume that.
 I have learnt much today.
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 
 ==the_glass_labyrinth==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I have something for you {webdev}.
@@ -310,9 +337,11 @@ It sounds complicated and scary...but actually you can see right though it.
 I'm intrigued. I'll take it.
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 
 ==queen_h==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I have this book called...Queendom Heretic.
@@ -349,8 +378,10 @@ And this child threatens that.
 What's the life of one child compared to a whole galaxy?
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==where_the_heart_lies==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I found this book you might like.
@@ -403,8 +434,10 @@ I mean sure...that stuff is important I guess.
 Stories are more than just a sum of their parts.
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==the_ring_thorns==
+~music="Making friends"
 ~taliPoints+=1
 ~currentSpeaker = you
 I've got this for you {webdev}
@@ -437,8 +470,10 @@ Thanks, but no thanks.
 I suppose each to their own.
 ~funds+=65
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==the_sentinel==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I got you a comic
@@ -451,6 +486,7 @@ What does he do to the monsters?
 Kill them of course.
 ~funds+=90
 ~booksSold+=1
+~music="Rise and shine"
 ->->
 ==satin_rain==
 ~music="Making friends"
@@ -458,8 +494,7 @@ Kill them of course.
 ~currentSpeaker = comic
 Woah you got the first issue of Satin Rain, that's something. 
 It's great that you found it.
-~music=""
-¬
+~music="Rise and shine"
 ~allbooks-=satin_rain_1
 ~funds+=100
 ~booksSold+=1
@@ -470,12 +505,13 @@ It's great that you found it.
 ~currentSpeaker = comic
 Shit you did it! Night Thunder 89, not a good one, but very impressive nonetheless.
 It's great that you found it.
-~music=""
+~music="Rise and shine"
 ~allbooks-=nightthunder_89
 ~funds+=120
 ~booksSold+=1
 ->->
 ==wildfyre==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I found this comic called Wildfyre, is it any good?
@@ -508,11 +544,13 @@ I don't like the sound of this comic very much
 ~currentSpeaker = comic
 I agree, it's pretty nihlistic 
 But I might give it another try one day
+~music="Rise and shine"
 ~allbooks-=wildfyre_678
 ~funds+=90
 ~booksSold+=1
 ->->
 ==hypnos==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 Wait a minute, just before you go.
@@ -545,11 +583,13 @@ He only wakes her up when she's middle aged, and her youth has passed her by.
 That's pretty lighthearted compared to most of the stuff you read.
 ~currentSpeaker = comic
 Hmph.
+~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1
 ->->
 
 ==lady_darkness==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I have something you might be interested in.
@@ -574,11 +614,13 @@ She can see in the dark.
 Just read the damn comic.
 ~currentSpeaker = you
 Alright. Alright.
+~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1
 ->->
 
 ==X_and_A==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I've got a comic for you.
@@ -607,11 +649,13 @@ Luckily their powers sort of help them to evade detection.
 The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
 X and A are parts of their lab numbers, X was X-436 and A was A-967.
 Hence they go by X and A.
+~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1
 ->->
 
 ==mr_thermistor==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I've got something here called...Mr. Thermistor.
@@ -630,11 +674,13 @@ He has to work really hard to make it work.
 It includes a scene where he lures bad guys into the sauna and...well...zap!
 ~currentSpeaker = you
 Ok. I think I get it.
+~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1
 ->->
 
 ==bworld==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I found this comic called Bioworld.
@@ -651,12 +697,14 @@ Well a plain utopia wouldn't be that interesting would it?
 ~currentSpeaker = you
 Hmm...
 No I suppose it wouldn't be.
+~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1
 ->->
 
 
 ==cybershake_comic==
+~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
 I've got this comic to give you.
@@ -676,6 +724,7 @@ There's a lot of funny parts.
 ~currentSpeaker = you
 It sounds quite fun.
 Maybe I'll give it a read some time.
+~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1
 ->->

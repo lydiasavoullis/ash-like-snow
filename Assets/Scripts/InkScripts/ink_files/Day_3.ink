@@ -3,6 +3,7 @@
 ~newsCaption = "Sad cat"
 ~newsAnnouncement = "Miserable moggy - sad cat a viral hit. What our obsession with this depressed animal says about us."
 ¬
+~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
