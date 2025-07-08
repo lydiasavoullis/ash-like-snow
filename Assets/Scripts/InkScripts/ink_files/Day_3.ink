@@ -136,7 +136,7 @@ Eh what’s going on?
 ~currentSpeaker = you
  They know each other?
 ~currentSpeaker = android
- Tali knows the loli nightmare creature.
+ Tali knows the nightmare creature.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
  I want another tea.

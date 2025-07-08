@@ -219,7 +219,7 @@ It’s just about other people, who think they’re so clever making stupid comm
  Shhh
 ~currentSpeaker = webdev
 {ChangeSprite("Pandora", "pandora_normal")}
-~music="A good conversation"
+~music="Origami poppy"
  Origami
  Poppy 
  Petals red and papery

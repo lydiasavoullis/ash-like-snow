@@ -448,7 +448,7 @@ No, of course not.
 ~characters += kent
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
- Hey girlies. You sure were chatting a lot with our local sweet lolita serial killer.
+ Hey girls. You sure were chatting a lot with our local sweet lolita serial killer.
 ~currentSpeaker = you
  Weirdly she’s growing on me.
 ~currentSpeaker = comic
