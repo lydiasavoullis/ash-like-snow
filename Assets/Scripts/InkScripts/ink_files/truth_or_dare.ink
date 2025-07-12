@@ -65,116 +65,151 @@ Who are you going to chose?
 ~currentSpeaker = you
 So Tali.
 Truth or dare?
+{ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker = webdev
 Truth.
 ~currentSpeaker = you
 Uhh...
 What did you want to be when you were younger?
+{ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker = webdev
-I wanted to be an artist. 
+I wanted to be an artist.
 ~currentSpeaker = you
 Really?
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 Does that surprise you?
 ~currentSpeaker = you
 Not really.
 Why didn't you?
+{ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker = webdev
 I think I have become an artist in a way, I create beautiful webpages.
 That's a kind of art.
 Yes?
 ~currentSpeaker = you
 You know what, yes it totally is.
+{ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev
-I paint digitally sometimes.
+I paint sometimes.
 ~currentSpeaker = you
 I wish I could see your art.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
 Me too!
+{ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker = webdev 
 It's not that good. 
 ~currentSpeaker = you
 Lavender, have you seen her art?
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
-...
-I never have actually.
-Not since secondary school.
-Even then she was so secretive, always guarding her sketchbook.
+I've seen some of it.
+{ChangeSprite("Lavender", "lavender_thinking")}
+Not a lot though.
+At school she was so secretive, always guarding her sketchbook.
+{ChangeSprite("Lavender", "lavender_normal")}
 I could barely catch a glimpse.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
 Ok, enough of that.
+{ChangeSprite("Tali", "tali_smirk")}
 It's my turn to ask.
 ->tali_questions
 ==c_questions_k==
 //Kent gets questioned by Cas
 ~currentSpeaker = you
 Kent. Kent. Kent.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 Why do I feel like you're the villain and I've just walked into your secret base of criminal operations. 
 ~currentSpeaker = you
 I can't be held responsible for your overactive imagination.
-Truth or dare baby?
+Truth or dare?
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 Hmm...
+{ChangeSprite("Kent", "kent_amused")}
 Dare.
 ~currentSpeaker = you
 Damn. You are not messing about.
 OK, I'm going to brew a mega tea, a combination of all the different teas that Pandora has in the kitchen. And I want you to drink it all.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 You monster.
+{ChangeSprite("Kent", "kent_amused")}
 Will I gain superpowers from this.
 ~currentSpeaker = you
 You will gain the ability to see in the dark. 
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 I may gain the ability to empty the contents of my stomach onto this floor.
 ~currentSpeaker = you
 Please don't do that.
 Ok. I may retract my original dare.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 That's cheating!
+{ChangeSprite("Lavender", "lavender_mean")}
 No backsies.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
 It's ok. I'll get the bin.
+{ChangeSprite("Pandora", "pandora_normal")}
 Kent can throw up in there if he feels sick.
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
 So we're really doing this.
 ~currentSpeaker = android
 ...
 I've just brewed the tea.
 And put all the teas into the cup.
+{ChangeSprite("Tali", "tali_awe")}
 ~currentSpeaker = webdev
 That colour does not look healthy.
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob
 The good thing is that this tea already looks like someone's been sick in it, so it won't be a surprise when it comes back the other way.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 Why did you have to say that?
+{ChangeSprite("Kent", "kent_upset")}
 Oh, it's too hot.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker = android
 Maybe put some milk into it.
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 No, that will just make things worse.
 I'll use some tap water.
 Dilutes the tea, but this thing isn't going to taste good anyway.
+{ChangeSprite("Kent", "kent_side_normal")}
 ...
 I'll hazard a sip.
 ~currentSpeaker = you
 What does it taste like?
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
-Like everything, and nothing.
-Like fruity and weird.
+Fruity and weird.
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Just like you!
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 I'm about to throw this concoction in your face if you don't shut up.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker= snob
 Yuck, don't you dare. Just the smell is making me nauseous. 
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 Damn Cas, I thought you were my friend.
 ~currentSpeaker = you
 I AM your friend.
 I didn't realise it would be that bad.
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
 It's done, it's all gone.
+{ChangeSprite("Kent", "kent_amused")}
 And now it's my turn.
 ->kent_questions
 ==c_questions_p==
@@ -182,35 +217,50 @@ And now it's my turn.
 ~currentSpeaker = you
 I chose Pandora.
 Truth or dare?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
 Let me think.
+{ChangeSprite("Pandora", "pandora_mean")}
 I think I can trust you.
 Dare.
 ~currentSpeaker = you
 Can you power yourself off?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
 Oh, sick of me already?
 ~currentSpeaker = you
 No, it's not like that.
 I just want to see how you do it.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
 It's really not that interesting.
 Ok, I'll do it.
+{ChangeSprite("Pandora", "pandora_sleeping")}
 ...
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 What's going on?
 Is she...sleeping?
+{ChangeSprite("Lavender", "lavender_normal")}
+{ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker = webdev
 Yeah she's definitely asleep.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
 She can just power down like that.
+{ChangeSprite("Kent", "kent_sad")}
 I'm so jealous.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 Is that all you're jealous of.
+{ChangeSprite("Tali", "tali_talking_forward")}
 I mean, you can just adjust your body to fit your own needs. Endlessly.
-They don't feel pain, or hunger.
+{ChangeSprite("Tali", "tali_sad")}
+They don't feel pain, or hunger
+{ChangeSprite("Kent", "kent_side_normal")}.
 ~currentSpeaker = comic
 If androids had more rights, it would be pretty sweet to be one.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Hmmm.
 Maybe you have a point.
@@ -222,16 +272,22 @@ Pan?
 zzz
 ~currentSpeaker = you
 I remember Ada told me, I need to press this button if she doesn't start up naturally.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 Naturally?
 ~currentSpeaker = you
-I mean organical-if she doesn't wake up on her own. You know what I mean.
+I mean automatically, if she doesn't wake up on her own. You know what I mean.
 Here it is.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
 Good morning everyone.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 Oh my god, she thinks she slept the whole night.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
+{comic} I know it's not the next day.
+{ChangeSprite("Pandora", "pandora_normal")}
 I remember what's going on, I'm just joking.
 It's my turn now.
 ->pandora_questions
@@ -239,6 +295,7 @@ It's my turn now.
 //Lavender gets questioned by Cas
 ~currentSpeaker = you
 So I guess I'll pick Lavender.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Hmph.
 ~currentSpeaker = you
@@ -247,20 +304,48 @@ Truth or dare?
 Truth.
 ~currentSpeaker = you
 What did you think of Tali when you met her?
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 Is that it?
-Well, I was curious.
 I thought she was cool.
-Until I got to know her...and then I realised.
-~currentSpeaker = you
-Realised what?
-~currentSpeaker = snob
-She was just a ginormous nerd.
-~currentSpeaker = comic
-You're not going to say anything to defend yourself?
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
-Guilty as charged. 
-No defence necessary.
+Awww.
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+I admired her work ethic. And creativity.
+{ChangeSprite("Lavender", "lavender_sad")}
+And I wanted her to like me.
+{ChangeSprite("Tali", "tali_smirk")}
+~currentSpeaker = webdev
+Hey, I like you now.
+~currentSpeaker = snob
+Well I had to work on it.
+{ChangeSprite("Lavender", "lavender_angry")}
+For many months.
+{ChangeSprite("Tali", "tali_serious")}
+~currentSpeaker = webdev
+It was a difficult time. I wasn't very trusting of people.
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+I'm still a bit niffed.
+{ChangeSprite("Tali", "tali_upset")}
+~currentSpeaker = webdev
+I had a lot to focus on.
+The entrance exams drained my energy.
+Then there was all the homework. 
+So much more compared to my previous school and it was more dificult.
+There was a lot of pressure on me.
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+{you}, to answer your question honestly, I thought Tali was very cool and hard-working.
+{ChangeSprite("Lavender", "lavender_mean")}
+And a giant NERD!
+{ChangeSprite("Tali", "tali_exasperated")}
+~currentSpeaker = webdev
+...
+{ChangeSprite("Tali", "tali_normal")}
+{ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Ok ok ok, it's MY turn. 
 ->lavender_questions
@@ -268,31 +353,41 @@ Ok ok ok, it's MY turn.
 //lavender questions
 ==l_questions_t==
 //Tali gets questioned by Lavender
+{ChangeSprite("Lavender", "lavender_mean")}
 ~currentSpeaker = snob
 Tali!
 I'm questioning you.
 Truth or--
+{ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker = webdev
 Dare.
+{ChangeSprite("Tali", "tali_talking_side")}
 You know everything about me anyway. What's the point of truth?
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 Uh...oh. OK.
+{ChangeSprite("Lavender", "lavender_mean")}
 Try carrying as many books as possible.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
 I'm not sure that's safe.
 ~currentSpeaker = you
 Probably not for the books at least.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 What's the risk?
+{ChangeSprite("Kent", "kent_normal")}
 They'll get a little scuffed.
 ~currentSpeaker = you
 Ada has eyes like a hawk.
 She'll know.
 ~currentSpeaker = android
 She'll know.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 There are probably some crappy books no one cares about.
 Try those first.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
 Do I have permission?
 ~currentSpeaker = android
@@ -302,40 +397,54 @@ Do I have permission?
 Oh shit. I forgot I'm in charge.
 Uh, yeah sure.
 Just let me know when you're going to fold. Me and Pan can probably catch them if they fall.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 I'm a good at catching.
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
 Here goes nothing.
+{ChangeSprite("Tali", "tali_serious")}
 You better pile them on Lav.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android
 I will pass them over.
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 One. Two. Three.
 ...
+{ChangeSprite("Lavender", "lavender_sad")}
 Ten. Eleven.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker = webdev
 You're just giving me the little books.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 And Pandora is the one giving ME the little books.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
 Well, those are the less valuable ones. And they're less likely to get damaged if they fall.
 That's just basic economics and physics. 
 ~currentSpeaker = you
 Does it really matter how big the books are?
+{ChangeSprite("Kent", "kent_amused")}
 Lavender never specified the size.
 ~currentSpeaker = comic
 Size doesn't matter ;)
+{ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker = webdev
 It does!
 I don't want anyone to say I was cheating.
 ~currentSpeaker = comic
 No one thinks that.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker = webdev
 Give me a challenge.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
 OK. What do you want? The Lord of the Rings, War and Peace, University Physics with Modern Physics 14th Edition by Hugh D. Young, Roget A. Freedman...
 ~currentSpeaker = webdev
-Pile them on.
+What am I? Tofu?
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 Oof those are heavy.
 ~currentSpeaker = webdev
@@ -348,80 +457,108 @@ MORE.
 I'm onto it.
 ~currentSpeaker = webdev
 KEEP THEM COMING.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Stop talking in uppercase. It's very rude.
 ~currentSpeaker = webdev
 I DON'T CARE?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Why are you questioning that?
+{ChangeSprite("Tali", "tali_shocked")}
 ~currentSpeaker = webdev
 AAAHHHH.
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker = snob
 OWWWWWWWWW.
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
 Oh crap.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 What the hell.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 Caught em'
 ~currentSpeaker = you
 Me too!
+{ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker = android
 Team work, hell yeah!
 ~currentSpeaker = snob
 One of those books hit me.
 I have a bruise.
+{ChangeSprite("Tali", "tali_awe")}
 ~currentSpeaker = android
 Sure did, hit you in the shoulder and bounced into my arms.
+{ChangeSprite("Tali", "tali_happy_closed")}
 Nice save. Thanks!
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 It wasn't intentional.
+{ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 How many was that?
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 Uh I wasn't counting.
 Let's just move on.
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
 My arms hurt.
+{ChangeSprite("Tali", "tali_happy")}
 Oooh it's my go now.
 ->tali_questions
 ==l_questions_k==
 //Kent gets questioned by Lavender
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Hmm, I choose, Keith.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 This is getting old.
 There isn't a Keith here Lavender.
+{ChangeSprite("Lavender", "lavender_mean")}
 ~currentSpeaker = snob
 Of course there is, there's always a Keith.
 Truth or dare Keith.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 Truth.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 How did you get a job at Distant Outlook?
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 There's this thing.
 It's called an interview.
 You turn up wearing a suit and you entertain a bunch of wankers for an hour or two. And then you sign your life away.
+{ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker = snob
 Hold on a minute...YOU wore a suit?
+{ChangeSprite("Lavender", "lavender_serious")}
 Ok, now tell me what actually happened.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
 I just did.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Objection! Your Honour, he is obfuscating.
 ~currentSpeaker = you
 Your Honour? Is that me?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 The whole point of this is that you open up and share details about your life, is it not?
 ~currentSpeaker = you
 Yes.
 Kent, just give us the juice.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 You're siding with her now?
 ~currentSpeaker = you
 Well, I want to hear this story too.
 Also, she called me 'Your Honour' I'm an easy woman to please.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 Fuck. Alright then. 
 My boss was had a medical emergency.
@@ -429,96 +566,130 @@ And my boyfriend, Scott, was the one in the ambulance with him.
 He wanted to thank Scott personally.
 So they were talking and he mentions that he works for the Distant Outlook.
 And Scott starts talking about me, I was freelancing at the time as an illustrator.
+{ChangeSprite("Kent", "kent_normal")}
 And the rest is history.
 ~currentSpeaker = you
 What was he in hospital for?
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
-Who knows, his hair implants fell out probably.
+Hmm I think he overdid it with the viagra.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
-You don't seem very appreciative.
+You're joking again.
+You should be more appreciative of your boss.
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 If you worked for him, you wouldn't be so appreciative either.
 ~currentSpeaker = snob
 He gave you a job.
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
-And I give him high quality drawings under a tight deadline.
+And I give him high quality work under some incredibly stringent deadlines.
+{ChangeSprite("Lavender", "kent_amused")}
 ~currentSpeaker = snob
-The quality of your drawings is debatable.
+The quality of your work is debatable.
+{ChangeSprite("Lavender", "kent_upset")}
 ~currentSpeaker = comic
 OK that's enough.
 ->kent_questions
 ==l_questions_p==
 //Pandora gets questioned by Lavender
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 It's my turn.
 I'm choosing Pandora.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
 Yes?
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob
 Truth or dare? Duh.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 Truth.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 Boring.
+{ChangeSprite("Lavender", "lavender_thinking")}
 Ok, so as an android, do you have feelings?
 ~currentSpeaker = you
 What the hell!
 You can't ask that.
+{ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob
 I just did.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker = android
 Sorry Lavender, what do you mean by that?
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Feel-ings. Things that you feel. Sadness. Happiness. Fear.
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
 I have transmitters in my brain that tell me when which of these emotions should take precident. Much like how you have chemicals in yours.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 Hmm.
 OK.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 Glad I cleared that up.
 ~currentSpeaker = snob
 But like, are those real?
 I mean it's like someone's telling you how to feel.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker = android
-Not really, just like an infant I started off with a basic blueprint, and then I started learning that certain inputs triggered certain responses and I thought about what to do with that information and my brain made connections. Then it used these emotions as a guideline to make me perform these specific tasks when I need to.
+Not really, just like an infant I started off with a basic blueprint, and then I started learning that certain inputs triggered certain responses and I thought about what to do with that information and my brain made connections. 
+Then it used these emotions as a guideline to make me perform these specific tasks when I need to.
+{ChangeSprite("Pandora", "pandora_happy")}
 It's not an exact science of course.
 ...
 Lavender?
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 Oh are you still talking?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
 I think we're done here.
 ->pandora_questions
 ==l_questions_c==
 //Cas gets questioned by Lavender
+{ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 My go.
 I'm choosing Cas.
 ~currentSpeaker = you
 Dare.
+{ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker = snob
 You didn't even let me ask...
+{ChangeSprite("Lavender", "lavender_serious")}
 Whatever.
+{ChangeSprite("Lavender", "lavender_mean")}
 I dare you to tell me your deepest darkest secret.
 ~currentSpeaker = you
-... 
 That's obviously cheating.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
 I concur.
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
 Fine.
+{ChangeSprite("Lavender", "lavender_mean")}
 I want you to...lift Pandora.
 ~currentSpeaker = you
 Is that even possible?
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 I don't know, it's up to you to figure that out.
 ~currentSpeaker = you
 Pandora, can I lift you?
 Like are you consenting?
 And also is it physically possible? Like how much do you weigh.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
-Never ask a lady about her weight.
+Didn't anyone tell you it's rude to ask a lady about her weight.
+{ChangeSprite("Pandora", "pandora_normal")}
 Also, I should weigh the same as an average human woman of the same stature as myself.
 And I wouldn't mind you lifting me for the purpose of this game at least.
 ~currentSpeaker = you
@@ -526,6 +697,8 @@ That sounds promising.
 Ok, get over here.
 ~currentSpeaker = android
 Alright.
+~characters-=pandora
+...
 Hey, be careful! You're going to damage my circuits.
 ~currentSpeaker = you
 I'm being careful.
@@ -533,12 +706,18 @@ It's not like you're made of tissue paper.
 ~currentSpeaker = android
 Ok put me down now.
 PUT ME DOWN.
+{ChangeSprite("Pandora", "pandora_sad")}
+~characters+=pandora
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
 Wow Pandora, are you ok?
+{ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker = webdev
-Hehehe.
+Oh dear.
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
 ...
+{ChangeSprite("Lavender", "lavender_serious")}
 God you two are so pathetic.
 ~currentSpeaker = android
 It's over now. I don't think I like being carried.
