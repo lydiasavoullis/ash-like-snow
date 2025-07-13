@@ -523,9 +523,10 @@ public class DialogueController : MonoBehaviour
         }
         weatherBackground.transform.Find(weather).gameObject.SetActive(true);
     }
-    //public void StartWeather(string weather) {
-    //    weatherBackground.gameObject.transform.Find(weather).gameObject.SetActive(true);
-    //}
+    public void StartWeather(string weather)
+    {
+        weatherBackground.gameObject.transform.Find(weather).gameObject.SetActive(true);
+    }
     //public void StopWeather(string weather)
     //{
     //    weatherBackground.gameObject.transform.FindChild(weather).gameObject.SetActive(false);

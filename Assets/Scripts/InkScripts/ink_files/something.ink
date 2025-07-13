@@ -26,7 +26,7 @@ INCLUDE night.ink
 *[test scene]
 ->test_scene
 *[Truth and dare]
-->start_truth_or_dare
+->start_incident
 *[day 1]
 ->day_1
 *[day 2]

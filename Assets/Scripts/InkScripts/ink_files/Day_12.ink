@@ -354,42 +354,42 @@ I’ll pick someone to go first. I’ll save you from the first round {android} 
 ->start_truth_or_dare
 
 ==start_incident==
-~characters+=lavender
-~characters+=tali
-~characters+=kent
-~characters+=pandora
+~music="Rise and shine"
 {ChangeSprite("Pandora", "pandora_happy")}
-// ~currentSpeaker=android
-// That was fun.
-// ~currentSpeaker=you
-// Glad you enjoyed it.
-// {ChangeSprite("Kent", "kent_happy")}
-// ~currentSpeaker=comic
-// Is it film time now?
-// We can watch the new Blood Monster 3 that just came out. 
-// I have it on my Hoolflix account, if you show me the computer I can just login.
-// {ChangeSprite("Pandora", "pandora_normal")}
-// ~currentSpeaker=android
-// It’s downstairs.
-// I can show you.
-// ~currentSpeaker=you
-// No, I’ll show him.
-// You stay up here and enjoy the drinks and music.
+~currentSpeaker=android
+That was fun.
+~currentSpeaker=you
+Glad you enjoyed it.
+{ChangeSprite("Kent", "kent_happy")}
+~currentSpeaker=comic
+Is it film time now?
+We can watch the new Blood Monster 3 that just came out. 
+I have it on my Hoolflix account, if you show me the computer I can just login.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+It’s downstairs.
+I can show you.
+~currentSpeaker=you
+No, I’ll show him.
+You stay up here and enjoy the drinks and music.
 ~currentSpeaker=android
 Aw cool, thanks!
+~music=""
+~sfx="explosion"
 {ChangeSprite("Tali", "tali_shocked")}
 {ChangeSprite("Lavender", "lavender_shocked")}
 {ChangeSprite("Kent", "kent_shocked")}
 {ChangeSprite("Pandora", "pandora_shocked")}
 <i>*BOOM*</i>
+~music="A winters chill"
 {PlayAnimation("Pandora", "long_shake")}
 {PlayAnimation("Tali", "long_shake")}
 {PlayAnimation("Lavender", "long_shake")}
 {PlayAnimation("Kent", "long_shake")}
 {ChangeSprite("Tali", "tali_sad")}
+{ChangeWeather("Ash")}
 ~currentSpeaker=webdev
 What was that?
-
 ~currentSpeaker=snob
 AHHHHHHHH
 {ChangeSprite("Pandora", "pandora_sad")}

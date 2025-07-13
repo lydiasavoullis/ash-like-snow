@@ -1,6 +1,7 @@
 LIST TDNames = (P), (K), (T), (L), (C)
 VAR name = C
 ==start_truth_or_dare==
+~music="Truth and dare"
 ~characters+=kent
 ~characters+=tali
 ~characters+=pandora
@@ -589,10 +590,9 @@ He gave you a job.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 And I give him high quality work under some incredibly stringent deadlines.
-{ChangeSprite("Lavender", "kent_amused")}
 ~currentSpeaker = snob
 The quality of your work is debatable.
-{ChangeSprite("Lavender", "kent_upset")}
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 OK that's enough.
 ->kent_questions
