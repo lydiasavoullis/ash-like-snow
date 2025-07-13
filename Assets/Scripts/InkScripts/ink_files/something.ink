@@ -25,6 +25,8 @@ INCLUDE night.ink
 ->ending_simulation
 *[test scene]
 ->test_scene
+*[Truth and dare]
+->start_truth_or_dare
 *[day 1]
 ->day_1
 *[day 2]
