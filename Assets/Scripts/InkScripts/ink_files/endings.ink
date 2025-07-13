@@ -548,23 +548,31 @@ What have I gotten myself into?
 ==ada_fires_you==
 ~characters+=pandora
 ~characters+=ada
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 So, basically, we might need to clean the basement.
 And restock some items that were used during the incident.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 {android}.
 My love.
 Make us some tea please.
 ~currentSpeaker=android
 And…I’m really sorry about what happened with the computer.
-I just let {comic} use it. You see he’s kind of an important journalist, and he needed to do some work. Obviously this was highly inappropriate. I wasn’t thinking straight at the time you see. I didn’t realise.
+{ChangeSprite("Pandora", "pandora_normal")}
+I just let {comic} use it. 
+You see he’s kind of an important journalist, and he needed to do some work. 
+{ChangeSprite("Pandora", "pandora_sad")}
+Obviously this was highly inappropriate. I wasn’t thinking straight at the time you see. I didn’t realise.
 ~currentSpeaker=lovelace
 Uh huh yes.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 Don't you want to-
 ~currentSpeaker=lovelace
 Just make us some tea.
 Thank you.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 ...
 ~characters-=pandora
@@ -585,9 +593,10 @@ Everything alright?
 Do you remember what I told you?
 Before I left.
 ~currentSpeaker=you
-No.
-Not really.
+Not quite.
 It's a bit of a long story actually.
+{ChangeSprite("Ada", "adalina_displeased")}
+{PlayAnimation("Ada", "shake")}
 ~currentSpeaker=lovelace
 I DO NOT FUCKING CARE.
 I gave you one simple instruction.
@@ -596,17 +605,19 @@ About the inventory.
 Or how much money would be left in my account.
 I only asked.
 That if a strange man.
-In a coat and a top hat comes and references about some stupid kids books.
-You give him £500.
+In a coat and a top hat comes and makes references about some stupid kids books.
+You give him the money.
 No questions asked.
 ~currentSpeaker=you
 ...
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 It was my fault.
 For entrusting this task.
 To a fucking drug addict. 
 ~currentSpeaker=you
 It was an accident.
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 It always is isn't it?
 I should never have brought you here.
@@ -614,6 +625,7 @@ Taken you in.
 You really are a lost case, aren't you?
 ~currentSpeaker=you
 ...
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 The funny thing is, you don't even know what you have done.
 We are all doomed.
@@ -625,6 +637,7 @@ Somewhere important doing important things.
 None of that matters anymore.
 ~currentSpeaker=you
 I'm not a drug addict.
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 You are.
 If you were not addicted.
@@ -638,40 +651,52 @@ Get out of my shop.
 ==ada_transfers_you==
 ~characters+=pandora
 ~characters+=ada
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 So, basically, we might need to clean the basement.
 And restock some items that were used during the incident.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 Uhuh. I see.
 ~currentSpeaker=android
 And…I’m really sorry about what happened with the computer.
-I just let {comic} use it. You see he’s kind of an important journalist, and he needed to do some work. Obviously this was highly inappropriate. I wasn’t thinking straight at the time you see. I didn’t realise.
+I just let {comic} use it. 
+You see he’s kind of an important journalist, and he needed to do some work. 
+Obviously this was highly inappropriate. I wasn’t thinking straight at the time you see. I didn’t realise.
 ~currentSpeaker=lovelace
 {android} I understand. Sometimes these things happen.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 Really? You’re not upset.
 ~currentSpeaker=lovelace
 I have to say, I’m a little...disappointed. But not upset.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
-But forlorn sounds worse.
+That somehow sounds worse.
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 Enough of this. No moping. Things sorted themselves out didn’t they.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I suppose so.
 How was Madrid?
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 It was...festive.
 I saw a lot of...people.
 ~currentSpeaker=android
 It sounds nice. A lot nicer than how we spend our Christmas.
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 I am truly sorry, but I’m glad nothing happened to my beautiful shop.
 And you of course.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 It feels so weird, now things are back to normal.
 Isn’t that right {you}?
 ~currentSpeaker=you
 Yeah, I guess so.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 You’re quiet.
 Not usually so quiet.
@@ -681,21 +706,25 @@ Well the whole incident affected me mentally, I’m not the same person.
 Funny. I did not take you for the type to be mentally affected by this kind of thing.
 ~currentSpeaker=you
 I’m actually an incredibly sensitive person. It might not seem like it. But {android} helped me through it.
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 Oh really?
+{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 …
 Thanks {you}.
 ~currentSpeaker=you
 I mean it.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 {android} could you make us some tea my love.
-Cheers.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 ...
 ~characters-=pandora
 {funds <100: ->lowFunds|->highFunds} 
 = lowFunds
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 Now I know this is an awkward matter.
 But I have to ask about the finances here.
@@ -704,6 +733,7 @@ I have checked, and there is a noticeable lack of money.
 It was given to a dear friend of yours.
 ->ada_continues
 = highFunds
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 You have outdone yourself.
 You've managed my bank account reasonably well.
@@ -712,32 +742,39 @@ I'm impressed.
 I had to lend some money to a dear friend of yours.
 ->ada_continues
 = ada_continues
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 Well. That’s fine.
 What were they wearing?
 ~currentSpeaker=you
 A top hat and a trench coat.
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 Ugh, so dramatic. I hate these revolutionary types.
 All they want to do is blow things up.
 ~currentSpeaker=you
 Hold on a minute…
 What did you say?
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 Oh, you are not aware?
 But I told you before I left, didn’t I?
 ~currentSpeaker=you
 Yes, I had a bit of a lapse of memory.
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 You’ve been taking that disgusting drug again, haven’t you?
 ~currentSpeaker=you
 No, it was an accident. {android} was putting it in my drink. Innocently, she thought she was helping me.
 ~currentSpeaker=lovelace
 That stupid android. She almost ruined everything.
+{ChangeSprite("Ada", "adalina_neutral")}
 I wouldn’t believe such a ridiculous thing usually, but that does sound exactly like something {android} would do.
+{ChangeSprite("Ada", "adalina_displeased")}
 She’s unbelievably...
 ~currentSpeaker=you
 Human?
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 Yes.
 Unfortunately.
@@ -746,13 +783,18 @@ And you will need to move.
 ~currentSpeaker=you
 What?
 ~currentSpeaker=lovelace
-You are involved in the incident, and so am I. We are both connected. We’re safe for now, they are busy with the clean up. But soon people will start asking questions, and snooping around. I can’t be there when that happens, and neither can you.
+You are involved in the incident, and so am I. We are both connected. 
+We’re safe for now, they are busy with the clean up. 
+But soon people will start asking questions, and snooping around. 
+I can’t be there when that happens, and neither can you.
 ~currentSpeaker=you
 So, where do we go? Madrid?
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 Not a bad idea.
 ~currentSpeaker=you
 No. No. I was just joking.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 I have another location. A different shop.
 ~currentSpeaker=you
@@ -761,39 +803,48 @@ Still selling books I hope.
 Why? I hope you’re not getting too attached.
 ~currentSpeaker=you
 When are you going to tell {android}?
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 Why does she need to know?
 ~currentSpeaker=you
 She’s not a child.
 And it wouldn’t hurt to tell her some stuff once in a while. It might stop her from drugging me, thinking she was helping.
 Maybe, she can actually help us.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 I don’t know.
 I’ve made some mistakes with her, I know.
+{ChangeSprite("Ada", "adalina_displeased")}
 It’s just so hard...
 ~currentSpeaker=you
 It’s hard for her too.
 ~characters+=pandora
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I brought tea.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 I better be off.
 I’d like to assess the damage.
 ~characters-=ada
 ~currentSpeaker=you
 Only Ada would call a couple of used sleeping bags and missing ration packs ‘damage’.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 How are you holding up?
 ~currentSpeaker=you
 I’m fine.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 She doesn’t seem too upset.
 ~currentSpeaker=you
 It’s funny, this city was almost destroyed and you’re more concerned with what Ada will think about the mess.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 She’s scary.
 ~currentSpeaker=you
 She is. A bit. 
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 A lot.
 ->->
@@ -802,37 +853,44 @@ A lot.
 #Pandora will come with you if you are transferred
 #Pandora will ask Ada if she can live with you if you are fired
 ->pandora_goodbye->
+{ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 WAIT!
 ~currentSpeaker=you
 Eh?
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-I...don't know what I was going to say.
+I...
 I don't want you to leave.
 ~currentSpeaker=you
 Really?
 I have to leave.
 I have no choice.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 This isn't fair.
 And don't tell me life isn't fair.
 I already figured that one out.
 ~currentSpeaker=you
 Well, I don't really know what to say to you then.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Take me with you.
 ~currentSpeaker=you
 What!
 ~currentSpeaker=android
 I can't stay here forever.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 I can't take it anymore.
 ~currentSpeaker=you
 ...
 OK.
 You should really tell {lovelace} though.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 And what can she do?
 She can't go to the authorities.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 She would be arrested.
 ~currentSpeaker=you
 I know. But she should probably know.
@@ -844,6 +902,7 @@ I just want to leave now.
 ~currentSpeaker=you
 Talk.
 Then we leave.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 ...
 ~characters-=pandora
@@ -854,13 +913,16 @@ Then we leave.
 Let's go.
 ~currentSpeaker=you
 What did she say?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 You told me that I could leave with you if I told her.
 And I told her.
+{ChangeSprite("Pandora", "pandora_sad")}
 Now...
 Let's just go.
 ~currentSpeaker=you
 You know, you really scare me sometimes.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Only sometimes?
 I'll have to work on that.
@@ -869,16 +931,19 @@ I'll have to work on that.
 ->pandora_goodbye->
 ->->
 ==pandora_goodbye==
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 So I guess this is goodbye.
 ~currentSpeaker=you
 Yeah.
 I didn't really think about it like that.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I just wanted you to know.
 It has been a pleasure working with you.
 ~currentSpeaker=you
 Likewise.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 ...
 I'm sorry about the whole Fate thing.
@@ -894,16 +959,19 @@ You will get over it.
 I feel so bad.
 ~currentSpeaker=you
 Weirdly enough, that's a good thing.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 How is this a good thing?
 ~currentSpeaker=you
 Means your moral compass is working.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 This is horrible.
 I thought my moral compass was working.
 It obviously needs some re-calibrating.
 ~currentSpeaker=you
 Everyone's does from time to time.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Mine should not!
 ~currentSpeaker=you
@@ -912,6 +980,7 @@ It doesn't mean you're not valued. People like you.
 Don't forget that. 
 I really do have to go.
 Before {lovelace} chases me out with a broomstick.
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I certainly wouldn't mind watching that.
 ~currentSpeaker=you
@@ -922,6 +991,7 @@ You have a cruel sense of humour.
 ~worstEnding = "yes"
 ~currentSpeaker=you
 I-I can't.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=pandora
 What do you mean you can't?
 ~currentSpeaker=you
@@ -932,10 +1002,12 @@ I can't do this without you {you}.
 ~currentSpeaker=you
 Everyone is happy.
 Maybe I can be happy too.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=pandora
 Ok. I will leave and try to find a way out. 
 ~currentSpeaker=you
 I'm sorry. I feel like there was something I should have done differently.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=pandora
 No. I'm sorry I spoke to you like that. This is not your fault.
 We don't always have control of our circumstances.
@@ -944,6 +1016,7 @@ But even then...it's difficult.
 I can only imagine.
 ~currentSpeaker=you
 Goodbye {android}.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=pandora
 I'll keep you all safe. Don't worry.
 ¬
@@ -951,23 +1024,26 @@ I'll keep you all safe. Don't worry.
 Two weeks later.
 ¬
 ~scene= "GenericScene"
-¬
 ~characters+=pandora
 ~characters+=ada
+{ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 {android}.
 Where's {you}?
 ~currentSpeaker=android
 {ChangeSprite("Pandora", "pandora_pensive")}
 ...
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 {android}?
-Where did that lazy cow get off to?
+Where did that idiot get off to?
 ~currentSpeaker=android
 {ChangeSprite("Pandora", "pandora_sad")}
 I didn't mean to.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 You didn't mean to what?
+{ChangeSprite("Ada", "adalina_displeased")}
 Tell me what happened now.
 ~currentSpeaker=android
 {ChangeSprite("Pandora", "pandora_annoyed")}
@@ -983,6 +1059,7 @@ Was it to do with that event?
 I need to have words with {you}.
 ~currentSpeaker=android
 That might be a bit difficult.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 {android} you're really scaring me now...
 ~currentSpeaker=android
@@ -990,10 +1067,12 @@ What's there to be scared of.
 It was only your creation.
 ~currentSpeaker=lovelace
 My...creation.
+{ChangeSprite("Ada", "adalina_displeased")}
 Don't tell me you touched it.
 ~currentSpeaker=android
 It was an accident.
 I didn't realise.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 What's the damage?
 ~currentSpeaker=android
@@ -1001,13 +1080,17 @@ They're all stuck.
 I've been keeping them fed and watered. But they're just zombies at this point.
 ~currentSpeaker=lovelace
 They're still alive?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Of course!
+{ChangeSprite("Pandora", "pandora_sad")}
 Otherwise...
 ~currentSpeaker=lovelace
 Otherwise?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 I would have called an ambulance.
+{ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 You would do no such thing.
 ~currentSpeaker=android
@@ -1026,9 +1109,11 @@ I would be in trouble.
 You would be dead.
 ~currentSpeaker=android
 I'm not even alive.
+{ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 I'm not having this debate with you now!
 We deal with them. Now.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 You think you can get them out?
 ~currentSpeaker=lovelace
