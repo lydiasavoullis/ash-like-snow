@@ -16,7 +16,7 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=nightthunder_89
 ->goto_shop
-*{day==1}{funds>=80}[Giraffe woman \#1(£80)]
+*{day==1}{funds>=80}[Satin Rain \#1(£80)]
 ~funds -= 80
 ~deliveryToday+=1
 ~allbooks+=satin_rain_1
