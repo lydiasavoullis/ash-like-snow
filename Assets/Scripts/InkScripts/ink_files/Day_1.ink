@@ -545,6 +545,7 @@ I like being an assistant.
 Let’s do the stock now.
 ->day_1_inventory
 ==day_1_inventory==
+~music = "shop"
 ->goto_shop->read_check->end_day1
 ==end_day1==
 ~characters+=pandora

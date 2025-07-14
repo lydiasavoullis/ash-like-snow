@@ -462,6 +462,7 @@ I know.
 OK let’s do the orders for today.
 ->day_2_inventory
 ==day_2_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_day_2

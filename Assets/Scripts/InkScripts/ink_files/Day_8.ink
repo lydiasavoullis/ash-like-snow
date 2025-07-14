@@ -535,6 +535,7 @@ Shall we do inventory?
 ->day_8_inventory
 
 ==day_8_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_day_8

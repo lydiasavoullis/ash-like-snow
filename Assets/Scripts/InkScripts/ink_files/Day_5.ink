@@ -478,6 +478,7 @@ No, of course not.
  Let’s do inventory.
 ->day_5_inventory
 ==day_5_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_day_5

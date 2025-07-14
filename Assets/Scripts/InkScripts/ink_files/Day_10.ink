@@ -380,6 +380,7 @@ Will do.
 ~characters-=tali
 ->day_10_inventory
 ==day_10_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_of_day_10

@@ -388,6 +388,7 @@ I appreciate you trying to protect the confidentiality of your clients' personal
  ~characters += pandora
 ->day_3_inventory
 ==day_3_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_day_3

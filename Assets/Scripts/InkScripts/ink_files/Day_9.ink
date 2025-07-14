@@ -303,6 +303,7 @@ I’ll join you. Bye guys.
 ~characters-=kent
 ->day_9_inventory
 ==day_9_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_day_9

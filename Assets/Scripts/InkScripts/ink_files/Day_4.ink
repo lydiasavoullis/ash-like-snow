@@ -418,6 +418,7 @@ Why are you shouting at me?
  Let’s do the inventory. I’m so excited.
 ->day_4_inventory
 ==day_4_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_day_4

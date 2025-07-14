@@ -690,6 +690,7 @@ You will.
 I promise.
 ->day_11_inventory
 ==day_11_inventory==
+~music = "shop"
 ->goto_shop->
 ->read_check->
 ->end_of_day_11
