@@ -7,7 +7,6 @@ You open the notebook {android} gave you.
 {SaveStory()}
 You write something down.
 *[No (don't save)] 
-->skip_to_air_vent
 You close the book.
 -~currentSpeaker = you
 I know you all hate me.

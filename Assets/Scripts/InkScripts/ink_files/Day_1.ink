@@ -113,8 +113,8 @@ She's a lot of fun, isn't she?
 ~currentSpeaker = android 
 - I'll sign you in.
 ~button = "normal"
-~currentSpeaker = you 
 *[Yes (save)]
+~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 

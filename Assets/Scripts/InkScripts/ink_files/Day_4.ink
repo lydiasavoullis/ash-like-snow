@@ -8,10 +8,11 @@
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.
-~currentSpeaker = you 
+
 *[Yes (save)]
+~currentSpeaker = you 
 {SaveStory()}
-¬
+Thanks!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = android

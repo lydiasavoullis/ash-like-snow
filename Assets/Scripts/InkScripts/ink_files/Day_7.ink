@@ -28,8 +28,8 @@ I'll sign you in.
 Eh? I'm not working.
 ~currentSpeaker = android 
 Doesn't matter. It's the rules, I have to keep track of any employees who enter or leave the premises.
-~currentSpeaker = you 
 *[Yes (save)]
+~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
