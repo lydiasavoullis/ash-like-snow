@@ -8,7 +8,6 @@
 ~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you in.
-
 *[Yes (save)]
 ~currentSpeaker = you 
 {SaveStory()}
@@ -22,10 +21,14 @@ I can do it myself
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = you
  Why are you smiling like that?
+ {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
  I have a favour to ask you?
- An idea.
- That might help this business as well.
+ I came up with this idea last night.
+ {ChangeSprite("Pandora", "pandora_sad")}
+ And I just can't get it out of my head, however hard I try.
+ {ChangeSprite("Pandora", "pandora_mean")}
+ Before you say anything, I'd like to stress. I think this would also help the business.
 ~currentSpeaker = you
  Spit it out already.
 ~currentSpeaker = android
@@ -34,9 +37,14 @@ I can do it myself
 ~currentSpeaker = you
  Uh what? Why?
 ~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_normal")}
+{ChangeSprite("Pandora", "pandora_happy")}
  It will be fun.
  And we can get to know our customers better.
+ I mean foster a beneficial relationship with our clients.
+ {ChangeSprite("Pandora", "pandora_mean")}
+ I'm learning business talk now. 
+ {ChangeSprite("Pandora", "pandora_sad")}
+ So what do you think?
 ~currentSpeaker = you
  OK.
 ~currentSpeaker = android
@@ -48,17 +56,17 @@ I can do it myself
  We’re never really busy anyway.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
- Thanks.
-~currentSpeaker = android
+ Awesome! I guess those business talk lessons really paid off.
 {ChangeSprite("Pandora", "pandora_mean")}
  I’ve already created leaflets.
  We have to give them to everyone who enters.
- Kent and Tali and even Lavender.
+ Kent, Tali and even Lavender.
 ~currentSpeaker = you
- So you’ve created three leaflets.
+ So you’ve created three leaflets?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
- Of course I have extras.
+ Of course I have some extras.
+ {ChangeSprite("Pandora", "pandora_mean")}
  You never know who else might arrive. 
 ~currentSpeaker = you
  Yes, you never know.
@@ -69,16 +77,19 @@ I can do it myself
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
  Good good.
+ {ChangeSprite("Pandora", "pandora_normal")}
 {allbooks ? wildfyre_678: -> wildfyre->} 
 ~currentSpeaker = you
  You’re in a good mood.
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  Well not really. 
+ {ChangeSprite("Kent", "kent_happy")}
  I’ve just dissociated myself from reality.
+ {ChangeSprite("Kent", "kent_amused")}
  How are you?
 ~currentSpeaker = you
- Not bad.
-~currentSpeaker = you
+ Not bad. 
  How’s the Distant Outlook?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_normal")}
@@ -91,32 +102,41 @@ I can do it myself
  He has an idea for this sketch with these two skeletons who tell jokes.
 ~currentSpeaker = you
  Why skeletons though?
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  I have no idea. I think he's going senile.
+ {ChangeSprite("Kent", "kent_side_normal")}
  Also he wants me to give the skeletons large...breasts
  I’m trying to figure out how skeletons can even have breasts.
- I posed this question and he claimed he knew more about breasts worked than I ever would.
+ I posed this question, and he claimed to know more about how breasts worked than I ever would.
+ {ChangeSprite("Kent", "kent_side_serious")}
  I had to weigh up whether it was worth losing my job over a response to that.
 ~currentSpeaker = you
  I assume you still have your job?
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  What kind of spineless corporate worm would I be if I didn't know how to suck up to my boss once in a while?
+ {ChangeSprite("Kent", "kent_normal")}
  Look Cas I really don’t know what to say. Why is Pandora looking at me like that?
 ~currentSpeaker = you
  Like what?
+ {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
  Like a sad lost puppy.
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  She knows I’m not interested, right?
 ~currentSpeaker = you
  This is about something else I totally forgot. Pandora you can give Kent your leaflet, don’t be shy.
+ {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
- I’m not joining your cult.
+ Just to make things clear: I’m not joining your cult, and I know who Jesus is.
 ~currentSpeaker = you
 {ChangeSprite("Pandora", "pandora_sad")}
  It’s not a cult, it’s a creative writing session.
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
- Oh is that what we’re calling them now?
+ Oh, is that what we’re calling them now?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_mean")}
  I promise no cult activity will be tolerated.
@@ -131,8 +151,9 @@ I can do it myself
  She looks like she’s going to explode. 
 ~currentSpeaker = you
  Can IOIs explode?
+ {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
- I don’t know. I’d keep a safe distance if I were you.
+ I don’t know. I’d keep a safe distance from her if I were you.
 ~currentSpeaker = you
  I can’t do my job and keep a safe distance from Pandora.
 ~currentSpeaker = android
@@ -150,6 +171,7 @@ You look better.
  I promise I’m not.
 ~currentSpeaker = you
  I keep getting it wrong.
+ {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
  I tell you it’s always better to assume the worst. You’ll never be disappointed. 
 ~currentSpeaker = webdev
@@ -157,6 +179,7 @@ You look better.
  My boss is trying to cover for me now.
 ~currentSpeaker = you
  That’s good right.
+ {ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker = webdev
  He can’t keep this undercover forever.
 ~currentSpeaker = webdev
@@ -172,6 +195,7 @@ You look better.
  If I stepped even a foot out of line my arse would be straight out the door.
  Faster than you can say disciplinary action.
  {ChangeSprite("Kent", "kent_normal")}
+  {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
  Well I’m trying not to think about it.
  {ChangeSprite("Tali", "tali_smirk")}
@@ -179,6 +203,7 @@ You look better.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
  OK, there’s a new issue of Night Thunder coming out tomorrow.
+ {ChangeSprite("Kent", "kent_side_normal")}
  He died in the last issue, but that's probably just temporary.
  {ChangeSprite("Kent", "kent_amused")}
  He's 'died' about 11 times now.
@@ -188,18 +213,19 @@ You look better.
 ~currentSpeaker = comic
  Uh huh.
 ~currentSpeaker = webdev
-{ChangeSprite("Tali", "tali_talking_side")}
+{ChangeSprite("Tali", "tali_sad")}
  I used to read it. I haven’t caught up yet.
- {ChangeSprite("Tali", "tali_talking_forward")}
- I preferred Satin Rain.
  {ChangeSprite("Tali", "tali_talking_side")}
+ I think I preferred Satin Rain though.
+ {ChangeSprite("Tali", "tali_sad")}
 I never caught up with that either though.
+{ChangeSprite("Tali", "tali_smirk")}
  But she’s cool.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
  She is pretty cool.
 ~currentSpeaker = you
- I don’t know what’s going on, but what’s so cool about a Satin Rain?
+ I don’t know what’s going on, but what’s so cool about Satin Rain?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
  You just need to read the comic.
@@ -211,7 +237,9 @@ I never caught up with that either though.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_normal")}
  I get it. So many issues. And they’re all so expensive.
+ {ChangeSprite("Kent", "kent_happy")}
  But I think they’re worth it.
+ {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
  Yeah, I barely have time anymore to read everything. I have to be more selective.
   {ChangeSprite("Tali", "tali_happy")}
@@ -262,7 +290,7 @@ I never caught up with that either though.
 ~currentSpeaker = you
  I get it.
 ~currentSpeaker = webdev
- I know. 
+ I know you do. 
  {ChangeSprite("Tali", "tali_happy")}
  At least you’ve got Ada though.
 ~currentSpeaker = you
@@ -273,31 +301,37 @@ I never caught up with that either though.
  And it seems Lavender cares about you too.
 ~currentSpeaker = webdev
  {ChangeSprite("Tali", "tali_normal")}
- What’s Lavender got to do with this?
+ Yeah I guess she does.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}
  She hasn’t been bothering you, has she?
 ~currentSpeaker = webdev
- {ChangeSprite("Tali", "tali_happy")}
- Oh, she’s a real bother isn’t she?
+ {ChangeSprite("Tali", "tali_talking_side")}
+ You know Lavender?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
- I would agree with that statement. Except you seem to be saying that sarcastically which means I think you don’t really mean it.
+ Yeah, she really bit my head off the other day. I believe {you} is thinking of employing me to ward her off.
 ~currentSpeaker = webdev
-{ChangeSprite("Tali", "tali_happy_closed")}
- Haha. Have a good day guys.
+{ChangeSprite("Tali", "tali_happy")}
+ Haha. But that won't work.
+ {ChangeSprite("Tali", "tali_serious")}
+ That girl is persistant.
+ {ChangeSprite("Tali", "tali_happy")}
+ Anyway, have a good day people.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_excited")}
  Wait. Tali. Take this.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_smirk")}
- Will it help me on my quest?
+ Aww thanks, but I'm not interested in joining a cult at the moment.
 ~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_normal")}
- My creative writing session. Saturday evening. Want to come?
+{ChangeSprite("Pandora", "pandora_sad")}
+ No. It's for a creative writing session that's being hosted here. 
+ {ChangeSprite("Pandora", "pandora_happy")}
+ Saturday evening. Want to come?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_normal")}
- Uh sure why not?
+ Sure, why not?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
  Thank you!
@@ -326,21 +360,21 @@ I never caught up with that either though.
  {ChangeSprite("Pandora", "pandora_excited")}
  Yes, another person I can invite.
 ~currentSpeaker = you
- You really want to invite her.
+ You really want to invite her?
 ~currentSpeaker = android
  {ChangeSprite("Pandora", "pandora_mean")}
  Of course, she is our most loyal customer.
 ~currentSpeaker = you
  A loyal pain in the arse.
 ~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_suggestive")}
  I would like as many people at my session as possible.
 ~currentSpeaker = you
  Why?
+ {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
  The more the merrier.
 ~currentSpeaker = you
- Not sure that counts when Lavender is around.
+ Not sure that applies when Lavender is around.
  ~characters += lavender
 ~currentSpeaker = snob
 {allbooks ? togue_1076: -> togue_winter->} 
@@ -393,8 +427,9 @@ Why are you shouting at me?
  {ChangeSprite("Lavender", "lavender_happy")}
  I just did. She said she’s going to Pandora’s dorky writing meetup.
 ~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_pensive")}
- Dorky?
+{ChangeSprite("Pandora", "pandora_annoyed")}
+ Dorky!?
+ {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = snob
  Wow, I’m so happy.
  Thanks Pandora.
@@ -406,14 +441,11 @@ Why are you shouting at me?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
  My first event. I organised myself. And three people are coming. Four, if you include yourself. Five, if you include me.
+{ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker = android
- It’s going to be... 
- {ChangeSprite("Pandora", "pandora_excited")}
- Sublime.
- {ChangeSprite("Pandora", "pandora_excited")}
- I don’t use that word often you know. I save it for a special occasion. Such as this one.
+ It’s going to be such a wonderful day.
 ~currentSpeaker = you
- What a wonderful occasion.
+Well done.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
  Let’s do the inventory. I’m so excited.

@@ -363,7 +363,7 @@ No one asked you to.
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_annoyed")}
 Cas! 
-{ChangeSprite("Lavender", "lavender_happy")}
+{ChangeSprite("Pandora", "pandora_happy")}
 I’m so sorry Miss Blue. I assure you, you are a highly esteemed customer. Would you like a complimentary cup of tea or coffee?
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
@@ -375,12 +375,12 @@ I want tea, robot.
 Right away.
 ~characters-=pandora
 ~currentSpeaker = you 
-Uh, can you not call her the 'r' word. It’s rude.
+Can you not call her the 'r' word? It’s rude.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_angry")}
 Apologise to me now.
 ~currentSpeaker = you 
-...
+Erm...how about no?
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_serious")}
 I’ll tell you why I started this conversation.
@@ -393,7 +393,7 @@ I just wanted to see what kind of people come here.
 And to be honest, I’m not really very impressed.
 ~characters+=pandora
 ~currentSpeaker = android 
-Uh, Miss Blue, your tea is ready.
+Miss Blue, your tea is ready.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_angry")}
 What is this?
