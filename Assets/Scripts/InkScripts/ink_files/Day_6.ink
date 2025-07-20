@@ -338,7 +338,7 @@ She swung towards him, and he swung into her. The blades collided and sparks fle
 Their swords kept clashing together. He kept looking for a point of weakness. He kicked at her shins and she stumbled back a little, quickly regaining balance.
 “That was— quite ungentlemanly of you.”
 “Wait until you see this then.”
-Their swords met again, this time his turned from silver to black, and curled back into a whip seizing her's and looping around her handle, continuously.
+Their swords met again, this time his turned from silver to black, and curled back into a whip seizing hers and looping around her handle, continuously.
 “You unsworded me you bastard. You know my weapon won’t let anyone other than me wield her. You’re wasting your time.”
 The serpent whip launched the sword towards the intruder like a grappling hook. She dropped to the ground and rolled out of range. Then the sword started to shake violently. 
 “What’s going on?” He said, trying to mask the uncertainty from his voice.
@@ -514,6 +514,7 @@ It's unfinished.
 ~currentSpeaker = comic
  Take care!
  ~characters -=kent
+ ==skip_to_day_6
 ~currentSpeaker = you
  Well, I think that went well, don’t you?
 ~currentSpeaker = android
@@ -534,43 +535,6 @@ It's unfinished.
  {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
  Thank you.
-~currentSpeaker = you
- Goodnight.
- {ChangeSprite("Pandora", "pandora_pensive")}
-~currentSpeaker = android
- Night.
-// {pandoraPoints>0:
-// ~currentSpeaker = you
-//  Sure, I can stop by for a bit.
-//  {ChangeSprite("Pandora", "pandora_happy")}
-// ~currentSpeaker = android
-//  Thank you.
-// ~currentSpeaker = you
-//  Goodnight.
-//  {ChangeSprite("Pandora", "pandora_pensive")}
-// ~currentSpeaker = android
-//  Night.
-//   - else:
-// ~currentSpeaker = you
-//  Sorry, but I can’t come in on a non-workday.
-//  It’s just about my boundaries, I need my time off.
-//  {ChangeSprite("Pandora", "pandora_sad")}
-// ~currentSpeaker = android
-//  OK, it would just be for a little while though. I know it’s your day off but…
-// ~currentSpeaker = you
-//  You know, it’s not my responsibility to babysit you, Ada should have arranged that when she left.
-// ~currentSpeaker = android
-//  Right, I’m so sorry. I don’t know what came over me.
-// ~currentSpeaker = you
-//  No worries.
-// Please don’t fret about this Pandora, just go to bed.
-// ~currentSpeaker = you
-//  I’m going now, bye.
-//   {ChangeSprite("Pandora", "pandora_normal")}
-// ~currentSpeaker = android
-//  See you on Monday.
-}
-
 ->end_day_6
 ==end_day_6==
 ~characters+=pandora

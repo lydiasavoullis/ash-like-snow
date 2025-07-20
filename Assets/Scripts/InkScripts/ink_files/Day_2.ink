@@ -225,6 +225,7 @@ Uh sorry to bother you.
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 My name is Lavender.
+~snob="Lavender"
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker = comic
 I'm Kent.

@@ -9,7 +9,7 @@ public class SceneTransition : MonoBehaviour
     public string sceneToLoad;
 
     public void LoadScene(string scene) {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene(scene);
     }
     public void Quit()
     {

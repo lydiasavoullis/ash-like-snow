@@ -463,6 +463,7 @@ I’ll be around more often now Ada is out.
 How old are you Pandora?
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android
+I've been around for about two and a half years.
 But I have the mental age of a twenty year old.
 ~currentSpeaker = comic 
 Really?

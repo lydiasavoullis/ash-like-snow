@@ -18,8 +18,9 @@
 //{pandoraPoints==0: ->day_7_alt}
 ~newsPicture = "headline7"
 ~newsCaption = "Virus and parrot - Illustration by Kent Herring"
-~newsAnnouncement = "Parrots do not actually spread parrot pox. The public are asked to not realease their pet parrots. These feathered beasts are a scourge upon this nation."
+~newsAnnouncement = "Parrots do not actually spread parrot pox. The public are urged to not dispose of their pet parrots. There are reports of feathered colonies causing distruptions over London, from people who have released these feathered beasts among fears that they will catch the disease."
 ¬
+~newsAnnouncement = ""
 ~music="Pandora's theme"
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_normal")}
@@ -45,11 +46,7 @@ I can do it myself
 {ChangeSprite("Pandora", "pandora_happy")}
  Uh, it’s Cobalt Dragon’s new album.
 ~currentSpeaker = you
- What’s Cobalt Dragon?
-~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_normal")}
- It’s a band I like.
-~currentSpeaker = you
+ I've heard of them.
  It’s kind of cool, not really my thing though.
 ~currentSpeaker = android
  What’s your thing?
@@ -138,7 +135,7 @@ If you were a human, you would be free.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_sad")}
  How could I not be offended? He was my father.
- He read stories to me, and he listened to the things I had to say. He taught me to cook and fix things and drive. 
+ He read stories to me, and he listened to the things I had to say. He taught me how to cook and fix things and drive. 
 ~currentSpeaker = you
  Drive? Isn’t it illegal for IOIs to drive?
 ~currentSpeaker = android
@@ -181,7 +178,7 @@ If you were a human, you would be free.
  ~currentSpeaker = you
  To Cobalt Dragons?
  Uh sure, why not?
- ~currentSpeaker = "Cobalt dragons"
+~music = "Cobalt dragons"
 ~currentSpeaker = you
  Do you want me to stay?
 ~currentSpeaker = android
@@ -219,4 +216,5 @@ I can do it myself
 ~scene= "GenericScene"
 ¬
 ~day+=1
-->day_8
+->END
+//->day_8
