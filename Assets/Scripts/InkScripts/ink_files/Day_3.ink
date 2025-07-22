@@ -1,7 +1,7 @@
 ==day_3==
 ~newsPicture = "headline3"
 ~newsCaption = "Sad cat"
-~newsAnnouncement = "Miserable moggy - sad cat a viral hit. What our obsession with this depressed animal says about us."
+~newsAnnouncement = "Sad cat is now a viral hit. How sad cat became a cultural icon and why feline depression is a serious issue."
 ¬
 ~music="Rise and shine"
 ~newsAnnouncement = ""
@@ -124,14 +124,14 @@ What kind of data?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
 Of course we know eachother. This is basically my bookshop.
-I come here for my vintage fashion magazines.
+I come here for my fashion magazines.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
 That's so cool! 
 I love those designs you showed me.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_happy")}
- I know, fashion these days is so ugly.
+I know, fashion these days is so ugly.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal2")}
 Eh what’s going on?
@@ -227,8 +227,8 @@ My boss is calling me.
  See you later Tal.
 ~characters -= tali
 ~currentSpeaker = you
-{allbooks ? togue_394: -> togue_2->} 
-~allbooks-=togue_394
+{allbooks ? LUX_394: -> LUX_2->} 
+~allbooks-=LUX_394
 ~currentSpeaker = you
 So how are things?
 ~currentSpeaker = snob

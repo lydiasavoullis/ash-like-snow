@@ -60,21 +60,21 @@ I'm {you}, Ada is on holiday. She won't be back until January
 {ChangeSprite("Lavender", "lavender_thinking")}
 Holiday?
 January?
-This is impossible
-I need her
-You won't suffice
+This is impossible.
+I need her.
+You won't suffice.
 ~currentSpeaker = you
-Well I'm all you've got
+Well I'm all you've got.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
-You will regret this
-You will regret everything
+You will regret this.
+You will regret everything.
 ~currentSpeaker = you
-I already do
+I already do.
 ~currentSpeaker = snob
 This is not a joke.
 I have important business with Adalina.
-She's my only supply of extremely rare vintage magazines.
+She's my only supply of extremely rare magazines.
 ~currentSpeaker = you
 I'm in charge of the inventory now, I can supply anything you need.
 I use the same website as Ada, I can supply your magazines.
@@ -86,13 +86,14 @@ What kind of magazines are you looking for?
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 Fashion magazines.
+Specifically LUX.
 ~currentSpeaker = you
-We have some on that shelf.
+We have some magazines on that shelf.
 You can have a look through them, see if there's anything you like.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
-Those are too recent.
-I'm not wasting my time looking through a load of rubbish.
+That is not what I'm looking for.
+I'm not wasting my time rifling through a load of rubbish.
 {ChangeSprite("Lavender", "lavender_thinking")}
 Why do I even bother?
 ~currentSpeaker = ""

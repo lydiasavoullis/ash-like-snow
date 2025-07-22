@@ -40,6 +40,16 @@ What an interesting…establishment.
 
 ==stranger_first_encounter_snapped_out
 ~currentSpeaker = you
+Hey Pan, could you leave us?
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker = android
+Oh?
+~currentSpeaker = you
+It's just something I have to do alone.
+~currentSpeaker = android
+OK.
+~characters-=pandora
+~currentSpeaker = you
 Are you looking for Ada?
 {ChangeSprite("Stranger", "shadow_amused")}
 ~currentSpeaker = trader
@@ -74,6 +84,15 @@ What was that?
 A favour Ada asked me to do for her.
 Don't worry about it.
 ~gaveTraderMoney="yes"
+~characters+=pandora
+{ChangeSprite("Pandora", "pandora_confused")}
+~currentSpeaker=android
+What was that?
+~currentSpeaker = you
+He was looking for directions.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+I hope you showed him the way.
 ->continue_day_8
 ==stranger_first_encounter
 ~currentSpeaker = you
@@ -84,9 +103,9 @@ I was just walking by when I remembered that I needed to talk.
 On behalf of a mutual friend. 
 ~currentSpeaker = you
 And who was that?
-{ChangeSprite("Stranger", "shadow_amused")}
+{ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
-The creator of course.
+Surely you know.
 {ChangeSprite("Stranger", "shadow_neutral")}
 Anyway,
 I need:
@@ -110,23 +129,23 @@ I'm not sure exactly.
 ~currentSpeaker=snob
 Who was that guy that left just now?
 ~currentSpeaker=android
-I don’t know, we’ve never seen him before.
+I don’t know, never seen him before.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker= snob
 He was cute. 
 Couldn’t see his face.
-But his outfit was so cute.
+But his outfit was so cool.
 {ChangeSprite("Lavender", "lavender_sad")}
 When I tried to speak to him he told me to go to hell.
 {ChangeSprite("Lavender", "lavender_tears_crying")}
 I think I might die.
 {ChangeSprite("Lavender", "lavender_sad")}
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker= android 
 Is that a good thing?
-{allbooks ? togue_uniform: -> togue_pets->} 
+{allbooks ? LUX_uniform: -> LUX_flight_uniform->} 
 ~currentSpeaker = you
-Why was that strange man dressed like that anyway?
+Do you know why was that man dressed like that anyway?
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
 There’s some kind of convention for fans of a certain Victorian RPG detective mystery game. 
@@ -144,7 +163,7 @@ You’ve heard of this Pan?
 I may have taken a look while I was putting out the bins.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-So, I was wondering, have you seen Tai around?
+So, I was wondering, have you seen Tali around?
 ~currentSpeaker=you
 No, we haven’t sorry.
 Is she meant to be meeting you?
@@ -165,20 +184,10 @@ Thanks.
 ~characters-=lavender
 ~currentSpeaker=you
 Don’t you think Lavender is acting a bit strange?
-
 ~currentSpeaker=android
 She’s just worried, I think.
 {ChangeSprite("Pandora", "pandora_happy")}
 At least she is being nice to us.
-{ChangeSprite("Pandora", "pandora_pensive")}
-I thought that man was strange. But I suppose if he’s from the convention. Maybe what he was saying was some kind of reference to that game.
-~currentSpeaker=you
-Ugh I hate it when people do that.
-It’s so pretentious. 
-Who does he think he’s trying to impress?
-{ChangeSprite("Pandora", "pandora_normal")}
-~currentSpeaker=android
-He really got on your nerves, didn’t he?
 Oh, someone’s at the door.
 ~characters+=kent
 {ChangeSprite("Kent", "kent_normal")}
@@ -191,7 +200,8 @@ She’s waiting for Tali, let her be.
 {allbooks ? lady_darkness_373: -> lady_darkness->} 
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-There was a threat on Benedict Blue’s life this morning. 
+There was a threat on Benedict Blue’s life this morning.
+They're trying to keep it all undercover, but it will get out eventually.
 ~currentSpeaker = you
 Ah, right.
 {ChangeSprite("Pandora", "pandora_shocked")}
@@ -201,7 +211,7 @@ No wonder she’s acting so strange.
 {ChangeSprite("Pandora", "pandora_normal")}
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
-The prime minister is saying if BB is compromised it’s as good as the whole country being compromised.
+The prime minister is saying if B.B. is compromised it’s as good as the whole country being compromised.
 ~currentSpeaker=you
 Do they know anything about the terrorists?
 {ChangeSprite("Kent", "kent_normal")}
@@ -218,9 +228,9 @@ Well, it's all very annonymous. We don't know exaclty how they do it.
 Newspaper cuttings.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Ha.
+Oh god. No.
 {ChangeSprite("Kent", "kent_side_normal")}
-No, it's probably more sophisticated than that.
+It's more sophisticated than that.
 {ChangeSprite("Kent", "kent_side_serious")}
 Encryption algorithms, secret societies and bullshit. 
 ~currentSpeaker=android
@@ -260,9 +270,6 @@ But, I mean, it seems to me that’s the case right?
 ~currentSpeaker=comic
 Yes, but he didn’t just pop up overnight.
 The seeds of this disaster were sown a long time ago.
-Governments leaving cracks wide open, begging to be exploited.
-And then some rich guy comes in and says he’s going to fix everything.
-They turn a blind eye to where his money goes.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~characters+=lavender
 ~currentSpeaker=snob
@@ -370,17 +377,17 @@ Well, of course you’re going to think that. You quite obviously don’t like L
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I’m not going to even try and deny it.
-But the problem is not that she’s your friend. It’s that she’s your only friend.
+But the problem isn't that she’s your friend. It’s that she’s your only friend.
 {ChangeSprite("Kent", "kent_sad")}
 A friend you rely on, for employment and to solve any problem in your life. You can’t have a healthy relationship like that. There’s an obvious power imbalance here.
 ~currentSpeaker=webdev
-Are you saying I’m too poor to be friends with her?
+Are you saying I shouldn't be friends with her?
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 I’m not saying that exactly… I’m just saying that she lives in a completely different reality to you, to us to anyone you’ve ever known.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
-I do think that sometimes, it really sucks. She’s helped me out so much. She supported me when I came out to my parents. 
+I do think that sometimes, it really sucks. She’s helped me out so much. She supported me through a lot of difficult times. 
 {ChangeSprite("Tali", "tali_talking_side")}
 She let me live in her apartment during uni when I couldn’t afford rent. 
 She helped me with the deposit on my current flat. She helped me get my current job. 
@@ -399,7 +406,7 @@ I speak to my sister sometimes, but she’s still quite young.
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 That sounds really shitty. 
-Is it just general transphobia?
+What happened?
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker =webdev 
 It's complicated.
@@ -426,7 +433,7 @@ That does complicate things. Couldn't they just leave it to your sister?
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker =webdev 
 She's shown interest.
-However, she's not a man.
+But she's not a man.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker =comic
 I don't understand why that matters.

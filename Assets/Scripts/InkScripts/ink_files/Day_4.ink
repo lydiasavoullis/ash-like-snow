@@ -377,7 +377,7 @@ I never caught up with that either though.
  Not sure that applies when Lavender is around.
  ~characters += lavender
 ~currentSpeaker = snob
-{allbooks ? togue_1076: -> togue_winter->} 
+{allbooks ? LUX_1076: -> LUX_winter->} 
 {ChangeSprite("Lavender", "lavender_angry")}
 So why are you talking about me behind my back?
 ~currentSpeaker = you

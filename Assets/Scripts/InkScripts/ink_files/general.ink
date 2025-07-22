@@ -4,7 +4,7 @@
 //can read on 8 days
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories
-*{allbooks ? myths_legends}[Read Greek myths]
+*{allbooks ? myths_legends}[Read myths and legends]
  -> read_greek_myths
 * {allbooks ? Alice_in_Wonderland} [Read Alice in Wonderland]
 ->read_alice_in_wonderland
@@ -53,7 +53,7 @@ Tea or coffee?
 ~currentSpeaker = android  
 {timesRejected == 1: {PlayAnimation("Pandora", "shake")} Haha. A joke right? }
 {timesRejected == 2: {PlayAnimation("Pandora", "shake")} {ChangeSprite("Pandora", "pandora_mean")} C'mon you don't want a little drink?}
-{timesRejected == 3: {PlayAnimation("Pandora", "shake")} {ChangeSprite("Pandora", "pandora_annoyed")} You need a drink {you} it's for your own good!}
+{timesRejected == 3: {PlayAnimation("Pandora", "shake")} {ChangeSprite("Pandora", "pandora_annoyed")} {you} it's for your own good!}
 {timesRejected == 4: ->snap_out_trigger}
 ->tea_or_coffee_choices
 ==snap_out_trigger
@@ -181,35 +181,44 @@ It's called Howl's Moving Castle.
 ~currentSpeaker = android
 How can a castle move?
 ~currentSpeaker = you
-Magic. 
+Magic.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android  
 Nice! Please read to me. 
 ~currentSpeaker = you 
-OK
+OK.
 ~currentSpeaker = ""
 \*You read to Pandora\*
 \*You feel tranquility fill your very being\*
 ...
-{ChangeSprite("Pandora", "pandora_mean")}
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android  
-Do you have siblings?
+Do you worry about getting old?
 ~currentSpeaker = you 
-No...do you?
-{ChangeSprite("Pandora", "pandora_confused")}
-~currentSpeaker = android  
-I'm non-organic {you}
+All the time.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker = android 
+I don't think I like the thought of you getting old.
 ~currentSpeaker = you 
-I know. I was just trying to be polite.
-And...I mean...you could have had adopted siblings.
+Neither do I.
+I guess you're lucky in that way.
 {ChangeSprite("Pandora", "pandora_happy")}
-~currentSpeaker = android  
-It must be nice I think, to have a family like that.
-To have sisters to talk to.
+~currentSpeaker = android 
+I am incredibly lucky.
+{ChangeSprite("Pandora", "pandora_sad")}
+But I do feel quite lonely, I'll see everyone I know die. And I will keep on living.
+Presumably forever.
 ~currentSpeaker = you 
-To fight with.
+Well I guess, when people die you'll just meet new ones.
+And the cycle continues.
+~currentSpeaker = android 
+Is there not something sad about that.
+~currentSpeaker = you 
+Do not try to make me feel sorry for you.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker = android
+Alright. I think I'll leave things there.
 {ChangeSprite("Pandora", "pandora_excited")}
-~currentSpeaker = android  
 I can't wait to finish this tonight.
 ~allbooks-= Howls_Moving_Castle
 ->->
@@ -231,7 +240,7 @@ Well now you know.
 ~currentSpeaker = android
 What's a Turkish delight?
 ~currentSpeaker = you
-It's a kind of sweet.
+It's a kind of sweet. It has kind of a gummy texture, and it's usually rose flavoured.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 Is it very tasty?
@@ -270,7 +279,7 @@ Great! I'm looking forward to this.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = you
 \*You read to Pandora\*
-\*You feel your heart beat slow for a couple of minutes.\*
+\*You feel your heartbeat slow for a couple of minutes.\*
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 What's your favourite colour?

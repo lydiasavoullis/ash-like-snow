@@ -5,10 +5,10 @@ Remaining funds: {funds}
 + Go to children's fiction
 ->buy_childrens_books
 
-*{day==1}{funds>=200}[Togue Autumn issue 222(£200)]
+*{day==1}{funds>=200}[LUX Autumn issue 222(£200)]
 ~funds -= 200
 ~deliveryToday+=1
-~allbooks+=togue_222
+~allbooks+=LUX_222
 ->goto_shop
 *{day==1}{funds>=100}[Night Thunder \#89(£100)]
 ~funds -= 100
@@ -25,10 +25,10 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=fantasy_7
 ->goto_shop
-*{day==2}{funds>=200}[Togue Spring issue 394(£200)]
+*{day==2}{funds>=200}[LUX Spring issue 394(£200)]
 ~funds -= 200
 ~deliveryToday+=1
-~allbooks+=togue_394
+~allbooks+=LUX_394
 ->goto_shop
 *{day==2}{funds>=70}[The Sentinel \#105(£70)]
 ~funds -= 70
@@ -41,10 +41,10 @@ Remaining funds: {funds}
 ~allbooks+=fantasy_dragon_heart
 ->goto_shop
 Remaining funds: {funds}
-*{day==3}{funds>=200}[Togue Winter issue 1076(£200]
+*{day==3}{funds>=200}[LUX Winter issue 1076(£200]
 ~funds -= 200
 ~deliveryToday+=1
-~allbooks+=togue_1076
+~allbooks+=LUX_1076
 ->goto_shop
 *{day==3}{funds>=70}[Wildfyre \#678(£70)]
 ~funds -= 70
@@ -56,10 +56,10 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=black_goat
 ->goto_shop
-*{day==4}{funds>=400}[Togue SPECIAL issue 666(£400)]
+*{day==4}{funds>=400}[LUX SPECIAL issue 666(£400)]
 ~funds -= 400
 ~deliveryToday+=1
-~allbooks+=togue_666
+~allbooks+=LUX_666
 ->goto_shop
 *{day==4}{funds>=100}[Hypnos \#55(£100)]
 ~funds -= 100
@@ -71,10 +71,10 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=lord_dusk
 ->goto_shop
-*{day==5}{funds>=600}[Togue pet accessories issue 360(£600)]
+*{day==5}{funds>=600}[LUX pet accessories issue 360(£600)]
 ~funds -= 600
 ~deliveryToday+=1
-~allbooks+=togue_360
+~allbooks+=LUX_360
 ->goto_shop
 *{day==5}{funds>=70}[Lady of Darkness \#373(£70)]
 ~funds -= 70
@@ -87,10 +87,10 @@ Remaining funds: {funds}
 ~allbooks+=forest_god
 ->goto_shop
 ->goto_shop
-*{day==8}{funds>=600}[Togue special flight attendant uniform issue (£600)]
+*{day==8}{funds>=600}[LUX special flight attendant uniform issue (£600)]
 ~funds -= 600
 ~deliveryToday+=1
-~allbooks+=togue_uniform
+~allbooks+=LUX_uniform
 ->goto_shop
 *{day==8}{funds>=70}[X and A \#235(£70)]
 ~funds -= 70
@@ -102,10 +102,10 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=the_glass_lab
 ->goto_shop
-*{day==9}{funds>=600}[Togue acid rain proof chic (£600)]
+*{day==9}{funds>=600}[LUX acid rain proof chic (£600)]
 ~funds -= 600
 ~deliveryToday+=1
-~allbooks+=togue_rain_proof
+~allbooks+=LUX_rain_proof
 ->goto_shop
 *{day==9}{funds>=70}[Mr. Thermistor \#95(£70)]
 ~funds -= 70
@@ -117,10 +117,10 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=ring_thorns
 ->goto_shop
-*{day==10}{funds>=600}[Togue protective gear issue 331 (£600)]
+*{day==10}{funds>=600}[LUX protective gear issue 331 (£600)]
 ~funds -= 600
 ~deliveryToday+=1
-~allbooks+=togue_gear
+~allbooks+=LUX_gear
 ->goto_shop
 +{day==10}{funds>=70}[Bioworld \#111(£70)]
 ~funds -= 70
@@ -133,10 +133,10 @@ Remaining funds: {funds}
 ~allbooks+=heart_lies
 ->goto_shop
 Remaining funds: {funds}
-*{day==11}{funds>=600}[Togue PPE special issue (£600)]
+*{day==11}{funds>=600}[LUX PPE special issue (£600)]
 ~funds -= 600
 ~deliveryToday+=1
-~allbooks+=togue_ppe
+~allbooks+=LUX_ppe
 ->goto_shop
 *{day==11}{funds>=70}[Cybershake \#235(£70)]
 ~funds -= 70
@@ -155,7 +155,7 @@ Remaining funds: {funds}
 ->->
 ==buy_childrens_books==
 Remaining funds: {funds}
-*{day>=1}{funds>=20}[Greek Myths and Legends (£20)] 
+*{day>=1}{funds>=20}[Myths and Legends (£20)] 
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=myths_legends
@@ -191,11 +191,6 @@ Remaining funds: {funds}
 ~allbooks+=the_hobbit
 ->buy_childrens_books
 *{day>=10}{funds>=20}[Buy Matilda (£20)]
-~funds -= 20
-~deliveryToday+=1
-~allbooks+=matilda
-->buy_childrens_books
-*{day>=11}{funds>=20}[Buy Matilda (£20)]
 ~funds -= 20
 ~deliveryToday+=1
 ~allbooks+=matilda

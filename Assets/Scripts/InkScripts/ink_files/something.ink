@@ -28,8 +28,8 @@ INCLUDE night.ink
 // *[Truth and dare]
 // ->start_incident
 *[Playtest]
-->skip_to_day_6
-// *[day 1]
+->day_1
+//*[day 1]
 // ->day_1
 // *[day 2]
 // ->day_2

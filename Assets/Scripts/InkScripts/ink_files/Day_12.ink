@@ -309,7 +309,7 @@ Yeah, what’s up?
 ~currentSpeaker=android
 Ah wonderful we’re all here
 ~currentSpeaker=you
-{allbooks ? togue_ppe: -> togue_ppe_special->} 
+{allbooks ? LUX_ppe: -> LUX_ppe_special->} 
 {allbooks ? heart_lies: -> where_the_heart_lies->} 
 {allbooks ? queendom_heretic: -> queen_h->} 
 {ChangeSprite("Pandora", "pandora_normal")}

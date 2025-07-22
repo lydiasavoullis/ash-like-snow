@@ -266,7 +266,7 @@ I see...
 ~currentSpeaker=snob
 Hey.
 ~currentSpeaker=you
-{allbooks ? togue_gear: -> togue_protective_gear->} 
+{allbooks ? LUX_gear: -> LUX_protective_gear->} 
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 I guess you probably want a personal statement to put in your stupid newspaper.

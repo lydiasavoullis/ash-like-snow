@@ -136,7 +136,7 @@ I’m starting to think she wants this place to fail.
  Ahem.
  ~characters -=pandora
  ...
-  {allbooks ? togue_666: -> togue_special->} 
+  {allbooks ? LUX_666: -> LUX_3->} 
  ~characters += pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}

@@ -57,9 +57,9 @@ Can I interest you in a cup of rose tea?
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 No. Thank you.
-{allbooks ? togue_uniform: ->togue_flight_uniform->} 
+{allbooks ? LUX_uniform: ->LUX_flight_uniform->} 
 ¬
-{allbooks ? togue_acid_rain: ->togue_acid_rain_issue->} 
+{allbooks ? LUX_acid_rain: ->LUX_acid_rain_issue->} 
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 It sounds like you're having a rough time {snob}.

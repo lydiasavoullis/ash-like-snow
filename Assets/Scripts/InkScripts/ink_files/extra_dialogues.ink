@@ -1,5 +1,5 @@
 
-==togue_1==
+==LUX_1==
 ~lavenderPoints+=1
 ~currentSpeaker = you
 ~music="Making friends"
@@ -11,7 +11,7 @@ Finally.
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_2==
+==LUX_2==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
@@ -24,23 +24,44 @@ Oh pastels!
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_3==
+==LUX_3==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Just before I forget, I ordered this for you.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
-Well, I suppose you're not completely useless.
+That's superb.
+~currentSpeaker = you
+Hey, I just wanted to ask.
+What's so great about these LUX magazines.
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+Oh, they're just very unique and interesting.
+Unfortunately LUX closed down some thirty years ago.
+~currentSpeaker = you
+Uh really?
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+My grandfather bought their parent company, closed LUX and fired all the staff.
+~currentSpeaker = you
+Your grandfather?!
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+I know.
+He said they promoted climate propaganda.
+It's a real shame.
+~currentSpeaker = you
+Indeed.
 ~funds+=90
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_winter==
+==LUX_winter==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
-Oh Lavender, I have a Togue winter addition for you.
+Oh Lavender, I have a LUX winter addition for you.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Oh my, I never thought I'd see it.
@@ -50,16 +71,16 @@ Berets!?
 What has the world come to?
 How horrifying.
 I'll take it.
-~allbooks-=togue_1076
+~allbooks-=LUX_1076
 ~funds+=500
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_special==
+==LUX_special==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
-So Lavender, I have a Togue special issue for you.
+So Lavender, I have a LUX special issue for you.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Special? Oh let's have a look.
@@ -82,12 +103,12 @@ Not really. But if it makes you happy.
  ~music="Rise and shine"
 ->->
 
-==togue_flight_uniform==
+==LUX_flight_uniform==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
 Lavender, I have something for you.
-This is Togue, is has uh something to do with flight attendant uniforms?
+This is LUX, is has uh something to do with flight attendant uniforms?
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Oh, nice. I'll buy it from you.
@@ -112,7 +133,7 @@ I better get on that then.
  ~booksSold+=1
  ~music="Rise and shine"
 ->->
-==togue_pets==
+==LUX_pets==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
@@ -153,7 +174,7 @@ Right.
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_acid_rain_issue==
+==LUX_acid_rain_issue==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
@@ -178,7 +199,7 @@ Indeed.
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_ppe_special==
+==LUX_ppe_special==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
@@ -221,7 +242,7 @@ Fine.
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==togue_protective_gear==
+==LUX_protective_gear==
 ~music="Making friends"
 ~lavenderPoints+=1
 ~currentSpeaker = you
@@ -615,13 +636,21 @@ I suppose each to their own.
 I got you a comic
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
-This is The Sentinel
-It's about this guy who lives in a lighthouse, and he looks out for these monsters that crawl out of the sea at night.
+This is The Sentinel.
+It's like horror-fantasy.
+It's about this guy who lives in a lighthouse, and he has to protect the land from these monsters that crawl out of the sea at night.
 ~currentSpeaker = you
-What does he do to the monsters?
+How does he kill them?
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
-Kill them of course.
+Guns, bombs, that sort of thing.
+Sometimes they're sentient and he can reason with them.
+~currentSpeaker = you
+How does he reason with them?
+~currentSpeaker = comic
+He tells them to go the fuck back into the sea.
+~currentSpeaker = you
+Honestly, good for him.
 ~funds+=90
 ~booksSold+=1
 ~music="Rise and shine"
@@ -710,9 +739,7 @@ I thought it would be something dark and dystopian.
 ~currentSpeaker = comic
 Well, it does get dark.
 ~currentSpeaker = you
-Oh really?
-What does he do?
-Tell some kids a bedtime story?
+Oh really, what happens?
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 This guy insults him and he gives the man insomnia and he dies after begging Hypnos to let him sleep.
@@ -720,10 +747,10 @@ And in another story a king insults him and he puts his daughter, the princess, 
 {ChangeSprite("Kent", "kent_side_serious")}
 He only wakes her up when she's middle aged, and her life has passed her by. 
 ~currentSpeaker = you
-That's pretty lighthearted compared to most of the stuff I've heard you read.
+That would suck.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
-Well even I need a breather sometimes.
+I don't know, I would kill for a good night's sleep right now.
 ~music="Rise and shine"
 ~funds+=90
 ~booksSold+=1

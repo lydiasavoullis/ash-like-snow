@@ -9,6 +9,13 @@ public class SceneTransition : MonoBehaviour
     public string sceneToLoad;
 
     public void LoadScene(string scene) {
+        //SceneManager.LoadScene(scene);
+        StartCoroutine(RemoveMusicThenLoadScene(scene));
+    }
+    public IEnumerator RemoveMusicThenLoadScene(string scene) {
+        GameObject audioManager = GameObject.FindGameObjectWithTag("AudioManager");
+        GameObject.DestroyImmediate(audioManager);
+        yield return new WaitUntil(()=>audioManager==null);
         SceneManager.LoadScene(scene);
     }
     public void Quit()

@@ -205,7 +205,7 @@ I wish it wasn’t.
 HEY
 {ChangeSprite("Lavender", "lavender_normal")}
 Have you got my stuff?
-{allbooks?togue_222: ->togue_1->}
+{allbooks?LUX_222: ->LUX_1->}
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
 Hey there! I like your outfit.
