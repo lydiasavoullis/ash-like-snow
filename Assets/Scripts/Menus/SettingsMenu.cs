@@ -24,10 +24,15 @@ public class SettingsMenu : MonoBehaviour
 
         autoSpeed.value = PlayerPrefs.GetFloat("autoSpeed");
         SetAutoSpeed(PlayerPrefs.GetFloat("autoSpeed"));
-
+        //
+        // 
+        float mainVol = PlayerPrefs.GetFloat("mainVol");
+        Debug.Log("Initial vol music" + PlayerPrefs.GetFloat("mainVol"));
         mainVolumeSlider.value = PlayerPrefs.GetFloat("mainVol");
         SetVolume(PlayerPrefs.GetFloat("mainVol"));
 
+        float sfxVol = PlayerPrefs.GetFloat("sfxVol");
+        Debug.Log("Initial vol sfx" + PlayerPrefs.GetFloat("sfxVol"));
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVol");
         SetSFXVolume(PlayerPrefs.GetFloat("sfxVol"));
 
@@ -51,6 +56,7 @@ public class SettingsMenu : MonoBehaviour
     void Start() {
         PreSetup();
         GetResolutions();
+        
     }
     public void GetResolutions() {
         resolutions = Screen.resolutions;
@@ -81,12 +87,18 @@ public class SettingsMenu : MonoBehaviour
         PlayerPrefs.SetInt("resIndex",resIndex);
     }
     public void SetVolume(float volume) {
-        audioMixer.SetFloat("volume",volume);
+        //audioMixer.SetFloat("volume",volume);
+        float newVol = Mathf.Log10(volume) * 20;
+        //Debug.Log("update vol music" + PlayerPrefs.GetFloat("mainVol"));
+        audioMixer.SetFloat("volume", newVol);
         PlayerPrefs.SetFloat("mainVol", volume);
+        
     }
     public void SetSFXVolume(float volume)
     {
-        sfxMixer.SetFloat("sfx", volume);
+        float newVol = Mathf.Log10(volume) * 20;
+        //Debug.Log("update vol sfx" + PlayerPrefs.GetFloat("sfxVol"));
+        sfxMixer.SetFloat("sfx", newVol);
         PlayerPrefs.SetFloat("sfxVol", volume);
     }
 

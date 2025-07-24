@@ -399,16 +399,15 @@ I can do it myself
 -See you tomorrow, bye!
 ~currentSpeaker = ""
 ~scene = "Night"
-¬
 ~music = "night theme"
 ~sfx = "rain"
-{snappedOut=="no": ->night_03_F->|->night_03->}
-~scene= "ShopFront"
 ¬
+{snappedOut=="no": ->night_03_F->|->night_03->}
+¬
+~scene= "ShopFront"
 ~music="An average day"
 ~sfx = "rain"
 16th December, Thursday
 ~scene= "GenericScene"
-¬
 ~day+=1
 ->day_4

@@ -203,18 +203,17 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 -See you tomorrow!
-~scene = "Night"
 ¬
+~scene = "Night"
 ~music = "night theme"
 ~sfx = "rain"
 {snappedOut=="no": ->night_07_F->|->night_07->}
-~scene= "ShopFront"
 ¬
+~scene= "ShopFront"
 ~music = ""
 ~sfx = "rain"
 20th December, Monday
 ~scene= "GenericScene"
-¬
 ~day+=1
 ->END
 //->day_8

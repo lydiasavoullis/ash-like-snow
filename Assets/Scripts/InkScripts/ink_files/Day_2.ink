@@ -503,16 +503,15 @@ I can do it myself
 -See you tomorrow, bye!
 ~currentSpeaker = ""
 ~scene = "Night"
-¬
 ~music = "night theme"
 ~sfx = "rain"
+¬
 {snappedOut=="no": ->night_02_F->|->night_02->}
 ~scene= "ShopFront"
-¬
 ~music = "An average day"
 ~sfx = "rain"
+¬
 15th December, Wednesday
 ~scene= "GenericScene"
-¬
 ~day+=1
 ->day_3

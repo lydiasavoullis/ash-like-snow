@@ -27,11 +27,10 @@ Hey
 ==day_1==
 ~scene= "ShopFront"
 ~music= "An average day"
-¬
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
-13th December, Monday, 206X
 ¬
+13th December, Monday, 206X
 ~music= ""
 ~scene= "GenericScene"
 <i>I hope you know what you're doing</i>
@@ -562,16 +561,15 @@ I can do it myself
 -Bye, see you tomorrow!
 ~currentSpeaker = ""
 ~scene = "Night"
-¬
 ~music = "night theme"
 ~sfx = "rain"
+¬
 {snappedOut=="no": ->night_01_F->|->night_01->}
 ~scene= "ShopFront"
-¬
 ~music="An average day"
 ~sfx = "rain"
+¬
 14th December, Tuesday  
 ~scene= "GenericScene"
-¬
 ~day+=1
 ->day_2

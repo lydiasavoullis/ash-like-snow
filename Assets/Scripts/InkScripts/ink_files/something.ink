@@ -20,15 +20,14 @@ INCLUDE truth_or_dare.ink
 INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
-~scene= "GenericScene"
+//~scene= "GenericScene"
 // *[simulate ending]
 // ->ending_simulation
 // *[test scene]
 // ->test_scene
 // *[Truth and dare]
 // ->start_incident
-*[Playtest]
-->day_1
+*[Playtest]<>->day_1
 //*[day 1]
 // ->day_1
 // *[day 2]
