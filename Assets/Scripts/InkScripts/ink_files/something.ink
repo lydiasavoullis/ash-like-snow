@@ -28,6 +28,42 @@ INCLUDE night.ink
 // *[Truth and dare]
 // ->start_incident
 *[Playtest]<>->day_1
+
+*[Test all scenes]
+~scene= "ShopFront"
+1
+2
+3
+~scene= "GenericScene"
+1
+2
+3
+~scene= "Xmas"
+1
+2
+3
+~scene= "AirVent"
+1
+2
+3
+~scene= "Basement"
+1
+2
+3
+~scene= "Cityscape"
+1
+2
+3
+~scene= "Fire"
+1
+2
+3
+~scene= "Night"
+1
+2
+3
+~scene= "GenericScene"
+->END
 //*[day 1]
 // ->day_1
 // *[day 2]

@@ -1115,8 +1115,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5146838988726117277}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 5146838990238623699}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -1656,7 +1656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5146838988726117266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4421,13 +4421,14 @@ GameObject:
   - component: {fileID: 5146838990238623697}
   - component: {fileID: 5146838990238623696}
   - component: {fileID: 7802060052607378774}
+  - component: {fileID: 4945508677413474977}
   m_Layer: 5
   m_Name: OptionsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5146838990238623703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4532,6 +4533,18 @@ MonoBehaviour:
   autoSpeed: {fileID: 8604815479356112193}
   fullscreen: {fileID: 5146838988840673609}
   quality: {fileID: 5146838988886353605}
+--- !u!114 &4945508677413474977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146838990238623699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a413920d2ea902f40993d85dc55c5185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5146838990313402203
 GameObject:
   m_ObjectHideFlags: 0
