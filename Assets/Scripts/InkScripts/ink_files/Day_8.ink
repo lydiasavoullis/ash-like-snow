@@ -105,7 +105,7 @@ On behalf of a mutual friend.
 And who was that?
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
-Surely you know.
+Concentrate.
 {ChangeSprite("Stranger", "shadow_neutral")}
 Anyway,
 I need:
@@ -116,7 +116,7 @@ Huh?
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
 I must go now.
-Sorry for taking your time.
+Keep your wits about you.
 ~characters-=stranger
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
@@ -212,6 +212,8 @@ No wonder she’s acting so strange.
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 The prime minister is saying if B.B. is compromised it’s as good as the whole country being compromised.
+{ChangeSprite("Kent", "kent_upset")}
+If only he took threats to our lives so seriously.
 ~currentSpeaker=you
 Do they know anything about the terrorists?
 {ChangeSprite("Kent", "kent_normal")}
@@ -220,27 +222,17 @@ They're a group that call themselves The Syndicate.
 ~currentSpeaker=you
 Ah I've heard of this.
 ~currentSpeaker=android
-What is it?
-{ChangeSprite("Kent", "kent_side_serious")}
-~currentSpeaker=comic
-Well, it's all very annonymous. We don't know exaclty how they do it. 
-~currentSpeaker=you
-Newspaper cuttings.
-{ChangeSprite("Kent", "kent_amused")}
-~currentSpeaker=comic
-Oh god. No.
-{ChangeSprite("Kent", "kent_side_normal")}
-It's more sophisticated than that.
-{ChangeSprite("Kent", "kent_side_serious")}
-Encryption algorithms, secret societies and bullshit. 
-~currentSpeaker=android
-Bullshit?
+What is this group?
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-Not sure what their goal is, but I'm not entirely sure it's a good one. And I'm not sure they're going about their terrorism in the most ethical manner.
-Someone is funding this, we're not sure who.
+They keep themselves well hidden.
+I'm usually very supportive of action against this government.
+But I'm not entirely sure The Syndicate is that ethical.
+Or that their goals are entirely benevolent.
+They're happy to kill innocent civilians if they can achieve their goals.
+We know is someone is funding them, we don't know who, but they must have a lot of resources.
 ~currentSpeaker=you
-Not doing a good job. You're the press, you should know more.
+You're not doing a good job. You're the press, you should know more.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 You could say we have more pressing matters to deal with.
@@ -265,11 +257,11 @@ I’m right here.
 ~currentSpeaker=comic
 These are allegedly opinions that I believe to be held by some people.
 ~currentSpeaker= you
-But, I mean, it seems to me that’s the case right? 
+These opinions seem pretty sound to me.
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-Yes, but he didn’t just pop up overnight.
-The seeds of this disaster were sown a long time ago.
+Blue isn't unique.
+Bad actors appear all the time. But when we invite them in, they don't stop until they've gotten exactly what they wanted.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~characters+=lavender
 ~currentSpeaker=snob
@@ -281,8 +273,8 @@ Ok, see you around Cas.
 That’s not good.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-I’m suprised she’s even out, surely she should be a bit more cautious considering who her father is.
-Then again, he’s always had a very lax attitude when it comes to his kids.
+I’m suprised she’s even out, surely she should be a bit more cautious considering her family situation.
+Then again, he’s never been the most considerate father from what I've heard.
 ~currentSpeaker=you
 Still, must be difficult for her.
 ~currentSpeaker=comic
@@ -314,7 +306,6 @@ Oh ok.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 How’s the boss treating you {webdev}?
-
 ~currentSpeaker=webdev
 Things are better.
 The dirt kind of just got swept under the carpet after I spoke to Lavender.
@@ -333,19 +324,10 @@ Theoretically.
 {ChangeSprite("Tali", "tali_exasperated")}
 In practice, it’s made things a bit awkward.
 He’s moved on to suggesting another colleague do the extra work instead.
-They said no and asked me to back them up.
-But…
 ~currentSpeaker=comic
-You’re going to stand up for them right?
-{ChangeSprite("Tali", "tali_serious")}
+That sucks.
+What's on your mind?
 ~currentSpeaker=webdev
-It’s just that Lavender fought really hard to make her dad tell my boss to get off my case.
-And now, rocking the boat so soon after that. It feels wrong.
-~currentSpeaker=comic
-I get it. But what’s to say he won’t do it again. And you can’t rely on Lavender’s support forever. What about your colleague? Don’t they also have a right to feeling comfortable in the workplace.
-{ChangeSprite("Tali", "tali_exasperated")}
-~currentSpeaker=webdev
-Those are all really good points.
 I’ve kind of been thinking about this lately to be honest.
 I rely on Lavender a lot.
 And…
@@ -410,21 +392,20 @@ What happened?
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker =webdev 
 It's complicated.
-My family runs this little restaurant. It's been passed down for five generations. 
+I'm a bit of a disappointment.
+I didn't take over the family business.
 {ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker=comic 
-Damn, that's a long time.
+Family business?
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker =webdev 
-I remember doing my homework behind the counter while my mum served the customers.
-It was a big part of my life, I guess. I didn't realise it until I left home.
-My parents dedicated their lives to the place.
+My parents own a resturant.
+Quite a successful one.
 {ChangeSprite("Tali", "tali_serious")}
-But, you see we kind of have this tradition that it's left to the oldest son. And they are meant to take over from the father.
-And you see, there are two problems with that. 
-Number one: I am a woman. And number two: I have no interest in restaurants, or producing food or anything customer service related.
+I was meant to work there when I turned eighteen.
+But I decided to leave and study.
 {ChangeSprite("Tali", "tali_talking_side")}
-I'm a total introvert, and I burn anythig I cook. I have no desire to serve people food or manage a business.
+I have no desire to serve people food or manage a business.
 {ChangeSprite("Tali", "tali_serious")}
 And this is the worst thing that could have happened to my parents. To know that their tradition is broken. That I will not be the person they want me to. 
 {ChangeSprite("Kent", "kent_side_serious")}
@@ -432,14 +413,14 @@ And this is the worst thing that could have happened to my parents. To know that
 That does complicate things. Couldn't they just leave it to your sister?
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker =webdev 
-She's shown interest.
-But she's not a man.
+They probably will. But I know they're disappointed it isn't me.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker =comic
 I don't understand why that matters.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker =webdev
-In their heads they imagine that she'll marry a man, and obviously he will take the business and give it his name and then their tradition will be ruined.
+Well, I am, was their son.
+Tradition and all.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker =comic
 That's ridiculous.
@@ -447,9 +428,9 @@ That's ridiculous.
 ~currentSpeaker =webdev 
 Life is ridiculous.
 {ChangeSprite("Tali", "tali_talking_side")}
-We're here for such a short time. And we cling onto these things in the hopes that they will make us happy. It comforts my parents to imagine that one day, when they are gone, their descendants will prosper in the success of our family restaurant. They do not know these future people, they will never meet them but they are already more real than I am. 
+We're here for such a short time. So we cling onto our dreams in the hopes that they will make us happy.
 {ChangeSprite("Tali", "tali_sad")}
-Their potential existence has given them more solace than I ever will. 
+When they don't work out the way we want them to it can be difficult to accept.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker =comic 
 Your parents suck.
@@ -491,6 +472,7 @@ What’s up Pan?
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker =android
 Maybe it was good for her to get that off her chest. It’s…difficult sometimes, keeping it all inside.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 That being said, it was not your job to cajole it out of her.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
@@ -508,6 +490,7 @@ See you around!
 ~characters-=kent
 ~currentSpeaker = you
 Don’t worry about this.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker =android
 What makes you think I’m worrying?
 ~currentSpeaker = you
@@ -516,24 +499,24 @@ I know you’re very sensitive to these kinds of things.
 Sensitive to what?
 ~currentSpeaker = you
 Friction. Like any time you see people arguing or agitated, I see your whole body prickle.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker =android
 I do not prickle.
 ~currentSpeaker = you
 You certainly do.
-Or whatever the android equivalent of prickling is. You tense up. Your eyes stop fluttering. You stop breathing. It’s like you stop pretending to—
-{ChangeSprite("Pandora", "pandora_normal2")}
+Or whatever the android equivalent of prickling is. You tense up. Your eyes stop fluttering. You stop breathing.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker =android
-Finish that sentence.
-I stop pretending to what?
+I don't breathe.
+I don't need to breathe.
 ~currentSpeaker = you
-To be human.
+You pretend to breathe though, don't you?
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker =android
-I am not human. 
-The breathing is just my cooling system at work. If my eyes flutter it’s a reflex from my body language translation software. 
+The sound you're probably refering to is my cooling system at work. If my eyes flutter it’s a reflex from my body language translation software. 
 I am programmed to do that to make humans at ease, the same way my voice is modulated to communicate information in a calm, efficient manner.
 ~currentSpeaker = you
-I’m sorry, I didn’t mean–
+I’m sorry, I didn’t mean to offend you.
 ~currentSpeaker =android
 I know you didn’t.
 Never mind.

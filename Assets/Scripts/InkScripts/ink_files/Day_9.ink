@@ -61,7 +61,7 @@ What’s gotten into you?
 I don’t know.
 I feel like this is my calling.
 This is how I help people.
-And we need a little cheer in our lives right now.
+And we all need a little cheer in our lives right now.
 ~currentSpeaker=you
 Well I like it.
 It’s good that you’ve found purpose.
@@ -86,11 +86,12 @@ Ok, if you change your mind. I’m always here to help.
 I have to go, the plumbing in the toilet is making strange noises again.
 ~currentSpeaker=you
 You're not scared of some gurgling pipes, are you?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 It's unnerving. Don't make fun of me!
+{ChangeSprite("Pandora", "pandora_normal")}
 ~characters-=pandora
 ~characters+=kent
-{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=comic
 Hey hey!
 {allbooks ? x_a_235: -> X_and_A->} 
@@ -148,8 +149,7 @@ What do you mean ‘spoke’ to Lavender?
 ~currentSpeaker=comic
 You know, it’s a thing you do with your mouth. You move your lips and sounds come out.
 ~currentSpeaker=you
-…
-That was unnecessary.
+Ah I was wondering what that thing you were doing with your mouth was.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker= comic
 Ok ok.
@@ -174,7 +174,7 @@ I didn’t realise I hated her so much.
 {ChangeSprite("Tali", "tali_exasperated")}
 And it all feels so stupid now.
 {ChangeSprite("Tali", "tali_talking_forward")}
-It’s not even her fault, it’s not her fault she’s so sheltered and spoiled. 
+It’s not her fault she’s so sheltered and spoiled. 
 ~currentSpeaker=you
 What’s the next step then?
 Are you going to apologise?
@@ -254,7 +254,7 @@ And there’s nothing you can do about it.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Oh my, almost everyone is here.
-I’m sorry, I was fixing the toilet.
+I’m sorry, I was fixing the toilet, and then I got toilet water all over my hands.
 I must make some tea.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
@@ -290,16 +290,197 @@ I just need to ask {snob} now.
 I’m thinking of checking up on her later today, if she’s up for talking I can tell her.
 {ChangeSprite("Tali", "tali_serious")}
 I’m a bit worried about her actually, with this whole terrorist attack.
-{ChangeSprite("Kent", "kent_side_serious")}
-~currentSpeaker=comic
-Yeah, be careful out there.
-{ChangeSprite("Tali", "tali_normal")}
+~currentSpeaker=you
+I'm sure she'll be ok.
 ~currentSpeaker=webdev
-I have to go, see you later.
+I'm not going to let her monopolise the conversation though. Even when she's not here.
+~currentSpeaker=android
+Not sure what that means, but thanks!
+I'm going to clean up the toilet now.
+~characters-=pandora
+{ChangeSprite("Tali", "tali_talking_side")}
+~currentSpeaker=webdev
+Sorry for bothering you with my problems.
+Feels like that's all I talk about these days.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-I’ll join you. Bye guys.
+You're in good company. I'm a big complainer too.
+Anything else going on in your life?
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+Oh yeah.
+I haven't told anyone this yet.
+I went on a date at the weekend.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=comic
+Now you're talking.
+Give us all the details.
+~currentSpeaker=you
+Or not. You know it's your choice.
+{ChangeSprite("Kent", "kent_upset")}
+~currentSpeaker=comic
+Shut up {you}.
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+It didn't go so well.
+I think I messed up.
+{ChangeSprite("Kent", "kent_sad")}
+~currentSpeaker=comic
+Oh no.
+{ChangeSprite("Tali", "tali_talking_side")}
+~currentSpeaker=webdev
+I was a bit late.
+And I kept apologising.
+Then I took so long to order, because I never know what I want.
+{ChangeSprite("Kent", "kent_sad")}
+I just ended up getting a salad and I was starving afterwards.
+{ChangeSprite("Tali", "tali_talking_side")}
+I kept talking and he just listened and let me keep talking and talking.
+It went on for four hours.
+And then we had ice cream afterwards.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=you
+How did you meet this guy?
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+Just an old acquaintance.
+~currentSpeaker=comic
+Oooh slow burn.
+{ChangeSprite("Tali", "tali_smirk")}
+~currentSpeaker=webdev
+It's not like that.
+I probably won't see him for a while.
+He's a pilot.
+~currentSpeaker=comic
+Oooh you can have sex on a plane.
+{ChangeSprite("Tali", "tali_shocked")}
+~currentSpeaker=webdev
+What?!
+~currentSpeaker=you
+I don't think you need to be a pilot to do that.
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+So what's the verdict?
+~currentSpeaker=you
+Verdict?
+{ChangeSprite("Tali", "tali_upset")}
+~currentSpeaker=webdev
+I need you to tell me how it went.
+~currentSpeaker=comic
+How are we meant to know that? We weren't even there?
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+I just need some guidance.
+~currentSpeaker=you
+Why don't you ask him how it went?
+~currentSpeaker=webdev
+I have and he said it went well.
+And he's been speaking to me.
+{ChangeSprite("Kent", "kent_happy")}
+~currentSpeaker=comic
+That's amazing.
+~currentSpeaker=you
+He spent four hours on a weekend listening to you ramble away, he definitely likes you.
+{ChangeSprite("Tali", "tali_upset")}
+~currentSpeaker=webdev
+Hey!
+~currentSpeaker=comic
+You see, all is well.
+You just have to get another date now.
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+That's kind of the problem.
+He's away now.
+And I know I'm not meant to put all my eggs in one basket.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=comic
+Ooh is there someone else.
+{ChangeSprite("Tali", "tali_talking_forward")}
+~currentSpeaker=webdev
+I'm not doing this for fun.
+I'm just following dating advice, getting myself out there and not taking anything personally.
+It's difficult, some guys can just be a little...
+{ChangeSprite("Tali", "tali_sad")}
+Pushy.
+They put loads of effort into the date and then get nasty when I tell them I don't want to see them anymore.
+Or if I see one of these guys he starts acting like we're boyfriend and girlfriend eventhough we've only been dating for a couple of weeks, and he wants to pay for everything.
+It makes me feel bad.
+~currentSpeaker=you
+Hmm, I know what you mean.
+{ChangeSprite("Tali", "tali_happy")}
+~currentSpeaker=webdev
+Really?
+~currentSpeaker=you
+Sometimes you're going to meet people with the wrong intentions. It won't always be obvious from the get go. They'll seem confident and enthusiastic. They'll shower you with praise and affection.
+After this initial wave of enthusiasm wears off, you'll find your interest waning.
+They'll cling on like a drowning man hanging onto a piece of driftwood. They'll use every last shred of social manipulation to try to get you to stay.
+Eventually it will end.
+The longer you leave it the worse it will be.
+{ChangeSprite("Kent", "kent_sad")}
+~currentSpeaker=comic
+Are you talking about love bombing?
+~currentSpeaker=you
+What?
+{ChangeSprite("Kent", "kent_normal")}
+~currentSpeaker=comic
+Love bombing? You know, when someone showers someone with gifts and affection in order to manipulate them into a relationship.
+~currentSpeaker=you
+There's a word for that?
+{ChangeSprite("Tali", "tali_exasperated")}
+~currentSpeaker=webdev
+Ugh just another thing I have to worry about now.
+As if normal bombing wasn't bad enough.
+~currentSpeaker=you
+Just y'know. 
+It's good to keep an open mind when dating.
+But also know that you deserve to be with someone who makes you feel comfortable and safe.
+It's ok to make mistakes though.
+{ChangeSprite("Kent", "kent_normal")}
+~currentSpeaker=comic
+When did you become a self help book?
+{ChangeSprite("Tali", "tali_smirk")}
+~currentSpeaker=webdev
+It's ok, I need all the self help I can get.
+I need to go now.
+{ChangeSprite("Kent", "kent_side_serious")}
+~currentSpeaker=comic
+Be careful out there.
+{ChangeSprite("Tali", "tali_normal")}
+~currentSpeaker=webdev
+Thanks. Bye guys.
 ~characters-=tali
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=comic
+Ok, are you going to tell me what that was about?
+~currentSpeaker=you
+Huh?
+{ChangeSprite("Kent", "kent_normal")}
+~currentSpeaker=comic
+You're all stoic and calm most of the time.
+And now Tali starts talking about her love life you get all sappy.
+~currentSpeaker=you
+Not sappy.
+It's just advice.
+{ChangeSprite("Kent", "kent_amused")}
+~currentSpeaker=comic
+Advice? Please.
+~currentSpeaker=you
+Let's just say, in most ways I'm emotionally dense, but I know a chronic people pleaser when I see one.
+If I can help someone avoid the hurt before it happens, then I think I'll risk sounding a little bit sappy.
+{ChangeSprite("Kent", "kent_sad")}
+~currentSpeaker=comic
+I see what you mean.
+I've never had that issue myself. 
+{ChangeSprite("Kent", "kent_happy")}
+Always just said what's on my mind.
+~currentSpeaker=you
+Lucky lucky you.
+I guess you are a journalist.
+{ChangeSprite("Kent", "kent_sad")}
+~currentSpeaker=comic
+Don't remind me please.
+{ChangeSprite("Kent", "kent_normal")}
+I have to go now. Bye guys.
 ~characters-=kent
 ->day_9_inventory
 ==day_9_inventory==
