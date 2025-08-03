@@ -1,7 +1,7 @@
 ==day_10==
 ~newsPicture = "headline10"
 ~newsCaption = "Prison - Illustration by Kent Herring"
-~newsAnnouncement = "Government vows to send more malicious protesters to prison as a way to clear up our streets. 'People have to learn the hard way.' Blue said in today's remote press conference."
+~newsAnnouncement = "Government vows to send more malicious protesters to prison in new 'clean up' act. 'People have to learn the hard way.' Blue said in today's remote press conference."
 ¬
 ~music="Rise and shine"
 ~newsAnnouncement = ""
@@ -27,6 +27,7 @@ Me too, too much drama can over excite the nervous system.
 Or whatever the equivalent is for me.
 ~currentSpeaker=you
 Overload your circuits maybe?
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Exactly!
 ~characters+=lavender
@@ -48,7 +49,7 @@ I was up worrying.
 Kept thinking someone was going to come in with a sniper and get me while I was in my flat.
 I had to hide my porcelain frog collection away for safe keeping.
 ~currentSpeaker=you
-I'm not even going to ask what that's about.
+That sounds terrible.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 That does not sound good.
@@ -58,7 +59,6 @@ Can I interest you in a cup of rose tea?
 ~currentSpeaker=snob
 No. Thank you.
 {allbooks ? LUX_uniform: ->LUX_flight_uniform->} 
-¬
 {allbooks ? LUX_acid_rain: ->LUX_acid_rain_issue->} 
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
@@ -82,7 +82,7 @@ Ok.
 I was thinking {webdev} might have told you.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-She might have mentioned it.
+She might have mentioned it when she came over.
 Before I shouted at her to leave.
 {ChangeSprite("Lavender", "lavender_normal")}
 I’ll come along.
@@ -128,11 +128,13 @@ It’s all about making memories, listening when they need you to listen, helpin
 I hired some guys to help {webdev} move apartment!
 And this is the thanks I get.
 ~currentSpeaker=you
-Maybe she feels awkward. You show all your kindness through money, and while you are very generous, she could never repay that generosity.
+Maybe she feels awkward. 
+You show all your kindness through money, and while you are very generous, she could never repay that generosity.
 ~currentSpeaker=snob
 I don’t need her to repay me. I like giving.
 ~currentSpeaker=you
-You like giving because it means nothing to you. But it means something to her. When you have very little, things that you perhaps take for granted are very important to {webdev}. 
+You like giving because it means nothing to you. But it means something to her. 
+When you have very little, things that you perhaps take for granted are very important to {webdev}. 
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 …
@@ -160,7 +162,6 @@ I don’t know what I was thinking.
 {ChangeSprite("Lavender", "lavender_angry")}
 Talking to you of all people, expecting you to be on my side.
 ~currentSpeaker=you
-Yeah, I don’t know what you were thinking either.
 I think, deep down, you know that you’re not completely innocent. Otherwise you wouldn’t bother coming here. You wouldn’t waste our time on this. 
 {ChangeSprite("Lavender", "lavender_sad")}
 You know what we’re going to say about it, why put yourself through this. Unless you just want an argument.
@@ -225,8 +226,8 @@ But what if they’re not nice to me?
 Then be neutral.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-Sigh
-Okaayyy
+\*Sigh\*
+Ok.
 {ChangeSprite("Lavender", "lavender_shocked")}
 Wait, what was that?
 ~characters+=tali
@@ -266,7 +267,7 @@ I feel bad but…ugh. I can’t deal with her right now.
 It’s ok, I suppose she can be a bit much.
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker=webdev
-I don’t want to talk your ears off about her.
+I don’t want to talk your ears off.
 {ChangeSprite("Tali", "tali_talking_side")}
 I feel like {snob} infiltrates every part of my life.
 ~currentSpeaker=you
@@ -316,7 +317,7 @@ So...how’s work going?
 ~currentSpeaker=webdev
 Uneventful.
 {ChangeSprite("Tali", "tali_exasperated")}
-Started working on The Distant Outlook website actually, their layout is dreadful. So they hired me to fix it.
+Started working on The Distant Outlook website again actually, their layout is dreadful. So they hired me to fix it.
 ~currentSpeaker=you
 I bet {comic} would love to hear that.
 Speaking of {comic} do you know where he is?
@@ -337,18 +338,104 @@ Are you kidding?
 This is a freaking gold mine for news outlets.
 {ChangeSprite("Tali", "tali_talking_forward")}
 It’s like the thing everyone’s been predicting happens. 
-And it’s not just some rando getting attacked, it’s B.B. himself.
+And it’s not just some nobodies getting attacked, it’s Blue himself.
 ~currentSpeaker=you
 I suppose so.
 If that’s the case, is it even safe for Lavender to be out and about?
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
-Eh, I’m not so sure myself, but she’s careful. And B.B has a lot of kids, she’s part of the last lot he had so not many people are keeping tabs on her.
+Eh, I’m not so sure myself, but she’s careful. 
+And Blue has a lot of kids, she’s a lot more low-key than the others, so not many people are keeping tabs on her.
 ~currentSpeaker=you
-That doesn’t sound reassuring.
+Lavender being more low-key than her siblings makes me wonder what the others are like.
+{ChangeSprite("Tali", "tali_smirk")}
+~currentSpeaker=webdev
+Yeah, well Sky and Sapphire are the two big ones. They were already teenagers when {snob} was born, so she didn't see much of them around.
+But they sort of act as Blue's political cronies.
+~currentSpeaker=you
+I know about those ones.
+Sky's lobbying to get the laws for builing regulations changed so he can build his colossal mega tower.
+{ChangeSprite("Tali", "tali_upset")}
+~currentSpeaker=webdev
+Yeah he's a fucking idiot.
+~currentSpeaker=you
+Sapphire just had one of her cosmetic lines taken off the market because it contained unregulated toxic chemicals.
+~currentSpeaker=webdev
+Again: a fucking idiot.
+{ChangeSprite("Tali", "tali_happy")}
+The others are alright though. And they keep a lower profile.
+~currentSpeaker=you
+I don't really know much about them.
+~currentSpeaker=webdev
+Finn's {snob}'s older full brother. He's a musician. 
+Ocean's {snob}'s older half-brother, from Blue's second marriage. He's a...
+He's a...pilot.
+~currentSpeaker=you
+...
+Haha what a coincidence.
+That guy you went on a date with was a pilot.
+Wait a minute!
+{ChangeSprite("Tali", "tali_sad")}
+~currentSpeaker=webdev
+Ok.
+I maybe went on a date with {snob}'s brother.
+~currentSpeaker=you
+Does she know?
+~currentSpeaker=webdev
+We agreed to keep it quiet from her unless we were sure things were going well.
+~currentSpeaker=you
+Are they going well?
+{ChangeSprite("Tali", "tali_happy")}
+~currentSpeaker=webdev
+Yes.
+~currentSpeaker=you
+Have you told {snob}?
+{ChangeSprite("Tali", "tali_upset")}
+~currentSpeaker=webdev
+Of course not!
+~currentSpeaker=you
+Why?
+~currentSpeaker=webdev
+Because she's {snob}.
+She'll overreact.
+~currentSpeaker=you
+But what if she finds out.
+~currentSpeaker=webdev
+She won't.
+~currentSpeaker=you
+What if her brother tells her?
+~currentSpeaker=webdev
+He won't.
+{ChangeSprite("Tali", "tali_happy")}
+I trust him.
+~currentSpeaker=you
+What are you scared of?
+~currentSpeaker=webdev
+It might damage things between us.
+More than they already are at least.
+~currentSpeaker=you
+I see.
+It all sounds so complicated.
+{ChangeSprite("Tali", "tali_exasperated")}
+~currentSpeaker=webdev
+My life has always been complicated.
+I can deal with it.
+{ChangeSprite("Tali", "tali_happy")}
+We will tell her eventually.
+When the time is right.
+~currentSpeaker=you
+Ok, I hope you can be happy.
+~currentSpeaker=webdev
+I am happy.
+{ChangeSprite("Tali", "tali_sad")}
+I'm just a little worried about {snob} with the political climate at the moment.
+{ChangeSprite("Tali", "tali_smirk")}
+But she takes precautions.
+~currentSpeaker=you
+Precautions?
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker=webdev
-She wears a mask in public, bulletproof vest, and self defence weapons. She’s not as stupid as she looks. 
+{snob} wears a mask in public, bulletproof vest, and self defence weapons. She’s not as stupid as she looks. 
 ~currentSpeaker=you
 Oh wow. I had no idea.
 {ChangeSprite("Tali", "tali_talking_side")}

@@ -18,7 +18,7 @@ Ada asked me to give it to you.
 Well I suppose that's good enough for me.
 It just makes me feel silly for telling you that riddle.
 ~currentSpeaker=you
-I don't mind.
+Don't worry abut it.
 ~characters-=stranger
 ->continue_day_12
 ==trader_happy==
@@ -75,7 +75,7 @@ You trust Ada, right? You know that she wanted you to do this, otherwise you wou
     ~currentSpeaker = trader
     Fate. It makes you forget things. Look, you have to stop it.
     ~currentSpeaker=you
-    I’ve been clean for 9 months. 
+    I’ve been clean for nine months. 
     But…no that can’t be right
     {ChangeSprite("Stranger", "shadow_sad")}
     ~currentSpeaker = trader
@@ -115,8 +115,8 @@ It's fine. I will just have to do this another way.
 I have absolutely no idea what you are talking about.
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker=trader
-Goodbye.
 I do not think we will meet again.
+Goodbye.
 ~characters-=stranger
 ~currentSpeaker=you
 …
