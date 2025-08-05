@@ -770,7 +770,7 @@ You wake up in the middle of the night.
 The others are fast asleep.
 You find yourself drawn to the computer.
 You turn it on.
-~scene="Xmas"
+~scene="XmasEmpty"
 You're not sure what you wanted here.
 ~characters+=cas
 ~currentSpeaker=man
@@ -810,7 +810,7 @@ After all we've done for you, you're not throwing away your life for something s
 ~currentSpeaker=you
 Your friends let their kids go.
 ~currentSpeaker=man
-That's because they all have step-kids.
+That's because they're just their step-kids.
 You're ours. We care about you.
 And you're clever, one day you're going to do something.
 You're going to be something.

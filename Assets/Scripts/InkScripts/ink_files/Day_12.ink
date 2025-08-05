@@ -7,7 +7,7 @@
 Hello again
 So do you have what I asked for?
 ~currentSpeaker=you
-Not what you asked for. But this USB should have enough credit on it.
+Not what you asked for. But this card should have enough credit on it.
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
 Are you sure?
