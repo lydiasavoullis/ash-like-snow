@@ -547,6 +547,7 @@ I really don't want to be alone right now.
 ~currentSpeaker=webdev
 Of course, I will stay.
 I don't want you to feel alone.
+~currentSpeaker=webdev
 {ChangeSprite("Tali", "tali_serious")}
 Hey {you}, are you alright?
 {ChangeSprite("Pandora", "pandora_pensive")}

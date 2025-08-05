@@ -555,6 +555,7 @@ I feel sleepy.
 ~currentSpeaker = android
 I guess the rush of adrenaline is over.
 I'll make your bed.
+~characters-=pandora
 ->end_day_14
 =others_save_you
 ~currentSpeaker= ""
@@ -753,6 +754,8 @@ Yeah, I think the last two days took a lot out of her.
 I just wish I could have done more.
 ~currentSpeaker = comic
 You did what you could.
+~characters-=kent
+~characters-=pandora
 ->end_day_14
 ==end_day_14==
 ~currentSpeaker = ""
@@ -763,4 +766,135 @@ You write something down.
 *[No (don't save)] 
 You close the book.
 -Time for bed.
+You wake up in the middle of the night.
+The others are fast asleep.
+You find yourself drawn to the computer.
+You turn it on.
+~scene="Xmas"
+You're not sure what you wanted here.
+~characters+=cas
+~currentSpeaker=man
+Bel, you're up.
+What's the matter?
+~currentSpeaker=you
+Not feeling too great.
+~currentSpeaker=man
+There's no reason to feel bad.
+You've got everything you want.
+Go to bed.
+~currentSpeaker=you
+...
+Can you watch a film with me tomorrow?
+~currentSpeaker=man
+I'm so tired.
+I don't want to watch some stupid kids film.
+~currentSpeaker=you
+It doesn't have to be a kids film.
+~currentSpeaker=man
+I'm busy. Leave it.
+We're having a big party soon?
+Isn't that good enough?
+~currentSpeaker=you
+I don't like parties.
+~currentSpeaker=man
+Who doesn't like parties?
+~currentSpeaker=you
+I want to be with my friends.
+~currentSpeaker=man
+Well tough luck. Your friends are out skiing.
+~currentSpeaker=you
+I could have gone with them.
+~currentSpeaker=man
+And break your neck?
+After all we've done for you, you're not throwing away your life for something stupid.
+~currentSpeaker=you
+Your friends let their kids go.
+~currentSpeaker=man
+That's because they all have step-kids.
+You're ours. We care about you.
+And you're clever, one day you're going to do something.
+You're going to be something.
+~currentSpeaker=you
+Really?
+~currentSpeaker=man
+You're more mature than any of your friends. Maybe you don't appreciate it now. But it'll pay off in the future. You don't need fancy gifts, or expensive trips.
+You're like an adult already.
+I thought you'd be sick of being around those babies.
+~currentSpeaker=you
+...I do sometimes feel a bit distant from them.
+~currentSpeaker=man
+Of course. Hearing you and Richard talk about the economy makes me feel like I should be sitting at the kids table!
+~currentSpeaker=you
+Haha Dad, maybe.
+~currentSpeaker=man
+I don't want to hear you complain. You hear me.
+~currentSpeaker=you
+Yes Dad.
+~currentSpeaker=man
+Your mother's asleep. We should be careful.
+Don't want to wake her do we?
+~currentSpeaker=you
+Is she ok?
+~currentSpeaker=man
+It's been a difficult couple of weeks.
+You know how it is.
+~currentSpeaker=you
+Can you say something?
+~currentSpeaker=man
+Say what?
+~currentSpeaker=you
+Tell me you're proud of me.
+~currentSpeaker=man
+WHAT?!
+~currentSpeaker=you
+Say it.
+~currentSpeaker=man
+Erm well...
+~currentSpeaker=you
+Say it you fucking coward.
+~characters+=pandora
+{ChangeSprite("Pandora", "pandora_shocked")}
+~currentSpeaker=android
+{you} what are you doing?!
+~currentSpeaker=you
+Nothing much.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+Why did you come back here?
+~currentSpeaker=you
+I thought it could help me.
+~currentSpeaker=android
+I am so sorry.
+~currentSpeaker=you
+No, it's fine.
+I just wanted to see my parents again.
+~currentSpeaker=android
+Are they...?
+~currentSpeaker=you
+Both alive.
+Just don't want to see me anymore.
+~currentSpeaker=android
+You imagined this.
+~currentSpeaker=you
+I did.
+Somehow I couldn't imagine my dad saying he was proud of me.
+I suppose even virtual realities have their limits.
+~currentSpeaker=android
+Oh dear.
+~currentSpeaker=you
+Don't pity me.
+I don't deserve your pity.
+~currentSpeaker=android
+I don't pity you.
+I only want you to be happy.
+~currentSpeaker=you
+Why?
+{ChangeSprite("Pandora", "pandora_mean")}
+~currentSpeaker=android
+I've spent too much time around you, I'm invested now.
+~currentSpeaker=you
+Let's get out of here.
+It's just creepy at this point.
+~currentSpeaker=android
+You know how to do it.
 ->ending_check
