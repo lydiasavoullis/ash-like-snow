@@ -1,4 +1,5 @@
 ==day_8==
+¬
 ~newsPicture = "headline8"
 ~newsCaption = "Sexy IOI"
 ~newsAnnouncement = "Sex IOIs are growing in demand. The government responds with stricter regulations to be put in place on IOIs with more 'intimate' functions."
@@ -143,7 +144,8 @@ I think I might die.
 {ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker= android 
 Is that a good thing?
-{allbooks ? LUX_uniform: -> LUX_flight_uniform->} 
+//{allbooks ? LUX_uniform: -> LUX_flight_uniform->} 
+->lavender_book_check->
 ~currentSpeaker = you
 Do you know why was that man dressed like that anyway?
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -197,7 +199,8 @@ Long time, no see.
 I see you already have company.
 ~currentSpeaker=you
 She’s waiting for Tali, let her be.
-{allbooks ? lady_darkness_373: -> lady_darkness->} 
+//{allbooks ? lady_darkness_373: -> lady_darkness->} 
+->kent_book_check->
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 There was a threat on Benedict Blue’s life this morning.
@@ -302,7 +305,8 @@ She was just here. But she had to leave, and said not to wait for her.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker=webdev
 Oh ok.
-{allbooks ? forest_god: -> god_of_the_forest->} 
+//{allbooks ? forest_god: -> god_of_the_forest->} 
+->tali_book_check->
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 How’s the boss treating you {webdev}?

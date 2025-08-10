@@ -1,4 +1,3 @@
-
 ==LUX_1==
 ~lavenderPoints+=1
 ~currentSpeaker = you

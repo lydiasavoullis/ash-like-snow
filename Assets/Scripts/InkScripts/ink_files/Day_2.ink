@@ -1,4 +1,5 @@
 ==day_2==
+¬
 ~newsPicture = "headline1"
 ~newsCaption = "Rioter brandishing hateful placard"
 ~newsAnnouncement = "Crack down on anti-war riots - 'They are a disgrace to our great nation,' said Blue. 'I will have them removed as soon as possible.'"
@@ -74,7 +75,8 @@ I’m just stopping by to browse
 And work on a few emails to my boss
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = you
-{allbooks ? fantasy_7: ->fantasy_7_book->}
+//{allbooks ? fantasy_7: ->fantasy_7_book->}
+->tali_book_check->
 ~currentSpeaker = you
 How are things holding up?
 ~currentSpeaker = webdev
@@ -138,8 +140,9 @@ Good morning Kent.
 {ChangeSprite("Kent", "kent_happy")}
 Morning
 {allbooks !? (satin_rain_1,nightthunder_89): I still don't have any comics sorry }
-{allbooks ? nightthunder_89: ->night_thunder->} 
-{allbooks ? satin_rain_1: -> satin_rain->} 
+//{allbooks ? nightthunder_89: ->night_thunder->} 
+//{allbooks ? satin_rain_1: -> satin_rain->} 
+->kent_book_check->
 ~currentSpeaker = you
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
@@ -205,7 +208,8 @@ I wish it wasn’t.
 HEY
 {ChangeSprite("Lavender", "lavender_normal")}
 Have you got my stuff?
-{allbooks?LUX_222: ->LUX_1->}
+//{allbooks?LUX_222: ->LUX_1->}
+->lavender_book_check->
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
 Hey there! I like your outfit.

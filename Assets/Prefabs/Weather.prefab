@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6188014997505830463}
   - component: {fileID: 1335454575621423254}
   m_Layer: 0
-  m_Name: Rain
+  m_Name: rain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4857,7 +4857,7 @@ GameObject:
   - component: {fileID: 7420942623250104515}
   - component: {fileID: 2813356834713420605}
   m_Layer: 0
-  m_Name: Ash
+  m_Name: ash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9697,7 +9697,7 @@ GameObject:
   - component: {fileID: 4915985775016643256}
   - component: {fileID: 2081314965028093307}
   m_Layer: 0
-  m_Name: Snow
+  m_Name: snow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14558,7 +14558,7 @@ RectTransform:
   - {fileID: 4052376039440961093}
   - {fileID: 5371914669059250265}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

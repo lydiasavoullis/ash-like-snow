@@ -1,4 +1,5 @@
 ==day_10==
+¬
 ~newsPicture = "headline10"
 ~newsCaption = "Prison - Illustration by Kent Herring"
 ~newsAnnouncement = "Government vows to send more malicious protesters to prison in new 'clean up' act. 'People have to learn the hard way.' Blue said in today's remote press conference."
@@ -58,8 +59,9 @@ Can I interest you in a cup of rose tea?
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 No. Thank you.
-{allbooks ? LUX_uniform: ->LUX_flight_uniform->} 
-{allbooks ? LUX_acid_rain: ->LUX_acid_rain_issue->} 
+//{allbooks ? LUX_uniform: ->LUX_flight_uniform->} 
+//{allbooks ? LUX_acid_rain: ->LUX_acid_rain_issue->} 
+->lavender_book_check->
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 It sounds like you're having a rough time {snob}.

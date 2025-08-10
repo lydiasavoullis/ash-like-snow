@@ -1,4 +1,5 @@
 ==day_9==
+¬
 ~newsPicture = "headline9"
 ~newsCaption = "The Blue House"
 ~newsAnnouncement = "Terrorists threaten Billionaire Benedict Blue's life with a near miss assassination attempt. A message has been received from annoymous hackers. 'We must stay calm,' said Blue. 'We will do whatever it takes to find out who did this.' There a couple of things that we can deduce about the annonymous hackers who compromised the most expensive security system in the UK..."
@@ -94,7 +95,8 @@ It's unnerving. Don't make fun of me!
 ~characters+=kent
 ~currentSpeaker=comic
 Hey hey!
-{allbooks ? x_a_235: -> X_and_A->} 
+//{allbooks ? x_a_235: -> X_and_A->} 
+->kent_book_check->
 ~currentSpeaker=you
 How are things?
 {ChangeSprite("Kent", "kent_side_serious")}
@@ -127,7 +129,8 @@ Uh hi Tali.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Hi there.
-{allbooks ? the_glass_lab: -> the_glass_labyrinth->} 
+//{allbooks ? the_glass_lab: -> the_glass_labyrinth->} 
+->tali_book_check->
 {ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker=webdev
 Look, you know we had that conversation yesterday.

@@ -15,6 +15,7 @@
 // ->day_8
 
 ==day_7==
+¬
 //{pandoraPoints==0: ->day_7_alt}
 ~newsPicture = "headline7"
 ~newsCaption = "Virus and parrot - Illustration by Kent Herring"

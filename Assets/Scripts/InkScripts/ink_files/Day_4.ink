@@ -1,4 +1,5 @@
 ==day_4==
+¬
 ~newsPicture = "headline4"
 ~newsCaption = "Humans vs IOIs - Illustration by Kent Herring"
 ~newsAnnouncement = "Should IOIs have more rights? According to Blue that would be 'utterly irresponsible'."
@@ -78,7 +79,8 @@ I can do it myself
 {ChangeSprite("Kent", "kent_happy")}
  Good good.
  {ChangeSprite("Pandora", "pandora_normal")}
-{allbooks ? wildfyre_678: -> wildfyre->} 
+//{allbooks ? wildfyre_678: -> wildfyre->} 
+->kent_book_check->
 ~currentSpeaker = you
  You’re in a good mood.
  {ChangeSprite("Kent", "kent_amused")}
@@ -163,7 +165,8 @@ I can do it myself
 ~currentSpeaker=webdev
 {ChangeSprite("Tali", "tali_happy")}
 Hey!
-{allbooks ? black_goat: -> blackgoat->} 
+//{allbooks ? black_goat: -> blackgoat->} 
+->tali_book_check->
 ~currentSpeaker = you
 You look better.
 ~currentSpeaker = webdev
@@ -377,7 +380,8 @@ I never caught up with that either though.
  Not sure that applies when Lavender is around.
  ~characters += lavender
 ~currentSpeaker = snob
-{allbooks ? LUX_1076: -> LUX_winter->} 
+//{allbooks ? LUX_1076: -> LUX_winter->} 
+->lavender_book_check->
 {ChangeSprite("Lavender", "lavender_angry")}
 So why are you talking about me behind my back?
 ~currentSpeaker = you

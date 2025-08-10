@@ -480,6 +480,7 @@ public class DialogueController : MonoBehaviour
         GameVars.sfxPlaying = GameVars.story.variablesState["sfx"].ToString();
         audioControl.PlaySound(GameVars.story.variablesState["sfx"].ToString(), audioManager);
         try {
+            string s = GameVars.story.variablesState["weather"].ToString();
             ChangeWeather(GameVars.story.variablesState["weather"].ToString());
         }
         catch (Exception e) {
@@ -511,6 +512,7 @@ public class DialogueController : MonoBehaviour
     }
     public void ChangeWeather(string weather)
     {
+        string weatherToLower = weather.ToLower();
         if (weatherBackground == null) {
             return;
         }
@@ -521,7 +523,7 @@ public class DialogueController : MonoBehaviour
         if (weather == "") {
             return;
         }
-        weatherBackground.transform.Find(weather).gameObject.SetActive(true);
+        weatherBackground.transform.Find(weatherToLower).gameObject.SetActive(true);
     }
     public void StartWeather(string weather)
     {

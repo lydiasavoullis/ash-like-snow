@@ -1,4 +1,5 @@
 ==day_6==
+¬
 ~newsPicture = "headline6"
 ~newsCaption = "A syringe - Illustration by Kent Herring"
 ~newsAnnouncement = "More people urged to get new extra complete vaccine - 60 more deadly diseases are covered in this one! Including the newest strain of Parrot Pox..."

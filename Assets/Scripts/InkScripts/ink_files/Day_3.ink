@@ -1,4 +1,5 @@
 ==day_3==
+¬
 ~newsPicture = "headline3"
 ~newsCaption = "Sad cat"
 ~newsAnnouncement = "Sad cat is now a viral hit. How sad cat became a cultural icon and why feline depression is a serious issue."
@@ -36,7 +37,8 @@ I can do it myself
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_normal")}
  Hi guys.
-{allbooks ? fantasy_dragon_heart: ->fantasy_dragon_heart_book->} 
+//{allbooks ? fantasy_dragon_heart: ->fantasy_dragon_heart_book->} 
+->tali_book_check->
 ~allbooks-=fantasy_dragon_heart
 ~currentSpeaker = you
  So, what happened? You seem...tired.
@@ -227,7 +229,8 @@ My boss is calling me.
  See you later Tal.
 ~characters -= tali
 ~currentSpeaker = you
-{allbooks ? LUX_394: -> LUX_2->} 
+//{allbooks ? LUX_394: -> LUX_2->} 
+->lavender_book_check->
 ~allbooks-=LUX_394
 ~currentSpeaker = you
 So how are things?
@@ -275,7 +278,8 @@ Ugh goodbye
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
  I take that as the highest compliment.
- {allbooks ? sentinel_105: -> the_sentinel->} 
+ //{allbooks ? sentinel_105: -> the_sentinel->} 
+ ->kent_book_check->
  ~allbooks-=sentinel_105
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}

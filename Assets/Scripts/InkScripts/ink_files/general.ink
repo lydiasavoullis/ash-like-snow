@@ -1,4 +1,47 @@
+//LIST allbooks = Alice_in_Wonderland, Howls_Moving_Castle, t_lion_witch_wardrobe, fantasy_7, nightthunder_89, LUX_222, satin_rain_1, myths_legends, LUX_394, sentinel_105, fantasy_dragon_heart,black_goat,wildfyre_678,LUX_1076,LUX_666, hypnos_55,lord_dusk,LUX_360,lady_darkness_373,forest_god,t_secret_garden,LUX_uniform,x_a_235,the_glass_lab,the_wiz_oz,LUX_rain_proof,mr_therm,ring_thorns,the_hobbit,LUX_gear,bioworld,heart_lies,matilda,LUX_ppe,cybershake,queendom_heretic,alice_looking_glass,LUX_acid_rain
 
+==kent_book_check==
+~button = "book"
+*{allbooks ? satin_rain_1}[Give Satin Rain \#1]->satin_rain
+*{allbooks ? nightthunder_89}[Give Night Thunder \#89]->night_thunder
+*{allbooks ? sentinel_105}[Give The Sentinel \#105]->the_sentinel
+*{allbooks ? wildfyre_678}[Give Wildfyre \#678]->wildfyre
+*{allbooks ? hypnos_55}[Give Hypnos \#55]->hypnos
+*{allbooks ? lady_darkness_373}[Give Lady Darkness \#373]->lady_darkness
+*{allbooks ? x_a_235}[Give X and A \#235]->X_and_A
+*{allbooks ? mr_therm}[Give Mr. Thermistor]->mr_thermistor
+*{allbooks ? bioworld}[Give Bioworld]->bworld
+*{allbooks ? cybershake}[Give Cybershake]->cybershake_comic
++ [Continue]
+->->
+==tali_book_check==
+~button = "book"
+*{allbooks ? fantasy_7}[Give The King’s Crown: The War of the Seven Swords: Book 7]->fantasy_7_book
+*{allbooks ? fantasy_dragon_heart}[Give The Betrayal of the Dragon's Heart]->fantasy_dragon_heart_book
+*{allbooks ? black_goat}[Give The Black Goat]->blackgoat
+*{allbooks ? forest_god}[Give The God of the Forest]->god_of_the_forest
+*{allbooks ? the_glass_lab}[Give The Glass Labyrinth]->the_glass_labyrinth
+*{allbooks ? ring_thorns}[Give The Ring of Thorns]->the_ring_thorns
+*{allbooks ? heart_lies}[Give Where the Heart Lies]->where_the_heart_lies
+*{allbooks ? queendom_heretic}[Give Queendom Heretic]->queen_h
++ [Continue]
+//TODO: Add another
+->->
+==lavender_book_check==
+~button = "book"
+*{allbooks ? LUX_222}[Give LUX Autumn issue 222]->LUX_1
+*{allbooks ? LUX_394}[Give LUX Spring issue 394]->LUX_2
+*{allbooks ? LUX_1076}[Give LUX Winter issue 1076]->LUX_winter
+*{allbooks ? LUX_666}[Give LUX SPECIAL issue 666]->LUX_special
+*{allbooks ? LUX_360}[Give LUX pet accessories issue 360]->LUX_pets
+*{allbooks ? LUX_uniform}[Give LUX special flight attendant uniform issue]->LUX_flight_uniform
+*{allbooks ? LUX_rain_proof}[Give LUX acid rain proof chic]->LUX_acid_rain_issue
+*{allbooks ? LUX_gear}[Give LUX protective gear issue 331]->LUX_protective_gear
+*{allbooks ? LUX_ppe}[Give LUX PPE special issue]->LUX_ppe_special
++ [Continue]
+->->
+
+//for pandora
 ==read_check==
 ~music ="Pandora's theme"
 //can read on 8 days

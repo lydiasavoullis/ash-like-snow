@@ -1,4 +1,5 @@
 ==day_5==
+¬
 ~newsPicture = "headline5"
 ~newsCaption = "A show to remember"
 ~newsAnnouncement = "Musical sensation Cobalt Dragons concert tickets sell out in first hour of release."
@@ -91,8 +92,8 @@ Do you think I’m doing OK?
 {ChangeSprite("Kent", "kent_side_normal")}
 Hey guys.
  ~currentSpeaker = you
-{allbooks ? hypnos_55: -> hypnos->} 
- 
+//{allbooks ? hypnos_55: -> hypnos->} 
+->kent_book_check->
  ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_serious")}
  Really would love to chat, but I have something I need to do.
@@ -136,7 +137,8 @@ I’m starting to think she wants this place to fail.
  Ahem.
  ~characters -=pandora
  ...
-  {allbooks ? LUX_666: -> LUX_3->} 
+  //{allbooks ? LUX_666: -> LUX_3->} 
+  ->lavender_book_check->
  ~characters += pandora
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}

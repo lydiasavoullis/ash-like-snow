@@ -122,6 +122,7 @@ Goodbye.
 …
 ->continue_day_12
 ==day_12==
+¬
 // ~allbooks+=Alice_in_Wonderland
 // ~allbooks+=Howls_Moving_Castle
 // ~allbooks+=t_lion_witch_wardrobe
@@ -249,7 +250,8 @@ Well, it’s you again.
 Sick of me already?
 ~currentSpeaker=you
 I could never be sick of you.
-{allbooks ? cybershake: -> cybershake_comic->} 
+//{allbooks ? cybershake: -> cybershake_comic->} 
+->kent_book_check->
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I come bearing gifts.
@@ -309,9 +311,11 @@ Yeah, what’s up?
 ~currentSpeaker=android
 Ah wonderful we’re all here
 ~currentSpeaker=you
-{allbooks ? LUX_ppe: -> LUX_ppe_special->} 
-{allbooks ? heart_lies: -> where_the_heart_lies->} 
-{allbooks ? queendom_heretic: -> queen_h->} 
+//{allbooks ? LUX_ppe: -> LUX_ppe_special->} 
+//{allbooks ? heart_lies: -> where_the_heart_lies->} 
+//{allbooks ? queendom_heretic: -> queen_h->} 
+->lavender_book_check->
+->tali_book_check->
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=comic
 So {webdev}, {snob}

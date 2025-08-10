@@ -1,4 +1,5 @@
 ==day_11==
+¬
 ~newsPicture = "headline11"
 ~newsCaption = "Art?"
 ~newsAnnouncement = "Larger than life - strange sculpture appears in the middle of a park. Is it some kind of political statement, or just a prank? 'It's scaring the ducks.' said local resident."
@@ -31,8 +32,9 @@ Well, I –
 ~currentSpeaker=comic
 Hey girls.
 ~currentSpeaker=you
-{allbooks ? mr_therm: -> mr_thermistor->} 
-{allbooks ? bioworld: -> bworld->} 
+//{allbooks ? mr_therm: -> mr_thermistor->} 
+//{allbooks ? bioworld: -> bworld->} 
+->kent_book_check->
 ~currentSpeaker=you
 Long time no see
 {ChangeSprite("Kent", "kent_amused")}
@@ -265,7 +267,8 @@ Hmm.
 ~currentSpeaker=snob
 Hey.
 ~currentSpeaker=you
-{allbooks ? LUX_gear: -> LUX_protective_gear->} 
+//{allbooks ? LUX_gear: -> LUX_protective_gear->} 
+->lavender_book_check->
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 I guess you probably want a personal statement to put in your stupid newspaper.
