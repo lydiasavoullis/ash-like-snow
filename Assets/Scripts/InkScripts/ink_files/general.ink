@@ -2,47 +2,48 @@
 
 ==kent_book_check==
 ~button = "book"
-*{allbooks ? satin_rain_1}[Give Satin Rain \#1]->satin_rain
-*{allbooks ? nightthunder_89}[Give Night Thunder \#89]->night_thunder
-*{allbooks ? sentinel_105}[Give The Sentinel \#105]->the_sentinel
-*{allbooks ? wildfyre_678}[Give Wildfyre \#678]->wildfyre
-*{allbooks ? hypnos_55}[Give Hypnos \#55]->hypnos
-*{allbooks ? lady_darkness_373}[Give Lady Darkness \#373]->lady_darkness
-*{allbooks ? x_a_235}[Give X and A \#235]->X_and_A
-*{allbooks ? mr_therm}[Give Mr. Thermistor]->mr_thermistor
-*{allbooks ? bioworld}[Give Bioworld]->bworld
-*{allbooks ? cybershake}[Give Cybershake]->cybershake_comic
+*{allbooks ? satin_rain_1}[Give Satin Rain \#1]->satin_rain->kent_book_check
+*{allbooks ? nightthunder_89}[Give Night Thunder \#89]->night_thunder->kent_book_check
+*{allbooks ? sentinel_105}[Give The Sentinel \#105]->the_sentinel->kent_book_check
+*{allbooks ? wildfyre_678}[Give Wildfyre \#678]->wildfyre->kent_book_check
+*{allbooks ? hypnos_55}[Give Hypnos \#55]->hypnos->kent_book_check
+*{allbooks ? lady_darkness_373}[Give Lady Darkness \#373]->lady_darkness->kent_book_check
+*{allbooks ? x_a_235}[Give X and A \#235]->X_and_A->kent_book_check
+*{allbooks ? mr_therm}[Give Mr. Thermistor]->mr_thermistor->kent_book_check
+*{allbooks ? bioworld}[Give Bioworld]->bworld->kent_book_check
+*{allbooks ? cybershake}[Give Cybershake]->cybershake_comic->kent_book_check
 + [Continue]
 ->->
 ==tali_book_check==
 ~button = "book"
-*{allbooks ? fantasy_7}[Give The King’s Crown: The War of the Seven Swords: Book 7]->fantasy_7_book
-*{allbooks ? fantasy_dragon_heart}[Give The Betrayal of the Dragon's Heart]->fantasy_dragon_heart_book
-*{allbooks ? black_goat}[Give The Black Goat]->blackgoat
-*{allbooks ? forest_god}[Give The God of the Forest]->god_of_the_forest
-*{allbooks ? the_glass_lab}[Give The Glass Labyrinth]->the_glass_labyrinth
-*{allbooks ? ring_thorns}[Give The Ring of Thorns]->the_ring_thorns
-*{allbooks ? heart_lies}[Give Where the Heart Lies]->where_the_heart_lies
-*{allbooks ? queendom_heretic}[Give Queendom Heretic]->queen_h
+*{allbooks ? fantasy_7}[Give The King’s Crown: The War of the Seven Swords: Book 7]->fantasy_7_book->tali_book_check
+*{allbooks ? fantasy_dragon_heart}[Give The Betrayal of the Dragon's Heart]->fantasy_dragon_heart_book->tali_book_check
+*{allbooks ? black_goat}[Give The Black Goat]->blackgoat->tali_book_check
+*{allbooks ? forest_god}[Give The God of the Forest]->god_of_the_forest->tali_book_check
+*{allbooks ? the_glass_lab}[Give The Glass Labyrinth]->the_glass_labyrinth->tali_book_check
+*{allbooks ? ring_thorns}[Give The Ring of Thorns]->the_ring_thorns->tali_book_check
+*{allbooks ? heart_lies}[Give Where the Heart Lies]->where_the_heart_lies->tali_book_check
+*{allbooks ? queendom_heretic}[Give Queendom Heretic]->queen_h->tali_book_check
 + [Continue]
 //TODO: Add another
 ->->
 ==lavender_book_check==
 ~button = "book"
-*{allbooks ? LUX_222}[Give LUX Autumn issue 222]->LUX_1
-*{allbooks ? LUX_394}[Give LUX Spring issue 394]->LUX_2
-*{allbooks ? LUX_1076}[Give LUX Winter issue 1076]->LUX_winter
-*{allbooks ? LUX_666}[Give LUX SPECIAL issue 666]->LUX_special
-*{allbooks ? LUX_360}[Give LUX pet accessories issue 360]->LUX_pets
-*{allbooks ? LUX_uniform}[Give LUX special flight attendant uniform issue]->LUX_flight_uniform
-*{allbooks ? LUX_rain_proof}[Give LUX acid rain proof chic]->LUX_acid_rain_issue
-*{allbooks ? LUX_gear}[Give LUX protective gear issue 331]->LUX_protective_gear
-*{allbooks ? LUX_ppe}[Give LUX PPE special issue]->LUX_ppe_special
+*{allbooks ? LUX_222}[Give LUX Autumn issue 222]->LUX_1->lavender_book_check
+*{allbooks ? LUX_394}[Give LUX Spring issue 394]->LUX_2->lavender_book_check
+*{allbooks ? LUX_1076}[Give LUX Winter issue 1076]->LUX_winter->lavender_book_check
+*{allbooks ? LUX_666}[Give LUX SPECIAL issue 666]->LUX_special->lavender_book_check
+*{allbooks ? LUX_360}[Give LUX pet accessories issue 360]->LUX_pets->lavender_book_check
+*{allbooks ? LUX_uniform}[Give LUX special flight attendant uniform issue]->LUX_flight_uniform->lavender_book_check
+*{allbooks ? LUX_rain_proof}[Give LUX acid rain proof chic]->LUX_acid_rain_issue->lavender_book_check
+*{allbooks ? LUX_gear}[Give LUX protective gear issue 331]->LUX_protective_gear->lavender_book_check
+*{allbooks ? LUX_ppe}[Give LUX PPE special issue]->LUX_ppe_special->lavender_book_check
 + [Continue]
 ->->
 
 //for pandora
 ==read_check==
+~button = "book"
 ~music ="Pandora's theme"
 //can read on 8 days
 //can't read on first day

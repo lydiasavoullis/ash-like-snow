@@ -519,7 +519,7 @@ It's unfinished.
 ~currentSpeaker = you
  Well, I think that went well, don’t you?
 ~currentSpeaker = android
- I’m elated, I loved all the work that was shared today. It’s a shame you didn’t bring anything.
+ I’m thrilled, I loved all the work that was shared today. It’s a shame you didn’t bring anything.
 ~currentSpeaker = you
  Oh well, maybe next time.
 ~currentSpeaker = android

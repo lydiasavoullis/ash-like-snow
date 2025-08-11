@@ -1,3 +1,13 @@
+==test_shop==
+->goto_shop->
+->read_check->
+->kent_book_check->
+->lavender_book_check->
+->tali_book_check->
+~day+=1
++Go to day {day}
+->test_shop
+
 ==goto_shop==
 ~shop="true"
 ~button="book"
