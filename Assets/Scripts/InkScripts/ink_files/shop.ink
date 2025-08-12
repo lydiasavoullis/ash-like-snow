@@ -9,151 +9,152 @@
 ->test_shop
 
 ==goto_shop==
+~currentSpeaker=""
 ~shop="true"
 ~button="book"
 Remaining funds: {funds}
 + Go to children's fiction
 ->buy_childrens_books
 
-*{day>=1}{funds>=200}[LUX Autumn issue 222(£200)]
+*{day>=1}{funds>=200}[LUX Autumn issue 222(£200 : Sells for £400)]
 ~funds -= 200
 ~deliveryToday+=1
 ~allbooks+=LUX_222
 ->goto_shop
-*{day>=1}{funds>=100}[Night Thunder \#89(£100)]
+*{day>=1}{funds>=100}[Night Thunder \#89(£100 : Sells for £120)]
 ~funds -= 100
 ~deliveryToday+=1
 ~allbooks+=nightthunder_89
 ->goto_shop
-*{day>=1}{funds>=80}[Satin Rain \#1(£80)]
+*{day>=1}{funds>=80}[Satin Rain \#1(£80 : Sells for £100)]
 ~funds -= 80
 ~deliveryToday+=1
 ~allbooks+=satin_rain_1
 ->goto_shop
-*{day>=1}{funds>=50}[The King’s Crown: The War of the Seven Swords: Book 7 (£50)]
+*{day>=1}{funds>=50}[The King’s Crown: The War of the Seven Swords: Book 7 (£50 : Sells for £70)]
 ~funds -= 50
 ~deliveryToday+=1
 ~allbooks+=fantasy_7
 ->goto_shop
-*{day>=2}{funds>=200}[LUX Spring issue 394(£200)]
+*{day>=2}{funds>=200}[LUX Spring issue 394(£200 : Sells for £400)]
 ~funds -= 200
 ~deliveryToday+=1
 ~allbooks+=LUX_394
 ->goto_shop
-*{day>=2}{funds>=70}[The Sentinel \#105(£70)]
+*{day>=2}{funds>=70}[The Sentinel \#105(£70 : Sells for £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=sentinel_105
 ->goto_shop
-*{day>=2}{funds>=50}[The Betrayal of the Dragon's Heart (£45)]
+*{day>=2}{funds>=50}[The Betrayal of the Dragon's Heart (£45 : Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=fantasy_dragon_heart
 ->goto_shop
 Remaining funds: {funds}
-*{day>=3}{funds>=200}[LUX Winter issue 1076(£200)]
+*{day>=3}{funds>=200}[LUX Winter issue 1076(£200 : Sells for £400)]
 ~funds -= 200
 ~deliveryToday+=1
 ~allbooks+=LUX_1076
 ->goto_shop
-*{day>=3}{funds>=70}[Wildfyre \#678(£70)]
+*{day>=3}{funds>=70}[Wildfyre \#678(£70: Sells for £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=wildfyre_678
 ->goto_shop
-*{day>=3}{funds>=45}[The Black Goat (£45)]
+*{day>=3}{funds>=45}[The Black Goat (£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=black_goat
 ->goto_shop
-*{day>=4}{funds>=400}[LUX SPECIAL issue 666(£400)]
+*{day>=4}{funds>=400}[LUX SPECIAL issue 666(£400: Sells for £600)]
 ~funds -= 400
 ~deliveryToday+=1
 ~allbooks+=LUX_666
 ->goto_shop
-*{day>=4}{funds>=100}[Hypnos \#55(£100)]
+*{day>=4}{funds>=100}[Hypnos \#55(£100: Sells for £120)]
 ~funds -= 100
 ~deliveryToday+=1
 ~allbooks+=hypnos_55
 ->goto_shop
-*{day>=4}{funds>=45}[The Lord of Dusk (£45)]
+*{day>=4}{funds>=45}[The Lord of Dusk (£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=lord_dusk
 ->goto_shop
-*{day>=5}{funds>=600}[LUX pet accessories issue 360(£600)]
+*{day>=5}{funds>=600}[LUX pet accessories issue 360(£600: Sells for £800)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=LUX_360
 ->goto_shop
-*{day>=5}{funds>=70}[Lady of Darkness \#373(£70)]
+*{day>=5}{funds>=70}[Lady of Darkness \#373(£70: Sells for £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=lady_darkness_373
 ->goto_shop
-*{day>=5}{funds>=45}[The God of the Forest (£45)]
+*{day>=5}{funds>=45}[The God of the Forest (£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=forest_god
 ->goto_shop
 ->goto_shop
-*{day>=8}{funds>=600}[LUX special flight attendant uniform issue (£600)]
+*{day>=8}{funds>=600}[LUX special flight attendant uniform issue (£600: Sells for £800)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=LUX_uniform
 ->goto_shop
-*{day>=8}{funds>=70}[X and A \#235(£70)]
+*{day>=8}{funds>=70}[X and A \#235(£70: Sells for £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=x_a_235
 ->goto_shop
-*{day>=8}{funds>=45}[The Glass Labyrinth (£45)]
+*{day>=8}{funds>=45}[The Glass Labyrinth (£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=the_glass_lab
 ->goto_shop
-*{day>=9}{funds>=600}[LUX acid rain proof chic (£600)]
+*{day>=9}{funds>=600}[LUX acid rain proof chic (£600: Sells for £800)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=LUX_rain_proof
 ->goto_shop
-*{day>=9}{funds>=70}[Mr. Thermistor \#95(£70)]
+*{day>=9}{funds>=70}[Mr. Thermistor \#95(£70: Sells for £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=mr_therm
 ->goto_shop
-*{day>=9}{funds>=45}[The Ring of Thorns(£45)]
+*{day>=9}{funds>=45}[The Ring of Thorns(£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=ring_thorns
 ->goto_shop
-*{day>=10}{funds>=600}[LUX protective gear issue 331 (£600)]
+*{day>=10}{funds>=600}[LUX protective gear issue 331 (£600: Sells for £800)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=LUX_gear
 ->goto_shop
-+{day>=10}{funds>=70}[Bioworld \#111(£70)]
+*{day>=10}{funds>=70}[Bioworld \#111(£70: £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=bioworld
 ->goto_shop
-*{day>=10}{funds>=45}[Where the Heart Lies (£45)]
+*{day>=10}{funds>=45}[Where the Heart Lies (£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=heart_lies
 ->goto_shop
 Remaining funds: {funds}
-*{day>=11}{funds>=600}[LUX PPE special issue (£600)]
+*{day>=11}{funds>=600}[LUX PPE special issue (£600: Sells for £800)]
 ~funds -= 600
 ~deliveryToday+=1
 ~allbooks+=LUX_ppe
 ->goto_shop
-*{day>=11}{funds>=70}[Cybershake \#235(£70)]
+*{day>=11}{funds>=70}[Cybershake \#235(£70: Sells for £90)]
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=cybershake
 ->goto_shop
-*{day>=11}{funds>=45}[Queendom Heretic (£45)]
+*{day>=11}{funds>=45}[Queendom Heretic (£45: Sells for £65)]
 ~funds -= 45
 ~deliveryToday+=1
 ~allbooks+=queendom_heretic

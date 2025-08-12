@@ -71,7 +71,7 @@ What has the world come to?
 How horrifying.
 I'll take it.
 ~allbooks-=LUX_1076
-~funds+=500
+~funds+=400
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -237,7 +237,7 @@ He's just a blank face.
 Do you want me to buy it or not?
 ~currentSpeaker = you
 Fine.
-~funds+=800
+~funds+=600
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -323,7 +323,7 @@ Originality is so overrated.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 Well...it certainly has its time and place.
-~funds+=80
+~funds+=70
 ~booksSold+=1
 ~music="Rise and shine"
 ¬
@@ -751,7 +751,7 @@ That would suck.
 ~currentSpeaker = comic
 I don't know, I would kill for a good night's sleep right now.
 ~music="Rise and shine"
-~funds+=90
+~funds+=120
 ~booksSold+=1
 ->->
 
