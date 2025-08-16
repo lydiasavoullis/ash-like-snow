@@ -446,7 +446,64 @@ I'm intrigued. I'll take it.
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-
+==lord_dusk==
+~music="Making friends"
+~taliPoints+=1
+~currentSpeaker = you
+I've got a book for you.
+{ChangeSprite("Tali", "tali_happy")}
+~currentSpeaker = webdev
+What is it?
+~currentSpeaker = you
+It's called The Lord of Dusk.
+~currentSpeaker = webdev
+Oh, can you tell me about it?
+~currentSpeaker = you
+You don't know?
+~currentSpeaker = webdev
+And you do?
+~currentSpeaker = you
+Yes.
+I haven't read it but I've seen the adaptation of this.
+~currentSpeaker = webdev
+Is it that old?
+~currentSpeaker = you
+No actually, it just came out a couple of years ago. But it was a big hit.
+It's sort of paranormal romance.
+~currentSpeaker = webdev
+Eh?
+~currentSpeaker = you
+I know what you're thinking. But the genre's had quite a revival in the last couple of years.
+It's about a vampire who lives in a big mansion. 
+~currentSpeaker = webdev
+Well where else would he live?
+~currentSpeaker = you
+One day an old man picks an apple from his enchanted orchard.
+And he's very upset.
+~currentSpeaker = webdev
+Vampires drink blood, they don't eat apples.
+~currentSpeaker = you
+Well this one does both.
+The vampire keeps the man trapped in his dungeons. Until the man's daughter comes to retrieve him. They make a deal. She stays with the vampire so her father can go free.
+~currentSpeaker = webdev
+This is just the plot of beauty and the beast.
+~currentSpeaker = you
+There are similar plot beats at the start, but I swear the rest of it is completely different.
+And it's a vampire not a beast.
+And the father steals an apple not a rose.
+~currentSpeaker = webdev
+Oh yeah that makes things so different.
+~currentSpeaker = you
+Shush you.
+~currentSpeaker = webdev
+I'll take it.
+And I'll watch the film after.
+~currentSpeaker = you
+You won't regret it.
+~funds+=65
+~booksSold+=1
+~music="Rise and shine"
+->->
 ==queen_h==
 ~music="Making friends"
 ~taliPoints+=1

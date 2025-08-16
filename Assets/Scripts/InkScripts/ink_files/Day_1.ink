@@ -30,7 +30,7 @@ Hey
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
 ¬
-13th December, Monday, 206X
+13th December, Monday, 206X.
 ~music= ""
 ~scene= "GenericScene"
 <i>I hope you know what you're doing</i>
@@ -44,7 +44,7 @@ Hey
 {ChangeSprite("Lavender", "lavender_angry")}
 ¬
 {PlayAnimation("Lavender", "shake")}
-HEY you have a freaking customer
+HEY you have a freaking customer.
 
 ~music="Lavender's song"
 ~newsAnnouncement = ""
@@ -54,7 +54,7 @@ Where's Adalina?
 ~currentSpeaker = snob
 Who are you?
 ~currentSpeaker = you
-I'm {you}, Ada is on holiday. She won't be back until January
+I'm {you}, Ada is on holiday. She won't be back until January.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
 Holiday?
@@ -156,9 +156,9 @@ The nerve of some people.
 Sorry to bother you.
 Do you sell comics here?
 ~currentSpeaker = you 
-Yeah they’re on that shelf
+Yeah they’re on that shelf.
 ~currentSpeaker = comic 
-Thanks
+Thanks.
 {ChangeSprite("Kent", "kent_side_normal")}
 Uh, is that it?
 {ChangeSprite("Kent", "kent_normal")}
@@ -523,10 +523,10 @@ Ugh.
 Why ugh?
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev 
-I mean if you want crime and horror just read the news everyday
+I mean if you want crime and horror just read the news everyday.
 ~currentSpeaker = you 
-Yes, but that’s no fun
-I need fanciful crime and horror
+Yes, but that’s no fun.
+I need fanciful crime and horror.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev 
 It’s not fanciful enough for you?
@@ -544,6 +544,9 @@ Hey.
 That was fun.
 I like being an assistant.
 Let’s do the stock now.
+~currentSpeaker = you 
+I should be able to find something {comic} and {webdev} will like.
+Also, I can pick up some of those awful magazines for that weird girl.
 ->day_1_inventory
 ==day_1_inventory==
 ~music = "shop"

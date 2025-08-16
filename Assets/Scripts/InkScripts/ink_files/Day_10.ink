@@ -265,8 +265,7 @@ Bye guys.
 What the hell is her problem?
 {ChangeSprite("Tali", "tali_exasperated")}
 I feel bad but…ugh. I can’t deal with her right now.
-~currentSpeaker=you
-It’s ok, I suppose she can be a bit much.
+->tali_book_check->
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker=webdev
 I don’t want to talk your ears off.

@@ -30,7 +30,8 @@ LIST Lavender = (lavender_normal), lavender_sad,lavender_thinking, lavender_angr
 LIST Pandora = (pandora_normal), pandora_mean, pandora_normal2, pandora_happy, pandora_suggestive, pandora_sad, pandora_shocked, pandora_excited, pandora_pensive, pandora_annoyed, pandora_confused, pandora_sleeping
 LIST Stranger = (shadow_amused), shadow_neutral, shadow_sad
 LIST Cas = (cas_left_look), cas_right_look, cas_straight_look, cas_annoyed
-LIST allbooks = Alice_in_Wonderland, Howls_Moving_Castle, t_lion_witch_wardrobe, fantasy_7, nightthunder_89, LUX_222, satin_rain_1, myths_legends, LUX_394, sentinel_105, fantasy_dragon_heart,black_goat,wildfyre_678,LUX_1076,LUX_666, hypnos_55,lord_dusk,LUX_360,lady_darkness_373,forest_god,t_secret_garden,LUX_uniform,x_a_235,the_glass_lab,the_wiz_oz,LUX_rain_proof,mr_therm,ring_thorns,the_hobbit,LUX_gear,bioworld,heart_lies,matilda,LUX_ppe,cybershake,queendom_heretic,alice_looking_glass,LUX_acid_rain
+LIST allbooks = Alice_in_Wonderland, Howls_Moving_Castle, t_lion_witch_wardrobe, fantasy_7, nightthunder_89, LUX_222, satin_rain_1, myths_legends, LUX_394, sentinel_105, fantasy_dragon_heart,black_goat,wildfyre_678,LUX_1076,LUX_666, hypnos_55,
+LUX_360,lady_darkness_373,forest_god,t_secret_garden,LUX_uniform,x_a_235,the_glass_lab,the_wiz_oz,LUX_rain_proof,mr_therm,ring_thorns,the_hobbit,LUX_gear,bioworld,heart_lies,matilda,LUX_ppe,cybershake,queendom_heretic,alice_looking_glass,LUX_acid_rain, lord_of_dusk
 
 
 VAR deliveryToday = 0

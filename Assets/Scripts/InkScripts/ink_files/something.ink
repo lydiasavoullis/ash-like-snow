@@ -27,13 +27,7 @@ INCLUDE night.ink
 // ->test_scene
 // *[Truth and dare]
 // ->start_incident
-*[Shop]->test_shop
-*[day 2]->day_2
 *[Playtest]<>->day_1
-*[Test all scenes]
-
-
-->END
 ~scene= "ShopFront"
 1
 2

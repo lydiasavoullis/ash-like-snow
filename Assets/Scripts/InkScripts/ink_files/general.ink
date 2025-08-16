@@ -24,6 +24,7 @@
 *{allbooks ? ring_thorns}[Give The Ring of Thorns]->the_ring_thorns->tali_book_check
 *{allbooks ? heart_lies}[Give Where the Heart Lies]->where_the_heart_lies->tali_book_check
 *{allbooks ? queendom_heretic}[Give Queendom Heretic]->queen_h->tali_book_check
+*{allbooks ? lord_of_dusk}[Give The Lord of Dusk]->lord_dusk->tali_book_check
 + [Continue]
 //TODO: Add another
 ->->

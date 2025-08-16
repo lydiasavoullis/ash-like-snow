@@ -122,6 +122,10 @@ Remaining funds: {funds}
 ~funds -= 70
 ~deliveryToday+=1
 ~allbooks+=mr_therm
+*{day>=9}{funds>=45}[The Lord of Dusk \#95(£45: Sells for £65)]
+~funds -= 45
+~deliveryToday+=1
+~allbooks+=lord_of_dusk
 ->goto_shop
 *{day>=9}{funds>=45}[The Ring of Thorns(£45: Sells for £65)]
 ~funds -= 45
