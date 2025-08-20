@@ -111,6 +111,9 @@ public class MenuSystem : MonoBehaviour
     {
         Application.Quit();
     }
+    public void SetGameStateInGame() {
+        GameStates.State = GameState.InGame;
+    }
     /// <summary>
     /// Load menu scene
     /// </summary>

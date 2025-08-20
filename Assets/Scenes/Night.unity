@@ -2108,11 +2108,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossfade
       objectReference: {fileID: 0}
-    - target: {fileID: 8851326284635976694, guid: 926df3e508864b446ad7e8201883bef2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2682,7 +2677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -518.74, y: 501.56003}
+  m_AnchoredPosition: {x: -518.7401, y: 501.56006}
   m_SizeDelta: {x: -1037.5, y: -1003.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408632695

@@ -44,12 +44,39 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: background
+  - name: weather effects
     uniqueID: 2368466627
+    locked: 0
+  - name: background
+    uniqueID: 1068777315
+    locked: 0
+  - name: stage
+    uniqueID: 260730689
+    locked: 0
+  - name: table
+    uniqueID: 4084865277
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: foreground
-    uniqueID: 1068777315
+  - name: dialogue box/shop
+    uniqueID: 2827462371
+    locked: 0
+  - name: tv screen
+    uniqueID: 456817297
+    locked: 0
+  - name: text log
+    uniqueID: 3847785493
+    locked: 0
+  - name: quit/back to menu modal box
+    uniqueID: 2988147053
+    locked: 0
+  - name: mini menu
+    uniqueID: 735258437
+    locked: 0
+  - name: Crossfade
+    uniqueID: 345279693
+    locked: 0
+  - name: options
+    uniqueID: 1035061141
     locked: 0

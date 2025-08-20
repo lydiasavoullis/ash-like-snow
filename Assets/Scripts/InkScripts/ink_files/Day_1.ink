@@ -37,9 +37,9 @@ Hey
 ~newsAnnouncement = "New study suggests neurological problems caused by 'miracle' drug."
 ~sfx = "open door"
 ¬
-~characters += lavender
-¬
 ~snob = "???"
+~characters=lavender
+¬
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 ¬

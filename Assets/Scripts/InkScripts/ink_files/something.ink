@@ -28,7 +28,22 @@ INCLUDE night.ink
 // *[Truth and dare]
 // ->start_incident
 *[Playtest]<>->day_1
+// *[kent]<>->kent_video
+// *[tali]<>->tali_video
+// *[lavender]<>->lavender_video
+// *[pandora]<>->pandora_video
+*[shop]
+~day=2
+->goto_shop
+==night_rain==
+~scene= "Night"
+~textBoxIsActive="false"
+->END
+==night_fire==
+~scene= "Fire"
+->END
 ~scene= "ShopFront"
+~textBoxIsActive="false"
 1
 2
 3
