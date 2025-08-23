@@ -512,7 +512,7 @@ It's unfinished.
  Yeah, me too. See you around losers.
  ~characters -=lavender
  {ChangeSprite("Kent", "kent_normal")}
-~currentSpeaker = comic
+ ~currentSpeaker = comic
  Take care!
  ~characters -=kent
  ==skip_to_day_6

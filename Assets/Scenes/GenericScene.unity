@@ -4507,6 +4507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tv
       objectReference: {fileID: 0}
+    - target: {fileID: 1610888883418991994, guid: 62afb39e5121f8b4c942da96b994de00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2581187455052648291, guid: 62afb39e5121f8b4c942da96b994de00,
         type: 3}
       propertyPath: audioManager
