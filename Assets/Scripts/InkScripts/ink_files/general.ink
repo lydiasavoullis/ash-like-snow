@@ -26,7 +26,6 @@
 *{allbooks ? queendom_heretic}[Give Queendom Heretic]->queen_h->tali_book_check
 *{allbooks ? lord_of_dusk}[Give The Lord of Dusk]->lord_dusk->tali_book_check
 + [Continue]
-//TODO: Add another
 ->->
 ==lavender_book_check==
 ~button = "book"
@@ -302,7 +301,7 @@ It does feel frustrating to read about people eating things.
 {ChangeSprite("Pandora", "pandora_sad")}
 I have no idea what anything tastes like.
 ~currentSpeaker = you
-It must be strange to read about such ruidmentary experiences that you will never have.
+It must be strange to read about such rudimentary experiences that you will never have.
 ~currentSpeaker = android
 Perhaps.
 {ChangeSprite("Pandora", "pandora_pensive")}
@@ -345,7 +344,7 @@ Does that say something about me?
 No.
 I don't know.
 {ChangeSprite("Pandora", "pandora_mean")}
-Silver why silver.
+Silver? Why silver?
 ~currentSpeaker = you
 It's like the colour of metal and the colour of the sky on a cloudy day and the colour of the stars. 
 {ChangeSprite("Pandora", "pandora_pensive")}

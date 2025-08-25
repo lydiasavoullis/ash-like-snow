@@ -25,7 +25,7 @@ Hey
 
 
 ==day_1==
-~scene= "ShopFront"
+//~scene= "ShopFront"
 ~music= "An average day"
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"
@@ -33,19 +33,17 @@ Hey
 13th December, Monday, 206X.
 ~music= ""
 ~scene= "GenericScene"
-<i>I hope you know what you're doing</i>
+<i>I hope you know what you're doing.</i>
 ~newsAnnouncement = "New study suggests neurological problems caused by 'miracle' drug."
 ~sfx = "open door"
-¬
 ~snob = "???"
-~characters=lavender
+~characters+=lavender
 ¬
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 ¬
 {PlayAnimation("Lavender", "shake")}
 HEY you have a freaking customer.
-
 ~music="Lavender's song"
 ~newsAnnouncement = ""
 {PlayAnimation("Lavender", "shake")}
@@ -102,14 +100,13 @@ Why do I even bother?
 ~music = ""
 ~currentSpeaker = you
 What the hell was that?
+¬
 ~characters += pandora
 ~currentSpeaker = android
 She's a lot of fun, isn't she?
 ~music="Rise and shine"
 ->tea_or_coffee->
 ~currentSpeaker = android
-~characters += pandora
-~characters+=pandora
 ~currentSpeaker = android 
 - I'll sign you in.
 ~button = "normal"
@@ -152,6 +149,7 @@ The nerve of some people.
 ~sfx="open door"
 ~characters += kent
 {ChangeSprite("Kent", "kent_normal")}
+¬
 ~currentSpeaker = comic 
 Sorry to bother you.
 Do you sell comics here?
@@ -278,7 +276,7 @@ Oh, that’s kind of an old one. It’s got a good story though.
 What’s it about?
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic 
-A lone mega rich vigilante who seeks to enforce justice in a corrupt crime ridden city.
+A lone mega rich vigilante who seeks to enforce justice in a corrupt crime-ridden city.
 ~currentSpeaker = you 
 Yeah, just what we need more troubled billionaires with a hero complex.
 ~currentSpeaker = comic
@@ -312,6 +310,7 @@ Doesn’t that just defeat the purpose of reading in the first place.
 ~sfx="open door"
 ~characters += tali
 {ChangeSprite("Tali", "tali_happy")}
+¬
 ~currentSpeaker = webdev 
 Hey Cas!
 ~currentSpeaker = you 
@@ -334,7 +333,7 @@ What no way! I was just updating their website last week.
 I’m Tali by the way.
 ~currentSpeaker = comic 
 Nice to meet you. 
-Thank God for your help too, the layout is much better now, there was a link from the Entertainment and Arts taking people to the World Wars section. 
+Thank God for your help too, the layout is much better now; there was a link from the Entertainment and Arts taking people to the World Wars section. 
 {ChangeSprite("Kent", "kent_amused")}
 We had a lot of complaints.
 {ChangeSprite("Tali", "tali_smirk")}
@@ -357,11 +356,12 @@ I mean, nobody died right?
 Sure no one died, but someone was horribly disfigured.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev 
-oh. 
+oh.
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_happy")}
 {ChangeSprite("Kent", "kent_normal")}
 {ChangeSprite("Tali", "tali_normal")}
+¬
 ~currentSpeaker = android 
 I didn’t realise there were so many people here.
 ~currentSpeaker = android 
@@ -553,6 +553,7 @@ Also, I can pick up some of those awful magazines for that weird girl.
 ->goto_shop->read_check->end_day1
 ==end_day1==
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you out.
 ~currentSpeaker = you 
@@ -561,7 +562,7 @@ I'll sign you out.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
--Bye, see you tomorrow!
+-See you tomorrow. Bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ~music = "night theme"

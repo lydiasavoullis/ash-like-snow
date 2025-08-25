@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you in.
 *[Yes (save)]
@@ -71,13 +72,15 @@ I can do it myself
  You never know who else might arrive. 
 ~currentSpeaker = you
  Yes, you never know.
+ ~sfx = "open door"
  ~characters += kent
+ ¬
 ~currentSpeaker = you
 {ChangeSprite("Pandora", "pandora_excited")}
  Hey how are you?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
- Good good.
+ Good! Good.
  {ChangeSprite("Pandora", "pandora_normal")}
 //{allbooks ? wildfyre_678: -> wildfyre->} 
 ->kent_book_check->
@@ -161,7 +164,9 @@ I can do it myself
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
  I won’t explode I promise. 
+ ~sfx = "open door"
 ~characters += tali
+¬
 ~currentSpeaker=webdev
 {ChangeSprite("Tali", "tali_happy")}
 Hey!
@@ -184,7 +189,7 @@ You look better.
  That’s good right.
  {ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker = webdev
- He can’t keep this undercover forever.
+ He can’t keep this under wraps forever.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_serious")}
  They might move me to a different department now.
@@ -344,12 +349,14 @@ I never caught up with that either though.
 ~currentSpeaker = webdev
  Bye.
  ~characters -= tali
+ ~sfx = "close door"
 ~currentSpeaker = comic
  I have to go too.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}
  Adios ladies.
 ~characters -= kent
+~sfx = "close door"
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_excited")}
  Yes. Two people at my session.
@@ -361,7 +368,7 @@ I never caught up with that either though.
  I wonder if Lavender will turn up today.
 ~currentSpeaker = android
  {ChangeSprite("Pandora", "pandora_excited")}
- Yes, another person I can invite.
+ Yes! Another person I can invite.
 ~currentSpeaker = you
  You really want to invite her?
 ~currentSpeaker = android
@@ -378,7 +385,9 @@ I never caught up with that either though.
  The more the merrier.
 ~currentSpeaker = you
  Not sure that applies when Lavender is around.
- ~characters += lavender
+ ~sfx = "open door"
+~characters += lavender
+¬
 ~currentSpeaker = snob
 //{allbooks ? LUX_1076: -> LUX_winter->} 
 ->lavender_book_check->
@@ -440,6 +449,7 @@ Why are you shouting at me?
  Anyway I have to go.
  See you around. 
  ~characters-=lavender
+ ~sfx = "close door"
 ~currentSpeaker = you
  Pan are you crying?
 ~currentSpeaker = android
@@ -463,6 +473,7 @@ Well done.
 ->go_to_day_5
 ==go_to_day_5==
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you out for the day.
 ~currentSpeaker = you 
@@ -472,7 +483,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = you 
--See you tomorrow, bye!
+-See you tomorrow. Bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ¬

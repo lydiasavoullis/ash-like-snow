@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you in.
 *[Yes (save)]
@@ -44,11 +45,15 @@ I can do it myself
  ~sfx = "open door"
 ~music="Literature club"
 ~currentSpeaker = comic
+~sfx = "open door"
 ~characters += kent
+¬
 {ChangeSprite("Kent", "kent_normal")}
  Hey girls.
+ ~sfx = "open door"
  ~characters += tali
 ~characters += lavender
+¬
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
@@ -291,7 +296,7 @@ I thought it was about origami.
 He imagined his head shattering like an egg on the concrete, pieces of bone scattered under the feet of passers-by. 
 He imagined his ribs caving in, crushing his internal organs, blood pooling down from the pavement into the street, slurped up by the ravenous gutters. 
 He didn’t have to imagine. 
-After taking a drag of his cigarette he gazed upon the city landscape, a collideascope of colours. His kingdom.
+After taking a drag of his cigarette he gazed upon the city landscape, a kaleidoscope of colours. His kingdom.
 The smoke dissipated into the icy cold air, a carcinogenic haze joining the other cocktail of chemicals in the air that night. 
 He took a bottle of pills out of his jacket and tossed two into his mouth washing them down with a swig of a bottle of something else he also took from inside his jacket. 
 As he placed the bottle back, he winced. The serpent whip that coiled up around his forearm tightened. A warning signal. 
@@ -438,7 +443,7 @@ The golden sword lay discarded on the floor.
 ~currentSpeaker = android
  I was working on something, a poem. It’s unfinished.
 ~currentSpeaker = comic
- Don’t worry, my fanfic has a long way to go, I’m only fifty five chapters into writing it.
+ Don’t worry, my fanfic has a long way to go, I’m only fifty-five chapters into writing it.
 ~currentSpeaker = android
  Uh, wow. OK. I’ll have a go.
 ~music="Pandora's theme"
@@ -507,15 +512,17 @@ It's unfinished.
 ~currentSpeaker = webdev
  Bye guys, see you around. I had a great time.
 ~characters -=tali
+~sfx = "close door"
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
  Yeah, me too. See you around losers.
  ~characters -=lavender
+ ~sfx = "close door"
  {ChangeSprite("Kent", "kent_normal")}
  ~currentSpeaker = comic
  Take care!
  ~characters -=kent
- ==skip_to_day_6
+ ~sfx = "close door"
 ~currentSpeaker = you
  Well, I think that went well, don’t you?
 ~currentSpeaker = android
@@ -539,6 +546,7 @@ It's unfinished.
 ->end_day_6
 ==end_day_6==
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you out for the day.
 ~currentSpeaker = you 
@@ -548,10 +556,10 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 -Goodnight!
-¬
 ~scene = "Night"
 ~music = "night theme"
 ~sfx = "rain"
+¬
 {snappedOut=="no": ->night_06_F->|->night_06->}
 ¬
 ~scene= "ShopFront"

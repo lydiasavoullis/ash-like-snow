@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you in.
 *[Yes (save)]
@@ -63,7 +64,7 @@ Wouldn't you say?
 {ChangeSprite("Pandora", "pandora_pensive")}
  Oh me too. Everyday. I wish she could see what I’m doing now. Do you think she would be proud?
 ~currentSpeaker = you
- Definitely. I mean, she’d be disappointed it isn’t making money from it. But I think she’d be happy begrudgingly.
+ Definitely. I mean, she’d be disappointed it isn’t making money from it. But I think she’d be happy. Begrudgingly.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_sad")}
  It’s a shame the dome blocks phone transmission signals outside of London.
@@ -87,7 +88,9 @@ Do you think I’m doing OK?
 {funds >100:  I think you’re doing great. If we keep this up Ada will be happy when she comes back. | Uh I don't know, I'm sure Ada won't be upset.} 
 ~currentSpeaker = you
 {funds >100:  Thanks | I should probably sell some more books.} 
+~sfx = "open door"
 ~characters += kent
+¬
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_normal")}
 Hey guys.
@@ -113,6 +116,7 @@ Hey guys.
 {ChangeSprite("Kent", "kent_normal")}
  No thanks.
 ~characters -= kent
+~sfx = "close door"
 ~currentSpeaker = you
  So are we a library now?
 ~currentSpeaker = android
@@ -130,7 +134,9 @@ Hey guys.
 I’ve been nagging Ada about that for a while, but she hates it. She keeps saying she only wants to sell books. 
 {ChangeSprite("Pandora", "pandora_pensive")}
 I’m starting to think she wants this place to fail.
+~sfx = "open door"
 ~characters += lavender
+¬
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
  One rose tea.
@@ -140,6 +146,7 @@ I’m starting to think she wants this place to fail.
   //{allbooks ? LUX_666: -> LUX_3->} 
   ->lavender_book_check->
  ~characters += pandora
+ ¬
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
  Here you go.
@@ -318,6 +325,7 @@ No, of course not.
 ~currentSpeaker = you
  That's certainly an...interesting way to frame that.
 ~characters+=pandora
+¬
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
  What is it? Did something happen?
@@ -429,6 +437,7 @@ No, of course not.
 {ChangeSprite("Lavender", "lavender_angry")}
  ...
 ~characters -= lavender
+~sfx = "close door"
 ~currentSpeaker = you
  Hey Pan, are you OK?
 ~currentSpeaker = android
@@ -439,7 +448,9 @@ No, of course not.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
  Sometimes we must talk about difficult things.
+ ~sfx = "open door"
 ~characters += kent
+¬
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
  Hey girls. You sure were chatting a lot with our local sweet lolita serial killer.
@@ -460,6 +471,7 @@ No, of course not.
 {ChangeSprite("Kent", "kent_sad")}
  What are you talking about? The pollution is EVERYWHERE.
 ~characters -= kent
+~sfx = "close door"
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_sad")}
  He didn’t share his comic with us.
@@ -481,6 +493,7 @@ No, of course not.
 ==go_to_day_6==
 ~currentSpeaker = you 
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you out for the day.
 ~currentSpeaker = you 
@@ -489,8 +502,7 @@ I'll sign you out for the day.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
--See you tomorrow, bye!
-¬
+-See you tomorrow. Bye!
 ~scene = "Night"
 ~music = "night theme"
 ~sfx = "rain"

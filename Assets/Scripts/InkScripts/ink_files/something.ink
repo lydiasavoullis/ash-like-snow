@@ -27,14 +27,14 @@ INCLUDE night.ink
 // ->test_scene
 // *[Truth and dare]
 // ->start_incident
-*[Playtest]<>->day_1
+->day_1
 // *[kent]<>->kent_video
 // *[tali]<>->tali_video
 // *[lavender]<>->lavender_video
 // *[pandora]<>->pandora_video
-*[shop]
-~day=2
-->goto_shop
+//*[shop]
+// ~day=2
+// ->goto_shop
 ==night_rain==
 ~scene= "Night"
 ~textBoxIsActive="false"

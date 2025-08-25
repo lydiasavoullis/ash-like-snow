@@ -19,7 +19,7 @@ Just before I forget, I ordered this spring addition for you.
 ~currentSpeaker = snob
 Well, I suppose you're not completely useless.
 Oh pastels!
-~funds+=400
+~funds+=540
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -71,7 +71,7 @@ What has the world come to?
 How horrifying.
 I'll take it.
 ~allbooks-=LUX_1076
-~funds+=400
+~funds+=660
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -97,7 +97,7 @@ You understand? Right?
 Not really. But if it makes you happy.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
- ~funds+=800
+ ~funds+=1040
  ~booksSold+=1
  ~music="Rise and shine"
 ->->
@@ -169,7 +169,7 @@ Oh he loves the attention. He's a big diva.
 He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he always seems to take on the essense of what he's wearing. 
 ~currentSpeaker = you
 Right.
-~funds+=800
+~funds+=1400
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -288,7 +288,7 @@ Although I'm not sure if I'll have time to read it for a while now.
 Luckily it's a book, so it won't go off.
 {ChangeSprite("Tali", "tali_smirk")}
 That's a good point.
-~funds+=65
+~funds+=96.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -364,7 +364,7 @@ But all the same, I look forward to diving into it.
 Is that strange?
 ~currentSpeaker = you
 Not at all.
-~funds+=65
+~funds+=123.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -401,7 +401,7 @@ I'll give you an in depth review after I've read it.
 How about that?
 ~currentSpeaker = you
 I look forward to it.
-~funds+=65
+~funds+=114.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -442,7 +442,7 @@ How sadistic.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 I'm intrigued. I'll take it.
-~funds+=65
+~funds+=110
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -713,7 +713,7 @@ How does he reason with them?
 He tells them to go the fuck back into the sea.
 ~currentSpeaker = you
 Honestly, good for him.
-~funds+=90
+~funds+=181
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -726,7 +726,7 @@ Woah you got the first issue of Satin Rain, that's something.
 It's great that you found it.
 ~music="Rise and shine"
 ~allbooks-=satin_rain_1
-~funds+=100
+~funds+=139
 ~booksSold+=1
 ->->
 ==night_thunder==
@@ -757,7 +757,7 @@ It's set in this dystopian world
 Where there is this disease called Wildfyre
 When a person gets it they go crazy
 {ChangeSprite("Kent", "kent_happy")}
-And then sort of combust from the inside out
+And then sort of combusts from the inside out
 ~currentSpeaker = you
 That's scary
 {ChangeSprite("Kent", "kent_side_normal")}
@@ -775,7 +775,7 @@ I agree, it's pretty nihlistic
 But I might give it another try one day
 ~music="Rise and shine"
 ~allbooks-=wildfyre_678
-~funds+=90
+~funds+=230
 ~booksSold+=1
 ->->
 ==hypnos==
@@ -794,7 +794,7 @@ What's it about?
 The God of sleep.
 Hypnos.
 Just a reimagining of him and stories centered around his...
-Existance I guess?
+Existence I guess?
 It's quite fun and dramatic.
 ~currentSpeaker = you
 I thought it would be something dark and dystopian.
@@ -814,7 +814,7 @@ That would suck.
 ~currentSpeaker = comic
 I don't know, I would kill for a good night's sleep right now.
 ~music="Rise and shine"
-~funds+=120
+~funds+=160
 ~booksSold+=1
 ->->
 

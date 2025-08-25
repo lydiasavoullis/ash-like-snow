@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you in.
 ~button= "normal"
@@ -54,7 +55,9 @@ Well, that's one thing sorted today at least.
 ==day_2_cont
 ~currentSpeaker = you 
 Is that Tali?
+~sfx = "open door"
 ~characters+=tali 
+¬
 ~currentSpeaker = webdev 
 Hey girls, how are you doing?
 {ChangeSprite("Tali", "tali_normal")}
@@ -113,6 +116,7 @@ I'm not so sure.
 {ChangeSprite("Tali", "tali_exasperated")}
 Ugh my boss is ringing me. I have to go.
 ~characters-=tali
+~sfx = "close door"
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal")}
 I’m worried about her.
@@ -129,9 +133,11 @@ We've got to think about the business {you}.
 {ChangeSprite("Pandora", "pandora_normal")}
 I have to go and study now.
 ~characters-=pandora
-~characters+=kent
-~currentSpeaker = comic
 ¬
+~sfx = "open door"
+~characters+=kent
+¬
+~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
 Me again.
 ~currentSpeaker = you 
@@ -176,7 +182,7 @@ How bad?
 It has the Hyde park shooter shooting himself in the mouth.
 {ChangeSprite("Kent", "kent_amused")}
 This triggers an elaborate Rube Goldberg machine which kills everyone in the vicinity.
-I had to simplify some of the panels a bit, but I managed to get the jist of it.
+I had to simplify some of the panels a bit, but I managed to get the gist of it.
 ~currentSpeaker = you
 How does one even think up something like that?
 {ChangeSprite("Kent", "kent_side_serious")}
@@ -199,10 +205,11 @@ Hey, violence is an integral part of politics.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_serious")}
 I wish it wasn’t.
+~sfx = "open door"
 ~characters+=lavender
 ~currentSpeaker = snob
-{ChangeSprite("Kent", "kent_normal")}
 ¬
+{ChangeSprite("Kent", "kent_normal")}
 {ChangeSprite("Lavender", "lavender_angry")}
 {PlayAnimation("Lavender", "shake")}
 HEY
@@ -263,7 +270,7 @@ I’m a fashion designer.
 ~currentSpeaker = comic  
 Of course you are.
 ~currentSpeaker = snob 
-I would have expected more attentiveness from an employee of such a prestigeous news organisation.
+I would have expected more attentiveness from an employee of such a prestigious news organisation.
 Mind you it's been going downhill lately.
 It's too dry and predictable.
 I prefer Calamity.
@@ -294,11 +301,11 @@ What am I meant to do?
 I don't know, leave maybe?
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_amused")}
-The job market's fairly baren at the moment, it's not that easy kid.
+The job market's fairly barren at the moment, it's not that easy kid.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_angry")}
 Don't call me kid.
-I'm thirty two.
+I'm thirty-two.
 {ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker = comic 
 Oh really?
@@ -397,6 +404,7 @@ I just wanted to see what kind of people come here.
 {ChangeSprite("Lavender", "lavender_thinking")}
 And to be honest, I’m not really very impressed.
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 Miss Blue, your tea is ready.
 ~currentSpeaker = snob 
@@ -434,6 +442,7 @@ Suggestions to improve your failing business.
 If you have any more magazines please order them. I’ll collect them the next time I visit.
 Bye.
 ~characters-=lavender
+~sfx = "close door"
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_upset")}
 The absolute nerve. 
@@ -479,6 +488,7 @@ I have to go, I have a lot of missed calls from my boyfriend. I think he’s wor
 ~currentSpeaker = you 
 See you around.
 ~characters-=kent
+~sfx = "close door"
 You see Pan, lots of people like you. You’re a great shop assistant.
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_pensive")}
@@ -495,6 +505,7 @@ OK let’s do the orders for today.
 ->go_to_day_3
 ==go_to_day_3==
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 I'll sign you out for the day.
 ~currentSpeaker = you 
@@ -504,7 +515,7 @@ Thanks {android}!
 *[No (don't save)]
 I can do it myself
 ~currentSpeaker = you 
--See you tomorrow, bye!
+-See you tomorrow. Bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ~music = "night theme"

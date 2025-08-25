@@ -38,7 +38,7 @@ You walk home.
 Something scurries by.
 Small and furry.
 It prods a nearby bin.
-You ignore it striding forwards.
+You ignore it—striding forwards.
 It darts off into the gutters. 
 ->->
 
@@ -53,7 +53,7 @@ It grabs something hollow and papery before it darts off into the gutters.
 
 ==night_04_F==
 You walk home.
-The air is thick, heavy and sprays your face with cold droplets.
+The air is thick, heavy, and sprays your face with cold droplets.
 You drown it all out.
 Eventually you are enveloped in a numb warmth.
 You know this feeling, you've felt it before.

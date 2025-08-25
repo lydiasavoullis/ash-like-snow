@@ -33,7 +33,9 @@ I can do it myself
  ->tea_or_coffee->day_3_cont
 
 ==day_3_cont==
- ~characters += tali
+~sfx = "open door"
+~characters += tali
+¬
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_normal")}
  Hi guys.
@@ -83,7 +85,9 @@ What kind of data?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_normal")}
  No you don’t understand.
+ ~sfx = "open door"
 ~characters += lavender
+¬
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = you
  Sorry, Miss Blue, I'll be with you in a second.
@@ -228,6 +232,7 @@ My boss is calling me.
 {ChangeSprite("Lavender", "lavender_happy")}
  See you later Tal.
 ~characters -= tali
+~sfx = "close door"
 ~currentSpeaker = you
 //{allbooks ? LUX_394: -> LUX_2->} 
 ->lavender_book_check->
@@ -260,7 +265,9 @@ You recommended this place to her, right?
  Our knowledge is not remotely comparable.
 ~currentSpeaker = you
 I guess not.
+~sfx = "open door"
 ~characters += kent
+¬
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
  You again.
@@ -271,6 +278,7 @@ I guess not.
 {ChangeSprite("Lavender", "lavender_normal")}
 Ugh goodbye
 ~characters -= lavender
+~sfx = "close door"
 ~currentSpeaker = you
  Can I employ you here as a bodyguard?
 ~currentSpeaker = you
@@ -294,7 +302,7 @@ Ugh goodbye
  {ChangeSprite("Kent", "kent_side_normal")}
  This is crazy.
   {ChangeSprite("Kent", "kent_normal")}
- Anyway I better be nice to her, her father is my boss’s boss’s boss. He’s basically the chief of the arse lickers.
+ Anyway I better be nice to her, her father is my boss’s boss’s boss. He’s basically the chief of the arse-lickers.
 ~currentSpeaker = you
  You just figured that out.
 ~currentSpeaker = comic
@@ -305,7 +313,7 @@ Ugh goodbye
 ~currentSpeaker = comic
  {ChangeSprite("Kent", "kent_side_normal")}
  I can be a bit reckless sometimes.
- I guess don’t have a lot of self preservation.
+ I guess don’t have a lot of self-preservation.
  {ChangeSprite("Kent", "kent_side_serious")}
  I’m just sick of having to keep quiet and take it at work.
  {ChangeSprite("Kent", "kent_upset")}
@@ -335,7 +343,7 @@ Ugh goodbye
 {ChangeSprite("Kent", "kent_amused")}
  Why, what happened?
 ~currentSpeaker = you
- Nothing much to be at least.
+ Nothing much – to me at least.
  Tali came around earlier, she was a little distraught.
  Something about a data leak.
 ~currentSpeaker = comic
@@ -380,7 +388,9 @@ I appreciate you trying to protect the confidentiality of your clients' personal
 ~currentSpeaker = you
  Bye!
  ~characters -= kent
+ ~sfx = "close door"
  ~characters += pandora
+ ¬
 ->day_3_inventory
 ==day_3_inventory==
 ~music = "shop"
@@ -390,7 +400,6 @@ I appreciate you trying to protect the confidentiality of your clients' personal
 ==end_day_3==
 ->go_to_day_4
 ==go_to_day_4==
-~characters+=pandora
 ~currentSpeaker = android 
 I'll sign you out for the day.
 ~currentSpeaker = you 
@@ -400,7 +409,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = you 
--See you tomorrow, bye!
+-See you tomorrow. Bye!
 ~currentSpeaker = ""
 ~scene = "Night"
 ~music = "night theme"

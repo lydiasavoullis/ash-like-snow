@@ -24,6 +24,7 @@
 ~newsAnnouncement = ""
 ~music="Pandora's theme"
 ~characters+=pandora
+¬
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android 
 I'll sign you in.
@@ -190,7 +191,13 @@ If you were a human, you would be free.
  ...
  ...
  ...
-->end_day_7
+ ~characters-=pandora
+ ~music = "A winters dream"
+ ~scene="Blank"
+ ¬
+ [END OF DEMO]
+ ->END
+//->end_day_7
 ==end_day_7==
 ~characters+=pandora
 ~currentSpeaker = you 
@@ -203,7 +210,7 @@ Want me to sign you out?
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
--See you tomorrow!
+-See you tomorrow. Bye!
 ¬
 ~scene = "Night"
 ~music = "night theme"
@@ -217,4 +224,4 @@ I can do it myself
 ~scene= "GenericScene"
 ~day+=1
 ->END
-//->day_8
+->day_8
