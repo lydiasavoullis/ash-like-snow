@@ -7,9 +7,10 @@
 Hello again
 So do you have what I asked for?
 ~currentSpeaker=you
-Not what you asked for. But this card should have enough credit on it.
+Here's the USB.
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
+This is it?
 Are you sure?
 ~currentSpeaker=you
 Ada asked me to give it to you.
@@ -34,7 +35,10 @@ Yes…I have it.
 {ChangeSprite("Stranger", "shadow_amused")}
 ~currentSpeaker = trader
 Excellent.
+{snappedOut != "yes":
 ~currentSpeaker=you
+When I bought those books it triggered a memory.
+Ada asked me to give you a USB.
 Can I ask you–
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
@@ -48,10 +52,10 @@ Trust you? I don’t even know who you are.
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 You trust Ada, right? You know that she wanted you to do this, otherwise you wouldn’t be doing this right?
-
+}
 {snappedOut == "yes":
     ~currentSpeaker=you
-    I remember Ada asking me to give money to a strange man when he asks for it.
+    I remember Ada asking me to give this USB to a strange man when he asks for it.
     I was being drugged by someone, so I can't remember some details.
     {ChangeSprite("Stranger", "shadow_sad")}
     ~currentSpeaker = trader

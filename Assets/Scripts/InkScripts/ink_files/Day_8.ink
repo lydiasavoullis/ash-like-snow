@@ -58,21 +58,16 @@ How did you know?
 I need some things.
 ~currentSpeaker = you
 I know.
-You need money, right?
-{ChangeSprite("Stranger", "shadow_sad")}
-~currentSpeaker = trader
-There's no need to be so crass about it.
-~currentSpeaker = you
 Take this.
 ~currentSpeaker = trader
 This is a...USB?
 ~currentSpeaker = you
-It has enough on it. It's more secure anyway.
+I don't know what's on it, but Ada asked me to give it to you.
 {ChangeSprite("Stranger", "shadow_amused")}
 ~currentSpeaker = trader
 Interesting, you're not what I expected.
 ~currentSpeaker = you
-You're welcome to return, if you want more.
+You're welcome to return if there's anything else you need.
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 No, I think this will suffice.
@@ -97,7 +92,7 @@ I hope you showed him the way.
 ->continue_day_8
 ==stranger_first_encounter
 ~currentSpeaker = you
-Can I help you with anything.
+Can I help you with anything?
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 I was just walking by when I remembered that I needed to talk. 
