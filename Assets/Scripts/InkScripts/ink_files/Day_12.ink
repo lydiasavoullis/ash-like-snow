@@ -159,6 +159,7 @@ snapped out: {snappedOut}
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android 
+Good morning!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 

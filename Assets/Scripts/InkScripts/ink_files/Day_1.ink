@@ -115,7 +115,7 @@ She's a lot of fun, isn't she?
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
+I can do it myself.
 ~currentSpeaker = you
 -How have I never met her before?
 ~currentSpeaker = android

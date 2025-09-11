@@ -8,21 +8,18 @@
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
+{ChangeSprite("Pandora", "pandora_normal")}
+{PlayAnimation("Pandora", "jump")}
+Good morning!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
+I can do it myself.
 ~currentSpeaker = you
--Hey Pandora
-~currentSpeaker = android
-{ChangeSprite("Pandora", "pandora_normal")}
-{PlayAnimation("Pandora", "jump")}
- Hey!
-~currentSpeaker = you
- Feeling better?
+-Feeling better?
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
  Yes.

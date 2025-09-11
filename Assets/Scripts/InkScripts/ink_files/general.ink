@@ -49,23 +49,23 @@
 //can't read on first day
 //Pandora will tell you about how she loves childrens stories
 *{allbooks ? myths_legends}[Read myths and legends]
- -> read_greek_myths
+ -> read_greek_myths ->read_check
 * {allbooks ? Alice_in_Wonderland} [Read Alice in Wonderland]
-->read_alice_in_wonderland
+->read_alice_in_wonderland->read_check
 * {allbooks ? Howls_Moving_Castle} [Read Howl's Moving Castle]
-->read_howls_moving_castle
+->read_howls_moving_castle->read_check
 * {allbooks ? t_lion_witch_wardrobe} [Read The Lion the Witch and the Wardrobe]
-->read_lion_witch_wardrobe
+->read_lion_witch_wardrobe->read_check
 * {allbooks ? the_wiz_oz} [Read The Wizard of Oz]
-->read_the_wizard_of_oz
+->read_the_wizard_of_oz->read_check
 * {allbooks ? the_hobbit}[Read The Hobbit]
-->read_the_hobbit
+->read_the_hobbit->read_check
 * {allbooks ? t_secret_garden}[Read The Secret Garden]
-->read_the_secret_garden
+->read_the_secret_garden->read_check
 * {allbooks ? alice_looking_glass} [Read Alice Through the Looking-Glass]
-->read_through_the_looking_glass
+->read_through_the_looking_glass->read_check
 * {allbooks ? matilda} [Read Matilda]
-->read_matilda
+->read_matilda->read_check
 +->->
 ~music =""
 VAR timesRejected = 0

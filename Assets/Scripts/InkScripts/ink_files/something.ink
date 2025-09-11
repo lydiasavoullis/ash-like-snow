@@ -20,6 +20,11 @@ INCLUDE truth_or_dare.ink
 INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
+// *pandora read
+// ~day+=1
+// ->goto_shop->read_check
+// ~day+=1
+// ->goto_shop->read_check
 //~scene= "GenericScene"
 // *[simulate ending]
 // ->ending_simulation

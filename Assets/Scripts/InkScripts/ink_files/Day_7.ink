@@ -27,6 +27,7 @@
 ¬
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker = android 
+Good morning!
 I'll sign you in.
 ~currentSpeaker = you 
 Eh? I'm not working.
@@ -37,7 +38,7 @@ Doesn't matter. It's the rules, I have to keep track of any employees who enter 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
+I can do it myself.
 ~currentSpeaker = you
 -Hey Pan.
 ->tea_or_coffee->day_7_cont

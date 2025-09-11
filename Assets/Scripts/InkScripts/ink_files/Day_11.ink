@@ -8,6 +8,7 @@
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
+Morning! 
 I'll sign you in.
 ~currentSpeaker = you 
 *[Yes (save)]
@@ -17,7 +18,7 @@ Thanks {android}!
 I can do it myself
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
--Morning! One more day.
+-One more day.
 Until my Christmas Eve extravaganza!
 ~currentSpeaker=you
 You make it sound very fancy.

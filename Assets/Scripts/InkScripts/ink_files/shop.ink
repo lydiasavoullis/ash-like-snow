@@ -103,9 +103,6 @@ Remaining funds: {funds}
 ~deliveryToday+=1
 ~allbooks+=the_glass_lab
 ->goto_shop
-
-
-
 *{day>=8}{funds>=600}[LUX special flight attendant uniform issue (£600: Sells for £800)]
 ~funds -= 600
 ~deliveryToday+=1

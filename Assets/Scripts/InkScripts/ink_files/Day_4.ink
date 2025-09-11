@@ -9,6 +9,7 @@
 ~characters+=pandora
 ¬
 ~currentSpeaker = android 
+Hey Cas!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 
@@ -17,7 +18,7 @@ Thanks!
 *[No (don't save)] 
 I can do it myself
 ~currentSpeaker = android
--Hey Cas!
+-Awesome.
 ->tea_or_coffee->day_4_cont
 ==day_4_cont==
 {ChangeSprite("Pandora", "pandora_happy")}

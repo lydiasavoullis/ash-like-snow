@@ -9,6 +9,7 @@
 ~characters+=pandora
 ¬
 ~currentSpeaker = android 
+Good morning!
 I'll sign you in.
 ~button= "normal"
 *[Yes (save)]
@@ -16,12 +17,12 @@ I'll sign you in.
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
+I can do it myself.
 ~currentSpeaker = you 
 - Glad that's done now.
 {deliveryToday>0 : ->delivery_1->}
 ~currentSpeaker = you 
-No delivery today
+No delivery today.
 ~currentSpeaker = android  
 Uh, didn't see anything you liked?
 ~currentSpeaker = you 

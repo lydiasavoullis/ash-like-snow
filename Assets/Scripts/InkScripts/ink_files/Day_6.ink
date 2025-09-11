@@ -9,17 +9,17 @@
 ~characters+=pandora
 ¬
 ~currentSpeaker = android 
+Hey Cas!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
-
+I can do it myself.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
--Hey Cas
+-Excellent!
 ->tea_or_coffee->day_6_cont
 ==day_6_cont==
 ~currentSpeaker = android

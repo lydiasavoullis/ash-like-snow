@@ -8,17 +8,18 @@
 ~newsAnnouncement = ""
 ~characters+=pandora
 ~currentSpeaker = android 
+Good morning!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
+I can do it myself.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=you
--Hey Pandora 
-Uh what's that
+-Hey Pandora. 
+Uh what's that.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 I have an idea.

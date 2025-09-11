@@ -9,19 +9,18 @@
 ~characters+=pandora
 ¬
 ~currentSpeaker = android 
+Good morning!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
-~currentSpeaker = you
--Hey Pandora
+I can do it myself.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_happy")}
 {PlayAnimation("Pandora", "sway")}
- Hey! What are you up to?
+-What are you up to?
 ~currentSpeaker = you
  Stacking books.
 ~currentSpeaker = android

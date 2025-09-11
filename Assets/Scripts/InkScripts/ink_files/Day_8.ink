@@ -10,23 +10,24 @@
 ~currentSpeaker=android
 ~characters+=pandora
 ~currentSpeaker = android 
+Good morning!
 I'll sign you in.
 *[Yes (save)]
 ~currentSpeaker = you 
 {SaveStory()}
 Thanks {android}!
 *[No (don't save)] 
-I can do it myself
+I can do it myself.
 ~currentSpeaker= you
--On our second week without Ada already
-I knew we could do it
+-On our second week without Ada already.
+I knew we could do it.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
-So did I
+So did I.
 {ChangeSprite("Pandora", "pandora_normal")}
-Uh
+Uh.
 Who is that?
-He’s coming inside
+He’s coming inside.
 ~characters+=stranger
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
