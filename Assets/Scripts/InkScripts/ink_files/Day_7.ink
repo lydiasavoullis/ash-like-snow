@@ -212,6 +212,7 @@ Thanks {android}!
 *[No (don't save)] 
 I can do it myself
 -See you tomorrow. Bye!
+~characters-=pandora
 ¬
 ~scene = "Night"
 ~music = "night theme"

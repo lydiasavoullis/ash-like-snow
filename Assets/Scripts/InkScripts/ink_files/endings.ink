@@ -80,9 +80,11 @@ You can see this text
 ->END
 
 ==tali_ending==
-~characters+=tali 
-~currentSpeaker = webdev 
+~characters+=tali
 {ChangeSprite("Tali", "tali_happy")}
+~sfx="open door"
+¬
+~currentSpeaker = webdev 
 {you}!
 ~currentSpeaker = you
 Hey!
@@ -147,12 +149,16 @@ We all make mistakes.
 I really do have to go now.
 See you around.
 ~characters-=tali 
+~sfx="close door"
+¬
 ->->
 
 ==kent_ending==
 ~characters+=kent
-~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
+~sfx="open door"
+¬
+~currentSpeaker = comic
 Hey!
 ~currentSpeaker = you
 Ugh not you again.
@@ -256,6 +262,8 @@ I will suit myself.
 I'll send you the details later.
 See ya!
 ~characters-=kent
+~sfx="close door"
+¬
 ~currentSpeaker = you
 <i>I'm definitely not wearing an elf costume!</i>
 ->->
@@ -263,6 +271,8 @@ See ya!
 ==lavender_solo_ending==
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker = snob
 Hello.
 ~currentSpeaker = you
@@ -398,16 +408,22 @@ I will send details later.
 See you tonight!
 Hehehe...
 ~characters-=lavender
+~sfx="close door"
+¬
 ~currentSpeaker = you
 <i>That was so strange...</i>
 ->->
 
 ==tali_lavender_make_up_ending==
 {ChangeSprite("Tali", "tali_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker = webdev
 Things have been a bit better.
 We're talking at least. 
 ~characters+=lavender
+~sfx="open door"
+¬
 ~currentSpeaker = you
 Speak of the devil!
 {ChangeSprite("Tali", "tali_upset")}
@@ -536,10 +552,14 @@ Ok, wait until I get off work and we can go together.
 Sounds like a plan.
 Bye {you}. 
 ~characters-=lavender
+~sfx="close door"
+¬
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
 Bye {you}. See you later.
 ~characters-=tali
+~sfx="close door"
+¬
 ~currentSpeaker = you
 ...
 What have I gotten myself into?
@@ -549,6 +569,7 @@ What have I gotten myself into?
 ~characters+=pandora
 ~characters+=ada
 {ChangeSprite("Pandora", "pandora_sad")}
+¬
 ~currentSpeaker=android
 So, basically, we might need to clean the basement.
 And restock some items that were used during the incident.
@@ -606,7 +627,7 @@ Or how much money would be left in my account.
 I only asked.
 That if a strange man.
 In a coat and a top hat comes and makes references about some stupid kids books.
-You give him the money.
+You give him the USB.
 No questions asked.
 ~currentSpeaker=you
 ...
@@ -614,7 +635,7 @@ No questions asked.
 ~currentSpeaker=lovelace
 It was my fault.
 For entrusting this task.
-To a fucking drug addict. 
+To a fucking addict. 
 ~currentSpeaker=you
 It was an accident.
 {ChangeSprite("Ada", "adalina_displeased")}
@@ -636,7 +657,7 @@ Where were you?
 Somewhere important doing important things.
 None of that matters anymore.
 ~currentSpeaker=you
-I'm not a drug addict.
+I'm not an addict.
 {ChangeSprite("Ada", "adalina_displeased")}
 ~currentSpeaker=lovelace
 You are.
@@ -646,12 +667,14 @@ You would remember.
 That is the only blessing here.
 Get out of my shop.
 ~characters-=ada
+¬
 ->->
 
 ==ada_transfers_you==
 ~characters+=pandora
 ~characters+=ada
 {ChangeSprite("Pandora", "pandora_normal")}
+¬
 ~currentSpeaker=android
 So, basically, we might need to clean the basement.
 And restock some items that were used during the incident.
@@ -722,6 +745,7 @@ I mean it.
 ~currentSpeaker=android
 ...
 ~characters-=pandora
+¬
 {funds <100: ->lowFunds|->highFunds} 
 = lowFunds
 {ChangeSprite("Ada", "adalina_displeased")}
@@ -730,7 +754,7 @@ Now I know this is an awkward matter.
 But I have to ask about the finances here.
 I have checked, and there is a noticeable lack of money.
 ~currentSpeaker=you
-It was given to a dear friend of yours.
+Buying all those books wasn't cheap.
 ->ada_continues
 = highFunds
 {ChangeSprite("Ada", "adalina_pleased")}
@@ -739,12 +763,16 @@ You have outdone yourself.
 You've managed my bank account reasonably well.
 I'm impressed.
 ~currentSpeaker=you
-I had to lend some money to a dear friend of yours.
+Thanks.
 ->ada_continues
 = ada_continues
 {ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
-Well. That’s fine.
+Well. That’s all fine.
+~currentSpeaker=you
+I ran into a friend of yours.
+~currentSpeaker=lovelace
+Oh really?
 What were they wearing?
 ~currentSpeaker=you
 A top hat and a trench coat.
@@ -767,7 +795,7 @@ You’ve been taking that disgusting drug again, haven’t you?
 ~currentSpeaker=you
 No, it was an accident. {android} was putting it in my drink. Innocently, she thought she was helping me.
 ~currentSpeaker=lovelace
-That stupid android. She almost ruined everything.
+That stupid IOI. She almost ruined everything.
 {ChangeSprite("Ada", "adalina_neutral")}
 I wouldn’t believe such a ridiculous thing usually, but that does sound exactly like something {android} would do.
 {ChangeSprite("Ada", "adalina_displeased")}
@@ -820,6 +848,7 @@ It’s just so hard...
 It’s hard for her too.
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_happy")}
+¬
 ~currentSpeaker=android
 I brought tea.
 {ChangeSprite("Ada", "adalina_neutral")}
@@ -827,6 +856,7 @@ I brought tea.
 I better be off.
 I’d like to assess the damage.
 ~characters-=ada
+¬
 ~currentSpeaker=you
 Only Ada would call a couple of used sleeping bags and missing ration packs ‘damage’.
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -1022,11 +1052,11 @@ I'll keep you all safe. Don't worry.
 ¬
 ~scene= "ShopFront"
 Two weeks later.
-¬
 ~scene= "GenericScene"
 ~characters+=pandora
 ~characters+=ada
 {ChangeSprite("Ada", "adalina_pleased")}
+¬
 ~currentSpeaker=lovelace
 {android}.
 Where's {you}?

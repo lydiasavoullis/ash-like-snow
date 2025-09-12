@@ -6,32 +6,12 @@
 ¬
 ~music="Rise and shine"
 ~newsAnnouncement = ""
-{ChangeSprite("Pandora", "pandora_normal")}
-~currentSpeaker=android
-~characters+=pandora
-~currentSpeaker = android 
-Good morning!
-I'll sign you in.
-*[Yes (save)]
-~currentSpeaker = you 
-{SaveStory()}
-Thanks {android}!
-*[No (don't save)] 
-I can do it myself.
-~currentSpeaker= you
--On our second week without Ada already.
-I knew we could do it.
-{ChangeSprite("Pandora", "pandora_happy")}
-~currentSpeaker = android
-So did I.
-{ChangeSprite("Pandora", "pandora_normal")}
-Uh.
-Who is that?
-He’s coming inside.
+~sfx="open door"
 ~characters+=stranger
 {ChangeSprite("Stranger", "shadow_neutral")}
+¬
 ~currentSpeaker = trader
-How do you do?
+Hello.
 {ChangeSprite("Stranger", "shadow_amused")}
 What an interesting…establishment.
 {snappedOut=="true":
@@ -39,18 +19,7 @@ What an interesting…establishment.
   - else:
     ->stranger_first_encounter
 }
-
 ==stranger_first_encounter_snapped_out
-~currentSpeaker = you
-Hey Pan, could you leave us?
-{ChangeSprite("Pandora", "pandora_sad")}
-~currentSpeaker = android
-Oh?
-~currentSpeaker = you
-It's just something I have to do alone.
-~currentSpeaker = android
-OK.
-~characters-=pandora
 ~currentSpeaker = you
 Are you looking for Ada?
 {ChangeSprite("Stranger", "shadow_amused")}
@@ -74,22 +43,7 @@ You're welcome to return if there's anything else you need.
 No, I think this will suffice.
 Goodbye.
 ~characters-=stranger
-{ChangeSprite("Pandora", "pandora_sad")}
-~currentSpeaker=android
-What was that?
-~currentSpeaker = you
-A favour Ada asked me to do for her.
-Don't worry about it.
 ~gaveTraderMoney="yes"
-~characters+=pandora
-{ChangeSprite("Pandora", "pandora_confused")}
-~currentSpeaker=android
-What was that?
-~currentSpeaker = you
-He was looking for directions.
-{ChangeSprite("Pandora", "pandora_normal")}
-~currentSpeaker=android
-I hope you showed him the way.
 ->continue_day_8
 ==stranger_first_encounter
 ~currentSpeaker = you
@@ -106,7 +60,7 @@ Concentrate.
 {ChangeSprite("Stranger", "shadow_neutral")}
 Anyway,
 I need:
-The rabbit hole, the wardrobe and the castle
+The rabbit hole, the wardrobe, and the castle.
 Show them to me when I return.
 ~currentSpeaker = you
 Huh?
@@ -115,33 +69,53 @@ Huh?
 I must go now.
 Keep your wits about you.
 ~characters-=stranger
-{ChangeSprite("Pandora", "pandora_sad")}
-~currentSpeaker=android
-What was that?
-~currentSpeaker = you
-I'm not sure exactly.
+~sfx="close door"
+¬
 ->continue_day_8
 ==continue_day_8
+~characters+=pandora
+{ChangeSprite("Pandora", "pandora_confused")}
+~currentSpeaker=android
+Whom were you speaking to?
+~currentSpeaker = you
+Some guy.
+He was a bit weird.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+Oh, well there are all sorts about.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+~characters+=pandora
+~currentSpeaker = android 
+I'll sign you in.
+*[Yes (save)]
+~currentSpeaker = you 
+{SaveStory()}
+Thanks {android}!
+*[No (don't save)] 
+I can do it myself.
+~sfx="open door"
 ~characters+=lavender
 ~currentSpeaker=snob
-Who was that guy that left just now?
-~currentSpeaker=android
+¬
+-Who was that guy that left just now?
+~currentSpeaker=you
 I don’t know, never seen him before.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker= snob
 He was cute. 
 Couldn’t see his face.
-But his outfit was so cool.
+But his outfit was cool.
 {ChangeSprite("Lavender", "lavender_sad")}
 When I tried to speak to him he told me to go to hell.
+I just stood outside for a bit in stunned silence.
 {ChangeSprite("Lavender", "lavender_tears_crying")}
-I think I might die.
+I don't know what I did.
 {ChangeSprite("Lavender", "lavender_sad")}
-{ChangeSprite("Pandora", "pandora_confused")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker= android 
-Is that a good thing?
+Ignore that weird man.
 //{allbooks ? LUX_uniform: -> LUX_flight_uniform->} 
-->lavender_book_check->
 ~currentSpeaker = you
 Do you know why was that man dressed like that anyway?
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -159,6 +133,7 @@ You’ve heard of this Pan?
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 I may have taken a look while I was putting out the bins.
+->lavender_book_check->
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 So, I was wondering, have you seen Tali around?
@@ -189,6 +164,8 @@ At least she is being nice to us.
 Oh, someone’s at the door.
 ~characters+=kent
 {ChangeSprite("Kent", "kent_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker=comic
 Long time, no see.
 {ChangeSprite("Kent", "kent_amused")}
@@ -256,7 +233,7 @@ I’m right here.
 ~currentSpeaker=comic
 These are allegedly opinions that I believe to be held by some people.
 ~currentSpeaker= you
-These opinions seem pretty sound to me.
+'Some people'
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 Blue isn't unique.
@@ -264,10 +241,13 @@ Bad actors appear all the time. But when we invite them in, they don't stop unti
 {ChangeSprite("Lavender", "lavender_sad")}
 ~characters+=lavender
 ~currentSpeaker=snob
+¬
 I-I’m leaving.
 Tell Tali not to wait for me.
 Ok, see you around Cas.
+~sfx="close door"
 ~characters-=lavender
+¬
 ~currentSpeaker=you
 That’s not good.
 {ChangeSprite("Kent", "kent_normal")}
@@ -284,6 +264,8 @@ I think when you’re at that level of wealth, you start thinking you’re untou
 And it’s perhaps rather humbling, to know that you’re not.
 ~characters +=tali
 {ChangeSprite("Tali", "tali_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker=webdev
 Hey!
 How are you?
@@ -448,10 +430,12 @@ My point is that things are not as simple and easy as they seem to be. Although 
 {ChangeSprite("Tali", "tali_sad")}
 I should probably get going now.
 I'm tired.
-~characters-=tali
 {ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker = comic
 Hey, Tali!
+~characters-=tali
+~sfx="close door"
+¬
 ~currentSpeaker = you
 It’s ok, let her go.
 {ChangeSprite("Kent", "kent_sad")}
@@ -479,15 +463,17 @@ That being said, it was not your job to cajole it out of her.
 I didn’t cajole anything out of her. I just offered her an opinion, and she did the rest of the talking.
 I didn’t make her say anything she didn’t want to.
 ~currentSpeaker = you
-He’s got a point Pan, maybe he wasn’t so polite, but sometimes it’s how these things go.
-{ChangeSprite("Pandora", "pandora_pensive")}
+...
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker =android
 Fair enough.
-{ChangeSprite("Kent", "kent_normal")}
+{ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 I have to go now.
-See you around!
+See you around.
 ~characters-=kent
+~sfx="close door"
+¬
 ~currentSpeaker = you
 Don’t worry about this.
 {ChangeSprite("Pandora", "pandora_confused")}
@@ -517,10 +503,11 @@ The sound you're probably refering to is my cooling system at work. If my eyes f
 I am programmed to do that to make humans at ease, the same way my voice is modulated to communicate information in a calm, efficient manner.
 ~currentSpeaker = you
 I’m sorry, I didn’t mean to offend you.
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker =android
 I know you didn’t.
+{ChangeSprite("Pandora", "pandora_pensive")}
 Never mind.
-{ChangeSprite("Pandora", "pandora_normal")}
 Shall we do inventory?
 ->day_8_inventory
 

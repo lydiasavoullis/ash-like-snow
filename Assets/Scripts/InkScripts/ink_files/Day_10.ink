@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 Good morning!
 I'll sign you in.
@@ -33,6 +34,8 @@ Overload your circuits maybe?
 Exactly!
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_sad")}
+~sfx="open door"
+¬
 ~currentSpeaker=snob
 …
 ~currentSpeaker=android
@@ -53,7 +56,7 @@ I had to hide my porcelain frog collection away for safe keeping.
 That sounds terrible.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-That does not sound good.
+Indeed.
 {ChangeSprite("Pandora", "pandora_normal")}
 Can I interest you in a cup of rose tea?
 {ChangeSprite("Lavender", "lavender_sad")}
@@ -173,7 +176,10 @@ Maybe you’re right, but I don't fully understand what I’m meant to do about 
 Don’t be an arsehole.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
-I. Can't. Help. It.
+I. 
+Can't. 
+Help. 
+It.
 {ChangeSprite("Lavender", "lavender_thinking")}
 I don’t know, I just talk. I say what’s on my mind. And sometimes, people don’t like it. I can’t seem to identify why they don’t like it, or what it is that they don’t like.
 Perhaps if I could conduct some kind of survey…
@@ -200,15 +206,16 @@ You will?
 Are you deaf?
 I said I would do it.
 So I’m going to do it.
-{ChangeSprite("Pandora", "pandora_mean")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Remember.
 How YOU would like to be treated.
+{ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=snob
 Yeah yeah whatever.
 {ChangeSprite("Lavender", "lavender_thinking")}
 So…I’ll start in an hour.
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Hmm.
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -230,10 +237,12 @@ Then be neutral.
 ~currentSpeaker=snob
 \*Sigh\*
 Ok.
+~sfx="open door"
 {ChangeSprite("Lavender", "lavender_shocked")}
 Wait, what was that?
 ~characters+=tali
 {ChangeSprite("Tali", "tali_happy")}
+¬
 ~currentSpeaker=webdev
 {ChangeSprite("Tali", "tali_serious")}
 {ChangeSprite("Lavender", "lavender_angry")}
@@ -260,6 +269,8 @@ Well…I have to go. Got a meeting and all, and I don’t want to stick around h
 {ChangeSprite("Lavender", "lavender_sad")}
 Bye guys.
 ~characters-=lavender
+~sfx="close door"
+¬
 {ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker=webdev
 What the hell is her problem?
@@ -301,7 +312,7 @@ Yeah, you have me!
 Well, I guess I’m lucky in that way.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
-Awww
+Awww.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
 Very cute.
@@ -466,6 +477,8 @@ Have a good evening girls.
 ~currentSpeaker=you
 Will do.
 ~characters-=tali
+~sfx="close door"
+¬
 ->day_10_inventory
 ==day_10_inventory==
 ~music = "shop"

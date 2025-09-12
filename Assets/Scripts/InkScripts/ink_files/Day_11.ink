@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 Morning! 
 I'll sign you in.
@@ -30,6 +31,8 @@ I promise.
 Well, I –
 ~characters+=kent
 {ChangeSprite("Kent", "kent_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker=comic
 Hey girls.
 ~currentSpeaker=you
@@ -265,6 +268,8 @@ What's that got to do with the man who influences almost all the decisions about
 Hmm.
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker=snob
 Hey.
 ~currentSpeaker=you
@@ -467,6 +472,8 @@ I’m sure you’ll figure it out.
 I hope so. 
 Bye guys.
 ~characters-=lavender
+~sfx="close door"
+¬
 {ChangeSprite("Pandora", "pandora_normal")}
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
@@ -598,6 +605,8 @@ Lucky you!
 Well, I’m off then.
 Bye!
 ~characters-=kent
+~sfx="close door"
+¬
 ~currentSpeaker=you
 Well, it seems everything is going as planned.
 Are you happy?

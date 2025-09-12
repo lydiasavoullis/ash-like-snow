@@ -7,6 +7,7 @@
 ~music="Rise and shine"
 ~newsAnnouncement = ""
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 Good morning!
 I'll sign you in.
@@ -93,7 +94,10 @@ You're not scared of some gurgling pipes, are you?
 It's unnerving. Don't make fun of me!
 {ChangeSprite("Pandora", "pandora_normal")}
 ~characters-=pandora
+¬
+~sfx="open door"
 ~characters+=kent
+¬
 ~currentSpeaker=comic
 Hey hey!
 //{allbooks ? x_a_235: -> X_and_A->} 
@@ -121,8 +125,10 @@ No way she’s just going about her normal day.
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 Exactly what I was thinking.
+~sfx="open door"
 ~characters+=tali
 {ChangeSprite("Tali", "tali_sad")}
+¬
 ~currentSpeaker=webdev
 Hey guys.
 ~currentSpeaker=you
@@ -256,6 +262,7 @@ Sometimes people just come and go.
 And there’s nothing you can do about it.
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_happy")}
+¬
 ~currentSpeaker=android
 Oh my, almost everyone is here.
 I’m sorry, I was fixing the toilet, and then I got toilet water all over my hands.
@@ -437,9 +444,9 @@ As if normal bombing wasn't bad enough.
 ~currentSpeaker=you
 Just y'know. 
 It's good to keep an open mind when dating.
-But also know that you deserve to be with someone who makes you feel comfortable and safe.
-It's ok to make mistakes though.
-{ChangeSprite("Kent", "kent_normal")}
+But if you feel like it's not working don't try to fight it.
+It's ok to make mistakes.
+{ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 When did you become a self help book?
 {ChangeSprite("Tali", "tali_smirk")}
@@ -453,6 +460,8 @@ Be careful out there.
 ~currentSpeaker=webdev
 Thanks. Bye guys.
 ~characters-=tali
+~sfx="close door"
+¬
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Ok, are you going to tell me what that was about?
@@ -463,14 +472,12 @@ Huh?
 You're all stoic and calm most of the time.
 And now Tali starts talking about her love life you get all sappy.
 ~currentSpeaker=you
-Not sappy.
 It's just advice.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Advice? Please.
 ~currentSpeaker=you
 Let's just say, in most ways I'm emotionally dense, but I know a chronic people pleaser when I see one.
-If I can help someone avoid the hurt before it happens, then I think I'll risk sounding a little bit sappy.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 I see what you mean.
@@ -479,13 +486,15 @@ I've never had that issue myself.
 Always just said what's on my mind.
 ~currentSpeaker=you
 Lucky lucky you.
-I guess you are a journalist.
+I guess you are a journalist at heart.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 Don't remind me please.
 {ChangeSprite("Kent", "kent_normal")}
 I have to go now. Bye guys.
 ~characters-=kent
+~sfx="close door"
+¬
 ->day_9_inventory
 ==day_9_inventory==
 ~music = "shop"

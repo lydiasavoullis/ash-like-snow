@@ -1,6 +1,8 @@
 ==trader_satisfied==
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
+~sfx="open door"
+¬
 ~currentSpeaker=you
 …
 ~currentSpeaker = trader
@@ -21,10 +23,14 @@ It just makes me feel silly for telling you that riddle.
 ~currentSpeaker=you
 Don't worry abut it.
 ~characters-=stranger
+~sfx="close door"
+¬
 ->continue_day_12
 ==trader_happy==
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
+~sfx="open door"
+¬
 ~currentSpeaker=you
 …
 ~currentSpeaker = trader
@@ -94,9 +100,13 @@ Hey, what’s going on over there?
 I need to go.
 Goodbye {you}.
 ~characters-=stranger
+~sfx="close door"
+¬
 ->continue_day_12
 ==trader_unhappy==
 ~characters+=stranger
+~sfx="open door"
+¬
 ~currentSpeaker=you
 …
 {ChangeSprite("Stranger", "shadow_neutral")}
@@ -122,6 +132,8 @@ I have absolutely no idea what you are talking about.
 I do not think we will meet again.
 Goodbye.
 ~characters-=stranger
+~sfx="close door"
+¬
 ~currentSpeaker=you
 …
 ->continue_day_12
@@ -158,6 +170,7 @@ snapped out: {snappedOut}
 ~music="Rise and shine"
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_normal")}
+¬
 ~currentSpeaker = android 
 Good morning!
 I'll sign you in.
@@ -246,6 +259,8 @@ No, you know what, I’ll accept the thanks.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~characters +=kent
 {ChangeSprite("Kent", "kent_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker=comic
 Hi!
 ~currentSpeaker=you
@@ -307,6 +322,8 @@ Where are the others??
 ~characters +=tali
 ~characters +=lavender
 {ChangeSprite("Tali", "tali_normal")}
+~sfx="open door"
+¬
 ~currentSpeaker=webdev
 What’s going on?
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -603,6 +620,7 @@ Anything I can do for you?
 I just need some time. All these alerts, well I can handle them but they’re making me a bit edgy. 
 ~characters-=pandora
 ~characters+=kent
+¬
 ~currentSpeaker=you
 {comic}? Everything ok?
 {ChangeSprite("Kent", "kent_side_serious")}
@@ -638,6 +656,7 @@ Oh? Well don’t hide away too long.
 We might not get much time left.
 ~characters-=kent
 ~characters+=lavender
+¬
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 I want rose tea.
@@ -689,6 +708,7 @@ Thanks.
 I’m going to check on {webdev}.
 ~characters-=lavender
 ~characters+=tali
+¬
 {ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker=webdev
 Ugh
@@ -737,6 +757,7 @@ She really did think of everything.
 ~characters+=pandora
 ~characters+=lavender
 ~characters+=kent
+¬
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 Hi all.
@@ -776,6 +797,7 @@ Please, for the love of god shut up.
 ~characters-=kent
 ~characters-=tali
 ~characters+=pandora
+¬
 ~currentSpeaker = android 
 Here you go.
 ~currentSpeaker = you 
@@ -792,5 +814,6 @@ Not really.
 ~currentSpeaker = android 
 -Keep it. It might come in handy.
 ~characters-=pandora
+¬
 ~day+=1
 ->day_13
