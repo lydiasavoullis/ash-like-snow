@@ -19,43 +19,43 @@ Just before I forget, I ordered this spring addition for you.
 ~currentSpeaker = snob
 Well, I suppose you're not completely useless.
 Oh pastels!
-~funds+=540
+~funds+=500
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-==LUX_3==
-~music="Making friends"
-~lavenderPoints+=1
-~currentSpeaker = you
-Just before I forget, I ordered this for you.
-{ChangeSprite("Lavender", "lavender_happy")}
-~currentSpeaker = snob
-That's superb.
-~currentSpeaker = you
-Hey, I just wanted to ask.
-What's so great about these LUX magazines.
-{ChangeSprite("Lavender", "lavender_thinking")}
-~currentSpeaker = snob
-Oh, they're just very unique and interesting.
-Unfortunately LUX closed down some thirty years ago.
-~currentSpeaker = you
-Uh really?
-{ChangeSprite("Lavender", "lavender_sad")}
-~currentSpeaker = snob
-My grandfather bought their parent company, closed LUX and fired all the staff.
-~currentSpeaker = you
-Your grandfather?!
-{ChangeSprite("Lavender", "lavender_sad")}
-~currentSpeaker = snob
-I know.
-He said they promoted climate propaganda.
-It's a real shame.
-~currentSpeaker = you
-Indeed.
-~funds+=90
-~booksSold+=1
-~music="Rise and shine"
-->->
+// ==LUX_3==
+// ~music="Making friends"
+// ~lavenderPoints+=1
+// ~currentSpeaker = you
+// Just before I forget, I ordered this for you.
+// {ChangeSprite("Lavender", "lavender_happy")}
+// ~currentSpeaker = snob
+// That's superb.
+// ~currentSpeaker = you
+// Hey, I just wanted to ask.
+// What's so great about these LUX magazines.
+// {ChangeSprite("Lavender", "lavender_thinking")}
+// ~currentSpeaker = snob
+// Oh, they're just very unique and interesting.
+// Unfortunately LUX closed down some thirty years ago.
+// ~currentSpeaker = you
+// Uh really?
+// {ChangeSprite("Lavender", "lavender_sad")}
+// ~currentSpeaker = snob
+// My grandfather bought their parent company, closed LUX and fired all the staff.
+// ~currentSpeaker = you
+// Your grandfather?!
+// {ChangeSprite("Lavender", "lavender_sad")}
+// ~currentSpeaker = snob
+// I know.
+// He said they promoted climate propaganda.
+// It's a real shame.
+// ~currentSpeaker = you
+// Indeed.
+// ~funds+=500
+// ~booksSold+=1
+// ~music="Rise and shine"
+// ->->
 ==LUX_winter==
 ~music="Making friends"
 ~lavenderPoints+=1
@@ -71,7 +71,7 @@ What has the world come to?
 How horrifying.
 I'll take it.
 ~allbooks-=LUX_1076
-~funds+=660
+~funds+=600
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -97,7 +97,7 @@ You understand? Right?
 Not really. But if it makes you happy.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
- ~funds+=1040
+ ~funds+=1120
  ~booksSold+=1
  ~music="Rise and shine"
 ->->
@@ -128,7 +128,7 @@ You think so?
 Of couse, you would increase your work output by up to 50% if you wore a uniform.
 ~currentSpeaker = you
 I better get on that then.
- ~funds+=800
+ ~funds+=1760
  ~booksSold+=1
  ~music="Rise and shine"
 ->->
@@ -169,7 +169,7 @@ Oh he loves the attention. He's a big diva.
 He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he always seems to take on the essense of what he's wearing. 
 ~currentSpeaker = you
 Right.
-~funds+=1400
+~funds+=1700
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -194,7 +194,7 @@ It sure feels good to not get acid in your eyes.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Indeed.
-~funds+=800
+~funds+=1820
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -237,7 +237,7 @@ He's just a blank face.
 Do you want me to buy it or not?
 ~currentSpeaker = you
 Fine.
-~funds+=600
+~funds+=2000
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -268,7 +268,7 @@ Maybe people should try not to hit their heads in the first place!
 I suppose it's a bit late for me to tell you that.
 ~currentSpeaker = you
 Ouch!
-~funds+=800
+~funds+=1880
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -288,7 +288,7 @@ Although I'm not sure if I'll have time to read it for a while now.
 Luckily it's a book, so it won't go off.
 {ChangeSprite("Tali", "tali_smirk")}
 That's a good point.
-~funds+=96.5
+~funds+=87.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -364,7 +364,7 @@ But all the same, I look forward to diving into it.
 Is that strange?
 ~currentSpeaker = you
 Not at all.
-~funds+=123.5
+~funds+=110
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -401,7 +401,7 @@ I'll give you an in depth review after I've read it.
 How about that?
 ~currentSpeaker = you
 I look forward to it.
-~funds+=114.5
+~funds+=123.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -442,7 +442,7 @@ How sadistic.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 I'm intrigued. I'll take it.
-~funds+=110
+~funds+=132.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -506,7 +506,7 @@ I'll take it.
 And I'll watch the film after.
 ~currentSpeaker = you
 You won't regret it.
-~funds+=65
+~funds+=141.5
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -572,7 +572,7 @@ Really? You don't ever wonder what goes on inside the heads of the truly evil?
 Maybe...
 But a whole series from the perspective of a monster?
 That would get frustrating.
-~funds+=65
+~funds+=155
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -643,7 +643,7 @@ I mean sure...that stuff is important I guess.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev
 Stories are more than just a sum of their parts.
-~funds+=65
+~funds+=146
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -687,10 +687,35 @@ Thanks, but no thanks.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 I suppose each to their own.
-~funds+=65
+~funds+=137
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
+==night_thunder==
+~music="Making friends"
+~kentPoints+=1
+{ChangeSprite("Kent", "kent_happy")}
+~currentSpeaker = comic
+Shit you did it! Night Thunder 89, not a good one, but very impressive nonetheless.
+It's great that you found it.
+~music="Rise and shine"
+~allbooks-=nightthunder_89
+~funds+=120
+~booksSold+=1
+->->
+==satin_rain==
+~music="Making friends"
+~kentPoints+=1
+{ChangeSprite("Kent", "kent_happy")}
+~currentSpeaker = comic
+Woah you got the first issue of Satin Rain, that's something. 
+It's great that you found it.
+~music="Rise and shine"
+~allbooks-=satin_rain_1
+~funds+=125
+~booksSold+=1
+->->
+
 ==the_sentinel==
 ~music="Making friends"
 ~kentPoints+=1
@@ -713,33 +738,9 @@ How does he reason with them?
 He tells them to go the fuck back into the sea.
 ~currentSpeaker = you
 Honestly, good for him.
-~funds+=181
+~funds+=160
 ~booksSold+=1
 ~music="Rise and shine"
-->->
-==satin_rain==
-~music="Making friends"
-~kentPoints+=1
-{ChangeSprite("Kent", "kent_happy")}
-~currentSpeaker = comic
-Woah you got the first issue of Satin Rain, that's something. 
-It's great that you found it.
-~music="Rise and shine"
-~allbooks-=satin_rain_1
-~funds+=139
-~booksSold+=1
-->->
-==night_thunder==
-~music="Making friends"
-~kentPoints+=1
-{ChangeSprite("Kent", "kent_happy")}
-~currentSpeaker = comic
-Shit you did it! Night Thunder 89, not a good one, but very impressive nonetheless.
-It's great that you found it.
-~music="Rise and shine"
-~allbooks-=nightthunder_89
-~funds+=120
-~booksSold+=1
 ->->
 ==wildfyre==
 ~music="Making friends"
@@ -775,7 +776,7 @@ I agree, it's pretty nihlistic
 But I might give it another try one day
 ~music="Rise and shine"
 ~allbooks-=wildfyre_678
-~funds+=230
+~funds+=250
 ~booksSold+=1
 ->->
 ==hypnos==
@@ -814,7 +815,7 @@ That would suck.
 ~currentSpeaker = comic
 I don't know, I would kill for a good night's sleep right now.
 ~music="Rise and shine"
-~funds+=160
+~funds+=195
 ~booksSold+=1
 ->->
 
@@ -851,53 +852,53 @@ The illustrations are quite impressive you won't be disappointed.
 ~currentSpeaker = you
 Alright. Alright.
 ~music="Rise and shine"
-~funds+=90
+~funds+=202
 ~booksSold+=1
 ->->
 
-==X_and_A==
-~music="Making friends"
-~kentPoints+=1
-~currentSpeaker = you
-I've got a comic for you.
-What's X and A mean?
-{ChangeSprite("Kent", "kent_happy")}
-~currentSpeaker = comic
-It's the names of these two characters.
-They were volunteer test subjects for this gene therapy drug.
-At first they went willingly, but then when the experiment started to go wrong, they weren't allowed to leave the facility. 
-~currentSpeaker = you
-Sounds like they made a terrible error voluneering.
-{ChangeSprite("Kent", "kent_side_normal")}
-~currentSpeaker = comic
-Anyway, they managed to escape.
-Only to find their identities erased from the earth.
-Their families were told they were dead.
-~currentSpeaker = you
-They couldn't just reveal what the scientists did to them?
-{ChangeSprite("Kent", "kent_side_serious")}
-~currentSpeaker = comic
-No. You see the gene therapy disfigured their faces.
-And it also changed their DNA.
-~currentSpeaker = you
-That's fucked up.
-{ChangeSprite("Kent", "kent_side_normal")}
-~currentSpeaker = comic
-But there are also government programs to track them down and assassinate them.
-{ChangeSprite("Kent", "kent_happy")}
-Luckily their powers sort of help them to evade detection.
-The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
-~currentSpeaker = you
-What's with the letters?
-~currentSpeaker = comic
-X and A are parts of their lab numbers, X was X-436 and A was A-967.
-Hence they go by X and A.
-~currentSpeaker = you
-Sounds very sci-fi.
-~music="Rise and shine"
-~funds+=90
-~booksSold+=1
-->->
+// ==X_and_A==
+// ~music="Making friends"
+// ~kentPoints+=1
+// ~currentSpeaker = you
+// I've got a comic for you.
+// What's X and A mean?
+// {ChangeSprite("Kent", "kent_happy")}
+// ~currentSpeaker = comic
+// It's the names of these two characters.
+// They were volunteer test subjects for this gene therapy drug.
+// At first they went willingly, but then when the experiment started to go wrong, they weren't allowed to leave the facility. 
+// ~currentSpeaker = you
+// Sounds like they made a terrible error voluneering.
+// {ChangeSprite("Kent", "kent_side_normal")}
+// ~currentSpeaker = comic
+// Anyway, they managed to escape.
+// Only to find their identities erased from the earth.
+// Their families were told they were dead.
+// ~currentSpeaker = you
+// They couldn't just reveal what the scientists did to them?
+// {ChangeSprite("Kent", "kent_side_serious")}
+// ~currentSpeaker = comic
+// No. You see the gene therapy disfigured their faces.
+// And it also changed their DNA.
+// ~currentSpeaker = you
+// That's fucked up.
+// {ChangeSprite("Kent", "kent_side_normal")}
+// ~currentSpeaker = comic
+// But there are also government programs to track them down and assassinate them.
+// {ChangeSprite("Kent", "kent_happy")}
+// Luckily their powers sort of help them to evade detection.
+// The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
+// ~currentSpeaker = you
+// What's with the letters?
+// ~currentSpeaker = comic
+// X and A are parts of their lab numbers, X was X-436 and A was A-967.
+// Hence they go by X and A.
+// ~currentSpeaker = you
+// Sounds very sci-fi.
+// ~music="Rise and shine"
+// ~funds+=90
+// ~booksSold+=1
+// ->->
 
 ==mr_thermistor==
 ~music="Making friends"
@@ -923,7 +924,7 @@ It includes a scene where he lures bad guys into the sauna and...well...zap!
 ~currentSpeaker = you
 Ok. I think I get it.
 ~music="Rise and shine"
-~funds+=90
+~funds+=209
 ~booksSold+=1
 ->->
 
@@ -950,7 +951,7 @@ Well a plain utopia wouldn't be that interesting would it?
 Hmm...
 No I suppose it wouldn't be.
 ~music="Rise and shine"
-~funds+=90
+~funds+=216
 ~booksSold+=1
 ->->
 
@@ -980,7 +981,7 @@ There's a lot of funny parts.
 It sounds quite fun.
 Maybe I'll give it a read some time.
 ~music="Rise and shine"
-~funds+=90
+~funds+=230
 ~booksSold+=1
 ->->
 

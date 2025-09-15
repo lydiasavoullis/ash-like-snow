@@ -1547,7 +1547,7 @@ Would you like that Cas?
 ...I might be able to lick a seat.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
-If you choose licking a toilet I swear next thing you know I will be throwing up in in.
+If you choose licking a toilet I swear next thing you know I will be throwing up in it.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android
 And I will have to clean that.
@@ -1583,7 +1583,7 @@ You didn't have any friends your own age.
 I don't know.
 I had people who I sat an ate with at lunch sure.
 But I didn't really talk to them much.
-They liked pretty mainstream kids stuff, and I was never really into that.
+We were never really interested in the same stuff.
 I prefered reading on my own.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic

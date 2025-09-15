@@ -8,7 +8,7 @@
 *{allbooks ? wildfyre_678}[Give Wildfyre \#678]->wildfyre->kent_book_check
 *{allbooks ? hypnos_55}[Give Hypnos \#55]->hypnos->kent_book_check
 *{allbooks ? lady_darkness_373}[Give Lady Darkness \#373]->lady_darkness->kent_book_check
-*{allbooks ? x_a_235}[Give X and A \#235]->X_and_A->kent_book_check
+//*{allbooks ? x_a_235}[Give X and A \#235]->X_and_A->kent_book_check
 *{allbooks ? mr_therm}[Give Mr. Thermistor]->mr_thermistor->kent_book_check
 *{allbooks ? bioworld}[Give Bioworld]->bworld->kent_book_check
 *{allbooks ? cybershake}[Give Cybershake]->cybershake_comic->kent_book_check

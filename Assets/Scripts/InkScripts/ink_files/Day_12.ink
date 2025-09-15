@@ -138,6 +138,7 @@ Goodbye.
 …
 ->continue_day_12
 ==day_12==
+~scene="GenericScene"
 ¬
 // ~allbooks+=Alice_in_Wonderland
 // ~allbooks+=Howls_Moving_Castle
@@ -407,7 +408,7 @@ Aw cool, thanks!
 {ChangeSprite("Kent", "kent_shocked")}
 {ChangeSprite("Pandora", "pandora_shocked")}
 <i>*BOOM*</i>
-~music="A winters chill"
+~music="A winters dream"
 {PlayAnimation("Pandora", "long_shake")}
 {PlayAnimation("Tali", "long_shake")}
 {PlayAnimation("Lavender", "long_shake")}
@@ -603,6 +604,7 @@ There's a lot of boxes. I'll check if there's anything useful in them.
 ~currentSpeaker=snob
 I'm going to see if I can get through to my dad.
 ~characters-=lavender
+~music="Basement"
 ~currentSpeaker=you
 Is there anything I can do to help {android}.
 I know I’m just a shop clerk, and woefully unprepared.
@@ -797,6 +799,7 @@ Please, for the love of god shut up.
 ~characters-=kent
 ~characters-=tali
 ~characters+=pandora
+~music=""
 ¬
 ~currentSpeaker = android 
 Here you go.
@@ -808,12 +811,17 @@ I made a list of everything we have down here.
 Do you want to add anything?
 *[Yes (save)]
 {SaveStory()}
+~currentSpeaker = you 
 Sure I can add some things.
 *[No (don't save)] 
+~currentSpeaker = you 
 Not really.
 ~currentSpeaker = android 
 -Keep it. It might come in handy.
+~currentSpeaker = ""
 ~characters-=pandora
+~sfx="wind"
+~scene="Blank"
 ¬
 ~day+=1
 ->day_13

@@ -20,6 +20,23 @@ INCLUDE truth_or_dare.ink
 INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
+*[Simulate shop]
+~scene="GenericScene"
+¬
+->next_day
+==next_day
+->goto_shop->
+->read_check->
+->tali_book_check->
+->kent_book_check->
+->lavender_book_check->
+~day+=1
+->next_day
+
+*day 1
+->day_1
+*day 12
+->start_incident
 // *pandora read
 // ~day+=1
 // ->goto_shop->read_check
@@ -32,7 +49,7 @@ INCLUDE night.ink
 // ->test_scene
 // *[Truth and dare]
 // ->start_incident
-->day_1
+
 // *[kent]<>->kent_video
 // *[tali]<>->tali_video
 // *[lavender]<>->lavender_video

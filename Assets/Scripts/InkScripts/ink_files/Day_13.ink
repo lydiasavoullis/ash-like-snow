@@ -1,4 +1,5 @@
 ==day_13==
+~sfx=""
 ~scene = "Basement"
 ¬
 ~newsPicture = "headline13"
@@ -14,6 +15,7 @@ You write something down.
 *[No (don't save)] 
 You close the book.
 -...
+~music="Basement"
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=snob
