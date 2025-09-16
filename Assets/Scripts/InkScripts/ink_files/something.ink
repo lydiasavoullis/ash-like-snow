@@ -25,11 +25,17 @@ INCLUDE night.ink
 ¬
 ->next_day
 ==next_day
+{day>5 && day<8: Start day {day}|->skip_day}
 ->goto_shop->
 ->read_check->
 ->tali_book_check->
 ->kent_book_check->
 ->lavender_book_check->
+~day+=1
+->next_day
+
+==skip_day
+It's weekend day {day}.
 ~day+=1
 ->next_day
 
