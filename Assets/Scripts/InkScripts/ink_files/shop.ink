@@ -137,6 +137,8 @@ Remaining funds: {funds}
 ~funds -= 189
 ~deliveryToday+=1
 ~allbooks+=mr_therm
+->goto_shop
+
 #tali
 *{day>=9}{funds>=121.5}[The Lord of Dusk \#95(£121.50: Sells for £141.50)]
 ~funds -= 121.5
@@ -183,7 +185,6 @@ Remaining funds: {funds}
 ~button=""
 ->->
 ==buy_childrens_books==
-Maybe I could get something for {android}. I'm sure she'd love a new book.
 Remaining funds: {funds}
 *{day>=1}{funds>=20}[Myths and Legends (£20 : no sell price)] 
 ~funds -= 20

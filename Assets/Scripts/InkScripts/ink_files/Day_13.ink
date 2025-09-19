@@ -1355,5 +1355,8 @@ You write something down.
 *[No (don't save)] 
 You close the book.
 -Let's go to bed.
+~sfx="wind"
+~scene="Blank"
+¬
 ~day+=1
 ->day_14

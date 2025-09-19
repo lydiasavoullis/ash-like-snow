@@ -118,6 +118,8 @@ public class DialogueController : MonoBehaviour
         //}
         saveControl.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
         audioManager = GameObject.FindGameObjectWithTag("AudioManager");
+        
+
     }
 
 
@@ -143,7 +145,13 @@ public class DialogueController : MonoBehaviour
             
         //Input.GetMouseButtonDown(1)
         {
-            KeepLoadingStory();
+            try {
+                KeepLoadingStory();
+            }
+            catch (Exception e) {
+                Debug.Log(e.Message);
+            }
+            
         }
         else if (Input.GetMouseButtonDown(1))
         {
@@ -165,6 +173,7 @@ public class DialogueController : MonoBehaviour
             GameVars.story.UnbindExternalFunction("PlayAnimation");
             GameVars.story.UnbindExternalFunction("SaveStory");
             GameVars.story.UnbindExternalFunction("ChangeWeather");
+
         }
         catch (Exception e) { }
         GameVars.story.BindExternalFunction("AddCharacter", (string charName, string charType) => characterControl.LoadCharacterSprite(charName, charType, this.stage, characterBox));
@@ -173,6 +182,16 @@ public class DialogueController : MonoBehaviour
         GameVars.story.BindExternalFunction("PlayAnimation", (string charName, string animation) => animControl.PlayAnimation(charName, animation, this.stage));
         GameVars.story.BindExternalFunction("SaveStory", () => this.SaveStoryFromInk());
         GameVars.story.BindExternalFunction("ChangeWeather", (string weather) => ChangeWeather(weather));
+        GameVars.story.onError += (msg, type) => {
+            if (type == Ink.ErrorType.Warning)
+            {
+                Debug.LogWarning(msg);
+            }
+            else
+            {
+                Debug.LogError(msg);
+            }
+        };
 
         characterControl.RefreshCharacters((InkList)GameVars.story.variablesState["characters"], stage, characterBox);
         uIControl.SetDialogueBoxActive(GameVars.story.variablesState["textBoxIsActive"].ToString(), backgroundDialogueBox);

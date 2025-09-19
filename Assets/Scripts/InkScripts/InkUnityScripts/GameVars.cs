@@ -15,7 +15,7 @@ public static class GameVars
     public static bool autoMode = false;
     public static Story story;
     public static float delay = 0.01f;
-    public static float autoSpeed = 4f;
+    public static float autoSpeed = 20f;
     public static string sfxPlaying;
     public static string musicPlaying;
     public static string lastFilename;

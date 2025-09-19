@@ -76,7 +76,8 @@ You can see this text
 {pandoraPoints < 6: ->pandora_neutral_ending->} #Done
 
 {pandoraPoints >= 6: ->pandora_good_ending->} #Done
-
+~music="A winters chill"
+~scene="ENDCREDITS"
 ->END
 
 ==tali_ending==

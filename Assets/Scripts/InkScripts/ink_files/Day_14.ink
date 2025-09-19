@@ -629,9 +629,8 @@ Ahhhh.
 That tickles.
 ~currentSpeaker = snob
 So now you talk.
-You have smelly feet.
 ~currentSpeaker = webdev
-Stop antagonising her. Just pull her out.
+Just pull her out.
 ~currentSpeaker = snob
 Okay. Okay. Okay.
 Got her!
@@ -817,15 +816,10 @@ You're going to be something.
 ~currentSpeaker=you
 Really?
 ~currentSpeaker=man
-You're more mature than any of your friends. Maybe you don't appreciate it now. But it'll pay off in the future. You don't need fancy gifts, or expensive trips.
 You're like an adult already.
 I thought you'd be sick of being around those babies.
 ~currentSpeaker=you
 ...I do sometimes feel a bit distant from them.
-~currentSpeaker=man
-Of course. Hearing you and Richard talk about the economy makes me feel like I should be sitting at the kids table!
-~currentSpeaker=you
-Haha Dad, maybe.
 ~currentSpeaker=man
 I don't want to hear you complain. You hear me.
 ~currentSpeaker=you
@@ -897,4 +891,7 @@ Let's get out of here.
 It's just creepy at this point.
 ~currentSpeaker=android
 You know how to do it.
+~sfx="wind"
+~scene="Blank"
+¬
 ->ending_check

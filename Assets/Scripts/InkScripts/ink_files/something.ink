@@ -20,14 +20,20 @@ INCLUDE truth_or_dare.ink
 INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
+*[Go to end credits]
+~music="A winters chill"
+~scene="ENDCREDITS"
+->END
 *[Simulate shop]
 ~scene="GenericScene"
 ¬
 ->next_day
 ==next_day
-{day>5 && day<8: Start day {day}|->skip_day}
+~funds=50000
+~day=11
+{day<6 || day>7: Start day {day}|->skip_day}
 ->goto_shop->
-->read_check->
+#->read_check->
 ->tali_book_check->
 ->kent_book_check->
 ->lavender_book_check->
