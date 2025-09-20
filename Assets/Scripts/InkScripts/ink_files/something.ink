@@ -30,7 +30,6 @@ INCLUDE night.ink
 ->next_day
 ==next_day
 ~funds=50000
-~day=11
 {day<6 || day>7: Start day {day}|->skip_day}
 ->goto_shop->
 #->read_check->
