@@ -78,7 +78,7 @@ public class DialogueController : MonoBehaviour
     GameObject optionsMenu;//if active we don't want to advance the story
     [SerializeField]
     GameObject weatherBackground;
-
+    List<Button> loadedButtons;
     #endregion
     #region controllers
     //public bool effectJustPlayed = false;
@@ -94,6 +94,9 @@ public class DialogueController : MonoBehaviour
 
     //public InkFile storyVariables;
 
+    #endregion
+    #region PlayerInput
+    GameControls gameControls; 
     #endregion
     void Start()
     {
@@ -121,11 +124,60 @@ public class DialogueController : MonoBehaviour
         
 
     }
+    private void Awake()
+    {
+        gameControls = new GameControls();
+        gameControls.UI.Continue.performed += ctx => ProgressDialogue();
+        
+    }
+    private void OnEnable()
+    {
+        gameControls.UI.Enable();
+    }
+    private void OnDisable()
+    {
+        gameControls.UI.Disable();
+    }
 
+    private void ProgressDialogue() {
+        //Mouse.current.rightButton.wasPressedThisFrame && 
 
+        if (GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
+
+        //Input.GetMouseButtonDown(1)
+        {
+            try
+            {
+                KeepLoadingStory();
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e.Message);
+            }
+
+        }
+    }
+    
+
+    public void GetButtons(GameObject choices)
+    {
+        for (int i = 0; i < choices.transform.childCount; i++)
+        {
+            loadedButtons.Add(choices.transform.GetChild(i).GetComponent<Button>());
+        }
+    }
+    //navigation is + or - 1 depending on whether you are going right or left
+    public void NavigateButtons(int navDirection) {
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            if (this.transform.GetComponent<Button>().IsInvoking()) {
+                this.transform.GetChild(i - 1).GetComponent<Button>().Select();
+            }
+        }
+    }
     private void Update()
     {
-        if (Keyboard.current.fKey.wasPressedThisFrame)
+        if (gameControls.UI.FastForward.WasPerformedThisFrame())
         {
 
             if (!GameVars.autoMode && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
@@ -137,28 +189,43 @@ public class DialogueController : MonoBehaviour
                 GameVars.autoMode = false;
             }
         }
-        if (Mouse.current.rightButton.wasPressedThisFrame) {
-            //Debug.Log("Dont advance story: " + GameVars.dontAdvanceStory);
-            //Debug.Log("Game State: " + GameStates.State);
-        }
-        if (Mouse.current.rightButton.wasPressedThisFrame && GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
-            
-        //Input.GetMouseButtonDown(1)
-        {
-            try {
-                KeepLoadingStory();
-            }
-            catch (Exception e) {
-                Debug.Log(e.Message);
-            }
-            
-        }
-        else if (Input.GetMouseButtonDown(1))
-        {
-            //Debug.Log("don't advance Story: " + GameVars.dontAdvanceStory);
-        }
-
     }
+    //private void Update()
+    //{
+    //    if (Keyboard.current.fKey.wasPressedThisFrame)
+    //    {
+
+    //        if (!GameVars.autoMode && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
+    //        {
+    //            StartCoroutine(FastForward());
+    //        }
+    //        else
+    //        {
+    //            GameVars.autoMode = false;
+    //        }
+    //    }
+    //    if (Mouse.current.rightButton.wasPressedThisFrame) {
+    //        //Debug.Log("Dont advance story: " + GameVars.dontAdvanceStory);
+    //        //Debug.Log("Game State: " + GameStates.State);
+    //    }
+    //    if (Mouse.current.rightButton.wasPressedThisFrame && GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
+
+    //    //Input.GetMouseButtonDown(1)
+    //    {
+    //        try {
+    //            KeepLoadingStory();
+    //        }
+    //        catch (Exception e) {
+    //            Debug.Log(e.Message);
+    //        }
+
+    //    }
+    //    else if (Input.GetMouseButtonDown(1))
+    //    {
+    //        //Debug.Log("don't advance Story: " + GameVars.dontAdvanceStory);
+    //    }
+
+    //}
     private void OnLevelWasLoaded(int level)
     {
         audioManager = GameObject.FindGameObjectWithTag("AudioManager");

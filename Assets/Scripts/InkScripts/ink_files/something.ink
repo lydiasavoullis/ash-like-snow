@@ -24,6 +24,13 @@ INCLUDE night.ink
 ~music="A winters chill"
 ~scene="ENDCREDITS"
 ->END
+*[simulate end]
+~taliPoints = 5
+~lavenderPoints = 5
+~kentPoints = 5
+~pandoraPoints = 6
+~snappedOut = "yes"
+->ending_check
 *[Simulate shop]
 ~scene="GenericScene"
 ¬
