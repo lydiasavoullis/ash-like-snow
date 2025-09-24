@@ -908,8 +908,10 @@ MonoBehaviour:
     type: 3}
   m_PointAction: {fileID: 8453540907754148444, guid: 6a0c966036366394aa1b269b0e1a2092,
     type: 3}
-  m_MoveAction: {fileID: 0}
-  m_SubmitAction: {fileID: 0}
+  m_MoveAction: {fileID: 3710738434707379630, guid: 6a0c966036366394aa1b269b0e1a2092,
+    type: 3}
+  m_SubmitAction: {fileID: 3494887683000424581, guid: 6a0c966036366394aa1b269b0e1a2092,
+    type: 3}
   m_CancelAction: {fileID: 0}
   m_LeftClickAction: {fileID: 3494887683000424581, guid: 6a0c966036366394aa1b269b0e1a2092,
     type: 3}

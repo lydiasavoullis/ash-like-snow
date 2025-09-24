@@ -128,18 +128,11 @@ public class DialogueController : MonoBehaviour
     {
         gameControls = new GameControls();
         gameControls.UI.Continue.performed += ctx => ProgressDialogue();
+        //gameControls.UI.Navigate.performed += NavigateButtons;
         
     }
-    private void OnEnable()
+    private void ProgressDialogue()
     {
-        gameControls.UI.Enable();
-    }
-    private void OnDisable()
-    {
-        gameControls.UI.Disable();
-    }
-
-    private void ProgressDialogue() {
         //Mouse.current.rightButton.wasPressedThisFrame && 
 
         if (GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
@@ -157,7 +150,29 @@ public class DialogueController : MonoBehaviour
 
         }
     }
-    
+    public void NavigateButtons(InputAction.CallbackContext direction)
+    {
+        //Vector2 dir = direction.ReadValue<Vector2>();
+        //Debug.Log("Moved " + dir.ToString());
+        //Button currentButton;
+        //for (int i = 0; i < this.transform.childCount; i++)
+        //{
+            
+        //    if (this.transform.GetChild(i).GetComponent<Button>().)
+        //    {
+        //        currentButton = this.transform.GetChild(i).GetComponent<Button>();
+        //        int newIndex = i + (int)dir.x;
+        //        if (newIndex < 0 || newIndex> this.transform.childCount) {
+        //            newIndex = 0;
+        //        }
+        //        this.transform.GetChild(newIndex).GetComponent<Button>().Select();
+        //        return;
+        //    }
+        //}
+        //this.transform.GetChild(0).GetComponent<Button>().;
+
+    }
+
 
     public void GetButtons(GameObject choices)
     {
@@ -166,15 +181,18 @@ public class DialogueController : MonoBehaviour
             loadedButtons.Add(choices.transform.GetChild(i).GetComponent<Button>());
         }
     }
-    //navigation is + or - 1 depending on whether you are going right or left
-    public void NavigateButtons(int navDirection) {
-        for (int i = 0; i < this.transform.childCount; i++)
-        {
-            if (this.transform.GetComponent<Button>().IsInvoking()) {
-                this.transform.GetChild(i - 1).GetComponent<Button>().Select();
-            }
-        }
+    private void OnEnable()
+    {
+        gameControls.UI.Enable();
     }
+    private void OnDisable()
+    {
+        gameControls.UI.Disable();
+    }
+
+    
+    //navigation is + or - 1 depending on whether you are going right or left
+    
     private void Update()
     {
         if (gameControls.UI.FastForward.WasPerformedThisFrame())
