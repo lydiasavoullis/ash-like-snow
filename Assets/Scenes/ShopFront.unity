@@ -1141,6 +1141,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8848884764565041225, guid: 592dfa33af288aa42b181106f648c293,
+        type: 3}
+      propertyPath: m_FirstSelected
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8848884764565041227, guid: 592dfa33af288aa42b181106f648c293,
         type: 3}
       propertyPath: m_Name
@@ -1291,7 +1296,7 @@ PrefabInstance:
     - target: {fileID: 8851326284635976694, guid: 926df3e508864b446ad7e8201883bef2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1608,7 +1613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
+  m_SendPointerHoverToParent: 0
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -1616,19 +1621,22 @@ MonoBehaviour:
     type: 3}
   m_PointAction: {fileID: 8453540907754148444, guid: 6a0c966036366394aa1b269b0e1a2092,
     type: 3}
-  m_MoveAction: {fileID: 0}
-  m_SubmitAction: {fileID: 3494887683000424581, guid: 6a0c966036366394aa1b269b0e1a2092,
+  m_MoveAction: {fileID: 3710738434707379630, guid: 6a0c966036366394aa1b269b0e1a2092,
     type: 3}
-  m_CancelAction: {fileID: 0}
+  m_SubmitAction: {fileID: -3250836416841926616, guid: 6a0c966036366394aa1b269b0e1a2092,
+    type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: 6a0c966036366394aa1b269b0e1a2092,
+    type: 3}
   m_LeftClickAction: {fileID: 3494887683000424581, guid: 6a0c966036366394aa1b269b0e1a2092,
     type: 3}
   m_MiddleClickAction: {fileID: 0}
   m_RightClickAction: {fileID: -880019612483967427, guid: 6a0c966036366394aa1b269b0e1a2092,
     type: 3}
-  m_ScrollWheelAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: -4319600547529551337, guid: 6a0c966036366394aa1b269b0e1a2092,
+    type: 3}
   m_TrackedDevicePositionAction: {fileID: 0}
   m_TrackedDeviceOrientationAction: {fileID: 0}
-  m_DeselectOnBackgroundClick: 1
+  m_DeselectOnBackgroundClick: 0
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
 --- !u!114 &538893429
@@ -1871,6 +1879,11 @@ PrefabInstance:
       propertyPath: saveSlotMenu
       value: 
       objectReference: {fileID: 1008350808}
+    - target: {fileID: 1487659658440595362, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1487659658690599032, guid: c992ca5ce5fa7ad4dbbdc57ecae6488a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target

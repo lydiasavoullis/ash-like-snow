@@ -10,6 +10,7 @@ using System.IO;
 using System.Threading;
 using UnityEngine.InputSystem;
 using System;
+using UnityEngine.EventSystems;
 
 public class DialogueController : MonoBehaviour
 {
@@ -78,7 +79,6 @@ public class DialogueController : MonoBehaviour
     GameObject optionsMenu;//if active we don't want to advance the story
     [SerializeField]
     GameObject weatherBackground;
-    List<Button> loadedButtons;
     #endregion
     #region controllers
     //public bool effectJustPlayed = false;
@@ -96,7 +96,7 @@ public class DialogueController : MonoBehaviour
 
     #endregion
     #region PlayerInput
-    GameControls gameControls; 
+    GameControls gameControls;
     #endregion
     void Start()
     {
@@ -121,16 +121,17 @@ public class DialogueController : MonoBehaviour
         //}
         saveControl.PopulateScrollList(saveSlot, scrollList, inkJSON, optionsMenu);
         audioManager = GameObject.FindGameObjectWithTag("AudioManager");
-        
 
     }
     private void Awake()
     {
         gameControls = new GameControls();
         gameControls.UI.Continue.performed += ctx => ProgressDialogue();
-        //gameControls.UI.Navigate.performed += NavigateButtons;
         
+        //gameControls.UI.Navigate.performed += NavigateButtons;
+
     }
+    
     private void ProgressDialogue()
     {
         //Mouse.current.rightButton.wasPressedThisFrame && 
@@ -150,37 +151,7 @@ public class DialogueController : MonoBehaviour
 
         }
     }
-    public void NavigateButtons(InputAction.CallbackContext direction)
-    {
-        //Vector2 dir = direction.ReadValue<Vector2>();
-        //Debug.Log("Moved " + dir.ToString());
-        //Button currentButton;
-        //for (int i = 0; i < this.transform.childCount; i++)
-        //{
-            
-        //    if (this.transform.GetChild(i).GetComponent<Button>().)
-        //    {
-        //        currentButton = this.transform.GetChild(i).GetComponent<Button>();
-        //        int newIndex = i + (int)dir.x;
-        //        if (newIndex < 0 || newIndex> this.transform.childCount) {
-        //            newIndex = 0;
-        //        }
-        //        this.transform.GetChild(newIndex).GetComponent<Button>().Select();
-        //        return;
-        //    }
-        //}
-        //this.transform.GetChild(0).GetComponent<Button>().;
 
-    }
-
-
-    public void GetButtons(GameObject choices)
-    {
-        for (int i = 0; i < choices.transform.childCount; i++)
-        {
-            loadedButtons.Add(choices.transform.GetChild(i).GetComponent<Button>());
-        }
-    }
     private void OnEnable()
     {
         gameControls.UI.Enable();
@@ -189,10 +160,7 @@ public class DialogueController : MonoBehaviour
     {
         gameControls.UI.Disable();
     }
-
-    
     //navigation is + or - 1 depending on whether you are going right or left
-    
     private void Update()
     {
         if (gameControls.UI.FastForward.WasPerformedThisFrame())
@@ -493,6 +461,10 @@ public class DialogueController : MonoBehaviour
 
         }
         GameVars.hasLoadedButtons = true;
+        GameObject.Find("EventSystem").gameObject.GetComponent<EventSystem>().firstSelectedGameObject = this.transform.GetChild(0).gameObject;
+        this.transform.GetChild(0).GetComponent<Button>().Select();
+
+
     }
     public Button ReturnButtonType(string buttonName)
     {

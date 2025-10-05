@@ -10,6 +10,9 @@ TagManager:
   - InkController
   - character
   - AudioManager
+  - EventSystem
+  - MenuIcon
+  - MenuButtons
   layers:
   - Default
   - TransparentFX
@@ -65,14 +68,14 @@ TagManager:
   - name: tv screen
     uniqueID: 456817297
     locked: 0
-  - name: text log
-    uniqueID: 3847785493
-    locked: 0
   - name: quit/back to menu modal box
     uniqueID: 2988147053
     locked: 0
   - name: mini menu
     uniqueID: 735258437
+    locked: 0
+  - name: text log
+    uniqueID: 3847785493
     locked: 0
   - name: Crossfade
     uniqueID: 345279693
