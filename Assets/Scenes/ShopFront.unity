@@ -1086,6 +1086,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 742757344972866147, guid: 592dfa33af288aa42b181106f648c293,
+        type: 3}
+      propertyPath: menuSystem
+      value: 
+      objectReference: {fileID: 1690543576}
     - target: {fileID: 8848884764565041224, guid: 592dfa33af288aa42b181106f648c293,
         type: 3}
       propertyPath: m_RootOrder
@@ -1160,10 +1165,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 538893429}
-    - targetCorrespondingSourceObject: {fileID: 8848884764565041227, guid: 592dfa33af288aa42b181106f648c293,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 538893428}
   m_SourcePrefab: {fileID: 100100000, guid: 592dfa33af288aa42b181106f648c293, type: 3}
 --- !u!1001 &477345899
 PrefabInstance:
@@ -1296,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 8851326284635976694, guid: 926df3e508864b446ad7e8201883bef2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1601,44 +1602,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 433380330}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &538893428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538893427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 0
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_PointAction: {fileID: 8453540907754148444, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_MoveAction: {fileID: 3710738434707379630, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_SubmitAction: {fileID: -3250836416841926616, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_CancelAction: {fileID: -1967631576421560919, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_LeftClickAction: {fileID: 3494887683000424581, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: -880019612483967427, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_ScrollWheelAction: {fileID: -4319600547529551337, guid: 6a0c966036366394aa1b269b0e1a2092,
-    type: 3}
-  m_TrackedDevicePositionAction: {fileID: 0}
-  m_TrackedDeviceOrientationAction: {fileID: 0}
-  m_DeselectOnBackgroundClick: 0
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
 --- !u!114 &538893429
 MonoBehaviour:
   m_ObjectHideFlags: 0

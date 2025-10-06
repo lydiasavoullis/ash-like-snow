@@ -18,10 +18,13 @@ public class ButtonNavigation : MonoBehaviour
     }
     private void OpenMenu()
     {
-        menuSystem.transform.GetChild(0).gameObject.SetActive(false);
-        menuSystem.transform.GetChild(1).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("MenuButtons").transform.GetChild(1).GetComponent<Button>().Select();//select first button
-        //dControl.gameObject.SetActive(false);
+        if (GameStates.MenuState == MenuState.NoneOpen) {
+            menuSystem.transform.GetChild(0).gameObject.SetActive(false);
+            menuSystem.transform.GetChild(1).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("MenuButtons").transform.GetChild(1).GetComponent<Button>().Select();//select first button
+                                                                                                                  //dControl.gameObject.SetActive(false);
+        }
+
     }
     private void CloseMenu()
     {

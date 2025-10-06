@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     //https://www.youtube.com/watch?v=4I0vonyqMi8
     public static GameManager Instance;
     public GameState State;
+    public MenuState MenuState;
     //https://www.youtube.com/watch?v=j_eQGp-IbCE
     private void Awake()
     {
@@ -25,14 +26,27 @@ public class GameManager : MonoBehaviour
     }
     
 
-    // Update is called once per frame
     public void UpdateGameState(GameState newState)
     {
         State = newState;
+    }
+    public void UpdateMenuState(MenuState newState)
+    {
+        MenuState = newState;
     }
 }
 
 public enum GameState { 
     InMenu,
     InGame
+}
+/***
+ * Any dialogues open on screen
+ */
+public enum MenuState
+{
+    TextLogOpen,
+    MenuDialogueOpen,
+    QuitDialogueOpen,
+    NoneOpen
 }

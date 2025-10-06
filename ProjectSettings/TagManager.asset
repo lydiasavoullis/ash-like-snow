@@ -83,3 +83,6 @@ TagManager:
   - name: options
     uniqueID: 1035061141
     locked: 0
+  - name: options dialogues
+    uniqueID: 332168103
+    locked: 0

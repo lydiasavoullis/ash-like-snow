@@ -13,12 +13,22 @@ public class ScrollRectAutoScroll : MonoBehaviour, IPointerEnterHandler, IPointe
     private ScrollRect m_ScrollRect;
 
     private Vector2 m_NextScrollPosition = Vector2.up;
+
+    GameControls gameControls;
     void OnEnable()
     {
+        gameControls = new GameControls();
+        gameControls.UI.Enable();
+        gameControls.UI.Navigate.performed += ctx => NewInputScroll();
         if (m_ScrollRect)
         {
             m_ScrollRect.content.GetComponentsInChildren(m_Selectables);
         }
+    }
+    private void OnDisable()
+    {
+        gameControls.UI.Disable();
+
     }
     void Awake()
     {
@@ -35,7 +45,8 @@ public class ScrollRectAutoScroll : MonoBehaviour, IPointerEnterHandler, IPointe
     void Update()
     {
         // Scroll via input.
-        InputScroll();
+        //InputScroll();
+        
         if (!mouseOver)
         {
             // Lerp scrolling code.
@@ -46,16 +57,23 @@ public class ScrollRectAutoScroll : MonoBehaviour, IPointerEnterHandler, IPointe
             m_NextScrollPosition = m_ScrollRect.normalizedPosition;
         }
     }
-    void InputScroll()
-    {
+    void NewInputScroll() {
         if (m_Selectables.Count > 0)
         {
-            if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical") || Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
-            {
-                ScrollToSelected(false);
-            }
+            ScrollToSelected(false);
         }
     }
+    //void InputScroll()
+    //{
+    //    if (m_Selectables.Count > 0)
+    //    {
+    //        //Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical") || Input.GetButton("Horizontal") || Input.GetButton("Vertical")
+    //        if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical") || Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+    //        {
+    //            ScrollToSelected(false);
+    //        }
+    //    }
+    //}
     void ScrollToSelected(bool quickScroll)
     {
         int selectedIndex = -1;
