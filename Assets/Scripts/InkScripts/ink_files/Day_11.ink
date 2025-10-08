@@ -2,7 +2,7 @@
 ¬
 ~newsPicture = "headline11"
 ~newsCaption = "Art?"
-~newsAnnouncement = "Larger than life - strange sculpture appears in the middle of a park. Is it some kind of political statement, or just a prank? 'It's scaring the ducks.' said local resident."
+~newsAnnouncement = "Larger than life - strange sculpture appears in the middle of a park. Is it some kind of political statement, or just a prank? 'It's scaring the ducks,' says local resident."
 ¬
 ~music="Rise and shine"
 ~newsAnnouncement = ""
@@ -20,15 +20,16 @@ I can do it myself
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 -One more day.
+{PlayAnimation("Pandora", "jump")}
 Until my Christmas Eve extravaganza!
 ~currentSpeaker=you
-You make it sound very fancy.
+It's nice to see you excited about something.
+Even though I don't share the sentiment.
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
-It will be fancy.
-I promise.
+Oh don't worry. You will.
 ~currentSpeaker=you
-Well, I –
+That sounded vaguely ominous.
 ~characters+=kent
 {ChangeSprite("Kent", "kent_normal")}
 ~sfx="open door"
@@ -36,34 +37,33 @@ Well, I –
 ~currentSpeaker=comic
 Hey girls.
 ~currentSpeaker=you
-//{allbooks ? mr_therm: -> mr_thermistor->} 
-//{allbooks ? bioworld: -> bworld->} 
 ->kent_book_check->
 ~currentSpeaker=you
-Long time no see
+Long time no see.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 It’s been a day, don’t get clingy on me.
 ~currentSpeaker=you
 We pine for you {comic}, we yearn.
-{ChangeSprite("Pandora", "pandora_happy")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
-I wouldn’t quite use those specific words, but I’m certainly glad you’re back. 
+I wouldn’t quite use those specific words.
+{ChangeSprite("Pandora", "pandora_happy")}
+But I’m certainly glad you’re back {comic}! 
 {ChangeSprite("Pandora", "pandora_normal")}
 I assume you were covering the terrorist story?
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-Yes, but please I don’t want to talk about it anymore.
-It’s giving me a headache.
+Yes, but please I don’t want to talk about it anymore. It’s giving me a headache.
+I just hope my overtime cheque comes through soon. 
 {ChangeSprite("Kent", "kent_sad")}
-I hope my overtime cheque comes through soon, I doubt it'll feel like much compensation.
+I doubt it'll feel like much compensation though.
 ~currentSpeaker=you
 I’m just so relieved you’re not frequenting another bookstore.
 I couldn’t take the betrayal.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Oh you know me.
-{ChangeSprite("Kent", "kent_happy")}
 I’m a one kind of bookstore kind of guy.
 {ChangeSprite("Pandora", "pandora_suggestive")}
 ~currentSpeaker=android
@@ -72,14 +72,11 @@ We're glad you’re not some kind of bookstore slut.
 ~currentSpeaker=comic
 Me? Never.
 {ChangeSprite("Pandora", "pandora_mean")}
-~currentSpeaker=android
-Good.
 ~currentSpeaker=you
 So, you’re still up for our super Christmas Eve party extravaganza. It's going down tomorrow evening.
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
-I remember. I promise I won’t stand you up.
-{ChangeSprite("Kent", "kent_normal")}
+I remember now. I promise I won’t stand you up.
 I’m going to bring loads of booze and snacks.
 ~currentSpeaker=you
 That’s music to my ears. 
@@ -102,9 +99,10 @@ So, you could theoretically drink.
 I could, but I don’t need to. There’s no desire, I don’t get drunk. I sort of taste the drink a little bit, but I don’t find it so entertaining.
 ~currentSpeaker=you
 But does that mean we could like, toast with you?
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 I didn’t think about that.
+{ChangeSprite("Pandora", "pandora_pensive")}
 I suppose there is a social aspect to drinking.
 {ChangeSprite("Pandora", "pandora_happy")}
 I could join in on that.
@@ -189,7 +187,7 @@ I don’t know how to feel anymore.
 {ChangeSprite("Kent", "kent_sad")}
 I know her as a person, and I feel sorry for her.
 {ChangeSprite("Kent", "kent_side_serious")}
-But also I’ve been working on this for so long my eyes have gone numb and I’m sick of the whole Blue family at the moment. These parasites had this coming for a long time.
+But also I’ve been working on this for so long my eyes have gone numb and I’m sick of the whole Blue family at the moment. These parasites had it coming for a long time.
 {ChangeSprite("Kent", "kent_upset")}
 And I really don’t like her father, if I didn't make that clear already.
 {ChangeSprite("Pandora", "pandora_shocked")}
@@ -229,7 +227,6 @@ A lot of them just killed themselves.
 A lot of them couldn’t get jobs anymore, they were tainted by their association with the strike.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
-Haha, don’t be silly.
 There’s no way the government would allow that.
 …
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -239,7 +236,6 @@ Well, I get it, everything is shitty.
 What can we do about it?
 ~currentSpeaker=comic
 {ChangeSprite("Kent", "kent_side_serious")}
-I don’t know.
 I don’t know anymore.
 To be honest, I hoped you would have some ideas.
 {ChangeSprite("Pandora", "pandora_pensive")}
@@ -248,24 +244,33 @@ So, what do you think of {snob}?
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 Obviously, she can’t control what her father does. 
-But, she is connected to that family. 
-I’m sure she gets a generous allowance from Blue, there’s no way her job alone covers all her lavish expenses. 
+But, she is connected to thim. 
+I’m almost certain that her job alone doesn't cover all of her lavish expenses. 
 She is a free, mentally capable adult, and yet she hasn’t denounced her family. 
 {ChangeSprite("Kent", "kent_side_serious")}
 So, to some extent she is complicit.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-I don’t know. That sounds a bit harsh.
+That sounds a bit harsh.
 ~currentSpeaker=comic
-You know what’s harsh? Dying of pneumonia because you’re homeless. Being shot by the police on your way to the shops. Getting blown up in an airstrike. 
+You know what’s harsh? 
+Dying of pneumonia because you’re homeless. 
+Being shot by the police on your way to work. 
+Getting blown up in an airstrike. 
 ~currentSpeaker=android
-What's that got to do with Blue?
-{ChangeSprite("Kent", "kent_amused")}
+I don't see how any of that is relevant to this matter?
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
-What's that got to do with the man who influences almost all the decisions about how our government is run and who we align ourselves with politically...
-{ChangeSprite("Pandora", "pandora_pensive")}
+You don't see how that's relevant in relation to the man who heavily influences our government on a day to day basis?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
-Hmm.
+I'm just saying.
+Being unfriendly to {snob} isn't going to change any of that.
+{ChangeSprite("Kent", "kent_side_normal")}
+~currentSpeaker=comic
+Nah, it isn't.
+{ChangeSprite("Kent", "kent_happy")}
+But it's going to make me feel a bit better.
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
 ~sfx="open door"
@@ -273,7 +278,6 @@ Hmm.
 ~currentSpeaker=snob
 Hey.
 ~currentSpeaker=you
-//{allbooks ? LUX_gear: -> LUX_protective_gear->} 
 ->lavender_book_check->
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
@@ -371,7 +375,7 @@ Did you…did you see my dad?
 ~currentSpeaker=comic
 No, I'm not that important.
 {ChangeSprite("Kent", "kent_side_normal")}
-But I doubt even the people at the door got to see him. Security was locked tight.
+I doubt even the people at the door got to see him. Security was locked tight.
 {ChangeSprite("Kent", "kent_normal")}
 Haven’t you spoken to him?
 ~currentSpeaker=snob
@@ -382,7 +386,6 @@ Why? Scared the phones are being monitored?
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Uh–yeah I think, any information could give away my location and then I would be in danger.
-He’s so considerate.
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 Odd.
@@ -504,7 +507,7 @@ The look?
 ~currentSpeaker=android
 Soon, she will narrow her eyes and wrinkle her nose, and you’ll explode into a ball of fire.
 ~currentSpeaker=comic
-I didn’t know I was sharing the room with a telekinetic pyromaniac, sorry.
+I didn’t know I was sharing the room with a telekinetic pyromaniac. Sorry.
 ~currentSpeaker=you
 You’re forgiven. What {android} said is true.
 ~currentSpeaker=comic
@@ -544,26 +547,23 @@ That’s not a problem I have.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=comic
 …
-~currentSpeaker=android
-…
 ~currentSpeaker=you
 Don’t look at me like that! 
 Never been a board game fanatic.
-I just found them depressing.
 They feel like a crutch when you don't have anything interesting to talk about.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Sometimes, people just run out of things to talk about and just want to have an excuse to spend time around each other.
+Sometimes, people just run out of things to talk about, and just want to have an excuse to spend time around each other.
 ~currentSpeaker=you
-Then just watch a film! Geez. 
-{ChangeSprite("Pandora", "pandora_sad")}
+Then just watch a damn film!
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 Are you arguing?
+{ChangeSprite("Pandora", "pandora_normal")}
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 No. Just a little disagreement.
-Is there a screen where we could watch a film, maybe if {you} here gets a little crabby?
-{ChangeSprite("Pandora", "pandora_normal")}
+Is there a screen where we could watch a film? Just in case {you} here gets a little crabby.
 ~currentSpeaker=android
 There’s a computer in the basement, we could probably put something on there. The screen is fairly big.
 {ChangeSprite("Kent", "kent_happy")}
@@ -634,7 +634,7 @@ Well, good music, drinks, fun activities…Oh wait a minute, music?
 ~currentSpeaker=android
 Yes! We need music. How did I forget about this? I love music.
 ~currentSpeaker=you
-You can play Cobalt Dragons if you like.
+You can play Cobalt Dragons if you like?
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Well, I will. But we also need music that the others will like too.
@@ -652,7 +652,7 @@ Just getting my money’s worth out of you.
 You’re not even getting any money.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
-Uh, who cares.
+Uh, who cares?
 {ChangeSprite("Pandora", "pandora_happy")}
 I just feel like tomorrow is going to be amazing.
 Don’t you?

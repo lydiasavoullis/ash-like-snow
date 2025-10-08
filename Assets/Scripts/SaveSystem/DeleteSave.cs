@@ -7,6 +7,33 @@ using UnityEngine.UI;
 public class DeleteSave : MonoBehaviour
 {
     public GameObject saveSlotButton;
+    GameControls gameControls;
+    [SerializeField]
+    public bool saveSelected = false;
+    private void OnEnable()
+    {
+        gameControls = new GameControls();
+        gameControls.UI.Enable();
+        gameControls.UI.Delete.performed += ctx => DeleteButtonTrigger();
+    }
+    private void OnDisable()
+    {
+        gameControls.UI.Disable();
+    }
+    void DeleteButtonTrigger()
+    {
+        if (saveSelected == true) {
+            //saveSlotButton.transform.parent.GetChild(saveSlotButton.transform.GetSiblingIndex()).gameObject.GetComponent<Selectable>().Select();
+            saveSlotButton.transform.parent.GetChild(0).gameObject.GetComponent<Selectable>().Select();
+            DeleteSelf();
+        }
+        
+    }
+    public void IsSelected(bool state)
+    {
+        saveSelected = state;
+    }
+
     //make delete trigger more user friendly
     public void DeleteSelf() {     
         Destroy(saveSlotButton);

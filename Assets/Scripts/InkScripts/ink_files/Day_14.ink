@@ -302,7 +302,6 @@ Not. Funny.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
 Sorry.
-=skip_to_air_vent
 {ChangeSprite("Kent", "kent_normal")}
 Ok, let's hoist you up.
 ~currentSpeaker = you
@@ -786,13 +785,12 @@ Go to bed.
 Can you watch a film with me tomorrow?
 ~currentSpeaker=man
 I'm so tired.
-I don't want to watch some stupid kids film.
+I don't want to watch a kids film.
 ~currentSpeaker=you
 It doesn't have to be a kids film.
 ~currentSpeaker=man
 I'm busy. Leave it.
 We're having a big party soon?
-Isn't that good enough?
 ~currentSpeaker=you
 I don't like parties.
 ~currentSpeaker=man
@@ -800,28 +798,28 @@ Who doesn't like parties?
 ~currentSpeaker=you
 I want to be with my friends.
 ~currentSpeaker=man
-Well tough luck. Your friends are out skiing.
+They'll be back from their trip soon enough.
 ~currentSpeaker=you
-I could have gone with them.
+I could have gone skiing with them.
 ~currentSpeaker=man
 And break your neck?
-After all we've done for you, you're not throwing away your life for something stupid.
+After all we've done for you, I'm not letting you throw your life away.
+You've got studying to do anyway.
 ~currentSpeaker=you
-Your friends let their kids go.
+Other parents let their kids go.
 ~currentSpeaker=man
-That's because they're just their step-kids.
-You're ours. We care about you.
-And you're clever, one day you're going to do something.
-You're going to be something.
+That's because they don't care about their kids. Just their own self interest.
+You're clever, one day you're going to do something.
+You're going to actually be something.
 ~currentSpeaker=you
 Really?
 ~currentSpeaker=man
 You're like an adult already.
-I thought you'd be sick of being around those babies.
+I thought you'd be sick of being around other kids.
 ~currentSpeaker=you
 ...I do sometimes feel a bit distant from them.
 ~currentSpeaker=man
-I don't want to hear you complain. You hear me.
+It's not easy, but you'll get through it.
 ~currentSpeaker=you
 Yes Dad.
 ~currentSpeaker=man
@@ -843,9 +841,13 @@ WHAT?!
 ~currentSpeaker=you
 Say it.
 ~currentSpeaker=man
-Erm well...
+...
 ~currentSpeaker=you
 Say it you fucking coward.
+~currentSpeaker=man
+Right now you're just potential. You could be better. You know it. But to hear praise, you need to deserve it.
+In other words-
+I'll say it when you have done something to make me proud.
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
