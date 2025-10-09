@@ -43,8 +43,9 @@ Yes…I have it.
 Excellent.
 {snappedOut != "yes":
 ~currentSpeaker=you
-When I bought those books it triggered a memory.
-Ada asked me to give you a USB.
+When I bought those books I got this email from an unknown address.
+A file was attached to it.
+I put it on a USB.
 Can I ask you–
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
@@ -67,7 +68,7 @@ You trust Ada, right? You know that she wanted you to do this, otherwise you wou
     ~currentSpeaker = trader
     Drugged by someone?
     ~currentSpeaker=you
-    I understand, it sounds dodgy. I swear I wouldn't touch that stuff if you paid me. 
+    I understand, it sounds dodgy.
     ~currentSpeaker = trader
     Do you need me to get rid of this individual?
     ~currentSpeaker = you
@@ -89,9 +90,9 @@ You trust Ada, right? You know that she wanted you to do this, otherwise you wou
     But…no that can’t be right
     {ChangeSprite("Stranger", "shadow_sad")}
     ~currentSpeaker = trader
-    I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. You need to get your shit together.
-    I can’t risk telling you anymore.
-    You need to figure it out yourself. 
+    I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. 
+    You need to get your shit together.
+    I can’t risk telling you anymore. 
 }
 ~currentSpeaker=android
 Hey, what’s going on over there?
@@ -117,9 +118,9 @@ So do you have what I asked for?
 It's you again!
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
-The books. Where are the books?
+The file. Where is it?
 ~currentSpeaker=you
-I'm sorry, you didn't ask for any books.
+I'm sorry, what file?
 ~currentSpeaker=trader
 It was part of our agreement with Lovelace.
 I can see you are not quite all there.

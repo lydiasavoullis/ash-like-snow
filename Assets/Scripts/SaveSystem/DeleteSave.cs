@@ -14,17 +14,26 @@ public class DeleteSave : MonoBehaviour
     {
         gameControls = new GameControls();
         gameControls.UI.Enable();
-        gameControls.UI.Delete.performed += ctx => DeleteButtonTrigger();
+        gameControls.UI.Delete.performed += ctx => StartCoroutine(DeleteButtonTrigger());
     }
     private void OnDisable()
     {
         gameControls.UI.Disable();
     }
-    void DeleteButtonTrigger()
+
+    IEnumerator DeleteButtonTrigger()
     {
         if (saveSelected == true) {
-            //saveSlotButton.transform.parent.GetChild(saveSlotButton.transform.GetSiblingIndex()).gameObject.GetComponent<Selectable>().Select();
-            saveSlotButton.transform.parent.GetChild(0).gameObject.GetComponent<Selectable>().Select();
+            int index = this.transform.GetSiblingIndex();
+            if (index == this.transform.parent.childCount)
+            {
+                saveSlotButton.transform.parent.GetChild(0).GetComponent<Selectable>().Select();
+            }
+            else
+            {
+                saveSlotButton.transform.parent.GetChild(index + 1).GetComponent<Selectable>().Select();
+            }
+            yield return new WaitUntil(()=>!saveSelected);
             DeleteSelf();
         }
         
