@@ -617,7 +617,7 @@ Is that it?
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Just imagine a dark, damp, dingy basement in London.
-{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}
+{pandoraPoints<4 && !gaveTraderFile: ->pandora_bad_ending}
 ~currentSpeaker=you
 Hmm, I feel like this is kind of cruel to the others.
 They seemed to be enjoying it here.
@@ -671,7 +671,7 @@ I don’t know what happened there. I suppose that was Ada’s little project. I
  {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I’m still figuring out the details.
-But, basically Ada, her husband and my father were working on this virtual reality software which was meant to act as therapy. 
+But, basically Ada, her husband, and my father were working on this virtual reality software which was meant to act as therapy. 
 {ChangeSprite("Pandora", "pandora_normal")}
 Creating a virtual world as therapy for people’s minds, to help them confront trauma in a safe environment.
 ~currentSpeaker=you
@@ -679,11 +679,15 @@ I’m listening.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I don’t really know anymore than that. They didn’t really trust me with anything else.
-{pandoraPoints<6 && snappedOut=="no": ->unaware_no_trust}#you don't know pandora was drugging you and don't trust her very much
-{pandoraPoints<6 && snappedOut=="yes": ->snapped_out_no_trust}#you know pandora was drugging you and don't trust her very much
-{pandoraPoints>=6 && snappedOut=="yes": ->snapped_out_trust}#you know pandora was drugging you but trust her
-
-= unaware_no_trust
+{pandoraPoints<6 && !snappedOut: ->unaware_no_trust}#you don't know pandora was drugging you and don't trust her very much
+{pandoraPoints<6 && snappedOut: ->snapped_out_no_trust}#you know pandora was drugging you and don't trust her very much
+{pandoraPoints>=6 && snappedOut: ->snapped_out_trust}#you know pandora was drugging you but trust her
+{pandoraPoints>=6 && !snappedOut: ->unaware_trust}#you don't know pandora was drugging you but trust her
+=unaware_trust
+TODO
+//cas will feel a true betrayal in this one, as she trusts Pandora but was unaware of her betrayal
+//Pandora will be more willing to admit things to her than unaware no trust
+//Copy and paste the scenario from there and then edit it a bit
 #go straight to day 14 after this
 ~currentSpeaker=you
 I see, that's alright then.
@@ -709,7 +713,8 @@ I don't know. I just feel like the past is super fuzzy right now.
 Sometimes that can be a side effect of mental illness.
 I have something to admit to you. I feel quite guilty about it.
 {ChangeSprite("Pandora", "pandora_sad")}
-I know, we're not exactly close. But I hope you understand.
+I've become quite close to you during the time that we've spent together.
+And I don't feel right about what I've done.
 ~currentSpeaker=you
 Eh? What?
 ~currentSpeaker=android
@@ -744,29 +749,21 @@ Oh?
 ~currentSpeaker=android
 Ada and her husband created me. I'm not approved by the government.
 I did study all the necessary university courses to become a therapy IOI.
-But I don't have the same kind of protections that an IOI would. I'm more human, and hence I make human mistakes.
 ~currentSpeaker=you
-That sounds dangerous, there's a reason IOIs have safety blocks. 
-And that added with the fact that you haven't been around for long. You might have the knowledge, but you don't have solid judgement.
+You might have the knowledge, but you don't have solid judgement.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 That's a good way of putting it. 
 I can't think of a good reason why you wouldn't take your medication though.
 ~currentSpeaker=you
-Wait, I remember something...
-You didn't read that article about Fate?
-{ChangeSprite("Pandora", "pandora_mean")}
-~currentSpeaker=android
-There was little scientific evidence behind that.
-At least I read that, in another article.
-~currentSpeaker=you
-It's so hard to trust the information we receive these days.
-I just know it didn't work for me.
+I just know it didn't work for me. 
+I had a bad...reaction to it.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 You don't think, maybe this could be causing your memory loss?
 ~currentSpeaker=you
-Maybe...I don't know.
+Yes {android}. This is exactly what's causing my memory loss. It happens when you start Fate. 
+It's almost like resetting your life.
 ~currentSpeaker=android
 Now, it does make a bit of sense.
 Sometimes these drugs can affect the brain in strange ways.
@@ -783,6 +780,78 @@ And then you can have a right go at me.
 ~currentSpeaker=you
 I don't think that will help to be honest.
 I appreciate the gesture though. 
+I keep feeling like I forgot something very important though.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+I hope you remember it soon. 
+-> cas_admission
+= unaware_no_trust
+#go straight to day 14 after this
+~currentSpeaker=you
+I see, that's alright then.
+Do you have any idea why it didn't work on us?
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+I don't know {you}. I'm sorry.
+~currentSpeaker=you
+I wish I could remember something {lovelace} said to me. But it's gone now.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+There might be a reason for that.
+I have something to admit to you.
+~currentSpeaker=you
+Eh? What?
+~currentSpeaker=android
+I've been putting Fate in your drinks.
+~currentSpeaker=you
+WHAT?!
+{ChangeSprite("Pandora", "pandora_pensive")}
+~currentSpeaker=android
+Every day, when I ask if you want a tea or coffee, I slip it in.
+~currentSpeaker=you
+...
+Why?
+~currentSpeaker=android
+I saw you throw your pills in the bin.
+And I didn't want you to get mentally unwell.
+The same thing happened to my father and he took his own life because of it.
+~currentSpeaker=you
+...
+That's not a good enough excuse.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+Sorry. Sorry. Sorry.
+~currentSpeaker=you
+You're a therapy IOI. You should know this.
+~currentSpeaker=android
+I'm kind of...unregisted.
+{ChangeSprite("Pandora", "pandora_pensive")}
+~currentSpeaker=android
+Ada and her husband created me. I'm not approved by the government.
+I did study all the necessary university courses to become a therapy IOI.
+~currentSpeaker=you
+So you're illegal?
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+...yes
+~currentSpeaker=you
+Fuck. Fuck. Fuck. What has {lovelace} done?
+{ChangeSprite("Pandora", "pandora_pensive")}
+~currentSpeaker=android
+You don't think, maybe this could be causing your memory loss?
+~currentSpeaker=you
+Yes {android}. This is exactly what's causing my memory loss. It happens when you start Fate. 
+It fucks with your brain.
+~currentSpeaker=android
+That doesn't sound good.
+I'm so sorry. How can I make this up to you?
+~currentSpeaker=you
+I think that you've done enough.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+...
+~currentSpeaker=you
+It's so weird.
 I keep feeling like I forgot something very important though.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
@@ -1176,14 +1245,7 @@ It wasn’t just the dog, I hurt people, our company put others out of business 
 ~currentSpeaker=comic
 Yeah, I used to write reports about that.
 Funny though, I think I know which company you’re talking about…AutoCarp, that’s a division of BlueCarp… 
-{ChangeSprite("Lavender", "lavender_sad")}
-~currentSpeaker=snob
-I see...trying to pin the blame on my father.
 {ChangeSprite("Lavender", "lavender_angry")}
-Cowards.
-{ChangeSprite("Kent", "kent_upset")}
-~currentSpeaker=comic
-I'm just putting things into perspective here.
 ~currentSpeaker=snob
 It doesn’t matter. You killed a helpless animal. It doesn’t matter how much drugs, or how much ‘stress’ you were under. You don’t kill things.
 ~currentSpeaker=you
@@ -1226,7 +1288,7 @@ Ok.
 Well that could have gone better.
 
 #diverging content, on whether you reveal Ada's plot or not
-{pandoraPoints>=6 && snappedOut=="yes":
+{pandoraPoints>=6 && snappedOut:
     ->secret_plot_reveal
   - else:
     ->keep_plot_secret

@@ -1,4 +1,4 @@
-==trader_satisfied==
+==trader_happy==
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
 ~sfx="open door"
@@ -15,18 +15,21 @@ Here's the USB.
 This is it?
 Are you sure?
 ~currentSpeaker=you
-Ada asked me to give it to you.
+I can't be 100% sure.
+But I remember the instructions {lovelace} gave me and I followed them.
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 Well I suppose that's good enough for me.
-It just makes me feel silly for telling you that riddle.
+I feel silly for worrying now.
+Thank you.
 ~currentSpeaker=you
-Don't worry abut it.
+Don't mention it.
 ~characters-=stranger
+~gaveTraderFile=true
 ~sfx="close door"
 ¬
 ->continue_day_12
-==trader_happy==
+==trader_satisfied==
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~characters+=stranger
 ~sfx="open door"
@@ -41,7 +44,6 @@ Yes…I have it.
 {ChangeSprite("Stranger", "shadow_amused")}
 ~currentSpeaker = trader
 Excellent.
-{snappedOut != "yes":
 ~currentSpeaker=you
 When I bought those books I got this email from an unknown address.
 A file was attached to it.
@@ -59,47 +61,31 @@ Trust you? I don’t even know who you are.
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 You trust Ada, right? You know that she wanted you to do this, otherwise you wouldn’t be doing this right?
-}
-{snappedOut == "yes":
-    ~currentSpeaker=you
-    I remember Ada asking me to give this USB to a strange man when he asks for it.
-    I was being drugged by someone, so I can't remember some details.
-    {ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker=you
+I can’t exactly remember her asking me, but somehow I know this is what she wanted.
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+You can’t remember….
+You’re not taking it again, are you?
+~currentSpeaker=you
+{ChangeSprite("Stranger", "shadow_neutral")}
     ~currentSpeaker = trader
-    Drugged by someone?
-    ~currentSpeaker=you
-    I understand, it sounds dodgy.
-    ~currentSpeaker = trader
-    Do you need me to get rid of this individual?
-    ~currentSpeaker = you
-    No! It's ok. Don't worry.
-  - else:
-    ~currentSpeaker=you
-    I can’t exactly remember her asking me, but somehow I know this is what she wanted.
-    {ChangeSprite("Stranger", "shadow_sad")}
-    ~currentSpeaker = trader
-    You can’t remember….
-    You’re not taking it again, are you?
-    ~currentSpeaker=you
-    Excuse me?
-    {ChangeSprite("Stranger", "shadow_neutral")}
-    ~currentSpeaker = trader
-    Fate. It makes you forget things. Look, you have to stop it.
-    ~currentSpeaker=you
-    I’ve been clean for nine months. 
-    But…no that can’t be right
-    {ChangeSprite("Stranger", "shadow_sad")}
-    ~currentSpeaker = trader
-    I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. 
-    You need to get your shit together.
-    I can’t risk telling you anymore. 
-}
+Fate. It makes you forget things. Look, you have to stop it.
+~currentSpeaker=you
+I’ve been clean for nine months. 
+But…no that can’t be right
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+I don’t know what’s going on with you, but Ada trusted you. I don’t know why, but it doesn’t matter now. 
+You need to get your shit together.
+I can’t risk telling you anymore. 
 ~currentSpeaker=android
 Hey, what’s going on over there?
 {ChangeSprite("Stranger", "shadow_neutral")}
 ~currentSpeaker = trader
 I need to go.
 Goodbye {you}.
+~gaveTraderFile=true
 ~characters-=stranger
 ~sfx="close door"
 ¬
@@ -122,7 +108,7 @@ The file. Where is it?
 ~currentSpeaker=you
 I'm sorry, what file?
 ~currentSpeaker=trader
-It was part of our agreement with Lovelace.
+It was part of our agreement with {lovelace}.
 I can see you are not quite all there.
 {ChangeSprite("Stranger", "shadow_neutral")}
 It's fine. I will just have to do this another way.
@@ -141,29 +127,21 @@ Goodbye.
 ==day_12==
 ~scene="GenericScene"
 ¬
-// ~allbooks+=Alice_in_Wonderland
-// ~allbooks+=Howls_Moving_Castle
-// ~allbooks+=t_lion_witch_wardrobe
 ~newsPicture = "headline12"
 ~newsCaption = "Mask"
 ~newsAnnouncement = "New state of the art masks are released today by Blue-Carp manufacturing. They're 150% more efficient than any other model on the market, but cost more than most can afford. Experts explain why they're worth every penny..."
 ¬
 ~newsAnnouncement = ""
-{(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe):
-    ~strangerbooks="true"
-  - else:
-  ~strangerbooks="false"
-}
 
-strangerbooks: {strangerbooks}
+hasFile: {hasFile}
 snapped out: {snappedOut}
 
 { 
-- (gaveTraderMoney=="yes"):
+- (gaveTraderFile==true):
 -> continue_day_12
-- (strangerbooks=="true" && funds>=500):
+- (hasFile==true && snappedOut==true):
 ->trader_happy
-- (snappedOut=="yes"):
+- (hasFile==true):
 ->trader_satisfied
 - else:
 ->trader_unhappy

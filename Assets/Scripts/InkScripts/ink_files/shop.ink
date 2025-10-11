@@ -14,6 +14,10 @@
 ~button="book"
 Remaining funds: {funds}
 + Go to children's fiction
+{~I bet {android} would love a new book.| Maybe a new book for {android}?| Let's see if there's anything I can get {android}.}
+//this logic is true when you are 'in the know' but you haven't gotten all the books you need yet
+{!hasFile && snappedOut && !((allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe)): And I still need some of those books Ada asked for: Alice in Wonderland, Howl's Moving Castle and The Lion the Witch and the Wardrobe.}//|Otherwise this is written
+{!hasFile && day>7 && snappedOut && !((allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe)): And that weird guy said I need: The rabbithole, the castle and the wardrobe. Why am I thinking about this now?}
 ->buy_childrens_books
 //!(allbooks ? LUX_222)
 +{day>=1}{allbooks !? LUX_222}[LUX Autumn issue 222(£200 : Sells for £400)]
@@ -140,9 +144,11 @@ Remaining funds: {funds}
 ->buy_childrens_books
 +{day>=3}{allbooks !? t_lion_witch_wardrobe}[Buy The Lion the Witch and the Wardrobe (£40 : no sell price)]
 {buy_book(t_lion_witch_wardrobe, 40)}
+{(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe): -> receive_file}
 ->buy_childrens_books
 +{day>=4}{allbooks !? Howls_Moving_Castle}[Buy Howl's Moving Castle (£46 : no sell price)]
 {buy_book(Howls_Moving_Castle, 46)}
+{(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe): -> receive_file}
 ->buy_childrens_books
 +{day>=5}{allbooks !? the_wiz_oz}[Buy The Wizard of Oz (£50 : no sell price)]
 {buy_book(the_wiz_oz, 50)}
@@ -158,6 +164,7 @@ Remaining funds: {funds}
 ->buy_childrens_books
 +{day>=11}{allbooks !? alice_looking_glass}[Buy Alice Through the Looking-Glass (£60 : no sell price)]
 {buy_book(alice_looking_glass, 60)}
+{(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe): -> receive_file}
 ->buy_childrens_books
 +Back to main shop
 ->goto_shop
@@ -171,3 +178,12 @@ Remaining funds: {funds}
   - else:
     You don't have enough money.
 }
+
+===receive_file===
+When you purchase the children's e-book, you receive an email.
+The email has instructions to save this file to a USB.
+When you open the file, it's unreadable.
+It appears to be encrypted.
+You copy it onto a USB.
+~hasFile=true
+->buy_childrens_books

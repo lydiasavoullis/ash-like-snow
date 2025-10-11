@@ -24,6 +24,9 @@ INCLUDE night.ink
 ~music="A winters chill"
 ~scene="ENDCREDITS"
 ->END
+*[Simulate day 12]
+->day_12
+->END
 *[simulate end]
 ~taliPoints = 5
 ~lavenderPoints = 5
@@ -32,6 +35,7 @@ INCLUDE night.ink
 ~snappedOut = "yes"
 ->ending_check
 *[Simulate shop]
+~day=11
 ~scene="GenericScene"
 ¬
 ->next_day

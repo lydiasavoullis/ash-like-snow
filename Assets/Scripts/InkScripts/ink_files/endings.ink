@@ -13,11 +13,11 @@ You can see this text
 ->ending_check
 
 ==sim_snapped_out==
-*[snapped out yes]
-~snappedOut="yes"
+*[Secret plot success]
+~gaveTraderFile=true
 ->->
-*[snapped out no]
-~snappedOut="no"
+*[Secret plot fail]
+~gaveTraderFile=false
 ->->
 ==sim_pandora==
 *[pandora points low]
@@ -61,9 +61,9 @@ You can see this text
 ~scene = "GenericScene"
 //{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}#Done
 
-{snappedOut=="no": ->ada_fires_you->}  #Done
+{gaveTraderFile==false: ->ada_fires_you->}  #Done
 
-{snappedOut=="yes": ->ada_transfers_you->} #Done
+{gaveTraderFile: ->ada_transfers_you->} #Done
 
 {kentPoints > 4: ->kent_ending->} #Done
 

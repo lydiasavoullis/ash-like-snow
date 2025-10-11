@@ -20,7 +20,7 @@ VAR music = ""
 VAR chapter = "Chapter 1"
 VAR weather = "rain"//set as empty string to stop
 VAR save = ""
-
+VAR hasFile = false
 #character sprites
 LIST characters = lavender, ada, pandora, kent, tali, cas, stranger
 LIST Ada = adalina_displeased, (adalina_neutral),adalina_pleased
@@ -55,8 +55,8 @@ VAR pandoraPoints = 0
 #check at point you need £500 and either to snap out, or to collect the right books
 #Otherwise Ada will fire you
 #if you kept taking Fate, but you managed to get money for the trader, snapped out will be set to yes
-VAR snappedOut = "no"
-VAR gaveTraderMoney = "no"
+VAR snappedOut = false
+VAR gaveTraderFile= true
 //LIST strangerbooks = castle, wardrobe, rabbithole
-VAR strangerbooks = "false"
+//VAR strangerbooks = "false"
 VAR worstEnding = "no"

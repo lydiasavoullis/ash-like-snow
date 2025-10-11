@@ -14,12 +14,25 @@
 Hello.
 {ChangeSprite("Stranger", "shadow_amused")}
 What an interesting…establishment.
-{snappedOut=="true":
-    ->stranger_first_encounter_snapped_out
-  - else:
-    ->stranger_first_encounter
+
+//first encounter logic
+{ 
+- (hasFile && snappedOut):
+->stranger_first_encounter_has_file_snapped_out
+- (hasFile == true):
+->stranger_first_encounter_has_file
+- (snappedOut == true):
+->stranger_first_encounter_no_file_snapped_out
+- else:
+->stranger_first_encounter
 }
-==stranger_first_encounter_snapped_out
+==stranger_first_encounter_no_file_snapped_out
+TODO
+==stranger_first_encounter_has_file_snapped_out
+//add scenario where you have the file on day 8 but have not snapped out( perhaps this shouldn't be possible and put these 'special' books in week 2)
+TODO
+->continue_day_8
+==stranger_first_encounter_has_file
 ~currentSpeaker = you
 Are you looking for Ada?
 {ChangeSprite("Stranger", "shadow_amused")}
@@ -43,7 +56,7 @@ You're welcome to return if there's anything else you need.
 No, I think this will suffice.
 Goodbye.
 ~characters-=stranger
-~gaveTraderMoney="yes"
+~gaveTraderFile=true
 ->continue_day_8
 ==stranger_first_encounter
 ~currentSpeaker = you

@@ -129,7 +129,7 @@ Guys
 It's not the same as killing a cute innocent creature.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker = comic
-Killing civilians is not as bad as killing a dog.
+Killing civilians is not as bad as killing a dog?
 ~currentSpeaker = android
 Guys.
 {ChangeSprite("Lavender", "lavender_thinking")}
@@ -251,7 +251,7 @@ I love rats!
 Ok, I was not expecting that.
 ~currentSpeaker = snob
 I used to have them as pets.
-{ChangeSprite("Kent", "kent_side_serious")}
+{ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker = comic
 Weird. You're weird.
 {ChangeSprite("Tali", "tali_upset")}
@@ -294,15 +294,9 @@ I really hope rats don't eat me.
 {ChangeSprite("Lavender", "lavender_mean")}
 ~currentSpeaker = snob
 You could probably snap their necks if they tried.
-{ChangeSprite("Kent", "kent_amused")}
-~currentSpeaker = comic
-Ha!
 ~currentSpeaker = you
-Not. Funny.
-{ChangeSprite("Kent", "kent_sad")}
-~currentSpeaker = comic
-Sorry.
-{ChangeSprite("Kent", "kent_normal")}
+...
+{ChangeSprite("Kent", "kent_side_serious")}
 Ok, let's hoist you up.
 ~currentSpeaker = you
 ...
@@ -363,7 +357,6 @@ Is she going to murder us?
 ~currentSpeaker = android
 Shut up {snob} for a minute, at least.
 {you} I can hear your heart rate has increased significantly.
-I think you might be having a panic attack.
 {pandoraPoints>=6:
     ->pandora_talks_panic_attack
   - else:
@@ -374,7 +367,7 @@ I think you might be having a panic attack.
 ~currentSpeaker=""
 She might be right.
 But what can you do?
-You're useless without. You can't even carry out simple tasks without being drugged.
+You're useless without Fate. You can't even carry out simple tasks without being drugged.
 Everything triggers you into a state of panic.
 ~currentSpeaker = android
 I'm here. Listen to me.
@@ -557,6 +550,8 @@ I'll make your bed.
 ~characters-=pandora
 ->end_day_14
 =others_save_you
+TODO
+//add sprite changes
 ~currentSpeaker= ""
 She might be right.
 But what can you do?
@@ -766,7 +761,7 @@ You close the book.
 -Time for bed.
 You wake up in the middle of the night.
 The others are fast asleep.
-You find yourself drawn to the computer.
+Finding yourself drawn to the computer.
 You turn it on.
 ~scene="XmasEmpty"
 You're not sure what you wanted here.
@@ -798,17 +793,17 @@ Who doesn't like parties?
 ~currentSpeaker=you
 I want to be with my friends.
 ~currentSpeaker=man
-They'll be back from their trip soon enough.
+They'll be back from their little trip soon enough.
 ~currentSpeaker=you
-I could have gone skiing with them.
+I could have gone with them.
 ~currentSpeaker=man
-And break your neck?
+And break your neck on a ski slope?
 After all we've done for you, I'm not letting you throw your life away.
 You've got studying to do anyway.
 ~currentSpeaker=you
-Other parents let their kids go.
+My friends' parents let them go.
 ~currentSpeaker=man
-That's because they don't care about their kids. Just their own self interest.
+We care about you.
 You're clever, one day you're going to do something.
 You're going to actually be something.
 ~currentSpeaker=you
@@ -845,9 +840,7 @@ Say it.
 ~currentSpeaker=you
 Say it you fucking coward.
 ~currentSpeaker=man
-Right now you're just potential. You could be better. You know it. But to hear praise, you need to deserve it.
-In other words-
-I'll say it when you have done something to make me proud.
+I'll say it when you've done something to make me proud.
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
@@ -870,7 +863,7 @@ Are they...?
 Both alive.
 Just don't want to see me anymore.
 ~currentSpeaker=android
-You imagined this.
+You imagined this?
 ~currentSpeaker=you
 I did.
 Somehow I couldn't imagine my dad saying he was proud of me.
