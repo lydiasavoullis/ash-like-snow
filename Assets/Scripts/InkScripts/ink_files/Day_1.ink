@@ -22,10 +22,55 @@ Hey
 ~currentSpeaker = android
 Hey
 ->END
+//set the prices of all the books
+===function set_all_book_prices()===
+TODO
+//take this price and replace the shop prices with them
+//sells for price will be this price + character profit
+//e.g. price: {lbd2} sells for: {lbd2 + lavenderProfit}
+~lbd1 = (0*lavenderMargin)+lavenderBase
+~lbd2 = (1*lavenderMargin)+lavenderBase
+~lbd3 = (2*lavenderMargin)+lavenderBase
+~lbd4 = (3*lavenderMargin)+lavenderBase
+~lbd5 = (4*lavenderMargin)+lavenderBase
+~lbd8 = (5*lavenderMargin)+lavenderBase
+~lbd9 = (6*lavenderMargin)+lavenderBase
+~lbd10 = (7*lavenderMargin)+lavenderBase
+~lbd11 = (8*lavenderMargin)+lavenderBase
 
+~tbd1 = (0*taliMargin)+taliBase
+~tbd2 = (1*taliMargin)+taliBase
+~tbd3 = (2*taliMargin)+taliBase
+~tbd4 = (3*taliMargin)+taliBase
+~tbd5 = (4*taliMargin)+taliBase
+~tbd8 = (5*taliMargin)+taliBase
+~tbd9 = (6*taliMargin)+taliBase
+~tbd10 = (7*taliMargin)+taliBase
+~tbd11 = (8*taliMargin)+taliBase
+
+~kbd1 = (0*kentMargin)+kentBase
+~kbd2 = (1*kentMargin)+kentBase
+~kbd3 = (2*kentMargin)+kentBase
+~lbd4 = (3*kentMargin)+kentBase
+~kbd5 = (4*kentMargin)+kentBase
+~kbd8 = (5*kentMargin)+kentBase
+~kbd9 = (6*kentMargin)+kentBase
+~kbd10 = (7*kentMargin)+kentBase
+~kbd11 = (8*kentMargin)+kentBase
+
+~pbd1 = (0*pandoraMargin)+pandoraBase
+~pbd2 = (1*pandoraMargin)+pandoraBase
+~pbd3 = (2*pandoraMargin)+pandoraBase
+~pbd4 = (3*pandoraMargin)+pandoraBase
+~pbd5 = (4*pandoraMargin)+pandoraBase
+~pbd8 = (5*pandoraMargin)+pandoraBase
+~pbd9 = (6*pandoraMargin)+pandoraBase
+~pbd10 = (7*pandoraMargin)+pandoraBase
+~pbd11 = (8*pandoraMargin)+pandoraBase
 
 ==day_1==
 //~scene= "ShopFront"
+{set_all_book_prices()}
 ~music= "An average day"
 ~newsPicture = "headline14"
 ~newsCaption = "A bottle of Fate - Ilustration by Kent Herring"

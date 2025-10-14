@@ -27,12 +27,70 @@ What an interesting…establishment.
 ->stranger_first_encounter
 }
 ==stranger_first_encounter_no_file_snapped_out
-TODO
-==stranger_first_encounter_has_file_snapped_out
-//add scenario where you have the file on day 8 but have not snapped out( perhaps this shouldn't be possible and put these 'special' books in week 2)
-TODO
+~currentSpeaker = you
+Are you looking for Ada?
+{ChangeSprite("Stranger", "shadow_amused")}
+~currentSpeaker = trader
+How did you know?
+I need some things.
+~currentSpeaker = you
+I know.
+I don't have them.
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+I find that hard to believe.
+You refuse to help me.
+~currentSpeaker = you
+I will. I just got a bit distracted...
+{ChangeSprite("Stranger", "shadow_amused")}
+~currentSpeaker = trader
+I'll give you some advice.
+{ChangeSprite("Stranger", "shadow_sad")}
+Don't.
+~characters-=stranger
+~sfx="close door"
+¬
 ->continue_day_8
 ==stranger_first_encounter_has_file
+//add scenario where you have the file on day 8 but have not snapped out( perhaps this shouldn't be possible and put these 'special' books in week 2)
+~currentSpeaker = you
+Can I help you with anything?
+{ChangeSprite("Stranger", "shadow_neutral")}
+~currentSpeaker = trader
+I was just walking by when I remembered that I needed to talk. 
+On behalf of a mutual friend. 
+~currentSpeaker = you
+And who was that?
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+Concentrate.
+{ChangeSprite("Stranger", "shadow_neutral")}
+Anyway,
+I need:
+The rabbit hole, the wardrobe, and the castle.
+Show them to me when I return.
+~currentSpeaker = you
+Oh, here you go.
+{ChangeSprite("Stranger", "shadow_amused")}
+~currentSpeaker = trader
+You have them?
+Well that's certainly a surprise.
+Thank you.
+~currentSpeaker = you
+No problem.
+Can you tell me-
+{ChangeSprite("Stranger", "shadow_sad")}
+~currentSpeaker = trader
+I cannot tell you anything, you should know that.
+Also.
+{ChangeSprite("Stranger", "shadow_amused")}
+Make your own drinks.
+~gaveTraderFile=true
+~characters-=stranger
+~sfx="close door"
+¬
+->continue_day_8
+==stranger_first_encounter_has_file_snapped_out
 ~currentSpeaker = you
 Are you looking for Ada?
 {ChangeSprite("Stranger", "shadow_amused")}
@@ -107,6 +165,11 @@ I'll sign you in.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself.
+~currentSpeaker = android 
+-How are you doing?
+~currentSpeaker = you 
+I'm ok, a bit flustered. The tube was so busy I'm lucky I got a seat!
+->tea_or_coffee->
 ~sfx="open door"
 ~characters+=lavender
 ~currentSpeaker=snob

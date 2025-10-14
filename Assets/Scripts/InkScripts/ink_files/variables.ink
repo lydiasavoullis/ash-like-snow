@@ -57,6 +57,71 @@ VAR pandoraPoints = 0
 #if you kept taking Fate, but you managed to get money for the trader, snapped out will be set to yes
 VAR snappedOut = false
 VAR gaveTraderFile= true
-//LIST strangerbooks = castle, wardrobe, rabbithole
 //VAR strangerbooks = "false"
 VAR worstEnding = "no"
+
+
+//Books prices settings
+//the base price of each book on the first day
+VAR lavenderBase = 200
+VAR pandoraBase = 20
+VAR taliBase = 50
+VAR kentBase = 100
+
+//how much the value increases per day
+VAR lavenderMargin = 50
+VAR pandoraMargin = 10
+VAR taliMargin = 20
+VAR kentMargin = 20
+
+//how much to add onto the price when you sell the book
+VAR lavenderProfit = 200
+VAR pandoraProfit = 0
+VAR taliProfit = 20
+VAR kentProfit = 20
+
+//book prices
+VAR lbd1 = 0
+VAR lbd2 = 0
+VAR lbd3 = 0
+VAR lbd4 = 0
+VAR lbd5 = 0
+VAR lbd8 = 0
+VAR lbd9 = 0
+VAR lbd10 = 0
+VAR lbd11 = 0
+
+VAR tbd1 = 0
+VAR tbd2 = 0
+VAR tbd3 = 0
+VAR tbd4 = 0
+VAR tbd5 = 0
+VAR tbd8 = 0
+VAR tbd9 = 0
+VAR tbd10 = 0
+VAR tbd11 = 0
+
+VAR kbd1 = 0
+VAR kbd2 = 0
+VAR kbd3 = 0
+VAR kbd4 = 0
+VAR kbd5 = 0
+VAR kbd8 = 0
+VAR kbd9 = 0
+VAR kbd10 = 0
+VAR kbd11 = 0
+
+
+VAR pbd1 = 0
+VAR pbd2 = 0
+VAR pbd3 = 0
+VAR pbd4 = 0
+VAR pbd5 = 0
+VAR pbd8 = 0
+VAR pbd9 = 0
+VAR pbd10 = 0
+VAR pbd11 = 0
+
+
+
+

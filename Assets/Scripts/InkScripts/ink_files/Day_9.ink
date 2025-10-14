@@ -2,7 +2,7 @@
 ¬
 ~newsPicture = "headline9"
 ~newsCaption = "The Blue House"
-~newsAnnouncement = "Terrorists threaten Billionaire Benedict Blue's life with a near miss assassination attempt. A message has been received from annoymous hackers. 'We must stay calm,' said Blue. 'We will do whatever it takes to find out who did this.' There a couple of things that we can deduce about the annonymous hackers who compromised the most expensive security system in the UK..."
+~newsAnnouncement = "Terrorists threaten billionaire Benedict Blue's life with a near miss assassination attempt. A message has been received from annoymous hackers. 'We must stay calm,' said Blue. 'We will do whatever it takes to find out who did this.' There a couple of things that we can deduce about the annonymous hackers who compromised the most expensive security system in the UK..."
 ¬
 ~music="Rise and shine"
 ~newsAnnouncement = ""
@@ -17,6 +17,11 @@ I'll sign you in.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself.
+~currentSpeaker = android 
+-How are you doing?
+~currentSpeaker = you 
+Not bad, I'm just a bit tired.
+->tea_or_coffee->
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=you
 -Hey Pandora. 

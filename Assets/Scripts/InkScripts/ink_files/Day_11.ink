@@ -17,9 +17,17 @@ I'll sign you in.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+~currentSpeaker = android 
+-How are you holding up?
+~currentSpeaker = you 
+I'm just a bit spacey at the moment. Forgive me if I zone out.
+{ChangeSprite("Pandora", "pandora_happy")}
+~currentSpeaker = android 
+Don't fret. I'll keep you focused.
+->tea_or_coffee->
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
--One more day.
+One more day.
 {PlayAnimation("Pandora", "jump")}
 Until my Christmas Eve extravaganza!
 ~currentSpeaker=you

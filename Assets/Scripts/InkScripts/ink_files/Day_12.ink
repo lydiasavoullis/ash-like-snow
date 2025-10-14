@@ -166,6 +166,8 @@ I can do it myself
 You look…pale. Are you ok?
 ~currentSpeaker=you
 Yeah, I'm fine. It's just the weather.
+->tea_or_coffee->
+~currentSpeaker=you
 Anyway...are you excited?
 ~currentSpeaker=android
 Excited? About what?
@@ -255,7 +257,7 @@ I could never be sick of you.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I come bearing gifts.
-{ChangeSprite("Kent", "kent_side_serious")}
+{ChangeSprite("Kent", "kent_upset")}
 Which you will have to give back with the instruction manuals intact and ALL the pieces in the right place.
 ~currentSpeaker=you
 OK. OK. OK.
@@ -313,14 +315,11 @@ Yeah, what’s up?
 ~currentSpeaker=android
 Ah wonderful we’re all here
 ~currentSpeaker=you
-//{allbooks ? LUX_ppe: -> LUX_ppe_special->} 
-//{allbooks ? heart_lies: -> where_the_heart_lies->} 
-//{allbooks ? queendom_heretic: -> queen_h->} 
 ->lavender_book_check->
 ->tali_book_check->
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=comic
-So {webdev}, {snob}
+So {webdev}, {snob}.
 You’ve made up then?
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
@@ -355,11 +354,12 @@ You know how it goes.
 ~currentSpeaker=android
 How does it go?
 ~currentSpeaker=you
-I’ll show you how
+I’ll show you how.
 I’ll pick someone to go first. I’ll save you from the first round {android} as you don’t know what’s going on.
 ->start_truth_or_dare
 
 ==start_incident==
+TODO : why is kent allowed to use the screen to watch film, but not for his work
 ~music="Rise and shine"
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
@@ -370,7 +370,7 @@ Glad you enjoyed it.
 ~currentSpeaker=comic
 Is it film time now?
 We can watch the new Blood Monster 3 that just came out. 
-I have it on my Hoolflix account, if you show me the computer I can just login.
+I have it on my Holoflix account, if you show me the computer I can just login.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 It’s downstairs.
@@ -401,7 +401,7 @@ AHHHHHHHH
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Everyone calm down!
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_confused")}
 It’s…it’s snow?
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
@@ -442,12 +442,6 @@ WAHHHH!
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Don’t be worried. I’m actually trained for this kind of situation.
-~currentSpeaker=snob
- You’re a robot, you’re fine if anything happens. We’ll probably all suffocate to death.
-Or die excruciatingly from radiation poisoning.
-{ChangeSprite("Tali", "tali_serious")}
-~currentSpeaker=webdev
-{snob} for fuck’s sake!
 ~scene = "Basement"
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
@@ -460,12 +454,11 @@ I just turned the air filtration devices on.
 It’s going to be fine right?
 I’m sure it’s nothing.
 ~scene = "Fire"
-WAHHHH!
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Oh, you might want to see this.
 ~currentSpeaker = ""
-<i>This is live footage. At 19:45 an attack was attempted on the London area and the dome was breached. The houses of parliament seem to be on fire. This is not a drill. Everyone stay indoors. I repeat, everyone stay indoors.</i>
+<i>This is live footage. At 19:45 an attack was attempted on the London area and the dome was breached. The houses of parliament are on fire. This is not a drill. Everyone stay indoors. I repeat, everyone stay indoors.</i>
 ~scene = "Basement"
 ~currentSpeaker=you
 Everything’s in lockdown now.
@@ -480,23 +473,21 @@ I’m leaving.
 ~currentSpeaker=android
 We can’t let you do that, I’m afraid.
 {ChangeSprite("Kent", "kent_upset")}
+{PlayAnimation("Kent", "shake")}
 ~currentSpeaker=comic
 I SAID I’M FUCKING LEAVING LET ME OUT OF HERE.
 ~currentSpeaker=you
 It’s against the law, and even if it wasn’t, it’s not safe out there right now. 
-{ChangeSprite("Kent", "kent_side_serious")}
-~currentSpeaker=comic
-Scott is on his shift. He’s out there.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=you
+I know you're worried about your boyfriend.
 I’m sure he’s gone to find shelter.
-He’s a paramedic. He has all sorts of medical equipment. They take precautions when they go out. 
+Paramedics have all sorts of medical equipment. They take precautions when they go out. 
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 ...
 ~currentSpeaker=you
 And you risking your life to find him is not going to help.
-It’s just going to make it worse.
 You have no idea where he is. He’s probably worrying about you right now. I’m sure it would ease his mind to know you’re somewhere safe.
 ~currentSpeaker=android
 Yes, she has a good point {comic} please don’t go out.
@@ -507,14 +498,14 @@ Yes, she has a good point {comic} please don’t go out.
 OK.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
-I can’t get ahold of my brothers.
+I can’t get ahold of my siblings.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 I tried contacting my family, had the same issue.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 There might be a temporary network issue.
-It might be that the government shut it down to counteract any terrorist communication.
+I think the government shut it down to counteract any terrorist communication.
 {ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=snob
 Crap.
@@ -567,7 +558,7 @@ What if we all get killed in our sleep?
 ~currentSpeaker=android
 I would alert you if something like that were to happen. 
 My systems are on high alert, I’ll let you know when the network comes back up and if there’s any new news. 
-The best thing you can do now is act like the explosion and destruction of your government’s premises didn’t even happen.
+The best thing you can do now is act like the explosion, and destruction of your government’s premises didn’t even happen.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Well, at least we'll get a heads up if we're about to die.
@@ -585,15 +576,14 @@ I'm going to see if I can get through to my dad.
 ~characters-=lavender
 ~music="Basement"
 ~currentSpeaker=you
-Is there anything I can do to help {android}.
-I know I’m just a shop clerk, and woefully unprepared.
+Is there anything I can do to help {android}?
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 You could check on {comic}, I’m worried about him.
 {ChangeSprite("Pandora", "pandora_pensive")}
 Also I feel like {snob} is not really adjusting to the situation really well.
 {ChangeSprite("Pandora", "pandora_normal")}
-And could you make sure {webdev} has a towel when she gets out, I want her to be comfortable.
+And could you make sure {webdev} has a towel when she gets out?
 ~currentSpeaker=you
 Anything I can do for you?
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -620,7 +610,7 @@ You know over the past year, covering all these crazy stories I’ve sort of bec
 {ChangeSprite("Kent", "kent_side_normal")}
 It was always something that happened to someone else, not me, just some poor soul or some idiot who did the wrong thing or was just at the wrong place at the wrong time.
 ~currentSpeaker=you
-{comic}
+{comic}.
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 …but now it’s us, isn’t it? We’re the ones. At the wrong place at the wrong time. It’s our turn.

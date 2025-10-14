@@ -17,6 +17,11 @@ I'll sign you in.
 Thanks {android}!
 *[No (don't save)] 
 I can do it myself
+~currentSpeaker = android 
+-How are you feeling?
+~currentSpeaker = you 
+I'm ok. Just seeing a lot of police on my way here, and it's putting me on edge.
+->tea_or_coffee->
 {ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker=android
 -Yesterday was pretty eventful huh?
