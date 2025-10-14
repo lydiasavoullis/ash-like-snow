@@ -35,6 +35,7 @@ INCLUDE night.ink
 ~snappedOut = "yes"
 ->ending_check
 *[Simulate shop]
+{set_all_book_prices()}
 ~day=11
 ~scene="GenericScene"
 ¬

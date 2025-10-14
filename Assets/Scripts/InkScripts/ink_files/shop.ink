@@ -13,15 +13,15 @@
 ~shop="true"
 ~button="book"
 Remaining funds: {funds}
-+ Go to children's fiction
++ [Go to children's fiction]
 {~I bet {android} would love a new book.| Maybe a new book for {android}?| Let's see if there's anything I can get {android}.}
 //this logic is true when you are 'in the know' but you haven't gotten all the books you need yet
-{!hasFile && snappedOut && !((allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe)): And I still need some of those books Ada asked for: Alice in Wonderland, Howl's Moving Castle and The Lion the Witch and the Wardrobe.}//|Otherwise this is written
-{!hasFile && day>7 && snappedOut && !((allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe)): And that weird guy said I need: The rabbithole, the castle and the wardrobe. Why am I thinking about this now?}
+{(!hasFile && snappedOut && allbooks !? Alice_in_Wonderland && allbooks !? Howls_Moving_Castle && allbooks !? t_lion_witch_wardrobe): And I still need some of those books Ada asked for: Alice in Wonderland, Howl's Moving Castle and The Lion the Witch and the Wardrobe.}//|Otherwise this is written
+{(!hasFile && day>7 && snappedOut && allbooks !? Alice_in_Wonderland && allbooks !? Howls_Moving_Castle && allbooks !? t_lion_witch_wardrobe): And that weird guy said I need: The rabbithole, the castle and the wardrobe. Why am I thinking about this now?}
 ->buy_childrens_books
 //!(allbooks ? LUX_222)
-+{day>=1}{allbooks !? LUX_222}[LUX Autumn issue 222(£200 : Sells for £400)]
-{buy_book(LUX_222, 200)}
++{day>=1}{allbooks !? LUX_222}[LUX Autumn issue 222(£{lbd1} : Sells for £{(lbd1+lavenderProfit)})]
+{buy_book(LUX_222, lbd1)}
 ->goto_shop
 #kent 1
 +{day>=1}{allbooks !? nightthunder_89}[Night Thunder \#89(£100 : Sells for £120)]
@@ -31,8 +31,8 @@ Remaining funds: {funds}
 +{day>=1}{allbooks !? fantasy_7}[The King’s Crown: The War of the Seven Swords: Book 7 (£50 : Sells for £70)]
 {buy_book(fantasy_7, 50)}
 ->goto_shop
-+{day>=2}{allbooks !? LUX_394}[LUX Spring issue 394(£300 : Sells for £500)]
-{buy_book(LUX_394, 300)}
++{day>=2}{allbooks !? LUX_394}[LUX Spring issue 394(£{lbd2} : Sells for £{(lbd2+lavenderProfit)})]
+{buy_book(LUX_394, lbd2)}
 ->goto_shop
 #kent 2
 +{day>=2}{allbooks !? satin_rain_1}[Satin Rain \#1(£105 : Sells for £125)]
@@ -43,8 +43,8 @@ Remaining funds: {funds}
 {buy_book(fantasy_dragon_heart, 67.5)}
 ->goto_shop
 Remaining funds: {funds}
-+{day>=3}{allbooks !? LUX_1076}[LUX Winter issue 1076(£400 : Sells for £600)]
-{buy_book(LUX_1076, 400)}
++{day>=3}{allbooks !? LUX_1076}[LUX Winter issue 1076(£{lbd3} : Sells for £{(lbd3+lavenderProfit)})]
+{buy_book(LUX_1076, lbd3)}
 ->goto_shop
 #kent 3
 +{day>=3}{allbooks !? sentinel_105}[The Sentinel \#105(£140 : Sells for £160)]
@@ -55,8 +55,8 @@ Remaining funds: {funds}
 {buy_book(black_goat, 90)}
 ->goto_shop
 
-+{day>=4}{allbooks !? LUX_666}[LUX SPECIAL issue 666(£920: Sells for £1120)]
-{buy_book(LUX_666, 920)}
++{day>=4}{allbooks !? LUX_666}[LUX SPECIAL issue 666(£{lbd4}: Sells for £{(lbd4+lavenderProfit)})]
+{buy_book(LUX_666, lbd4)}
 ->goto_shop
 #kent 4
 +{day>=4}{allbooks !? wildfyre_678}[Wildfyre \#678(£230: Sells for £250)]
@@ -66,8 +66,8 @@ Remaining funds: {funds}
 +{day>=4}{allbooks !? forest_god}[The God of the Forest (£103.50: Sells for £123.50)]
 {buy_book(forest_god, 103.50)}
 ->goto_shop
-+{day>=5}{allbooks !? LUX_360}[LUX pet accessories issue 360(£1500: Sells for £1700)]
-{buy_book(LUX_360, 1500)}
++{day>=5}{allbooks !? LUX_360}[LUX pet accessories issue 360(£{lbd5}: Sells for £{(lbd5+lavenderProfit)})]
+{buy_book(LUX_360, lbd5)}
 ->goto_shop
 #kent 5
 +{day>=5}{allbooks !? hypnos_55}[Hypnos \#55(£175: Sells for £195)]
@@ -78,8 +78,8 @@ Remaining funds: {funds}
 {buy_book(the_glass_lab, 112.50)}
 ->goto_shop
 
-+{day>=8}{allbooks !? LUX_uniform}[LUX special flight attendant uniform issue (£1560: Sells for £1760)]
-{buy_book(LUX_uniform, 1560)}
++{day>=8}{allbooks !? LUX_uniform}[LUX special flight attendant uniform issue (£{lbd8}: Sells for £{(lbd8+lavenderProfit)})]
+{buy_book(LUX_uniform, lbd8)}
 ->goto_shop
 #kent
 +{day>=8}{allbooks !? lady_darkness_373}[Lady of Darkness \#373(£182: Sells for £202)]
@@ -95,8 +95,8 @@ Remaining funds: {funds}
 {buy_book(ring_thorns, 117)}
 ->goto_shop
 
-+{day>=9}{allbooks !? LUX_rain_proof}[LUX acid rain proof chic (£1620: Sells for £1820)]
-{buy_book(LUX_rain_proof, 1620)}
++{day>=9}{allbooks !? LUX_rain_proof}[LUX acid rain proof chic (£{lbd9}: Sells for £{(lbd9+lavenderProfit)})]
+{buy_book(LUX_rain_proof, lbd9)}
 ->goto_shop
 #kent
 +{day>=9}{allbooks !? mr_therm}[Mr. Thermistor \#95(£189: Sells for £209)]
@@ -108,8 +108,8 @@ Remaining funds: {funds}
 {buy_book(lord_of_dusk, 121.50)}
 ->goto_shop
 
-+{day>=10}{allbooks !? LUX_gear}[LUX protective gear issue 331 (£1680: Sells for £1880)]
-{buy_book(LUX_gear, 1680)}
++{day>=10}{allbooks !? LUX_gear}[LUX protective gear issue 331 (£{lbd10}: Sells for £{(lbd10+lavenderProfit)})]
+{buy_book(LUX_gear, lbd10)}
 ->goto_shop
 #kent
 +{day>=10}{allbooks !? bioworld}[Bioworld \#111(£196: Sells for £216)]
@@ -119,8 +119,8 @@ Remaining funds: {funds}
 {buy_book(heart_lies, 126)}
 ->goto_shop
 Remaining funds: {funds}
-+{day>=11}{allbooks !? LUX_ppe}[LUX PPE special issue (£1800: Sells for £2000)]
-{buy_book(LUX_ppe, 1800)}
++{day>=11}{allbooks !? LUX_ppe}[LUX PPE special issue (£{lbd11}: Sells for £{(lbd11+lavenderProfit)})]
+{buy_book(LUX_ppe, lbd11)}
 ->goto_shop
 #kent
 +{day>=11}{allbooks !? cybershake}[Cybershake \#235(£210: Sells for £230)]

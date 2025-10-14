@@ -69,7 +69,7 @@ VAR taliBase = 50
 VAR kentBase = 100
 
 //how much the value increases per day
-VAR lavenderMargin = 50
+VAR lavenderMargin = 100
 VAR pandoraMargin = 10
 VAR taliMargin = 20
 VAR kentMargin = 20

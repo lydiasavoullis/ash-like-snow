@@ -6,7 +6,7 @@ I found one of the magazines you like.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Finally.
-~funds+=400
+~funds+=(lbd1+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -19,7 +19,7 @@ Just before I forget, I ordered this spring addition for you.
 ~currentSpeaker = snob
 Well, I suppose you're not completely useless.
 Oh pastels!
-~funds+=500
+~funds+=(lbd2+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -71,7 +71,7 @@ What has the world come to?
 How horrifying.
 I'll take it.
 ~allbooks-=LUX_1076
-~funds+=600
+~funds+=(lbd3+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -97,7 +97,7 @@ You understand? Right?
 Not really. But if it makes you happy.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
- ~funds+=1120
+ ~funds+=(lbd4+lavenderProfit)
  ~booksSold+=1
  ~music="Rise and shine"
 ->->
@@ -128,7 +128,7 @@ You think so?
 Of couse, you would increase your work output by up to 50% if you wore a uniform.
 ~currentSpeaker = you
 I better get on that then.
- ~funds+=1760
+ ~funds+=(lbd5+lavenderProfit)
  ~booksSold+=1
  ~music="Rise and shine"
 ->->
@@ -169,7 +169,7 @@ Oh he loves the attention. He's a big diva.
 He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he always seems to take on the essense of what he's wearing. 
 ~currentSpeaker = you
 Right.
-~funds+=1700
+~funds+=(lbd8+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -194,7 +194,7 @@ It sure feels good to not get acid in your eyes.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Indeed.
-~funds+=1820
+~funds+=(lbd9+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -237,7 +237,7 @@ He's just a blank face.
 Do you want me to buy it or not?
 ~currentSpeaker = you
 Fine.
-~funds+=2000
+~funds+=(lbd10+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -268,7 +268,7 @@ Maybe people should try not to hit their heads in the first place!
 I suppose it's a bit late for me to tell you that.
 ~currentSpeaker = you
 Ouch!
-~funds+=1880
+~funds+=(lbd11+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
