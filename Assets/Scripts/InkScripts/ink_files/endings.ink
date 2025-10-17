@@ -571,6 +571,13 @@ What have I gotten myself into?
 ->->
 
 ==ada_fires_you==
+¬
+~newsPicture = "headlineFail"
+~newsCaption = "Terrorist known as: 'The Trader'"
+~newsAnnouncement = "Prominant member of terrorist organisation Rabbithole is in police custody. Process of investigation into what happened on December 24 continues..."
+¬
+~music="Rise and shine"
+~newsAnnouncement = ""
 ~characters+=pandora
 ~characters+=ada
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -676,6 +683,13 @@ Get out of my shop.
 ->->
 
 ==ada_transfers_you==
+¬
+~newsPicture = "headlineSuccess"
+~newsCaption = "Benedict Blue speaking at podium."
+~newsAnnouncement = "Benedict Blue to step down as chief government advisor. His resignation follows the Christmas Eve attack on the Houses of Parliament."
+¬
+~music="Rise and shine"
+~newsAnnouncement = ""
 ~characters+=pandora
 ~characters+=ada
 {ChangeSprite("Pandora", "pandora_normal")}

@@ -23,39 +23,6 @@ Oh pastels!
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
-// ==LUX_3==
-// ~music="Making friends"
-// ~lavenderPoints+=1
-// ~currentSpeaker = you
-// Just before I forget, I ordered this for you.
-// {ChangeSprite("Lavender", "lavender_happy")}
-// ~currentSpeaker = snob
-// That's superb.
-// ~currentSpeaker = you
-// Hey, I just wanted to ask.
-// What's so great about these LUX magazines.
-// {ChangeSprite("Lavender", "lavender_thinking")}
-// ~currentSpeaker = snob
-// Oh, they're just very unique and interesting.
-// Unfortunately LUX closed down some thirty years ago.
-// ~currentSpeaker = you
-// Uh really?
-// {ChangeSprite("Lavender", "lavender_sad")}
-// ~currentSpeaker = snob
-// My grandfather bought their parent company, closed LUX and fired all the staff.
-// ~currentSpeaker = you
-// Your grandfather?!
-// {ChangeSprite("Lavender", "lavender_sad")}
-// ~currentSpeaker = snob
-// I know.
-// He said they promoted climate propaganda.
-// It's a real shame.
-// ~currentSpeaker = you
-// Indeed.
-// ~funds+=500
-// ~booksSold+=1
-// ~music="Rise and shine"
-// ->->
 ==LUX_winter==
 ~music="Making friends"
 ~lavenderPoints+=1
@@ -92,9 +59,33 @@ I don't know.
 There's a silver dress I wanted to try and replicate.
 It's not really my style.
 But I want to wear it.
-You understand? Right?
 ~currentSpeaker = you
-Not really. But if it makes you happy.
+I just wanted to ask.
+What's so great about these LUX magazines?
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+Oh, they're just very unique and interesting.
+Unfortunately LUX closed down some thirty years ago.
+~currentSpeaker = you
+Uh really?
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+My grandfather bought their parent company, closed LUX and fired all the staff.
+~currentSpeaker = you
+Your grandfather?!
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+I know.
+He said they promoted climate propaganda.
+It's a real shame.
+{ChangeSprite("Lavender", "lavender_happy")}
+~currentSpeaker = snob
+I feel like it's my duty now to collect these all. So someone remembers them.
+~currentSpeaker = you
+I wonder how much media is lost to time.
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+A lot I imagine.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
  ~funds+=(lbd4+lavenderProfit)
@@ -148,6 +139,7 @@ I have a dog and sometimes I make clothes for him.
 ~currentSpeaker = you
 ...
 {ChangeSprite("Lavender", "lavender_angry")}
+{PlayAnimation("Lavender", "shake")}
 ~currentSpeaker = snob
 What? You don't like dogs?
 ~currentSpeaker = you
@@ -166,7 +158,9 @@ Does he like wearing clothes?
 ~currentSpeaker = snob
 Oh he loves the attention. He's a big diva.
 {ChangeSprite("Lavender", "lavender_thinking")}
-He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he always seems to take on the essense of what he's wearing. 
+He really has a sense of style you know. Some dogs just sit in their clothes and tolerate it, but he really knows how to strut and pose.
+{ChangeSprite("Lavender", "lavender_happy")}
+He's just like his mother.
 ~currentSpeaker = you
 Right.
 ~funds+=(lbd8+lavenderProfit)
@@ -191,9 +185,18 @@ Erm...facinating.
 Back in the good old days people wanted to protect themselves from the toxic weather but still look good doing it.
 ~currentSpeaker = you
 It sure feels good to not get acid in your eyes.
-{ChangeSprite("Lavender", "lavender_happy")}
+{ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker = snob
-Indeed.
+There's no need for the sarcasm.
+~currentSpeaker = you
+Sorry.
+I had a flick through, and I do like the cape.
+{ChangeSprite("Lavender", "lavender_thinking")}
+~currentSpeaker = snob
+Capes eh?
+They are very dramatic.
+~currentSpeaker = you
+I like dramatic.
 ~funds+=(lbd9+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
@@ -204,7 +207,7 @@ Indeed.
 ~currentSpeaker = you
 Look I got you something.
 It's like fashion for medical protection equiment.
-I don't know. I'm completely lost now.
+I'm completely lost. Why does this exist?
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = snob
 Look at all these masks.
@@ -221,17 +224,16 @@ What you don't like masks?
 {ChangeSprite("Lavender", "lavender_mean")}
 I think you'd look much better with one on.
 ~currentSpeaker = you
-I am grateful for the existance of masks.
-But that is not a good mask.
+That is not a good mask.
 There's no holes for his eyes, no way for air to get in.
 How does he breathe?
 How does he even see?
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
-Intuition, perhaps?
+I don't know.
 ~currentSpeaker = you
-It's also kind of creepy.
-He's just a blank face.
+It's creepy!
+There's also a section here for medical scrubs which I have some issues with.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 Do you want me to buy it or not?
@@ -267,7 +269,32 @@ Maybe people should try not to hit their heads in the first place!
 {ChangeSprite("Lavender", "lavender_mean")}
 I suppose it's a bit late for me to tell you that.
 ~currentSpeaker = you
-Ouch!
+That's kind of mean.
+{ChangeSprite("Lavender", "lavender_sad")}
+~currentSpeaker = snob
+Eh?
+~currentSpeaker = you
+Why do you say stuff like that to people?
+~currentSpeaker = snob
+It's funny.
+~currentSpeaker = you
+In the right circumstances. But sometimes I don't know if you're joking or not.
+~currentSpeaker = snob
+I'm joking.
+~currentSpeaker = you
+Really? Are you?
+{ChangeSprite("Lavender", "lavender_angry")}
+~currentSpeaker = snob
+Of course!
+I don't think you actually hit your head.
+{ChangeSprite("Lavender", "lavender_thinking")}
+You seem sufficiently mentally competent.
+~currentSpeaker = you
+Awww. Is that a compliment?
+{ChangeSprite("Lavender", "lavender_angry")}
+~currentSpeaker = snob
+No!
+Stop teasing me. Just give me my magazine!
 ~funds+=(lbd11+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
@@ -288,7 +315,7 @@ Although I'm not sure if I'll have time to read it for a while now.
 Luckily it's a book, so it won't go off.
 {ChangeSprite("Tali", "tali_smirk")}
 That's a good point.
-~funds+=87.5
+~funds+=tbd2+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -323,7 +350,7 @@ Originality is so overrated.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 Well...it certainly has its time and place.
-~funds+=70
+~funds+=tbd1+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ¬
@@ -364,7 +391,7 @@ But all the same, I look forward to diving into it.
 Is that strange?
 ~currentSpeaker = you
 Not at all.
-~funds+=110
+~funds+=tbd3+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -401,7 +428,7 @@ I'll give you an in depth review after I've read it.
 How about that?
 ~currentSpeaker = you
 I look forward to it.
-~funds+=123.5
+~funds+=tbd4+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -442,7 +469,7 @@ How sadistic.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 I'm intrigued. I'll take it.
-~funds+=132.5
+~funds+=tbd5+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -506,7 +533,7 @@ I'll take it.
 And I'll watch the film after.
 ~currentSpeaker = you
 You won't regret it.
-~funds+=141.5
+~funds+=tbd9+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -572,7 +599,7 @@ Really? You don't ever wonder what goes on inside the heads of the truly evil?
 Maybe...
 But a whole series from the perspective of a monster?
 That would get frustrating.
-~funds+=155
+~funds+=tbd11+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -643,7 +670,7 @@ I mean sure...that stuff is important I guess.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev
 Stories are more than just a sum of their parts.
-~funds+=146
+~funds+=tbd10+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -687,7 +714,7 @@ Thanks, but no thanks.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 I suppose each to their own.
-~funds+=137
+~funds+=tbd8+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -700,7 +727,7 @@ Shit you did it! Night Thunder 89, not a good one, but very impressive nonethele
 It's great that you found it.
 ~music="Rise and shine"
 ~allbooks-=nightthunder_89
-~funds+=120
+~funds+=kbd1+kentProfit
 ~booksSold+=1
 ->->
 ==satin_rain==
@@ -712,7 +739,7 @@ Woah you got the first issue of Satin Rain, that's something.
 It's great that you found it.
 ~music="Rise and shine"
 ~allbooks-=satin_rain_1
-~funds+=125
+~funds+=kbd2+kentProfit
 ~booksSold+=1
 ->->
 
@@ -738,7 +765,7 @@ How does he reason with them?
 He tells them to go the fuck back into the sea.
 ~currentSpeaker = you
 Honestly, good for him.
-~funds+=160
+~funds+=kbd3+kentProfit
 ~booksSold+=1
 ~music="Rise and shine"
 ->->
@@ -776,7 +803,7 @@ I agree, it's pretty nihlistic
 But I might give it another try one day
 ~music="Rise and shine"
 ~allbooks-=wildfyre_678
-~funds+=250
+~funds+=kbd4+kentProfit
 ~booksSold+=1
 ->->
 ==hypnos==
@@ -815,7 +842,7 @@ That would suck.
 ~currentSpeaker = comic
 I don't know, I would kill for a good night's sleep right now.
 ~music="Rise and shine"
-~funds+=195
+~funds+=kbd5+kentProfit
 ~booksSold+=1
 ->->
 
@@ -852,7 +879,7 @@ The illustrations are quite impressive you won't be disappointed.
 ~currentSpeaker = you
 Alright. Alright.
 ~music="Rise and shine"
-~funds+=202
+~funds+=kbd8+kentProfit
 ~booksSold+=1
 ->->
 
@@ -924,7 +951,7 @@ It includes a scene where he lures bad guys into the sauna and...well...zap!
 ~currentSpeaker = you
 Ok. I think I get it.
 ~music="Rise and shine"
-~funds+=209
+~funds+=kbd9+kentProfit
 ~booksSold+=1
 ->->
 
@@ -951,7 +978,7 @@ Well a plain utopia wouldn't be that interesting would it?
 Hmm...
 No I suppose it wouldn't be.
 ~music="Rise and shine"
-~funds+=216
+~funds+=kbd10+kentProfit
 ~booksSold+=1
 ->->
 
@@ -981,7 +1008,7 @@ There's a lot of funny parts.
 It sounds quite fun.
 Maybe I'll give it a read some time.
 ~music="Rise and shine"
-~funds+=230
+~funds+=kbd11+kentProfit
 ~booksSold+=1
 ->->
 

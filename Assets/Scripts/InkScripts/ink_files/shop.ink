@@ -24,66 +24,66 @@ Remaining funds: {funds}
 {buy_book(LUX_222, lbd1)}
 ->goto_shop
 #kent 1
-+{day>=1}{allbooks !? nightthunder_89}[Night Thunder \#89(£100 : Sells for £120)]
-{buy_book(nightthunder_89, 100)}
++{day>=1}{allbooks !? nightthunder_89}[Night Thunder \#89(£{kbd1} : Sells for £{kbd1+kentProfit})]
+{buy_book(nightthunder_89, kbd1)}
 ->goto_shop
 #tali 1
-+{day>=1}{allbooks !? fantasy_7}[The King’s Crown: The War of the Seven Swords: Book 7 (£50 : Sells for £70)]
-{buy_book(fantasy_7, 50)}
++{day>=1}{allbooks !? fantasy_7}[The King’s Crown: The War of the Seven Swords: Book 7 (£{tbd1} : Sells for £{tbd1+taliProfit})]
+{buy_book(fantasy_7, tbd1)}
 ->goto_shop
 +{day>=2}{allbooks !? LUX_394}[LUX Spring issue 394(£{lbd2} : Sells for £{(lbd2+lavenderProfit)})]
 {buy_book(LUX_394, lbd2)}
 ->goto_shop
 #kent 2
-+{day>=2}{allbooks !? satin_rain_1}[Satin Rain \#1(£105 : Sells for £125)]
-{buy_book(satin_rain_1, 105)}
++{day>=2}{allbooks !? satin_rain_1}[Satin Rain \#1(£{kbd2} : Sells for £{kbd2+kentProfit})]
+{buy_book(satin_rain_1, kbd2)}
 ->goto_shop
 #tali 2
-+{day>=2}{allbooks !? fantasy_dragon_heart}[The Betrayal of the Dragon's Heart (£67.50 : Sells for £87.50)]
-{buy_book(fantasy_dragon_heart, 67.5)}
++{day>=2}{allbooks !? fantasy_dragon_heart}[The Betrayal of the Dragon's Heart (£{tbd2} : Sells for £{tbd2+taliProfit})]
+{buy_book(fantasy_dragon_heart, tbd2)}
 ->goto_shop
 Remaining funds: {funds}
 +{day>=3}{allbooks !? LUX_1076}[LUX Winter issue 1076(£{lbd3} : Sells for £{(lbd3+lavenderProfit)})]
 {buy_book(LUX_1076, lbd3)}
 ->goto_shop
 #kent 3
-+{day>=3}{allbooks !? sentinel_105}[The Sentinel \#105(£140 : Sells for £160)]
-{buy_book(sentinel_105, 140)}
++{day>=3}{allbooks !? sentinel_105}[The Sentinel \#105(£{kbd3} : Sells for £{(kbd3+kentProfit)})]
+{buy_book(sentinel_105, kbd4)}
 ->goto_shop
 #tali 3
-+{day>=3}{allbooks !? black_goat}[The Black Goat (£90: Sells for £110)]
-{buy_book(black_goat, 90)}
++{day>=3}{allbooks !? black_goat}[The Black Goat (£{tbd3}: Sells for £{(tbd3+taliProfit)})]
+{buy_book(black_goat, tbd3)}
 ->goto_shop
 
 +{day>=4}{allbooks !? LUX_666}[LUX SPECIAL issue 666(£{lbd4}: Sells for £{(lbd4+lavenderProfit)})]
 {buy_book(LUX_666, lbd4)}
 ->goto_shop
 #kent 4
-+{day>=4}{allbooks !? wildfyre_678}[Wildfyre \#678(£230: Sells for £250)]
-{buy_book(wildfyre_678, 230)}
++{day>=4}{allbooks !? wildfyre_678}[Wildfyre \#678(£{kbd4}: Sells for £{(kbd4+kentProfit)})]
+{buy_book(wildfyre_678, kbd4)}
 ->goto_shop
 #tali 4
-+{day>=4}{allbooks !? forest_god}[The God of the Forest (£103.50: Sells for £123.50)]
-{buy_book(forest_god, 103.50)}
++{day>=4}{allbooks !? forest_god}[The God of the Forest (£{tbd4}: Sells for £{(tbd4+taliProfit)})]
+{buy_book(forest_god, tbd4)}
 ->goto_shop
 +{day>=5}{allbooks !? LUX_360}[LUX pet accessories issue 360(£{lbd5}: Sells for £{(lbd5+lavenderProfit)})]
 {buy_book(LUX_360, lbd5)}
 ->goto_shop
 #kent 5
-+{day>=5}{allbooks !? hypnos_55}[Hypnos \#55(£175: Sells for £195)]
-{buy_book(hypnos_55, 175)}
++{day>=5}{allbooks !? hypnos_55}[Hypnos \#55(£{kbd5}: Sells for £{(kbd5+kentProfit)})]
+{buy_book(hypnos_55, kbd5)}
 ->goto_shop
 #tali 5
-+{day>=5}{allbooks !? the_glass_lab}[The Glass Labyrinth (£112.50: Sells for £132.50)]
-{buy_book(the_glass_lab, 112.50)}
++{day>=5}{allbooks !? the_glass_lab}[The Glass Labyrinth (£{tbd5}: Sells for £{(tbd5+taliProfit)})]
+{buy_book(the_glass_lab, tbd5)}
 ->goto_shop
 
 +{day>=8}{allbooks !? LUX_uniform}[LUX special flight attendant uniform issue (£{lbd8}: Sells for £{(lbd8+lavenderProfit)})]
 {buy_book(LUX_uniform, lbd8)}
 ->goto_shop
 #kent
-+{day>=8}{allbooks !? lady_darkness_373}[Lady of Darkness \#373(£182: Sells for £202)]
-{buy_book(lady_darkness_373, 182)}
++{day>=8}{allbooks !? lady_darkness_373}[Lady of Darkness \#373(£{kbd8}: Sells for £{(kbd8+kentProfit)})]
+{buy_book(lady_darkness_373, kbd8)}
 ->goto_shop
 // +{day>=8}{funds>=70}[X and A \#235(£70: Sells for £90)]
 // ~funds -= 70
@@ -91,43 +91,43 @@ Remaining funds: {funds}
 // ~allbooks+=x_a_235
 // ->goto_shop
 #tali
-+{day>=8}{allbooks !? ring_thorns}[The Ring of Thorns(£117 Sells for £137)]
-{buy_book(ring_thorns, 117)}
++{day>=8}{allbooks !? ring_thorns}[The Ring of Thorns(£{tbd8} Sells for £{(tbd8+taliProfit)})]
+{buy_book(ring_thorns, tbd8)}
 ->goto_shop
 
 +{day>=9}{allbooks !? LUX_rain_proof}[LUX acid rain proof chic (£{lbd9}: Sells for £{(lbd9+lavenderProfit)})]
 {buy_book(LUX_rain_proof, lbd9)}
 ->goto_shop
 #kent
-+{day>=9}{allbooks !? mr_therm}[Mr. Thermistor \#95(£189: Sells for £209)]
-{buy_book(mr_therm, 189)}
++{day>=9}{allbooks !? mr_therm}[Mr. Thermistor \#95(£{kbd9}: Sells for £{(kbd9+kentProfit)})]
+{buy_book(mr_therm, kbd9)}
 ->goto_shop
 
 #tali
-+{day>=9}{allbooks !? lord_of_dusk}[The Lord of Dusk \#95(£121.50: Sells for £141.50)]
-{buy_book(lord_of_dusk, 121.50)}
++{day>=9}{allbooks !? lord_of_dusk}[The Lord of Dusk \#95(£{tbd9}: Sells for £{(tbd9+taliProfit)})]
+{buy_book(lord_of_dusk, tbd9)}
 ->goto_shop
 
 +{day>=10}{allbooks !? LUX_gear}[LUX protective gear issue 331 (£{lbd10}: Sells for £{(lbd10+lavenderProfit)})]
 {buy_book(LUX_gear, lbd10)}
 ->goto_shop
 #kent
-+{day>=10}{allbooks !? bioworld}[Bioworld \#111(£196: Sells for £216)]
-{buy_book(bioworld, 196)}
++{day>=10}{allbooks !? bioworld}[Bioworld \#111(£{kbd10}: Sells for £{(kbd10+kentProfit)})]
+{buy_book(bioworld, kbd10)}
 ->goto_shop
-+{day>=10}{allbooks !? heart_lies}[Where the Heart Lies (£126: Sells for £146)]
-{buy_book(heart_lies, 126)}
++{day>=10}{allbooks !? heart_lies}[Where the Heart Lies (£{tbd10}: Sells for £{(tbd10+taliProfit)})]
+{buy_book(heart_lies, tbd10)}
 ->goto_shop
 Remaining funds: {funds}
 +{day>=11}{allbooks !? LUX_ppe}[LUX PPE special issue (£{lbd11}: Sells for £{(lbd11+lavenderProfit)})]
 {buy_book(LUX_ppe, lbd11)}
 ->goto_shop
 #kent
-+{day>=11}{allbooks !? cybershake}[Cybershake \#235(£210: Sells for £230)]
-{buy_book(cybershake, 210)}
++{day>=11}{allbooks !? cybershake}[Cybershake \#235(£{kbd11}: Sells for £{(kbd11+kentProfit)})]
+{buy_book(cybershake, kbd11)}
 ->goto_shop
-+{day>=11}{allbooks !? queendom_heretic}[Queendom Heretic (£135: Sells for £155)]
-{buy_book(queendom_heretic, 135)}
++{day>=11}{allbooks !? queendom_heretic}[Queendom Heretic (£{tbd11}: Sells for £{(tbd11+taliProfit)})]
+{buy_book(queendom_heretic, tbd11)}
 ->goto_shop
 +[Finish shopping]
 ~music = ""
