@@ -132,10 +132,6 @@ Goodbye.
 ~newsAnnouncement = "New state of the art masks are released today by Blue-Carp manufacturing. They're 150% more efficient than any other model on the market, but cost more than most can afford. Experts explain why they're worth every penny..."
 ¬
 ~newsAnnouncement = ""
-
-hasFile: {hasFile}
-snapped out: {snappedOut}
-
 { 
 - (gaveTraderFile==true):
 -> continue_day_12
@@ -185,15 +181,11 @@ Of course I know what you’re talking about. I’m ecstatic.
 You don’t sound it.
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
-Maybe when I was charging last night there was a loose connection. I don’t know. 
-~currentSpeaker=you
-You’ll cheer up, I’m sure.
-So strange seeing you like this.
-{ChangeSprite("Pandora", "pandora_mean")}
-~currentSpeaker=android
+Maybe when I was charging last night there was a loose connection.
 I am cheerful, I just don’t have the right energy to express it right now.
 ~currentSpeaker=you
 Wait…are you sure you’re not nervous.
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Nervous? I don’t get nervous.
 ~currentSpeaker=you
@@ -204,11 +196,12 @@ I’m not…am I nervous? Is this what being nervous feels like?
 ~currentSpeaker=you
 I imagine that it’s different for androids, but if you feel a lack of enthusiasm and like something could go wrong then that might be a clue.
 You’ve probably hyped this up too much in your head, and put too much pressure on yourself to make it perfect.
-{ChangeSprite("Pandora", "pandora_shocked")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
+{PlayAnimation("Lavender", "shake")}
 ~currentSpeaker=android
-I know what being nervous is! I was a therapist.
+I know what being nervous is!
 {ChangeSprite("Pandora", "pandora_sad")}
-I just…I could always logic myself out of this. 
+I just…I could always logic myself out of it. 
 {ChangeSprite("Pandora", "pandora_shocked")}
 I can’t let this happen.
 ~currentSpeaker=you
@@ -218,7 +211,8 @@ It’s happening whether you like it or not.
 ~currentSpeaker=android
 I need you to help me…just say something to make it go away.
 ~currentSpeaker=you
-Ok, well think of it this way. If it goes terrible, at least you can always host another and learn from your mistakes. Make it better next time.
+Ok, well think of it this way. If it goes terrible, at least you can always host another and learn from your mistakes. 
+Make it better next time.
 {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 If it’s terrible no one will come back. There might not be a next time.
@@ -226,7 +220,9 @@ If it’s terrible no one will come back. There might not be a next time.
 Okay, so let’s say I’m one of your patients and I’m experiencing anxiety. What would you say to me?
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-I would say that everyone always thinks of the worst thing that can happen. That’s why they get nervous. But, what if you imagine the best possible outcome? Imagine everything going perfectly, exactly the way you want. Just picture it. 
+I would say that everyone always thinks of the worst thing that can happen. That’s why they get nervous. 
+But, what if you imagine the best possible outcome? 
+Imagine everything going perfectly, exactly the way you want. Just picture it. 
 {ChangeSprite("Pandora", "pandora_normal")}
 Wait, that worked a bit.
 ~currentSpeaker=you
@@ -252,7 +248,6 @@ Well, it’s you again.
 Sick of me already?
 ~currentSpeaker=you
 I could never be sick of you.
-//{allbooks ? cybershake: -> cybershake_comic->} 
 ->kent_book_check->
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
@@ -299,7 +294,6 @@ And I’m freaking out
 ~currentSpeaker=comic
 It’s ok, it’s just a party.
 ~currentSpeaker=android
-Stop it. You’re not going to logic me out of my anxiety.
 Where are the others??
 ~characters +=tali
 ~characters +=lavender
@@ -339,7 +333,7 @@ I’m not the one with the tracking apps…
 HEY! I told you that was for research purposes only.
 {ChangeSprite("Kent", "kent_shocked")}
 ~currentSpeaker=comic
-Oh my god.
+Oh my god!
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=you
 Everyone shut up.
@@ -350,16 +344,20 @@ What should we start with?
 ~currentSpeaker=you
 We’re playing truth or dare.
 You know how it goes.
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 How does it go?
 ~currentSpeaker=you
-I’ll show you how.
-I’ll pick someone to go first. I’ll save you from the first round {android} as you don’t know what’s going on.
+You pick someone, ask truth or dare. They choose and then you ask them to tell a truth or do a dare.
+Once they're finished, they pick the next person.
+{ChangeSprite("Pandora", "pandora_normal")}
+~currentSpeaker=android
+It sounds like a wonderful icebreaker.
+~currentSpeaker=you
+I’ll pick someone to go first.
 ->start_truth_or_dare
 
 ==start_incident==
-TODO : why is kent allowed to use the screen to watch film, but not for his work
 ~music="Rise and shine"
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
@@ -370,16 +368,13 @@ Glad you enjoyed it.
 ~currentSpeaker=comic
 Is it film time now?
 We can watch the new Blood Monster 3 that just came out. 
-I have it on my Holoflix account, if you show me the computer I can just login.
+I have it on my Holoflix account, I just have to transmit it to your screens and we can watch it together.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
-It’s downstairs.
-I can show you.
+Sounds fun. 
+I'll get the drinks ready.
 ~currentSpeaker=you
-No, I’ll show him.
-You stay up here and enjoy the drinks and music.
-~currentSpeaker=android
-Aw cool, thanks!
+Let me help you.
 ~music=""
 ~sfx="explosion"
 {ChangeSprite("Tali", "tali_shocked")}
@@ -418,7 +413,6 @@ Look, something really bad just happened, {android} status update?
 It’s so hard to focus…everyone online is in a state of panic.
 I'm detecting normal levels of radiation.
 ~currentSpeaker=you
-So not nuclear then. 
 But we should probably head downstairs just in case.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
@@ -441,7 +435,7 @@ I wasn’t actually joking.
 WAHHHH!
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
-Don’t be worried. I’m actually trained for this kind of situation.
+Don’t worry. I’m actually trained for this kind of situation.
 ~scene = "Basement"
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android

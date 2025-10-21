@@ -37,7 +37,7 @@ Every morning, I have waffles.
 I don’t know if you’ve taken a look around, but this isn’t exactly a five star hotel.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
-The robot is making them for me.
+The IOI is making them for me.
 ~currentSpeaker=you
 What? How can {android} be making you waffles?
 ~currentSpeaker=android
@@ -67,7 +67,7 @@ And may I remind you, because I only just remembered myself, we’re in the midd
 ~currentSpeaker=snob
 …so asking for waffles was inappropriate?
 ~currentSpeaker=you
-You didn’t ask. You demanded. And also, {android} is not your slave.
+Yes. Also, {android} is not your slave.
 ~characters+=pandora
 ~currentSpeaker=android
 I have pancakes.
@@ -76,7 +76,7 @@ The kitchen is kind of small, and doesn’t have much fresh stuff. I had to use 
 ~currentSpeaker=snob
 Are these even chocolate chip pancakes?
 ~currentSpeaker=android
-They’re chocolate chip free unfortunately.
+No.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=you
 Ahem.
@@ -88,13 +88,15 @@ Bon appetit.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 Yummy these are so delicious…cough. What's that weird–unusual flavour?
-{ChangeSprite("Pandora", "pandora_mean")}
+{ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
-I suppose the pans have been down here for so long, they must have gathered a strange musty smell. Don’t worry though, it’s unlikely to make you sick. This place is very sterile.
+I suppose the pans have been down here for so long, they must have gathered a strange musty smell. 
+{ChangeSprite("Pandora", "pandora_normal")}
+Don’t worry though, it’s unlikely to make you sick.
 ~currentSpeaker=snob
 Oh goodie. Um {you} maybe you would like to have a try?
 ~currentSpeaker=you
-I wouldn’t want to deprive a guest of food. And anyway I don't really like dessert for breakfast.
+No thanks. I don't really like dessert for breakfast.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 Calling this dessert is generous.
@@ -106,8 +108,9 @@ I have some freeze dried ice cream I can crumble on top.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 I suppose that could work.
+What flavour is it?
 ~currentSpeaker=android
-It’s banana flavoured.
+Banana.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Forget it.
@@ -135,7 +138,7 @@ So what does that mean?
 Can I contact my family?
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Oh hahaha no.
+Oh no.
 It’s just for essential workers, government officials, and also media coverage.
 My boss sent me an email, and he wants me to go back to work.
 {ChangeSprite("Lavender", "lavender_angry")}
@@ -148,7 +151,7 @@ No rest for the wicked eh?
 No way you count as an essential worker.
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-Seriously, it’s kind of our duty to cover this. It's essential to the government that we pump out the propaganda ASAP. 
+Seriously, it’s kind of our duty to cover this. We've gotta pump out that propaganda ASAP. 
 ~currentSpeaker=you
 How is this even going to work?
 {ChangeSprite("Kent", "kent_normal")}
@@ -160,16 +163,11 @@ I think so…I don’t know. {android}? It’s Ada’s computer, and you know he
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 Honestly, I’m not sure. I’m not even allowed to touch that computer. 
-{ChangeSprite("Pandora", "pandora_happy")}
+{ChangeSprite("Pandora", "pandora_normal")}
 But seeing as this is mandated law, this might be the exception.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 {comic}, can I use your holoscreen to contact my family?
-~currentSpeaker=comic
-We’re sort of communicating on a special private network right now, so in order to contact your family, they would also have to be on the network.
-{ChangeSprite("Lavender", "lavender_serious")}
-~currentSpeaker=snob
-My father is definitely there.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 I can’t let you use this, it would be a violation of protocol.
@@ -252,13 +250,13 @@ This is rather unexpected.
 Depressing is what it is.
 Christmas day in a bunker.
 ~currentSpeaker=you
-It’s certainly a different experience.
+Really?
 ~currentSpeaker=snob
 No presents. No Christmas tree.
 I can’t think of anything worse.
 ~currentSpeaker=you
 We saw ash fall from the sky yesterday.
-We saw the houses of parliament burning on the holoscreen.
+We saw the houses of parliament burning.
 No one can contact their families.
 But you think the manner of our celebrations is the depressing part?
 {ChangeSprite("Pandora", "pandora_happy")}
@@ -270,8 +268,8 @@ I don’t particularly feel like celebrating.
 But it’s—
 ~currentSpeaker=you
 It’s Christmas I guess?
-So forget all sensible thoughts.
-Shall we make wreaths from toilet paper and used food packaging?
+So let's forget everything.
+Shall we make wreaths from toilet paper and used packaging?
 {ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker=android
 If it keeps spirits up.
@@ -425,7 +423,7 @@ That's a shame.
 {ChangeSprite("Kent", "kent_normal")}
 {ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker=webdev
-Maybe it was an error?
+Maybe it was a mistake?
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 …
@@ -452,7 +450,7 @@ It must be like a sympathetic reaction.
 Must be something wrong with her programming.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-I’m sure Adalina will fix it when she gets back, she’s a computer whizz.
+I’m sure Adalina will fix it when she gets back, she’s so clever.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
 The question is {you}…why didn't {android} wrap you a gift.
@@ -462,11 +460,9 @@ Can we talk about something else?
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 Uh yes. Thank god. I want to know what’s for lunch.
-{ChangeSprite("Lavender", "lavender_thinking")}
-It obviously won’t be as good as the Christmas lunch my housekeeper makes, but I’ll try to be polite and enjoy it.
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
-I can cook a pretty good roast.
+Not too sure what {android} has planned. But if she's not feeling up to it, I can cook a pretty good roast.
 Depending on the ingredients we have here.
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
@@ -481,7 +477,7 @@ And covering the bird so it keeps all the juices in.
 Butter is the secret to everything I guess.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-The more I learn about cooking, the more I realise that butter really is the key.
+The more I learn about cooking, the more I realise that butter really is the magic ingredient.
 {ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker=snob
 I suppose you'll be no fun {you} since you have something against Christmas.
@@ -491,36 +487,25 @@ Or something against fun in general.
 ...
 Why don’t you argue with {webdev}?
 I’m tired of speaking to you.
-{ChangeSprite("Kent", "kent_upset")}
+{ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
-You’re being kind of rude {you}?
+{you}? Are you ok?
 ~currentSpeaker=you
-{comic}, why do you even care, you hate {snob}? Why are you all acting so weird?
+I don't know.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
-You know, I kind of think it sucks that you {webdev} got a better present than me. I think {android} must like you better.
+You know, I kind of think it sucks that you {webdev} got a better present than me. 
+I think {android} must like you better.
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
-I don't know what you're talking about. We both got something we liked.
+What's your problem?
 ~currentSpeaker=snob
-You got a shiny state of the art new laptop. I only got a cheap flimsy dress, this is just polyester.
+You keep spending time with these people. 
+And less time with me.
 {ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
-That’s incredibly unfair. I need this laptop, it would help a lot with my job. You don’t need anything.
-{ChangeSprite("Kent", "kent_upset")}
-~currentSpeaker=comic
-Why is {snob} arguing about presents?
-{ChangeSprite("Kent", "kent_sad")}
-{ChangeSprite("Lavender", "lavender_sad")}
-~currentSpeaker=snob
-Everyone is always ganging up on me.
-And my one friend.
-Doesn’t even stand up for me.
-{ChangeSprite("Tali", "tali_serious")}
-~currentSpeaker=webdev
-I’ve been standing up for you for most of my life. 
-But I'm done with it now.
-You’re just a fucking brat.
+Can you really blame me?
+You're being a fucking brat.
 {ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker=snob
 …
@@ -529,7 +514,7 @@ You’re just a fucking brat.
 …
 ~currentSpeaker=you
 …
-{ChangeSprite("Lavender", "lavender_crying")}
+{ChangeSprite("Lavender", "lavender_tears_crying")}
 ~currentSpeaker=snob
 I’m going to take a nap.
 ~characters-=lavender
@@ -540,22 +525,27 @@ I think I might check this place out a little.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 I’m heading off too. 
-Sorry {you} you had to hear this.
+Sorry {you} you had to witness that.
 ~currentSpeaker=you
 Wait, {webdev}.
 I want you to stay right here.
-I really don't want to be alone right now.
-{ChangeSprite("Tali", "tali_happy")}
+I don't want to be alone right now.
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 Of course, I will stay.
 I don't want you to feel alone.
+~currentSpeaker=you
+Also...don't be sad. It's making me feel uncomfortable.
+{ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
+Yeah, that's a good point.
 {ChangeSprite("Tali", "tali_serious")}
 Hey {you}, are you alright?
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~characters+=pandora
 ~currentSpeaker=android
 Stop it {you}.
+{ChangeSprite("Pandora", "pandora_normal")}
 {webdev} please go check on the others.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker=webdev
@@ -590,18 +580,15 @@ Could it be a coincidence? Those seem like likely outcomes, even without my inpu
 ~currentSpeaker=android
 No…I don’t think so.
 ~currentSpeaker=you
-I guess, the way everything’s been has been super weird too. Like everyone’s been pulled into this fantasy world, but we’re the only two who seemed to maintain some kind of separation from it. 
+I guess, the way everything’s been has been super weird too. 
+Like everyone’s been pulled into this fantasy world, but we’re the only two who seemed to maintain some kind of separation from it. 
 It’s like we don’t really belong here.
-{ChangeSprite("Pandora", "pandora_normal")}
+It makes sense for you, because you're an IOI. But why me?
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
-I don't think that's quite the case.
-~currentSpeaker=you
-What do you mean?
+This is an artifical reality. Nobody belongs here.
 {ChangeSprite("Pandora", "pandora_sad")}
-~currentSpeaker=android
-It’s just a theory. 
-I’ll explain later.
-{ChangeSprite("Pandora", "pandora_normal")}
+We can talk about it later.
 Right now I need you to get us out of here.
 ~currentSpeaker=you
 You need me?
@@ -623,7 +610,7 @@ Hmm, I feel like this is kind of cruel to the others.
 They seemed to be enjoying it here.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
-No…I think it’s for the best. Trust me.
+No…it’s for the best. Trust me.
 ~currentSpeaker=you
 Aye aye captain.
 ~scene="Basement"
@@ -665,9 +652,12 @@ So, I suppose we should talk about that.
 ~currentSpeaker=you
 Did they just forget?
 ~currentSpeaker=android
-I don’t know what happened there. I suppose that was Ada’s little project. I didn’t realise how far she’d gotten on it though.
+I don’t know what happened there. 
+I suppose that was Ada’s project. I didn’t realise how far she’d gotten on it though.
 ~currentSpeaker=you
- What do you mean ‘Ada’s little project’? Why did it just suck our consciousnesses in like that? How is that even possible?
+ What do you mean ‘Ada’s project’? 
+ Why did it just suck our consciousnesses in like that? 
+ How is that even possible?
  {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 I’m still figuring out the details.
@@ -694,20 +684,17 @@ I see, that's alright then.
 Do you have any idea why it didn't work on us?
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
-We're different I guess.
-We have some issues, the others maybe don't have.
+For me, I suppose I'm an IOI. It might not have been designed to interface with my brain in the same way.
+You are slightly more complicated.
 ~currentSpeaker=you
-Issues? What issues?
+How am I complicated?
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
+Well I can't help noticing.
 You always seem a bit sad.
 ~currentSpeaker=you
 Do I? I suppose so. I can never remember why.
-{ChangeSprite("Pandora", "pandora_mean")}
-~currentSpeaker=android
-You don't remember, or you don't want to say?
-~currentSpeaker=you
-I don't know. I just feel like the past is super fuzzy right now.
+I just feel like the past is super fuzzy right now.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Sometimes that can be a side effect of mental illness.
@@ -744,27 +731,29 @@ You're a therapy IOI. You should know this.
 There's another thing I need to tell you.
 I'm unregisted.
 ~currentSpeaker=you
-Oh?
+What do you mean?
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Ada and her husband created me. I'm not approved by the government.
-I did study all the necessary university courses to become a therapy IOI.
+They provided me with all the government mandated training modules I needed.
+I'm just not registered by any authority.
 ~currentSpeaker=you
-You might have the knowledge, but you don't have solid judgement.
-{ChangeSprite("Pandora", "pandora_normal")}
+That does not reassure me.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-That's a good way of putting it. 
+I'm sorry.
 I can't think of a good reason why you wouldn't take your medication though.
 ~currentSpeaker=you
 I just know it didn't work for me. 
 I had a bad...reaction to it.
-{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 You don't think, maybe this could be causing your memory loss?
 ~currentSpeaker=you
 Yes {android}. This is exactly what's causing my memory loss. It happens when you start Fate. 
 It's almost like resetting your life.
+Oh did they not cover this in your government mandated training modules?
 ~currentSpeaker=android
+Erm no.
 Now, it does make a bit of sense.
 Sometimes these drugs can affect the brain in strange ways.
 That might be why you had an aversion to them.
@@ -805,15 +794,16 @@ Eh? What?
 I've been putting Fate in your drinks.
 ~currentSpeaker=you
 WHAT?!
-{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Every day, when I ask if you want a tea or coffee, I slip it in.
 ~currentSpeaker=you
 ...
 Why?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 I saw you throw your pills in the bin.
 And I didn't want you to get mentally unwell.
+{ChangeSprite("Pandora", "pandora_sad")}
 The same thing happened to my father and he took his own life because of it.
 ~currentSpeaker=you
 ...
@@ -828,7 +818,8 @@ I'm kind of...unregisted.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Ada and her husband created me. I'm not approved by the government.
-I did study all the necessary university courses to become a therapy IOI.
+They provided me with all the government mandated training modules I needed.
+I'm just not registered by any authority.
 ~currentSpeaker=you
 So you're illegal?
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -876,12 +867,15 @@ I was just trying to help.
 You're not well.
 ~currentSpeaker=you
 I'm perfectly fine now. Now I know who you are.
-A government spy, I presume.
+A government spy, I presume?
 Or perhaps you were hacked and infected with some kind of virus.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 No. Please, {you}, you have to believe me. I only wanted to cure you.
-I'm a therapy IOI. Ada made me from scratch.
+I'm a therapy IOI. 
+Ada and her husband created me. I'm not approved by the government.
+They provided me with all the government mandated training modules I needed.
+I'm just not registered by any authority.
 ~currentSpeaker=you
 Really?
 That sounds unlikely.
@@ -985,6 +979,8 @@ This was for Ada’s brother, right?
 ~currentSpeaker=android
 He suffered a great loss and was in and out of these deep, dark depressive episodes.
 Ada, and her husband, made me for him. I was an experiment between the two of them. She programmed me, and he constructed the robotics.
+They provided me with all the government mandated training modules I needed.
+I'm just not registered by any authority.
 ~currentSpeaker=you
 That doesn't sound very legal.
 {ChangeSprite("Pandora", "pandora_mean")}
@@ -1016,7 +1012,7 @@ Always, I wonder if I had done something differently, perhaps there would be a d
 It wasn’t your fault.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-I was built for a specific purpose. In the end I failed. I let the one person who loved me die.
+I was built for a specific purpose. In the end I failed. 
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=you
 Like you said, you were like his daughter. You didn’t have any experience. 

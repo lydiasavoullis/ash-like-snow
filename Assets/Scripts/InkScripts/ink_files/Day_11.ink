@@ -571,19 +571,19 @@ Are you arguing?
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 No. Just a little disagreement.
-Is there a screen where we could watch a film? Just in case {you} here gets a little crabby.
+Is there a screen where we could watch a film?
+~currentSpeaker=you
+There’s a computer in the basement, we could probably put something on there.
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-There’s a computer in the basement, we could probably put something on there. The screen is fairly big.
+I'm sorry {you}, but Ada asked me not to allow anyone to touch that. Unless it was an emergency.
+~currentSpeaker=you
+Oh...ok.
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
-Wonderful. 
+No worries. I can always cast a film from my Holoflix account to everyone's holoscreens.
 {ChangeSprite("Kent", "kent_sad")}
-Sounds a bit creepy though.
-~currentSpeaker=android
-I sleep there every night.
-{ChangeSprite("Kent", "kent_happy")}
-~currentSpeaker=comic
-Braver than I am.
+I do miss doing things the old fashioshed way though.
 ~currentSpeaker=you
 Well, that’s sorted.
 I’ll bring some snacks and drinks.

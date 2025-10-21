@@ -24,7 +24,6 @@ Hey
 ->END
 //set the prices of all the books
 ===function set_all_book_prices()===
-TODO
 //take this price and replace the shop prices with them
 //sells for price will be this price + character profit
 //e.g. price: {lbd2} sells for: {lbd2 + lavenderProfit}
