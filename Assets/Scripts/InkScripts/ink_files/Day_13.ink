@@ -87,7 +87,7 @@ I guess they’re like crepes…y’know I love french cuisine.
 Bon appetit.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
-Yummy these are so delicious…cough. What's that weird–unusual flavour?
+Yummy these are so delicious…\*cough\*. What's that weird–unusual flavour?
 {ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
 I suppose the pans have been down here for so long, they must have gathered a strange musty smell. 
@@ -1044,9 +1044,6 @@ I think that makes you intelligent enough.
 -> cas_admission
 
 = cas_admission
-~currentSpeaker=android
-…
-I don’t know either.
 {ChangeSprite("Pandora", "pandora_mean")}
 Are you going to tell me what your deal is?
 ~currentSpeaker=you
@@ -1103,8 +1100,7 @@ Yeah…I’ve got that a bit too.
 I’ve been dizzy, but I just assumed it was from the stress. What do you mean by hypnotic state? Virtual world? 
 ~currentSpeaker=you
 {android} I think it’s best you explain this part.
-~currentSpeaker=android
-“Pandora explains the virtual world”
+<i>\*Pandora explains the virtual world\*</i>
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 Wait a minute...I got a present and I just forgot about it.
@@ -1117,10 +1113,11 @@ And why are you the only ones that remember?
 We were sort of ‘conscious’ in the world.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
-How does that work?
+Why?
 ~currentSpeaker=you
 We're not too sure.
-We didn’t just remember. I was controlling some of it. I mean that I could control your behaviour and actions. I stopped as soon as I was made aware of what I was doing.
+But...I was controlling some of it. 
+What I mean is that I could control your behaviour and actions. I stopped as soon as I was made aware of what I was doing.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 That’s a bit scary, but it kind of makes sense.
@@ -1133,17 +1130,19 @@ That’s freaky. I’m sorry, how can you be so calm {comic}?
 Compared to everything that happened yesterday, this is pretty tame. Especially since it seems like it's been harmless.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-Harmless? She was controlling us in a dream. That’s messed up. Who knows what other creepy stuff she's been doing.
-
+Harmless? She was controlling us in a dream. 
+{ChangeSprite("Lavender", "lavender_angry")}
+That’s messed up. Who knows what other creepy stuff she's been doing.
 ~currentSpeaker=comic
 {ChangeSprite("Kent", "kent_happy")}
 I trust {you}.
 {ChangeSprite("Kent", "kent_side_normal")}
-But I do wonder what that thing was doing in the basement in the first place.
+I just wonder what that thing was doing in the basement in the first place.
 ~currentSpeaker=you
 There's something I need to get off my chest.
-I know that I’ve been pretty cryptic about myself. 
-That probably doesn't help with the whole controlling you in a dream thing.
+I know that I’ve been pretty cryptic about myself.
+It might make it hard for you to trust me.
+And the whole controlling you in a dream thing probably doesn't help.
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 Sure, I’m happy to listen. We’re here for you.
@@ -1159,26 +1158,18 @@ Ok, get on with it.
 Thanks {snob}.
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker=you
-Ever since I was old enough to remember I've felt awful, stressed, anxious and utterly alone. 
-I think worst of all, I always felt powerless. Like I had no control over anything.
-{ChangeSprite("Kent", "kent_sad")}
-~currentSpeaker=comic
-That's not good.
+I guess I've always felt powerless. Like I had no control over anything.
 {ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker=webdev
 Tell me about it.
-~currentSpeaker=snob
-When are you going to get to the point?
 ~currentSpeaker=you
-I moped around, practically begged everyone and anyone to hire me.
-One day, I landed a job for a very well known company.
+Four years ago I landed a job for a very well known company.
 It didn't pay a lot, and the treatment was incredibly shitty. But it was something at least.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Welcome to the sucky job club.
 ~currentSpeaker=you
-Well…
-Things got very stressful for me.
+Things got very stressful for me quite quickly.
 I went to my GP and they prescribed me this drug…
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
@@ -1189,58 +1180,67 @@ Yeah.
 ~currentSpeaker=comic
 I heard they're thinking of banning it.
 ~currentSpeaker=you
-For good reason. 
+For good reasons. 
 I started taking it, and everything started going much better for me.
 My mood changed.
 All of a sudden my boss was much happier with me. I was getting work done much quicker, and clients were eagerly telling him stories of how wonderful I was.
-Things sort of started going south when he wanted to compete with other companies. They started releasing this new car model and my boss was furious. 
-They were making loads of money and he wanted a piece of it. 
-Our division didn't have enough money to hire better engineers. And companies were making breakthroughs and patenting their own technology.
+It all went south when the company ended up in financial trouble from poor management.
+Our division didn't have enough money to hire better engineers. And other companies were making breakthroughs and patenting their own technology.
 So my boss convinced me to steal from them.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 That sounds kind of illegal.
 ~currentSpeaker=you
-Yup.
+Yes, very illegal.
 But I was so scared of losing my job at that point I would have done anything.
 And the Fate made everything so easy.
 I kind of just saw my life as actions…one thing leading to the next.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 That’s just an excuse.
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
-Shh {snob}
+Shh {snob}.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=you
 At first it was just a matter of finding security weaknesses and exploiting them.
 I’d research people and find ways to scam them out of information.
 I used to go to networking events under a false identity, and do a spot of social engineering here and there.
-It got to this point one day…this was the breaking point. I’d found out the apartment where one of the engineers lived. 
-He was on holiday and I’d found a way to break into his apartment, hack into his laptop. Download some files, take pictures of some documents.
-People aren’t as careful as we’d like to think.
-Anyway, I was about to leave. And I saw this thing moving on the floor.
+One day I found the address of where one of the engineers of a rival company lived.
+He was on holiday, so I broke into his apartment, hacked into his laptop and retrieved the information I was looking for.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
-Oh no.
+Oh god {you}.
+~currentSpeaker=you
+I remember being so pleased with myself.
+I was about to leave when—out of the corner of my eye—I saw something moving on the floor.
 ~currentSpeaker=you
 At first I thought it was a rat.
-But no, it was one of those small dogs…and it started barking.
-I don’t know what got into my head at that point. Everything started going blurry from panic. I’d never come across a situation like that before.
-Suddenly the world stopped being blurry, like my brain had come across the solution. When I came out of the delusion I was holding the dog in my hands. Its neck was sticking out at an unnatural angle.
-~currentSpeaker=comic
-Ah.
+But no, it was one of those small dogs. It started barking.
+I don’t know what was going on inside my head at that point. 
+My vision blurred—with fear, or fury? I couldn't distinguish between the two.
+Suddenly, the world stopped being blurry. It was like the final piece of the puzzle slotting into place—my brain stumbled across the solution
+—and then the whole image came into focus.
+I was holding the dog in my hands. 
+It was limp.
+{ChangeSprite("Lavender", "lavender_shocked")}
+~currentSpeaker=snob
+\*gasp\*
 ~currentSpeaker=you
-I dropped the animal and fled. I think I threw up in a bin outside the apartment buildings. 
-After that I quit my job. I tried to stop taking Fate, but it was difficult... 
+I think I threw up in a bin outside. 
+I tried to stop taking Fate... 
 I met Ada at one of my group counselling sessions and she gave me this job and helped me quit for good.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 I don’t know what to say.
 ~currentSpeaker=you
-It wasn’t just the dog, I hurt people, our company put others out of business from their stolen designs. People lost jobs. Became homeless. Maybe…died.
+It wasn’t just the dog, I hurt people. Our company put others out of business from their malicious practices. 
+People lost their jobs. Became homeless.
+Some took their own lives.
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
-Yeah, I used to write reports about that.
-Funny though, I think I know which company you’re talking about…AutoCarp, that’s a division of BlueCarp… 
+I was a researcher on that incident.
+You likely weren't the only one they asked to perform corporate espionage.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
 It doesn’t matter. You killed a helpless animal. It doesn’t matter how much drugs, or how much ‘stress’ you were under. You don’t kill things.
@@ -1267,9 +1267,9 @@ You two are idiots.
 {ChangeSprite("Kent", "kent_side_serious")}
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
-I know people who lost their jobs because of that incident.
+I have friends who lost their jobs because of that incident.
 ~currentSpeaker=you
-Sorry.
+I'm sorry.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 I’ve got to get back to this report.
@@ -1282,7 +1282,6 @@ I think I’m going to just look through some of those books I was rifling throu
 Ok.
 ~currentSpeaker=you
 Well that could have gone better.
-
 #diverging content, on whether you reveal Ada's plot or not
 {pandoraPoints>=6 && snappedOut:
     ->secret_plot_reveal
@@ -1337,40 +1336,36 @@ Uh, I guess not.
 ~currentSpeaker=android
 One thing, if you weren't taking Fate anymore. Why did you have it on your person at all?
 ~currentSpeaker=you
-My pharmacist keeps sending it to my address. It's kind of difficult to get it cancelled. 
-I wanted to, but Ada advised me against it. She said that I might get investigated by the police.
+My pharmacist keeps sending it to my address. It's kind of difficult to get it cancelled once you start taking it. 
+I wanted to, but Ada advised me against it. She said that people who willingly stop taking it can raise suspicion.
 Instead, she would have me bring it to her, to prove I wasn't taking it. Then she would dispose of it.
-When she left, she trusted me to dispose of it myself. I guess I didn't really do a great job of it though.
+When she left, she asked me to dispose of it myself. I'd already been sober for a while so she trusted me.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Oh, I see now.
 ~currentSpeaker=you
-Also, since we’re on the topic of Ada.
-{ChangeSprite("Pandora", "pandora_confused")}
-~currentSpeaker=android
-Hmmm?
-~currentSpeaker=you
-A strange man talked to me in the shop the other day.
-I think he was sent by Ada, I forgot because I was taking Fate at the time. But I was meant to give him some money.
+Another thing.
+You know that strange man who came into the shop the other day? 
+Ada wanted me to give something to him?
+A file.
 {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
-What? And did you give him money?
+What was on the file?
 ~currentSpeaker=you
-Yes.
+I don't know. It was encrypted. I haven't had time to try and decrypt it yet.
+I just gave it to him. I hope I did the right thing.
 {ChangeSprite("Pandora", "pandora_confused")}
 ~currentSpeaker=android
-But why?
+Do you know why she asked you to do it?
 ~currentSpeaker=you
-Because I felt like it was important.
+I can't remember.
 I feel like Ada is up to something. With this virtual world technology. I mean…do you think she’s really in Madrid?
 ~currentSpeaker=android
 Why would she lie?
 ~currentSpeaker=you
 I…don’t know. My brain got fried. I only know whatever it was, it was very important.
-I’m glad I gave him the money.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
-That’s good I guess.
 I wish Ada had told me all of this, but perhaps I can see why she didn’t.
 ~currentSpeaker=you
 She probably didn’t want to worry you.
@@ -1378,7 +1373,7 @@ She probably didn’t want to worry you.
 ~currentSpeaker=android
 No.
 She didn’t trust me.
-I can kind of see why.
+But I understand why.
 {ChangeSprite("Pandora", "pandora_sad")}
 I almost messed everything up.
 ~currentSpeaker=you
