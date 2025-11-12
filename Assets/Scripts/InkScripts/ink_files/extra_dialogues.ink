@@ -37,7 +37,6 @@ Berets!?
 What has the world come to?
 How horrifying.
 I'll take it.
-~allbooks-=LUX_1076
 ~funds+=(lbd3+lavenderProfit)
 ~booksSold+=1
 ~music="Rise and shine"
@@ -726,7 +725,6 @@ I suppose each to their own.
 Shit you did it! Night Thunder 89, not a good one, but very impressive nonetheless.
 It's great that you found it.
 ~music="Rise and shine"
-~allbooks-=nightthunder_89
 ~funds+=kbd1+kentProfit
 ~booksSold+=1
 ->->
@@ -738,7 +736,6 @@ It's great that you found it.
 Woah you got the first issue of Satin Rain, that's something. 
 It's great that you found it.
 ~music="Rise and shine"
-~allbooks-=satin_rain_1
 ~funds+=kbd2+kentProfit
 ~booksSold+=1
 ->->
@@ -802,7 +799,6 @@ I agree, it's pretty nihlistic
 {ChangeSprite("Kent", "kent_happy")}
 But I might give it another try one day
 ~music="Rise and shine"
-~allbooks-=wildfyre_678
 ~funds+=kbd4+kentProfit
 ~booksSold+=1
 ->->

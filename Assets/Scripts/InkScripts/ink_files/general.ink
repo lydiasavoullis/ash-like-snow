@@ -162,7 +162,6 @@ I'm jealous
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android 
 It's true, I have it good
-~allbooks-= Alice_in_Wonderland
 ->->
 ==read_greek_myths==
 ~pandoraPoints+=1
@@ -214,7 +213,6 @@ Maybe like 90% depressing.
 It's OK I can handle depressing.
 ~currentSpeaker = you 
 Well, you'll enjoy it then.
-~allbooks-= myths_legends
 ->->
 ==read_howls_moving_castle==
 ~pandoraPoints+=1
@@ -264,7 +262,6 @@ Do not try to make me feel sorry for you.
 Alright. I think I'll leave things there.
 {ChangeSprite("Pandora", "pandora_excited")}
 I can't wait to finish this tonight.
-~allbooks-= Howls_Moving_Castle
 ->->
 ==read_lion_witch_wardrobe==
 ~pandoraPoints+=1
@@ -311,7 +308,6 @@ Honestly, I think that's why a lot of people read.
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 I'm looking forward to reading the rest of it!
-~allbooks-=t_lion_witch_wardrobe
 ->->
 ==read_the_wizard_of_oz==
 ~pandoraPoints+=1
@@ -371,7 +367,6 @@ Just say you're protesting against bad mental health.
 {ChangeSprite("Pandora", "pandora_excited")}
 ~currentSpeaker = android
 I'm looking forward to finishing this book.
-~allbooks-=the_wiz_oz
 ->->
 ==read_the_hobbit==
 ~pandoraPoints+=1

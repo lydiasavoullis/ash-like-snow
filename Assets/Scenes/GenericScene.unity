@@ -4930,6 +4930,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5146838990238623699, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5146838990238623702, guid: 11a7a29110fd3f647a6e03aca376263d,
         type: 3}
       propertyPath: m_Camera
@@ -5060,6 +5065,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6080124044705353099, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 6800885432079451190, guid: 11a7a29110fd3f647a6e03aca376263d,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -5119,6 +5129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257215178475915599, guid: 11a7a29110fd3f647a6e03aca376263d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 8441353941160410552, guid: 11a7a29110fd3f647a6e03aca376263d,
         type: 3}

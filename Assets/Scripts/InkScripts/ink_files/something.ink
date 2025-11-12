@@ -20,6 +20,8 @@ INCLUDE truth_or_dare.ink
 INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
+//->day_1
+*[Playtest]
 ->day_1
 // *[Go to end credits]
 // ~music="A winters chill"
@@ -35,12 +37,13 @@ INCLUDE night.ink
 // ~pandoraPoints = 6
 // ~snappedOut = "yes"
 // ->ending_check
-// *[Simulate shop]
-// {set_all_book_prices()}
-// ~day=11
-// ~scene="GenericScene"
-// ¬
-// ->next_day
+*[Simulate shop]
+~snappedOut=true
+{set_all_book_prices()}
+//~day=11
+~scene="GenericScene"
+¬
+->next_day
 ==next_day
 ~funds=50000
 {day<6 || day>7: Start day {day}|->skip_day}

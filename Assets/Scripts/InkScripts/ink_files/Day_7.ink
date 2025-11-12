@@ -192,13 +192,13 @@ If you were a human, you would be free.
  ...
  ...
  ...
- ~characters-=pandora
- ~music = "A winters dream"
- ~scene="Blank"
- ¬
- [END OF DEMO]
- ->END
-//->end_day_7
+//  ~characters-=pandora
+//  ~music = "A winters dream"
+//  ~scene="Blank"
+//  ¬
+//  [END OF DEMO]
+//  ->END
+->end_day_7
 ==end_day_7==
 ~characters+=pandora
 ~currentSpeaker = you 

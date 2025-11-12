@@ -131,12 +131,13 @@ public class DialogueController : MonoBehaviour
         //gameControls.UI.Navigate.performed += NavigateButtons;
 
     }
-    
+   
+
     private void ProgressDialogue()
     {
         //Mouse.current.rightButton.wasPressedThisFrame && 
 
-        if (GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
+        if (GameVars.finishedTyping && SceneManager.GetActiveScene().name != "MainMenu" && !GameVars.dontAdvanceStory)// && GameStates.State != GameState.InMenu
 
         //Input.GetMouseButtonDown(1)
         {
@@ -159,6 +160,11 @@ public class DialogueController : MonoBehaviour
     private void OnDisable()
     {
         gameControls.UI.Disable();
+        //Debug.Log("For god's sake help me I'm being cut off.");
+        if (!GameVars.finishedTyping) {
+            storyText.maxVisibleCharacters = storyText.text.Length;
+            GameVars.finishedTyping = true;
+        }
     }
     //navigation is + or - 1 depending on whether you are going right or left
     private void Update()
@@ -166,7 +172,7 @@ public class DialogueController : MonoBehaviour
         if (gameControls.UI.FastForward.WasPerformedThisFrame())
         {
 
-            if (!GameVars.autoMode && !GameVars.dontAdvanceStory && GameStates.State != GameState.InMenu)
+            if (!GameVars.autoMode && !GameVars.dontAdvanceStory)//&& GameStates.State != GameState.InMenu
             {
                 StartCoroutine(FastForward());
             }
@@ -282,7 +288,7 @@ public class DialogueController : MonoBehaviour
             string text = GameVars.story.Continue();//get text from ink
             if (!text.Contains("¬"))//¬ indicates you want an action to proceed without text
             {
-                textLogControl.AddToTextLog(text, textLogBox, textLogList);//log all text
+                textLogControl.AddToTextLog(text, GameVars.story.currentTags.ToString() ,textLogBox, textLogList);//log all text
                 StartCoroutine(uIControl.WriteText(text, storyText, audioManager));//typewriter effect 
         }
         GameVars.story.variablesState.variableChangedEvent -= ObserveAnyVar;

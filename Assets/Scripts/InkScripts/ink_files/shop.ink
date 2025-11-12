@@ -136,35 +136,35 @@ Remaining funds: {funds}
 ->->
 ==buy_childrens_books==
 Remaining funds: {funds}
-+{day>=1}{allbooks !? myths_legends}[Myths and Legends (£20 : no sell price)] 
-{buy_book(myths_legends, 20)}
++{day>=1}{allbooks !? myths_legends}[Myths and Legends (£{pbd1} : no sell price)] 
+{buy_book(myths_legends, pbd1)}
 ->buy_childrens_books
-+{day>=2}{allbooks !? Alice_in_Wonderland}[Buy Alice in Wonderland (£30 : no sell price)]
-{buy_book(Alice_in_Wonderland, 30)}
-->buy_childrens_books
-+{day>=3}{allbooks !? t_lion_witch_wardrobe}[Buy The Lion the Witch and the Wardrobe (£40 : no sell price)]
-{buy_book(t_lion_witch_wardrobe, 40)}
++{day>=2}{allbooks !? Alice_in_Wonderland}[Buy Alice in Wonderland (£{pbd2} : no sell price)]
+{buy_book(Alice_in_Wonderland, pbd2)}
 {(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe): -> receive_file}
 ->buy_childrens_books
-+{day>=4}{allbooks !? Howls_Moving_Castle}[Buy Howl's Moving Castle (£46 : no sell price)]
-{buy_book(Howls_Moving_Castle, 46)}
++{day>=3}{allbooks !? t_lion_witch_wardrobe}[Buy The Lion the Witch and the Wardrobe (£{pbd3} : no sell price)]
+{buy_book(t_lion_witch_wardrobe, pbd3)}
 {(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe): -> receive_file}
 ->buy_childrens_books
-+{day>=5}{allbooks !? the_wiz_oz}[Buy The Wizard of Oz (£50 : no sell price)]
-{buy_book(the_wiz_oz, 50)}
-->buy_childrens_books
-+{day>=8}{allbooks !? t_secret_garden}[Buy The Secret Garden (£52 : no sell price)]
-{buy_book(t_secret_garden, 52)}
-->buy_childrens_books
-+{day>=9}{allbooks !? the_hobbit}[Buy The Hobbit (£54 : no sell price)]
-{buy_book(the_hobbit, 54)}
-->buy_childrens_books
-+{day>=10}{allbooks !? matilda}[Buy Matilda (£56 : no sell price)]
-{buy_book(matilda, 56)}
-->buy_childrens_books
-+{day>=11}{allbooks !? alice_looking_glass}[Buy Alice Through the Looking-Glass (£60 : no sell price)]
-{buy_book(alice_looking_glass, 60)}
++{day>=4}{allbooks !? Howls_Moving_Castle}[Buy Howl's Moving Castle (£{pbd4} : no sell price)]
+{buy_book(Howls_Moving_Castle, pbd4)}
 {(allbooks ? Alice_in_Wonderland) && (allbooks ? Howls_Moving_Castle) && (allbooks ? t_lion_witch_wardrobe): -> receive_file}
+->buy_childrens_books
++{day>=5}{allbooks !? the_wiz_oz}[Buy The Wizard of Oz (£{pbd5} : no sell price)]
+{buy_book(the_wiz_oz, pbd5)}
+->buy_childrens_books
++{day>=8}{allbooks !? t_secret_garden}[Buy The Secret Garden (£{pbd8} : no sell price)]
+{buy_book(t_secret_garden, pbd8)}
+->buy_childrens_books
++{day>=9}{allbooks !? the_hobbit}[Buy The Hobbit (£{pbd9} : no sell price)]
+{buy_book(the_hobbit, pbd9)}
+->buy_childrens_books
++{day>=10}{allbooks !? matilda}[Buy Matilda (£{pbd10} : no sell price)]
+{buy_book(matilda, pbd10)}
+->buy_childrens_books
++{day>=11}{allbooks !? alice_looking_glass}[Buy Alice Through the Looking-Glass (£{pbd11} : no sell price)]
+{buy_book(alice_looking_glass, pbd11)}
 ->buy_childrens_books
 +Back to main shop
 ->goto_shop
