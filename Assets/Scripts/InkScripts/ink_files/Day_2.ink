@@ -209,6 +209,7 @@ I wish it wasn’t.
 ~sfx = "open door"
 ~characters+=lavender
 ~currentSpeaker = snob
+~secretSpeaker="lavender"
 ¬
 {ChangeSprite("Kent", "kent_normal")}
 {ChangeSprite("Lavender", "lavender_angry")}

@@ -1347,7 +1347,7 @@ I'm a simple kind of ice cream guy.
 {ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob
 Yeah, you're a very simple minded guy.
-You wouldn't be able to appreciate the deep and complex flavours of CREAMICE.
+You wouldn't be able to appreciate the deep and complex flavours of CREAMICE™.
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
 Oh, it's like ice cream but reverse.
@@ -1360,7 +1360,7 @@ Maybe you could visit some time.
 ~currentSpeaker = snob
 Yeah right.
 {ChangeSprite("Lavender", "lavender_serious")}
-He wouldn't appreciate the subtle flavours of CREAMICE.
+He wouldn't appreciate the subtle flavours of CREAMICE™.
 {ChangeSprite("Lavender", "lavender_thinking")}
 Plus I always get us a reservation so we can take our time choosing and that costs extra.
 {ChangeSprite("Kent", "kent_upset")}

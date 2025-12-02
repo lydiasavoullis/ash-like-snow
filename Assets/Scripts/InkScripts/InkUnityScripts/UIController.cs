@@ -25,7 +25,7 @@ public class UIController
     }
     #region Text UI methods
     //set name tag colours in the text log here
-    public Color SetNameColour(string name, string tag)
+    public Color SetNameColour(string name, string secret)
     {
         Color colour = new Color(0, 0, 0, 255);
         switch (name.ToLower())
@@ -66,12 +66,12 @@ public class UIController
                 minPitch = 0.8f;
                 break;
             case "???":
-                if (tag=="kent") {
+                if (secret=="kent") {
                     maxPitch = 0.9f;
                     minPitch = 0.3f;
                     break;
                 }
-                if (tag == "lavender")
+                if (secret == "lavender")
                 {
                     maxPitch = 2f;
                     minPitch = 1.3f;

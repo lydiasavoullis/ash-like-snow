@@ -58,35 +58,43 @@ You can see this text
 #everyone is stuck in the virtual world.
 #no other endings if you get this one
 #also there is no day 14
-~scene = "GenericScene"
-//{pandoraPoints<4 && snappedOut=="no": ->pandora_bad_ending}#Done
-
-{gaveTraderFile==false: ->ada_fires_you->}  #Done
-
-{gaveTraderFile: ->ada_transfers_you->} #Done
-
-{kentPoints > 4: ->kent_ending->} #Done
-
-{taliPoints > 4: ->tali_ending->} #Done
-
-{lavenderPoints > 4 && taliPoints< 4: ->lavender_solo_ending->} #Done
-
-
-
-{pandoraPoints < 6: ->pandora_neutral_ending->} #Done
-
-{pandoraPoints >= 6: ->pandora_good_ending->} #Done
-
-~scene="ENDCREDITS"
+~scene= "ShopFront"
+~music= "An average day"
+3rd January, Monday
 ¬
+~scene = "GenericScene"
+~music="Rise and shine"
+{gaveTraderFile==false: ->ada_fires_you->}  #Done
+{gaveTraderFile: ->ada_transfers_you->} #Done
+{kentPoints > 4: ->kent_ending->} #Done
+{taliPoints > 4: ->tali_ending->} #Done
+{lavenderPoints > 4 && taliPoints< 4: ->lavender_solo_ending->} #Done
+{pandoraPoints < 6: ->pandora_neutral_ending->}<> #Done
+{pandoraPoints >= 6: ->pandora_good_ending->}<> #Done
+*[Leave Shop]<>
+~characters=()
 ~textBoxIsActive="false"
-~music="A winters chill"
-
+~scene="ENDCREDITS"
 ->END
+==plot_success==
+~newsPicture = "headlineSuccess"
+~newsCaption = "Benedict Blue at the parliament incident conference"
+~newsAnnouncement = "Benedict Blue announces he is stepping down as a government advisor after the December 24th attack on parliament."
+¬
+~newsAnnouncement = ""
+->->
+==plot_fail==
+~newsPicture = "headlineFail"
+~newsCaption = "Man on trial"
+~newsAnnouncement = "Man on trial for suspected involvement in parliament explosion. Police have evidence that he could have links to known terrorist organisation 'The Syndicate'."
+¬
+~newsAnnouncement = ""
+->->
 
 ==tali_ending==
 ~characters+=tali
 {ChangeSprite("Tali", "tali_happy")}
+~music="Making friends"
 ~sfx="open door"
 ¬
 ~currentSpeaker = webdev 
@@ -103,15 +111,13 @@ How about you?
 Happy to be alive as always.
 ~currentSpeaker = you
 As always?
-{ChangeSprite("Tali", "tali_exasperated")}
-~currentSpeaker = webdev
-I'm trying to stay positive.
-~currentSpeaker = you
-Me too.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev
 I'm trying to stay positive.
+{ChangeSprite("Tali", "tali_exasperated")}
+~currentSpeaker = webdev
 Perhaps it's pointless.
+{ChangeSprite("Tali", "tali_normal")}
 But in the end, things are not too bad. I'm healthy, I have a place to live and I still have a job.
 ~currentSpeaker = you
 How are things at work?
@@ -159,6 +165,7 @@ See you around.
 ->->
 
 ==kent_ending==
+~music="Making friends"
 ~characters+=kent
 {ChangeSprite("Kent", "kent_normal")}
 ~sfx="open door"
@@ -274,6 +281,7 @@ See ya!
 ->->
 
 ==lavender_solo_ending==
+~music="Making friends"
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_normal")}
 ~sfx="open door"
@@ -426,6 +434,7 @@ Hehehe...
 ~currentSpeaker = webdev
 Things have been a bit better.
 We're talking at least. 
+~music="Lavender's song"
 ~characters+=lavender
 ~sfx="open door"
 ¬
@@ -459,6 +468,7 @@ No one could replace you.
 Hmph.
 Ok.
 I suppose you're right. No one could replace me. 
+~music="Making friends"
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
 I have an idea!
@@ -569,7 +579,6 @@ Bye {you}. See you later.
 ...
 What have I gotten myself into?
 ->->
-
 ==ada_fires_you==
 ¬
 ~newsPicture = "headlineFail"
@@ -609,6 +618,7 @@ Thank you.
 ~currentSpeaker=android
 ...
 ~characters-=pandora
+~music="night theme"
 ~currentSpeaker=you
 Travelling. 
 It's stressful eh?
@@ -681,7 +691,6 @@ Get out of my shop.
 ~characters-=ada
 ¬
 ->->
-
 ==ada_transfers_you==
 ¬
 ~newsPicture = "headlineSuccess"
@@ -897,7 +906,6 @@ She is. A bit.
 ~currentSpeaker=android
 A lot.
 ->->
-
 ==pandora_good_ending==
 #Pandora will come with you if you are transferred
 #Pandora will ask Ada if she can live with you if you are fired
@@ -980,6 +988,7 @@ I'll have to work on that.
 ->pandora_goodbye->
 ->->
 ==pandora_goodbye==
+~music="Pandora's theme"
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 So I guess this is goodbye.
@@ -1076,6 +1085,7 @@ Two weeks later.
 ~characters+=ada
 {ChangeSprite("Ada", "adalina_pleased")}
 ¬
+~music="night theme"
 ~currentSpeaker=lovelace
 {android}.
 Where's {you}?

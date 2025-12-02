@@ -225,5 +225,4 @@ I can do it myself
 20th December, Monday
 ~scene= "GenericScene"
 ~day+=1
-->END
 ->day_8

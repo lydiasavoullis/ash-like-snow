@@ -411,7 +411,6 @@ I don't really understand it myself.
 They say it's best to not know too much going in.
 ~currentSpeaker = you
 Who's the god?
-{ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker = webdev
 I assume the god is refering to the eldrich being.
 ~currentSpeaker = you

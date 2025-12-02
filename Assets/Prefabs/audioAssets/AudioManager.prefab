@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8085736680456894715
 MonoBehaviour:
@@ -86,28 +86,28 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: A winters chill
     clip: {fileID: 8300000, guid: fe678ba7674010e46abcabf62793420e, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: A magical day
     clip: {fileID: 8300000, guid: e74de8b122c915a4c810485ec0f668e3, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Making friends
     clip: {fileID: 8300000, guid: c44b1dae974b30b45a7ef59e50217605, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Lavender's song
     clip: {fileID: 8300000, guid: da7b648d1cb41fa46875a4b905ab8594, type: 3}
@@ -121,42 +121,42 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: City lights
     clip: {fileID: 8300000, guid: cdfce4213a7aa2445be8dfda24e1f295, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Cobalt dragons
     clip: {fileID: 8300000, guid: 301b77389188ee3479e9606299516ca4, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Dark dramatic
     clip: {fileID: 8300000, guid: 6e4a0b26b4241304c97517671ee0f248, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Happy xmas
     clip: {fileID: 8300000, guid: 9a580ef476fd17d45b20d454cc401d74, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Pandora's theme
     clip: {fileID: 8300000, guid: 9b711c2f6b69f824482957af2b41f4d9, type: 3}
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Rainy Days Indoors
     clip: {fileID: 8300000, guid: 9b711c2f6b69f824482957af2b41f4d9, type: 3}
@@ -170,7 +170,7 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Literature club
     clip: {fileID: 8300000, guid: 3df543ca3e36cf64d9e22af7886a14c5, type: 3}
@@ -202,6 +202,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: shop
     clip: {fileID: 8300000, guid: 8c71afffbc4cef34582168ed57facfc5, type: 3}
+    group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: alarm
+    clip: {fileID: 8300000, guid: fee42a262e66e4141b555253bce682a6, type: 3}
     group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
     volume: 1
     pitch: 1

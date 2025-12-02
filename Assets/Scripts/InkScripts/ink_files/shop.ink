@@ -48,7 +48,7 @@ Remaining funds: {funds}
 ->goto_shop
 #kent 3
 +{day>=3}{allbooks !? sentinel_105}[The Sentinel \#105(£{kbd3} : Sells for £{(kbd3+kentProfit)})]
-{buy_book(sentinel_105, kbd4)}
+{buy_book(sentinel_105, kbd3)}
 ->goto_shop
 #tali 3
 +{day>=3}{allbooks !? black_goat}[The Black Goat (£{tbd3}: Sells for £{(tbd3+taliProfit)})]

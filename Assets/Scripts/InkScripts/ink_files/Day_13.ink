@@ -314,9 +314,11 @@ I can smell…chocolate!
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 Is that music?
+~music=""
 ~currentSpeaker=you
 What are you guys on about?
 Oh…oh god no. 
+~music="Happy xmas"
 ~scene="Xmas"
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
@@ -614,6 +616,7 @@ No…it’s for the best. Trust me.
 ~currentSpeaker=you
 Aye aye captain.
 ~scene="Basement"
+~music=""
 ¬
 ~characters+=kent
 ~characters+=tali
@@ -622,6 +625,7 @@ Aye aye captain.
 {ChangeSprite("Kent", "kent_upset")}
 ~currentSpeaker=comic
 Ugh.
+~music="Basement"
 This stupid thing just shut down.
 I didn’t even do anything.
 {ChangeSprite("Tali", "tali_serious")}
@@ -644,6 +648,7 @@ Ok sure.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 I’ll just be in the corner doing some work.
+~characters-=kent
 ~currentSpeaker=you
 …
 {ChangeSprite("Pandora", "pandora_normal")}
@@ -986,7 +991,7 @@ That doesn't sound very legal.
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 No, my existence is actually illegal. 
-With my level of sentience, the government should have full monitoring of my consciousness. But Ada wouldn’t allow that.
+With my level of sapience, the government should have full monitoring of my consciousness. But Ada wouldn’t allow that.
 ~currentSpeaker=you
 Probably a good idea.
 {ChangeSprite("Pandora", "pandora_pensive")}
@@ -1410,6 +1415,7 @@ You close the book.
 -Let's go to bed.
 ~sfx="wind"
 ~scene="Blank"
+~music=""
 ¬
 ~day+=1
 ->day_14

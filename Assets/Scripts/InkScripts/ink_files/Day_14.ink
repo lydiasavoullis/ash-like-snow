@@ -1,19 +1,18 @@
 ==day_14==
-~pandoraPoints = 7
 ~scene = "Basement"
 ~currentSpeaker = ""
+~music=""
 You open the notebook {android} gave you.
 *[Yes (save)]
 {SaveStory()}
 You write something down.
 *[No (don't save)] 
 You close the book.
-~sfx="alarm"
 ~currentSpeaker = you
 -Guys! 
+~sfx="alarm"
 Wake up!
 Something is beeping.
-~sfx=""
 ~characters+=lavender
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob
@@ -31,6 +30,8 @@ We have to get out of here.
 ~characters+=pandora
 {ChangeSprite("Lavender", "lavender_normal")}
 {ChangeSprite("Pandora", "pandora_annoyed")}
+~sfx=""
+~music="Basement"
 ~currentSpeaker = android
 Everyone calm down.
 ~currentSpeaker = you
@@ -132,6 +133,7 @@ Every one of those was dashed by your father, or a man like him.
 ~currentSpeaker = snob
 Ugh, stop being dramatic.
 {ChangeSprite("Kent", "kent_upset")}
+~currentSpeaker = comic
 You know what. I don't fucking care about the dog.
 At least it died quickly.
 As far as I'm concerned it was lucky.
@@ -302,6 +304,7 @@ Whoopee!
 ~currentSpeaker = webdev
 That's great {you}, how are you holding up?
 ~currentSpeaker = ""
+~music="Dark dramatic"
 ...
 Why aren't you moving?
 You think to yourself. You should go back. But your body is stiff. 
@@ -360,6 +363,7 @@ You shift your body now, pushing backwards.
 You keep pushing, slowly but steadily.
 Kent catches you as you fall.
 ~scene="Basement"
+~music=""
 ¬
 ~characters+=kent
 ~characters+=pandora
@@ -535,6 +539,7 @@ Got her!
 Pull me out now.
 ~currentSpeaker = webdev
 Got it.
+~music=""
 ~currentSpeaker = snob
 AHHHH!
 ~currentSpeaker = you
@@ -691,25 +696,30 @@ You turn it on.
 ~scene="XmasEmpty"
 You're not sure what you wanted here.
 ~characters+=cas
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=man
 You're up.
 What's the matter?
+{ChangeSprite("Cas", "cas_right_look")}
 ~currentSpeaker=you
 Not feeling too great.
 ~currentSpeaker=man
 There's no reason to feel bad.
 You've got everything you want.
 Go to bed.
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 ...
 Can you watch a film with me tomorrow?
 ~currentSpeaker=man
 I'm tired.
 I don't want to watch a stupid film.
+{ChangeSprite("Cas", "cas_right_look")}
 ~currentSpeaker=you
 It can be a film that you like.
 ~currentSpeaker=man
 I'm too busy.
+{ChangeSprite("Cas", "cas_annoyed")}
 ~currentSpeaker=you
 Do you even like me?
 ~currentSpeaker=man
@@ -717,24 +727,29 @@ What the hell are you talking about?
 I care about you.
 You're clever, one day you're going to do something.
 You're going to actually be something.
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 Really?
 ~currentSpeaker=man
 It's not easy, but you'll get through it—whatever this is.
+{ChangeSprite("Cas", "cas_left_look")}
 ~currentSpeaker=you
 Yes, Dad.
 ~currentSpeaker=man
 Your mother's asleep. We should be careful.
 Don't want to wake her do we?
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 Is she ok?
 ~currentSpeaker=man
 It's been a difficult couple of weeks.
 You know how it is.
+{ChangeSprite("Cas", "cas_right_look")}
 ~currentSpeaker=you
 Can you say something?
 ~currentSpeaker=man
 Say what?
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 Tell me you're proud of me.
 ~currentSpeaker=man
@@ -743,6 +758,7 @@ WHAT?!
 Say it.
 ~currentSpeaker=man
 ...
+{ChangeSprite("Cas", "cas_annoyed")}
 ~currentSpeaker=you
 Say it you fucking coward.
 ~currentSpeaker=man
@@ -751,6 +767,7 @@ I'll say it when you've done something to make me proud.
 {ChangeSprite("Pandora", "pandora_shocked")}
 ~currentSpeaker=android
 {you} what are you doing?!
+{ChangeSprite("Cas", "cas_right_look")}
 ~currentSpeaker=you
 Nothing much.
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -760,6 +777,7 @@ Why did you come back here?
 I thought it could help me.
 ~currentSpeaker=android
 I am so sorry.
+{ChangeSprite("Cas", "cas_left_look")}
 ~currentSpeaker=you
 No, it's fine.
 I just wanted to see my parents again.
@@ -772,26 +790,33 @@ Just don't want to see me anymore.
 You imagined this?
 ~currentSpeaker=you
 I did.
+{ChangeSprite("Cas", "cas_annoyed")}
 Somehow I couldn't imagine my dad saying he was proud of me.
+{ChangeSprite("Cas", "cas_left_look")}
 I suppose even virtual realities have their limits.
 ~currentSpeaker=android
 Oh dear.
+{ChangeSprite("Cas", "cas_annoyed")}
 ~currentSpeaker=you
 Don't pity me.
 I don't deserve your pity.
 ~currentSpeaker=android
 I don't pity you.
 I only want you to be happy.
+{ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 Why?
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 I've spent too much time around you, I'm invested now.
+{ChangeSprite("Cas", "cas_left_look")}
 ~currentSpeaker=you
 Let's get out of here.
 It's just creepy at this point.
 ~currentSpeaker=android
 You know how to do it.
+~currentSpeaker=""
+~characters=()
 ~sfx="wind"
 ~scene="Blank"
 ¬

@@ -15,11 +15,11 @@ public class TextLogController
  
     }
     
-    public void AddToTextLog(string text, string tag, GameObject textLogBox, GameObject textLogList)
+    public void AddToTextLog(string text, string secret, GameObject textLogBox, GameObject textLogList)
     {
         string speaker = GameVars.story.variablesState["currentSpeaker"].ToString();
         string logLine;
-        string hexCol = ColorUtility.ToHtmlStringRGB(uIControl.SetNameColour(speaker, tag));
+        string hexCol = ColorUtility.ToHtmlStringRGB(uIControl.SetNameColour(speaker, secret));
         if (speaker == "")
         {
             logLine = text;

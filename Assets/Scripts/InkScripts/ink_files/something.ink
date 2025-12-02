@@ -21,6 +21,8 @@ INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
 //->day_1
+*[ending test]
+->ending_check
 *[Playtest]
 ->day_1
 // *[Go to end credits]

@@ -70,7 +70,7 @@
 ~music =""
 VAR timesRejected = 0
 ==tea_or_coffee==
-{snappedOut == "yes": ->snapped_out}
+{snappedOut: ->snapped_out}
 ~button = "cup"
 ~currentSpeaker = android  
 Tea or coffee?
@@ -101,7 +101,7 @@ Tea or coffee?
 {timesRejected == 4: ->snap_out_trigger}
 ->tea_or_coffee_choices
 ==snap_out_trigger
-~snappedOut = "yes"
+~snappedOut = true
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_sad")}
 Why are you being like this?

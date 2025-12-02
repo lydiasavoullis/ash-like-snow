@@ -81,6 +81,7 @@ Hey
 ~newsAnnouncement = "New study suggests neurological problems caused by 'miracle' drug."
 ~sfx = "open door"
 ~snob = "???"
+~secretSpeaker="lavender"
 ~characters+=lavender
 ¬
 ~currentSpeaker = snob
@@ -190,6 +191,7 @@ Sorry, got to go.
 ~currentSpeaker = you
 The nerve of some people.
 ~comic="???"
+~secretSpeaker="kent"
 ~sfx="open door"
 ~characters += kent
 {ChangeSprite("Kent", "kent_normal")}

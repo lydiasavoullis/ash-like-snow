@@ -38,6 +38,7 @@ VAR deliveryToday = 0
 VAR effectName = ""
 VAR textBoxIsActive = "true"
 VAR currentSpeaker = ""
+VAR secretSpeaker = ""
 VAR extraText = ""
 VAR extraTextLog = ""
 VAR funds = 300.0

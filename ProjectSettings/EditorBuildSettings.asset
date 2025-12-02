@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ENDCREDITS.unity
     guid: a9e1fcacbe4755d4683541598cecacea
+  - enabled: 1
+    path: Assets/Scenes/XmasEmpty.unity
+    guid: 2250883c3a1737049b5c60bcf242614f
   m_configObjects: {}
