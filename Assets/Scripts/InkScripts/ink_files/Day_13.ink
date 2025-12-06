@@ -37,7 +37,7 @@ Every morning, I have waffles.
 I don’t know if you’ve taken a look around, but this isn’t exactly a five star hotel.
 {ChangeSprite("Lavender", "lavender_angry")}
 ~currentSpeaker=snob
-The IOI is making them for me.
+The robot is making them for me.
 ~currentSpeaker=you
 What? How can {android} be making you waffles?
 ~currentSpeaker=android
@@ -82,7 +82,7 @@ No.
 Ahem.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
-I guess they’re like crepes…y’know I love french cuisine.
+I guess they’re like crepes…y’know I love French cuisine.
 ~currentSpeaker=android
 Bon appetit.
 {ChangeSprite("Lavender", "lavender_happy")}
@@ -107,8 +107,7 @@ Is it not sweet enough for your tastes?
 I have some freeze dried ice cream I can crumble on top. 
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
-I suppose that could work.
-What flavour is it?
+I suppose that could work. What flavour is it?
 ~currentSpeaker=android
 Banana.
 {ChangeSprite("Lavender", "lavender_angry")}
@@ -203,6 +202,7 @@ It doesn't matter.
 ~currentSpeaker=android
 If it's for safety reasons then that is fine I suppose.
 ~currentSpeaker=webdev
+Mum, Dad-
 What’s going on?
 Is it Christmas yet?
 {ChangeSprite("Pandora", "pandora_sad")}
@@ -449,7 +449,7 @@ Can robots really get sick though? I mean you haven’t eaten anything…you don
 It must be like a sympathetic reaction.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Must be something wrong with her programming.
+Maybe something's wrong with her programming.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 I’m sure Adalina will fix it when she gets back, she’s so clever.
@@ -660,7 +660,7 @@ Did they just forget?
 I don’t know what happened there. 
 I suppose that was Ada’s project. I didn’t realise how far she’d gotten on it though.
 ~currentSpeaker=you
- What do you mean ‘Ada’s project’? 
+ What do you mean 'Ada's project'? 
  Why did it just suck our consciousnesses in like that? 
  How is that even possible?
  {ChangeSprite("Pandora", "pandora_pensive")}
@@ -1010,7 +1010,6 @@ I was the one who found him.
 …
 {android}.
 ~currentSpeaker=android
-I thought. I thought. I thought.
 {ChangeSprite("Pandora", "pandora_pensive")}
 Always, I wonder if I had done something differently, perhaps there would be a different outcome.
 ~currentSpeaker=you

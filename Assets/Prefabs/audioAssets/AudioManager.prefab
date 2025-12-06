@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8085736680456894715
 MonoBehaviour:
@@ -54,7 +54,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: hover
-    clip: {fileID: 8300000, guid: b59fb9942e17b1b44a2faf3fc324b82c, type: 3}
+    clip: {fileID: 8300000, guid: aa193817a72aed645b73dc79fead65ae, type: 3}
     group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
     volume: 1
     pitch: 1
@@ -202,17 +202,45 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: shop
     clip: {fileID: 8300000, guid: 8c71afffbc4cef34582168ed57facfc5, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Origami poppy
+    clip: {fileID: 8300000, guid: 9a47fbefdefd8714496dcb031d16b9fc, type: 3}
+    group: {fileID: 24300002, guid: 41b24a8da021d2f4ab47495d601ba485, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: explosion
+    clip: {fileID: 8300000, guid: 314345c16638f0c40a162a44f155e205, type: 3}
     group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: wind
+    clip: {fileID: 8300000, guid: 5ed6d026b3c12de49b836af31a2ca6e2, type: 3}
+    group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   - name: alarm
     clip: {fileID: 8300000, guid: fee42a262e66e4141b555253bce682a6, type: 3}
     group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: air vent
+    clip: {fileID: 8300000, guid: efb90bf2cbf9211419fd46d95089c01e, type: 3}
+    group: {fileID: 24300002, guid: ee9d8bafbf7045d4db2c2ecfecb5356a, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!114 &6676310962932728624
 MonoBehaviour:

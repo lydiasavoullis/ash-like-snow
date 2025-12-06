@@ -13,7 +13,6 @@ INCLUDE Day_11.ink
 INCLUDE Day_12.ink
 INCLUDE Day_13.ink
 INCLUDE Day_14.ink
-INCLUDE Epilogue.ink
 INCLUDE general.ink
 INCLUDE extra_dialogues.ink
 INCLUDE truth_or_dare.ink
@@ -24,25 +23,10 @@ INCLUDE night.ink
 *[ending test]
 ->ending_check
 *[Playtest]
+{set_all_book_prices()}
 ->day_1
-// *[Go to end credits]
-// ~music="A winters chill"
-// ~scene="ENDCREDITS"
-// ->END
-// *[Simulate day 12]
-// ->day_12
-// ->END
-// *[simulate end]
-// ~taliPoints = 5
-// ~lavenderPoints = 5
-// ~kentPoints = 5
-// ~pandoraPoints = 6
-// ~snappedOut = "yes"
-// ->ending_check
 *[Simulate shop]
 ~snappedOut=true
-{set_all_book_prices()}
-//~day=11
 ~scene="GenericScene"
 ¬
 ->next_day
@@ -66,26 +50,6 @@ It's weekend day {day}.
 ->day_1
 *day 12
 ->start_incident
-// *pandora read
-// ~day+=1
-// ->goto_shop->read_check
-// ~day+=1
-// ->goto_shop->read_check
-//~scene= "GenericScene"
-// *[simulate ending]
-// ->ending_simulation
-// *[test scene]
-// ->test_scene
-// *[Truth and dare]
-// ->start_incident
-
-// *[kent]<>->kent_video
-// *[tali]<>->tali_video
-// *[lavender]<>->lavender_video
-// *[pandora]<>->pandora_video
-//*[shop]
-// ~day=2
-// ->goto_shop
 ==night_rain==
 ~scene= "Night"
 ~textBoxIsActive="false"

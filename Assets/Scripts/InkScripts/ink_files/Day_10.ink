@@ -186,13 +186,14 @@ Can't.
 Help. 
 It.
 {ChangeSprite("Lavender", "lavender_thinking")}
-I don’t know, I just talk. I say what’s on my mind. And sometimes, people don’t like it. I can’t seem to identify why they don’t like it, or what it is that they don’t like.
+I don’t know, I just talk. I say what’s on my mind. And sometimes, people don’t like it.
+I can’t seem to identify why they don’t like it, or what it is that they don’t like.
 Perhaps if I could conduct some kind of survey…
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 Have you ever thought about how you like to be treated?
 Try to think about what upsets you when you’re speaking to someone. What bothers you, what phrases, mannerisms, ideas make you uncomfortable.
-That’s the first step to empathising with how you’re making other people feel.
+That’s the first step to empathising with other people.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 …
@@ -217,7 +218,7 @@ Remember.
 How YOU would like to be treated.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=snob
-Yeah yeah whatever.
+Yeah, yeah whatever.
 {ChangeSprite("Lavender", "lavender_thinking")}
 So…I’ll start in an hour.
 {ChangeSprite("Pandora", "pandora_annoyed")}
@@ -236,11 +237,13 @@ No matter who they are.
 {ChangeSprite("Lavender", "lavender_sad")}
 ~currentSpeaker=snob
 But what if they’re not nice to me?
+{ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Then be neutral.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 \*Sigh\*
+{ChangeSprite("Pandora", "pandora_normal")}
 Ok.
 ~sfx="open door"
 {ChangeSprite("Lavender", "lavender_shocked")}
@@ -334,7 +337,7 @@ So...how’s work going?
 ~currentSpeaker=webdev
 Uneventful.
 {ChangeSprite("Tali", "tali_exasperated")}
-Started working on The Distant Outlook website again actually, their layout is dreadful. So they hired me to fix it.
+Started working on The Distant Outlook website again actually, their layout is still dreadful.
 ~currentSpeaker=you
 I bet {comic} would love to hear that.
 Speaking of {comic} do you know where he is?

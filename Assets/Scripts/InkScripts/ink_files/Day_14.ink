@@ -2,6 +2,7 @@
 ~scene = "Basement"
 ~currentSpeaker = ""
 ~music=""
+~sfx=""
 You open the notebook {android} gave you.
 *[Yes (save)]
 {SaveStory()}
@@ -42,8 +43,6 @@ I got very absorbed in a book.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
 How can you read at a time like this?
-{ChangeSprite("Lavender", "lavender_normal")}
-Ok, we have to get over our personal issues now.
 {ChangeSprite("Lavender", "lavender_shocked")}
 We might all die today!
 ~characters+=kent
@@ -124,7 +123,7 @@ Guys.
 What the hell does that mean?
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
-Sometimes, when I'm doing research, I look back at the past.
+Sometimes, when I look back at the past.
 I imagine how things could have been.
 How many chances did we have?
 I wonder. 
@@ -273,6 +272,8 @@ Ok, let's hoist you up.
 ~currentSpeaker= ""
 Kent hoists you up and you grab the ledge and pull yourself into the vent.
 ~scene="AirVent"
+~music=""
+~sfx="air vent"
 You're not claustrophobic, but you have a sudden primal urge to scream.
 ~currentSpeaker = android
 Are you alright?
@@ -304,17 +305,18 @@ Whoopee!
 ~currentSpeaker = webdev
 That's great {you}, how are you holding up?
 ~currentSpeaker = ""
+~sfx=""
 ~music="Dark dramatic"
 ...
 Why aren't you moving?
-You think to yourself. You should go back. But your body is stiff. 
-Your breathing is unsettled.
+You should go back. But your body is stiff. 
+You take ragged breaths.
 ~currentSpeaker = android
 {you} what's wrong?
 ~currentSpeaker= ""
 You need to breath, but you can't.
-You can hear the blood pounding in your head.
-Your sight starts to blur.
+The blood pounds in your head.
+Your sight blurs.
 ~currentSpeaker = android
 I can feel something's wrong.
 ~currentSpeaker = snob
@@ -384,7 +386,7 @@ She's got the cold dead eyes of a killer.
 {ChangeSprite("Kent", "kent_upset")}
 {ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker = android
-{snob} that is uncalled for!
+{snob}!
 {ChangeSprite("Lavender", "lavender_crying")}
 ~currentSpeaker = snob
 ...
@@ -432,11 +434,6 @@ It's ok.
 ~currentSpeaker = you
 No. It isn't.
 I'm just tired of this.
-~currentSpeaker = android
-It will get better.
-~currentSpeaker = you
-I used to think that.
-But now I know it won't.
 It never ends.
 ~currentSpeaker = android
 It might feel like that now, but your perception of reality is inaccurate.
@@ -517,7 +514,7 @@ You're so heavy.
 Hey!
 ~currentSpeaker = snob
 Alright. I'm in.
-It smells weird in here.
+It smells funky in here.
 ~currentSpeaker = webdev
 Focus {snob}.
 ~currentSpeaker = comic
@@ -694,6 +691,7 @@ The others are fast asleep.
 Finding yourself drawn to the computer.
 You turn it on.
 ~scene="XmasEmpty"
+~sfx="wind"
 You're not sure what you wanted here.
 ~characters+=cas
 {ChangeSprite("Cas", "cas_straight_look")}
@@ -731,13 +729,13 @@ You're going to actually be something.
 ~currentSpeaker=you
 Really?
 ~currentSpeaker=man
-It's not easy, but you'll get through it—whatever this is.
+You'll get through it—whatever this is.
 {ChangeSprite("Cas", "cas_left_look")}
 ~currentSpeaker=you
-Yes, Dad.
+Ok.
 ~currentSpeaker=man
-Your mother's asleep. We should be careful.
-Don't want to wake her do we?
+We should be careful.
+Don't want to wake her up do we?
 {ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 Is she ok?
@@ -753,7 +751,7 @@ Say what?
 ~currentSpeaker=you
 Tell me you're proud of me.
 ~currentSpeaker=man
-WHAT?!
+What?
 ~currentSpeaker=you
 Say it.
 ~currentSpeaker=man
@@ -782,16 +780,11 @@ I am so sorry.
 No, it's fine.
 I just wanted to see my parents again.
 ~currentSpeaker=android
-Are they...?
-~currentSpeaker=you
-Both alive.
-Just don't want to see me anymore.
-~currentSpeaker=android
 You imagined this?
 ~currentSpeaker=you
 I did.
 {ChangeSprite("Cas", "cas_annoyed")}
-Somehow I couldn't imagine my dad saying he was proud of me.
+Somehow I thought it would make me feel better.
 {ChangeSprite("Cas", "cas_left_look")}
 I suppose even virtual realities have their limits.
 ~currentSpeaker=android
@@ -802,7 +795,7 @@ Don't pity me.
 I don't deserve your pity.
 ~currentSpeaker=android
 I don't pity you.
-I only want you to be happy.
+I care about you.
 {ChangeSprite("Cas", "cas_straight_look")}
 ~currentSpeaker=you
 Why?
@@ -812,12 +805,6 @@ I've spent too much time around you, I'm invested now.
 {ChangeSprite("Cas", "cas_left_look")}
 ~currentSpeaker=you
 Let's get out of here.
-It's just creepy at this point.
 ~currentSpeaker=android
 You know how to do it.
-~currentSpeaker=""
-~characters=()
-~sfx="wind"
-~scene="Blank"
-¬
 ->ending_check

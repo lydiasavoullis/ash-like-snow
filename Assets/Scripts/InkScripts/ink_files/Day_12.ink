@@ -194,7 +194,7 @@ Could have fooled me.
 ~currentSpeaker=android
 I’m not…am I nervous? Is this what being nervous feels like?
 ~currentSpeaker=you
-I imagine that it’s different for androids, but if you feel a lack of enthusiasm and like something could go wrong then that might be a clue.
+I imagine that it’s different for IOIs, but if you feel a lack of enthusiasm and like something could go wrong then that might be a clue.
 You’ve probably hyped this up too much in your head, and put too much pressure on yourself to make it perfect.
 {ChangeSprite("Pandora", "pandora_annoyed")}
 {PlayAnimation("Lavender", "shake")}
@@ -274,7 +274,7 @@ Do you know if {snob} and {webdev} will come?
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 I’m not in contact with them really.
-I got {webdev}’s number in passing, we haven’t spoken much beyond a ‘hi’ here and there, and I shared an article I liked with her.
+I got {webdev}’s number in passing, we haven’t spoken much beyond a 'hi' and, I shared an article I liked with her.
 {ChangeSprite("Pandora", "pandora_annoyed")}
 ~currentSpeaker=android
 Ok, {comic}, I didn’t ask for your whole life story.
@@ -285,7 +285,7 @@ Ok, {comic}, I didn’t ask for your whole life story.
 She’s nervous.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Really? Didn’t realise androids got nervous.
+Really? Didn’t realise IOIs got nervous.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I’m right here.
@@ -696,8 +696,6 @@ Are you our lovely airhostess for today?
 Funny, something about this place does make it feel like we’re in an aeroplane. 
 {ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker=webdev
-Or a ship cabin. 
-~currentSpeaker=you
 It feels so stuffy and clinical. Everything’s sanitised but nothing feels quite clean.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev

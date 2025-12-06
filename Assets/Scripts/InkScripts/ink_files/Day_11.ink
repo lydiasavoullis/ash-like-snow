@@ -53,7 +53,7 @@ Long time no see.
 It’s been a day, don’t get clingy on me.
 ~currentSpeaker=you
 We pine for you {comic}, we yearn.
-{ChangeSprite("Pandora", "pandora_annoyed")}
+{ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 I wouldn’t quite use those specific words.
 {ChangeSprite("Pandora", "pandora_happy")}
@@ -98,7 +98,7 @@ Sorry, I didn’t even think about that.
 I knew about the eating part. But can’t androids drink?
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
-We can consume certain drinks and ‘taste’ them the way humans do. They then get incinerated in our bodies.
+We can consume certain drinks and 'taste' them the way humans do. They then get incinerated in our bodies.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=you
 So, you could theoretically drink.
@@ -157,17 +157,9 @@ I’d rather not.
 ~currentSpeaker=android
 Getting drunk does sound fun, but also unpredictable. I know that alcoholism is a very deadly disease, and I should discourage it. 
 {ChangeSprite("Pandora", "pandora_pensive")}
-But also, alcohol is good for socialisation. 
-{ChangeSprite("Pandora", "pandora_mean")}
-I just feel like humanity should have found a better way to break the ice by now.
-{ChangeSprite("Kent", "kent_side_normal")}
-~currentSpeaker=comic
-I feel like humanity should have found a better way to do a lot of things by now. 
+But also, alcohol is good for socialisation.
 ~currentSpeaker=you
 Yeah, it’s like drinking poison to get closer with your friends. 
-{ChangeSprite("Pandora", "pandora_happy")}
-~currentSpeaker=android
-Exactly!
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker=comic
 Now that you mention it, it doesn’t sound like a very healthy way to exist.
@@ -195,7 +187,8 @@ I don’t know how to feel anymore.
 {ChangeSprite("Kent", "kent_sad")}
 I know her as a person, and I feel sorry for her.
 {ChangeSprite("Kent", "kent_side_serious")}
-But also I’ve been working on this for so long my eyes have gone numb and I’m sick of the whole Blue family at the moment. These parasites had it coming for a long time.
+But also I’ve been working on this for so long my eyes have gone numb and I’m sick of the whole Blue family at the moment. 
+These parasites had it coming for a long time.
 {ChangeSprite("Kent", "kent_upset")}
 And I really don’t like her father, if I didn't make that clear already.
 {ChangeSprite("Pandora", "pandora_shocked")}
@@ -458,11 +451,12 @@ I just want things to be like they always were.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
 Nothing stays the same forever.
-{ChangeSprite("Pandora", "pandora_mean")}
+{PlayAnimation("Lavender", "jump")}
+{ChangeSprite("Pandora", "pandora_happy")}
 Apart from me! 
 ~currentSpeaker=you
 Hey, {android}.
-{ChangeSprite("Pandora", "pandora_normal")}
+{ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 Just trying to lighten things up around here.
 {ChangeSprite("Lavender", "lavender_sad")}
@@ -470,7 +464,7 @@ Just trying to lighten things up around here.
 I feel so empty right now. Like, so much has happened.
 Too much.
 I need to take some time to figure things out.
-And talk to Tali again.
+And talk to {webdev} again.
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Yeah, you do that.
@@ -526,6 +520,7 @@ No being rude about other clients!
 Now we are discussing the party I believe.
 {ChangeSprite("Pandora", "pandora_normal")}
 {comic} could you bring board games?
+{PlayAnimation("Kent", "jump")}
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
 Board games are boring, we’re playing drinking games!
@@ -583,7 +578,7 @@ Oh...ok.
 ~currentSpeaker=comic
 No worries. I can always cast a film from my Holoflix account to everyone's holoscreens.
 {ChangeSprite("Kent", "kent_sad")}
-I do miss doing things the old fashioshed way though.
+I do miss doing things the old fashioned way though.
 ~currentSpeaker=you
 Well, that’s sorted.
 I’ll bring some snacks and drinks.

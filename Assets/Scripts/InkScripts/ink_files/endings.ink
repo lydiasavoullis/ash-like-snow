@@ -58,12 +58,13 @@ You can see this text
 #everyone is stuck in the virtual world.
 #no other endings if you get this one
 #also there is no day 14
+~currentSpeaker=""
+~sfx=""
 ~scene= "ShopFront"
 ~music= "An average day"
 3rd January, Monday
 ¬
 ~scene = "GenericScene"
-~music="Rise and shine"
 {gaveTraderFile==false: ->ada_fires_you->}  #Done
 {gaveTraderFile: ->ada_transfers_you->} #Done
 {kentPoints > 4: ->kent_ending->} #Done
@@ -248,7 +249,7 @@ A new convert.
 I'm not a nerd.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
-You used to be a hacker for a living.
+You're into hacking.
 ~currentSpeaker = you
 That is cool, not nerdy.
 ~currentSpeaker = comic
@@ -494,10 +495,10 @@ Ok. Ok. You win.
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
 Yay! This will be fun.
-We can bake a cake in {snob}'s appartment.
+We can bake a cake in {snob}'s apartment.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
-Why my appartment?
+Why my apartment?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_talking_side")}
 Because yours is the nicest.
@@ -526,33 +527,34 @@ Do either of you know how to bake a cake?
 {ChangeSprite("Tali", "tali_sad")}
 No...
 ~currentSpeaker = you
-I assumed you knew too {snob}, probably because you're dressed like one.
+I assumed you knew {snob}, probably because you're always dressed like one.
 ~currentSpeaker = snob
-{ChangeSprite("Lavender", "lavender_mean")}
+{ChangeSprite("Lavender", "lavender_happy")}
 Haha how amusing.
-Especially from someone dressed like a custard tart.
+{ChangeSprite("Lavender", "lavender_mean")}
+I think we should try making some custard tarts.
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = you
-Custard tart?
+Custard tarts?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy_closed")}
-That sounds delicious. Maybe that's what we should bake first.
+That sounds like a good idea.
 ~currentSpeaker = you
-How do I look like a custard tart?
-~currentSpeaker = webdev
-{ChangeSprite("Tali", "tali_talking_forward")}
-Your shirt is very yellow.
+Why custard tarts?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
+Your shirt {you}, the yellow reminds me of custard.
 I can get a couple of receipes up on my holopad.
 ~currentSpeaker = you
-My shirt is not yellow. It's meant to be gold.
+What? No it doesn't.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
 That's a great idea.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
 Look on the bright side {you}, if you spill custard on your shirt, it won't even show.
+~currentSpeaker = you
+It's meant to be gold, not yellow.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_talking_side")}
 I'll go shopping for some baking equiment.
@@ -586,9 +588,9 @@ What have I gotten myself into?
 ~newsAnnouncement = "Prominant member of terrorist organisation Rabbithole is in police custody. Process of investigation into what happened on December 24 continues..."
 ¬
 ~music="Rise and shine"
-~newsAnnouncement = ""
 ~characters+=pandora
 ~characters+=ada
+~newsAnnouncement = ""
 {ChangeSprite("Pandora", "pandora_sad")}
 ¬
 ~currentSpeaker=android
@@ -649,7 +651,7 @@ Or how much money would be left in my account.
 I only asked.
 That if a strange man.
 In a coat and a top hat comes and makes references about some stupid kids books.
-You give him the USB.
+You buy them and give him the USB.
 No questions asked.
 ~currentSpeaker=you
 ...
@@ -665,7 +667,7 @@ It was an accident.
 It always is isn't it?
 I should never have brought you here.
 Taken you in.
-You really are a lost case, aren't you?
+You really are a lost cause, aren't you?
 ~currentSpeaker=you
 ...
 {ChangeSprite("Ada", "adalina_neutral")}
@@ -676,7 +678,6 @@ Thanks to you.
 ~currentSpeaker=you
 Where were you?
 ~currentSpeaker=lovelace
-Somewhere important doing important things.
 None of that matters anymore.
 ~currentSpeaker=you
 I'm not an addict.
@@ -740,7 +741,7 @@ It sounds nice. A lot nicer than how we spend our Christmas.
 {ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 I am truly sorry, but I’m glad nothing happened to my beautiful shop.
-And you of course.
+And you, of course.
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
 It feels so weird, now things are back to normal.
@@ -752,20 +753,19 @@ Yeah, I guess so.
 You’re quiet.
 Not usually so quiet.
 ~currentSpeaker=you
-Well the whole incident affected me mentally, I’m not the same person.
+Well the whole incident affected me.
 ~currentSpeaker=lovelace
-Funny. I did not take you for the type to be mentally affected by this kind of thing.
+Funny. I did not take you for the type to be affected by this kind of thing.
 ~currentSpeaker=you
-I’m actually an incredibly sensitive person. It might not seem like it. But {android} helped me through it.
+I’m actually an incredibly sensitive person.
+But uh, {android} was very supportive.
 {ChangeSprite("Ada", "adalina_pleased")}
 ~currentSpeaker=lovelace
 Oh really?
-{ChangeSprite("Pandora", "pandora_pensive")}
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker=android
 …
 Thanks {you}.
-~currentSpeaker=you
-I mean it.
 {ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 {android} could you make us some tea my love.
@@ -808,6 +808,7 @@ A top hat and a trench coat.
 ~currentSpeaker=lovelace
 Ugh, so dramatic. I hate these revolutionary types.
 All they want to do is blow things up.
+Well, at least they managed to actually get the target.
 ~currentSpeaker=you
 Hold on a minute…
 What did you say?
@@ -824,16 +825,9 @@ You’ve been taking that disgusting drug again, haven’t you?
 No, it was an accident. {android} was putting it in my drink. Innocently, she thought she was helping me.
 ~currentSpeaker=lovelace
 That stupid IOI. She almost ruined everything.
-{ChangeSprite("Ada", "adalina_neutral")}
 I wouldn’t believe such a ridiculous thing usually, but that does sound exactly like something {android} would do.
-{ChangeSprite("Ada", "adalina_displeased")}
-She’s unbelievably...
-~currentSpeaker=you
-Human?
 {ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
-Yes.
-Unfortunately.
 Well, I will need to catch you up on everything.
 And you will need to move.
 ~currentSpeaker=you
@@ -863,17 +857,12 @@ When are you going to tell {android}?
 ~currentSpeaker=lovelace
 Why does she need to know?
 ~currentSpeaker=you
-She’s not a child.
-And it wouldn’t hurt to tell her some stuff once in a while. It might stop her from drugging me, thinking she was helping.
+It wouldn’t hurt to tell her some stuff once in a while. 
+It might stop her from drugging me, thinking she was helping.
 Maybe, she can actually help us.
 {ChangeSprite("Ada", "adalina_neutral")}
 ~currentSpeaker=lovelace
 I don’t know.
-I’ve made some mistakes with her, I know.
-{ChangeSprite("Ada", "adalina_displeased")}
-It’s just so hard...
-~currentSpeaker=you
-It’s hard for her too.
 ~characters+=pandora
 {ChangeSprite("Pandora", "pandora_happy")}
 ¬
@@ -905,6 +894,8 @@ She is. A bit.
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
 A lot.
+I'll just be a couple of minutes, I told {lovelace} I would help.
+~characters-=pandora
 ->->
 ==pandora_good_ending==
 #Pandora will come with you if you are transferred
@@ -990,6 +981,7 @@ I'll have to work on that.
 ==pandora_goodbye==
 ~music="Pandora's theme"
 {ChangeSprite("Pandora", "pandora_sad")}
+~characters+=pandora
 ~currentSpeaker=android
 So I guess this is goodbye.
 ~currentSpeaker=you
@@ -1006,11 +998,7 @@ Likewise.
 ...
 I'm sorry about the whole Fate thing.
 ~currentSpeaker=you
-It's unfortunate but I think you've learned your lesson.
-~currentSpeaker=android
-At what cost?
-~currentSpeaker=you
-If anyone knows about making costly mistakes it's me.
+It's unfortunate but if anyone knows about making costly mistakes it's me.
 And I can tell you that...
 You will get over it.
 ~currentSpeaker=android
@@ -1024,17 +1012,10 @@ How is this a good thing?
 Means your moral compass is working.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-This is horrible.
-I thought my moral compass was working.
-It obviously needs some re-calibrating.
+It obviously needed some re-calibrating.
 ~currentSpeaker=you
-Everyone's does from time to time.
-{ChangeSprite("Pandora", "pandora_annoyed")}
-~currentSpeaker=android
-Mine should not!
-~currentSpeaker=you
-You're not perfect. It's quite obvious. 
-It doesn't mean you're not valued. People like you.
+You're not perfect.
+It doesn't mean you're not valued.
 Don't forget that. 
 I really do have to go.
 Before {lovelace} chases me out with a broomstick.

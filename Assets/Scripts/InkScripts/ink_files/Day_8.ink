@@ -82,7 +82,7 @@ Can you tell me-
 {ChangeSprite("Stranger", "shadow_sad")}
 ~currentSpeaker = trader
 I cannot tell you anything, you should know that.
-Also.
+Also,
 {ChangeSprite("Stranger", "shadow_amused")}
 Make your own drinks.
 ~gaveTraderFile=true
@@ -419,7 +419,7 @@ Well, of course you’re going to think that. You quite obviously don’t like L
 I’m not going to even try and deny it.
 But the problem isn't that she’s your friend. It’s that she’s your only friend.
 {ChangeSprite("Kent", "kent_sad")}
-A friend you rely on, for employment and to solve any problem in your life. You can’t have a healthy relationship like that. There’s an obvious power imbalance here.
+A friend you rely on for employment, and to solve any problem in your life. You can’t have a healthy relationship like that. There’s an obvious power imbalance here.
 ~currentSpeaker=webdev
 Are you saying I shouldn't be friends with her?
 {ChangeSprite("Kent", "kent_side_serious")}
@@ -429,7 +429,7 @@ I’m not saying that exactly… I’m just saying that she lives in a completel
 ~currentSpeaker=webdev
 I do think that sometimes, it really sucks. She’s helped me out so much. She supported me through a lot of difficult times. 
 {ChangeSprite("Tali", "tali_talking_side")}
-She let me live in her apartment during uni when I couldn’t afford rent. 
+She let me live in her apartment at uni when I couldn’t afford rent. 
 She helped me with the deposit on my current flat. She helped me get my current job. 
 She’s the one I know I can turn to, but she’s the only one. 
 {ChangeSprite("Kent", "kent_normal")}

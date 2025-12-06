@@ -153,34 +153,25 @@ And I know, deep in my stubborn heart, that maybe there’s a shred of truth to 
 Honestly, I was going to apologise.
 {ChangeSprite("Kent", "kent_amused")}
 I can butt in a bit much sometimes.
+{ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 No.
 I needed to hear it.
 So I spoke to Lavender.
-{ChangeSprite("Kent", "kent_upset")}
-~currentSpeaker=you
-What do you mean ‘spoke’ to Lavender?
-{ChangeSprite("Kent", "kent_amused")}
-~currentSpeaker=comic
-You know, it’s a thing you do with your mouth. You move your lips and sounds come out.
-~currentSpeaker=you
-Ah I was wondering what that thing you were doing with your mouth was.
-{ChangeSprite("Kent", "kent_normal")}
-~currentSpeaker= comic
-Ok ok.
-{ChangeSprite("Tali", "tali_serious")}
+{ChangeSprite("Tali", "tali_exasperated")}
 ~currentSpeaker=webdev
 To cut the story short: she’s totally pissed.
+{ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
 Look Tali–
 {ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
-I don’t want to hear it. I can handle things by myself. And I’m kind of…pissed off with her too. She’s so annoying and she always thinks she’s right.
-I’m sick of hearing her stupid petty problems, and treating them like they hold a candle to anything that normal people suffer. 
+I don’t want to hear it. I can handle things by myself. 
+And I’m kind of…pissed off with her too. She’s so annoying and she always thinks she’s right.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 It all just came out of you, didn’t it?
-{ChangeSprite("Tali", "tali_exasperated")}
+{ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 …yes
 I couldn’t hold on anymore.
@@ -234,7 +225,8 @@ Or do you feel like you’ve outgrown it?
 ~currentSpeaker=webdev
 What the hell does that mean?
 ~currentSpeaker=comic
-I just think that, sometimes, we invest a lot of time into maintaining friendships for the sake of it. Just because we’re scared of moving on, and that holds us back. 
+I just think that, sometimes, we invest a lot of time into maintaining friendships for the sake of it. 
+Just because we’re scared of moving on, and that holds us back. 
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
 You think Lavender is holding me back?
@@ -294,7 +286,7 @@ Yes!
 How about you, {comic}?
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
-My boyfriend’s a paramedic, so I usually spend Christmas Eve curled up in front of the tv with some snacks watching terrible films.
+My boyfriend’s a paramedic, and he's always working, so I usually spend Christmas Eve curled up in front of the tv with some snacks watching terrible films.
 {ChangeSprite("Kent", "kent_amused")}
 But I suppose I can hijack my plans this year for this.
 {ChangeSprite("Pandora", "pandora_excited")}
@@ -330,7 +322,7 @@ I went on a date at the weekend.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Now you're talking.
-Give us all the details.
+Tell us all about it.
 ~currentSpeaker=you
 Or not. You know it's your choice.
 {ChangeSprite("Kent", "kent_upset")}
@@ -360,18 +352,13 @@ How did you meet this guy?
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 Just an old acquaintance.
-~currentSpeaker=comic
-Oooh slow burn.
-{ChangeSprite("Tali", "tali_smirk")}
-~currentSpeaker=webdev
-It's not like that.
-I probably won't see him for a while.
+I probably won't see him for a while after this.
 He's a pilot.
 ~currentSpeaker=comic
 Oooh you can have sex on a plane.
-{ChangeSprite("Tali", "tali_shocked")}
+{ChangeSprite("Tali", "tali_upset")}
 ~currentSpeaker=webdev
-What?!
+{comic}!
 ~currentSpeaker=you
 I don't think you need to be a pilot to do that.
 {ChangeSprite("Tali", "tali_sad")}
@@ -406,14 +393,15 @@ You just have to get another date now.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
 That's kind of the problem.
-He's away now.
-And I know I'm not meant to put all my eggs in one basket.
+He's away now for a while.
+And I don't want to put all my eggs in one basket.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
-Ooh is there someone else.
+Is there someone else?
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker=webdev
-I'm not doing this for fun.
+I do have some other dates set up.
+But I'm not doing this for fun.
 I'm just following dating advice, getting myself out there and not taking anything personally.
 It's difficult, some guys can just be a little...
 {ChangeSprite("Tali", "tali_sad")}
@@ -427,11 +415,9 @@ Hmm, I know what you mean.
 ~currentSpeaker=webdev
 Really?
 ~currentSpeaker=you
-Sometimes you're going to meet people with the wrong intentions. It won't always be obvious from the get go. They'll seem confident and enthusiastic. They'll shower you with praise and affection.
-After this initial wave of enthusiasm wears off, you'll find your interest waning.
-They'll cling on like a drowning man hanging onto a piece of driftwood. They'll use every last shred of social manipulation to try to get you to stay.
-Eventually it will end.
-The longer you leave it the worse it will be.
+Sometimes you meet people who are super eager and shower you with attention. 
+Then when you realise they only see you as an object of their infatuation, they guilt trip you into staying with them.
+They'll cling on like a drowning man hanging onto a piece of driftwood.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
 Are you talking about love bombing?
@@ -439,7 +425,7 @@ Are you talking about love bombing?
 What?
 {ChangeSprite("Kent", "kent_normal")}
 ~currentSpeaker=comic
-Love bombing? You know, when someone showers someone with gifts and affection in order to manipulate them into a relationship.
+Love bombing? You know, when someone showers someone with excessive gifts and affection in order to manipulate them into a relationship.
 ~currentSpeaker=you
 There's a word for that?
 {ChangeSprite("Tali", "tali_exasperated")}
@@ -450,7 +436,6 @@ As if normal bombing wasn't bad enough.
 Just y'know. 
 It's good to keep an open mind when dating.
 But if you feel like it's not working don't try to fight it.
-It's ok to make mistakes.
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 When did you become a self help book?
@@ -485,7 +470,6 @@ Advice? Please.
 Let's just say, in most ways I'm emotionally dense, but I know a chronic people pleaser when I see one.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
-I see what you mean.
 I've never had that issue myself. 
 {ChangeSprite("Kent", "kent_happy")}
 Always just said what's on my mind.
