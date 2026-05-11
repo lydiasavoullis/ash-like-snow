@@ -88,9 +88,11 @@ Hey
 {ChangeSprite("Lavender", "lavender_angry")}
 ¬
 {PlayAnimation("Lavender", "shake")}
-HEY you have a freaking customer.
+HEY! You have a freaking customer!
 ~music="Lavender's song"
 ~newsAnnouncement = ""
+~currentSpeaker = you
+Sorry, how can I help?
 {PlayAnimation("Lavender", "shake")}
 Where's Adalina?
 {ChangeSprite("Lavender", "lavender_normal")}
@@ -102,24 +104,18 @@ I'm {you}, Ada is on holiday. She won't be back until January.
 {ChangeSprite("Lavender", "lavender_thinking")}
 Holiday?
 January?
-This is impossible.
+This can't be happening.
 I need her.
 You won't suffice.
 ~currentSpeaker = you
 Well I'm all you've got.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
-You will regret this.
-You will regret everything.
-~currentSpeaker = you
-I already do.
 ~currentSpeaker = snob
-This is not a joke.
 I have important business with Adalina.
 She's my only supply of extremely rare magazines.
 ~currentSpeaker = you
 I'm in charge of the inventory now, I can supply anything you need.
-I use the same website as Ada, I can supply your magazines.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
 ...
@@ -130,7 +126,7 @@ What kind of magazines are you looking for?
 Fashion magazines.
 Specifically LUX.
 ~currentSpeaker = you
-We have some magazines on that shelf.
+We have some fashion magazines on that shelf.
 You can have a look through them, see if there's anything you like.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
@@ -175,21 +171,18 @@ Ada usually meets her after closing hours.
 She does that just for a couple of old magazines?
 ~currentSpeaker = android
 She's our best customer.
-Those magazines are worth a lot.
+Those magazines can go for 10 times as much as the books we tend to sell.
 ~currentSpeaker = you
-They can't be worth that much?
 Who can even afford that these days?
 ~currentSpeaker = android
 You'd be surprised.
-Well maybe stock up on some of those overpriced magazines if you don't want her to rip your head off next time.
 ~currentSpeaker = you
-I should never have agreed to this.
+I should never have agreed to work here full time.
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker = android
+You've just got to hold on until Ada's back.
 Sorry, got to go.
 ~characters -= pandora
-~currentSpeaker = you
-The nerve of some people.
 ~comic="???"
 ~secretSpeaker="kent"
 ~sfx="open door"
@@ -214,7 +207,7 @@ That’s OK I guess. I was just hoping this place would be better stocked.
 I could help with that. Maybe if you gave me some pointers.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_happy")}
-Thanks. Sure I can write you a list. 
+Awesome! I can write you a list. 
 I’m Kent by the way.
 ~comic="Kent"
 ~currentSpeaker = you 
@@ -225,7 +218,7 @@ Cas?
 ~currentSpeaker = you 
 That’s right.
 ~currentSpeaker = comic 
-Nice to meet you.
+Nice to meet you Cas.
 {ChangeSprite("Kent", "kent_side_normal")}
 Is this your shop?
 ~currentSpeaker = you 
@@ -239,18 +232,18 @@ Oh no, it’s really not a problem. This place is practically empty. I don’t g
 That's very nice of you.
 Hope they're not taking advantage of you.
 ~currentSpeaker = you 
-Probably, but I'm ok with it. 
+Probably, but I'm OK with it. 
 She's very chill in other ways, so it makes up for the low pay.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_serious")}
-Lucky your boss is cool. Mine sucks.
+You're lucky to have such a cool boss. My boss sucks.
 ~currentSpeaker = you 
-What do you do?
+Oh? What is it that you do?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_normal")}
-I’m an illustrator for the Distant Outlook, sometimes I write too. I’m trying to get more into writing.
+I’m an illustrator for the Distant Outlook. Though sometimes I write for them too. I’m trying to get more into writing.
 ~currentSpeaker = you 
-That sounds very cool.
+That sounds like a very interesting role.
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic 
 It's my dream job. 
@@ -259,19 +252,17 @@ But my boss is horrible.
 {ChangeSprite("Kent", "kent_side_serious")}
 He calls me at random times, sometimes in the middle of the night or at the weekend and tells me I have to work on something immediately.
 ~currentSpeaker = you 
-That doesn't sound very cool.
-~currentSpeaker = comic 
-Very uncool.
+Ugh that sucks.
+~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_sad")}
 I like what I do, but I hate the way it's done.
-{ChangeSprite("Kent", "kent_normal")}
-Anyway, at least it keeps a roof over my head.
 ~currentSpeaker = you 
-Agreed.
-I wouldn't want to be homeless.
-Especially with that incident that killed those homeless people.
-{ChangeSprite("Kent", "kent_sad")}
+I'm thinking about some of the articles I read.
+I did see your name on one of them, was it the one about the bomb at the homeless shelter?
+{ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic 
+Yes, that's me.
+{ChangeSprite("Kent", "kent_sad")}
 The sad thing is that they weren’t even the intended target.
 ~currentSpeaker = you 
 Sorry, I didn't hear about that?
@@ -334,25 +325,33 @@ Does he like, live on the outskirts of society? Or a secret base hidden away in 
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
 Why don't you just read the comics?
-~currentSpeaker = you 
-Ugh. 
-~currentSpeaker = comic 
 You read, don’t you?
 ~currentSpeaker = you 
-I used to. Don’t have much time for that anymore. I never read comics anyway.
+I used to. Don’t have much time for that anymore. Even when I did, I wasn't really into comics.
 I have trouble following all the pictures.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_amused")}
-Hmm, a picture is worth a thousand words, is it not?
+How so?
 ~currentSpeaker = you 
-I think if that were true actual books would not exist.
-It's mostly the speech bubbles that confuses me, sometimes the order doesn't seem very clear.
-And the way the text is conveyed can feel a little...stilted.
+I remember I was reading this comic once, I can't remember the name, and I wasn't really understanding what was going on. It was like someone would answer a question and then I'd read the question they'd just asked after that. It was so confusing.
+It was like I was reading the story backwards.
 ~currentSpeaker = comic 
+Hmm, reading it backwards?
+Perhaps it was a manga.
+~currentSpeaker = you
+Manga? That's like a Japanese comic?
 {ChangeSprite("Kent", "kent_normal")}
-Read a comic, and if you get confused send me a picture and I’ll explain to you what’s going on.
-~currentSpeaker = you 
-Doesn’t that just defeat the purpose of reading in the first place.
+Yeah, they're usually read from right to left, instead of left to right.
+~currentSpeaker = you
+...I think it was a manga.
+~currentSpeaker = comic 
+{ChangeSprite("Kent", "kent_amused")}
+Oh dear.
+~currentSpeaker = you
+I feel quite stupid now.
+~currentSpeaker = comic
+Nah, don't worry.
+If you want to try reading them again, I can recommend some good ones.
 ~sfx="open door"
 ~characters += tali
 {ChangeSprite("Tali", "tali_happy")}
@@ -360,7 +359,7 @@ Doesn’t that just defeat the purpose of reading in the first place.
 ~currentSpeaker = webdev 
 Hey Cas!
 ~currentSpeaker = you 
-Hey, I’ve got your requests here. Ada made sure to find them before she left and she left me a note telling me it was urgent that you received these.
+Hey Tali, I’ve got those books you ordered. Ada made sure to find them before she left and she left me a note telling me it was urgent that you received these.
 {ChangeSprite("Tali", "tali_talking_forward")}
 ~currentSpeaker = webdev 
 Thanks! I mean it wasn’t that urgent. But I am still very grateful.
@@ -368,10 +367,8 @@ Thanks! I mean it wasn’t that urgent. But I am still very grateful.
 ~currentSpeaker = webdev 
 Sorry I didn’t mean to interrupt.
 {ChangeSprite("Kent", "kent_happy")}
-~currentSpeaker = comic 
-No worries.
 ~currentSpeaker = you 
-This is Kent. Avid comic book reader and illustrator and writer for the Distant Outlook.
+No worries, Kent was just recommending some beginner friendly comics to me – he's an illustrator and writer at the Distant Outlook you know!
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev 
 What no way! I was just updating their website last week. 
@@ -379,14 +376,15 @@ What no way! I was just updating their website last week.
 I’m Tali by the way.
 ~currentSpeaker = comic 
 Nice to meet you. 
-Thank God for your help too, the layout is much better now; there was a link from the Entertainment and Arts taking people to the World Wars section. 
+Thank God for your help too, the layout is much better now; the old site was an absolute mess! Links were always taking people to the wrong place – no one wants to end up looking at the world wars when they are trying to find entertainment and arts!
 {ChangeSprite("Kent", "kent_amused")}
 We had a lot of complaints.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev 
-It scales correctly on mobile devices and holo screens too.
+It even scales correctly on mobile devices and holo screens too.
 {ChangeSprite("Tali", "tali_talking_side")}
-~currentSpeaker = webdev 
+~currentSpeaker = webdev
+Hold on a minute, your name rings a bell.
 Are you the one who did that comic on the railway crash?
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_serious")}
@@ -434,15 +432,21 @@ Pandora is the only other person working here right now. We're a bit short on st
 ~currentSpeaker = android 
 Luckily no one really comes here anyway.
 {ChangeSprite("Pandora", "pandora_mean")}
-So this is just the right amount of staff. Maybe even a little too much staff.
+All things considered I think we're actually a bit overstaffed.
 ~currentSpeaker = you 
 Don't give Ada any ideas.
+{ChangeSprite("Tali", "tali_normal")}
+~currentSpeaker = webdev 
+So, what were you talking about before I interrupted?
 {ChangeSprite("Pandora", "pandora_confused")}
+{ChangeSprite("Kent", "kent_side_normal")}
+~currentSpeaker = comic 
+I was just talking about some of the comics I like, and I wrote Cas a list.
 ~currentSpeaker = android 
-Who wrote this? A list? What’s Satin Rain?
+A list? What’s Satin Rain?
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic 
-Satin Rain is the main love interest of Night Thunder. It’s a spin off comic. Some say it’s even better than Night Thunder because it’s more morally grey.
+Satin Rain is the main love interest of Night Thunder. It’s a spin off comic. I kind of like it even more than Night Thunder because it’s more morally grey.
 {ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker = android 
 How does that make it good?
@@ -456,7 +460,7 @@ Why?
 I think it’s because they’re perceived to be more complex. 
 It also breaks the trend of the black and white morality of most comics and heroes always presented as being in the right.
 ~currentSpeaker = android 
-Hmm, I don’t quite understand why this is so interesting. 
+Hmm, not sure I agree with that line of thinking. 
 {ChangeSprite("Pandora", "pandora_happy")}
 I like the pretty pictures in comics though.
 {ChangeSprite("Kent", "kent_happy")}

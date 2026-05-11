@@ -20,13 +20,13 @@ INCLUDE endings.ink
 INCLUDE shop.ink
 INCLUDE night.ink
 //->day_1
-*[ending test]
-->ending_check
-*[Playtest]
+// *[ending test]
+// ->ending_check
+*[Playtest (start from day 1)]
 {set_all_book_prices()}
 ->day_1
-*[Simulate shop]
-~snappedOut=true
+*[Simulate shop (only play shop and book giving scenes)]
+{set_all_book_prices()}
 ~scene="GenericScene"
 ¬
 ->next_day
@@ -46,10 +46,10 @@ It's weekend day {day}.
 ~day+=1
 ->next_day
 
-*day 1
-->day_1
-*day 12
-->start_incident
+// *day 1
+// ->day_1
+// *day 12
+// ->start_incident
 ==night_rain==
 ~scene= "Night"
 ~textBoxIsActive="false"

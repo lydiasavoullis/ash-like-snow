@@ -99,10 +99,12 @@ Remaining funds: {funds}
 {buy_book(LUX_rain_proof, lbd9)}
 ->goto_shop
 #kent
-+{day>=9}{allbooks !? mr_therm}[Mr. Thermistor \#95(£{kbd9}: Sells for £{(kbd9+kentProfit)})]
-{buy_book(mr_therm, kbd9)}
++{day>=9}{allbooks !? x_a_235}[X and A \#235(£{kbd9}: Sells for £{(kbd9+kentProfit)})]
+{buy_book(x_a_235, kbd9)}
 ->goto_shop
-
+// +{day>=9}{allbooks !? mr_therm}[Mr. Thermistor \#95(£{kbd9}: Sells for £{(kbd9+kentProfit)})]
+// {buy_book(mr_therm, kbd9)}
+// ->goto_shop
 #tali
 +{day>=9}{allbooks !? lord_of_dusk}[The Lord of Dusk \#95(£{tbd9}: Sells for £{(tbd9+taliProfit)})]
 {buy_book(lord_of_dusk, tbd9)}

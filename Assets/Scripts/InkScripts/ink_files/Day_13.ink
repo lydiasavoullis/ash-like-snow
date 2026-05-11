@@ -292,7 +292,7 @@ Well here goes nothing.
 I've checked with my boss and everything is good to go.
 I'm going to turn on Mr. Computer.
 {ChangeSprite("Kent", "kent_happy")}
-You certainly are a computer-y guy.
+You're a computer-y guy.
 {ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker=snob
 Is he speaking to a computer?
@@ -369,10 +369,10 @@ Can I open my presents now?
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 We need to check our stockings first.
-I have some really funky tights in mine.
+I have some funky tights in mine.
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker=comic
-I have socks, they have reindeer on them.
+I have socks with reindeer on them.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker=snob
 I got a new hairbow. It’s pink!
@@ -446,7 +446,7 @@ Can robots really get sick though? I mean you haven’t eaten anything…you don
 <i>*BLECH*</i>
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker=webdev
-It must be like a sympathetic reaction.
+Is she ok?
 {ChangeSprite("Kent", "kent_amused")}
 ~currentSpeaker=comic
 Maybe something's wrong with her programming.
@@ -473,7 +473,6 @@ How do you do it?
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker=comic
 The secret is lots of herbs and garlic butter.
-And covering the bird so it keeps all the juices in.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker=webdev
 Butter is the secret to everything I guess.
@@ -508,6 +507,7 @@ And less time with me.
 ~currentSpeaker=webdev
 Can you really blame me?
 You're being a fucking brat.
+~music=""
 {ChangeSprite("Lavender", "lavender_shocked")}
 ~currentSpeaker=snob
 …
@@ -519,6 +519,7 @@ You're being a fucking brat.
 {ChangeSprite("Lavender", "lavender_tears_crying")}
 ~currentSpeaker=snob
 I’m going to take a nap.
+~music="Happy xmas"
 ~characters-=lavender
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker=comic
@@ -530,21 +531,21 @@ I’m heading off too.
 Sorry {you} you had to witness that.
 ~currentSpeaker=you
 Wait, {webdev}.
-I want you to stay right here.
+I want you to stay here.
 I don't want to be alone right now.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker=webdev
-Of course, I will stay.
+Of course I'll stay.
 I don't want you to feel alone.
 ~currentSpeaker=you
-Also...don't be sad. It's making me feel uncomfortable.
+Also...don't be sad. It's making me uncomfortable.
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker=webdev
 Yeah, that's a good point.
-{ChangeSprite("Tali", "tali_serious")}
-Hey {you}, are you alright?
+Is there anything I can do to make you feel better?
 {ChangeSprite("Pandora", "pandora_annoyed")}
 ~characters+=pandora
+~music=""
 ~currentSpeaker=android
 Stop it {you}.
 {ChangeSprite("Pandora", "pandora_normal")}
@@ -554,7 +555,7 @@ Stop it {you}.
 Uh ok.
 ~characters-=tali
 ~currentSpeaker=you
-Where did you come from?
+Where did you go?
 What happened?
 {ChangeSprite("Pandora", "pandora_normal")}
 ~currentSpeaker=android
@@ -616,7 +617,6 @@ No…it’s for the best. Trust me.
 ~currentSpeaker=you
 Aye aye captain.
 ~scene="Basement"
-~music=""
 ¬
 ~characters+=kent
 ~characters+=tali

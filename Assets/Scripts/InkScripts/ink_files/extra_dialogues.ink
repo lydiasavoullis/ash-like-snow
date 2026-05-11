@@ -57,7 +57,7 @@ What's so special about it?
 I don't know.
 There's a silver dress I wanted to try and replicate.
 It's not really my style.
-But I want to wear it.
+But I want to have it.
 ~currentSpeaker = you
 I just wanted to ask.
 What's so great about these LUX magazines?
@@ -449,7 +449,7 @@ No actually.
 Well it seemed like your cup of tea. Maybe I was wrong?
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev
-No, it seems interesting...a king who forces 12 children to navigate a glass labryrinth every year for entertainment.
+No, it seems interesting...a king who forces twelve children to navigate a glass labryrinth every year for entertainment.
 ~currentSpeaker = you
 A glass labryrinth doesn't sound like much of a challenge.
 {ChangeSprite("Tali", "tali_talking_side")}
@@ -461,12 +461,10 @@ Or perhaps we've got it wrong.
 Maybe it's a labryrinth made of broken glass.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev
-That's cruel! And I bet he didn't even give the poor kids slippers to wear.
-~currentSpeaker = you
 How sadistic.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
-I'm intrigued. I'll take it.
+But I'm intrigued. I'll take it.
 ~funds+=tbd5+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
@@ -566,28 +564,20 @@ Like she gets some kind of redemption arc. Realises that infanticide is bad.
 ~currentSpeaker = webdev
 I don't think so.
 ~currentSpeaker = you
-It's from the kid's perspective then right?
-{ChangeSprite("Tali", "tali_talking_forward")}
-~currentSpeaker = webdev
-No, it's from the queen's perspective. Mostly.
-~currentSpeaker = you
-What? That makes no sense.
-{ChangeSprite("Tali", "tali_serious")}
-~currentSpeaker = webdev
-How so?
-~currentSpeaker = you
 The queen isn't a very nice characer. Why is it from her perspective?
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
 Why does every character have to be nice?
 ~currentSpeaker = you
 They don't have to be nice.
-But she just sounds straight up villanous.
+But it's kind of difficult to read from the perspective of bad people, isn't it?
 {ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker = webdev
+I don't know.
+From her perspective, she's the good guy.
 She's kept peace in the galaxy for thousands of years. 
 And this child threatens that.
-Not every character needs to be likeable.
+Also, not every character needs to be likeable.
 ~currentSpeaker = you
 Sure but it makes it an unpleasant read.
 {ChangeSprite("Tali", "tali_smirk")}
@@ -596,7 +586,7 @@ Really? You don't ever wonder what goes on inside the heads of the truly evil?
 ~currentSpeaker = you
 Maybe...
 But a whole series from the perspective of a monster?
-That would get frustrating.
+That would feel pointless.
 ~funds+=tbd11+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
@@ -615,7 +605,6 @@ It's about this young writer who lives in this small village. She works for the 
 But the stories are notoriously bad.
 {ChangeSprite("Tali", "tali_talking_forward")}
 Like no one wants to read them.
-Everyone is bored to death.
 ~currentSpeaker = you
 Still waiting for the fantasy part.
 {ChangeSprite("Tali", "tali_talking_side")}
@@ -624,11 +613,6 @@ Well this guy moves into the village.
 He had a job where he had to travel all over the world.
 But he's decided now to settle down in the village.
 And he becomes friends with the writer.
-~currentSpeaker = you
-Uh huh...still waiting for the fantasy...
-{ChangeSprite("Tali", "tali_exasperated")}
-~currentSpeaker = webdev
-Be patient.
 {ChangeSprite("Tali", "tali_talking_forward")}
 He starts telling her stories from his travels around the world.
 {ChangeSprite("Tali", "tali_talking_side")}
@@ -641,11 +625,10 @@ Even though it's not his job.
 ~currentSpeaker = webdev
 I think writing and storytelling are two different things.
 ~currentSpeaker = you
-I'm not so sure.
 To be a good writer you have to be a good storyteller.
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
-Sure that's an element of it.
+Sure, that's an element of it.
 {ChangeSprite("Tali", "tali_talking_forward")}
 But verbal storytelling isn't the same as having to read a book.
 When someone tells a story you listen because you want to know what happens next.
@@ -656,14 +639,15 @@ A lot of the time I'm just enjoying being absorbed into the world, I'm entertain
 I feel like all that stuff is a waste of time. I just want to get down to the murder and who done it.
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
-Is that really the only satisfying thing.
-Sure if the butler killed the lord of the manor it's certainly dramatic.
+Is that really the only satisfying thing?
+Who cares if the butler killed the lord of the manor?
+It's clichéd.
 {ChangeSprite("Tali", "tali_talking_side")}
-But if you get the feel of how the lord looks down on the butler, how he treats him with indignity. If you find out that the butler is having an affair with his wife. 
+But if you get the feel of how the lord looks down on the butler, how he treats him with indignity. 
+If you find out that the lord is having an affair with his wife. 
 {ChangeSprite("Tali", "tali_smirk")}
 And then the reveal that he killed his master is so much more satisfying.
 ~currentSpeaker = you
-...
 I mean sure...that stuff is important I guess.
 {ChangeSprite("Tali", "tali_normal")}
 ~currentSpeaker = webdev
@@ -705,13 +689,15 @@ The greater the power you ask for, the greater the pain.
 Why would anyone use it? That's horrible.
 {ChangeSprite("Tali", "tali_serious")}
 ~currentSpeaker = webdev
-What if the fate of your kingdom was at stake. The fate of all humanity.
+The fate of their kingdom is at stake.
+Lots of people could die.
+It might be a reasonable sacrifice for someone at least.
 ~currentSpeaker = you
 Yeah...they can all perish.
 Thanks, but no thanks.
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev
-I suppose each to their own.
+You're truly heartless.
 ~funds+=tbd8+taliProfit
 ~booksSold+=1
 ~music="Rise and shine"
@@ -805,7 +791,6 @@ But I might give it another try one day
 ~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
-Wait a minute, just before you go.
 I have something you might be interested in.
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
@@ -878,77 +863,77 @@ Alright. Alright.
 ~booksSold+=1
 ->->
 
-// ==X_and_A==
-// ~music="Making friends"
-// ~kentPoints+=1
-// ~currentSpeaker = you
-// I've got a comic for you.
-// What's X and A mean?
-// {ChangeSprite("Kent", "kent_happy")}
-// ~currentSpeaker = comic
-// It's the names of these two characters.
-// They were volunteer test subjects for this gene therapy drug.
-// At first they went willingly, but then when the experiment started to go wrong, they weren't allowed to leave the facility. 
-// ~currentSpeaker = you
-// Sounds like they made a terrible error voluneering.
-// {ChangeSprite("Kent", "kent_side_normal")}
-// ~currentSpeaker = comic
-// Anyway, they managed to escape.
-// Only to find their identities erased from the earth.
-// Their families were told they were dead.
-// ~currentSpeaker = you
-// They couldn't just reveal what the scientists did to them?
-// {ChangeSprite("Kent", "kent_side_serious")}
-// ~currentSpeaker = comic
-// No. You see the gene therapy disfigured their faces.
-// And it also changed their DNA.
-// ~currentSpeaker = you
-// That's fucked up.
-// {ChangeSprite("Kent", "kent_side_normal")}
-// ~currentSpeaker = comic
-// But there are also government programs to track them down and assassinate them.
-// {ChangeSprite("Kent", "kent_happy")}
-// Luckily their powers sort of help them to evade detection.
-// The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
-// ~currentSpeaker = you
-// What's with the letters?
-// ~currentSpeaker = comic
-// X and A are parts of their lab numbers, X was X-436 and A was A-967.
-// Hence they go by X and A.
-// ~currentSpeaker = you
-// Sounds very sci-fi.
-// ~music="Rise and shine"
-// ~funds+=90
-// ~booksSold+=1
-// ->->
-
-==mr_thermistor==
+==X_and_A==
 ~music="Making friends"
 ~kentPoints+=1
 ~currentSpeaker = you
-I've got something here called...Mr. Thermistor.
+I've got a comic for you.
+What's X and A mean?
 {ChangeSprite("Kent", "kent_happy")}
 ~currentSpeaker = comic
-Oh, this one is kind of funny.
+It's the names of these two characters.
+They were volunteer test subjects for this gene therapy drug.
+At first they went willingly, but then when the experiment started to go wrong, they weren't allowed to leave the facility. 
 ~currentSpeaker = you
-Funny?
+Sounds like they made a terrible error voluneering.
 {ChangeSprite("Kent", "kent_side_normal")}
 ~currentSpeaker = comic
-It's about this guy, he sort of gains the ability to channel electricity through his body.
-But only when he's super hot. Or super cold.
+Anyway, they managed to escape.
+Only to find their identities erased from the earth.
+Their families were told they were dead.
 ~currentSpeaker = you
-That doesn't sound like a great power.
-{ChangeSprite("Kent", "kent_amused")}
+They couldn't just reveal what the scientists did to them?
+{ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
-It isn't.
-He has to work really hard to make it work.
-It includes a scene where he lures bad guys into the sauna and...well...zap!
+No. You see the gene therapy disfigured their faces.
+And it also changed their DNA.
 ~currentSpeaker = you
-Ok. I think I get it.
+That's fucked up.
+{ChangeSprite("Kent", "kent_side_normal")}
+~currentSpeaker = comic
+But there are also government programs to track them down and assassinate them.
+{ChangeSprite("Kent", "kent_happy")}
+Luckily their powers sort of help them to evade detection.
+The whole comic is about them trying to reclaim their identities and seek justice against the researchers who ruined their lives.
+~currentSpeaker = you
+What's with the letters?
+~currentSpeaker = comic
+X and A are parts of their lab numbers, X was X-436 and A was A-967.
+Hence they go by X and A.
+~currentSpeaker = you
+Sounds very sci-fi.
 ~music="Rise and shine"
 ~funds+=kbd9+kentProfit
 ~booksSold+=1
 ->->
+
+// ==mr_thermistor==
+// ~music="Making friends"
+// ~kentPoints+=1
+// ~currentSpeaker = you
+// I've got something here called...Mr. Thermistor.
+// {ChangeSprite("Kent", "kent_happy")}
+// ~currentSpeaker = comic
+// Oh, this one is kind of funny.
+// ~currentSpeaker = you
+// Funny?
+// {ChangeSprite("Kent", "kent_side_normal")}
+// ~currentSpeaker = comic
+// It's about this guy, he sort of gains the ability to channel electricity through his body.
+// But only when he's super hot. Or super cold.
+// ~currentSpeaker = you
+// That doesn't sound like a great power.
+// {ChangeSprite("Kent", "kent_amused")}
+// ~currentSpeaker = comic
+// It isn't.
+// He has to work really hard to make it work.
+// It includes a scene where he lures bad guys into the sauna and...well...zap!
+// ~currentSpeaker = you
+// Ok. I think I get it.
+// ~music="Rise and shine"
+// ~funds+=kbd9+kentProfit
+// ~booksSold+=1
+// ->->
 
 ==bworld==
 ~music="Making friends"
