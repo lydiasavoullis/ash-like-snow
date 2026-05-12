@@ -351,7 +351,7 @@ Oh dear.
 I feel quite stupid now.
 ~currentSpeaker = comic
 Nah, don't worry.
-If you want to try reading them again, I can recommend some good ones.
+If you want to try reading them again, I can recommend some good beginner friendly ones.
 ~sfx="open door"
 ~characters += tali
 {ChangeSprite("Tali", "tali_happy")}
@@ -496,12 +496,12 @@ She provides me with shelter and yearly service checks and overnight charging al
 ~currentSpeaker = webdev 
 Those are basic rights!
 {ChangeSprite("Tali", "tali_upset")}
-How do you accept this Cas?
+How can you accept this Cas?
 ~currentSpeaker = you 
 I would like to keep my job. As I am not just given free food and shelter.
 {ChangeSprite("Tali", "tali_sad")}
 ~currentSpeaker = webdev 
-How did I not know about this, all this time I’ve been coming here. I barely saw Pandora. I never thought about it.
+How did I not know about this?
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker = android 
 Oh dear.
@@ -519,9 +519,9 @@ But I have the mental age of a twenty year old.
 Really?
 {ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android 
-It might not seem like it, but I have a peculiar personality chip.
+I have a peculiar personality chip.
 {ChangeSprite("Pandora", "pandora_sad")}
-Some will say it’s defective.
+Sometimes I think it’s defective.
 ~currentSpeaker = you 
 Hey, I don’t think you’re defective.
 {ChangeSprite("Tali", "tali_talking_side")}
@@ -543,7 +543,7 @@ Ciao ladies.
 ~characters-=kent
 {ChangeSprite("Tali", "tali_smirk")}
 ~currentSpeaker = webdev 
-I can’t wait to get stuck into these.
+I can’t wait to get stuck into these new books.
 Thanks Cas.
 ~currentSpeaker = you 
 No worries.
@@ -551,8 +551,7 @@ It was mostly Ada’s work.
 How do you find the time to read these thousand plus page fantasy novels?
 {ChangeSprite("Tali", "tali_talking_side")}
 ~currentSpeaker = webdev 
-I don’t know, I just do.
-There's not much else for me to do after work anyway.
+I’m a fast reader, and there’s not much for me to do after work anyway.
 {ChangeSprite("Tali", "tali_talking_forward")}
 So Pandora, do you like reading?
 {ChangeSprite("Pandora", "pandora_happy")}
@@ -563,7 +562,7 @@ The classics mostly.
 {ChangeSprite("Tali", "tali_happy")}
 ~currentSpeaker = webdev 
 How charming.
-What do you like Cas?
+What about you Cas?
 ~currentSpeaker = you 
 Crime and horror.
 {ChangeSprite("Tali", "tali_exasperated")}
