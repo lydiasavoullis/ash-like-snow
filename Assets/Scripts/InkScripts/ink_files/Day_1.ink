@@ -408,7 +408,7 @@ oh.
 ¬
 ~currentSpeaker = android 
 I didn’t realise there were so many people here.
-~currentSpeaker = android 
+We have a reading nook if anyone wants a quiet area to read a book.
 Tea, coffee anyone?
 ~currentSpeaker = comic 
 I’m good.

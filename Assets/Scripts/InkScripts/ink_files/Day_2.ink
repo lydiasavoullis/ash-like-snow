@@ -2,7 +2,7 @@
 ¬
 ~newsPicture = "headline1"
 ~newsCaption = "Rioter brandishing hateful placard"
-~newsAnnouncement = "Crack down on anti-war riots - 'They are a disgrace to our great nation,' said Blue. 'I will have them removed as soon as possible.'"
+~newsAnnouncement = "Crack down on anti-war riots - 'They are a disgrace to our great nation,' said Blue. 'We will crush all that oppose us.'"
 ¬
 ~music="Rise and shine"
 ~newsAnnouncement = ""
@@ -31,7 +31,7 @@ Nope
 {ChangeSprite("Pandora", "pandora_pensive")}
 Saving money is wise.
 But this is a bookshop. We sell books.
-In order to sell the books we have to buy them.
+In order to sell books we have to buy them.
 ~currentSpeaker = you 
 It must have slipped my mind.
 {ChangeSprite("Pandora", "pandora_mean")}
@@ -48,7 +48,7 @@ Great, bring it in
 ~currentSpeaker = you 
 I hear you.
 ~currentSpeaker = android 
-You better keep ordering those books.
+You'd better keep ordering them.
 Well, that's one thing sorted today at least.
 ->tea_or_coffee->day_2_cont
 
@@ -71,16 +71,6 @@ I got full marks on one of my IOI re-training modules.
 ~currentSpeaker = webdev 
 {ChangeSprite("Tali", "tali_smirk")}
 Well done!
-~currentSpeaker = you 
-What can we do you for you?
-{ChangeSprite("Tali", "tali_talking_forward")}
-~currentSpeaker = webdev
-I’m just stopping by to browse 
-And work on a few emails to my boss
-{ChangeSprite("Tali", "tali_normal")}
-~currentSpeaker = you
-//{allbooks ? fantasy_7: ->fantasy_7_book->}
-->tali_book_check->
 ~currentSpeaker = you
 How are things holding up?
 ~currentSpeaker = webdev
@@ -99,21 +89,27 @@ And don't get me started on their logo design issues.
 Have you tried telling them?
 ~currentSpeaker = webdev 
 {ChangeSprite("Tali", "tali_upset")}
-I have suggested politely, but there is no compromise with these people. 
-They're never happy.
-And if they're not happy, then my boss isn't either.
+I have suggested politely, but they aren't listening.
 {ChangeSprite("Tali", "tali_exasperated")}
-And she never backs me up.
+They aren’t happy with me, and they aren’t happy with me, neither is my boss. It would be nice if she were in my corner every once in a while, but nope!
 ~currentSpeaker = you 
 Why not move?
 ~currentSpeaker = webdev 
 {ChangeSprite("Tali", "tali_talking_forward")}
 It’s a good job.
 ~currentSpeaker = you 
-Not from what you described. And from what I heard you can find work elsewhere easily with your skills.
+Asshole client with an asshole boss - doesn’t sound like a good job to me. With your CV, finding another job should be a walk in the park!
 ~currentSpeaker = webdev 
 {ChangeSprite("Tali", "tali_upset")}
 I'm not so sure.
+~currentSpeaker = you 
+What can we do you for you today, Tali?
+{ChangeSprite("Tali", "tali_talking_forward")}
+~currentSpeaker = webdev
+I’m just stopping by to browse, and work on a few emails to my boss.
+I might head to the reading nook.
+{ChangeSprite("Tali", "tali_normal")}
+->tali_book_check->         
 {ChangeSprite("Tali", "tali_exasperated")}
 Ugh my boss is ringing me. I have to go.
 ~characters-=tali
@@ -125,14 +121,17 @@ I’m worried about her.
 So am I.
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_mean")}
-Yeah she’s our second best customer. We can’t lose her.
+Yeah, she’s our second-best customer. We can’t lose her.
 ~currentSpeaker = you 
-Oh wow {android}, that's so nice of you.
+Oh wow {android}, that's so nice of you... 
+I was only thinking about her wellbeing. Silly me.
 ~currentSpeaker = android
+{ChangeSprite("Pandora", "pandora_mean")}
+{you} you're getting soft.
 {ChangeSprite("Pandora", "pandora_annoyed")}
-We've got to think about the business {you}.
+We've also got to think about the business {you}.
 {ChangeSprite("Pandora", "pandora_normal")}
-I have to go and study now.
+I have to go and study now. See you later.
 ~characters-=pandora
 ¬
 ~sfx = "open door"
@@ -142,10 +141,10 @@ I have to go and study now.
 {ChangeSprite("Kent", "kent_normal")}
 Me again.
 ~currentSpeaker = you 
-Good morning Kent.
+Morning Kent!
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_happy")}
-Morning
+Morning.
 {allbooks !? (satin_rain_1,nightthunder_89): I still don't have any comics sorry }
 //{allbooks ? nightthunder_89: ->night_thunder->} 
 //{allbooks ? satin_rain_1: -> satin_rain->} 
@@ -156,13 +155,15 @@ Morning
 How’s business?
 ~currentSpeaker = you 
 Slow.
-How about you?
+How's the Outlook?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
 Oh did you hear?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_side_serious")}
 Someone fired a gun on the protesters in Hyde Park. Five people dead, eleven injured. The whole area is on high alert. 
+~currentSpeaker = you 
+Shit.
 {ChangeSprite("Kent", "kent_amused")}
 But hey, it’s good for business.
 ~currentSpeaker = you 
@@ -188,7 +189,7 @@ I had to simplify some of the panels a bit, but I managed to get the gist of it.
 How does one even think up something like that?
 {ChangeSprite("Kent", "kent_side_serious")}
 ~currentSpeaker = comic
-He got the idea from the rumour that when the shooter shot himself, the bullet flew straight through the back of his skull killing the man behind him.
+There's a rumour that when the shooter shot himself, the bullet flew straight through the back of his skull killing the man behind him.
 That man then collapsed upon the woman behind him and fatally concussed her with his picket sign.
 ~currentSpeaker = you
 I don’t even know what to say.
@@ -198,6 +199,7 @@ Another day, another distasteful comic
 He let me write a small piece about the manifesto, so there’s that.
 ~currentSpeaker = you
 That's cool at least.
+~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_sad")}
 No one’s going to read it though.
 No one cares about politics anymore, unless there’s violence involved.
@@ -234,7 +236,7 @@ I never said it was a costume.
 Well it was implied.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic
-Uh sorry to bother you.
+Apologies, I didn’t intend to offend you.
 {ChangeSprite("Lavender", "lavender_normal")}
 ~currentSpeaker = snob
 My name is Lavender.
@@ -278,21 +280,20 @@ It's too dry and predictable.
 I prefer Calamity.
 {ChangeSprite("Kent", "kent_sad")}
 ~currentSpeaker = comic  
-That's just scaremongering garbage.
+That's just fearmongering garbage.
 ~currentSpeaker = snob 
 And yet they've made quite the profit this year.
-My father's thinking of investing more into Calamity and cutting funding to Outlook.
-~currentSpeaker = comic
-{ChangeSprite("Kent", "kent_amused")}
-Your father?
-~currentSpeaker = you 
-Let’s keep things civil, eh?
+I hear they're thinking of investing more into Calamity and cutting funding to Outlook.
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_side_serious")}
-You’re right. I don’t know why I’m even defending them. 
+I wouldn't be surprised.
+{ChangeSprite("Kent", "kent_sad")}
+I don’t know why I’m even defending them. 
 Blue-Carp owns both Distant Outlook and Calamity.
 They have a monopoly on the news outlets so they win either way.
 You just end up picking the lesser of two evils.
+{ChangeSprite("Kent", "kent_side_serious")}
+Wait a minute, what do you mean your father?
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
 It sounds like you just like to whine but you don't do anything.
@@ -313,28 +314,18 @@ I'm thirty-two.
 Oh really?
 {ChangeSprite("Kent", "kent_amused")}
 Honestly, your skin is amazing. What's your secret?
-{ChangeSprite("Lavender", "lavender_serious")}
+{ChangeSprite("Lavender", "lavender_thinking")}
 ~currentSpeaker = snob 
 As if I'd tell you.
-~currentSpeaker = you 
-I heard blood of the innocents is popular these days.
-{ChangeSprite("Lavender", "lavender_angry")}
-~currentSpeaker = snob 
-Not funny.
-~currentSpeaker = comic 
-{snob}, do you bathe in it, or just slather it on your face?
 {ChangeSprite("Lavender", "lavender_serious")}
 ~currentSpeaker = snob 
 All you can do is mock everthing.
 But there is a plan, we just have to trust it.
 The people in power know what they're doing.
-{ChangeSprite("Lavender", "lavender_thinking")}
-Well, I imagine they must do.
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_upset")}
 You’re delusional. 
-We’re almost at war because of them.
-Because of Blue we are in quarantine from the rest of civilisation, and nearing a full blown world conflict.
+Because of Blue we are in quarantine from the rest of civilisation, and nearing a full blown world war.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_angry")}
 My father would never allow that.
@@ -343,7 +334,7 @@ My father would never allow that.
 Your father?
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_serious")}
-You don't even know whom you're talking to.
+You don't even know who you're talking to.
 ~currentSpeaker = you 
 Hey {snob}, what does that mean?
 You said that your father would never allow that.
@@ -355,8 +346,6 @@ And I refuse to let you spout nonsense about him.
 {ChangeSprite("Kent", "kent_shocked")}
 What?!
 {ChangeSprite("Kent", "kent_upset")}
-~currentSpeaker = you 
-Well this is awkward.
 ~currentSpeaker = comic  
 I’m not sure what you think that name dropping is going to do.
 But it’s not impressing me. 
@@ -367,8 +356,8 @@ Rather the opposite.
 I couldn't care less about your opinion.
 ~currentSpeaker = you 
 I doubt that. 
-Why are you here? 
-Why would you be so eager to come in here and start this conversation with Kent? 
+Why are you still here? 
+Why would you be so eager to start this conversation with Kent? 
 No one asked you to.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_shocked")}
@@ -381,10 +370,14 @@ Cas!
 I’m so sorry Miss Blue. I assure you, you are a highly esteemed customer. Would you like a complimentary cup of tea or coffee?
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_thinking")}
-Are you trying to bribe me? 
+Tea? 
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker = android  
+Is something wrong?
 {ChangeSprite("Lavender", "lavender_happy")}
-I love tea. 
+No, I love tea. 
 I want tea, robot.
+{ChangeSprite("Pandora", "pandora_happy")}
 ~currentSpeaker = android
 Right away.
 ~characters-=pandora
@@ -394,10 +387,11 @@ Can you not call her the 'r' word? It’s rude.
 {ChangeSprite("Lavender", "lavender_angry")}
 Apologise to me now.
 ~currentSpeaker = you 
-Erm...how about no?
+Absolutely not.
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_serious")}
-I’ll tell you why I started this conversation.
+Arguing with you two is a waste of time.
+Kent just roped me into it.
 {ChangeSprite("Lavender", "lavender_thinking")}
 I don’t really care about either of you.
 {ChangeSprite("Lavender", "lavender_happy")}
@@ -426,20 +420,20 @@ I don’t have that.
 Aren’t your kind meant to be mind readers or something?
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_mean")}
-No. That kind of technology hasn’t been discovered yet. Honestly that sounds kind of disturbing to me.
+No, and honestly that sounds kind of disturbing to me.
 ~currentSpeaker = comic  
 {ChangeSprite("Kent", "kent_upset")}
 Her name is Pandora.
 ~currentSpeaker = snob 
 {ChangeSprite("Kent", "kent_normal")}
 {ChangeSprite("Lavender", "lavender_normal")}
-Ugh fine. Thank you for the tea. But I will make improvements to this next time.
+Ugh fine. Thank you for the tea. But you will have to make some improvements.
 ~currentSpeaker = android 
 {ChangeSprite("Pandora", "pandora_confused")}
 Improvements?
 ~currentSpeaker = snob 
 {ChangeSprite("Lavender", "lavender_serious")}
-Suggestions to improve your failing business.
+Don't worry about it. I will help you save your failing business.
 {ChangeSprite("Lavender", "lavender_normal")}
 If you have any more magazines please order them. I’ll collect them the next time I visit.
 Bye.
@@ -454,7 +448,7 @@ We can’t.
 She’s technically keeping this business afloat.
 ~currentSpeaker = comic 
 {ChangeSprite("Kent", "kent_side_serious")}
-I hate everything.
+I hate what has become of the world.
 ~currentSpeaker = android  
 {ChangeSprite("Pandora", "pandora_shocked")}
 Do you think I upset her?
@@ -479,10 +473,12 @@ Sometimes when people are uncontrollably angry it spills out everywhere...like a
 {ChangeSprite("Kent", "kent_amused")}
 What Cas is saying is that people like that lash out at anyone, even if they didn’t do anything wrong. They think they’re entitled to hurt everyone. 
 ~currentSpeaker = android  
+{ChangeSprite("Pandora", "pandora_sad")}
+This is why I was such a bad therapist. I'm not so great at picking up on emotions.
 {ChangeSprite("Pandora", "pandora_happy")}
-Haha, you know I think this is why I was such a bad therapy IOI. But you two would make great therapy IOIs.
+I think you two would be far better therapists than I ever was.
 ~currentSpeaker = you 
-Uh really?
+Uh really? I wouldn't go that far.
 ~currentSpeaker = comic
 Thanks Pandora. Maybe you can recommend me to career services next time.
 {ChangeSprite("Kent", "kent_normal")}
