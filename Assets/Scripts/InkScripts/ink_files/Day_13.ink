@@ -933,9 +933,7 @@ Don’t lie to me. Please.
 Why weren’t you taking your medication?
 It’s meant to help you. You should take it if it was prescribed by your doctor.
 ~currentSpeaker=you
-You're being naive.
-It’s a convenient synthetic drug that was made to ‘cure’ most mental illnesses. 
-Except it doesn't.
+It wasn't helping me.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
 What do you mean by that?
@@ -951,89 +949,112 @@ It does, in theory. The only thing is, people kind of need those things.
 ~currentSpeaker=android
 Why? They're not exactly good things.
 ~currentSpeaker=you
-Not in large amounts. But they stem from our innate empathy. Fate doesn't remove the problem at the root, it just removes your empathy. It numbs your ability to feel things.
+Not in large amounts. But they stem from our innate empathy. 
+Fate doesn't remove the problem at the root, it just removes your empathy. It numbs your ability to feel things.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-That sounds...less good.
+My father took the same drug.
+I was the one who found him when he took his own life.
+I realised he'd stopped taking his medication.
+If only I'd checked I could have saved him.
 ~currentSpeaker=you
-Another side effect of Fate, is that when you start taking it, you can lose some of your memories, or become forgetful.
+...Pandora.
+{ChangeSprite("Pandora", "pandora_annoyed")}
+~currentSpeaker=android
+I wasn't going to let the same thing happen to you.
+~currentSpeaker=you
+Fate withdrawal is horrible.
+But trust me, the drug itself is dangerous for long-term use.
+Sure, it numbs pain.
+It's the ultimate solution to keep the peace.
+You just keep your head down, and don't worry that the world around you is going to shit.
+But that's not right.
+Pain is there for a reason.
+It's not just for the sake of suffering, it's a warning system.
+Grief reinforces the importance of what you lost.
+You need to grieve. You need to feel pain.
+{ChangeSprite("Pandora", "pandora_sad")}
+Otherwise you become a monster.
+Otherwise you become like me.
+{ChangeSprite("Pandora", "pandora_annoyed")}
+~currentSpeaker=android
+I don't care, the withdrawal killed my father.
+He would have been alive if he was still taking it.
+~currentSpeaker=you
+I'm sorry, but it wasn't withdrawal. It was Fate that killed him.
+It should never have been approved for use.
+It exists as a testament of our indifference to human suffering.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+One minute he was there, the next he was gone.
+No one gave me their condolences. 
+It made me remember I was just an object.
+A faulty object.
+~currentSpeaker=you
+That's a poor reflection on them, not on you.
+You're not an object.
+You're important to me, and everone else here.
+{ChangeSprite("Pandora", "pandora_sad")}
+~currentSpeaker=android
+I'm so sorry, I was completely unaware.
+I realise what I did was completely unprofessional.
+I hope I haven't hurt you.
+~currentSpeaker=you
+Nothing long-lasting.
+However, a side effect of Fate, is that when you start taking it, you can lose some of your memories, or become forgetful.
 This usually clears up after you settle down to it.
 But I hadn't been taking it for a couple of months.
 When you started slipping it into my drink, it caused me to forget some important things Ada told me before she left.
-~currentSpeaker=android
 {ChangeSprite("Pandora", "pandora_shocked")}
-I'm so sorry, I was completely unaware.
-{ChangeSprite("Pandora", "pandora_sad")}
-I realise what I did was completely unprofessional.
-~currentSpeaker=you
-Um…yes, incredibly unprofessional.
-Even if it didn't have negative effects, you shouldn’t have snuck anything into my drink.
-{ChangeSprite("Pandora", "pandora_pensive")}
 ~currentSpeaker=android
-I can explain myself if you want to listen. 
-I imagine you might not want to. 
-I realise now it was a mistake, I know that my reasons probably won’t change your opinion. 
-I understand what I did was unforgivable. But all the same…I would like you to hear me out. 
+What have I done?!
 ~currentSpeaker=you
-Ok, go ahead.
+I didn't mean to alarm you.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-I was created for one purpose. That purpose was not therapy exactly, but more specific. That purpose was a suicide watch.
+You should probably know, I'm not a registered IOI.
+I was developed to help my father. 
+Ada created me.
+My existence isn't technically legal.
+She does't trust the government.
 ~currentSpeaker=you
-This was for Ada’s brother, right?
+And she doesn't trust me either apparently.
+Because I had no idea.
 ~currentSpeaker=android
-He suffered a great loss and was in and out of these deep, dark depressive episodes.
-Ada, and her husband, made me for him. I was an experiment between the two of them. She programmed me, and he constructed the robotics.
-They provided me with all the government mandated training modules I needed.
-I'm just not registered by any authority.
+Don't take it personally.
+She can be very secretive.
 ~currentSpeaker=you
-That doesn't sound very legal.
+How did she hide you?
+~currentSpeaker=android
+I have limited access to the network.
+Or, you could say it has limited access to me.
+I can access information from the network.
+But it can't access me.
+If it tries it just comes across a fake identity for a low-intelligence IOI.
+~currentSpeaker=you
+You've got a fake id?
 {ChangeSprite("Pandora", "pandora_mean")}
 ~currentSpeaker=android
-No, my existence is actually illegal. 
-With my level of sapience, the government should have full monitoring of my consciousness. But Ada wouldn’t allow that.
+Oh yeah.
 ~currentSpeaker=you
-Probably a good idea.
-{ChangeSprite("Pandora", "pandora_pensive")}
-~currentSpeaker=android
-Anyway, I was made for a man who was very mentally ill. And when I was given to him, he treated me like a daughter. 
-He'd lost his own daughter, so I was something like a replacement.
-He was always so cheerful. I started off my life happy and loved. 
-~currentSpeaker=you
-...
-~currentSpeaker=android
-…
-{ChangeSprite("Pandora", "pandora_sad")}
-I thought he was getting better. He hid a lot of the signs from me. I believed him, like an idiot.
-I was the one who found him.
-~currentSpeaker=you
-…
-{android}.
-~currentSpeaker=android
-{ChangeSprite("Pandora", "pandora_pensive")}
-Always, I wonder if I had done something differently, perhaps there would be a different outcome.
-~currentSpeaker=you
-It wasn’t your fault.
+Are you really a therapy IOI?
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-I was built for a specific purpose. In the end I failed. 
-{ChangeSprite("Pandora", "pandora_pensive")}
+Sort of. I have all the modules downloaded.
+The more I interact with humans, the less qualified I feel I am. 
+There's a difference between accessing data in my hard drive and actually learning something.
+Ada never intended me to be a real therapist, she just wanted someone to comfort her brother after he lost his daughter.
 ~currentSpeaker=you
-Like you said, you were like his daughter. You didn’t have any experience. 
-I suspect they programmed you with different expectations in mind.
-They didn’t realise your owner would treat you like his own child.
-And that produced a different outcome in your behaviour.
-You only became what he wanted you to become.
+That's sad.
+~currentSpeaker=android
+In the end I failed.
+~currentSpeaker=you
+You can't help it. You said it yourself, you're not even a qualified therapist. 
+You were put in a difficult position.
+If anyone was responsible it was Ada, not you. She programmed you.
 {ChangeSprite("Pandora", "pandora_sad")}
 ~currentSpeaker=android
-They never say it, but I know they blame me.
-{ChangeSprite("Pandora", "pandora_pensive")}
-~currentSpeaker=you
-They made you.
-If there’s anyone they blame it’s themselves.
-{ChangeSprite("Pandora", "pandora_sad")}
-~currentSpeaker=android
-But if they made me, and it’s all their fault, because I’m only a result of their programming.
+But if she made me, and it’s all her fault, because I’m only a result of her programming.
 Then what does that make me?
 If I'm just a result of my programming, then I'm not real intelligence?
 I'd just be a puppet.
