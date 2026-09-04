@@ -56,14 +56,15 @@ I can do it myself.
 What kind of data?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_serious")}
- Client data.
+Client data.
 ~currentSpeaker = webdev
- So critical.
+Data we couldn't afford to lose.
 ~currentSpeaker = you
  Do you want to talk?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_talking_side")}
- Yeah, I’ve got a friend coming later too.
+Maybe.
+But, just giving you a heads up, I'm meeting a friend here later.
 ~currentSpeaker = you
  Well thanks for bringing extra customers.
  We sure do need them.
@@ -71,21 +72,26 @@ What kind of data?
 {ChangeSprite("Tali", "tali_smirk")}
  I’m glad I can help one of us out.
 ~currentSpeaker = you
+I hope you don't mind me asking.
  What’s so bad about your job, on the whole?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_exasperated")}
- I just feel like they want a lot from me. 
+ I feel they want a lot from me. 
  They have very high expectations. 
- I just fear I’m not as good as they think I am. 
+ I fear I’m not as good as they think I am. 
 ~currentSpeaker = you
  You’re being too hard on yourself.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_normal")}
- No you don’t understand.
+ I'm trying to be realistic, not disparaging my abilities.
+ I doubt any mere mortal could live up to their expectations.
  ~sfx = "open door"
 ~characters += lavender
 ¬
 {ChangeSprite("Lavender", "lavender_normal")}
+...
+{ChangeSprite("Lavender", "lavender_angry")}
+Ahem.
 ~currentSpeaker = you
  Sorry, Miss Blue, I'll be with you in a second.
 ~currentSpeaker = snob
@@ -94,7 +100,7 @@ What kind of data?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
 {ChangeSprite("Lavender", "lavender_normal")}
- {snob} you’re here!
+ Hey, Lavender!
 ~currentSpeaker = you
  ...
 ~currentSpeaker = snob
@@ -102,7 +108,7 @@ What kind of data?
  I came as soon as I could.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_awe")}
- Did you hear?
+ I guess you must have heard?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
  Yes, my father says the police are investigating it.
@@ -126,22 +132,19 @@ What kind of data?
 ...
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
-Of course we know eachother. This is basically my bookshop.
-I come here for my fashion magazines.
+Yeah of couse, this is basically my bookshop.
+I come here for those Lux magazines.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy")}
-That's so cool! 
-I love those designs you showed me.
-~currentSpeaker = snob
+You'll have to show me those sometime.
 {ChangeSprite("Lavender", "lavender_happy")}
-I know, fashion these days is so ugly.
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal2")}
 Eh what’s going on?
-~currentSpeaker = you
- They know each other?
 ~currentSpeaker = android
- Tali knows the nightmare creature.
+ They know each other?
+~currentSpeaker = you
+ It seems so.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
  I want another tea.
@@ -149,10 +152,10 @@ Eh what’s going on?
  And one for Tali too.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_upset")}
- Do you think my boss will fire me?
+ Lavender, do you think my boss will fire me?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_thinking")}
- No, Dad will speak to him.
+ No, Father will speak to him.
  What I don't understand is why you had access to the server?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_talking_side")}
@@ -163,6 +166,7 @@ Eh what’s going on?
  No wonder you're always tired.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_awe")}
+ I don't know exactly how it happened, but I do have a theory.
  I think someone hacked my computer.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_sad")}
