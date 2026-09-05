@@ -67,10 +67,10 @@ Maybe.
 But, just giving you a heads up, I'm meeting a friend here later.
 ~currentSpeaker = you
  Well thanks for bringing extra customers.
- We sure do need them.
+ We sure do need them...
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_smirk")}
- I’m glad I can help one of us out.
+ I’m glad I can help one of us out...
 ~currentSpeaker = you
 I hope you don't mind me asking.
  What’s so bad about your job, on the whole?
@@ -140,7 +140,7 @@ You'll have to show me those sometime.
 {ChangeSprite("Lavender", "lavender_happy")}
 ~currentSpeaker = android
 {ChangeSprite("Pandora", "pandora_normal2")}
-Eh what’s going on?
+Eh? What’s going on?
 ~currentSpeaker = android
  They know each other?
 ~currentSpeaker = you
@@ -174,16 +174,20 @@ Eh what’s going on?
  I was going to transfer it, but the job was shovelled onto me so quickly I just didn't even have time to think.
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
- That must mean there's a spy.
+ That must mean there's a spy!
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_talking_forward")}
- I don't know.
+ I don't know...
  ~currentSpeaker = snob
  Anyone looks suspicious there?
  {ChangeSprite("Lavender", "lavender_thinking")}
- Any new interns? I heard that's how they get in.
+ Any new interns? Or contractors? I heard that's how they get in.
+{ChangeSprite("Lavender", "lavender_angry")}
+Those 'people' are incredibly untrustworthy.
+{ChangeSprite("Lavender", "lavender_sad")}
+I just <i>have</i> to tell you about one I hired the other day.
 ~currentSpeaker = you
- So how do you two know each other?
+ So, how do you two know each other?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
  Can’t you see we’re in the middle of something?
@@ -191,18 +195,21 @@ Eh what’s going on?
 {ChangeSprite("Tali", "tali_happy")}
  We went to school together.
 ~currentSpeaker = you
- What no way?
+ What! no way!?
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_normal")}
-Yeah we met ages ago.
-And we stuck together, we've been friends ever since.
+Yeah, we met ages ago.
+We got put on the same group project.
+{ChangeSprite("Tali", "tali_upset")}
+I did all the work of course.
 ~currentSpeaker = snob
-{ChangeSprite("Lavender", "lavender_sad")}
-You didn't see any contractors around?
 {ChangeSprite("Lavender", "lavender_angry")}
-Those 'people' are incredibly untrustworthy.
-{ChangeSprite("Lavender", "lavender_sad")}
-I just have to tell you about one I hired the other day.
+That's not true!
+{ChangeSprite("Lavender", "lavender_thinking")}
+I made things look pretty.
+~currentSpeaker = webdev
+{ChangeSprite("Tali", "tali_normal")}
+Anyway, we stuck together, and we've been friends ever since.
 ~currentSpeaker = you
 It's hard to make friends these days. Hard to keep the ones you already have.
 ~currentSpeaker = webdev
@@ -214,14 +221,9 @@ Ugh, tell me about it.
  ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_happy_closed")}
 The closest.
-{ChangeSprite("Lavender", "lavender_angry")}
- Hmph.
- {ChangeSprite("Lavender", "lavender_thinking")}
- {webdev} are you even listening to me?
- I think these shop assistants are distracting you.
 ~currentSpeaker = webdev
 {ChangeSprite("Tali", "tali_sad")}
-Oh.
+Oh shit.
 {ChangeSprite("Tali", "tali_exasperated")}
 My boss is calling me. 
 ~currentSpeaker = webdev
@@ -239,7 +241,7 @@ My boss is calling me.
 ->lavender_book_check->
 ~allbooks-=LUX_394
 ~currentSpeaker = you
-So how are things?
+So, how are things?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_normal")}
  They're going well.
@@ -263,12 +265,14 @@ You recommended this place to her, right?
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
  Well, I’ve known her for twenty years.
- Our knowledge is not remotely comparable.
+ Our knowledge of her is not remotely comparable.
 ~currentSpeaker = you
 I guess not.
 ~sfx = "open door"
 ~characters += kent
 ¬
+~currentSpeaker = comic
+Hey guys!
 ~currentSpeaker = snob
 {ChangeSprite("Lavender", "lavender_angry")}
  You again.
@@ -281,18 +285,28 @@ Ugh goodbye
 ~characters -= lavender
 ~sfx = "close door"
 ~currentSpeaker = you
+ ....
  Can I employ you here as a bodyguard?
-~currentSpeaker = you
- An anti-Lavender charm. 
+ You're a certified anti-Lavender charm. 
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
  I take that as the highest compliment.
  //{allbooks ? sentinel_105: -> the_sentinel->} 
  ->kent_book_check->
  ~allbooks-=sentinel_105
+ ~currentSpeaker = android
+ {ChangeSprite("Pandora", "pandora_happy")}
+ Would you like some coffee?
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}
- What happened?
+ Oh, yes please.
+ ~characters -= pandora
+ So, what have you been up to?
+ ~currentSpeaker = you
+ Tali was around here earlier today, you just missed her.
+ And as you saw, Lavender paid us a visit too.
+ ~currentSpeaker = comic
+ Sounds like you've been busy then.
 {ChangeSprite("Kent", "kent_side_serious")}
  By the way I did some research, all that stuff Lavender said checks out. Turns out she really is spawn of the devil.
 ~currentSpeaker = you
@@ -303,17 +317,22 @@ Ugh goodbye
  {ChangeSprite("Kent", "kent_side_normal")}
  This is crazy.
   {ChangeSprite("Kent", "kent_normal")}
- Anyway I better be nice to her, her father is my boss’s boss’s boss. He’s basically the chief of the arse-lickers.
+ Anyway, I better try to be nice to her, her father is my boss’s boss’s boss. He’s basically the chief of the arse-lickers.
 ~currentSpeaker = you
- You just figured that out.
+ You're going to try to be nice to Lavender?
+ I'll believe that when I see it.
 ~currentSpeaker = comic
  {ChangeSprite("Kent", "kent_happy")}
  My boyfriend talked some sense into me last night.
 ~currentSpeaker = you
  I’m glad somebody could.
+ ~characters += pandora
+ ~currentSpeaker = android
+ Here's your drink.
 ~currentSpeaker = comic
+ Thanks Pan!
  {ChangeSprite("Kent", "kent_side_normal")}
- I can be a bit reckless sometimes.
+ Sorry, I can be a bit reckless sometimes.
  I guess don’t have a lot of self-preservation.
  {ChangeSprite("Kent", "kent_side_serious")}
  I’m just sick of having to keep quiet and take it at work.
@@ -327,34 +346,33 @@ Ugh goodbye
  I know Pan. I wish it wasn’t like that though.
 ~currentSpeaker = you
  You can wish as much as you like.
+ I heard about the plague outbreak.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_happy")}
- The good thing is that nothing too bad happened today.
- The plague outbreak didn’t even kill too many people.
- My boss asked me to draw a raunchy cartoon of an IOI nurse in a very revealing uniform sticking a needle into the health secretary's buttocks.
+ It hasn't killed too many people.
+ Overall I haven't had to do anything too repugnant at work.
+ Although, my boss did ask me to draw a raunchy cartoon of an IOI nurse in a very revealing uniform sticking a needle into the health secretary's buttocks.
 {ChangeSprite("Kent", "kent_amused")}
  I don’t know what kind of vaccinations he's has been getting.
 {ChangeSprite("Kent", "kent_sad")}
  I’m a little concerned to be honest.
 {ChangeSprite("Kent", "kent_happy")}
- Sorry, I never asked about your day.
+ Sorry, I've just been rambling on.
 ~currentSpeaker = you
- I think it’s better like that.
+ It's ok. I don' mind, it takes my mind off things.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_amused")}
- Why, what happened?
+ Is everything ok?
+ Did something happen?
 ~currentSpeaker = you
- Nothing much – to me at least.
- Tali came around earlier, she was a little distraught.
+ Nothing much has happened – well not to me at least.
+ When Tali came around earlier; she was a little distraught.
  Something about a data leak.
 ~currentSpeaker = comic
 {ChangeSprite("Kent", "kent_normal")}
  I heard something about that. It was for a government website. Lots of sensitive information was lost.
 ~currentSpeaker = you
  That doesn’t sound good.
-~currentSpeaker = comic
- Indeed.
-~currentSpeaker = comic
  Tali wasn’t involved, was she?
  {ChangeSprite("Kent", "kent_side_normal")}
  I imagine she is just doing web design, it wouldn’t have anything to do with her.
@@ -362,30 +380,30 @@ Ugh goodbye
  Uh...
 ~currentSpeaker = comic
  {ChangeSprite("Kent", "kent_normal")}
- It wasn’t her data lost was it?
+ Does she know who lost the data?
  ~currentSpeaker = you
  Uhhh. 
- NO. No, it wasn't.
+ NO. No, she doesn't.
  ~currentSpeaker = comic
  You're worried because I'm a journalist and I might leak this information to get ahead in my career.
  ~currentSpeaker = you
- Maybe...
+ Maybe...?
  ~currentSpeaker = comic
   {ChangeSprite("Kent", "kent_side_serious")}
  I see.
  Sorry, {you}, I have to make this clear to you now but I would never use information I gathered here for a story.
  I really don't care about my job that much. I mean sure I care about keeping it, but I'm not going to go out of my way to help the fuckers.
    {ChangeSprite("Kent", "kent_normal")}
- But most importantly, I wouldn't do anything to betray your trust and our friendship.
+ But most importantly, I wouldn't do anything to betray your trust and our friendship.  
  ~currentSpeaker = you
- Well I certainly find that comforting.
+ Well, I certainly find that comforting.
 ~currentSpeaker = comic
 I appreciate you trying to protect the confidentiality of your clients' personal lives.
 {ChangeSprite("Kent", "kent_happy")}
- I’ve got to go now. It was nice talking to you. 
- Thanks for the coffee Pan.
+ I’ve got to go now. It was nice talking to you.
+ Thanks for the coffee, Pan.
 ~currentSpeaker = android
- See you around Kent.
+ See you around Kent!
 ~currentSpeaker = you
  Bye!
  ~characters -= kent
